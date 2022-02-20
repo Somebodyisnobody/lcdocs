@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="https://clonkspot.org"
+           xmlns="https://clonkspot.org">
     <xs:annotation>
         <xs:documentation>
             ClonkDoc XML Schema
@@ -8,8 +9,8 @@
 
             The schema exists of three possible root elements:
             * doc - for general documentation
-            * funcs - semantically for functions
-            * consts - semantically for constants
+            * func - semantically for functions
+            * const - semantically for constants
 
             Namespace =
 
@@ -18,126 +19,134 @@
         </xs:documentation>
     </xs:annotation>
 
-    <!-- Root elements -->
-
-    <!-- Used for documentation -->
-    <xs:element name="doc">
+    <xs:element name="clonkDoc">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="title">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:minLength value="5"/>
-                            <xs:maxLength value="70"/>
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:element>
-                <xs:sequence maxOccurs="unbounded">
-                    <xs:element name="h" type="htmlMixedContainsStandardTextFormatElements"/>
-                    <xs:group ref="docPart" maxOccurs="unbounded"/>
-                    <xs:group ref="authorAndDate" maxOccurs="unbounded"/>
-                </xs:sequence>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
-    <!-- Used for functions -->
-    <xs:element name="funcs">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element maxOccurs="unbounded" name="func">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <!-- Title must have the function name without whitespaces or "()" -->
-                            <xs:element name="title" type="functionName"/>
-                            <xs:element name="category" type="functionCategory"/>
-                            <xs:element minOccurs="0" maxOccurs="unbounded" name="subcat" type="functionSubCategory"/>
-                            <xs:element name="versions" type="entityVersions"/>
-                            <!-- For later use: Enter Clonk version since deprecated here (e.g. 1.2.3.4 [999] LC); nullable -->
-                            <xs:element minOccurs="0" name="deprecated" type="clonkVersionOrEmpty"/>
-                            <xs:element name="syntax">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <!-- The returned data type for this function -->
-                                        <xs:element name="rtype">
-                                            <xs:simpleType>
-                                                <xs:union memberTypes="functionParamDataTypes">
-                                                    <xs:simpleType>
-                                                        <xs:restriction base="xs:string">
-                                                            <xs:enumeration value="void"/>
-                                                        </xs:restriction>
-                                                    </xs:simpleType>
-                                                </xs:union>
-                                            </xs:simpleType>
-                                        </xs:element>
-                                        <!-- Marks the return value as reference -->
-                                        <xs:element minOccurs="0" name="isReference">
-                                            <xs:complexType/>
-                                        </xs:element>
-                                        <!-- Contains at least one <param> -->
-                                        <xs:element minOccurs="0" name="params">
-                                            <xs:complexType>
-                                                <xs:sequence>
-                                                    <!--
-                                                    Contains <type>, <name>, <desc>, <isReference /> and <optional />
-                                                    <isReference /> is used when the argument requires a reference
-                                                    <optional /> is used when the argument is optional.
-                                                    -->
-                                                    <xs:element maxOccurs="unbounded" name="param">
-                                                        <xs:complexType>
-                                                            <xs:sequence>
-                                                                <!-- The input data type -->
-                                                                <xs:element name="type" type="functionParamDataTypes"/>
-                                                                <!-- The name of the argument -->
-                                                                <xs:element name="name">
-                                                                    <xs:simpleType>
-                                                                        <xs:restriction base="xs:token">
-                                                                            <xs:pattern value="(\w|\.|_)+"/>
-                                                                        </xs:restriction>
-                                                                    </xs:simpleType>
-                                                                </xs:element>
-                                                                <!-- A description for better understanding -->
-                                                                <xs:element name="desc" type="htmlText"/>
-                                                                <!-- Marks the argument as reference -->
-                                                                <xs:element minOccurs="0" name="isReference">
-                                                                    <xs:complexType/>
-                                                                </xs:element>
-                                                                <!-- Marks the argument as optional -->
-                                                                <xs:element minOccurs="0" name="optional">
-                                                                    <xs:complexType/>
-                                                                </xs:element>
-                                                            </xs:sequence>
-                                                        </xs:complexType>
-                                                    </xs:element>
-                                                </xs:sequence>
-                                            </xs:complexType>
-                                        </xs:element>
-                                    </xs:sequence>
-                                </xs:complexType>
-                            </xs:element>
-                            <xs:element name="desc" type="htmlText"/>
-                            <xs:element minOccurs="0" maxOccurs="unbounded" name="remark" type="htmlText"/>
-                            <xs:element minOccurs="0" name="examples">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element maxOccurs="unbounded" name="example">
-                                            <xs:complexType>
-                                                <xs:choice maxOccurs="unbounded">
-                                                    <xs:element name="code" type="code"/>
-                                                    <xs:element name="text" type="htmlText"/>
-                                                </xs:choice>
-                                            </xs:complexType>
-                                        </xs:element>
-                                    </xs:sequence>
-                                </xs:complexType>
-                            </xs:element>
-                            <xs:element minOccurs="0" name="related">
-                                <xs:complexType>
-                                    <xs:group ref="htmlDocsLinks" maxOccurs="unbounded"/>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
+                <xs:choice>
+                    <xs:element name="doc">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="title">
+                                    <xs:simpleType>
+                                        <xs:restriction base="xs:string">
+                                            <xs:minLength value="5"/>
+                                            <xs:maxLength value="70"/>
+                                        </xs:restriction>
+                                    </xs:simpleType>
+                                </xs:element>
+                                <xs:sequence maxOccurs="unbounded">
+                                    <xs:element name="h" type="htmlMixedContainsStandardTextFormatElements"/>
+                                    <xs:group ref="docPart" maxOccurs="unbounded"/>
+                                </xs:sequence>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:element name="func">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <!-- Title must have the function name without whitespaces or "()" -->
+                                <xs:element name="title" type="functionName"/>
+                                <xs:element name="category" type="functionCategory"/>
+                                <xs:element minOccurs="0" maxOccurs="unbounded" name="subcat"
+                                            type="functionSubCategory"/>
+                                <xs:element name="versions" type="entityVersions"/>
+                                <!-- For later use: Enter Clonk version since deprecated here (e.g. 1.2.3.4 [999] LC); nullable -->
+                                <xs:element minOccurs="0" name="deprecated" type="clonkVersionOrEmpty"/>
+                                <xs:element name="syntax">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <!-- The returned data type for this function -->
+                                            <xs:element name="rtype">
+                                                <xs:simpleType>
+                                                    <xs:union memberTypes="functionParamDataTypes">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="void"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:union>
+                                                </xs:simpleType>
+                                            </xs:element>
+                                            <!-- Marks the return value as reference -->
+                                            <xs:element minOccurs="0" name="isReference">
+                                                <xs:complexType/>
+                                            </xs:element>
+                                            <!-- Contains at least one <param> -->
+                                            <xs:element minOccurs="0" name="params">
+                                                <xs:complexType>
+                                                    <xs:sequence>
+                                                        <!--
+                                                        Contains <type>, <name>, <desc>, <isReference /> and <optional />
+                                                        <isReference /> is used when the argument requires a reference
+                                                        <optional /> is used when the argument is optional.
+                                                        -->
+                                                        <xs:element maxOccurs="unbounded" name="param">
+                                                            <xs:complexType>
+                                                                <xs:sequence>
+                                                                    <!-- The input data type -->
+                                                                    <xs:element name="type"
+                                                                                type="functionParamDataTypes"/>
+                                                                    <!-- The name of the argument -->
+                                                                    <xs:element name="name">
+                                                                        <xs:simpleType>
+                                                                            <xs:restriction base="xs:token">
+                                                                                <xs:pattern value="(\w|\.|_)+"/>
+                                                                            </xs:restriction>
+                                                                        </xs:simpleType>
+                                                                    </xs:element>
+                                                                    <!-- A description for better understanding -->
+                                                                    <xs:element name="desc" type="htmlText"/>
+                                                                    <!-- Marks the argument as reference -->
+                                                                    <xs:element minOccurs="0" name="isReference">
+                                                                        <xs:complexType/>
+                                                                    </xs:element>
+                                                                    <!-- Marks the argument as optional -->
+                                                                    <xs:element minOccurs="0" name="optional">
+                                                                        <xs:complexType/>
+                                                                    </xs:element>
+                                                                </xs:sequence>
+                                                            </xs:complexType>
+                                                        </xs:element>
+                                                    </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:element name="desc" type="htmlText"/>
+                                <xs:element minOccurs="0" maxOccurs="unbounded" name="remark" type="htmlText"/>
+                                <xs:element minOccurs="0" name="examples">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element maxOccurs="unbounded" name="example">
+                                                <xs:complexType>
+                                                    <xs:choice maxOccurs="unbounded">
+                                                        <xs:element name="code" type="code"/>
+                                                        <xs:element name="text" type="htmlText"/>
+                                                    </xs:choice>
+                                                </xs:complexType>
+                                            </xs:element>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:element minOccurs="0" name="related">
+                                    <xs:complexType>
+                                        <xs:group ref="htmlDocsLinks" maxOccurs="unbounded"/>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:element name="const">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:group ref="authorAndDate"/>
+                                <xs:element name="version" type="clonkVersion"/>
+                                <xs:element name="changes" type="htmlText"/>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:choice>
                 <xs:group ref="authorAndDate" maxOccurs="unbounded"/>
             </xs:sequence>
         </xs:complexType>

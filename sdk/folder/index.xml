@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-<!DOCTYPE doc SYSTEM "../../clonk.dtd">
 <?xml-stylesheet type="text/xsl" href="../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://clonkspot.org ../../clonk.xsd">
 <doc>
 <title>Rundenordner</title>
 
@@ -59,6 +61,6 @@ US:My scenario collection</code>
 	</dl>
 </part>
 
-<author>Sven2</author><date>2006-09</date>
+</doc><author>Sven2</author><date>2006-09</date>
 
-</doc>
+</clonkDoc>

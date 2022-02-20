@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-<!DOCTYPE doc SYSTEM "../clonk.dtd">
 <?xml-stylesheet type="text/xsl" href="../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://clonkspot.org ../clonk.xsd">
 <doc>
 <title>Blenderclonk</title>
 <h id="Blenderclonk">Blenderclonk</h>
@@ -84,5 +86,5 @@ Jetzt kann das Tool über <strong>Save/Load</strong> und <strong>'Save Tool'</str
 <text>Dabei sollte Objectname und Meshname identisch sein. Danach kann das selektierte Mesh mit einem Klick auf <strong>'Import Mesh'</strong> importiert werden. Im Untermenü Clonk können dann die Actions für den Clonk angepasst werden und der Clonk gespeichert werden. Jetzt kann man ihn genauso wie die anderen Clonks verwenden.</text>
 
 </part>
-<author>Randrian</author><date>2008-05</date>
-</doc>
+</doc><author>Randrian</author><date>2008-05</date>
+</clonkDoc>

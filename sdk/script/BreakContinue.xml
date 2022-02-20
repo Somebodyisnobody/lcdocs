@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-<!DOCTYPE doc SYSTEM "../../clonk.dtd">
 <?xml-stylesheet type="text/xsl" href="../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://clonkspot.org ../../clonk.xsd">
 <doc>
 <title>Break / Continue</title>
 
@@ -42,6 +44,6 @@ Endwert: 7</code>
 	<text>Wird der Wert 7 erreicht, wird <code>break</code> aufgerufen. <code>break</code> bricht jetzt, im Gegensatz zu <code>continue</code>, nicht nur den aktuellen Schleifendurchlauf, sondern auch die Schleife ab. (Erkennbar daran, dass der Wert von <code>i</code> am Ende 7 ist, nicht 11).</text>
 </part>
 
-<author>Peter</author><date>2001-07</date>
+</doc><author>Peter</author><date>2001-07</date>
 
-</doc>
+</clonkDoc>

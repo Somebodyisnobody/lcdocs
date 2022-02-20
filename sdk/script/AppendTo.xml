@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-<!DOCTYPE doc SYSTEM "../../clonk.dtd">
 <?xml-stylesheet type="text/xsl" href="../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://clonkspot.org ../../clonk.xsd">
 <doc>
 <title>#appendto</title>
 <h>#appendto</h>
@@ -21,7 +23,7 @@ Definitionen angehängt.</text>
 Dies ist besonders dann entscheidend, wenn benannte Locals oder Funktionsnamen aus dem Script, an
 das angehängt wird, verwendet werden.</text>
 </part>
-<author>Sven2</author><date>2002-04</date>
-<author>matthes</author><date>2004-06</date>
-<author>Günther</author><date>2006-01</date>
 </doc>
+<author>Sven2</author><date>2002-04</date>
+<author>matthes</author><date>2004-06</date><author>Günther</author><date>2006-01</date>
+</clonkDoc>

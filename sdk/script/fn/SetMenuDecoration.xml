@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-<!DOCTYPE funcs SYSTEM "../../../clonk.dtd">
 <?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
-<funcs>
+<clonkDoc xmlns="https://clonkspot.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd">
   <func>
     <title>SetMenuDecoration</title>
     <category>Objekte</category><subcat>Menü</subcat>
@@ -17,4 +18,4 @@
     <related><funclink>GetMenuSelection</funclink><funclink>GetMenu</funclink><funclink>CreateMenu</funclink><funclink>AddMenuItem</funclink><funclink>SetMenuTextProgress</funclink></related>
   </func>
   <author>Fulgen</author><date>2016-08</date>
-</funcs>
+</clonkDoc>

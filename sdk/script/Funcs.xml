@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-<!DOCTYPE doc SYSTEM "../../clonk.dtd">
 <?xml-stylesheet type="text/xsl" href="../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://clonkspot.org ../../clonk.xsd">
 <doc>
 <title>Funktionen</title>
 
@@ -182,8 +184,8 @@ func Aufruf()
 	<text><code>x</code> und <code>y</code> in <code>GetHiRankPosition</code> sind hier <strong>Referenzen</strong>, d.h. wenn man sie setzt, werden die Variablen gesetzt, die man als Parameter angab (in diesem Fall <code>iHiRankX</code> und <code>iHiRankY</code>). Man beachte, dass ein Aufruf wie "<code>GetHiRankPosition(0, iHiRankX + 1, iHiRankY)</code>" zu einem Typfehler führt, da "<code>iHiRankX + 1</code>" keine Variable, sondern eine Zahl ist!</text>
 	<text>Man beachte, dass "<code>&amp;</code>" ein eigenständiger Typ ist, deshalb darf für einen Referenzparameter kein weiterer Typ angegeben werden, "<code>int &amp;x</code>" wäre also ungültig!</text>
 </part>
-
+</doc>
 <author>PeterW</author><date>2002-07</date>
 <author>matthes</author><date>2004-06</date>
 
-</doc>
+</clonkDoc>

@@ -1,6 +1,6 @@
 <!ENTITY % text "a | img | emlink | funclink | em | code | strong">
 
-<!ELEMENT funcs (func+, (author, date)+)>
+<!ELEMENT clonkDoc ((func | doc), (author, date)+)>
   <!ELEMENT func           (title, deprecated?, category, subcat*, versions, deprecated?, syntax, desc, remark*, examples?, related?)>
     <!ELEMENT title        (#PCDATA)>
     <!ELEMENT category     (#PCDATA)>
@@ -29,7 +29,7 @@
         <!ATTLIST emlink href CDATA #REQUIRED>
   <!ELEMENT author         (#PCDATA)>
   <!ELEMENT date           (#PCDATA)>
-<!ELEMENT doc (title, (h | text | dl | part | code | author | date | img)*)>
+  <!ELEMENT doc (title, (h | text | dl | part | code | author | date | img)*)>
   <!ELEMENT part (h | text | part | code | dl)*>
 
 <!ELEMENT br EMPTY>

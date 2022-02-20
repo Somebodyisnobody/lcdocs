@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-<!DOCTYPE doc SYSTEM "../../clonk.dtd">
 <?xml-stylesheet type="text/xsl" href="../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://clonkspot.org ../../clonk.xsd">
 <doc>
 <title>Benannte Variablen</title>
 
@@ -84,6 +86,6 @@ protected func Timer()
 	</ul></text>
 </part>
 
-<author>PeterW</author><date>2001-01</date>
+</doc><author>PeterW</author><date>2001-01</date>
 
-</doc>
+</clonkDoc>

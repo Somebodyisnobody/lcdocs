@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-<!DOCTYPE doc SYSTEM "../clonk.dtd">
 <?xml-stylesheet type="text/xsl" href="../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://clonkspot.org ../clonk.xsd">
 <doc>
 <title>Blenderclonk Beispiele</title>
 <h id="Blenderclonk">Blenderclonk Beispiele</h>
@@ -52,5 +54,5 @@
 <text>Jetzt ist unser kleiner Agrarwirt endlich fertig. Mit einen Klick auf 'Render', 'All' und dann 'Both' wird nun Graphics.png und Overlay.png im Unterordner Graphics/Farmer erzeugt. Von dort können sie jetzt ins Spiel eingebaut werden.</text>
 <text><img src="../images/Full.png" width="256" height="320"/></text>
 </part>
-<author>Randrian</author><date>2008-05</date>
-</doc>
+</doc><author>Randrian</author><date>2008-05</date>
+</clonkDoc>

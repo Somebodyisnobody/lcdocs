@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-<!DOCTYPE doc SYSTEM "../../clonk.dtd">
 <?xml-stylesheet type="text/xsl" href="../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://clonkspot.org ../../clonk.xsd">
 <doc>
 <title>#strict</title>
 <h>#strict</h>
@@ -82,7 +84,8 @@ werden.</text>
 			<li><code>false != 0</code> und <code>true != 1</code></li>
 		</ul></text>
 	</part>
+</doc>
 	<author>Sven2</author><date>2001-07</date>
 	<author>Günther</author><date>2007-12</date>
 	<author>Der Tod</author><date>2019-10</date>
-</doc>
+</clonkDoc>

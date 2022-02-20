@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-<!DOCTYPE doc SYSTEM "../clonk.dtd">
 <?xml-stylesheet type="text/xsl" href="../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://clonkspot.org ../clonk.xsd">
 <doc>
 <title>Kommandozeilenparameter</title>
 <h id="cmdline">Kommandozeilenparameter</h>
@@ -72,5 +74,5 @@
 <h id="C4Group">c4group.exe (Windows) c4group (Linux) c4group (Mac)</h>
 <text>Dieses Kommandozeilen-Programm dient zum Bearbeiten von Gruppendateien. Es kann nicht per Doppelklick, sondern nur per Kommandozeile (Eingabeaufforderung) gestartet werden. Auskunft über alle verfügbaren Kommandozeilenparameter erhält man, indem man das Programm ohne weitere Parameter über die Kommandozeile startet.</text>
 </part>
-<author>Sven2</author><date>2007-02</date>
-</doc>
+</doc><author>Sven2</author><date>2007-02</date>
+</clonkDoc>

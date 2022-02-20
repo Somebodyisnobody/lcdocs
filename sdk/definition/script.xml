@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-<!DOCTYPE doc SYSTEM "../../clonk.dtd">
 <?xml-stylesheet type="text/xsl" href="../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://clonkspot.org ../../clonk.xsd">
 <doc>
     <title>Objektscripte</title>
     <h id="Objektscripte">Objektscripte</h>
@@ -639,6 +641,7 @@
             Condition-Funktion übergeben.
         </text>
     </part>
+</doc>
     <author>sulai</author>
     <date>2003-11</date>
     <author>Sven2</author>
@@ -647,4 +650,4 @@
     <date>2004-07</date>
     <author>Clonkonaut</author>
     <date>2008-04</date>
-</doc>
+</clonkDoc>

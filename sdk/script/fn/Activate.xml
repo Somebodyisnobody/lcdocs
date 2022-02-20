@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-<!DOCTYPE funcs SYSTEM "../../../clonk.dtd">
 <?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
-<funcs>
+<clonkDoc xmlns="https://clonkspot.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd">
 	<func>
 		<title>Activate</title>
 		<category>Callbacks</category>
@@ -16,4 +17,4 @@
 		<desc>Wenn ein Spieler Doppelgraben drückt, wird zunächst "ControlDigDouble" im Clonk aufgerufen. Gibt dieses false zurück oder existiert nicht, und der Clonk läuft, schwimmt oder gräbt, wird im ersten Inhaltsobjekt Activate aufgerufen. Wenn dieses nicht existiert oder false zurückgibt, wird zuerst versucht, einen Baum zu fällen oder eine Leitung abzunehmen. Danach wird Activate im Clonk selbst aufgerufen.</desc>
 	</func>
 	<author>Günther</author><date>2005-06</date>
-</funcs>
+</clonkDoc>

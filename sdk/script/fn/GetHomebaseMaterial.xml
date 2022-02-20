@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-<!DOCTYPE funcs SYSTEM "../../../clonk.dtd">
 <?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
-<funcs>
+<clonkDoc xmlns="https://clonkspot.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd">
 	<func>
 		<title>GetHomebaseMaterial</title>
 		<category>Spieler</category>
@@ -41,4 +42,4 @@
 		</related>
 	</func>
 	<author>Günther</author><date>2002-02</date>
-</funcs>
+</clonkDoc>

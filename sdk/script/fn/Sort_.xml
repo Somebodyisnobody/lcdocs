@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-<!DOCTYPE funcs SYSTEM "../../../clonk.dtd">
 <?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
 <!-- TODO: Make separate functions -->
+<clonkDoc xmlns="https://clonkspot.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd">
 <doc>
 <title>Sort_*</title>
 <h>Sort_*</h>
@@ -17,5 +19,5 @@
 	<row><col>Sort_Value()</col><col>Sortiert nach Objektwert.</col></row>
 	<row><col>Sort_Func(string f, ...)</col><col>Sortiert nach dem Rückgabewert einer Funktion.</col></row>
 </table></text>
-    <author>unbekannt</author><date>2099-01</date>
-</doc>
+    </doc><author>unbekannt</author><date>2099-01</date>
+</clonkDoc>

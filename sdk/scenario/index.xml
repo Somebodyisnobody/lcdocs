@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-<!DOCTYPE doc SYSTEM "../../clonk.dtd">
 <?xml-stylesheet type="text/xsl" href="../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://clonkspot.org ../../clonk.xsd">
 <doc>
 <title>Szenarien</title>
 
@@ -90,8 +92,8 @@ US:Attack of the Killer Wipfs</code>
 	<h id="UeberladungenC4S">Überladungsregeln</h>
 	<text>Diverse Systemkomponenten (Graphics, Loader, Material, Musik und Objekte) können in Szenarien überladen werden. Dabei werden auch übergeordnete Rundenordner (C4F) durchsucht. Hierbei steigt die Überladungspriorität mit der Ordnertiefe. Bei einem Szenario, das sich in die Ordnerstruktur Ordner.c4f\Unterordner.c4f\Szenario.c4s einordnet, würden Komponenten aus Unterordner.c4f also gleiche Komponenten aus Ordner.c4f überladen (respektive Szenario.c4f Komponenten aus Unterordner.c4f und Ordner.c4f).</text>
 </part>
-
+</doc>
 <author>Sven2</author><date>2002-04</date>
 <author>matthes</author><date>2004-06</date>
 
-</doc>
+</clonkDoc>

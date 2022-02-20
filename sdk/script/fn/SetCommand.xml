@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-<!DOCTYPE funcs SYSTEM "../../../clonk.dtd">
 <?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
-<funcs>
+<clonkDoc xmlns="https://clonkspot.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd">
   <func>
     <title>SetCommand</title>
     <category>Objekte</category>
@@ -99,6 +100,7 @@
         <row><col>Jump</col><col>Null</col><col>Zielposition</col><col></col><col></col><col>In Richtung der Zielposition springen.</col></row>
         <row><col>MoveTo</col><col>Zielobjekt</col><col>0,0</col><col>Null</col><col>Keine Anpassung? (bool)</col><col>Zur Position des Zielobjekts bewegen. iData true um die Koordinaten nicht an die Landschaftsform anzupassen.</col></row>
         <row><col>MoveTo</col><col>Null</col><col>Zielposition</col><col>Null</col><col>Keine Anpassung? (bool)</col><col>Zur Zielposition bewegen. iData true um die Koordinaten nicht an die Landschaftsform anzupassen.</col></row>
+        <!--suppress CheckTagEmptyBody -->
         <row><col>None</col><col></col><col></col><col></col><col></col><col>Aktuelle Befehle löschen.</col></row>
         <row><col>PushTo</col><col>Zielobjekt</col><col>Zielposition</col><col></col><col></col><col>Zielobjekt an Zielposition schieben.</col></row>
         <row><col>PushTo</col><col>Objekt</col><col>0,0</col><col>Zielobjekt</col><col></col><col>Objekt in Zielobjekt schieben.</col></row>
@@ -138,4 +140,4 @@ daran scheitert, den Weg zum Feind zu finden) es 10 Mal zu versuchen, bis er sei
     </related>
   </func>
   <author>PeterW</author><date>2001-11</date>
-</funcs>
+</clonkDoc>

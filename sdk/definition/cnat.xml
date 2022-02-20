@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-<!DOCTYPE doc SYSTEM "../../clonk.dtd">
 <?xml-stylesheet type="text/xsl" href="../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://clonkspot.org ../../clonk.xsd">
 <doc>
 <title>CNAT - Contact Attachment</title>
 <h id="CNAT">CNAT - Contact Attachment</h>
@@ -32,7 +34,8 @@ setzen sich aus folgenden Bits zusammen:</text>
 <bitmask>CNAT</bitmask>
 </table>
 </text>
+</doc>
 <author>Sven2</author><date>2002-04</date>
 <author>Newton &amp; Günther</author><date>2005-01</date>
 <author>Matthes</author><date>2005-08</date>
-</doc>
+</clonkDoc>
