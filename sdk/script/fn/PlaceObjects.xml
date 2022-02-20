@@ -5,11 +5,11 @@
 	<func>
 		<title>PlaceObjects</title>
 		<category>Objekte</category><subcat>Erzeugung</subcat>
-		<version>4.9.5.0 CE</version>
+		<versions><version>4.9.5.0 CE</version></versions>
 		<syntax>
 			<rtype>int</rtype>
 			<params>
-				<param><type>C4ID</type><name>id</name><desc>ID des zu platzierenden Objekts</desc></param>
+				<param><type>id</type><name>C4ID</name><desc>ID des zu platzierenden Objekts</desc></param>
 				<param><type>int</type><name>iAmount</name><desc>Menge der zu erzeugenden Objekte</desc></param>
 				<param><type>string</type><name>Mat</name><desc>Material in die Objekte erzeugt werden soll. Hier kann entweder der Materialname angegeben werden oder folgende Zeichenketten:
 <table><rowh><col>iMat</col><col>Erzeugung in</col></rowh>
@@ -50,5 +50,5 @@ Es wird sichergestellt, dass keine Endlosschleife entsteht.
 			<funclink>PlaceInMaterial</funclink>
 		</related>
 	</func>
-	<author>Tyron</author><date>August 2004</date>
+	<author>Tyron</author><date>2004-08</date>
 </funcs>

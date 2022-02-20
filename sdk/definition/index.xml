@@ -62,6 +62,6 @@
 <text>Lokale Objektdefinitionen, die nur als Teil eines Szenarios verbreitet werden, erhalten IDs vom Format _ABC.</text>
 <text>Von Spielern erstellte Objektdefinitionen, die auch einzeln veröffentlicht werden, sollten das Format AB3C nutzen, wobei nur die ersten beiden Zeichen frei vergeben werden können und die letzten beiden Zeichen (1 Ziffer und 1 Buchstabe) das Entwickler-ID des Spielers darstellen, welches frei wählbar ist, wobei allerdings Überschneidungen mit bereits von anderen Entwicklern benutzten IDs vermieden werden sollten.</text>
 </part>
-<author>Sven2</author><date>April 2002</date>
-<author>matthes</author><date>Juni 2004</date>
+<author>Sven2</author><date>2002-04</date>
+<author>matthes</author><date>2004-06</date>
 </doc>

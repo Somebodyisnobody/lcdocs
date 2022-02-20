@@ -5,13 +5,13 @@
 	<func>
 		<title>PlrMessage</title>
 		<category>Nachrichten</category>
-		<version>4.9.1.0 GWE</version>
+		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>
 				<param><type>string</type><name>szMessage</name><desc>Nachricht, die ausgegeben wird</desc></param>
 				<param><type>int</type><name>iPlr</name><desc>Nummer des Spielers, bei dem die Nachricht ausgegeben wird</desc></param>
-				<param><type></type><name>...</name><desc>*</desc><optional /></param>
+				<param><type>any</type><name>...</name><desc>*</desc><optional /></param>
 			</params>
 		</syntax>
 		<desc>Gibt eine Nachricht nur im Viewport eines Spielers aus. Die Nachrichtenformatierung erfolgt analog zu <funclink>Message</funclink>.</desc>
@@ -28,5 +28,5 @@
 			<funclink>AddMessage</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>November 2001</date>
+	<author>Sven2</author><date>2001-11</date>
 </funcs>

@@ -5,7 +5,7 @@
   <func>
     <title>ChangeEffect</title>
     <category>Effekte</category>
-    <version>4.9.5.0 CE</version>
+    <versions><version>4.9.5.0 CE</version></versions>
     <syntax>
       <rtype>bool</rtype>
       <params>
@@ -30,14 +30,14 @@
         <param>
           <type>string</type>
           <name>szNewEffectName</name>
-          <optional />
           <desc>Neuer Effektname ohne vorangestelltes Fx</desc>
+          <optional />
         </param>
         <param>
           <type>int</type>
           <name>iNewTimer</name>
-          <optional />
           <desc>Neues Timer-Intervall. Bei -1 wird der alte Wert beibehalten; ansonsten wird bei diesem Aufruf auch die Effektzeit zurückgesetzt.</desc>
+          <optional />
         </param>
       </params>
     </syntax>
@@ -69,5 +69,5 @@
       <funclink>RemoveEffect</funclink>
     </related>
   </func>
-  <author>Sven2</author><date>März 2004</date>
+  <author>Sven2</author><date>2004-03</date>
 </funcs>

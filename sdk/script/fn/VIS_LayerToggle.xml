@@ -5,7 +5,7 @@
 	<func>
 		<title>VIS_LayerToggle</title>
 		<category>Objekte</category><subcat>Sichtbarkeit</subcat>
-		<version>4.9.7.0 CR</version>
+		<versions><version>4.9.7.0 CR</version></versions>
 		<syntax>
 			<rtype>int</rtype>
 		</syntax>
@@ -23,5 +23,5 @@
 			<funclink>VIS_OverlayOnly</funclink>
 		</related>
 	</func>
-	<author>Fulgen / Clonk Wiki</author><date>Juli 2016</date>
+	<author>Fulgen / Clonk Wiki</author><date>2016-07</date>
 </funcs>

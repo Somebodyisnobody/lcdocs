@@ -6,7 +6,7 @@
     <title>SetCommand</title>
     <category>Objekte</category>
     <subcat>Commands</subcat>
-    <version>4.6.5.0 CP<extversion>4.9.1.0 GWE</extversion></version>
+    <versions><version>4.6.5.0 CP</version><extversion>4.9.1.0 GWE</extversion></versions>
     <syntax>
       <rtype>bool</rtype>
       <params>
@@ -23,38 +23,38 @@
         <param>
           <type>object</type>
           <name>pTarget</name>
-          <optional />
           <desc>Zielobjekt für Aktion</desc>
+          <optional />
         </param>
         <param>
           <type>int</type>
           <name>iX</name>
-          <optional />
           <desc>X-Zielkoordinate</desc>
+          <optional />
         </param>
         <param>
           <type>int</type>
           <name>iY</name>
-          <optional />
           <desc>Y-Zielkoordinate</desc>
+          <optional />
         </param>
         <param>
           <type>object</type>
           <name>pTarget2</name>
-          <optional />
           <desc>zweites Zielobjekt</desc>
+          <optional />
         </param>
         <param>
           <type>any</type>
           <name>Data</name>
-          <optional />
           <desc>zusätzliche Daten zur Aktion</desc>
+          <optional />
         </param>
         <param>
           <type>int</type>
           <name>iRetries</name>
-          <optional />
           <desc>Anzahl der Wiederholungen (wenn das Kommando fehlschlägt), bis das Kommando abgebrochen wird.</desc>
+          <optional />
         </param>
       </params>
     </syntax>
@@ -137,5 +137,5 @@ daran scheitert, den Weg zum Feind zu finden) es 10 Mal zu versuchen, bis er sei
 	  <funclink>PlayerObjectCommand</funclink>
     </related>
   </func>
-  <author>PeterW</author><date>November 2001</date>
+  <author>PeterW</author><date>2001-11</date>
 </funcs>

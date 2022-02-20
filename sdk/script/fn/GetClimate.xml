@@ -5,7 +5,7 @@
 				<func>
 								<title>GetClimate</title>
 								<category>Umwelt</category><subcat>Wetter</subcat>
-								<version>4.6.5.0 CP</version>
+								<versions><version>4.6.5.0 CP</version></versions>
 								<syntax>
 												<rtype>int</rtype>
 								</syntax>
@@ -17,6 +17,6 @@
 												<funclink>SetClimate</funclink>
 								</related>
 				</func>
-				<author>Cucaracha</author><date>Mai 2002</date>
+				<author>Cucaracha</author><date>2002-05</date>
 </funcs>
 

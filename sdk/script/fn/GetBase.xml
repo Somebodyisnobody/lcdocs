@@ -5,7 +5,7 @@
         <func>
                 <title>GetBase</title>
                 <category>Spieler</category>
-                <version>4.6.5.0 CP</version>
+                <versions><version>4.6.5.0 CP</version></versions>
                 <syntax>
                         <rtype>int</rtype>
                         <params>
@@ -17,6 +17,6 @@
                         <funclink>FindBase</funclink>
                 </related>
         </func>
-        <author>jwk</author><date>Juni 2002</date>
+        <author>jwk</author><date>2002-06</date>
 </funcs>
 

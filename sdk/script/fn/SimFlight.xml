@@ -5,14 +5,14 @@
 	<func>
 		<title>SimFlight</title>
 		<category>Objekte</category><subcat>Bewegung</subcat>
-		<version>4.9.5.0 CE</version>
+		<versions><version>4.9.5.0 CE</version></versions>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>
-				<param><type>int &amp;</type><name>iX</name><desc>X-Koordinate der Startposition. Immer global.</desc></param>
-				<param><type>int &amp;</type><name>iY</name><desc>Y-Koordinate der Startposition. Immer global.</desc></param>
-				<param><type>int &amp;</type><name>iXDir</name><desc>X-Anfangsgeschwindigkeit.</desc></param>
-				<param><type>int &amp;</type><name>iYDir</name><desc>Y-Anfangsgeschwindigkeit.</desc></param>
+				<param><type>int</type><name>iX</name><desc>X-Koordinate der Startposition. Immer global.</desc><isReference /></param>
+				<param><type>int</type><name>iY</name><desc>Y-Koordinate der Startposition. Immer global.</desc><isReference /></param>
+				<param><type>int</type><name>iXDir</name><desc>X-Anfangsgeschwindigkeit.</desc><isReference /></param>
+				<param><type>int</type><name>iYDir</name><desc>Y-Anfangsgeschwindigkeit.</desc><isReference /></param>
 				<param><type>int</type><name>iMinDensity</name><desc>Minimale Dichte des Materials nach dem auf der Wurfbahn gesucht wird. Keine Angabe oder Null entspricht 50 (festes Material).</desc><optional/></param>
 				<param><type>int</type><name>iMaxDensity</name><desc>Maximale Dichte des Materials nach dem auf der Wurfbahn gesucht wird. Keine Angabe oder Null entspricht 100 (Vehicle).</desc><optional/></param>
 				<param><type>int</type><name>iIteration</name><desc>Anzahl der simulierten Frames bis zum Abbruch der Simulation. Keine Angabe oder Null entspricht -1 (Kein Abbruch).</desc><optional/></param>
@@ -31,5 +31,5 @@ if (<funclink>GetAction</funclink>()eq"Jump")
 			</example>
 		</examples>
 	</func>
-	<author>Newton</author><date>März 2004</date>
+	<author>Newton</author><date>2004-03</date>
 </funcs>

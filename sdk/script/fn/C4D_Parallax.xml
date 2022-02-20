@@ -5,9 +5,9 @@
 	<func>
 		<title>C4D_Parallax</title>
 		<category>Objekte</category><subcat>Kategorie</subcat>
-		<version>4.9.1.0 GWE</version>
+		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>int </rtype>
+			<rtype>int</rtype>
 		</syntax>
 		<desc>
 			Objektkategorie: Bewegt sich parallax zum Rest der Landschaft. Das bedeutet, dass sich die scheinbare Objektposition je nach Scrollposition des Viewports ändert. Damit können beispielsweise Objekte scheinbar in den Hintergrund geschoben, oder Statusanzeigen realisiert werden.<br />
@@ -31,5 +31,5 @@ Um Objekte direkt am Sichtfenster des Spielers zu positionieren, um so zum Beisp
 			<funclink>SetSkyParallax</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>Juni 2003</date>
+	<author>Sven2</author><date>2003-06</date>
 </funcs>

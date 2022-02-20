@@ -5,7 +5,7 @@
   <func>
     <title>Sqrt</title>
     <category>Arithmetik</category>
-    <version>4.6.5.0 CP</version>
+    <versions><version>4.6.5.0 CP</version></versions>
     <syntax>
       <rtype>int</rtype>
       <params>
@@ -31,5 +31,5 @@
       <funclink>ObjectDistance</funclink>
     </related>
   </func>
-  <author>Sven2</author><date>November 2001</date>
+  <author>Sven2</author><date>2001-11</date>
 </funcs>

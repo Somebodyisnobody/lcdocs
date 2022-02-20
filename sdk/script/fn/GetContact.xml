@@ -5,7 +5,7 @@
 	<func>
 		<title>GetContact</title>
 		<category>Objekte</category><subcat>Status</subcat>
-		<version>4.9.5.0 CE</version>
+		<versions><version>4.9.5.0 CE</version></versions>
 		<syntax>
 			<rtype>int</rtype>
 			<params>
@@ -33,5 +33,5 @@
 			<emlink href="definition/cnat.html">Contact Attachment</emlink>
 		</related>
 	</func>
-	<author>Sven2</author><date>Januar 2005</date>
+	<author>Sven2</author><date>2005-01</date>
 </funcs>

@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:annotation>
+        <xs:documentation>
+            ClonkDoc XML Schema
+
+            This is the schema for documenting functions, constants or general information about Clonk
+
+            The schema exists of three possible root elements:
+            * doc - for general documentation
+            * funcs - semantically for functions
+            * consts - semantically for constants
+
+            Namespace =
+
+            Changes:
+            2022-02 by Funni: Initial release of the schema file based on the more loose DTD.
+        </xs:documentation>
+    </xs:annotation>
+
+    <!-- Root elements -->
+
+    <!-- Used for documentation -->
+    <xs:element name="doc">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="title">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="5"/>
+                            <xs:maxLength value="70"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:sequence maxOccurs="unbounded">
+                    <xs:element name="h" type="htmlMixedContainsStandardTextFormatElements"/>
+                    <xs:group ref="docPart" maxOccurs="unbounded"/>
+                    <xs:group ref="authorAndDate" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- Used for functions -->
+    <xs:element name="funcs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="func">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!-- Title must have the function name without whitespaces or "()" -->
+                            <xs:element name="title" type="functionName"/>
+                            <xs:element name="category" type="functionCategory"/>
+                            <xs:element minOccurs="0" maxOccurs="unbounded" name="subcat" type="functionSubCategory"/>
+                            <xs:element name="versions" type="entityVersions"/>
+                            <!-- For later use: Enter Clonk version since deprecated here (e.g. 1.2.3.4 [999] LC); nullable -->
+                            <xs:element minOccurs="0" name="deprecated" type="clonkVersionOrEmpty"/>
+                            <xs:element name="syntax">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <!-- The returned data type for this function -->
+                                        <xs:element name="rtype">
+                                            <xs:simpleType>
+                                                <xs:union memberTypes="functionParamDataTypes">
+                                                    <xs:simpleType>
+                                                        <xs:restriction base="xs:string">
+                                                            <xs:enumeration value="void"/>
+                                                        </xs:restriction>
+                                                    </xs:simpleType>
+                                                </xs:union>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <!-- Marks the return value as reference -->
+                                        <xs:element minOccurs="0" name="isReference">
+                                            <xs:complexType/>
+                                        </xs:element>
+                                        <!-- Contains at least one <param> -->
+                                        <xs:element minOccurs="0" name="params">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <!--
+                                                    Contains <type>, <name>, <desc>, <isReference /> and <optional />
+                                                    <isReference /> is used when the argument requires a reference
+                                                    <optional /> is used when the argument is optional.
+                                                    -->
+                                                    <xs:element maxOccurs="unbounded" name="param">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <!-- The input data type -->
+                                                                <xs:element name="type" type="functionParamDataTypes"/>
+                                                                <!-- The name of the argument -->
+                                                                <xs:element name="name">
+                                                                    <xs:simpleType>
+                                                                        <xs:restriction base="xs:token">
+                                                                            <xs:pattern value="(\w|\.|_)+"/>
+                                                                        </xs:restriction>
+                                                                    </xs:simpleType>
+                                                                </xs:element>
+                                                                <!-- A description for better understanding -->
+                                                                <xs:element name="desc" type="htmlText"/>
+                                                                <!-- Marks the argument as reference -->
+                                                                <xs:element minOccurs="0" name="isReference">
+                                                                    <xs:complexType/>
+                                                                </xs:element>
+                                                                <!-- Marks the argument as optional -->
+                                                                <xs:element minOccurs="0" name="optional">
+                                                                    <xs:complexType/>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="desc" type="htmlText"/>
+                            <xs:element minOccurs="0" maxOccurs="unbounded" name="remark" type="htmlText"/>
+                            <xs:element minOccurs="0" name="examples">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element maxOccurs="unbounded" name="example">
+                                            <xs:complexType>
+                                                <xs:choice maxOccurs="unbounded">
+                                                    <xs:element name="code" type="code"/>
+                                                    <xs:element name="text" type="htmlText"/>
+                                                </xs:choice>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="related">
+                                <xs:complexType>
+                                    <xs:group ref="htmlDocsLinks" maxOccurs="unbounded"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:group ref="authorAndDate" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Object models -->
+    <xs:group name="docPart">
+        <xs:choice>
+            <xs:element name="part">
+                <xs:complexType>
+                    <xs:group ref="docPart" maxOccurs="unbounded"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="h" type="htmlMixedContainsStandardTextFormatElements"/>
+            <xs:element name="text" type="htmlText"/>
+            <xs:element name="code" type="code"/>
+            <xs:element name="dl">
+                <xs:complexType mixed="true">
+                    <xs:sequence maxOccurs="unbounded">
+                        <xs:element name="dt" maxOccurs="5">
+                            <xs:complexType mixed="true">
+                                <xs:group ref="htmlInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+                                <xs:attribute name="id" type="xs:ID"/>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="dd" maxOccurs="unbounded">
+                            <xs:complexType mixed="true">
+                                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                                    <xs:element name="text" type="htmlText"/>
+                                    <xs:element name="code" type="code"/>
+                                </xs:choice>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="img" type="img"/>
+        </xs:choice>
+    </xs:group>
+    <xs:simpleType name="functionName">
+        <xs:restriction base="xs:token">
+            <xs:pattern value="(_|\w)(\w|_|\d)+"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="functionCategory">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Arithmetik"/>
+            <xs:enumeration value="Callbacks"/>
+            <xs:enumeration value="Effekte"/>
+            <xs:enumeration value="Entwickler"/>
+            <xs:enumeration value="Get*Val"/>
+            <xs:enumeration value="Global"/>
+            <xs:enumeration value="Himmel"/>
+            <xs:enumeration value="Interface"/>
+            <xs:enumeration value="Landschaft"/>
+            <xs:enumeration value="Musik"/>
+            <xs:enumeration value="Nachrichten"/>
+            <xs:enumeration value="Objekte"/>
+            <xs:enumeration value="Partikel"/>
+            <xs:enumeration value="Script"/>
+            <xs:enumeration value="Spieler"/>
+            <xs:enumeration value="System"/>
+            <xs:enumeration value="Teams"/>
+            <xs:enumeration value="Umwelt"/>
+            <xs:enumeration value="Variablen"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="functionSubCategory">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Objekte"/>
+            <xs:enumeration value="Material"/>
+            <xs:enumeration value="Aktivität"/>
+            <xs:enumeration value="Bewegung"/>
+            <xs:enumeration value="Commands"/>
+            <xs:enumeration value="Darstellung"/>
+            <xs:enumeration value="Erzeugung"/>
+            <xs:enumeration value="Existenz"/>
+            <xs:enumeration value="Inhalt"/>
+            <xs:enumeration value="Kategorie"/>
+            <xs:enumeration value="Komponenten"/>
+            <xs:enumeration value="Lebewesen"/>
+            <xs:enumeration value="Mannschaft"/>
+            <xs:enumeration value="Menü"/>
+            <xs:enumeration value="OCF"/>
+            <xs:enumeration value="Position"/>
+            <xs:enumeration value="Sichtbarkeit"/>
+            <xs:enumeration value="Status"/>
+            <xs:enumeration value="Suche"/>
+            <xs:enumeration value="Vertices"/>
+            <xs:enumeration value="Funktionsaufruf"/>
+            <xs:enumeration value="Strings"/>
+            <xs:enumeration value="Sicht"/>
+            <xs:enumeration value="Effekte"/>
+            <xs:enumeration value="Wetter"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="entityVersions">
+        <xs:sequence>
+            <!-- Version where the subject was introduced -->
+            <xs:element name="version" type="clonkVersion"/>
+            <!-- Version where the subject was changed or extended -->
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="extversion" type="clonkVersion"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="clonkVersion">
+        <xs:restriction base="xs:token">
+            <xs:pattern value="\d{1,2}\.\d{1,2}\.\d{1,2}\.\d{1,2}\s(\[\d{3}\]\s)?(CP|GWE|CE|CR|LC)"/>
+            <!-- TODO: remove before merging -->
+            <xs:pattern value="N/A"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="clonkVersionOrEmpty">
+        <!-- union needed to allow empty values -->
+        <xs:union memberTypes="clonkVersion">
+            <xs:simpleType>
+                <xs:restriction base='xs:string'>
+                    <xs:length value="0"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:union>
+    </xs:simpleType>
+    <xs:simpleType name="functionParamDataTypes">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="bool"/>
+            <xs:enumeration value="int"/>
+            <xs:enumeration value="void"/>
+            <xs:enumeration value="any"/>
+            <xs:enumeration value="array"/>
+            <xs:enumeration value="object"/>
+            <xs:enumeration value="map"/>
+            <xs:enumeration value="string"/>
+            <xs:enumeration value="id"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:group name="htmlDocsLinks">
+        <xs:choice>
+            <xs:element name="funclink" type="functionName"/>
+            <xs:element name="emlink">
+                <xs:complexType mixed="true">
+                    <xs:attribute name="href" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:choice>
+    </xs:group>
+    <xs:group name="authorAndDate">
+        <xs:sequence>
+            <xs:element name="author" type="xs:string"/>
+            <xs:element name="date">
+                <xs:simpleType>
+                    <xs:restriction base="xs:token">
+                        <!-- YYYY-MM-DD -->
+                        <xs:pattern value="20[0-9][0-9]-(0[1-9]|1[0-2])(-([12]\d|0[1-9]|3[01]))?"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+
+    <!-- HTML stuff -->
+    <xs:complexType name="htmlMixedContainsStandardTextFormatElements" mixed="true">
+        <xs:group ref="htmlStandardTextFormatElements" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:attribute name="id" type="xs:ID"/>
+    </xs:complexType>
+    <xs:group name="htmlStandardTextFormatElements">
+        <xs:choice>
+            <xs:element name="b">
+                <xs:complexType mixed="true">
+                    <xs:group minOccurs="0" maxOccurs="unbounded" ref="htmlInlineElements"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="i">
+                <xs:complexType mixed="true">
+                    <xs:group minOccurs="0" maxOccurs="unbounded" ref="htmlInlineElements"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="s">
+                <xs:complexType mixed="true">
+                    <xs:group minOccurs="0" maxOccurs="unbounded" ref="htmlInlineElements"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="u">
+                <xs:complexType mixed="true">
+                    <xs:group minOccurs="0" maxOccurs="unbounded" ref="htmlInlineElements"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="tt">
+                <xs:complexType mixed="true">
+                    <xs:group minOccurs="0" maxOccurs="unbounded" ref="htmlInlineElements"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="small">
+                <xs:complexType mixed="true">
+                    <xs:group minOccurs="0" maxOccurs="unbounded" ref="htmlInlineElements"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="abbr">
+                <xs:complexType mixed="true">
+                    <xs:group minOccurs="0" maxOccurs="unbounded" ref="htmlInlineElements"/>
+                    <xs:attribute name="title" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="cite">
+                <xs:complexType mixed="true">
+                    <xs:group minOccurs="0" maxOccurs="unbounded" ref="htmlInlineElements"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="dfn">
+                <xs:complexType mixed="true">
+                    <xs:group minOccurs="0" maxOccurs="unbounded" ref="htmlInlineElements"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="em">
+                <xs:complexType mixed="true">
+                    <xs:group minOccurs="0" maxOccurs="unbounded" ref="htmlInlineElements"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="kbd">
+                <xs:complexType mixed="true">
+                    <xs:group minOccurs="0" maxOccurs="unbounded" ref="htmlInlineElements"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="strong">
+                <xs:complexType mixed="true">
+                    <xs:group minOccurs="0" maxOccurs="unbounded" ref="htmlInlineElements"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="samp">
+                <xs:complexType mixed="true">
+                    <xs:group minOccurs="0" maxOccurs="unbounded" ref="htmlInlineElements"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="var">
+                <xs:complexType mixed="true">
+                    <xs:group minOccurs="0" maxOccurs="unbounded" ref="htmlInlineElements"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:choice>
+    </xs:group>
+    <xs:complexType name="htmlMixedContainsInline" mixed="true">
+        <xs:group ref="htmlInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:attribute name="id" type="xs:ID"/>
+    </xs:complexType>
+    <xs:group name="htmlInlineElements">
+        <xs:choice>
+            <xs:group ref="htmlDocsLinks"/>
+            <xs:group ref="htmlStandardTextFormatElements"/>
+            <xs:element name="a">
+                <xs:complexType mixed="true">
+                    <xs:group minOccurs="0" maxOccurs="unbounded" ref="htmlInlineElements"/>
+                    <xs:attribute name="href" use="required" type="xs:anyURI"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="br">
+                <xs:complexType/>
+            </xs:element>
+            <xs:element name="wbr">
+                <xs:complexType/>
+            </xs:element>
+            <xs:element name="hr">
+                <xs:complexType/>
+            </xs:element>
+            <xs:element name="img" type="img"/>
+            <xs:element name="map">
+                <xs:complexType mixed="true">
+                    <xs:sequence>
+                        <xs:element name="area">
+                            <xs:complexType>
+                                <xs:attribute name="shape" type="xs:string" use="required"/>
+                                <xs:attribute name="coords" type="xs:string" use="required"/>
+                                <xs:attribute name="alt" type="xs:string" use="required"/>
+                                <xs:attribute name="href" type="xs:string" use="required"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="name" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="q">
+                <xs:complexType mixed="true">
+                    <xs:group minOccurs="0" maxOccurs="unbounded" ref="htmlInlineElements"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="span">
+                <xs:complexType mixed="true">
+                    <xs:group minOccurs="0" maxOccurs="unbounded" ref="htmlInlineElements"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="sub">
+                <xs:complexType mixed="true">
+                    <xs:group minOccurs="0" maxOccurs="unbounded" ref="htmlInlineElements"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="sup">
+                <xs:complexType mixed="true">
+                    <xs:group minOccurs="0" maxOccurs="unbounded" ref="htmlInlineElements"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="code" type="code"/>
+        </xs:choice>
+    </xs:group>
+    <xs:complexType name="img">
+        <xs:attribute name="src" use="required"/>
+        <xs:attribute name="width" default="0"/>
+        <xs:attribute name="height" default="0"/>
+        <xs:attribute name="id" type="xs:ID"/>
+        <xs:attribute name="usemap" type="xs:string"/>
+    </xs:complexType>
+    <xs:complexType name="code" mixed="true">
+        <xs:group ref="htmlInlineElements" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:complexType>
+    <xs:complexType name="htmlText" mixed="true">
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="ul">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="li" type="htmlMixedContainsInline" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="table">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="caption" minOccurs="0">
+                            <xs:complexType mixed="true">
+                                <xs:attribute name="id" type="xs:ID"/>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="rowh" minOccurs="0">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element maxOccurs="unbounded" name="col" type="col"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="row" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element maxOccurs="unbounded" name="col" type="col"/>
+                                </xs:sequence>
+                                <xs:attribute name="id" type="xs:ID"/>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="bitmask" minOccurs="0" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:group ref="htmlInlineElements"/>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="col" mixed="true">
+        <xs:group minOccurs="0" maxOccurs="unbounded" ref="htmlInlineElements"/>
+        <xs:attribute name="colspan" type="xs:positiveInteger"/>
+    </xs:complexType>
+</xs:schema>

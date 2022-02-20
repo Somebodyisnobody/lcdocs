@@ -4,9 +4,9 @@
 <funcs>
 	<func>
 		<title>ObjectCall</title>
-		<deprecated />
 		<category>Script</category><subcat>Funktionsaufruf</subcat>
-		<version>4.6.5.0 CP</version>
+		<versions><version>4.6.5.0 CP</version></versions>
+		<deprecated />
 		<syntax>
 			<rtype>any</rtype>
 			<params>
@@ -24,5 +24,5 @@
 			<funclink>eval</funclink>
 		</related>
 	</func>
-	<author>jwk</author><date>April 2002</date>
+	<author>jwk</author><date>2002-04</date>
 </funcs>

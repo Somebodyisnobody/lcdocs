@@ -5,7 +5,7 @@
         <func>
                 <title>GetTemperature</title>
                 <category>Umwelt</category><subcat>Wetter</subcat>
-                <version>4.6.5.0 CP</version>
+                <versions><version>4.6.5.0 CP</version></versions>
                 <syntax>
                         <rtype>int</rtype>
                 </syntax>
@@ -15,6 +15,6 @@
       <funclink>GetWind</funclink>
                 </related>
         </func>
-        <author>jwk</author><date>Juni 2002</date>
+        <author>jwk</author><date>2002-06</date>
 </funcs>
 

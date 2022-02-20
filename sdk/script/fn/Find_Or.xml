@@ -5,12 +5,12 @@
 	<func>
 		<title>Find_Or</title>
 		<category>Objekte</category><subcat>Suche</subcat>
-		<version>4.9.6.0 CR</version>
+		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
 			<rtype>array</rtype>
 			<params>
 				<param><type>array</type><name>Criteria</name><desc>Suchkriterium in Form einer Find_*-Funktion</desc></param>
-				<param><type></type><name>...</name><desc>Weitere Suchkriterium in Form einer Find_*-Funktion</desc><optional /></param>
+				<param><type>any</type><name>...</name><desc>Weitere Suchkriterium in Form einer Find_*-Funktion</desc><optional /></param>
 			</params>
 		</syntax>
 		<desc>Suchkriterium: sucht alle Objekte, auf die mindestens eines der angegebenen Suchkriterien zutrifft.</desc>
@@ -19,5 +19,5 @@
 			<funclink>FindObjects</funclink>
 		</related>
 	</func>
-	<author>Clonkonaut</author><date>Juli 2006</date>
+	<author>Clonkonaut</author><date>2006-07</date>
 </funcs>

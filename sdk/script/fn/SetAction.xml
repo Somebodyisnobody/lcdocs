@@ -5,7 +5,7 @@
 	<func>
 		<title>SetAction</title>
 		<category>Objekte</category><subcat>Aktivität</subcat>
-		<version>4.6.5.0 CP</version>
+		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>
@@ -33,6 +33,6 @@
 			<funclink>SetDir</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>Juni 2003</date>
-	<author>Günther</author><date>Dezember 2004</date>
+	<author>Sven2</author><date>2003-06</date>
+	<author>Günther</author><date>2004-12</date>
 </funcs>

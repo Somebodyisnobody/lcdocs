@@ -5,7 +5,7 @@
 	<func>
 		<title>GetObjectStatus</title>
 		<category>Objekte</category><subcat>Status</subcat>
-		<version>4.9.7.0 CR</version>
+		<versions><version>4.9.7.0 CR</version></versions>
 		<syntax>
 			<rtype>int</rtype>
 			<params>
@@ -18,5 +18,5 @@
 			<funclink>SetObjectStatus</funclink>
 		 </related>
 	</func>
-	<author>Fulgen</author><date>Juli 2016</date>
+	<author>Fulgen</author><date>2016-07</date>
 </funcs>

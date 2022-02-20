@@ -6,7 +6,7 @@
     <title>FinishCommand</title>
     <category>Objekte</category>
     <subcat>Commands</subcat>
-    <version>4.9.5.0 CE</version>
+    <versions><version>4.9.5.0 CE</version></versions>
     <syntax>
       <rtype>bool</rtype>
       <params>
@@ -23,8 +23,8 @@
         <param>
           <type>int</type>
           <name>iCommandNum</name>
-          <optional />
           <desc>Index des Kommandos. 0 für das aktuelle, 1 für das als nächstes auszuführende usw.</desc>
+          <optional />
         </param>
       </params>
     </syntax>
@@ -63,5 +63,5 @@ verwendet werden.
 	  <funclink>PlayerObjectCommand</funclink>
     </related>
   </func>
-  <author>Günther</author><date>April 2004</date>
+  <author>Günther</author><date>2004-04</date>
 </funcs>

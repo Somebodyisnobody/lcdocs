@@ -58,5 +58,5 @@ while (obj = <funclink>FindObject</funclink>(0, -100,-100,200,200, <funclink>OCF
 <funclink>OCF_Rotate</funclink>
 </text>
 
-<author>Sven2</author><date>Mai 2002</date>
+<author>Sven2</author><date>2002-05</date>
 </doc>

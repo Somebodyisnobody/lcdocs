@@ -5,7 +5,7 @@
 	<func>
 		<title>Buy</title>
 		<category>Objekte</category><subcat>Erzeugung</subcat>
-		<version>4.9.1.0 GWE</version>
+		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
 			<rtype>object</rtype>
 			<params>
@@ -30,5 +30,5 @@
 			<funclink>FindBase</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>November 2001</date>
+	<author>Sven2</author><date>2001-11</date>
 </funcs>

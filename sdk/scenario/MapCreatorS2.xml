@@ -180,6 +180,6 @@
 	<text>Mehrere Ebenen können mit Operatoren verbunden werden. Diese werden von oben nach unten ausgewertet, und es wird nur das unterste Glied der Operatorkette ggf gezeichnet. Bei einer Gruppe (grp) werden zusätzlich die untergeordneten Ebenen in die Auswertung mit einbezogen und nicht gezeichnet. Definierte Operatoren sind | (oder), &amp; (und) und ^ (exklusiv oder).</text>
 </part>
 
-<author>Sven2</author><date>Juli 2001</date>
+<author>Sven2</author><date>2001-07</date>
 
 </doc>

@@ -5,9 +5,9 @@
 	<func>
 		<title>GetPlrMagic</title>
 		<category>Spieler</category>
-		<version>4.6.5.0 CP</version>
+		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>bool / id</rtype>
+			<rtype>any</rtype>
 			<params>
 				<param><type>int</type><name>iPlr</name><desc>Spieler, dessen Magiewissen abgefragt wird.</desc></param>
 				<param><type>id</type><name>id</name><desc>Bei angegebenen id gibt die Funktion TRUE zurück, wenn der iPlr betreffenden Zauber zur Verfügung hat. iIndex wird hierbei ignoriert.</desc></param>
@@ -32,5 +32,5 @@ spell = GetPlrMagic(0,0,4);
 			</example>
 		</examples>
 	</func>
-	<author>jwk</author><date>Juni 2002</date>
+	<author>jwk</author><date>2002-06</date>
 </funcs>

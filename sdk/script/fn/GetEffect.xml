@@ -5,7 +5,7 @@
   <func>
     <title>GetEffect</title>
     <category>Effekte</category>
-    <version>4.9.5.0 CE</version>
+    <versions><version>4.9.5.0 CE</version></versions>
     <syntax>
       <rtype>any</rtype>
       <params>
@@ -30,14 +30,14 @@
         <param>
           <type>int</type>
           <name>iQueryVal</name>
-          <optional />
           <desc>Index des Wertes, der abgefragt werden soll. Siehe Anmerkung.</desc>
+          <optional />
         </param>
         <param>
           <type>int</type>
           <name>iMaxPriority</name>
-          <optional />
           <desc>Wenn ungleich 0, werden nur Effekte zurückgegeben, die höchstens die angegebene Priorität haben.</desc>
+          <optional />
         </param>
       </params>
     </syntax>
@@ -89,5 +89,5 @@ i = <funclink>GetEffectCount</funclink>();
       <funclink>RemoveEffect</funclink>
     </related>
   </func>
-  <author>Sven2</author><date>März 2004</date>
+  <author>Sven2</author><date>2004-03</date>
 </funcs>

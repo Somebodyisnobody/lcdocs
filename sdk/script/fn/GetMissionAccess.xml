@@ -5,7 +5,7 @@
 	<func>
 		<title>GetMissionAccess</title>
 		<category>System</category>
-		<version>4.9.1.0 GWE</version>
+		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>
@@ -28,6 +28,6 @@
 			<funclink>GainMissionAccess</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>November 2001</date>
-	<author>matthes</author><date>Februar 2005</date>
+	<author>Sven2</author><date>2001-11</date>
+	<author>matthes</author><date>2005-02</date>
 </funcs>

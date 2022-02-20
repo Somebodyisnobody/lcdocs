@@ -6,7 +6,7 @@
 		<title>GetController</title>
 		<category>Objekte</category>
 		<subcat>Mannschaft</subcat>
-		<version>4.6.5.0 CP</version>
+		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
 			<rtype>int</rtype>
 			<params>
@@ -27,5 +27,5 @@
 			<funclink>GetOwner</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>Mai 2002</date>
+	<author>Sven2</author><date>2002-05</date>
 </funcs>

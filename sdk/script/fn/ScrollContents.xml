@@ -6,7 +6,7 @@
     <title>ScrollContents</title>
     <category>Objekte</category>
     <subcat>Inhalt</subcat>
-    <version>4.9.1.0 GWE</version>
+    <versions><version>4.9.1.0 GWE</version></versions>
     <syntax>
       <rtype>object</rtype>
       <params>
@@ -19,5 +19,5 @@
       <funclink>ShiftContents</funclink>
     </related>
   </func>
-  <author>PeterW</author><date>Februar 2003</date>
+  <author>PeterW</author><date>2003-02</date>
 </funcs>

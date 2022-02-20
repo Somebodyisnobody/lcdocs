@@ -5,7 +5,7 @@
 	<func>
 		<title>Split2Components</title>
 		<category>Objekte</category><subcat>Existenz</subcat>
-		<version>4.6.5.0 CP</version>
+		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>
@@ -31,5 +31,5 @@
 			<funclink>GetComponent</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>August 2002</date>
+	<author>Sven2</author><date>2002-08</date>
 </funcs>

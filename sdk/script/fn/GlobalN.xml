@@ -5,9 +5,10 @@
         <func>
                 <title>GlobalN</title>
                 <category>Variablen</category>
-                <version>4.9.1.0 GWE</version>
+                <versions><version>4.9.1.0 GWE</version></versions>
                 <syntax>
-                        <rtype>&amp;</rtype>
+                        <rtype>string</rtype>
+                        <isReference />
                         <params>
                                 <param><type>string</type><name>szText</name><desc>Name einer globalen Variable.</desc></param>
                         </params>
@@ -17,6 +18,6 @@
                         <funclink>Global</funclink>
                 </related>
         </func>
-        <author>Cucaracha</author><date>Mai 2002</date>
+        <author>Cucaracha</author><date>2002-05</date>
 </funcs>
 

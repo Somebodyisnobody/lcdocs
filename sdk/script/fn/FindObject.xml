@@ -5,7 +5,7 @@
 	<func>
 		<title>FindObject</title>
 		<category>Objekte</category><subcat>Suche</subcat>
-		<version>4.6.5.0 CP<extversion>4.9.1.0 GWE</extversion></version>
+		<versions><version>4.6.5.0 CP</version><extversion>4.9.1.0 GWE</extversion></versions>
 		<deprecated />
 		<syntax>
 			<rtype>object</rtype>
@@ -57,6 +57,6 @@ if (FindObject(0, <funclink>LandscapeWidth</funclink>()-100, 0, 100,<funclink>La
 			<funclink>FindObjectOwner</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>November 2001</date>
-	<author>matthes</author><date>Juni 2004</date>
+	<author>Sven2</author><date>2001-11</date>
+	<author>matthes</author><date>2004-06</date>
 </funcs>

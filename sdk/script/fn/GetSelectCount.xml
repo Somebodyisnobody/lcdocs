@@ -5,7 +5,7 @@
         <func>
                 <title>GetSelectCount</title>
                 <category>Spieler</category>
-                <version>4.6.5.0 CP</version>
+                <versions><version>4.6.5.0 CP</version></versions>
                 <syntax>
                         <rtype>int</rtype>
                         <params>
@@ -17,6 +17,6 @@
                         <funclink>SelectCrew</funclink>
                 </related>
         </func>
-        <author>Cucaracha</author><date>Mai 2002</date>
+        <author>Cucaracha</author><date>2002-05</date>
 </funcs>
 

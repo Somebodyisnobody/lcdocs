@@ -5,7 +5,7 @@
  <func>
   <title>Pow</title>
   <category>Arithmetik</category>
-  <version>4.9.1.0 GWE</version>
+  <versions><version>4.9.1.0 GWE</version></versions>
   <deprecated />
   <syntax>
    <rtype>int</rtype>
@@ -33,5 +33,5 @@
    <funclink>Div</funclink>
   </related>
  </func>
- <author>PeterW</author><date>Januar 2002</date>
+ <author>PeterW</author><date>2002-01</date>
 </funcs>

@@ -5,9 +5,9 @@
 	<func>
 		<title>C4D_Vehicle</title>
 		<category>Objekte</category><subcat>Kategorie</subcat>
-		<version>4.6.5.0 CP</version>
+		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>int </rtype>
+			<rtype>int</rtype>
 		</syntax>
 		<desc>Objektkategorie: Fahrzeug.</desc>
 		<remark>Dieser Wert ist als Engine-Konstante definiert. Die Funktionsklammern können daher optional weggelassen werden.</remark>
@@ -22,5 +22,5 @@
 			<funclink>SetCategory</funclink>
 		</related>
 	</func>
-	<author>jwk</author><date>April 2002</date>
+	<author>jwk</author><date>2002-04</date>
 </funcs>

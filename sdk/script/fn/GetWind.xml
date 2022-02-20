@@ -5,7 +5,7 @@
         <func>
                 <title>GetWind</title>
                 <category>Umwelt</category><subcat>Wetter</subcat>
-                <version>4.6.5.0 CP<extversion>4.9.5.0 CE</extversion></version>
+                <versions><version>4.6.5.0 CP</version><extversion>4.9.5.0 CE</extversion></versions>
                 <syntax>
                         <rtype>int</rtype>
                         <params>
@@ -19,6 +19,6 @@
                         <funclink>SetWind</funclink>
                 </related>
         </func>
-        <author>Cucaracha</author><date>Mai 2002</date>
+        <author>Cucaracha</author><date>2002-05</date>
 </funcs>
 

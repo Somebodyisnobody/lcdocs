@@ -5,7 +5,7 @@
   <func>
     <title>GetMenu</title>
     <category>Objekte</category><subcat>Menü</subcat>
-    <version>4.9.1.0 GWE</version>
+    <versions><version>4.9.1.0 GWE</version></versions>
     <syntax>
       <rtype>id</rtype>
       <params>
@@ -36,5 +36,5 @@ protected func ControlSpecial()
 			<funclink>SetMenuTextProgress</funclink>
     </related>
   </func>
-  <author>wipfmetz</author><date>August 2002</date>
+  <author>wipfmetz</author><date>2002-08</date>
 </funcs>

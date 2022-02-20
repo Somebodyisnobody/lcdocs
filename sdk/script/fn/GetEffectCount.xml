@@ -5,7 +5,7 @@
   <func>
     <title>GetEffectCount</title>
     <category>Effekte</category>
-    <version>4.9.5.0 CE</version>
+    <versions><version>4.9.5.0 CE</version></versions>
     <syntax>
       <rtype>int</rtype>
       <params>
@@ -45,5 +45,5 @@
       <funclink>RemoveEffect</funclink>
     </related>
   </func>
-  <author>Sven2</author><date>März 2004</date>
+  <author>Sven2</author><date>2004-03</date>
 </funcs>

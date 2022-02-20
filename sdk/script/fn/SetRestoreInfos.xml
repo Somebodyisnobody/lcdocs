@@ -5,7 +5,7 @@
 	<func>
 		<title>SetRestoreInfos</title>
 		<category>System</category>
-		<version>4.9.10.10 [341] LC</version>
+		<versions><version>4.9.10.10 [341] LC</version></versions>
 		<syntax>
 			<rtype>void</rtype>
 			<params>
@@ -27,5 +27,5 @@
 			Im Spiel nachträglich gemachte Änderungen werden nicht beachtet.
 		</desc>
 	</func>
-	<author>Der Tod</author><date>September 2020</date>
+	<author>Der Tod</author><date>2020-09</date>
 </funcs>

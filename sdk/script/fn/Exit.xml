@@ -5,7 +5,7 @@
 	<func>
 		<title>Exit</title>
 		<category>Objekte</category><subcat>Position</subcat>
-		<version>4.6.5.0 CP</version>
+		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>
@@ -29,6 +29,6 @@
 			<funclink>Enter</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>November 2001</date>
-	<author>matthes</author><date>October 2004</date>
+	<author>Sven2</author><date>2001-11</date>
+	<author>matthes</author><date>2004-10</date>
 </funcs>

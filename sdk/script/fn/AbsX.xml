@@ -6,7 +6,7 @@
   <title>AbsX</title>
   <category>Objekte</category>
   <subcat>Position</subcat>
-  <version>4.9.1.0 GWE</version>
+  <versions><version>4.9.1.0 GWE</version></versions>
   <syntax>
    <rtype>int</rtype>
    <params>
@@ -29,5 +29,5 @@
    <funclink>CreateObject</funclink>
   </related>
  </func>
- <author>flgr</author><date>Januar 2002</date>
+ <author>flgr</author><date>2002-01</date>
 </funcs>

@@ -91,7 +91,7 @@ US:Attack of the Killer Wipfs</code>
 	<text>Diverse Systemkomponenten (Graphics, Loader, Material, Musik und Objekte) können in Szenarien überladen werden. Dabei werden auch übergeordnete Rundenordner (C4F) durchsucht. Hierbei steigt die Überladungspriorität mit der Ordnertiefe. Bei einem Szenario, das sich in die Ordnerstruktur Ordner.c4f\Unterordner.c4f\Szenario.c4s einordnet, würden Komponenten aus Unterordner.c4f also gleiche Komponenten aus Ordner.c4f überladen (respektive Szenario.c4f Komponenten aus Unterordner.c4f und Ordner.c4f).</text>
 </part>
 
-<author>Sven2</author><date>April 2002</date>
-<author>matthes</author><date>Juni 2004</date>
+<author>Sven2</author><date>2002-04</date>
+<author>matthes</author><date>2004-06</date>
 
 </doc>

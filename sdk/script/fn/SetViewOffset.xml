@@ -6,9 +6,9 @@
     <title>SetViewOffset</title>
     <category>Spieler</category>
     <subcat>Sicht</subcat>
-    <version>4.9.5.0 CE</version>
+    <versions><version>4.9.5.0 CE</version></versions>
     <syntax>
-      <rtype>BOOL</rtype>
+      <rtype>bool</rtype>
       <params>
         <param><type>int</type><name>iPlayer</name><desc>Spieler, für den der Sicht-Offset gesetzt werden soll.</desc></param>
         <param><type>int</type><name>iX</name><desc>X-Komponente des Offsets (in Pixel).</desc></param>
@@ -20,5 +20,5 @@
       <funclink>SetPlrView</funclink>
     </related>
   </func>
-  <author>PeterW</author><date>September 2004</date>
+  <author>PeterW</author><date>2004-09</date>
 </funcs>

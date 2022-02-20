@@ -6705,11 +6705,11 @@ msgstr "Search criterion in the form of a Find_* function"
 #: sdk/script/fn/Find_And.xml:13(desc)
 #: sdk/script/fn/FindObjects.xml:13(desc)
 #: sdk/script/fn/FindObject2.xml:13(desc)
-msgid "Weitere Suchkriterium in Form einer Find_*-Funktion"
+msgid "Weitere Suchkriterien in Form einer Find_*-Funktion"
 msgstr "Additional search criteria in the form of Find_* functions"
 
 #: sdk/script/fn/ObjectCount2.xml:16(desc)
-msgid "Gibt die Anzahl der Objekte zurück, die das angegebenen Suchkriterien erfüllen. Die Suchkriterien werden mittels speziellen Kriteriums-Funktionen der Form \"Find_*\" angegeben."
+msgid "Gibt die Anzahl der Objekte zurück, die die angegebenen Suchkriterien erfüllen. Die Suchkriterien werden mittels speziellen Kriteriums-Funktionen der Form \"Find_*\" angegeben."
 msgstr "Returns the number of objects fulfilling the specified search criteria. Search criteria are composed of Find_x() function values."
 
 #: sdk/script/fn/ObjectCount2.xml:17(remark)
@@ -10438,7 +10438,7 @@ msgid "Effektnummer. Effektnummern werden an Effekt-Callbackfunktionen übergebe
 msgstr "Effect number. Effect numbers are passed to effect callback functions, they are the return values of <placeholder-1/> and can be determined from an effect name via <placeholder-2/>."
 
 #: sdk/script/fn/EffectVar.xml:31(desc)
-msgid "Liefert eine Referenz auf eine effektlokale Variable. Diese kann zum Lesen und schreiben verwendet werden."
+msgid "Liefert eine Referenz auf eine Effektlokale Variable. Diese kann zum Lesen und Schreiben verwendet werden."
 msgstr "Returns a reference to an effect local variable. This reference can be used to read or write values."
 
 #: sdk/script/fn/EffectVar.xml:33(remark)
@@ -11661,7 +11661,7 @@ msgid "Priorität für den Effekt. Es werden Fx*Effect-Callbacks bei allen Effek
 msgstr "Effect priority. Calls are made to all effects of equal or higher priority. With 0, all effects are notified."
 
 #: sdk/script/fn/CheckEffect.xml:33(desc)
-msgid "Intervall, in dem Timer-Aufrufe getätigt würden. Bei 0 würden keine Timer-Aufrufe durchgeführt, und der Effekt bliebe permanent bis er durch anderwertige Aufrufe entfernt würde."
+msgid "Intervall, in dem Timer-Aufrufe getätigt würden. Bei 0 würden keine Timer-Aufrufe durchgeführt, und der Effekt bliebe permanent bis er durch anderweitige Aufrufe entfernt würde."
 msgstr "Interval for the timer calls. With 0, no timer calls are made and the effect stays on permanently until it is deleted by other calls."
 
 #: sdk/script/fn/CheckEffect.xml:39(desc)

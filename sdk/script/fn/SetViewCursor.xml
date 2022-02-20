@@ -6,7 +6,7 @@
     <title>SetViewCursor</title>
     <category>Spieler</category>
     <subcat>Sicht</subcat>
-    <version>4.9.7.0 CR</version>
+    <versions><version>4.9.7.0 CR</version></versions>
     <syntax>
       <rtype>bool</rtype>
       <params>
@@ -19,5 +19,5 @@
       <funclink>SetPlrView</funclink>
     </related>
   </func>
-  <author>Fulgen / Clonk Wiki</author><date>Juli 2016</date>
+  <author>Fulgen / Clonk Wiki</author><date>2016-07</date>
 </funcs>

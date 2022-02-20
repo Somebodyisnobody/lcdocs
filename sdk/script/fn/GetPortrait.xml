@@ -5,7 +5,7 @@
   <func>
     <title>GetPortrait</title>
     <category>Objekte</category><subcat>Darstellung</subcat>
-    <version>4.9.5.0 CE</version>
+    <versions><version>4.9.5.0 CE</version></versions>
     <syntax>
       <rtype>any</rtype>
       <params>
@@ -33,5 +33,5 @@
       <funclink>SetPortrait</funclink>
     </related>
   </func>
-  <author>Clonk-Karl</author><date>Dezember 2005</date>
+  <author>Clonk-Karl</author><date>2005-12</date>
 </funcs>

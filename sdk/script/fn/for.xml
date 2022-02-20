@@ -5,11 +5,11 @@
 	<func>
 		<title>for</title>
 		<category>Script</category>
-		<version>4.9.1.0 GWE</version>
+		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
 			<rtype>void</rtype>
 		</syntax>
 		<desc>Siehe <emlink href="script/for.html">Die For-Schleife</emlink></desc>
 	</func>
-	<author>jwk</author><date>April 2002</date>
+	<author>jwk</author><date>2002-04</date>
 </funcs>

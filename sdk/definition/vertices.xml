@@ -19,5 +19,5 @@ eine Wand gefahren ist und entsprechend reagieren kann. Bei Objekten mit SolidMa
 dass jeder Vertex mindestens einen Punkt Abstand zum festen Bereich hat, sonst bleibt das Objekt in
 der eigenen SolidMask hängen.</text>
 
-<author>Sven2</author><date>April 2002</date>
+<author>Sven2</author><date>2002-04</date>
 </doc>

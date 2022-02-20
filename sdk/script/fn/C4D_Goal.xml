@@ -5,7 +5,7 @@
   <func>
     <title>C4D_Goal</title>
     <category>Objekte</category><subcat>Kategorie</subcat>
-    <version>4.6.5.0 CP</version>
+    <versions><version>4.6.5.0 CP</version></versions>
     <syntax>
       <rtype>int</rtype>
     </syntax>
@@ -25,5 +25,5 @@ while (obj=<funclink>FindObject</funclink>(0, 0,0,0,0, 0, 0,0, 0, obj))
       <funclink>SetCategory</funclink>
     </related>
   </func>
-  <author>Sven2</author><date>Januar 2002</date>
+  <author>Sven2</author><date>2002-01</date>
 </funcs>

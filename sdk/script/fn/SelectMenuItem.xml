@@ -5,7 +5,7 @@
   <func>
     <title>SelectMenuItem</title>
     <category>Objekte</category><subcat>Menü</subcat>
-    <version>4.9.1.0 GWE</version>
+    <versions><version>4.9.1.0 GWE</version></versions>
     <syntax>
       <rtype>bool</rtype>
       <params>
@@ -31,5 +31,5 @@ if(iSelection &gt;= 0)
     </examples>
     <related><funclink>GetMenuSelection</funclink><funclink>GetMenu</funclink><funclink>CreateMenu</funclink><funclink>AddMenuItem</funclink></related>
   </func>
-  <author>PeterW</author><date>Oktober 2002</date>
+  <author>PeterW</author><date>2002-10</date>
 </funcs>

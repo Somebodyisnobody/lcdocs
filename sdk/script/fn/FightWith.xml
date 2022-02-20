@@ -5,7 +5,7 @@
 	<func>
 		<title>FightWith</title>
 		<category>Objekte</category><subcat>Status</subcat>
-		<version>4.9.1.0 GWE</version>
+		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>
@@ -25,5 +25,5 @@
 			<funclink>OCF_FightReady</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>Mai 2002</date>
+	<author>Sven2</author><date>2002-05</date>
 </funcs>

@@ -5,7 +5,7 @@
 	<func>
 		<title>GetKiller</title>
 		<category>Objekte</category><subcat>Status</subcat>
-		<version>4.9.6.0 CR</version>
+		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
 			<rtype>int</rtype>
 			<params>
@@ -42,5 +42,5 @@
 			<funclink>SetKiller</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>April 2007</date>
+	<author>Sven2</author><date>2007-04</date>
 </funcs>

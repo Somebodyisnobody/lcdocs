@@ -6,7 +6,7 @@
 		<title>SetPlrViewRange</title>
 		<category>Spieler</category>
 		<subcat>Sicht</subcat>
-		<version>4.9.1.0 GWE</version>
+		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>
@@ -37,5 +37,5 @@ protected func Activate(pClonk)
 												<funclink>SetFoW</funclink>
 								</related>
 	</func>
-	<author>wipfmetz</author><date>August 2002</date>
+	<author>wipfmetz</author><date>2002-08</date>
 </funcs>

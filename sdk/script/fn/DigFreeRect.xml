@@ -5,7 +5,7 @@
 	<func>
 		<title>DigFreeRect</title>
 		<category>Landschaft</category>
-		<version>4.6.5.0 CP</version>
+		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
 			<rtype>void</rtype>
 			<params>
@@ -28,5 +28,5 @@
 			<funclink>DigFree</funclink>
 		</related>
 	</func>
-	<author>jwk</author><date>April 2002</date>
+	<author>jwk</author><date>2002-04</date>
 </funcs>

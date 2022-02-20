@@ -5,7 +5,7 @@
   <func>
     <title>GetPath</title>
     <category>Landschaft</category>
-    <version>4.9.10.7 [334] LC</version>
+    <versions><version>4.9.10.7 [334] LC</version></versions>
     <syntax>
       <rtype>map</rtype>
       <params>
@@ -71,5 +71,5 @@ else
         <funclink>GetPathLength</funclink>
     </related>
   </func>
-  <author>Fulgen</author><date>Oktober 2019</date>
+  <author>Fulgen</author><date>2019-10</date>
 </funcs>

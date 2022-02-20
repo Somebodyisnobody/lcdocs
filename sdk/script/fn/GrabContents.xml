@@ -6,7 +6,7 @@
                 <title>GrabContents</title>
                 <category>Objekte</category>
                 <subcat>Inhalt</subcat>
-                <version>4.6.5.0 CP</version>
+                <versions><version>4.6.5.0 CP</version></versions>
                 <syntax>
                         <rtype>bool</rtype>
                         <params>
@@ -18,6 +18,6 @@
                         <funclink>Contents</funclink>
                 </related>
         </func>
-        <author>Cucaracha</author><date>Mai 2002</date>
+        <author>Cucaracha</author><date>2002-05</date>
 </funcs>
 

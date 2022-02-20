@@ -5,7 +5,7 @@
 	<func>
 		<title>CastC4ID</title>
 		<category>Variablen</category>
-		<version>4.9.6.0 CR</version>
+		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
 			<rtype>id</rtype>
 			<params>
@@ -19,5 +19,5 @@
 			<funclink>CastInt</funclink>
 		</related>
 	</func>
-	<author>Fulgen</author><date>August 2016</date>
+	<author>Fulgen</author><date>2016-08</date>
 </funcs>

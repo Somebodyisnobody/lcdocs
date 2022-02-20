@@ -6,7 +6,7 @@
   <title>GrabObjectInfo</title>
   <category>Objekte</category>
   <subcat>Mannschaft</subcat>
-  <version>4.9.1.0 GWE</version>
+  <versions><version>4.9.1.0 GWE</version></versions>
   <syntax>
    <rtype>bool</rtype>
    <params>
@@ -16,9 +16,10 @@
      <desc>Objekt (Clonk), von dem die Infosektion genommen werden soll.</desc>
     </param>
     <param>
-     <type>object</type><optional />
+     <type>object</type>
      <name>pTo</name>
      <desc>Objekt (Clonk), das die Infosektion übernehmen soll. 0 bei lokalem Aufruf.</desc>
+     <optional />
     </param>
    </params>
   </syntax>
@@ -43,5 +44,5 @@
    <funclink>OCF_CrewMember</funclink>
   </related>
  </func>
- <author>Sven2</author><date>Mai 2002</date>
+ <author>Sven2</author><date>2002-05</date>
 </funcs>

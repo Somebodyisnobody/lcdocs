@@ -5,7 +5,7 @@
 	<func>
 		<title>GetLeague</title>
 		<category>System</category>
-		<version>4.9.6.0 CR</version>
+		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
 			<rtype>string</rtype>
 			<params>
@@ -14,5 +14,5 @@
 		</syntax>
 		<desc>Ist die Liga aktiviert, gibt GetLeague zurück, um welche Liga es sich handelt (z.B. "Melee"). Ist die Liga deaktiviert, gibt GetLeague 0 zurück. Da ein Szenario in mehreren Ligen gleichzeitig sein kann, können mit iIndex zusätzliche Ligen abgefragt werden (<emlink href="https://board.ccan.de/cgi-bin/topic_show.pl?pid=151678#pid151678">https://board.ccan.de/cgi-bin/topic_show.pl?pid=151678#pid151678</emlink>).</desc>
 	</func>
-	<author>Fulgen / Clonk Wiki</author><date>Juli 2016</date>
+	<author>Fulgen / Clonk Wiki</author><date>2016-07</date>
 </funcs>

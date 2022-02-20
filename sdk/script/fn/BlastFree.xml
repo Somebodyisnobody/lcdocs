@@ -5,7 +5,7 @@
   <func>
     <title>BlastFree</title>
     <category>Landschaft</category>
-    <version>4.6.5.0 CP</version>
+    <versions><version>4.6.5.0 CP</version></versions>
     <syntax>
       <rtype>void</rtype>
       <params>
@@ -22,5 +22,5 @@
 	  <funclink>FreeRect</funclink>
     </related>
   </func>
-  <author>Fulgen / Clonk Wiki</author><date>Juli 2016</date>
+  <author>Fulgen / Clonk Wiki</author><date>2016-07</date>
 </funcs>

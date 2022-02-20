@@ -5,7 +5,7 @@
   <func>
     <title>SetNextMission</title>
     <category>Global</category>
-    <version>4.9.7.0 CR</version>
+    <versions><version>4.9.7.0 CR</version></versions>
     <syntax>
       <rtype>void</rtype>
       <params>
@@ -16,5 +16,5 @@
     </syntax>
     <desc>Verändert den "Diese Runde weiterspielen"-Button beim Endbildschirm so, dass das angegebene Szenario beim Draufklicken gestartet wird. Wird szNextMissionFile auf das Szenario selbst gesetzt, kann so ein Neustart-Button erreicht werden.</desc>
   </func>
-  <author>Fulgen / Clonk Wiki</author><date>Juli 2016</date>
+  <author>Fulgen / Clonk Wiki</author><date>2016-07</date>
 </funcs>

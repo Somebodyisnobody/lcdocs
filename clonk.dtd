@@ -1,18 +1,19 @@
 <!ENTITY % text "a | img | emlink | funclink | em | code | strong">
 
 <!ELEMENT funcs (func+, (author, date)+)>
-  <!ELEMENT func           (title, deprecated?, category, subcat*, version, deprecated?, syntax, desc, remark*, examples?, related?)>
+  <!ELEMENT func           (title, deprecated?, category, subcat*, versions, deprecated?, syntax, desc, remark*, examples?, related?)>
     <!ELEMENT title        (#PCDATA)>
     <!ELEMENT category     (#PCDATA)>
     <!ELEMENT subcat       (#PCDATA)>
-    <!ELEMENT version      (#PCDATA | extversion)*>
+    <!ELEMENT versions      (version | extversion)*>
+      <!ELEMENT version (#PCDATA)>
       <!ELEMENT extversion (#PCDATA)>
-    <!ELEMENT deprecated   EMPTY>
-    <!ELEMENT internal     EMPTY>
-    <!ELEMENT syntax       (rtype, params*)>
+    <!ELEMENT deprecated   (#PCDATA)>
+    <!ELEMENT syntax       (rtype, isReference?, params*)>
       <!ELEMENT rtype      (#PCDATA)>
+      <!ELEMENT isReference EMPTY>
       <!ELEMENT params     (#PCDATA | param)*>
-        <!ELEMENT param    (type?, optional?, name, optional?, desc, optional?)>
+        <!ELEMENT param    (type, name, desc, isReference?, optional?)>
           <!ELEMENT name   (#PCDATA)>
           <!ELEMENT type   (#PCDATA)>
           <!ELEMENT desc   (#PCDATA | br | ul | li | table | %text;)*>

@@ -5,7 +5,7 @@
 	<func>
 		<title>RemoveVertex</title>
 		<category>Objekte</category><subcat>Vertices</subcat>
-		<version>4.9.1.0 GWE</version>
+		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
 			<rtype>int</rtype>
 			<params>
@@ -28,5 +28,5 @@
 			<funclink>GetVertexNum</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>Mai 2003</date>
+	<author>Sven2</author><date>2003-05</date>
 </funcs>

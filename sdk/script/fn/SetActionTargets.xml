@@ -5,7 +5,7 @@
 	<func>
 		<title>SetActionTargets</title>
 		<category>Objekte</category><subcat>Aktivität</subcat>
-		<version>4.9.1.0 GWE</version>
+		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>
@@ -30,5 +30,5 @@
 			<funclink>GetProcedure</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>Juni 2003</date>
+	<author>Sven2</author><date>2003-06</date>
 </funcs>

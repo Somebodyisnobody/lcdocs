@@ -5,7 +5,7 @@
 	<func>
 		<title>VIS_Local</title>
 		<category>Objekte</category><subcat>Sichtbarkeit</subcat>
-		<version>4.9.1.0 GWE</version>
+		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
 			<rtype>int</rtype>
 		</syntax>
@@ -38,5 +38,5 @@
 			<funclink>VIS_OverlayOnly</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>November 2001</date>
+	<author>Sven2</author><date>2001-11</date>
 </funcs>

@@ -6,7 +6,7 @@
     <title>Jump</title>
     <category>Objekte</category>
     <subcat>Bewegung</subcat>
-    <version>4.6.5.0 CP</version>
+    <versions><version>4.6.5.0 CP</version></versions>
     <syntax>
       <rtype>bool</rtype>
       <params>
@@ -26,5 +26,5 @@
       <funclink>SetCommand</funclink>
     </related>
   </func>
-  <author>PeterW</author><date>November 2001</date>
+  <author>PeterW</author><date>2001-11</date>
 </funcs>

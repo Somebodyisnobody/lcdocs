@@ -183,7 +183,7 @@ func Aufruf()
 	<text>Man beachte, dass "<code>&amp;</code>" ein eigenständiger Typ ist, deshalb darf für einen Referenzparameter kein weiterer Typ angegeben werden, "<code>int &amp;x</code>" wäre also ungültig!</text>
 </part>
 
-<author>PeterW</author><date>Juli 2002</date>
-<author>matthes</author><date>Juni 2004</date>
+<author>PeterW</author><date>2002-07</date>
+<author>matthes</author><date>2004-06</date>
 
 </doc>

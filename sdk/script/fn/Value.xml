@@ -5,7 +5,7 @@
 	<func>
 		<title>Value</title>
 		<category>Objekte</category><subcat>Status</subcat>
-		<version>4.6.5.0 CP</version><deprecated />
+		<versions><version>4.6.5.0 CP</version></versions><deprecated />
 		<syntax>
 			<rtype>int</rtype>
 			<params>
@@ -18,5 +18,5 @@
 			<funclink>GetValue</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>Juni 2003</date>
+	<author>Sven2</author><date>2003-06</date>
 </funcs>

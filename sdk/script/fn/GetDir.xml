@@ -5,7 +5,7 @@
 	<func>
 		<title>GetDir</title>
 		<category>Objekte</category><subcat>Aktivität</subcat>
-		<version>4.6.5.0 CP</version>
+		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
 			<rtype>int</rtype>
 			<params>
@@ -41,5 +41,5 @@ protected func Activate()
 			<funclink>DIR_Right</funclink>
 								</related>
 	</func>
-	<author>wipfmetz</author><date>Juni 2002</date>
+	<author>wipfmetz</author><date>2002-06</date>
 </funcs>

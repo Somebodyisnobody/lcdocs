@@ -5,7 +5,7 @@
 	<func>
 		<title>CreateArray</title>
 		<category>Script</category><subcat>Strings</subcat>
-		<version>4.9.6.0 CR</version>
+		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
 			<rtype>array</rtype>
 			<params>
@@ -18,5 +18,5 @@
 			<funclink>GetLength</funclink>
 		</related>
 	</func>
-	<author>Günther</author><date>Juni 2006</date>
+	<author>Günther</author><date>2006-06</date>
 </funcs>

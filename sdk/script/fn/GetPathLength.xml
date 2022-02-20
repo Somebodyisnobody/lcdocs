@@ -3,9 +3,10 @@
 <?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
 <funcs>
   <func>
-    <title>GetPathLength (veraltet)</title>
+    <title>GetPathLength</title>
     <category>Landschaft</category>
-    <version>4.9.1.0 GWE</version>
+    <versions><version>4.9.1.0 GWE</version></versions>
+    <deprecated>4.9.10.8 [336] LC</deprecated>
     <syntax>
       <rtype>int</rtype>
       <params>
@@ -47,5 +48,5 @@
         <funclink>GetPath</funclink>
     </related>
   </func>
-  <author>PeterW</author><date>April 2002</date>
+  <author>PeterW</author><date>2002-04</date>
 </funcs>

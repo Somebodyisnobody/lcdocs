@@ -5,7 +5,7 @@
 	<func>
 		<title>SetObjDrawTransform</title>
 		<category>Objekte</category><subcat>Darstellung</subcat>
-		<version>4.9.5.0 CE</version>
+		<versions><version>4.9.5.0 CE</version></versions>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>
@@ -48,5 +48,5 @@
 			</example>
 		</examples>
 	</func>
-	<author>Clonkonaut</author><date>Mai 2008</date>
+	<author>Clonkonaut</author><date>2008-05</date>
 </funcs>

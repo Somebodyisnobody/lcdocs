@@ -59,6 +59,6 @@
 	<text>Die Zusatzfunktionen in GetXVal.c (in System.c4g) ermöglichen Aufrufe verschiedener Get*Val-Funktionen durch globale Scriptfunktionen (z.B. <code>GetObjWidth()</code>, entspricht <code><funclink>GetObjectVal</funclink>("Width", 0, -obj-)</code>).</text>
 </part>
 
-<author>Peter</author><date>November 2001</date>
+<author>Peter</author><date>2001-11</date>
 
 </doc>

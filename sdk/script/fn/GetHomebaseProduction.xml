@@ -5,7 +5,7 @@
 	<func>
 		<title>GetHomebaseProduction</title>
 		<category>Spieler</category>
-		<version>4.9.8.5 CR</version>
+		<versions><version>4.9.8.5 CR</version></versions>
 		<syntax>
 			<rtype>int</rtype>
 			<params>
@@ -37,5 +37,5 @@
 			<funclink>C4D_Vehicle</funclink>
 		</related>
 	</func>
-	<author>Clonk-Karl</author><date>März 2008</date>
+	<author>Clonk-Karl</author><date>2008-03</date>
 </funcs>

@@ -5,7 +5,7 @@
   <func>
     <title>GetKeys</title>
     <category>Variablen</category>
-    <version>4.9.10.7 [334] LC</version>
+    <versions><version>4.9.10.7 [334] LC</version></versions>
     <syntax>
       <rtype>array</rtype>
       <params>
@@ -24,6 +24,6 @@
       <funclink>GetValues</funclink>
     </related>
   </func>
-  <author>Der Tod</author><date>Oktober 2019</date>
+  <author>Der Tod</author><date>2019-10</date>
 </funcs>
 

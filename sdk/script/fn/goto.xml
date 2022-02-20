@@ -5,7 +5,7 @@
   <func>
     <title>goto</title>
     <category>Script</category>
-    <version>4.6.5.0 CP<extversion>4.9.1.0 GWE</extversion></version>
+    <versions><version>4.6.5.0 CP</version><extversion>4.9.1.0 GWE</extversion></versions>
     <syntax>
       <rtype>bool</rtype>
       <params>
@@ -40,5 +40,5 @@ protected func Script100()
       <funclink>ScriptCounter</funclink>
     </related>
   </func>
-  <author>jwk</author><date>April 2002</date>
+  <author>jwk</author><date>2002-04</date>
 </funcs>

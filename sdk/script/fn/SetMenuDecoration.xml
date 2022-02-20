@@ -5,7 +5,7 @@
   <func>
     <title>SetMenuDecoration</title>
     <category>Objekte</category><subcat>Menü</subcat>
-    <version>4.9.6.0 CR</version>
+    <versions><version>4.9.6.0 CR</version></versions>
     <syntax>
       <rtype>bool</rtype>
       <params>
@@ -16,5 +16,5 @@
     <desc>Ändert die Dekoration eines Menüobjektes.</desc>
     <related><funclink>GetMenuSelection</funclink><funclink>GetMenu</funclink><funclink>CreateMenu</funclink><funclink>AddMenuItem</funclink><funclink>SetMenuTextProgress</funclink></related>
   </func>
-  <author>Fulgen</author><date>August 2016</date>
+  <author>Fulgen</author><date>2016-08</date>
 </funcs>

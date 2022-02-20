@@ -5,7 +5,7 @@
 	<func>
 		<title>GetValue</title>
 		<category>Objekte</category><subcat>Status</subcat>
-		<version>4.6.5.0 CP<extversion>4.9.1.0 GWE</extversion></version>
+		<versions><version>4.6.5.0 CP</version><extversion>4.9.1.0 GWE</extversion></versions>
 		<syntax>
 			<rtype>int</rtype>
 			<params>
@@ -30,5 +30,5 @@
 			<funclink>SetWealth</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>März 2003</date>
+	<author>Sven2</author><date>2003-03</date>
 </funcs>

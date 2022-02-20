@@ -5,7 +5,7 @@
 	<func>
 		<title>Stuck</title>
 		<category>Objekte</category><subcat>Status</subcat>
-		<version>4.6.5.0 CP</version>
+		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>
@@ -25,5 +25,5 @@
 			<funclink>GetMaterial</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>August 2002</date>
+	<author>Sven2</author><date>2002-08</date>
 </funcs>

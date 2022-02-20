@@ -6,7 +6,7 @@
     <title>GetDamage</title>
     <category>Objekte</category>
     <subcat>Status</subcat>
-    <version>4.9.1.0 GWE</version>
+    <versions><version>4.9.1.0 GWE</version></versions>
     <syntax>
       <rtype>int</rtype>
       <params>
@@ -25,5 +25,5 @@
       <funclink>DoEnergy</funclink>
     </related>
   </func>
-  <author>Sven2</author><date>Mai 2002</date>
+  <author>Sven2</author><date>2002-05</date>
 </funcs>

@@ -5,7 +5,7 @@
 	<func>
 		<title>Find_Distance</title>
 		<category>Objekte</category><subcat>Suche</subcat>
-		<version>4.9.6.0 CR</version>
+		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
 			<rtype>array</rtype>
 			<params>
@@ -20,5 +20,5 @@
 			<funclink>FindObjects</funclink>
 		</related>
 	</func>
-	<author>PeterW</author><date>Oktober 2006</date>
+	<author>PeterW</author><date>2006-10</date>
 </funcs>

@@ -5,7 +5,7 @@
   <func>
     <title>SetGraphics</title>
     <category>Objekte</category><subcat>Darstellung</subcat>
-    <version>4.9.1.0 GWE<extversion>4.9.5.0 CE</extversion></version>
+    <versions><version>4.9.1.0 GWE</version><extversion>4.9.5.0 CE</extversion></versions>
     <syntax>
       <rtype>bool</rtype>
       <params>
@@ -62,5 +62,5 @@
       <funclink>SetObjectBlitMode</funclink>
     </related>
   </func>
-  <author>Sven2</author><date>Juni 2003, März 2005</date>
+  <author>Sven2</author><date>2005-03</date>
 </funcs>

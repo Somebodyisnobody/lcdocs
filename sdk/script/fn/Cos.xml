@@ -5,7 +5,7 @@
 	<func>
 		<title>Cos</title>
 		<category>Arithmetik</category>
-		<version>4.6.5.0 CP<extversion>4.9.5.0 CE</extversion></version>
+		<versions><version>4.6.5.0 CP</version><extversion>4.9.5.0 CE</extversion></versions>
 		<syntax>
 			<rtype>int</rtype>
 			<params>
@@ -20,7 +20,7 @@
 			<funclink>Angle</funclink>
 		</related>
 	</func>
-	<author>springer</author><date>April 2002</date>
-	<author>Clonk-Karl</author><date>September 2004</date>
+	<author>springer</author><date>2002-04</date>
+	<author>Clonk-Karl</author><date>2004-09</date>
 </funcs>
 

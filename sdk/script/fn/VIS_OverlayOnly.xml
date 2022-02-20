@@ -5,7 +5,7 @@
 	<func>
 		<title>VIS_OverlayOnly</title>
 		<category>Objekte</category><subcat>Sichtbarkeit</subcat>
-		<version>4.9.7.0 CR</version>
+		<versions><version>4.9.7.0 CR</version></versions>
 		<syntax>
 			<rtype>int</rtype>
 		</syntax>
@@ -32,5 +32,5 @@ while (obj=FindObject(0,0,0,0,0,0,0,0,0,obj)) SetVisibility(VIS_All(), obj);</co
 			<funclink>VIS_LayerToggle</funclink>
 		</related>
 	</func>
-	<author>Fulgen / Clonk Wiki</author><date>Juli 2016</date>
+	<author>Fulgen / Clonk Wiki</author><date>2016-07</date>
 </funcs>

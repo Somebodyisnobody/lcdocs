@@ -6,7 +6,7 @@
 		<title>GetPlrViewMode</title>
 		<category>Spieler</category>
 		<subcat>Sicht</subcat>
-		<version>4.6.5.0 CP</version>
+		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
 			<rtype>int</rtype>
 			<params>
@@ -27,5 +27,5 @@
       <funclink>GetPlrView</funclink>
     </related>
 	</func>
-	<author>PeterW</author><date>Juni 2003</date>
+	<author>PeterW</author><date>2003-06</date>
 </funcs>

@@ -5,15 +5,15 @@
 	<func>
 		<title>CastObjectsX</title>
 		<category>Objekte</category><subcat>Erzeugung</subcat>
-		<version>4.9.7.0 CR</version>
+		<versions><version>4.9.7.0 CR</version></versions>
 		<syntax>
 			<rtype>int</rtype>
 			<params>
-				<param><type>id </type><name>id</name><desc>ID des Objekttyps, der verschleudert wird</desc></param>
-				<param><type>int </type><name>iNumber</name><desc>Anzahl verschleuderter Objekte.</desc></param>
-				<param><type>int </type><name>iLevel</name><desc>Geschwindigkeit der verschleuderten Objekte</desc></param>
-				<param><type>int </type><name>iX</name><desc>X-Ausgangsposition. Offset zum aufrufenden Objekt bei lokalem Aufruf.</desc><optional /></param>
-				<param><type>int </type><name>iY</name><desc>Y-Ausgangsposition. Offset zum aufrufenden Objekt bei lokalem Aufruf.</desc><optional /></param>
+				<param><type>id</type><name>id</name><desc>ID des Objekttyps, der verschleudert wird</desc></param>
+				<param><type>int</type><name>iNumber</name><desc>Anzahl verschleuderter Objekte.</desc></param>
+				<param><type>int</type><name>iLevel</name><desc>Geschwindigkeit der verschleuderten Objekte</desc></param>
+				<param><type>int</type><name>iX</name><desc>X-Ausgangsposition. Offset zum aufrufenden Objekt bei lokalem Aufruf.</desc><optional /></param>
+				<param><type>int</type><name>iY</name><desc>Y-Ausgangsposition. Offset zum aufrufenden Objekt bei lokalem Aufruf.</desc><optional /></param>
 				<param><type>int</type><name>angs</name><desc>Abschusswinkel</desc></param>
 				<param><type>int</type><name>angw</name><desc></desc></param>
 			</params>
@@ -32,5 +32,5 @@ CastObjectsX(SPRK,1,20,<funclink>GetVertex</funclink>(num, 0)<emlink href="scrip
 			<funclink>CastObjects</funclink>
 		</related>
 	</func>
-	<author>Fulgen / Clonk Wiki</author><date>Juli 2016</date>
+	<author>Fulgen / Clonk Wiki</author><date>2016-07</date>
 </funcs>

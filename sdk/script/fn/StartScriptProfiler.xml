@@ -5,11 +5,11 @@
 	<func>
 		<title>StartScriptProfiler</title>
 		<category>Entwickler</category>
-		<version>4.9.6.0 CR</version>
+		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>
-				<param><type>id</type><name>idDefScript</name><desc>Wenn angegeben, werden nur Scriptfunktionen einer bestimmten Objektdefinition gemessen.</desc><otional /></param>
+				<param><type>id</type><name>idDefScript</name><desc>Wenn angegeben, werden nur Scriptfunktionen einer bestimmten Objektdefinition gemessen.</desc><optional /></param>
 			</params>
 		</syntax>
 		<desc>Startet den Scriptprofiler.</desc>
@@ -18,5 +18,5 @@
 			<funclink>StopScriptProfiler</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>März 2007</date>
+	<author>Sven2</author><date>2007-03</date>
 </funcs>

@@ -5,7 +5,7 @@
   <func>
     <title>GetTeamConfig</title>
     <category>Teams</category>
-    <version>4.9.6.0 CR</version>
+    <versions><version>4.9.6.0 CR</version></versions>
     <syntax>
       <rtype>int</rtype>
       <params>
@@ -48,5 +48,5 @@
 		<funclink>GetTeamByIndex</funclink>
 	</related>
   </func>
-  <author>Fulgen / Clonk Wiki</author><date>Juli 2016</date>
+  <author>Fulgen / Clonk Wiki</author><date>2016-07</date>
 </funcs>

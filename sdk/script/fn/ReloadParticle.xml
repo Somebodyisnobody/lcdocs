@@ -5,7 +5,7 @@
 	<func>
 		<title>ReloadParticle</title>
 		<category>Entwickler</category>
-		<version>4.9.1.0 GWE</version>
+		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>
@@ -23,5 +23,5 @@
 			<funclink>ReloadParticle</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>April 2002</date>
+	<author>Sven2</author><date>2002-04</date>
 </funcs>

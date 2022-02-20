@@ -5,7 +5,7 @@
 	<func>
 		<title>SetFoW</title>
 		<category>Spieler</category><subcat>Sicht</subcat>
-		<version>4.9.1.0 GWE</version>
+		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>
@@ -30,5 +30,5 @@
 			<funclink>SetPlrViewRange</funclink>
 		</related>
 	</func>
-	<author>Günther</author><date>November 2002</date>
+	<author>Günther</author><date>2002-11</date>
 </funcs>

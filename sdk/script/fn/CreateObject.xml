@@ -5,7 +5,7 @@
   <func>
     <title>CreateObject</title>
     <category>Objekte</category><subcat>Erzeugung</subcat>
-    <version>4.6.5.0 CP</version>
+    <versions><version>4.6.5.0 CP</version></versions>
     <syntax>
       <rtype>object</rtype>
       <params>
@@ -28,5 +28,5 @@
       <funclink>RemoveObject</funclink>
     </related>
   </func>
-  <author>springer</author><date>April 2002</date>
+  <author>springer</author><date>2002-04</date>
 </funcs>

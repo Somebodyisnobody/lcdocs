@@ -5,7 +5,7 @@
         <func>
                 <title>GetTaggedPlayerName</title>
                 <category>Spieler</category>
-                <version>4.9.6.0 CR</version>
+                <versions><version>4.9.6.0 CR</version></versions>
                 <syntax>
                         <rtype>string</rtype>
                         <params>
@@ -28,6 +28,6 @@
                         <funclink>GetPlayerName</funclink>
                 </related>
         </func>
-        <author>Sven2</author><date>März 2006</date>
+        <author>Sven2</author><date>2006-03</date>
 </funcs>
 

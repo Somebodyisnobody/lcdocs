@@ -5,14 +5,14 @@
 	<func>
 		<title>PlayerMessage</title>
 		<category>Nachrichten</category>
-		<version>4.6.5.0 CP</version>
+		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>
 				<param><type>int</type><name>iPlr</name><desc>Nummer des Spielers, bei dem die Nachricht ausgegeben wird</desc></param>
 				<param><type>string</type><name>szMessage</name><desc>Nachricht, die ausgegeben wird</desc></param>
 				<param><type>object</type><name>pObj</name><desc>Objekt, bei dem die Nachricht ausgegeben wird. Ohne angegebenes Objekt wird die Nachricht global (analog zu <funclink>PlrMessage</funclink>) ausgegeben.</desc><optional /></param>
-				<param><type></type><name>...</name><desc>Zusatzparameter, die die Nachricht formatieren. Siehe dazu auch <funclink>Format</funclink></desc><optional /></param>
+				<param><type>any</type><name>...</name><desc>Zusatzparameter, die die Nachricht formatieren. Siehe dazu auch <funclink>Format</funclink></desc><optional /></param>
 			</params>
 		</syntax>
 		<desc>Gibt eine Nachricht nur im Viewport eines Spielers aus. Die Nachrichtenformatierung erfolgt analog zu <funclink>Message</funclink>.</desc>
@@ -29,5 +29,5 @@
 			<funclink>AddMessage</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>August 2002</date>
+	<author>Sven2</author><date>2002-08</date>
 </funcs>

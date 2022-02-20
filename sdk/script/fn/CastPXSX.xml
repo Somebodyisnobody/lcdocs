@@ -5,7 +5,7 @@
 	<func>
 		<title>CastPXSX</title>
 		<category>Landschaft</category>
-		<version>4.9.7.0 CR</version>
+		<versions><version>4.9.7.0 CR</version></versions>
 		<syntax>
 			<rtype>int</rtype>
 			<params>
@@ -30,5 +30,5 @@
 			<funclink>CastPXS</funclink>
 		</related>
 	</func>
-	<author>jwk</author><date>April 2002</date>
+	<author>jwk</author><date>2002-04</date>
 </funcs>

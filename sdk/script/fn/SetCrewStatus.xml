@@ -6,7 +6,7 @@
   <title>SetCrewStatus</title>
   <category>Objekte</category>
   <subcat>Mannschaft</subcat>
-  <version>4.9.5.0 CE</version>
+  <versions><version>4.9.5.0 CE</version></versions>
   <syntax>
    <rtype>bool</rtype>
    <params>
@@ -33,5 +33,5 @@ SetCrewStatus(<funclink>GetOwner</funclink>(), true, nclnk);</code>
    <funclink>GrabObjectInfo</funclink>
   </related>
  </func>
- <author>Clonkonaut</author><date>Mai 2008</date>
+ <author>Clonkonaut</author><date>2008-05</date>
 </funcs>

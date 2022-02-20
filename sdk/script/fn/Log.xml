@@ -5,12 +5,12 @@
 	<func>
 		<title>Log</title>
 		<category>Nachrichten</category>
-		<version>4.6.5.0 CP</version>
+		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
 			<rtype>void</rtype>
 			<params>
 				<param><type>string</type><name>szMessage</name><desc>Auszugebender Text</desc></param>
-				<param><type></type><name>...</name><desc>Zusätzliche Parameter, mit denen der Text formatiert wird</desc><optional /></param>
+				<param><type>any</type><name>...</name><desc>Zusätzliche Parameter, mit denen der Text formatiert wird</desc><optional /></param>
 			</params>
 		</syntax>
 		<desc>Gibt einen Text im Messageboard am unteren Bildschirmrand aus. Die Parameter können über den C-Formatierungsstil in den Text eingebunden werden. Siehe dazu auch <funclink>Format</funclink>.</desc>
@@ -26,5 +26,5 @@
 			<funclink>DebugLog</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>November 2001</date>
+	<author>Sven2</author><date>2001-11</date>
 </funcs>

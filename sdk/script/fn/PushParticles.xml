@@ -5,7 +5,7 @@
 	<func>
 		<title>PushParticles</title>
 		<category>Partikel</category>
-		<version>4.9.1.0 GWE</version>
+		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>
@@ -27,5 +27,5 @@
 			<funclink>ClearParticles</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>April 2002</date>
+	<author>Sven2</author><date>2002-04</date>
 </funcs>

@@ -5,7 +5,7 @@
   <func>
     <title>CastParticles</title>
     <category>Partikel</category>
-    <version>4.9.1.0 GWE<extversion>4.9.5.0 CE</extversion></version>
+    <versions><version>4.9.1.0 GWE</version><extversion>4.9.5.0 CE</extversion></versions>
     <syntax>
       <rtype>bool</rtype>
       <params>
@@ -37,5 +37,5 @@
       <funclink>CastPXSX</funclink>
     </related>
   </func>
-  <author>Sven2</author><date>Mai 2002</date>
+  <author>Sven2</author><date>2002-05</date>
 </funcs>

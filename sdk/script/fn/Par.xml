@@ -5,7 +5,7 @@
  <func>
   <title>Par</title>
   <category>Script</category>
-  <version>4.6.5.0 CP</version>
+  <versions><version>4.6.5.0 CP</version></versions>
   <!-- <deprecated /> Ich denke nicht (peter) -->
   <syntax>
    <rtype>any</rtype>
@@ -50,5 +50,5 @@
   </examples>
 
  </func>
- <author>Sven2</author><date>August 2002</date>
+ <author>Sven2</author><date>2002-08</date>
 </funcs>

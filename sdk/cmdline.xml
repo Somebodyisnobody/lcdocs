@@ -72,5 +72,5 @@
 <h id="C4Group">c4group.exe (Windows) c4group (Linux) c4group (Mac)</h>
 <text>Dieses Kommandozeilen-Programm dient zum Bearbeiten von Gruppendateien. Es kann nicht per Doppelklick, sondern nur per Kommandozeile (Eingabeaufforderung) gestartet werden. Auskunft über alle verfügbaren Kommandozeilenparameter erhält man, indem man das Programm ohne weitere Parameter über die Kommandozeile startet.</text>
 </part>
-<author>Sven2</author><date>Februar 2007</date>
+<author>Sven2</author><date>2007-02</date>
 </doc>

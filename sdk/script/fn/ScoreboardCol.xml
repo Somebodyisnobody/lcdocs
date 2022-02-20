@@ -5,7 +5,7 @@
   <func>
     <title>ScoreboardCol</title>
     <category>Interface</category>
-    <version>4.9.6.0 CR</version>
+    <versions><version>4.9.6.0 CR</version></versions>
     <syntax>
       <rtype>int</rtype>
       <params>
@@ -21,5 +21,5 @@
       <funclink>DoScoreboardShow</funclink>
     </related>
   </func>
-  <author>Sven2</author><date>Februar 2006</date>
+  <author>Sven2</author><date>2006-02</date>
 </funcs>

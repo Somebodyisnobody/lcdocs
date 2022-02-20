@@ -5,12 +5,12 @@
 	<func>
 		<title>Find_Func</title>
 		<category>Objekte</category><subcat>Suche</subcat>
-		<version>4.9.6.0 CR</version>
+		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
 			<rtype>array</rtype>
 			<params>
 				<param><type>string</type><name>strFunction</name><desc>Aufzurufende Funktion</desc></param>
-				<param><type></type><name>...</name><desc>Parameter für die Funktion</desc><optional /></param>
+				<param><type>any</type><name>...</name><desc>Parameter für die Funktion</desc><optional /></param>
 			</params>
 		</syntax>
 		<desc>Suchkriterium: sucht alle Objekte bei denen der Aufruf der angegebenen Funktion <code>true</code> liefert. Wenn es eine lokale Funktion gibt, wird diese aufgerufen, sonst wenn vorhanden eine globale.</desc>
@@ -26,5 +26,5 @@
 			<funclink>FindObjects</funclink>
 		</related>
 	</func>
-	<author>Clonkonaut</author><date>Juli 2006</date>
+	<author>Clonkonaut</author><date>2006-07</date>
 </funcs>

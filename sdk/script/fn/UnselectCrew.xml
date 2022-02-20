@@ -6,7 +6,7 @@
 		<title>UnselectCrew</title>
 		<category>Objekte</category>
 		<subcat>Mannschaft</subcat>
-		<version>4.9.1.0 GWE</version>
+		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>
@@ -28,5 +28,5 @@ SelectCrew(0, GetHiRank(), 1);</code>
 			<funclink>SetCrewEnabled</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>April 2002</date>
+	<author>Sven2</author><date>2002-04</date>
 </funcs>

@@ -5,7 +5,7 @@
 	<func>
 		<title>SetLength</title>
 		<category>Script</category><subcat>Strings</subcat>
-		<version>4.9.6.0 CR</version>
+		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
 			<rtype>void</rtype>
 			<params>
@@ -19,5 +19,5 @@
 			<funclink>CreateArray</funclink>
 		</related>
 	</func>
-	<author>Clonkonaut</author><date>Juli 2006</date>
+	<author>Clonkonaut</author><date>2006-07</date>
 </funcs>

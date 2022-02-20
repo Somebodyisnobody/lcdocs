@@ -5,7 +5,7 @@
   <func>
     <title>GameOver</title>
     <category>Global</category>
-    <version>4.6.5.0 CP</version>
+    <versions><version>4.6.5.0 CP</version></versions>
     <syntax>
       <rtype>bool</rtype>
     </syntax>
@@ -24,5 +24,5 @@
       <funclink>EliminatePlayer</funclink>
     </related>
   </func>
-  <author>Günther</author><date>April 2002</date>
+  <author>Günther</author><date>2002-04</date>
 </funcs>

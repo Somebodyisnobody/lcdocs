@@ -5,7 +5,7 @@
 	<func>
 		<title>StopScriptProfiler</title>
 		<category>Entwickler</category>
-		<version>4.9.6.0 CR</version>
+		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
 			<rtype>void</rtype>
 		</syntax>
@@ -16,7 +16,7 @@
 				<text>Zunächst wird der Profiler gestartet, indem man irgendwo <funclink>StartScriptProfiler</funclink> ausführt - zum Beispiel im Konsolenfenster, wenn die Engine im Entwicklermodus gestartet wird. Nach einer Weile Spiel führt man dann <funclink>StopScriptProfiler</funclink> aus, und erhält zum Beispiel folgende Ausgabe im Log:</text>
 				<code>Profiler statistics:
 ==============================
-00037ms	globa<b></b>l Explode
+00037ms	global Explode
 00035ms	SFLN::Hit
 00020ms	TRB1::Damage
 00020ms	TRB1::ChopDown
@@ -42,5 +42,5 @@
 			<funclink>StartScriptProfiler</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>März 2007</date>
+	<author>Sven2</author><date>2007-03</date>
 </funcs>

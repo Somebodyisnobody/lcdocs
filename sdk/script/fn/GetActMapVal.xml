@@ -5,7 +5,7 @@
   <func>
     <title>GetActMapVal</title>
     <category>Get*Val</category>
-    <version>4.9.1.0 GWE</version>
+    <versions><version>4.9.1.0 GWE</version></versions>
     <syntax>
       <rtype>any</rtype>
       <params>
@@ -55,5 +55,5 @@
     </related>
 
   </func>
-  <author>PeterW</author><date>April 2002</date>
+  <author>PeterW</author><date>2002-04</date>
 </funcs>

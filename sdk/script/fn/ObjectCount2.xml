@@ -5,15 +5,15 @@
 	<func>
 		<title>ObjectCount2</title>
 		<category>Objekte</category><subcat>Suche</subcat>
-		<version>4.9.6.0 CR</version>
+		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
 			<rtype>int</rtype>
 			<params>
 				<param><type>array</type><name>Criteria</name><desc>Suchkriterium in Form einer Find_*-Funktion</desc></param>
-				<param><type></type><name>...</name><desc>Weitere Suchkriterium in Form einer Find_*-Funktion</desc><optional /></param>
+				<param><type>string</type><name>...</name><desc>Weitere Suchkriterien in Form einer Find_*-Funktion</desc><optional /></param>
 			</params>
 		</syntax>
-		<desc>Gibt die Anzahl der Objekte zurück, die das angegebenen Suchkriterien erfüllen. Die Suchkriterien werden mittels speziellen Kriteriums-Funktionen der Form "Find_*" angegeben.</desc>
+		<desc>Gibt die Anzahl der Objekte zurück, die die angegebenen Suchkriterien erfüllen. Die Suchkriterien werden mittels speziellen Kriteriums-Funktionen der Form "Find_*" angegeben.</desc>
 		<remark>Die Kriterien werden genau so angegeben wie bei <funclink>FindObjects</funclink> und <funclink>FindObject2</funclink>. Siehe <funclink>FindObjects</funclink> für weitere Kriterium-Beispiele.</remark>
 		<examples>
 			<example>
@@ -46,5 +46,5 @@
 			<funclink>ObjectCount</funclink>
 		</related>
 	</func>
-	<author>Clonkonaut</author><date>Juli 2006</date>
+	<author>Clonkonaut</author><date>2006-07</date>
 </funcs>

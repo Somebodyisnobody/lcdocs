@@ -5,7 +5,7 @@
 	<func>
 		<title>GetPlrKnowledge</title>
 		<category>Spieler</category>
-		<version>4.6.5.0 CP</version>
+		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
 			<rtype>int</rtype>
 			<params>
@@ -39,5 +39,5 @@
 			<funclink>C4D_Vehicle</funclink>
 		</related>
 	</func>
-	<author>Günther</author><date>Februar 2002</date>
+	<author>Günther</author><date>2002-02</date>
 </funcs>

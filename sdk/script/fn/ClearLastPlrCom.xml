@@ -5,7 +5,7 @@
 	<func>
 		<title>ClearLastPlrCom</title>
 		<category>Spieler</category>
-		<version>4.9.7.0 CR</version>
+		<versions><version>4.9.7.0 CR</version></versions>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>
@@ -15,5 +15,5 @@
 		<desc>Diese Funktion löscht den letzten Befehl (Tastendruck / Mausklick) des Spielers iPlr. Dadurch kann zum Beispiel verhindert werden, dass ein ControlDig als Ende einer Kombo später als ControlDigSingle 
         beim Clonk ankommt und dieser zu graben beginnt</desc>
 	</func>
-	<author>Fulgen / Clonk Wiki</author><date>Juli 2016</date>
+	<author>Fulgen / Clonk Wiki</author><date>2016-07</date>
 </funcs>

@@ -5,7 +5,7 @@
         <func>
                 <title>GetPlayerCount</title>
                 <category>Spieler</category>
-                <version>4.6.5.0 CP<extversion>4.9.6.0 CR</extversion></version>
+                <versions><version>4.6.5.0 CP</version><extversion>4.9.6.0 CR</extversion></versions>
                 <syntax>
                         <rtype>int</rtype>
                         <params>
@@ -25,6 +25,6 @@
                         <funclink>EliminatePlayer</funclink>
                 </related>
         </func>
-        <author>Sven2</author><date>Dezember 2007</date>
+        <author>Sven2</author><date>2007-12</date>
 </funcs>
 

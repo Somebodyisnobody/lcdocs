@@ -5,7 +5,7 @@
 	<func>
 		<title>ComposeContents</title>
 		<category>Objekte</category><subcat>Erzeugung</subcat>
-		<version>4.6.5.0 CP</version>
+		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
 			<rtype>object</rtype>
 			<params>
@@ -21,5 +21,5 @@
 			</example>
 		</examples>
 	</func>
-	<author>springer</author><date>April 2002</date>
+	<author>springer</author><date>2002-04</date>
 </funcs>

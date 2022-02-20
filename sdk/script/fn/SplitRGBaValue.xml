@@ -5,7 +5,7 @@
 	<func>
 		<title>SplitRGBaValue</title>
 		<category>Arithmetik</category>
-		<version>4.9.5.0 CE</version>
+		<versions><version>4.9.5.0 CE</version></versions>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>
@@ -33,5 +33,5 @@ SplitRGBaValue(<funclink>GetColorDw</funclink>(<funclink>GetCursor</funclink>())
 			<funclink>SetRGBaValue</funclink>
 		</related>
 	</func>
-	<author>Tyron</author><date>September 2004</date>
+	<author>Tyron</author><date>2004-09</date>
 </funcs>

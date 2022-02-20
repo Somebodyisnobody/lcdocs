@@ -3,11 +3,13 @@
 <?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
 <funcs>
 	<func>
-		<title>LocalN (veraltet)</title>
+		<title>LocalN</title>
 		<category>Variablen</category>
-		<version>4.9.1.0 GWE</version>
+		<versions><version>4.9.1.0 GWE</version></versions>
+		<deprecated>4.9.10.7 [335] LC</deprecated>
 		<syntax>
-			<rtype>&amp;</rtype>
+			<rtype>object</rtype>
+			<isReference />
 			<params>
 				<param><type>string</type><name>szName</name><desc>Name der Variablen, zu der eine Referenz zurückgegeben werden soll</desc></param>
 				<param><type>object</type><name>pObj</name><desc>Objekt, dessen Variable abgefragt werden soll. 0 bei lokalem Aufruf.</desc><optional /></param>
@@ -41,6 +43,6 @@ func TimerCall () {
 			<funclink>GlobalN</funclink>
 		</related>
 	</func>
-	<author>Günther</author><date>November 2002</date>
-	<author>Der Tod</author><date>Oktober 2019</date>
+	<author>Günther</author><date>2002-11</date>
+	<author>Der Tod</author><date>2019-10</date>
 </funcs>

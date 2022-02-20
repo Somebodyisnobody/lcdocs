@@ -5,7 +5,7 @@
   <func>
     <title>C4V_Array</title>
     <category>Variablen</category>
-    <version>4.9.6.0 CR</version>
+    <versions><version>4.9.6.0 CR</version></versions>
     <syntax>
       <rtype>int</rtype>
     </syntax>
@@ -21,5 +21,5 @@
       <funclink>GetType</funclink>
     </related>
   </func>
-  <author>Clonk-Karl</author><date>Dezember 2008</date>
+  <author>Clonk-Karl</author><date>2008-12</date>
 </funcs>

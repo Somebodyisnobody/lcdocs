@@ -6,7 +6,7 @@
     <title>SetCon</title>
     <category>Objekte</category>
     <subcat>Status</subcat>
-    <version>4.9.1.0 GWE</version>
+    <versions><version>4.9.1.0 GWE</version></versions>
     <syntax>
       <rtype>bool</rtype>
       <params>
@@ -30,6 +30,6 @@
       <funclink>OCF_Construct</funclink>
     </related>
   </func>
-  <author>flgr</author><date>Januar 2002</date>
-  <author>matthes</author><date>Juli 2004</date>
+  <author>flgr</author><date>2002-01</date>
+  <author>matthes</author><date>2004-07</date>
 </funcs>

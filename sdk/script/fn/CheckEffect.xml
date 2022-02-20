@@ -5,7 +5,7 @@
   <func>
     <title>CheckEffect</title>
     <category>Effekte</category>
-    <version>4.9.5.0 CE</version>
+    <versions><version>4.9.5.0 CE</version></versions>
     <syntax>
       <rtype>int</rtype>
       <params>
@@ -29,32 +29,32 @@
         <param>
           <type>int</type>
           <name>iTimerIntervall</name>
-          <optional />
           <desc>Intervall, in dem Timer-Aufrufe getätigt würden. Bei 0 würden keine Timer-Aufrufe durchgeführt, und der Effekt bliebe permanent bis er durch anderwertige Aufrufe entfernt würde.</desc>
+          <optional />
         </param>
         <param>
           <type>any</type>
           <name>var1</name>
-          <optional />
           <desc>Erster Zusatzparameter, der an Fx*Effect-Callbacks übergeben wird</desc>
+          <optional />
         </param>
         <param>
           <type>any</type>
           <name>var2</name>
-          <optional />
           <desc>Zweiter Zusatzparameter, der an Fx*Effect-Callbacks übergeben wird</desc>
+          <optional />
         </param>
         <param>
           <type>any</type>
           <name>var3</name>
-          <optional />
           <desc>Dritter Zusatzparameter, der an Fx*Effect-Callbacks übergeben wird</desc>
+          <optional />
         </param>
         <param>
           <type>any</type>
           <name>var4</name>
-          <optional />
           <desc>Vierter Zusatzparameter, der an Fx*Effect-Callbacks übergeben wird</desc>
+          <optional />
         </param>
       </params>
     </syntax>
@@ -74,5 +74,5 @@
       <funclink>RemoveEffect</funclink>
     </related>
   </func>
-  <author>Sven2</author><date>März 2004</date>
+  <author>Sven2</author><date>2004-03</date>
 </funcs>

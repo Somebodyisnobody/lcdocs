@@ -5,7 +5,7 @@
   <func>
     <title>InitScenarioPlayer</title>
     <category>Spieler</category>
-    <version>4.9.7.0 CR</version>
+    <versions><version>4.9.7.0 CR</version></versions>
     <syntax>
       <rtype>bool</rtype>
       <params>
@@ -16,5 +16,5 @@
     <desc>Startet einen Spieler so gut wie neu, inklusive Angaben in der Scenario.txt</desc>
 	<remark>Diese Funktion wird engine-intern verwendet um den Spielerbeitritt synchron zu halten und ist nicht zur normalen Verwendung in Scripts gedacht. Clonks und gebaute Gebäude des Spielers werden nicht gelöscht, da die Funktion nur für die Erst-Initialisierung bei Spielerbeitritt gedacht ist. (Wenn ein Spieler beim Beitreten 2 Clonks hat und man lässt ihn neustarten, hat er 4 Clonks.)</remark>
   </func>
-  <author>Fulgen / Clonk Wiki</author><date>Juli 2016</date>
+  <author>Fulgen / Clonk Wiki</author><date>2016-07</date>
 </funcs>

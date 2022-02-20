@@ -5,7 +5,7 @@
 	<func>
 		<title>SetHostility</title>
 		<category>Spieler</category>
-		<version>4.6.5.0 CP<extversion>4.9.1.0 GWE</extversion><extversion>4.9.6.0 CR</extversion></version>
+		<versions><version>4.6.5.0 CP</version><extversion>4.9.1.0 GWE</extversion><extversion>4.9.6.0 CR</extversion></versions>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>
@@ -27,5 +27,5 @@
 			<funclink>Hostile</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>April 2007</date>
+	<author>Sven2</author><date>2007-04</date>
 </funcs>

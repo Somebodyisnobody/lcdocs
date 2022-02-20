@@ -5,7 +5,7 @@
 	<func>
 		<title>NoContainer</title>
 		<category>Objekte</category><subcat>Suche</subcat>
-		<version>4.6.5.0 CP</version>
+		<versions><version>4.6.5.0 CP</version></versions>
 		<deprecated />
 		<syntax>
 			<rtype>int</rtype>
@@ -24,5 +24,5 @@
 			<funclink>OCF_NotContained</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>August 2002</date>
+	<author>Sven2</author><date>2002-08</date>
 </funcs>

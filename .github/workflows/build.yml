@@ -8,12 +8,42 @@ defaults:
     shell: bash
 
 jobs:
-  validate:
+  lint:
     name: Validate
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
+      - name: Install libxml2-utils
+        run: |
+          sudo DEBIAN_FRONTEND=noninteractive apt-get update && \
+          sudo DEBIAN_FRONTEND=noninteractive apt-get -y --no-install-recommends install libxml2-utils
+
+      - name: Lint all XML files
+        run: |
+          xmllint --schema ./clonk.xsd --noout $(find sdk -name '.*' -prune -o -name \*.xml -print)
+
+  validate:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
       - name: Build function list
         run: |
           sudo DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends xsltproc python-libxml2 gettext -y
           make -j$(nproc)
+
+      - name: "Collect artifacts"
+        run: |
+          mkdir output
+          mv online output
+          mv chm output
+          mv sdk-en output
+          mv sdk output
+
+      - name: "Publish Main Artifact"
+        uses: actions/upload-artifact@v2
+        with:
+          name: generated-docs
+          path: output/*

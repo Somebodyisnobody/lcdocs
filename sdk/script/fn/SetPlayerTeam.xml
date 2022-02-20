@@ -5,7 +5,7 @@
   <func>
     <title>SetPlayerTeam</title>
     <category>Spieler</category>
-    <version>4.9.6.0 CR</version>
+    <versions><version>4.9.6.0 CR</version></versions>
     <syntax>
       <rtype>int</rtype>
       <params>
@@ -25,5 +25,5 @@
 		<funclink>GetPlayerTeam</funclink>
 	</related>
   </func>
-  <author>Clonkonaut</author><date>April 2008</date>
+  <author>Clonkonaut</author><date>2008-04</date>
 </funcs>

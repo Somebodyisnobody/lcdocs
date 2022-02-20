@@ -5,7 +5,7 @@
 	<func>
 		<title>GetObjectLayer</title>
 		<category>Objekte</category><subcat>Status</subcat>
-		<version>N/A</version>
+		<versions><version>N/A</version></versions>
 		<syntax>
 			<rtype>object</rtype>
 			<params>
@@ -18,5 +18,5 @@
 			<funclink>Find_Layer</funclink>
 		 </related>
 	</func>
-	<author>Der Tod</author><date>Februar 2022</date>
+	<author>Der Tod</author><date>2022-02</date>
 </funcs>

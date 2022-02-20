@@ -5,7 +5,7 @@
 	<func>
 		<title>COMD_None</title>
 		<category>Objekte</category><subcat>Bewegung</subcat>
-		<version>4.6.5.0 CP</version>
+		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
 			<rtype>int</rtype>
 		</syntax>
@@ -24,5 +24,5 @@
 			<funclink>COMD_Stop</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>Juni 2003</date>
+	<author>Sven2</author><date>2003-06</date>
 </funcs>

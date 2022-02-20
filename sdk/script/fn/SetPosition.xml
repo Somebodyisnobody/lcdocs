@@ -5,7 +5,7 @@
         <func>
                 <title>SetPosition</title>
                 <category>Objekte</category><subcat>Position</subcat>
-                <version>4.6.5.0 CP<extversion>4.9.6.0 CR</extversion></version>
+                <versions><version>4.6.5.0 CP</version><extversion>4.9.6.0 CR</extversion></versions>
                 <syntax>
                         <rtype>int</rtype>
                         <params>
@@ -21,7 +21,7 @@
                         <funclink>GetY</funclink>
                 </related>
         </func>
-        <author>Sven2</author><date>August 2002</date>
-        <author>Clonkonaut</author><date>April 2008</date>
+        <author>Sven2</author><date>2002-08</date>
+        <author>Clonkonaut</author><date>2008-04</date>
 </funcs>
 

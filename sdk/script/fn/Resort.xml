@@ -5,7 +5,7 @@
 	<func>
 		<title>Resort</title>
 		<category>Objekte</category><subcat>Position</subcat>
-		<version>4.9.1.0 GWE</version>
+		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
 			<rtype>void</rtype>
 			<params>
@@ -28,5 +28,5 @@
 			<funclink>SetObjectOrder</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>Mai 2003</date>
+	<author>Sven2</author><date>2003-05</date>
 </funcs>

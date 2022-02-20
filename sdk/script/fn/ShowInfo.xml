@@ -5,7 +5,7 @@
 	<func>
 		<title>ShowInfo</title>
 		<category>Objekte</category><subcat>Menü</subcat>
-		<version>4.6.5.0 CP</version>
+		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>
@@ -32,5 +32,5 @@
 			<funclink>CloseMenu</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>August 2002</date>
+	<author>Sven2</author><date>2002-08</date>
 </funcs>

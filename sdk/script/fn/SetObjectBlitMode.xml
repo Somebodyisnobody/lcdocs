@@ -5,7 +5,7 @@
 	<func>
 		<title>SetObjectBlitMode</title>
 		<category>Objekte</category><subcat>Darstellung</subcat>
-		<version>4.9.5.0 CE<extversion>4.9.6.0 CR</extversion></version>
+		<versions><version>4.9.5.0 CE</version><extversion>4.9.6.0 CR</extversion></versions>
 		<syntax>
 			<rtype>int</rtype>
 			<params>
@@ -63,5 +63,5 @@ protected func Script200()
 			<funclink>GetObjectBlitMode</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>März 2004</date>
+	<author>Sven2</author><date>2004-03</date>
 </funcs>

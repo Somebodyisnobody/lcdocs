@@ -5,7 +5,7 @@
   <func>
     <title>SoundLevel</title>
     <category>Effekte</category>
-    <version>4.6.5.0 CP<extversion>4.9.6.0 CR</extversion></version>
+    <versions><version>4.6.5.0 CP</version><extversion>4.9.6.0 CR</extversion></versions>
     <syntax>
       <rtype>void</rtype>
       <params>
@@ -32,6 +32,6 @@ SoundLevel("Wind", 50);</code>
       <funclink>Music</funclink>
     </related>
   </func>
-  <author>Sven2</author><date>Juni 2003</date>
-  <author>Clonkonaut</author><date>April 2008</date>
+  <author>Sven2</author><date>2003-06</date>
+  <author>Clonkonaut</author><date>2008-04</date>
 </funcs>

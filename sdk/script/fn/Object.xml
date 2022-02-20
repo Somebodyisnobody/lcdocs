@@ -5,7 +5,7 @@
 	<func>
 		<title>Object</title>
 		<category>Objekte</category>
-		<version>4.9.1.0 GWE</version>
+		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
 			<rtype>object</rtype>
 			<params>
@@ -17,5 +17,5 @@
 			<funclink>ObjectNumber</funclink>
 		</related>
 	</func>
-	<author>jwk</author><date>Mai 2002</date>
+	<author>jwk</author><date>2002-05</date>
 </funcs>

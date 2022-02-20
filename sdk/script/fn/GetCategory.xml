@@ -5,7 +5,7 @@
 	<func>
 		<title>GetCategory</title>
 		<category>Objekte</category><subcat>Kategorie</subcat>
-		<version>4.6.5.0 CP</version>
+		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
 			<rtype>int</rtype>
 			<params>
@@ -24,5 +24,5 @@
 			<funclink>SetCategory</funclink>
 		</related>
 	</func>
-	<author>Sven2</author><date>April 2002</date>
+	<author>Sven2</author><date>2002-04</date>
 </funcs>

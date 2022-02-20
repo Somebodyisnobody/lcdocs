@@ -5,7 +5,7 @@
 	<func>
 		<title>SetPlrMagic</title>
 		<category>Spieler</category>
-		<version>4.6.5.0 CP</version>
+		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
 			<rtype>int</rtype>
 			<params>
@@ -31,5 +31,5 @@
 			<funclink>GetPlrMagic</funclink>
 		</related>
 	</func>
-	<author>Günther</author><date>November 2002, Februar 2005</date>
+	<author>Günther</author><date>2005-02</date>
 </funcs>

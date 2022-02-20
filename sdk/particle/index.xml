@@ -209,6 +209,6 @@
 	<text>Die externe Kontrolle von Partikeln beschränkt sich auf wenige Funktionen zur Erzeugung, Gesamtverschiebung und Gesamtzerstörung. Das muss so sein, da Partikel nicht syncrelevant sind, und damit so gut wie gar nicht vom Script aus abfragbar sein können (ansonsten würden unterschiedliche Effektmengen im Netzwerk zu Desyncs führen). Partikel werden mit <funclink>CreateParticle</funclink> erschaffen.</text>
 </part>
 
-<author>Sven2</author><date>April 2002</date>
+<author>Sven2</author><date>2002-04</date>
 
 </doc>

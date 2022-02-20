@@ -5,7 +5,7 @@
 	<func>
 		<title>SetPlrView</title>
 		<category>Spieler</category><subcat>Sicht</subcat>
-		<version>4.6.5.0 CP</version>
+		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>
@@ -60,5 +60,5 @@ protected func Timer()
 												<funclink>SetFoW</funclink>
 								</related>
 	</func>
-	<author>PeterW</author><date>April 2003</date>
+	<author>PeterW</author><date>2003-04</date>
 </funcs>
