@@ -138,15 +138,17 @@
                         </xs:complexType>
                     </xs:element>
                     <xs:element name="const">
-                        <xs:complexType>
-                            <xs:sequence>
-                                <xs:group ref="authorAndDate"/>
-                                <xs:element name="version" type="clonkVersion"/>
-                                <xs:element name="changes" type="htmlText"/>
-                            </xs:sequence>
-                        </xs:complexType>
                     </xs:element>
                 </xs:choice>
+                <xs:element name="history" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:group ref="authorAndDate"/>
+                            <xs:element name="version" type="clonkVersion"/>
+                            <xs:element name="changes" type="htmlText"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
                 <xs:group ref="authorAndDate" maxOccurs="unbounded"/>
             </xs:sequence>
         </xs:complexType>
