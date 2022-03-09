@@ -22,7 +22,9 @@
 			</title>
 			<xsl:if test="descendant::table[bitmask]">
 				<script type="text/javascript">
-					<xsl:attribute name="src"><xsl:value-of select="$relpath"/><xsl:text>bitmasks.js</xsl:text></xsl:attribute>
+					<xsl:attribute name="src">
+						<xsl:value-of select="$relpath"/><xsl:text>bitmasks.js</xsl:text>
+					</xsl:attribute>
 				</script>
 				<script type="text/javascript">
 					var BIT_COUNT = <xsl:value-of select="count(descendant::table[bitmask]/row)"/>; // Anzahl der Bits
@@ -63,114 +65,116 @@
 		)
 	</xsl:template>
 
-  <xsl:template match="funcs">
-    <html>
-      <xsl:call-template name="head" />
-      <body>
-        <xsl:call-template name="nav" />
-        <xsl:for-each select="func">
-          <xsl:apply-templates select="." />
-        </xsl:for-each>
-        <xsl:apply-templates select="author" />
-        <xsl:if test="$webnotes">
-<xsl:processing-instruction name="php">
-  pwn_body(basename (dirname(__FILE__)) . basename(__FILE__,".html"), $_SERVER['SCRIPT_NAME']);
-?</xsl:processing-instruction>
-        </xsl:if>
-        <xsl:call-template name="nav" />
-      </body>
-    </html>
-  </xsl:template>
-
-  <xsl:template match="doc">
+	<xsl:template match="funcs">
 		<html>
 			<xsl:call-template name="head"/>
 			<body>
 				<xsl:call-template name="nav"/>
-                <xsl:apply-templates/>
-        <xsl:if test="$webnotes">
-<xsl:processing-instruction name="php">
-  pwn_body(basename (dirname(__FILE__)) . basename(__FILE__,".html"), $_SERVER['SCRIPT_NAME']);
-?</xsl:processing-instruction>
-        </xsl:if>
-                <xsl:call-template name="nav"/>
+				<xsl:for-each select="func">
+					<xsl:apply-templates select="."/>
+				</xsl:for-each>
+				<xsl:apply-templates select="author"/>
+				<xsl:if test="$webnotes">
+					<xsl:processing-instruction name="php">
+						pwn_body(basename (dirname(__FILE__)) . basename(__FILE__,".html"), $_SERVER['SCRIPT_NAME']);
+						?
+					</xsl:processing-instruction>
+				</xsl:if>
+				<xsl:call-template name="nav"/>
+			</body>
+		</html>
+	</xsl:template>
+
+	<xsl:template match="doc">
+		<html>
+			<xsl:call-template name="head"/>
+			<body>
+				<xsl:call-template name="nav"/>
+				<xsl:apply-templates/>
+				<xsl:if test="$webnotes">
+					<xsl:processing-instruction name="php">
+						pwn_body(basename (dirname(__FILE__)) . basename(__FILE__,".html"), $_SERVER['SCRIPT_NAME']);
+						?
+					</xsl:processing-instruction>
+				</xsl:if>
+				<xsl:call-template name="nav"/>
 			</body>
 		</html>
 	</xsl:template>
 
 	<xsl:template match="func">
-				<h1>
-					<xsl:attribute name="id">
-						<xsl:value-of select="title"/>
-					</xsl:attribute>
-					<xsl:value-of select="title"/>
-					<xsl:apply-templates select="deprecated"/>
-				</h1>
-				<div class="text">
-					<xsl:apply-templates select="category"/>
-					<br/>
-					<xsl:apply-templates select="version"/>
-				</div>
+		<h1>
+			<xsl:attribute name="id">
+				<xsl:value-of select="title"/>
+			</xsl:attribute>
+			<xsl:value-of select="title"/>
+			<xsl:apply-templates select="deprecated"/>
+		</h1>
+		<div class="text">
+			<xsl:apply-templates select="category"/>
+			<br/>
+			<xsl:apply-templates select="version"/>
+		</div>
+		<h2>
+			<xsl:choose>
+				<xsl:when test='lang("en")'>Description</xsl:when>
+				<xsl:otherwise>Beschreibung</xsl:otherwise>
+			</xsl:choose>
+		</h2>
+		<div class="text">
+			<xsl:apply-templates select="desc"/>
+		</div>
+		<xsl:apply-templates select="syntax"/>
+		<xsl:for-each select="syntax">
+			<xsl:for-each select="params">
+				<h2>Parameter
+					<xsl:if test="count(param)!=1 and lang('en')">s</xsl:if>
+				</h2>
+				<dl>
+					<xsl:for-each select="param">
+						<dt><xsl:value-of select="name"/>:
+						</dt>
+						<dd>
+							<div class="text">
+								<xsl:apply-templates select="optional"/>
+								<xsl:apply-templates select="desc"/>
+							</div>
+						</dd>
+					</xsl:for-each>
+				</dl>
+			</xsl:for-each>
+		</xsl:for-each>
+		<xsl:for-each select="remark">
+			<xsl:if test="generate-id(.)=generate-id(../remark[1])">
 				<h2>
 					<xsl:choose>
-						<xsl:when test='lang("en")'>Description</xsl:when>
-						<xsl:otherwise>Beschreibung</xsl:otherwise>
+						<xsl:when test='lang("en")'>Remark
+							<xsl:if test="count(../remark)!=1">s</xsl:if>
+						</xsl:when>
+						<xsl:otherwise>Anmerkung
+							<xsl:if test="count(../remark)!=1">en</xsl:if>
+						</xsl:otherwise>
 					</xsl:choose>
 				</h2>
-				<div class="text">
-					<xsl:apply-templates select="desc"/>
-				</div>
-				<xsl:apply-templates select="syntax"/>
-				<xsl:for-each select="syntax">
-					<xsl:for-each select="params">
-						<h2>Parameter
-							<xsl:if test="count(param)!=1 and lang('en')">s</xsl:if>
-						</h2>
-						<dl>
-							<xsl:for-each select="param">
-								<dt><xsl:value-of select="name"/>:
-								</dt>
-								<dd>
-									<div class="text">
-										<xsl:apply-templates select="optional"/>
-										<xsl:apply-templates select="desc"/>
-									</div>
-								</dd>
-							</xsl:for-each>
-						</dl>
-					</xsl:for-each>
-				</xsl:for-each>
-				<xsl:for-each select="remark">
-					<xsl:if test="generate-id(.)=generate-id(../remark[1])">
-						<h2>
-							<xsl:choose>
-								<xsl:when test='lang("en")'>Remark
-									<xsl:if test="count(../remark)!=1">s</xsl:if>
-								</xsl:when>
-								<xsl:otherwise>Anmerkung
-									<xsl:if test="count(../remark)!=1">en</xsl:if>
-								</xsl:otherwise>
-							</xsl:choose>
-						</h2>
-					</xsl:if>
-					<div class="text">
-						<xsl:apply-templates/>
-					</div>
-				</xsl:for-each>
-				<xsl:for-each select="examples">
-					<h2>
-						<xsl:choose>
-							<xsl:when test='lang("en")'>Example
-								<xsl:if test="count(example)!=1">s</xsl:if>
-							</xsl:when>
-							<xsl:otherwise>Beispiel
-								<xsl:if test="count(example)!=1">e</xsl:if>
-							</xsl:otherwise>
-						</xsl:choose>
-					</h2>
-					<xsl:apply-templates/>
-				</xsl:for-each>
-				<xsl:apply-templates select="related"/>
+			</xsl:if>
+			<div class="text">
+				<xsl:apply-templates/>
+			</div>
+		</xsl:for-each>
+		<xsl:for-each select="examples">
+			<h2>
+				<xsl:choose>
+					<xsl:when test='lang("en")'>Example
+						<xsl:if test="count(example)!=1">s</xsl:if>
+					</xsl:when>
+					<xsl:otherwise>Beispiel
+						<xsl:if test="count(example)!=1">e</xsl:if>
+					</xsl:otherwise>
+				</xsl:choose>
+			</h2>
+			<xsl:apply-templates/>
+		</xsl:for-each>
+		<xsl:apply-templates select="related"/>
 	</xsl:template>
 
 	<xsl:template match="syntax">
@@ -331,7 +335,8 @@
 
 	<xsl:template match="funclink">
 		<a>
-			<xsl:attribute name="href"><xsl:value-of select="$relpath"/><xsl:text>sdk/script/fn/</xsl:text><xsl:value-of select="."/><xsl:value-of
+			<xsl:attribute name="href">
+				<xsl:value-of select="$relpath"/><xsl:text>sdk/script/fn/</xsl:text><xsl:value-of select="."/><xsl:value-of
 					select="$fileext"/>
 			</xsl:attribute>
 			<xsl:value-of select="."/>
@@ -344,7 +349,8 @@
 		<xsl:param name="text" select="."/>
 		<a>
 			<xsl:attribute name="href">
-				<xsl:value-of select="$relpath"/>sdk/<xsl:choose>
+				<xsl:value-of select="$relpath"/>sdk/
+				<xsl:choose>
 					<!-- replace the .html extension with .xml (or whatever) -->
 					<xsl:when test="substring-before($href,'.html')">
 						<xsl:value-of
@@ -495,7 +501,9 @@
 				</li>
 				<li>
 					<a>
-						<xsl:attribute name="href"><xsl:value-of select="$relpath"/><xsl:text>content.html</xsl:text></xsl:attribute>
+						<xsl:attribute name="href">
+							<xsl:value-of select="$relpath"/><xsl:text>content.html</xsl:text>
+						</xsl:attribute>
 						<xsl:choose>
 							<xsl:when test='lang("en")'>Contents</xsl:when>
 							<xsl:otherwise>Inhalt</xsl:otherwise>
@@ -504,7 +512,9 @@
 				</li>
 				<li>
 					<a>
-						<xsl:attribute name="href"><xsl:value-of select="$relpath"/><xsl:text>search.php</xsl:text></xsl:attribute>
+						<xsl:attribute name="href">
+							<xsl:value-of select="$relpath"/><xsl:text>search.php</xsl:text>
+						</xsl:attribute>
 						<xsl:choose>
 							<xsl:when test='lang("en")'>Search</xsl:when>
 							<xsl:otherwise>Suche</xsl:otherwise>
