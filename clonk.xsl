@@ -369,8 +369,16 @@
 	</xsl:template>
 
 	<xsl:template match="author">
-		<div class="author"><xsl:value-of select="."/>,
-			<xsl:value-of select="following-sibling::date"/>
+		<xsl:param name="date" select="tokenize(following::date[1], '-')"/>
+		<div class="author"><xsl:value-of select="."/><xsl:text>, </xsl:text>
+			<xsl:choose>
+				<xsl:when test="count($date)=2">
+					<xsl:value-of select="concat($date[last()], '.', $date[last()-1])"/>
+				</xsl:when>
+				<xsl:when test="count($date)=3">
+					<xsl:value-of select="concat($date[last()], '.', $date[last()-1], '.', $date[last()-2])"/>
+				</xsl:when>
+			</xsl:choose>
 		</div>
 	</xsl:template>
 
