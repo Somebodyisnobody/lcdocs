@@ -5,11 +5,27 @@
 	<xsl:output method="html" encoding="ISO-8859-1" doctype-public="-//W3C//DTD HTML 4.01//EN"
 				doctype-system="http://www.w3.org/TR/html4/strict.dtd"/>
 
-	<xsl:variable name="procinst" select="processing-instruction('xml-stylesheet')"/>
-	<xsl:param name="relpath" select="substring-after(substring-before($procinst, 'clonk.xsl'),'href=&quot;')"/>
-	<xsl:param name="webnotes"/>
+	<xsl:param name="is-web-documentation"/>
 	<xsl:param name="fileext" select="'.xml'"/>
+	<xsl:param name="output-folder"/>
+	<xsl:param name="input-folder"/>
+
+	<xsl:template name="main">
+		<xsl:for-each select="collection(concat($input-folder, '?select=*.xml;recurse=yes'))">
+			<xsl:variable name="procinst" select="processing-instruction('xml-stylesheet')"/>
+			<xsl:variable name="relpath" select="substring-after(substring-before($procinst, 'clonk.xsl'),'href=&quot;')"/>
+			<!--<xsl:result-document href="out/sdk/{tokenize(document-uri(.), '/')[last()]}"> packing everything in one folder-->
+			<!--	online/de/sdk [output-folder] + (/...../sdk/index.xml [document-uri] - everything before sdk/ [input-folder] - ".xml") + .html	-->
+			<xsl:result-document href="{concat($output-folder, '/' , substring-before(substring-after(document-uri(.), $input-folder), '.xml'), $fileext)}">
+				<xsl:apply-templates select=".">
+					<xsl:with-param name="relpath" select="$relpath" tunnel="yes"/>
+				</xsl:apply-templates>
+			</xsl:result-document>
+		</xsl:for-each>
+	</xsl:template>
+
 	<xsl:template name="head">
+		<xsl:param name="relpath" tunnel="yes"/>
 		<head>
 			<link rel="stylesheet" type="text/css">
 				<xsl:attribute name="href">
@@ -31,7 +47,7 @@
 					var PREFIX = "bit"; // Prefix für die numerierten IDs
 				</script>
 			</xsl:if>
-			<xsl:if test="$webnotes">
+			<xsl:if test="$is-web-documentation">
 				<xsl:processing-instruction name="php">
 					$g_page_language = '
 					<xsl:choose>
@@ -71,7 +87,7 @@
 			<body>
 				<xsl:call-template name="nav"/>
 				<xsl:apply-templates/>
-				<xsl:if test="$webnotes">
+				<xsl:if test="$is-web-documentation">
 					<xsl:processing-instruction name="php">
 						pwn_body(basename (dirname(__FILE__)) . basename(__FILE__,".html"), $_SERVER['SCRIPT_NAME']);
 						?
@@ -318,6 +334,7 @@
 	</xsl:template>
 
 	<xsl:template match="funclink">
+		<xsl:param name="relpath" tunnel="yes"/>
 		<a>
 			<xsl:attribute name="href">
 				<xsl:value-of select="$relpath"/><xsl:text>sdk/script/fn/</xsl:text><xsl:value-of select="."/><xsl:value-of
@@ -328,6 +345,7 @@
 	</xsl:template>
 
 	<xsl:template match="emlink" name="link">
+		<xsl:param name="relpath" tunnel="yes"/>
 		<!-- so this template can be called for the navigation -->
 		<xsl:param name="href" select="@href"/>
 		<xsl:param name="text" select="."/>
@@ -450,7 +468,8 @@
 	</xsl:template>
 
 	<xsl:template name="nav">
-		<xsl:if test="$webnotes">
+		<xsl:param name="relpath" tunnel="yes"/>
+		<xsl:if test="$is-web-documentation">
 			<ul class="nav">
 				<li class="fineprint">
 					<xsl:choose>
