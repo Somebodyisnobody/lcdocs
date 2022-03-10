@@ -101,10 +101,12 @@ doku.pot: $(xmlfiles) extra-strings.xml xml2po.py clonk.py
 sdk-en/%.xml: sdk/%.xml en.mo xml2po.py clonk.py
 	@echo generate $@
 	@$(PYTHON) xml2po.py -e -m clonk -t en.mo -o $@ $<
-
+#old: @xsltproc -o $@ --param webnotes $(webnotes) --param fileext "'.html'" $(XSLTFLAGS) $(stylesheet) $<
+#command for cmdline: saxonb-xslt -s:sdk/script/index.xml -xsl:clonk.xsl -o:generated_docs.html webnotes=1 fileext='.html'
+#command for converting full paths (not recursively, target folder must be created): saxonb-xslt -s:sdk/ -xsl:clonk.xsl -o:generated_docs/ webnotes=1 fileext='.html'
 define run-xslt
 @echo generate $@
-@xsltproc -o $@ --param webnotes $(webnotes) --param fileext "'.html'" $(XSLTFLAGS) $(stylesheet) $<
+saxonb-xslt -s:$< -o:$@ -xsl:$(stylesheet) $(XSLTFLAGS) webnotes=$(webnotes) fileext='.html'
 endef
 online/%: webnotes=1
 chm/%: webnotes=0

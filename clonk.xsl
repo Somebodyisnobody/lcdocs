@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0" xpath-default-namespace="https://clonkspot.org">
 
 	<xsl:output method="html" encoding="ISO-8859-1" doctype-public="-//W3C//DTD HTML 4.01//EN"
 				doctype-system="http://www.w3.org/TR/html4/strict.dtd"/>
@@ -65,27 +65,7 @@
 		)
 	</xsl:template>
 
-	<xsl:template match="funcs">
-		<html>
-			<xsl:call-template name="head"/>
-			<body>
-				<xsl:call-template name="nav"/>
-				<xsl:for-each select="func">
-					<xsl:apply-templates select="."/>
-				</xsl:for-each>
-				<xsl:apply-templates select="author"/>
-				<xsl:if test="$webnotes">
-					<xsl:processing-instruction name="php">
-						pwn_body(basename (dirname(__FILE__)) . basename(__FILE__,".html"), $_SERVER['SCRIPT_NAME']);
-						?
-					</xsl:processing-instruction>
-				</xsl:if>
-				<xsl:call-template name="nav"/>
-			</body>
-		</html>
-	</xsl:template>
-
-	<xsl:template match="doc">
+	<xsl:template match="/clonkDoc">
 		<html>
 			<xsl:call-template name="head"/>
 			<body>
@@ -100,6 +80,10 @@
 				<xsl:call-template name="nav"/>
 			</body>
 		</html>
+	</xsl:template>
+
+	<xsl:template match="doc">
+		<xsl:apply-templates/>
 	</xsl:template>
 
 	<xsl:template match="func">
@@ -349,7 +333,7 @@
 		<xsl:param name="text" select="."/>
 		<a>
 			<xsl:attribute name="href">
-				<xsl:value-of select="$relpath"/>sdk/
+				<xsl:value-of select="$relpath"/><xsl:text>sdk/</xsl:text>
 				<xsl:choose>
 					<!-- replace the .html extension with .xml (or whatever) -->
 					<xsl:when test="substring-before($href,'.html')">
