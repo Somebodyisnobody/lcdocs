@@ -105,15 +105,30 @@ sdk-en/%.xml: sdk/%.xml en.mo xml2po.py clonk.py
 #command for cmdline: saxonb-xslt -s:sdk/script/index.xml -xsl:clonk.xsl -o:generated_docs.html webnotes=1 fileext='.html'
 #command for converting full paths (not recursively, target folder must be created): saxonb-xslt -s:sdk/ -xsl:clonk.xsl -o:generated_docs/ webnotes=1 fileext='.html'
 define run-xslt
-@echo generate $@
-saxonb-xslt -s:$< -o:$@ -xsl:$(stylesheet) $(XSLTFLAGS) webnotes=$(webnotes) fileext='.html'
+@echo generate $(output)
+@saxonb-xslt -it:main -xsl:$(stylesheet) $(XSLTFLAGS) -ext:on webnotes=$(webnotes) fileext='.html' output-folder=$(output) input-folder=$(input)/
+@touch $@
 endef
+chm/de/% online/de/%: input=sdk
+chm/en/% online/en/%: input=sdk-en
+online/de/%.html: online/de/.tmp ;
+online/en/%.html: online/en/.tmp ;
+online/de/.tmp: $(xmlfiles) $(stylesheet)
+	$(run-xslt)
+online/en/.tmp: $(xmlfiles-en) $(stylesheet)
+	$(run-xslt)
+chm/de/%.html: chm/de/.tmp ;
+chm/en/%.html: chm/en/.tmp ;
+chm/de/.tmp: $(xmlfiles) $(stylesheet)
+	$(run-xslt)
+chm/en/.tmp: $(xmlfiles-en) $(stylesheet)
+	$(run-xslt)
 online/%: webnotes=1
+online/de/%: output=online/de/sdk
+online/en/%: output=online/en/sdk
 chm/%: webnotes=0
-online/de/sdk/%.html: sdk/%.xml $(stylesheet) ; $(run-xslt)
-online/en/sdk/%.html: sdk-en/%.xml $(stylesheet) ; $(run-xslt)
-chm/de/sdk/%.html: sdk/%.xml $(stylesheet) ; $(run-xslt)
-chm/en/sdk/%.html: sdk-en/%.xml $(stylesheet) ; $(run-xslt)
+chm/de/%: output=chm/de/sdk
+chm/en/%: output=chm/en/sdk
 
 $(filter online/en/%, $(online-extra-files)): online/en/%: %
 	$(CP) $< $@
