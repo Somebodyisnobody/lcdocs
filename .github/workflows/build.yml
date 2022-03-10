@@ -51,7 +51,8 @@ jobs:
           mv doku.pot output
           mv en.mo output
           mv Functions.txt output
-          zip -qq -0 -r generated-docs.zip output
+          cd output
+          zip -q -0 -r ../generated-docs.zip *
 
       - name: "Publish zipped Main Artifact"
         uses: actions/upload-artifact@v3
