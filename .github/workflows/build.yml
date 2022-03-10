@@ -48,9 +48,13 @@ jobs:
           mv chm output
           mv sdk-en output
           mv sdk output
+          mv doku.pot output
+          mv en.mo output
+          mv Functions.txt output
+          zip -qq -0 -r generated-docs.zip output
 
-      - name: "Publish Main Artifact"
-        uses: actions/upload-artifact@v2
+      - name: "Publish zipped Main Artifact"
+        uses: actions/upload-artifact@v3
         with:
-          name: generated-docs
-          path: output/*
+          name: generated-docs-nested-zip
+          path: generated-docs.zip
