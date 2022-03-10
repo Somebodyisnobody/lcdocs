@@ -294,6 +294,7 @@
 	<!-- copy img, a, em and br literally -->
 	<xsl:template match="img|a|em|strong|br|code/i|code/b">
 		<xsl:copy>
+			<!-- TODO fix wrong namespace in generated documents-->
 			<!-- including every attribute -->
 			<xsl:for-each select="@*|node()">
 				<xsl:copy/>

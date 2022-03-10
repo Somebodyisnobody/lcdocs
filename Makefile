@@ -101,12 +101,13 @@ doku.pot: $(xmlfiles) extra-strings.xml xml2po.py clonk.py
 sdk-en/%.xml: sdk/%.xml en.mo xml2po.py clonk.py
 	@echo generate $@
 	@$(PYTHON) xml2po.py -e -m clonk -t en.mo -o $@ $<
-#old: @xsltproc -o $@ --param webnotes $(webnotes) --param fileext "'.html'" $(XSLTFLAGS) $(stylesheet) $<
-#command for cmdline: saxonb-xslt -s:sdk/script/index.xml -xsl:clonk.xsl -o:generated_docs.html webnotes=1 fileext='.html'
-#command for converting full paths (not recursively, target folder must be created): saxonb-xslt -s:sdk/ -xsl:clonk.xsl -o:generated_docs/ webnotes=1 fileext='.html'
+
+###Transforms XML to HTML files for online and CHM in English and German.
+###Command for converting single files: saxonb-xslt -ext:on -s:sdk/script/index.xml -xsl:clonk.xsl -o:generated_docs.html is-web-documentation=1 fileext='.html'
+###Command for converting full paths (not recursively, target folder must be created): saxonb-xslt -ext:on -s:sdk/ -xsl:clonk.xsl -o:generated_docs/ is-web-documentation=1 fileext='.html'
 define run-xslt
-@echo generate $(output)
-@saxonb-xslt -it:main -xsl:$(stylesheet) $(XSLTFLAGS) -ext:on webnotes=$(webnotes) fileext='.html' output-folder=$(output) input-folder=$(input)/
+@echo transform to $(output)
+@saxonb-xslt -it:main -xsl:$(stylesheet) $(XSLTFLAGS) -ext:on is-web-documentation=$(is-web-documentation) fileext='.html' output-folder=$(output) input-folder=$(input)/
 @touch $@
 endef
 chm/de/% online/de/%: input=sdk
@@ -123,10 +124,10 @@ chm/de/.tmp: $(xmlfiles) $(stylesheet)
 	$(run-xslt)
 chm/en/.tmp: $(xmlfiles-en) $(stylesheet)
 	$(run-xslt)
-online/%: webnotes=1
+online/%: is-web-documentation=1
 online/de/%: output=online/de/sdk
 online/en/%: output=online/en/sdk
-chm/%: webnotes=0
+chm/%: is-web-documentation=0
 chm/de/%: output=chm/de/sdk
 chm/en/%: output=chm/en/sdk
 
