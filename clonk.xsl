@@ -113,7 +113,7 @@
 		<div class="text">
 			<xsl:apply-templates select="category"/>
 			<br/>
-			<xsl:apply-templates select="version"/>
+			<xsl:apply-templates select="versions"/>
 		</div>
 		<h2>
 			<xsl:choose>
@@ -215,8 +215,8 @@
 	<xsl:template match="category">
 		<b>
 			<xsl:choose>
-				<xsl:when test='lang("en")'>Category:</xsl:when>
-				<xsl:otherwise>Kategorie:</xsl:otherwise>
+				<xsl:when test='lang("en")'>Category: </xsl:when>
+				<xsl:otherwise>Kategorie: </xsl:otherwise>
 			</xsl:choose>
 		</b>
 		<xsl:value-of select="."/>
@@ -228,25 +228,41 @@
 		<xsl:value-of select="."/>
 	</xsl:template>
 
-	<xsl:template match="version">
+	<xsl:template match="versions">
 		<b>
 			<xsl:choose>
-				<xsl:when test='lang("en")'>Since engine version:</xsl:when>
-				<xsl:otherwise>Ab Engineversion:</xsl:otherwise>
+				<xsl:when test='lang("en")'>Since engine version: </xsl:when>
+				<xsl:otherwise>Ab Engineversion: </xsl:otherwise>
 			</xsl:choose>
+			<xsl:value-of select="version[1]"/>
 		</b>
-		<xsl:apply-templates/>
+		<xsl:apply-templates select="extversion[1]"/>
 	</xsl:template>
 
 	<xsl:template match="extversion">
 		<xsl:choose>
-			<xsl:when test='lang("en")'>
-				(extended in <xsl:value-of select="."/>)
+			<xsl:when test='lang("de")'>
+				<xsl:text> (erweitert in </xsl:text>
 			</xsl:when>
 			<xsl:otherwise>
-				(erweitert ab <xsl:value-of select="."/>)
+				<xsl:text> (extended in </xsl:text>
 			</xsl:otherwise>
 		</xsl:choose>
+		<xsl:value-of select="."/>
+		<xsl:for-each select="following::extversion">
+			<xsl:choose>
+				<xsl:when test="position() != last()">
+					<xsl:text>, </xsl:text><xsl:value-of select="." />
+				</xsl:when>
+				<xsl:when test='position() = last() and lang("de")'>
+					<xsl:text> und </xsl:text><xsl:value-of select="." />
+				</xsl:when>
+				<xsl:when test='position() = last()'>
+					<xsl:text> and </xsl:text><xsl:value-of select="." />
+				</xsl:when>
+			</xsl:choose>
+		</xsl:for-each>
+		<xsl:text>)</xsl:text>
 	</xsl:template>
 
 	<xsl:template match="example">
