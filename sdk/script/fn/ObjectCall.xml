@@ -7,7 +7,7 @@
 		<title>ObjectCall</title>
 		<category>Script</category><subcat>Funktionsaufruf</subcat>
 		<versions><version>4.6.5.0 CP</version></versions>
-		<deprecated />
+		<deprecated>unknown</deprecated>
 		<syntax>
 			<rtype>any</rtype>
 			<params>

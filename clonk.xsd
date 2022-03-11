@@ -53,7 +53,7 @@
                                 <xs:element minOccurs="0" maxOccurs="unbounded" name="subcat"
                                             type="functionSubCategory"/>
                                 <xs:element name="versions" type="entityVersions"/>
-                                <!-- For later use: Enter Clonk version since deprecated here (e.g. 1.2.3.4 [999] LC); nullable -->
+                                <!-- Enter Clonk version since deprecated here (e.g. 1.2.3.4 [999] LC); "unknown" allowed for compatibility reasons -->
                                 <xs:element minOccurs="0" name="deprecated" type="clonkVersionOrEmpty"/>
                                 <xs:element name="syntax">
                                     <xs:complexType>
@@ -269,7 +269,7 @@
         <xs:union memberTypes="clonkVersion">
             <xs:simpleType>
                 <xs:restriction base='xs:string'>
-                    <xs:length value="0"/>
+                    <xs:enumeration value="unknown"/>
                 </xs:restriction>
             </xs:simpleType>
         </xs:union>

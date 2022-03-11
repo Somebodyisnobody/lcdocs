@@ -7,7 +7,7 @@
   <title>Pow</title>
   <category>Arithmetik</category>
   <versions><version>4.9.1.0 GWE</version></versions>
-  <deprecated />
+  <deprecated>unknown</deprecated>
   <syntax>
    <rtype>int</rtype>
    <params>

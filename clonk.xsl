@@ -73,12 +73,20 @@
 	<!-- The title content is used for the page title-->
 	<xsl:template match="title"/>
 	<xsl:template match="deprecated">
-		(
+		<xsl:text> (</xsl:text>
 		<xsl:choose>
-			<xsl:when test='lang("en")'>deprecated</xsl:when>
-			<xsl:otherwise>veraltet</xsl:otherwise>
+			<xsl:when test='lang("de") and . != "unknown"'>
+				<xsl:text>veraltet seit </xsl:text>
+				<xsl:value-of select="."/>
+			</xsl:when>
+			<xsl:when test='. != "unknown"'>
+				<xsl:text>deprecated since </xsl:text>
+				<xsl:value-of select="."/>
+			</xsl:when>
+			<xsl:when test='lang("de")'>veraltet</xsl:when>
+			<xsl:otherwise>deprecated</xsl:otherwise>
 		</xsl:choose>
-		)
+		<xsl:text>)</xsl:text>
 	</xsl:template>
 
 	<xsl:template match="/clonkDoc">

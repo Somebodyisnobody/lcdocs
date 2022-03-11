@@ -6,7 +6,8 @@
 	<func>
 		<title>Value</title>
 		<category>Objekte</category><subcat>Status</subcat>
-		<versions><version>4.6.5.0 CP</version></versions><deprecated />
+		<versions><version>4.6.5.0 CP</version></versions>
+		<deprecated>unknown</deprecated>
 		<syntax>
 			<rtype>int</rtype>
 			<params>
