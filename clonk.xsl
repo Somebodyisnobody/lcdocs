@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.0" xpath-default-namespace="https://clonkspot.org">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.0" xpath-default-namespace="https://clonkspot.org" exclude-result-prefixes="xs">
 
 	<xsl:output method="html" encoding="ISO-8859-1" doctype-public="-//W3C//DTD HTML 4.01//EN"
 				doctype-system="http://www.w3.org/TR/html4/strict.dtd"/>
@@ -49,15 +49,16 @@
 			</xsl:if>
 			<xsl:if test="$is-web-documentation">
 				<xsl:processing-instruction name="php">
-					$g_page_language = '
+					<xsl:text>$g_page_language = '</xsl:text>
 					<xsl:choose>
 						<xsl:when test='lang("en")'>english</xsl:when>
 						<xsl:otherwise>german</xsl:otherwise>
 					</xsl:choose>
-					';
-					require_once('<xsl:value-of select="$relpath"/>../webnotes/core/api.php');
+					<xsl:text>';
+					require_once('</xsl:text><xsl:value-of select="$relpath"/><xsl:text>../webnotes/core/api.php');
 					pwn_head();
 					?
+					</xsl:text>
 				</xsl:processing-instruction>
 				<script type="text/javascript">
 					function switchLanguage() {
@@ -97,10 +98,10 @@
 				<xsl:apply-templates select="func"/>
 				<xsl:apply-templates select="doc"/>
 				<xsl:apply-templates select="author"/>
+
 				<xsl:if test="$is-web-documentation">
 					<xsl:processing-instruction name="php">
-						pwn_body(basename (dirname(__FILE__)) . basename(__FILE__,".html"), $_SERVER['SCRIPT_NAME']);
-						?
+						<xsl:text>pwn_body(basename (dirname(__FILE__)) . basename(__FILE__,".html"), $_SERVER['SCRIPT_NAME']); ?</xsl:text>
 					</xsl:processing-instruction>
 				</xsl:if>
 				<xsl:call-template name="nav"/>
@@ -417,13 +418,15 @@
 
 	<!-- copy img, a, em and br literally -->
 	<xsl:template match="img|a|em|strong|br|code/i|code/b">
-		<xsl:copy>
-			<!-- TODO fix wrong namespace in generated documents-->
+		<xsl:element name="{local-name()}">
 			<!-- including every attribute -->
-			<xsl:for-each select="@*|node()">
-				<xsl:copy/>
+			<xsl:for-each select="@*">
+				<xsl:attribute name="{local-name()}"><xsl:value-of select="."/></xsl:attribute>
 			</xsl:for-each>
-		</xsl:copy>
+			<xsl:for-each select="node()">
+				<xsl:apply-templates select="."/>
+			</xsl:for-each>
+		</xsl:element>
 	</xsl:template>
 
 	<xsl:template match="dl">
