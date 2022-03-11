@@ -224,7 +224,7 @@
 	</xsl:template>
 
 	<xsl:template match="subcat">
-		/
+		<xsl:text> / </xsl:text>
 		<xsl:value-of select="."/>
 	</xsl:template>
 
