@@ -125,8 +125,8 @@
 		</div>
 		<h2>
 			<xsl:choose>
-				<xsl:when test='lang("en")'>Description</xsl:when>
-				<xsl:otherwise>Beschreibung</xsl:otherwise>
+				<xsl:when test='lang("de")'>Beschreibung</xsl:when>
+				<xsl:otherwise>Description</xsl:otherwise>
 			</xsl:choose>
 		</h2>
 		<div class="text">
@@ -135,7 +135,7 @@
 		<xsl:apply-templates select="syntax"/>
 		<xsl:for-each select="syntax">
 			<xsl:for-each select="params">
-				<h2>Parameter
+				<h2><xsl:text>Parameter</xsl:text>
 					<xsl:if test="count(param)!=1 and lang('en')">s</xsl:if>
 				</h2>
 				<dl>
@@ -172,10 +172,10 @@
 		<xsl:for-each select="examples">
 			<h2>
 				<xsl:choose>
-					<xsl:when test='lang("en")'>Example
+					<xsl:when test='lang("en")'><xsl:text>Example</xsl:text>
 						<xsl:if test="count(example)!=1">s</xsl:if>
 					</xsl:when>
-					<xsl:otherwise>Beispiel
+					<xsl:otherwise><xsl:text>Beispiel</xsl:text>
 						<xsl:if test="count(example)!=1">e</xsl:if>
 					</xsl:otherwise>
 				</xsl:choose>
@@ -202,7 +202,7 @@
 	<xsl:template match="params">
 		<xsl:for-each select="param">
 			<xsl:apply-templates select="."/>
-			<xsl:if test="position()!=last()">,</xsl:if>
+			<xsl:if test="position()!=last()"><xsl:text>, </xsl:text></xsl:if>
 		</xsl:for-each>
 	</xsl:template>
 
@@ -242,8 +242,8 @@
 				<xsl:when test='lang("en")'>Since engine version: </xsl:when>
 				<xsl:otherwise>Ab Engineversion: </xsl:otherwise>
 			</xsl:choose>
-			<xsl:value-of select="version[1]"/>
 		</b>
+		<xsl:value-of select="version"/>
 		<xsl:apply-templates select="extversion[1]"/>
 	</xsl:template>
 
@@ -346,14 +346,14 @@
 		<div class="text">
 			<b>
 				<xsl:choose>
-					<xsl:when test='lang("en")'>See also:</xsl:when>
-					<xsl:otherwise>Siehe auch:</xsl:otherwise>
+					<xsl:when test='lang("en")'><xsl:text>See also: </xsl:text></xsl:when>
+					<xsl:otherwise><xsl:text>Siehe auch: </xsl:text></xsl:otherwise>
 				</xsl:choose>
 			</b>
 			<xsl:for-each select="*">
 				<xsl:sort/>
 				<xsl:apply-templates select="."/>
-				<xsl:if test="position()!=last()">,</xsl:if>
+				<xsl:if test="position()!=last()"><xsl:text>, </xsl:text></xsl:if>
 			</xsl:for-each>
 		</div>
 	</xsl:template>
