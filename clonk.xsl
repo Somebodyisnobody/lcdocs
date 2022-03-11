@@ -193,11 +193,12 @@
 		<h2>Syntax</h2>
 		<div class="text fnsyntax">
 			<span class="type">
-				<xsl:apply-templates select="rtype"/>
+				<xsl:value-of select="rtype"/>
+				<xsl:if test="isReference">
+					<xsl:text>&#38;</xsl:text>
+				</xsl:if>
 			</span>
-			<xsl:if test="not(contains(rtype[1],'&amp;'))">
-				<xsl:text>&#160;</xsl:text>
-			</xsl:if>
+			<xsl:text>&#160;</xsl:text>
 			<xsl:value-of select="../title"/>
 			(<xsl:apply-templates select="params"/>);
 		</div>
@@ -213,15 +214,16 @@
 	<xsl:template match="param">
 		<span class="type">
 			<xsl:value-of select="type"/>
+			<xsl:if test="isReference">
+				<xsl:text>&#38;</xsl:text>
+			</xsl:if>
 		</span>
-		<xsl:if test="not(contains(type[1],'&amp;'))">
 			<xsl:text>&#160;</xsl:text>
-		</xsl:if>
 		<xsl:value-of select="name"/>
 	</xsl:template>
 
 	<xsl:template match="optional">
-		[opt]
+		<xsl:text>[optional] </xsl:text>
 	</xsl:template>
 
 	<xsl:template match="category">
