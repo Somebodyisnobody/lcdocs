@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0" xpath-default-namespace="https://clonkspot.org">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.0" xpath-default-namespace="https://clonkspot.org">
 
 	<xsl:output method="html" encoding="ISO-8859-1" doctype-public="-//W3C//DTD HTML 4.01//EN"
 				doctype-system="http://www.w3.org/TR/html4/strict.dtd"/>
@@ -369,14 +369,16 @@
 	</xsl:template>
 
 	<xsl:template match="author">
-		<xsl:param name="date" select="tokenize(following::date[1], '-')"/>
+		<xsl:param name="date" select="tokenize(following-sibling::date[1], '-')"/>
 		<div class="author"><xsl:value-of select="."/><xsl:text>, </xsl:text>
 			<xsl:choose>
 				<xsl:when test="count($date)=2">
-					<xsl:value-of select="concat($date[last()], '.', $date[last()-1])"/>
+					<!--<xsl:value-of select="concat($date[last()], '.', $date[last()-1])"/>-->
+					<xsl:value-of select="format-date(xs:date(concat(following-sibling::date[1], '-01')), '[MNn] [Y]', /clonkDoc/@xml:lang, (), ())"/>
 				</xsl:when>
 				<xsl:when test="count($date)=3">
-					<xsl:value-of select="concat($date[last()], '.', $date[last()-1], '.', $date[last()-2])"/>
+					<!--<xsl:value-of select="concat($date[last()], '.', $date[last()-1], '.', $date[last()-2])"/>-->
+					<xsl:value-of select="format-date(xs:date(following-sibling::date[1]), '[D] [MNn] [Y]', /clonkDoc/@xml:lang, (), ())"/>
 				</xsl:when>
 			</xsl:choose>
 		</div>

@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd">
+          xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
 	<func>
 		<title>SetObjectBlitMode</title>
 		<category>Objekte</category><subcat>Darstellung</subcat>

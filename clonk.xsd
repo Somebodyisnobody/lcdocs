@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="https://clonkspot.org"
            xmlns="https://clonkspot.org">
+    <!-- Import xml: namespace -->
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace"
+               schemaLocation="http://www.w3.org/2009/01/xml.xsd"/>
     <xs:annotation>
         <xs:documentation>
             ClonkDoc XML Schema
@@ -151,6 +154,7 @@
                 </xs:element>
                 <xs:group ref="authorAndDate" maxOccurs="unbounded"/>
             </xs:sequence>
+            <xs:attribute ref="xml:lang" use="required"/>
         </xs:complexType>
     </xs:element>
 
