@@ -5,8 +5,17 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
 	<func>
 		<title>ObjectCount</title>
-		<category>Objekte</category><subcat>Suche</subcat>
-		<versions><version>4.6.5.0 CP</version></versions>
+		<category>Objekte</category>
+		<subcat>Suche</subcat>
+		<versions>
+			<version>4.6.5.0 CP</version>
+		</versions>
+		<deprecated>
+			<author>Clonkonaut</author>
+			<date>2006-07</date>
+			<version>4.9.6.0 CR</version>
+			<description>Die Funktion ist durch Einführung von <funclink>ObjectCount2</funclink> und <funclink>FindObjects</funclink> veraltet.</description>
+		</deprecated>
 		<syntax>
 			<rtype>int</rtype>
 			<params>

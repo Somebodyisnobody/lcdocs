@@ -6,7 +6,7 @@
 	<func>
 		<title>GetValue</title>
 		<category>Objekte</category><subcat>Status</subcat>
-		<versions><version>4.6.5.0 CP</version><extversion>4.9.1.0 GWE</extversion></versions>
+		<versions><version>4.6.5.0 CP</version><extversion>4.91.0.0 GWE</extversion></versions>
 		<syntax>
 			<rtype>int</rtype>
 			<params>

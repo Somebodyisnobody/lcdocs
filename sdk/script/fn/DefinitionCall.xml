@@ -7,6 +7,13 @@
     <title>DefinitionCall</title>
     <category>Script</category><subcat>Funktionsaufruf</subcat>
     <versions><version>4.6.5.0 CP</version></versions>
+    <deprecated>
+      <!-- TODO check if really deprecated @DerTod. Eventuell besser beschreiben und auf https://crdocs.clonkspot.org/en/sdk/script/FuncCall.html verweisen-->
+      <author>PeterW</author>
+      <date>2002-07-15</date>
+      <version>4.9.1.4 GWE</version>
+      <description>TODO check</description>
+    </deprecated>
     <syntax>
       <rtype>any</rtype>
       <params>

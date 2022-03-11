@@ -7,7 +7,12 @@
 		<title>LocalN</title>
 		<category>Variablen</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
-		<deprecated>4.9.10.7 [335] LC</deprecated>
+		<deprecated>
+			<author>DerTod</author>
+			<date>2019-09-04</date>
+			<version>4.9.10.7 [335] LC</version>
+			<description>Diese Funktion dient der Kompatibilität zu älteren Spielinhalten. In neueren Scripts sollte <code>obj["name"]</code> oder <code>obj.name</code>, letzteres bei aktiviertem <code>#strict 3</code>, verwendet werden.</description>
+		</deprecated>
 		<syntax>
 			<rtype>object</rtype>
 			<isReference />

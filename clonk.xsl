@@ -75,13 +75,13 @@
 	<xsl:template match="deprecated">
 		<xsl:text> (</xsl:text>
 		<xsl:choose>
-			<xsl:when test='lang("de") and . != "unknown"'>
+			<xsl:when test='lang("de") and ./version != "unknown"'>
 				<xsl:text>veraltet seit </xsl:text>
-				<xsl:value-of select="."/>
+				<xsl:value-of select="normalize-space(./version)"/>
 			</xsl:when>
-			<xsl:when test='. != "unknown"'>
+			<xsl:when test='./version != "unknown"'>
 				<xsl:text>deprecated since </xsl:text>
-				<xsl:value-of select="."/>
+				<xsl:value-of select="normalize-space(./version)"/>
 			</xsl:when>
 			<xsl:when test='lang("de")'>veraltet</xsl:when>
 			<xsl:otherwise>deprecated</xsl:otherwise>
@@ -94,7 +94,9 @@
 			<xsl:call-template name="head"/>
 			<body>
 				<xsl:call-template name="nav"/>
-				<xsl:apply-templates/>
+				<xsl:apply-templates select="func"/>
+				<xsl:apply-templates select="doc"/>
+				<xsl:apply-templates select="author"/>
 				<xsl:if test="$is-web-documentation">
 					<xsl:processing-instruction name="php">
 						pwn_body(basename (dirname(__FILE__)) . basename(__FILE__,".html"), $_SERVER['SCRIPT_NAME']);
@@ -108,6 +110,7 @@
 
 	<xsl:template match="doc">
 		<xsl:apply-templates/>
+		<xsl:call-template name="history"/>
 	</xsl:template>
 
 	<xsl:template match="func">
@@ -182,6 +185,7 @@
 			</h2>
 			<xsl:apply-templates/>
 		</xsl:for-each>
+		<xsl:call-template name="history"/>
 		<xsl:apply-templates select="related"/>
 	</xsl:template>
 
@@ -243,7 +247,7 @@
 				<xsl:otherwise>Ab Engineversion: </xsl:otherwise>
 			</xsl:choose>
 		</b>
-		<xsl:value-of select="version"/>
+		<xsl:value-of select="normalize-space(version)"/>
 		<xsl:apply-templates select="extversion[1]"/>
 	</xsl:template>
 
@@ -256,17 +260,17 @@
 				<xsl:text> (extended in </xsl:text>
 			</xsl:otherwise>
 		</xsl:choose>
-		<xsl:value-of select="."/>
+		<xsl:value-of select="normalize-space(.)"/>
 		<xsl:for-each select="following::extversion">
 			<xsl:choose>
 				<xsl:when test="position() != last()">
-					<xsl:text>, </xsl:text><xsl:value-of select="." />
+					<xsl:text>, </xsl:text><xsl:value-of select="normalize-space(.)" />
 				</xsl:when>
 				<xsl:when test='position() = last() and lang("de")'>
-					<xsl:text> und </xsl:text><xsl:value-of select="." />
+					<xsl:text> und </xsl:text><xsl:value-of select="normalize-space(.)" />
 				</xsl:when>
 				<xsl:when test='position() = last()'>
-					<xsl:text> and </xsl:text><xsl:value-of select="." />
+					<xsl:text> and </xsl:text><xsl:value-of select="normalize-space(.)" />
 				</xsl:when>
 			</xsl:choose>
 		</xsl:for-each>
@@ -277,6 +281,100 @@
 		<div class="example">
 			<xsl:apply-templates/>
 		</div>
+	</xsl:template>
+
+	<xsl:template name="history">
+			<xsl:if test="exists(deprecated) or exists(following-sibling::history)">
+				<h2>
+					<xsl:choose>
+						<xsl:when test="lang('de')">Änderungshistorie</xsl:when>
+						<xsl:otherwise>Changelog</xsl:otherwise>
+					</xsl:choose>
+				</h2>
+				<table class="text">
+					<thead>
+						<tr>
+							<th>
+								<xsl:choose>
+									<xsl:when test="lang('de')">Datum</xsl:when>
+									<xsl:otherwise>Date</xsl:otherwise>
+								</xsl:choose>
+							</th>
+							<th>
+								<xsl:choose>
+									<xsl:when test="lang('de')">Autor</xsl:when>
+									<xsl:otherwise>Author</xsl:otherwise>
+								</xsl:choose>
+							</th>
+							<th>Version</th>
+							<th>
+								<xsl:choose>
+									<xsl:when test="lang('de')">Änderungen</xsl:when>
+									<xsl:otherwise>Description</xsl:otherwise>
+								</xsl:choose>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<xsl:if test="following-sibling::history">
+							<xsl:for-each select="following-sibling::history/change">
+								<tr>
+									<xsl:if test="position() mod 2=0">
+										<xsl:attribute name="class">dark</xsl:attribute>
+									</xsl:if>
+									<td><xsl:apply-templates select="./date"/></td>
+									<td><xsl:value-of select="normalize-space(./author)"/></td>
+									<td><xsl:value-of select="normalize-space(./version)"/></td>
+									<td><xsl:apply-templates select="./description"/></td>
+								</tr>
+							</xsl:for-each>
+						</xsl:if>
+		<!--				<xsl:for-each select="row">
+							<tr>
+								<xsl:apply-templates select="@id"/>
+								<xsl:if test="../bitmask">
+									<xsl:attribute name="style">cursor:pointer;</xsl:attribute>
+									<xsl:attribute name="id">bit<xsl:value-of select="position() - 1"/>
+									</xsl:attribute>
+									<xsl:attribute name="onClick">Switch(<xsl:value-of select="position() - 1"/>);
+									</xsl:attribute>
+								</xsl:if>
+								<xsl:if test="position() mod 2=0">
+									<xsl:attribute name="class">dark</xsl:attribute>
+								</xsl:if>
+								<xsl:for-each select="col">
+									<td>
+										<xsl:apply-templates select="@colspan|node()"/>
+									</td>
+								</xsl:for-each>
+							</tr>
+						</xsl:for-each>-->
+						<xsl:if test="exists(deprecated)">
+							<tr>
+								<td><xsl:apply-templates select="deprecated/date"/></td>
+								<td><xsl:value-of select="normalize-space(deprecated/author)"/></td>
+								<td>
+									<xsl:choose>
+										<xsl:when test='deprecated/version != "unknown"'>
+											<xsl:value-of select="normalize-space(deprecated/version)"/>
+										</xsl:when>
+										<xsl:when test='lang("de")'>unbekannt</xsl:when>
+										<xsl:otherwise>unknown</xsl:otherwise>
+									</xsl:choose>
+								</td>
+								<td>
+									<b>
+										<xsl:choose>
+											<xsl:when test='lang("de")'><xsl:text>Veraltet: </xsl:text></xsl:when>
+											<xsl:otherwise><xsl:text>Deprecated: </xsl:text></xsl:otherwise>
+										</xsl:choose>
+									</b>
+									<xsl:apply-templates select="deprecated/description"/></td>
+							</tr>
+						</xsl:if>
+					</tbody>
+				</table>
+			</xsl:if>
 	</xsl:template>
 
 	<xsl:template match="text">
@@ -393,22 +491,21 @@
 	</xsl:template>
 
 	<xsl:template match="author">
-		<xsl:param name="date" select="tokenize(following-sibling::date[1], '-')"/>
-		<div class="author"><xsl:value-of select="."/><xsl:text>, </xsl:text>
-			<xsl:choose>
-				<xsl:when test="count($date)=2">
-					<!--<xsl:value-of select="concat($date[last()], '.', $date[last()-1])"/>-->
-					<xsl:value-of select="format-date(xs:date(concat(following-sibling::date[1], '-01')), '[MNn] [Y]', /clonkDoc/@xml:lang, (), ())"/>
-				</xsl:when>
-				<xsl:when test="count($date)=3">
-					<!--<xsl:value-of select="concat($date[last()], '.', $date[last()-1], '.', $date[last()-2])"/>-->
-					<xsl:value-of select="format-date(xs:date(following-sibling::date[1]), '[D] [MNn] [Y]', /clonkDoc/@xml:lang, (), ())"/>
-				</xsl:when>
-			</xsl:choose>
+		<div class="author"><xsl:value-of select="normalize-space(.)"/><xsl:text>, </xsl:text>
+			<xsl:apply-templates select="following-sibling::date[1]"/>
 		</div>
 	</xsl:template>
 
-	<xsl:template match="date"/>
+	<xsl:template match="date">
+		<xsl:choose>
+			<xsl:when test="count(tokenize(., '-'))=2">
+					<xsl:value-of select="format-date(xs:date(concat(., '-01')), '[MNn] [Y]', /clonkDoc/@xml:lang, (), ())"/>
+			</xsl:when>
+			<xsl:when test="count(tokenize(., '-'))=3">
+				<xsl:value-of select="format-date(xs:date(.), '[D] [MNn] [Y]', /clonkDoc/@xml:lang, (), ())"/>
+			</xsl:when>
+		</xsl:choose>
+	</xsl:template>
 
 	<xsl:template match="ul">
 		<ul>

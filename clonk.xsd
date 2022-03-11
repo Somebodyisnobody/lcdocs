@@ -53,8 +53,18 @@
                                 <xs:element minOccurs="0" maxOccurs="unbounded" name="subcat"
                                             type="functionSubCategory"/>
                                 <xs:element name="versions" type="entityVersions"/>
-                                <!-- Enter Clonk version since deprecated here (e.g. 1.2.3.4 [999] LC); "unknown" allowed for compatibility reasons -->
-                                <xs:element minOccurs="0" name="deprecated" type="clonkVersionOrEmpty"/>
+                                <xs:element minOccurs="0" name="deprecated">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:group ref="authorAndDate"/>
+                                            <!-- Enter Clonk version since deprecated here (e.g. 1.2.3.4 [999] LC); "unknown" allowed for compatibility reasons -->
+                                            <xs:element name="version" type="clonkVersionOrUnknown"/>
+                                            <!-- Describe why the function is deprecated.
+                                            Refer to a still documented new function if applicable with funclink>NewFunction</funclink> -->
+                                            <xs:element name="description" type="htmlText"/>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
                                 <xs:element name="syntax">
                                     <xs:complexType>
                                         <xs:sequence>
@@ -146,9 +156,21 @@
                 <xs:element name="history" minOccurs="0">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:group ref="authorAndDate"/>
-                            <xs:element name="version" type="clonkVersion"/>
-                            <xs:element name="changes" type="htmlText"/>
+                            <xs:element name="change" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:group ref="authorAndDate"/>
+                                        <xs:element name="version" type="clonkVersion"/>
+                                        <xs:element name="description" type="htmlText">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:minLength value="5"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -264,7 +286,7 @@
             <xs:pattern value="N/A"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:simpleType name="clonkVersionOrEmpty">
+    <xs:simpleType name="clonkVersionOrUnknown">
         <!-- union needed to allow empty values -->
         <xs:union memberTypes="clonkVersion">
             <xs:simpleType>
@@ -299,7 +321,14 @@
     </xs:group>
     <xs:group name="authorAndDate">
         <xs:sequence>
-            <xs:element name="author" type="xs:string"/>
+            <xs:element name="author">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:minLength value="3"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <!-- Enter date in format YYYY-MM-DD for example 2022-31-12 -->
             <xs:element name="date">
                 <xs:simpleType>
                     <xs:restriction base="xs:token">

@@ -7,8 +7,9 @@
   <title>SetName</title>
   <category>Objekte</category>
   <subcat>Status</subcat>
-  <versions><version>4.9.1.0 GWE
-   </version><extversion>4.9.6.0 CR</extversion>
+  <versions>
+   <version>4.9.1.0 GWE</version>
+   <extversion>4.9.6.0 CR</extversion>
   </versions>
   <syntax>
    <rtype>bool</rtype>

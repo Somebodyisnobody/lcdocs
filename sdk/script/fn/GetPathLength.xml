@@ -7,7 +7,13 @@
     <title>GetPathLength</title>
     <category>Landschaft</category>
     <versions><version>4.9.1.0 GWE</version></versions>
-    <deprecated>4.9.10.8 [336] LC</deprecated>
+    <deprecated>
+      <!-- TODO check if really deprecated @DerTod. -->
+      <author>Fulgen</author>
+      <date>2019-10-11</date>
+      <version>4.9.10.8 [336] LC</version>
+      <description>Diese Funktion dient der Kompatibilität zu älteren Spielinhalten. In neueren Scripts sollte <funclink>GetPath</funclink> verwendet werden.</description>
+    </deprecated>
     <syntax>
       <rtype>int</rtype>
       <params>

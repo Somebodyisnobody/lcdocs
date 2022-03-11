@@ -7,7 +7,12 @@
 		<title>FindObject</title>
 		<category>Objekte</category><subcat>Suche</subcat>
 		<versions><version>4.6.5.0 CP</version><extversion>4.9.1.0 GWE</extversion></versions>
-		<deprecated>unknown</deprecated>
+		<deprecated>
+			<author>Clonkonaut</author>
+			<date>2006-07</date>
+			<version>4.9.6.0 CR</version>
+			<description>Die Funktion ist durch Einführung von <funclink>FindObject2</funclink> und <funclink>FindObjects</funclink> veraltet.</description>
+		</deprecated>
 		<syntax>
 			<rtype>object</rtype>
 			<params>

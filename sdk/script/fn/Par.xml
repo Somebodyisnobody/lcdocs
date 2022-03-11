@@ -8,6 +8,13 @@
   <category>Script</category>
   <versions><version>4.6.5.0 CP</version></versions>
   <!-- <deprecated /> Ich denke nicht (peter) -->
+     <deprecated>
+         <!-- TODO check if really deprecated @DerTod-->
+         <author>Tod</author>
+         <date>2022-03-11</date>
+         <version>1.2.3.4 LC</version>
+         <description>Todo check</description>
+     </deprecated>
   <syntax>
    <rtype>any</rtype>
    <params>

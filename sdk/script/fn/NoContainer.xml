@@ -7,7 +7,12 @@
 		<title>NoContainer</title>
 		<category>Objekte</category><subcat>Suche</subcat>
 		<versions><version>4.6.5.0 CP</version></versions>
-		<deprecated>unknown</deprecated>
+		<deprecated>
+			<author>Clonkonaut</author>
+			<date>2006-07</date>
+			<version>4.9.6.0 CR</version>
+			<description>Mit <funclink>Find_NoContainer</funclink> ist basierend auf <funclink>FindObjects</funclink> eine bessere Implementation verfügbar.</description>
+		</deprecated>
 		<syntax>
 			<rtype>int</rtype>
 		</syntax>
