@@ -10,7 +10,7 @@
 		<deprecated>
 			<author>Funni</author>
 			<date>2003-01</date>
-			<version>4.91.0.0 GWE</version>
+			<version>4.9.1.0 GWE</version>
 			<description>Mit Erweiterung von <funclink>GetValue</funclink> ist diese Funktion veraltet.</description>
 		</deprecated>
 		<syntax>

@@ -10,7 +10,7 @@
   <deprecated>
    <author>Funni</author>
    <date>2002-01-04</date>
-   <version>4.91.4.1 GWE</version>
+   <version>4.9.1.4 GWE</version>
    <description>Statt Pow() sollte der <emlink href="script/operatoren.html">Operator</emlink> "**" verwendet werden:
 	   <code>iVal1 ** iVal2</code>
    </description>
