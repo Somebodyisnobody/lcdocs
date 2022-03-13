@@ -97,6 +97,7 @@
 				<xsl:call-template name="nav"/>
 				<xsl:apply-templates select="func"/>
 				<xsl:apply-templates select="doc"/>
+				<xsl:apply-templates select="constGroup"/>
 				<xsl:apply-templates select="author"/>
 
 				<xsl:if test="$is-web-documentation">
@@ -173,21 +174,116 @@
 				<xsl:apply-templates/>
 			</div>
 		</xsl:for-each>
-		<xsl:for-each select="examples">
-			<h2>
-				<xsl:choose>
-					<xsl:when test='lang("en")'><xsl:text>Example</xsl:text>
-						<xsl:if test="count(example)!=1">s</xsl:if>
-					</xsl:when>
-					<xsl:otherwise><xsl:text>Beispiel</xsl:text>
-						<xsl:if test="count(example)!=1">e</xsl:if>
-					</xsl:otherwise>
-				</xsl:choose>
-			</h2>
-			<xsl:apply-templates/>
-		</xsl:for-each>
+		<xsl:call-template name="examples"/>
 		<xsl:call-template name="history"/>
 		<xsl:apply-templates select="related"/>
+	</xsl:template>
+
+	<xsl:template match="constGroup">
+		<h1>
+			<xsl:attribute name="id">
+				<xsl:value-of select="title"/>
+			</xsl:attribute>
+			<xsl:value-of select="title"/>
+		</h1>
+		<div class="text">
+			<xsl:apply-templates select="category"/>
+		</div>
+		<xsl:if test="description">
+			<h2>
+				<xsl:choose>
+					<xsl:when test='lang("de")'>Beschreibung</xsl:when>
+					<xsl:otherwise>Description</xsl:otherwise>
+				</xsl:choose>
+			</h2>
+			<div class="text">
+				<xsl:apply-templates select="description"/>
+			</div>
+		</xsl:if>
+		<h2>
+			<xsl:choose>
+				<xsl:when test="lang('de')">Änderungshistorie</xsl:when>
+				<xsl:otherwise>Changelog</xsl:otherwise>
+			</xsl:choose>
+		</h2>
+		<table class="text">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>
+						<xsl:choose>
+							<xsl:when test="lang('de')">Kategorie</xsl:when>
+							<xsl:otherwise>Category</xsl:otherwise>
+						</xsl:choose>
+					</th>
+					<th>
+						<xsl:choose>
+							<xsl:when test="lang('de')">Beschreibung</xsl:when>
+							<xsl:otherwise>Description</xsl:otherwise>
+						</xsl:choose>
+					</th>
+					<th>
+						<xsl:choose>
+							<xsl:when test="lang('de')">Eingeführt in</xsl:when>
+							<xsl:otherwise>Introduced in</xsl:otherwise>
+						</xsl:choose>
+					</th>
+					<th>
+						<xsl:choose>
+							<xsl:when test="lang('de')">Wert</xsl:when>
+							<xsl:otherwise>Value</xsl:otherwise>
+						</xsl:choose>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<xsl:for-each select="const">
+					<tr>
+						<xsl:if test="position() mod 2=0">
+							<xsl:attribute name="class">dark</xsl:attribute>
+						</xsl:if>
+						<xsl:if test="descendant::deprecated">
+							<xsl:attribute name="class">strikeout</xsl:attribute>
+						</xsl:if>
+						<td>
+							<xsl:if test="descendant::deprecated">
+								<span>
+									<xsl:attribute name="class">deprecatedComment</xsl:attribute>
+									<xsl:attribute name="style">display:none; position:absolute;</xsl:attribute>
+									<xsl:choose>
+										<xsl:when test="lang('de')">
+											<xsl:text >Als Veraltet markiert ab Version </xsl:text>
+											<xsl:value-of select="normalize-space(descendant::deprecated/version)"/>
+											<xsl:text> durch </xsl:text>
+											<xsl:value-of select="normalize-space(descendant::deprecated/author)"/>
+											<xsl:text> am </xsl:text>
+											<xsl:apply-templates select="descendant::deprecated/date"/>
+											<xsl:text>. Weitere Informationen in Änderungsliste.</xsl:text>
+										</xsl:when>
+										<xsl:otherwise>
+											<xsl:text >Marked as deprecated in Version </xsl:text>
+											<xsl:value-of select="normalize-space(descendant::deprecated/version)"/>
+											<xsl:text> by </xsl:text>
+											<xsl:value-of select="normalize-space(descendant::deprecated/author)"/>
+											<xsl:text> (</xsl:text>
+											<xsl:apply-templates select="descendant::deprecated/date"/>
+											<xsl:text>). For more information see history section.</xsl:text>
+										</xsl:otherwise>
+									</xsl:choose>
+								</span>
+							</xsl:if>
+							<xsl:apply-templates select="./name"/>
+						</td>
+						<td><xsl:value-of select="normalize-space(./category)"/></td>
+						<td><xsl:apply-templates select="./description"/></td>
+						<td><xsl:value-of select="normalize-space(./version)"/></td>
+						<td><xsl:value-of select="normalize-space(./value)"/></td>
+					</tr>
+				</xsl:for-each>
+			</tbody>
+		</table>
+		<xsl:call-template name="examples"/>
+		<xsl:call-template name="history"/>
 	</xsl:template>
 
 	<xsl:template match="syntax">
@@ -280,6 +376,22 @@
 		<xsl:text>)</xsl:text>
 	</xsl:template>
 
+	<xsl:template name="examples">
+		<xsl:if test="exists(examples)">
+			<h2>
+				<xsl:choose>
+					<xsl:when test='lang("de")'><xsl:text>Beispiel</xsl:text>
+						<xsl:if test="count(examples/example)!=1">e</xsl:if>
+					</xsl:when>
+					<xsl:otherwise><xsl:text>Example</xsl:text>
+						<xsl:if test="count(examples/example)!=1">s</xsl:if>
+					</xsl:otherwise>
+				</xsl:choose>
+			</h2>
+			<xsl:apply-templates select="examples/example"/>
+		</xsl:if>
+	</xsl:template>
+
 	<xsl:template match="example">
 		<div class="example">
 			<xsl:apply-templates/>
@@ -287,7 +399,7 @@
 	</xsl:template>
 
 	<xsl:template name="history">
-			<xsl:if test="exists(deprecated) or exists(following-sibling::history)">
+			<xsl:if test="exists(//deprecated) or exists(//history)">
 				<h2>
 					<xsl:choose>
 						<xsl:when test="lang('de')">Änderungshistorie</xsl:when>
@@ -310,6 +422,15 @@
 								</xsl:choose>
 							</th>
 							<th>Version</th>
+							<!-- If we have a deprecated iterable like <const>s in a <constGroup> we should name it in a separate column-->
+							<xsl:if test="exists(//const/deprecated)">
+								<th>
+									<xsl:choose>
+										<xsl:when test="lang('de')">Betrifft</xsl:when>
+										<xsl:otherwise>Affecting</xsl:otherwise>
+									</xsl:choose>
+								</th>
+							</xsl:if>
 							<th>
 								<xsl:choose>
 									<xsl:when test="lang('de')">Änderungen</xsl:when>
@@ -319,8 +440,8 @@
 						</tr>
 					</thead>
 					<tbody>
-						<xsl:if test="following-sibling::history">
-							<xsl:for-each select="following-sibling::history/change">
+						<xsl:if test="//history">
+							<xsl:for-each select="//history/change">
 								<tr>
 									<xsl:if test="position() mod 2=0">
 										<xsl:attribute name="class">dark</xsl:attribute>
@@ -328,43 +449,35 @@
 									<td><xsl:apply-templates select="./date"/></td>
 									<td><xsl:value-of select="normalize-space(./author)"/></td>
 									<td><xsl:value-of select="normalize-space(./version)"/></td>
+									<!-- If we have an iterable like <const>s in a <constGroup> we should name it in a separate column-->
+									<xsl:if test="exists(./ancestor::constGroup)">
+										<td>
+											<xsl:value-of select="./affecting"/>
+										</td>
+									</xsl:if>
 									<td><xsl:apply-templates select="./description"/></td>
 								</tr>
 							</xsl:for-each>
 						</xsl:if>
-		<!--				<xsl:for-each select="row">
+						<xsl:for-each select="//deprecated">
 							<tr>
-								<xsl:apply-templates select="@id"/>
-								<xsl:if test="../bitmask">
-									<xsl:attribute name="style">cursor:pointer;</xsl:attribute>
-									<xsl:attribute name="id">bit<xsl:value-of select="position() - 1"/>
-									</xsl:attribute>
-									<xsl:attribute name="onClick">Switch(<xsl:value-of select="position() - 1"/>);
-									</xsl:attribute>
-								</xsl:if>
-								<xsl:if test="position() mod 2=0">
-									<xsl:attribute name="class">dark</xsl:attribute>
-								</xsl:if>
-								<xsl:for-each select="col">
-									<td>
-										<xsl:apply-templates select="@colspan|node()"/>
-									</td>
-								</xsl:for-each>
-							</tr>
-						</xsl:for-each>-->
-						<xsl:if test="exists(deprecated)">
-							<tr>
-								<td><xsl:apply-templates select="deprecated/date"/></td>
-								<td><xsl:value-of select="normalize-space(deprecated/author)"/></td>
+								<td><xsl:apply-templates select="./date"/></td>
+								<td><xsl:value-of select="normalize-space(./author)"/></td>
 								<td>
 									<xsl:choose>
-										<xsl:when test='deprecated/version != "unknown"'>
-											<xsl:value-of select="normalize-space(deprecated/version)"/>
+										<xsl:when test='./version != "unknown"'>
+											<xsl:value-of select="normalize-space(./version)"/>
 										</xsl:when>
 										<xsl:when test='lang("de")'>unbekannt</xsl:when>
 										<xsl:otherwise>unknown</xsl:otherwise>
 									</xsl:choose>
 								</td>
+								<!-- If we have a deprecated iterable like <const>s in a <constGroup> we should name it in a separate column-->
+								<xsl:if test="exists(./ancestor::const)">
+									<td>
+										<xsl:value-of select="./ancestor::const/name"/>
+									</td>
+								</xsl:if>
 								<td>
 									<b>
 										<xsl:choose>
@@ -372,9 +485,9 @@
 											<xsl:otherwise><xsl:text>Deprecated: </xsl:text></xsl:otherwise>
 										</xsl:choose>
 									</b>
-									<xsl:apply-templates select="deprecated/description"/></td>
+									<xsl:apply-templates select="./description"/></td>
 							</tr>
-						</xsl:if>
+						</xsl:for-each>
 					</tbody>
 				</table>
 			</xsl:if>

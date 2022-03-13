@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="https://clonkspot.org"
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+           vc:minVersion="1.0" elementFormDefault="qualified" targetNamespace="https://clonkspot.org"
            xmlns="https://clonkspot.org">
     <!-- Import xml: namespace -->
     <xs:import namespace="http://www.w3.org/XML/1998/namespace"
@@ -41,6 +42,7 @@
                                     <xs:element name="h" type="htmlMixedContainsStandardTextFormatElements"/>
                                     <xs:group ref="docPart" maxOccurs="unbounded"/>
                                 </xs:sequence>
+                                <xs:element name="history" type="history" minOccurs="0"/>
                             </xs:sequence>
                         </xs:complexType>
                     </xs:element>
@@ -48,23 +50,11 @@
                         <xs:complexType>
                             <xs:sequence>
                                 <!-- Title must have the function name without whitespaces or "()" -->
-                                <xs:element name="title" type="functionName"/>
+                                <xs:element name="title" type="entityName"/>
                                 <xs:element name="category" type="functionCategory"/>
-                                <xs:element minOccurs="0" maxOccurs="unbounded" name="subcat"
-                                            type="functionSubCategory"/>
+                                <xs:element minOccurs="0" name="subcat" type="functionSubCategory"/>
                                 <xs:element name="versions" type="entityVersions"/>
-                                <xs:element minOccurs="0" name="deprecated">
-                                    <xs:complexType>
-                                        <xs:sequence>
-                                            <xs:group ref="authorAndDate"/>
-                                            <!-- Enter Clonk version since deprecated here (e.g. 1.2.3.4 [999] LC); "unknown" allowed for compatibility reasons -->
-                                            <xs:element name="version" type="clonkVersionOrUnknown"/>
-                                            <!-- Describe why the function is deprecated.
-                                            Refer to a still documented new function if applicable with funclink>NewFunction</funclink> -->
-                                            <xs:element name="description" type="htmlText"/>
-                                        </xs:sequence>
-                                    </xs:complexType>
-                                </xs:element>
+                                <xs:element minOccurs="0" name="deprecated" type="deprecated"/>
                                 <xs:element name="syntax">
                                     <xs:complexType>
                                         <xs:sequence>
@@ -128,47 +118,52 @@
                                 </xs:element>
                                 <xs:element name="desc" type="htmlText"/>
                                 <xs:element minOccurs="0" maxOccurs="unbounded" name="remark" type="htmlText"/>
-                                <xs:element minOccurs="0" name="examples">
-                                    <xs:complexType>
-                                        <xs:sequence>
-                                            <xs:element maxOccurs="unbounded" name="example">
-                                                <xs:complexType>
-                                                    <xs:choice maxOccurs="unbounded">
-                                                        <xs:element name="code" type="code"/>
-                                                        <xs:element name="text" type="htmlText"/>
-                                                    </xs:choice>
-                                                </xs:complexType>
-                                            </xs:element>
-                                        </xs:sequence>
-                                    </xs:complexType>
-                                </xs:element>
+                                <xs:element minOccurs="0" name="examples" type="examples"/>
                                 <xs:element minOccurs="0" name="related">
                                     <xs:complexType>
                                         <xs:group ref="htmlDocsLinks" maxOccurs="unbounded"/>
                                     </xs:complexType>
                                 </xs:element>
+                                <xs:element name="history" type="history" minOccurs="0"/>
                             </xs:sequence>
                         </xs:complexType>
                     </xs:element>
-                    <xs:element name="const">
+                    <xs:element name="constGroup">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="title" type="entityGroupName"/>
+                                <xs:element name="description" type="htmlText"/>
+                                <xs:element name="const" maxOccurs="unbounded">
+                                    <xs:complexType>
+                                        <xs:sequence maxOccurs="unbounded">
+                                            <xs:element name="name" type="xs:string"/>
+                                            <xs:element name="category" type="functionCategory"/>
+                                            <xs:element name="description" type="htmlText"/>
+                                            <xs:element name="version" type="clonkVersionOrUnknown"/>
+                                            <xs:element name="value" type="xs:integer"/>
+                                            <xs:element minOccurs="0" name="deprecated" type="deprecated"/>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                                <xs:element minOccurs="0" name="examples" type="examples"/>
+                                <xs:element name="history" minOccurs="0">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="change" maxOccurs="unbounded">
+                                                <xs:complexType>
+                                                    <xs:sequence>
+                                                        <xs:group ref="generalChangeInformation"/>
+                                                        <xs:element name="affecting" type="xs:string"/>
+                                                    </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:sequence>
+                        </xs:complexType>
                     </xs:element>
                 </xs:choice>
-                <xs:element name="history" minOccurs="0">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="change" maxOccurs="unbounded">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:group ref="authorAndDate"/>
-                                        <xs:element name="version" type="clonkVersion"/>
-                                        <xs:element name="description" type="htmlText">
-                                        </xs:element>
-                                    </xs:sequence>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
                 <xs:group ref="authorAndDate" maxOccurs="unbounded"/>
             </xs:sequence>
             <xs:attribute ref="xml:lang" use="required"/>
@@ -209,9 +204,14 @@
             <xs:element name="img" type="img"/>
         </xs:choice>
     </xs:group>
-    <xs:simpleType name="functionName">
+    <xs:simpleType name="entityName">
         <xs:restriction base="xs:token">
             <xs:pattern value="(_|\w)(\w|_|\d)+"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="entityGroupName">
+        <xs:restriction base="xs:token">
+            <xs:pattern value="(_|\w)(\w|_|\d)+\*?"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:simpleType name="functionCategory">
@@ -281,6 +281,16 @@
             <xs:pattern value="N/A"/>
         </xs:restriction>
     </xs:simpleType>
+    <xs:complexType name="deprecated">
+        <xs:sequence>
+            <xs:group ref="authorAndDate"/>
+            <!-- Enter Clonk version since deprecated here (e.g. 1.2.3.4 [999] LC); "unknown" allowed for compatibility reasons -->
+            <xs:element name="version" type="clonkVersionOrUnknown"/>
+            <!-- Describe why the function is deprecated.
+			Refer to a still documented new function if applicable with funclink>NewFunction</funclink> -->
+            <xs:element name="description" type="htmlText"/>
+        </xs:sequence>
+    </xs:complexType>
     <xs:simpleType name="clonkVersionOrUnknown">
         <!-- union needed to allow empty values -->
         <xs:union memberTypes="clonkVersion">
@@ -304,15 +314,43 @@
             <xs:enumeration value="id"/>
         </xs:restriction>
     </xs:simpleType>
+    <xs:complexType name="examples">
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="example">
+                <xs:complexType>
+                    <xs:choice maxOccurs="unbounded">
+                        <xs:element name="code" type="code"/>
+                        <xs:element name="text" type="htmlText"/>
+                    </xs:choice>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
     <xs:group name="htmlDocsLinks">
         <xs:choice>
-            <xs:element name="funclink" type="functionName"/>
+            <xs:element name="funclink" type="entityName"/>
             <xs:element name="emlink">
                 <xs:complexType mixed="true">
                     <xs:attribute name="href" use="required"/>
                 </xs:complexType>
             </xs:element>
         </xs:choice>
+    </xs:group>
+    <xs:complexType name="history">
+        <xs:sequence>
+            <xs:element name="change" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:group ref="generalChangeInformation"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:group name="generalChangeInformation">
+        <xs:sequence>
+            <xs:group ref="authorAndDate"/>
+            <xs:element name="version" type="clonkVersion"/>
+            <xs:element name="description" type="htmlText"/>
+        </xs:sequence>
     </xs:group>
     <xs:group name="authorAndDate">
         <xs:sequence>
