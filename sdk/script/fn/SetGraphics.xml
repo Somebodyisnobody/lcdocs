@@ -16,7 +16,7 @@
         <param><type>int</type><name>iOverlay</name><desc>Index der zu setzenden Overlaygrafik. Muss wenn angegeben größer 0 sein, und fügt dem Objekt eine Grafik mit dem gegebenen Index hinzu, bzw. ändert sie wenn eine Grafik mit dem gegebenen Overlayindex schon existiert. Overlays mit größerem Index werden stets über denen mit kleinerem Index gezeichnet. Wenn ein Objekt nur eine Overlaygrafik hat, kann die symbolische Konstante GFX_Overlay (=1) verwendet werden.</desc><optional /></param>
         <param><type>int</type><name>iOverlayMode</name><desc>
 			Nur beachtet bei angegebenem iOverlay: Gibt an, wie das Overlay gezeichnet wird. Folgende Konstanten sind möglich:
-			<table>
+			<table activateBitmask="false" bitmaskName="">
                 <rowh><col>Konstante</col><col>Wert</col><col>Effekt</col></rowh>
                 <row><col>GFXOV_MODE_None</col><col>0</col><col>Ungültig: Nicht benutzen</col></row>
                 <row><col>GFXOV_MODE_Base</col><col>1</col><col>Die Basisgrafik der angegebenen Definition, das heißt das Zielrechteck (0,0,Width,Height,OffsetX,OffsetY), wird an der Objektposition über die Grafik gelegt.</col></row>

@@ -171,7 +171,7 @@ protected func FxBanBurnPSpellEffect(szNewEffect, iEffectTarget, iEffectNumber, 
 	<text>Dies würde sogar alle brennenden Objekte löschen, die das Zielobjekt ansonsten anzünden würden. Der Typecheck für var3 ist enthalten, weil sich andere Effekte ebenfalls Fire in den Namen setzen und andere Parameter haben könnten. Es ist offensichtlich, dass man dies vermeiden sollte, weil Funktionen wie die obige dann im ungünstigsten Fall ein völlig anderes Objekt löschen könnten.</text>
 	<text>Die folgende Tabelle enthält grobe Richtlinien für Prioritäten von Originalpackeffekten:</text>
 	
-	<text><table>
+	<text><table activateBitmask="false" bitmaskName="">
 		<rowh><col>Effekt</col><col>Priorität</col></rowh>
 		<row><col>Kurzer Spezialeffekt</col><col>300-350</col></row>
 		<row><col>Nicht bannbare Effekte</col><col>250-300</col></row>
@@ -429,7 +429,7 @@ global func FxExplodeOnDeathCurseStop(pTarget, iEffectNumber, iReason)
 	<h id="Naming">Benennung</h>
 	<text>Damit sich Effekte untereinander erkennen und manipulieren können, sollten folgende Benennungsschemata verwendet werden ("*abc" steht für Endungen, "abc*" für Namensanfänge und "*abc*" für Zeichenketten, die irgendwo im Namen vorkommen sollten.</text>
 	
-	<text><table>
+	<text><table activateBitmask="false" bitmaskName="">
 		<rowh>
 			<col>Namensteil</col><col>Bedeutung</col>
 		</rowh>
@@ -489,7 +489,7 @@ global func FxExplodeOnDeathCurseStop(pTarget, iEffectNumber, iReason)
 		<text>Aufruf, wenn der Effekt temporär oder permanent entfernt wird. pTarget ist wieder das Effekt-Zielobjekt und iEffectNumber der Effektindex in der Effekteliste des Objekts.</text>
 		<text>iReason gibt den Grund für das Entfernen des Effektes an, und kann einer der folgenden Werte sein:</text>
 		
-		<text><table>
+		<text><table activateBitmask="false" bitmaskName="">
 			<rowh><col>iReason</col><col>Bedeutung</col></rowh>
 			<row><col>0</col><col>Effekt wird regulär entfernt</col></row>
 			<row><col>1</col><col>Effekt wird nur temporär entfernt. fTemp ist in dem Fall 1.</col></row>
@@ -530,7 +530,7 @@ global func FxExplodeOnDeathCurseStop(pTarget, iEffectNumber, iReason)
 		</text>
 		<text>Der Callback wird bei Energiewertänderungen bei Lebewesen, sowie bei Schadenswertänderungen bei nicht-Lebewesen durchgeführt - nicht aber umgekehrt. iCause gibt den geänderten Wert und den Grund an:</text>
 		
-		<text><table>
+		<text><table activateBitmask="false" bitmaskName="">
 			<rowh><col>Scriptkonstante</col><col>iCause</col><col>Bedeutung</col></rowh>
 			<row><col>FX_Call_DmgScript</col><col>0</col><col>Schaden durch Scriptaufruf <funclink>DoDamage</funclink>()</col></row>
 			<row><col>FX_Call_DmgBlast</col><col>1</col><col>Schaden durch Explosion</col></row>

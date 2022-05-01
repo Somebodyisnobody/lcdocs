@@ -1,9 +1,10 @@
+<!-- TODO remove before merging-->
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
 <?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
 <clonkDoc xmlns="https://clonkspot.org"
 		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<constGroup>
+	<constGroup activateBitmask="true">
 		<title>Beispielkonstantengruppe</title>
 		<description>Dies ist eine Beispielseite zur Demonstration von Konstantengruppen</description>
 		<const>

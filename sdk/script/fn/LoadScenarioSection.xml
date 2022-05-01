@@ -12,7 +12,7 @@
       <params>
         <param><type>string</type><name>szSection</name><desc>Name der Sektion ohne Sect. Beispiel: Der Name der Sektion SectTunnel.c4g wäre "Tunnel". Der Name der Hauptsektion ist "main".</desc></param>
 		<param><type>int</type><name>dwFlags</name><desc>Flags, die für verschiedene Einstellungen zum Speichern gesetzt werden müssen, damit bestimmte Teile der Sektion bei der Rückkehr erhalten bleiben. Folgende Werte sind möglich: 
-		<table>
+		<table activateBitmask="false" bitmaskName="">
 			<rowh><col>Name</col><col>Wert</col><col>Beschreibung</col></rowh>
 			<row><col>C4SECT_SaveLandscape</col><col>1</col><col>Veränderungen in der Landschaft werden gespeichert.</col></row>
 			<row><col>C4SECT_SaveObjects</col><col>2</col><col>Objekte werden gespeichert.</col></row>

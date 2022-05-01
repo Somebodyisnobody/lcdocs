@@ -11,7 +11,7 @@
 			<rtype>bool</rtype>
 			<params>
 				<param><type>int</type><name>iNewStatus</name><desc>Neuer Status des Objektes. Folgende Werte sind möglich:<br />
-				<table>
+				<table activateBitmask="false" bitmaskName="">
 					<rowh><col>Name</col><col>Wert</col><col>Beschreibung</col></rowh>
 					<row><col>C4OS_DELETED</col><col>0</col><col>Objekt ist gelöscht. Kann nicht über SetObjectStatus gesetzt werden.</col></row>
 					<row><col>C4OS_NORMAL</col><col>1</col><col>Objekt ist aktiviert.</col></row>

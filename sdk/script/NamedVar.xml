@@ -12,7 +12,7 @@
 
 	<text>Außerdem kann eine Variable einen von drei Gültigkeitsbereichen haben. Die Variable ist außerhalb ihres Gültigkeitsbereiches nicht sichtbar.</text>
 
-	<text><table>
+	<text><table activateBitmask="false" bitmaskName="">
 		<row>
 		  <col>Schlüsselwort</col>
 		  <col>Gültigkeitsbereich</col>

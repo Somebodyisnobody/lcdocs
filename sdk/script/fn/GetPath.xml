@@ -37,14 +37,14 @@
           einen Weg zwischen zwei Punkten der Landschaft und gibt eine Map mit
           Wegpunkten und Länge zurück. Wird kein Weg gefunden, wird nil zurückgegeben.
           Die zurückgegebene Map hat folgende Struktur:
-          <table>
+          <table activateBitmask="false" bitmaskName="">
             <rowh><col>Schlüssel</col><col>Datentyp</col><col>Beschreibung</col></rowh>
             <row><col>Length</col><col>int</col><col>Länge des gefundenen Weges, wie bei <funclink>GetPathLength</funclink></col></row>
             <row><col>Waypoints</col><col>array</col><col>Array mit Wegpunkten</col></row>
           </table>
 
           Die Wegpunkte haben dabei folgende Struktur:
-          <table>
+          <table activateBitmask="false" bitmaskName="">
             <rowh><col>Schlüssel</col><col>Datentyp</col><col>Beschreibung</col></rowh>
               <row><col>X</col><col>int</col><col>X-Koordinate des Wegpunkts</col></row>
               <row><col>Y</col><col>int</col><col>Y-Koordinate des Wegpunkts</col></row>

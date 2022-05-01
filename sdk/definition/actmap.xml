@@ -17,7 +17,7 @@ Aktivitäten, speziell solche von Lebewesen, nutzen dabei Engine-interne
 <emlink href="definition/procedures.html">Prozeduren</emlink>, die das Bewegungsverhalten
 des Objekts während der Ausführung dieser Aktivität steuert.</text>
 <text>
-<table>
+<table activateBitmask="false" bitmaskName="">
 <caption id="BeliebigvieleSektionenAction">Beliebig viele Sektionen [Action]</caption>
   <rowh>
     <col>Wert</col>

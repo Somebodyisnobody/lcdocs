@@ -30,7 +30,7 @@
 	<part>
 		<h id="Attr_overlay">Ebenen (overlay)</h>
 		<text>Folgende Attribute sind definiert:</text>
-		<text><table>
+		<text><table activateBitmask="false" bitmaskName="">
 			<rowh>
 				<col>Attribut</col>
 				<col>Typ</col>

@@ -12,7 +12,7 @@
 												<params>
 																<param><type>int</type><name>iIndex</name><desc>Index des Vertex.</desc></param>
 				<param><type>int</type><name>iValueToGet</name><desc>Gibt an, welcher Wert zurückgegeben werden soll. Es sind folgende Werte möglich:
-						<table>
+						<table activateBitmask="false" bitmaskName="">
 							<rowh><col>Name</col><col>Wert</col><col>Beschreibung</col></rowh>
 							<row><col>VTX_X</col><col>0</col><col>X-Koordinate des Vertex'</col></row>
 							<row><col>VTX_Y</col><col>1</col><col>Y-Koordinate des Vertex'</col></row>

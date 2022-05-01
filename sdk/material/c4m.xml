@@ -10,7 +10,7 @@
 <part>
 	<text>In Materialdefinitionen wird Aussehen und Verhalten von Materialien festgelegt.</text>
 
-	<text><table>
+	<text><table activateBitmask="false" bitmaskName="">
 		<caption id="SektionMaterial">Sektion [Material]</caption>
 		<rowh>
 			<col>Wert</col>
@@ -235,7 +235,7 @@
 	</table></text></part>
 	<part><h>Benutzerdefinierte Reaktionen</h>
 	<text>Zusätzlich zu den Standardroutinen kann jedes Material ab CR weitere Reaktionen definieren, die ausgeführt werden, wenn das Material durch lose Pixel (z.B. Regen oder Explosionsstreuung) oder Materialbewegung (z.B. beim Angraben eines Sees) auf ein anderes Material trifft:</text>
-	<text><table>
+	<text><table activateBitmask="false" bitmaskName="">
 		<caption id="SektionReaction">In der .c4m-Datei: Beliebig viele Sektionen [Reaction]</caption>
 		<rowh>
 			<col>Wert</col>
@@ -293,14 +293,14 @@
 			<col>Nur für Reaktionstyp Corrode: Chance darauf, dass verätzt wird.</col>
 		</row>
 	</table></text>
-	<text><table>
+	<text><table activateBitmask="false" bitmaskName="">
 		<caption id="ReactEvents">Reaktionsereignisse</caption>
 		<rowh><col>Name</col><col>Wert</col><col>Ereignis</col></rowh>
 		<row><col>MEE_PXSPos</col><col>0</col><col>Check vor jedem Bewegungsframe eines losen Materialpixels gegen das Hintergrundmaterial</col></row>
 		<row><col>MEE_PXSMove</col><col>1</col><col>Check gegen jedes Pixel, das ein loses Materialpixel in seiner Bewegung berührt</col></row>
 		<row><col>MEE_MassMove</col><col>2</col><col>Bei größeren Materialbewegungen (z.B. angegrabener See):Check des bewegten Materials gegen das Material, über das es sich bewegt</col></row>
 	</table></text>
-	<text><table>
+	<text><table activateBitmask="false" bitmaskName="">
 		<caption id="ReactTypes">Reaktionstypen</caption>
 		<rowh><col>Name</col><col>Verhalten</col></rowh>
 		<row><col>Script</col>
@@ -311,7 +311,7 @@
 		<row><col>Corrode</col><col>Das lose Material ätzt das Zielmaterial mit Chance CorrosionRate weg und entfernt sich dabei selber. Wenn geätzt wird, wird mit Chance 1:5 eine kleine Rauchwolke erzeugt und mit Chance 1:20 der Sound "Corrode" abgespielt. Vergleichbar mit dem Verhalten von Säure auf Erde.</col></row>
 		<row><col>Insert</col><col>Das lose Material wird als festes Material eingefügt. Vergleichbar mit dem Verhalten aller Materialien, wenn sie auf ein Material gleicher oder höherer Dichte treffen.</col></row>
 	</table></text>
-	<text><table>
+	<text><table activateBitmask="false" bitmaskName="">
 		<caption id="TargetSpecs">Materialspezifikationen</caption>
 		<rowh><col>Name</col><col>Materialien</col></rowh>
 		<row><col>Materialname</col><col>Entsprcht die Spezifikation direkt dem Namen eines anderen Materials, wird dieses benutzt.</col></row>
@@ -328,7 +328,7 @@
 	</table></text>
 	<h>Reaktionstyp 'Script'</h><text>
 	Mit dieser sehr rechenintensiven Methode kann das Materialveralten frei bestimmt werden. Die Scriptfunktion sollte global deklariert haben und folgende Parameter besitzen:
-	<table><rowh><col>Parameternummer(n)</col><col>Name(n)</col><col>Datentyp</col><col>Beschreibung</col></rowh>
+	<table activateBitmask="false" bitmaskName=""><rowh><col>Parameternummer(n)</col><col>Name(n)</col><col>Datentyp</col><col>Beschreibung</col></rowh>
 				<row><col>1,2</col><col>iX, iY</col><col>Integer</col><col>Position des losen Materials. Die Parameter können verändert werden, um das Materialpixel zu verschieben.</col></row>
 				<row><col>3,4</col><col>iLSPosX, iLSPosY</col><col>Integer</col><col>Position in der Landschaft, auf die das Material trifft.</col></row>
 				<row><col>5,6</col><col>iXDir, iYDir</col><col>Integer</col><col>Geschwindigkeit (in 1/100px) der Bewegung des Materials. Kann geändert werden, um die Geschwindigkeit des Materialpixels zu beeinflussen. Nicht für MassMover.</col></row>

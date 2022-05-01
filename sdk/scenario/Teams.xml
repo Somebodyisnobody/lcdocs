@@ -9,7 +9,7 @@
 <h id="Scenariotxt">Teams.txt</h>
 <text>Über die Teams.txt kann für Mehrspielerszenarien definiert werden, in welchen Fraktionen die Spieler zusammen oder gegeneinander spielen. Ab 4.9.6.0 CR.</text>
 
-<text><table>
+<text><table activateBitmask="false" bitmaskName="">
 	<caption id="SektionTeams">Sektion [Teams]</caption>
 	<rowh>
 		<col>Wert</col>
@@ -67,7 +67,7 @@
 	</row>
 </table></text>
 
-<text><table>
+<text><table activateBitmask="false" bitmaskName="">
 	<caption id="SektionTeam">Beliebig viele Sektionen [Team]</caption>
 	<rowh>
 		<col>Wert</col>

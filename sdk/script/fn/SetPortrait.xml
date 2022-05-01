@@ -12,7 +12,7 @@
       <params>
         <param><type>string</type><name>szPortrait</name>
           <desc>Name des zu setzenden Portraits. Dabei wird die Datei "PortraitX.png" benutzt (wobei X der Name ist). Dieser Parameter kann die folgenden Spezialwerte annehmen:
-            <table>
+            <table activateBitmask="false" bitmaskName="">
               <rowh><col>Wert</col><col>Bedeutung</col></rowh>
               <row><col>"none"</col><col>Portrait wird entfernt.</col></row>
               <row><col>"random"</col><col>Aus den vorhandenen Portraits wird eines zufällig ausgewählt.</col></row>

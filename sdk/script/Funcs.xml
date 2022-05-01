@@ -98,7 +98,7 @@ ZeigeSumme(1, 2, 3, 4, 5, 6);</code>
 	<part>
 		<text>Für jede Funktion kann eine "Aufrufberechtigung" festgelegt werden, die bestimmt, von wo die Funktion aufgerufen werden darf. Hier gibt es drei verschiedene Stufen:</text>	
 	
-		<text><table>
+		<text><table activateBitmask="false" bitmaskName="">
 			<row>
 				<col><code>public</code></col>
 				<col>darf von überall aufgerufen werden, auch aus anderen Scripten (Standard)</col>

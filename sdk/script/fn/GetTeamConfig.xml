@@ -13,7 +13,7 @@
 		<param>
 		<type>int</type><name>iConfig</name>
 		<desc>Kann einer der folgenden Werte sein:<br />
-		<table>
+		<table activateBitmask="false" bitmaskName="">
 			<rowh><col>Name</col><col>Nummer</col></rowh>
 			<row><col>TEAM_Custom</col><col>1</col></row>
 			<row><col>TEAM_Active</col><col>2</col></row>

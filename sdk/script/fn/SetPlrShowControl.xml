@@ -16,7 +16,7 @@
 		</syntax>
 		<desc>Steuert die grafische Darstellung der Clonk-Steuerungstasten eines Spielers in seinem Sichtfenster.<br/><br/>
           Es können die folgenden Tasten angezeigt werden:
-          <table>
+          <table activateBitmask="false" bitmaskName="">
             <rowh><col>Nummer</col><col>Bedeutung</col></rowh>
             <row><col>0</col><col>Cursor Rechts</col></row>
             <row><col>1</col><col>Cursor Umschalt</col></row>

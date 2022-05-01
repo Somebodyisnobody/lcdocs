@@ -13,7 +13,7 @@
 				<param><type>id</type><name>C4ID</name><desc>ID des zu platzierenden Objekts</desc></param>
 				<param><type>int</type><name>iAmount</name><desc>Menge der zu erzeugenden Objekte</desc></param>
 				<param><type>string</type><name>Mat</name><desc>Material in die Objekte erzeugt werden soll. Hier kann entweder der Materialname angegeben werden oder folgende Zeichenketten:
-<table><rowh><col>iMat</col><col>Erzeugung in</col></rowh>
+<table activateBitmask="false" bitmaskName=""><rowh><col>iMat</col><col>Erzeugung in</col></rowh>
 <row><col>"GBackSolid"</col><col>Objekte werden in festem Material erzeugt. Siehe auch <funclink>GBackSolid</funclink>()</col></row>
 <row><col>"GBackSemiSolid"</col><col>Objekte werden in festem oder flüssigem Material erzeugt. Siehe auch <funclink>GBackSemiSolid</funclink>()</col></row>
 <row><col>"GBackLiquid"</col><col>Objekte werden in flüssigem Material erzeugt. Siehe auch <funclink>GBackLiquid</funclink>()</col></row>

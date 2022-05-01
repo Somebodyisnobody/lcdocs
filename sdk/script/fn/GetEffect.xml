@@ -46,7 +46,7 @@
     <desc>Fragt Effektdaten ab, oder ermittelt, ob ein bstimmter Effekt vorhanden ist. Der Rückgabetyp richtet sich nach dem abgefragten Wert. Wurde der Effekt nicht gefunden, wird immer 0 zurückgegeben.</desc>
 
     <remark>Über den Parameter iQueryVal können folgende Werte abgefragt werden:<br/><br/>
-      <table>
+      <table activateBitmask="false" bitmaskName="">
         <rowh><col>iQueryVal</col><col>Wert</col></rowh>
         <row><col>0</col><col>Effektnummer</col></row>
         <row><col>1</col><col>Name</col></row>

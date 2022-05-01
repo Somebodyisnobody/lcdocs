@@ -19,7 +19,7 @@
       Das allgemeine Syntax für diese Platzhalter lautet:<br />
       <code>%[Länge][.Präzision]Typ</code>
       Bis auf den Typ sind also alle Parameter optional. Der Typ gibt den Datentyp an, den der Parameter hat. Möglich sind folgende Werte:
-      <table><rowh><col>Typ</col><col>Bedeutung</col></rowh>
+      <table activateBitmask="false" bitmaskName=""><rowh><col>Typ</col><col>Bedeutung</col></rowh>
       <row><col>d</col><col>Ganzzahl (int)</col></row>
       <row><col>x</col><col>Ganzzahl (int), hexadezimale Ausgabe (0123456789abcdef)</col></row>
       <row><col>X</col><col>Ganzzahl (int), hexadezimale Ausgabe (0123456789ABCDEF)</col></row>

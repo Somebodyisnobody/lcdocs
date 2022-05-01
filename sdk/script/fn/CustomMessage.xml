@@ -69,7 +69,7 @@
                     <type>int</type>
                     <name>flags</name>
                     <desc>Bitmaske zusätzlicher Optionen. Mögliche Werte:
-                        <table>
+                        <table activateBitmask="false" bitmaskName="">
                             <rowh>
                                 <col>Bit</col>
                                 <col>Konstante</col>

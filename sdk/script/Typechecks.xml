@@ -11,7 +11,7 @@
 
 	<text>C4Script unterstützt die folgenden Datentypen für Variablen, Parameter und Rückgabewerte:</text>
 
-	<text><table>
+	<text><table activateBitmask="false" bitmaskName="">
 		<rowh>
 		  <col>Typname</col>
 		  <col>Voller Name</col>
@@ -198,7 +198,7 @@ func SoldItem(id ID)
 	<h>Konvertierung</h>
 
 	<text>Aus folgender Tabelle kann entnommen werden, welche Typen automatisch konvertiert werden und wo ein Fehler ausgelöst wird:</text>
-	<text><table>
+	<text><table activateBitmask="false" bitmaskName="">
 		<rowh>
 		 <col>nach -&gt;</col>
 		 <col><code>int</code></col>

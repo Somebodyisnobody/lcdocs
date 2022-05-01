@@ -16,7 +16,7 @@ Hierzu siehe auch <emlink href="definition/index.html#ObjektundEntwicklerIdentif
 Entwickleridentifikation</emlink>.</text>
 
 <text>
-<table>
+<table activateBitmask="false" bitmaskName="">
 <caption id="SektionDefCore">Sektion [DefCore]</caption>
 <rowh><col>Wert</col><col>Datentyp</col><col>Beschreibung</col></rowh>
 <row><col>id</col><col>Definitions-ID</col>
@@ -209,7 +209,7 @@ Entwickleridentifikation</emlink>.</text>
 </table>
 </text>
 <text>
-<table>
+<table activateBitmask="false" bitmaskName="">
 <caption id="SektionPhysical">Sektion [Physical]</caption>
 <rowh><col>Wert</col><col>Datentyp</col><col>Beschreibung</col></rowh>
 <row><col>Energy</col><col>Integer</col>

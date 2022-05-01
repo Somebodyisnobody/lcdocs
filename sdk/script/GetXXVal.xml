@@ -21,7 +21,7 @@
 	<text>Diese Funktionsfamilie gewährt direkten Zugriff auf sämtliche Eigenschaften der entsprechenden Objekte, wie sie auch abgespeichert werden.</text>
 	<text>Dabei entsprechen die Funktionen jeweils folgenden Dateien:</text>
 
-	<text><table>
+	<text><table activateBitmask="false" bitmaskName="">
 		<rowh>
 			<col>Funktion</col>
 			<col>Datei</col>

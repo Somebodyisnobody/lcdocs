@@ -13,7 +13,7 @@
 				<param><type>string</type><name>strCommand</name><desc>Name des MessageBoard-Kommandos</desc></param>
 				<param><type>string</type><name>strScript</name><desc>Auszuführender Script</desc></param>
 				<param><type>int</type><name>iRestriction</name><desc>Bestimmt, wie die Eingabe formatiert wird:<br />
-				<table>
+				<table activateBitmask="false" bitmaskName="">
 					<rowh><col>Name</col><col>Nummer</col><col>Beschreibung</col></rowh>
 					<row><col>C4MSGCMDR_Escaped</col><col>0</col><col>Eingabe wird in %s escaped eingesetzt.</col></row>
 					<row><col>C4MSGCMDR_Plain</col><col>1</col><col>Eingabe wird direkt eingesetzt.</col></row>

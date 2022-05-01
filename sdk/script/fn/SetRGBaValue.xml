@@ -18,7 +18,7 @@
 		<desc>
 		Setzt einen einzelnen Farbwert des angegebenen 32bit-Farbewerts.
 		
-     <table><rowh><col>iSelect</col><col>Auswahl</col></rowh>
+     <table activateBitmask="false" bitmaskName=""><rowh><col>iSelect</col><col>Auswahl</col></rowh>
      <row><col>0</col><col>Alpha-Wert</col></row>
      <row><col>1</col><col>Rotanteil</col></row>
      <row><col>2</col><col>Grünanteil</col></row>

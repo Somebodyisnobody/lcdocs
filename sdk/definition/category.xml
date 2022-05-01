@@ -10,7 +10,7 @@
 die sich aus den folgenden Werten zusammen setzt. Die ersten 5 Kategorien erlauben keine Kombination,
 von den Bits 0-4 darf und muss immer genau eines zur Zeit gesetzt sein.</text>
 <text>
-<table>
+<table activateBitmask="true" bitmaskName="Kategorie">
 <rowh><col>Bit</col><col>Wert</col><col>Kategorie</col><col>Beschreibung</col></rowh>
 <row>
   <col>0</col> <col>1</col> <col>C4D_StaticBack</col>
@@ -116,11 +116,11 @@ von den Bits 0-4 darf und muss immer genau eines zur Zeit gesetzt sein.</text>
   <col>25</col> <col>33554432</col> <col>C4D_IgnoreFoW</col>
   <col>Objekt wird auch dann gezeichnet, wenn es eigentlich vom Kriegsnebel bedeckt ist. Nützlich beispielsweise für Statusanzeigen und Kontrollelemente. Ab CR.</col>
 </row>
-<bitmask>Kategorie</bitmask>
 </table>
 
 </text>
 </doc>
 <author>Sven2</author><date>2006-05</date>
-<author>Newton &amp; Günther</author><date>2005-01</date>
+<author>Newton</author><date>2005-01</date>
+<author>Günther</author><date>2005-01</date>
 </clonkDoc>

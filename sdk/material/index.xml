@@ -29,7 +29,7 @@
 		
 	<h id="MaterialTexturReferenzen">Material-Textur-Referenzen</h>
 	<text>An zahlreichen Stellen in Szenario-Definitionen werden Materialien (ggf. mit Textur- und Mengenangaben) bestimmt.</text>
-	<text><table>
+	<text><table activateBitmask="false" bitmaskName="">
 		<row>
 			<col>Einfache Materialangabe (mit Vorgabetextur):</col>
 			<col><code>Earth</code></col>

@@ -17,7 +17,7 @@
 		<desc>Markiert für einen Spieler ein bestimmtes Kommando. Ist die Darstellung deaktiviert, so wird sie aktiviert.
 		      Das markierte Kommando wird dann (so verfügbar) blinkend dargestellt.<br/><br/>
           Spielerkommandonummern:
-          <table>
+          <table activateBitmask="false" bitmaskName="">
             <rowh><col>Nummer</col><col>Bedeutung</col></rowh>
             <row><col>1</col><col>Links</col></row>
             <row><col>2</col><col>Rechts</col></row>

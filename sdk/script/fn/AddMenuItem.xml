@@ -25,7 +25,7 @@
 					C4MN_Add_ImgObjRank = 3: XPar1 gibt ein Objekt an, dessen Picture-Grafik mit Rang gezeichnet wird. Hat das Objekt keine Infosektion (und damit keinen Rang), so wird in Kontextmenüs dennoch ein entsprechender Leerraum gelassen. Ab CE.<br />
 					C4MN_Add_ImgObject = 4: XPar1 gibt ein Objekt an, dessen Picture-Grafik gezeichnet wird. Ab CE.<br />
 					C4MN_Add_ImgTextSpec = 5: Das Symbol wird in szCaption festgelegt und kann entweder eine normale ID, eine Portrait-Spezifikation in der Form "Portrait:CLNK::00ff00::1" oder eines der folgenden Symbole sein:<br />
-					<table>
+					<table activateBitmask="false" bitmaskName="">
 						<rowh><col>Name</col><col>Beschreibung</col></rowh>
 						<row><col>Ico:Locked</col><col>Passwortsymbol</col></row>
 						<row><col>Ico:League</col><col>Ligasymbol</col></row>

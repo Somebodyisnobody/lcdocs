@@ -12,7 +12,7 @@
 			<params>
 				<param><type>int</type><name>what</name>
 					<desc>Bit-Maske der wiederherzustellenden Dinge:
-						<table>
+						<table activateBitmask="false" bitmaskName="">
 							<rowh><col>Name</col><col>Beschreibung</col></rowh>
 							<row><col>RESTORE_None</col><col>Nichts. Standardeinstellung.</col></row>
 							<row><col>RESTORE_ScriptPlayers</col><col>In der Lobby eingestellte Scriptspieler, inkl. Name, Team und Farbe.</col></row>

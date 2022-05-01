@@ -14,7 +14,7 @@
 				<param><type>int</type><name>dwClr</name><desc>Spielerfarbe</desc></param>
 				<param><type>int</type><name>idTeam</name><desc>Team-ID. Wird 0 angegeben, so wird ein Team nach denselben Regeln ausgewählt wie bei einem normal beitretenden Spieler.</desc><optional /></param>
 				<param><type>int</type><name>dwFlags</name><desc>Bitmaske aus folgenden Werten:
-				<table><rowh><col>Bit</col><col>Konstante</col><col>Beschreibung</col></rowh>
+				<table activateBitmask="false" bitmaskName=""><rowh><col>Bit</col><col>Konstante</col><col>Beschreibung</col></rowh>
 				<row><col>0</col><col>CSPF_FixedAttributes</col><col>Wenn gesetzt, tritt der Spieler garantiert mit den in den Parameter angegebenen Namen und Farbe bei. Ansonsten werden die Attribute bei Kollisionen geändert.</col></row>
 				<row><col>1</col><col>CSPF_NoScenarioInit</col><col>Wenn wahr, wird die Szenarieninitialisierung, also das Erzeugen von Heimatbasismaterial und Clonks, das Setzen der Baupläne nach Szenarienvorgaben, etc., nicht durchgeführt. Außerdem werden die globalen PreInitializePlayer- und InitializePlayer-Callbacks ans Szenarienscript und die Spielziel-, Regel- und Umweltobjekte nicht ausgeführt. Stattdessen wird ein InitializeScriptPlayer(Spielernummer, Team)-Callback als DefinitionCall (d.h. ohne <funclink>this</funclink>()-Objekt) auf der in idExtraData angegebenen Definition ausgeführt. Mit diesem Parameter lassen sich also spezialisierte Scriptspieler realisieren, die nicht gleichberechtigt mit menschlichen Spielern agieren.</col></row>
 				<row><col>2</col><col>CSPF_NoEliminationCheck</col><col>Wenn gesetzt, wird der Spieler nicht automatisch eliminiert, wenn er keine Crew mehr hat.</col></row>

@@ -16,7 +16,7 @@
 		</syntax>
 		<desc>Gibt die momentane Uhrzeit zurück.</desc>
 		<remark>Je nach Wert von iWhat gibt GetSystemTime die folgende Angabe zurück:
-						<table>
+						<table activateBitmask="false" bitmaskName="">
 							<rowh><col>iWhat</col><col>Rückgabe</col></rowh>
 							<row><col>0</col><col>Jahr</col></row>
 							<row><col>1</col><col>Monat (1 = Januar, 2 = Februar usw.)</col></row>

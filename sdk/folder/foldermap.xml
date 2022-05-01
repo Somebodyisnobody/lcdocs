@@ -10,7 +10,7 @@
 <text>Ab CR können Rundenordner Auswahlkarten für die enthaltenen Szenarien anbieten.
 Diese Karten werden nur in der Szenarienauswahl im Spiel und nicht im Entwicklerfrontend (Editor) angezeigt. Für ein Beispiel siehe das Westernpack von RedWolf Design.</text>
 
-<text><table>
+<text><table activateBitmask="false" bitmaskName="">
 	<caption id="SektionFolderMap">Sektion [FolderMap]</caption>
 	<rowh>
 		<col>Wert</col>
@@ -43,7 +43,7 @@ Diese Karten werden nur in der Szenarienauswahl im Spiel und nicht im Entwickler
 		<col>Falls true, wird die Überschrift "Spiel starten" am oberen Rand ausgeblendet.</col>
 	</row></table></text>
 
-<text><table>
+<text><table activateBitmask="false" bitmaskName="">
 	<caption id="SektionAccessGfx">Beliebig viele Sektionen [AccessGfx]</caption>
 	<rowh>
 		<col>Wert</col>
@@ -66,7 +66,7 @@ Diese Karten werden nur in der Szenarienauswahl im Spiel und nicht im Entwickler
 		<col>Koordinaten des Bereiches, in dem das Bild angezeigt wird. Die Koordinaten sind relativ zum <emlink href="#background">Hintergrundbild</emlink>.</col>
 </row></table></text>
 
-<text><table>
+<text><table activateBitmask="false" bitmaskName="">
 	<caption id="SektionScenario">Beliebig viele Sektionen [Scenario]</caption>
 	<rowh>
 		<col>Wert</col>
@@ -145,7 +145,7 @@ Diese Karten werden nur in der Szenarienauswahl im Spiel und nicht im Entwickler
 
 <h id="background">Hintergrundbild</h>
 <text>Wenn der Ordner eine FolderMap enthält, wird eine der Bilddateien FolderMap.png/.jpg/.jpeg/.bmp als Hintergrund erwartet. Die optimale Bildgröße, bei der das Hintergrundbild ohne gestreckt zu werden angezeigt werden kann, hängt von der Bildschirmauflösung des Benutzers ab:</text>
-<text><table>
+<text><table activateBitmask="false" bitmaskName="">
 	<rowh><col>Auflösung</col><col>Größe der FolderMap</col></rowh>
 	<row><col>640x480</col><col>616x385</col></row>
 	<row><col>800x600</col><col>768x480</col></row>

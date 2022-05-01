@@ -9,7 +9,7 @@
 <text>Die LineConnect-Eigenschaft (DWord-Bitmaske) eines Objekts bestimmt, welche Leitungen an das Objekt
 angeschlossen werden können und welches Leitungsverhalten das Objekt hat.</text>
 <text>
-<table><rowh>
+<table activateBitmask="true" bitmaskName="LineConnect"><rowh>
 	<col>Bit</col><col>Wert</col><col>Name</col><col>Beschreibung</col>
 </rowh><row>
 	<col>0</col><col>1</col><col>C4D_PowerInput</col><col>Das Ende einer Energieleitung kann angeschlossen werden.</col>
@@ -30,7 +30,6 @@ angeschlossen werden können und welches Leitungsverhalten das Objekt hat.</text>
 </row><row>
 	<col>8</col><col>256</col><col>C4D_EnergyHolder</col><col>Das Objekt verliert nicht von allein Energie, auch wenn es kein Lebewesen oder Basis ist.</col>
 </row>
-<bitmask>LineConnect</bitmask>
 </table>
 </text>
 </doc>

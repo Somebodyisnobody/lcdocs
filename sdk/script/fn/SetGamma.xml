@@ -19,7 +19,7 @@
 		<desc>Setzt eine Gammarampe. Mit Gammarampen kann global das Aussehen des gesamten Spieles gesteuert werden, indem jedem Farbkanal eine eigene Tabelle zugewiesen wird, aus der die neue Helligkeit abgelesen wird. Damit kann man zum Beispiel bestimmte Farben speziell hervorheben, alles abdunkeln oder erhellen oder sogar das Bild komplett invertieren.</desc>
 		<remark>
 			Die acht Gammarampen haben folgende, für eigene Szenarien selbstverständlich nicht bindende Funktionen:<br /><br />
-			<table>
+			<table activateBitmask="false" bitmaskName="">
 				<rowh><col>iRampIndex</col><col>Funktion</col></rowh>
 				<row><col>0</col><col>Szenarienglobaler Wert</col></row>
 				<row><col>1</col><col>Klima/Jahreszeiten (Engineintern benutzt, wenn im Szenario aktiviert!)</col></row>

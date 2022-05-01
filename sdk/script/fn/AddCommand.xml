@@ -77,7 +77,7 @@
                     <desc>Bestimmt, wie beim Fehlschlag des Commands verfahren wird.
                         <br/>
                         <br/>
-                        <table>
+                        <table activateBitmask="false" bitmaskName="">
                             <rowh>
                                 <col>iBaseMode</col>
                                 <col>Name</col>

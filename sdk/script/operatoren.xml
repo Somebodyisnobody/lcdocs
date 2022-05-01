@@ -13,7 +13,7 @@
 	<text>Um die aufeinanderfolgende Berechnung bestimmter Ausdrücke zu erzwingen, können auch Klammern gesetzt werden.</text>
 	<text>Folgende Operatoren werden unterstützt:</text>
 
-	<text><table>
+	<text><table activateBitmask="false" bitmaskName="">
 		<rowh>
 		 <col>Priorität</col>
 		 <col>Operator</col>
@@ -533,7 +533,7 @@ var settings = defaults .. { Message = "Hello there!", Italic = true };
 
 			<h>Beispiele:</h>
 
-			<text><table>
+			<text><table activateBitmask="false" bitmaskName="">
 				<row>
 				 <col></col>
 				 <col><code>10010010</code></col>
@@ -548,7 +548,7 @@ var settings = defaults .. { Message = "Hello there!", Italic = true };
 				</row>
 			</table></text>
 
-			<text><table>
+			<text><table activateBitmask="false" bitmaskName="">
 				<row>
 				 <col></col>
 				 <col><code>10010010</code></col>
@@ -563,7 +563,7 @@ var settings = defaults .. { Message = "Hello there!", Italic = true };
 				</row>
 			</table></text>
 
-			<text><table>
+			<text><table activateBitmask="false" bitmaskName="">
 				<row>
 				 <col></col>
 				 <col><code>10010010</code></col>
@@ -581,7 +581,7 @@ var settings = defaults .. { Message = "Hello there!", Italic = true };
 			<text>Diese drei Operatoren sind (der Reihe nach) Und (&amp;), Oder (|) und Exklusiv-Oder (^).</text>
 			<text>Bei dem ersten Operator (Und) steht beim Ergebnis nur dann eine 1, wenn in beiden Eingaben an der entsprechenden Stelle ebenfalls eine 1 steht. "Und" hat also die folgende Wahrheitstabelle (senkrecht bzw. waagerecht sind die beiden möglichen Parameter jeweils gelistet, in der Tabelle selbst das Ergebnis):</text>
 
-			<text><table>
+			<text><table activateBitmask="false" bitmaskName="">
 				<row>
 					<col><code>&amp;</code></col>
 					<col>0</col>
@@ -601,7 +601,7 @@ var settings = defaults .. { Message = "Hello there!", Italic = true };
 
 			<text>Der Operator "Oder" gibt 1 zurück, wenn eins (oder beide) der Eingaben 1 sind:</text>
 
-			<text><table>
+			<text><table activateBitmask="false" bitmaskName="">
 				<row>
 					<col><code>|</code></col>
 					<col>0</col>
@@ -621,7 +621,7 @@ var settings = defaults .. { Message = "Hello there!", Italic = true };
 
 			<text>Der Operator "Exklusiv-Oder" (XOr) verhält sich wie das "Oder", doch wird 0 zurückgegeben, wenn beide Parameter 0 sind.</text>
 
-			<text><table>
+			<text><table activateBitmask="false" bitmaskName="">
 				<row>
 					<col><code>^</code></col>
 					<col>0</col>
@@ -653,7 +653,7 @@ var settings = defaults .. { Message = "Hello there!", Italic = true };
 
 			<h>Beispiel:</h>
 
-			<text><table>
+			<text><table activateBitmask="false" bitmaskName="">
 				<row>
 					<col></col>
 					<col><code>10001000000001000</code></col>
@@ -673,7 +673,7 @@ var settings = defaults .. { Message = "Hello there!", Italic = true };
 
 			<text>Das Ergebnis ist in diesem Fall nicht 0, also ist das Bit, dass in der Maske gesetzt ist, auch im Wert gesetzt.</text>
 
-			<text><table>
+			<text><table activateBitmask="false" bitmaskName="">
 				<row>
 					<col></col>
 					<col><code>10001000000001000</code></col>
@@ -699,7 +699,7 @@ var settings = defaults .. { Message = "Hello there!", Italic = true };
 
 			<text>Auf diese Weise kann man also einzelne Bits gezielt prüfen. Doch wie soll man diese nun bearbeiten?	Will man ein einzelnes Bit <strong>setzen</strong>, so wird der Operator "Oder" (<code>|</code>) benutzt. Dieser wird wieder auf Wert und Maske angewendet:</text>
 
-			<text><table>
+			<text><table activateBitmask="false" bitmaskName="">
 				<row>
 					<col></col>
 					<col><code>10001000000001000</code></col>
@@ -719,7 +719,7 @@ var settings = defaults .. { Message = "Hello there!", Italic = true };
 
 			<text>Auf diese Weise ist es allerdings immer nur möglich, ein bestimmtes Bit auf 1 zu setzen. War dieses bereits gesetzt, so bleibt der Wert unverändert. Will man nun ein bestimmtes Bit auf 0 setzen, so benutzt man wieder den "Und"-Operator und die <strong>inverse</strong>(logisch Not) Maske, also <code>[Wert] &amp; ~[Maske]</code>:</text>
 
-			<text><table>
+			<text><table activateBitmask="false" bitmaskName="">
 				<row>
 					<col></col>
 					<col><code>10001000010001000</code></col>
@@ -739,7 +739,7 @@ var settings = defaults .. { Message = "Hello there!", Italic = true };
 
 			<text>Es ist auch möglich, ein bestimmtes Bit gezielt umzuschalten, also von 1 auf 0 und von 0 nach 1. Dies leistet der bitweise "Exklusiv-Oder"-Operator (<code>^</code>):</text>
 
-			<text><table>
+			<text><table activateBitmask="false" bitmaskName="">
 				<row>
 					<col></col>
 					<col><code>10001000000001000</code></col>
@@ -757,7 +757,7 @@ var settings = defaults .. { Message = "Hello there!", Italic = true };
 				</row>
 			</table></text>
 
-			<text><table>
+			<text><table activateBitmask="false" bitmaskName="">
 				<row>
 					<col></col>
 					<col><code>10001000010001000</code></col>

@@ -17,7 +17,7 @@
 		<desc>
 		Liefert einer der folgenden Farbwerte des angegebenen 32Bit-Farbwerts:
 		
-     <table><rowh><col>iSelect</col><col>Rückgabewert</col></rowh>
+     <table activateBitmask="false" bitmaskName=""><rowh><col>iSelect</col><col>Rückgabewert</col></rowh>
      <row><col>0</col><col>Alpha-Wert</col></row>
      <row><col>1</col><col>Rotanteil</col></row>
      <row><col>2</col><col>Grünanteil</col></row>

@@ -17,7 +17,7 @@
 		</syntax>
 		<desc>Ändert den Zeichenmodus für eine Objekts. Die möglichen Werte entsprechen denen des DefCore-Flags BlitMode (siehe Anmerkung). Die Funktion gibt jeweils den vorher gesetzten Blitmodus zurück.</desc>
 		<remark>Der Blitmodus beeinflusst keine zusätzlichen Overlay-Grafiken. Die Blitmodi dieser müssen jeweils in <funclink>SetGraphics</funclink> gesetzt werden.</remark>
-		<remark><table><rowh><col>Konstante</col><col>Wert</col><col>Bedeutung</col></rowh>
+		<remark><table activateBitmask="false" bitmaskName=""><rowh><col>Konstante</col><col>Wert</col><col>Bedeutung</col></rowh>
 		<row><col>GFX_BLIT_Additive</col><col>1</col><col>Additiv (Immer Basissurface und Overlay)</col></row>
 		<row><col>GFX_BLIT_Mod2</col><col>2</col><col>Additive Modulation: Die Farbe des Modulationswertes wird zur jeweiligen Objektfarbe hinzuaddiert, und anschließend RGB(128,128,128) abgezogen. Nur Basisgrafik.</col></row>
 		<row><col>GFX_BLIT_ClrSfc_OwnClr</col><col>4</col><col>Die über <funclink>SetClrModulation</funclink>() gesetzte Farbmodulation gilt nur für die Basisgrafik, und das Overlay wird weiterhin nach Besitzerfarbe (siehe <funclink>SetColorDw</funclink>())gefärbt.</col></row>

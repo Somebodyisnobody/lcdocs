@@ -57,7 +57,7 @@
         </text>
         <h id="Zugangsberechtigung">Zugangsberechtigung</h>
         <text>Für Funktionen in Objektscripten kann eine Zugangsberechtigung festgelegt werden:
-            <table>
+            <table activateBitmask="false" bitmaskName="">
                 <row>
                     <col>public</col>
                     <col>darf vom Objekt selbst, von der Engine oder von anderen Objekten aufgerufen werden</col>
@@ -84,7 +84,7 @@
 
         <h id="ObjektCallsderEngine">Objekt-Calls der Engine</h>
         <text>Die Engine ruft zu Zeiten die folgenden Funktionen in Objektscripten auf.
-            <table>
+            <table activateBitmask="false" bitmaskName="">
                 <rowh>
                     <col>Funktion</col>
                     <col>Parameter</col>

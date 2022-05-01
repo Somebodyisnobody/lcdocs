@@ -8,7 +8,7 @@
 <h id="BaseFunc">Basisfunktionalitäten</h>
 <text>Die BaseFunctionality-Option (DWord-Bitmaske) eines Szenarios bestimmt, welche Funktionen eine Basis (Gebäude mit Spielerflagge) in einem Szenario erfüllen kann.</text>
 <text>
-<table><rowh>
+<table activateBitmask="false" bitmaskName=""><rowh>
 	<col>Bit</col><col>Wert</col><col>BaseFunctionality</col><col>Beschreibung</col>
 </rowh><row>
 	<col>0</col><col>1</col><col>BASEFUNC_AutoSellContents</col><col>Loren werden ausgeleert und Gold wird aus der Basis und direkt enthaltenen Objekten verkauft.</col>

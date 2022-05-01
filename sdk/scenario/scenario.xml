@@ -17,7 +17,7 @@ Der tatsächliche Wert wird dann durch
 <code>BoundBy(Mittelwert+Random(2*Abweichung+1)-Abweichung,Minimum,Maximum);</code>
 bestimmt.</text>
 
-<text><table>
+<text><table activateBitmask="false" bitmaskName="">
 	<caption id="SektionHead">Sektion [Head]</caption>
 	<rowh>
 		<col>Wert</col>
@@ -136,7 +136,7 @@ bestimmt.</text>
 	</row>
 </table></text>
 
-<text><table>
+<text><table activateBitmask="false" bitmaskName="">
 	<caption id="SektionGame">Sektion [Game]</caption>
 	<rowh>
 		<col>Wert</col>
@@ -210,7 +210,7 @@ bestimmt.</text>
 	</row>
 </table></text>
 
-<text><table>
+<text><table activateBitmask="false" bitmaskName="">
 	<caption id="SektionenPlayer1Player2Player3Player4">Sektionen [Player1] [Player2] [Player3] [Player4] (5. Spieler hat [Player1] usw.)</caption>
 	<rowh>
 		<col>Wert</col>
@@ -274,7 +274,7 @@ bestimmt.</text>
 	</row>
 </table></text>
 
-<text><table>
+<text><table activateBitmask="false" bitmaskName="">
 	<caption id="SektionLandscape">Sektion [Landscape]</caption>
 	<rowh>
 		<col>Wert</col>
@@ -428,7 +428,7 @@ bestimmt.</text>
 	</row>
 </table></text>
 
-<text><table>
+<text><table activateBitmask="false" bitmaskName="">
 	<caption id="SektionAnimals">Sektion [Animals]</caption>
 	<rowh>
 		<col>Wert</col>
@@ -447,7 +447,7 @@ bestimmt.</text>
 	</row>
 </table></text>
 
-<text><table>
+<text><table activateBitmask="false" bitmaskName="">
 	<caption id="SektionWeather">Sektion [Weather]</caption>
 	<rowh>
 		<col>Wert</col>
@@ -496,7 +496,7 @@ bestimmt.</text>
 	</row>
 </table></text>
 
-<text><table>
+<text><table activateBitmask="false" bitmaskName="">
 	<caption id="SektionDisasters">Sektion [Disasters]</caption>
 	<rowh>
 		<col>Wert</col>
@@ -520,7 +520,7 @@ bestimmt.</text>
 	</row>
 </table></text>
 
-<text><table>
+<text><table activateBitmask="false" bitmaskName="">
 	<caption id="SektionEnvironment">Sektion [Environment]</caption>
 	<rowh>
 		<col>Wert</col>
@@ -534,7 +534,7 @@ bestimmt.</text>
 	</row>
 </table></text>
 
-<text><table>
+<text><table activateBitmask="false" bitmaskName="">
 	<caption id="SektionDefinitions">Sektion [Definitions]</caption>
 	<rowh>
 		<col>Wert</col>

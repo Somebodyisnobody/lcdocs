@@ -28,7 +28,7 @@
 	
 	<h id="Particletxt">Particle.txt</h>
 	<text>In dieser Datei werden - analog zur <emlink href="definition/defcore.html">DefCore.txt</emlink> bei <emlink href="definition/index.html">Objektdefinitionen</emlink> - die Eigenschaften des Partikeltyps beschrieben.</text>
-	<text><table>
+	<text><table activateBitmask="false" bitmaskName="">
 		<caption id="SektionDefCore">Sektion [Particle]</caption>
 		<rowh>
 			<col>Wert</col><col>Datentyp</col><col>Beschreibung</col>

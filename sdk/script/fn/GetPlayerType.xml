@@ -14,7 +14,7 @@
                         </params>
                 </syntax>
                 <desc>Liefert den Typ eines Spielers. Mögliche Typen sind:
-                      <table><rowh><col>Konstante</col><col>Wert</col><col>Beschreibung</col></rowh>
+                      <table activateBitmask="false" bitmaskName=""><rowh><col>Konstante</col><col>Wert</col><col>Beschreibung</col></rowh>
                       <row><col>C4PT_User</col><col>1</col><col>Vom Benutzer gesteuerter Spieler</col></row>
                       <row><col>C4PT_Script</col><col>2</col><col>Scriptgeesteuerter Spieler; zum Beispiel KI-Spieler.</col></row>
                       </table>

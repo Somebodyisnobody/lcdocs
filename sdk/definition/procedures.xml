@@ -11,7 +11,7 @@
 typische Verhaltensweisen steuern. Durch die Standardprozedur WALK wechselt z.B. die Aktivität Walk
 automatisch nach Jump, sobald der Boden unter den Füßen verloren wurde.</text>
 <text>
-<table>
+<table activateBitmask="false" bitmaskName="">
 <rowh>
   <col>Prozedur</col>
   <col>Beschreibung</col>

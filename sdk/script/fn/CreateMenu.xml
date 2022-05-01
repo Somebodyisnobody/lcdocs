@@ -14,7 +14,7 @@
 				<param><type>object</type><name>pMenuObject</name><desc>Objekt, in welchem das Menü geöffnet wird; kann bei lokalen Aufrufen Null sein</desc></param>
 				<param><type>object</type><name>pCommandObject</name><desc>Erhält das Menükommando (siehe <funclink>AddMenuItem</funclink>); kann bei lokalen Aufrufen Null sein</desc></param>
 				<param><type>int</type><name>iExtra</name><desc>Zusätzliche Information im Menü über das jeweils markierte Objekt. Die angegebenen C4MN_*-Konstanten sind seit 4.9.5.0 CE ebenfalls definiert und sollten statt der numerischen Werte verwendet werden:
-				      <table>
+				      <table activateBitmask="false" bitmaskName="">
 				        <rowh><col>Konstante</col><col>Wert</col><col>Effekt</col></rowh>
 				        <row><col>C4MN_Extra_None</col><col>0</col><col>Nichts</col></row>
 				        <row><col>C4MN_Extra_Components</col><col>1</col><col>Komponenten</col></row>
@@ -28,7 +28,7 @@
 				<param><type>string</type><name>szCaption</name><desc>Bestimmt den angezeigten Menütext, wenn das Menü keine Einträge enthält</desc></param>
 				<param><type>int</type><name>iExtraData</name><desc>Vergleichswert für iExtra 3</desc></param>
 				<param><type>int</type><name>iStyle</name><desc>Aussehen des Menüs. Folgende Konstanten sind ab CR definiert:
-				      <table>
+				      <table activateBitmask="false" bitmaskName="">
 				        <rowh><col>Konstante</col><col>Wert</col><col>Aussehen</col></rowh>
 				        <row><col>C4MN_Style_Normal</col><col>0</col><col>Normal</col></row>
 				        <row><col>C4MN_Style_Context</col><col>1</col><col>Kontextmenü</col></row>
