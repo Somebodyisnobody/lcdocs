@@ -14,6 +14,7 @@
 		<xsl:for-each select="collection(concat($input-folder, '?select=*.xml;recurse=yes'))">
 			<xsl:variable name="procinst" select="processing-instruction('xml-stylesheet')"/>
 			<xsl:variable name="relpath" select="substring-after(substring-before($procinst, 'clonk.xsl'),'href=&quot;')"/>
+			<xsl:message><xsl:text>Transforming </xsl:text><xsl:value-of select="concat($output-folder, '/' , substring-before(substring-after(document-uri(.), $input-folder), '.xml'), $fileext)"></xsl:value-of> </xsl:message>
 			<!--<xsl:result-document href="out/sdk/{tokenize(document-uri(.), '/')[last()]}"> packing everything in one folder-->
 			<!--	online/de/sdk [output-folder] + (/...../sdk/index.xml [document-uri] - everything before sdk/ [input-folder] - ".xml") + .html	-->
 			<xsl:result-document href="{concat($output-folder, '/' , substring-before(substring-after(document-uri(.), $input-folder), '.xml'), $fileext)}">
@@ -48,17 +49,17 @@
 			</xsl:if>
 			<xsl:if test="$is-web-documentation">
 				<xsl:processing-instruction name="php">
-					<xsl:text>$g_page_language = '</xsl:text>
+					<xsl:text>&#xa;      $g_page_language = '</xsl:text>
 					<xsl:choose>
 						<xsl:when test='lang("en")'>english</xsl:when>
 						<xsl:otherwise>german</xsl:otherwise>
 					</xsl:choose>
-					<xsl:text>';
-					require_once('</xsl:text><xsl:value-of select="$relpath"/><xsl:text>../webnotes/core/api.php');
-					pwn_head();
-					?
-					</xsl:text>
+					<xsl:text>';</xsl:text>
+					<xsl:text>&#xa;      require_once('</xsl:text><xsl:value-of select="$relpath"/><xsl:text>../webnotes/core/api.php');</xsl:text>
+					<xsl:text>&#xa;      pwn_head();</xsl:text>
+					<xsl:text>&#xa;      ?</xsl:text>
 				</xsl:processing-instruction>
+				<xsl:text>&#xa;</xsl:text>
 				<script type="text/javascript">
 					function switchLanguage() {
 					var loc = window.location.href;
@@ -67,6 +68,7 @@
 					window.location = loc;
 					}
 				</script>
+				<xsl:text>&#xa;</xsl:text>
 			</xsl:if>
 		</head>
 	</xsl:template>
@@ -843,7 +845,7 @@
 			<xsl:apply-templates/>
 		</pre>
 	</xsl:template>
-	<xsl:template match="code|code/i|code/b">
+	<xsl:template match="code">
 		<xsl:copy>
 			<xsl:apply-templates/>
 		</xsl:copy>
