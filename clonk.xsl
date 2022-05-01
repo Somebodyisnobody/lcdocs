@@ -36,16 +36,15 @@
 				<xsl:value-of select="descendant::title"/>
 				<xsl:apply-templates select="../deprecated"/>
 			</title>
-			<xsl:if test="descendant::table[bitmask]">
+			<!-- LF Linebreak for better readability -->
+			<xsl:text>&#xa;</xsl:text>
+			<xsl:if test="descendant::*[@activateBitmask='true']">
 				<script type="text/javascript">
 					<xsl:attribute name="src">
-						<xsl:value-of select="$relpath"/><xsl:text>bitmasks.js</xsl:text>
+						<xsl:value-of select="$relpath"/><xsl:text>bitmask.js</xsl:text>
 					</xsl:attribute>
 				</script>
-				<script type="text/javascript">
-					var BIT_COUNT = <xsl:value-of select="count(descendant::table[bitmask]/row)"/>; // Anzahl der Bits
-					var PREFIX = "bit"; // Prefix für die numerierten IDs
-				</script>
+				<xsl:text>&#xa;</xsl:text>
 			</xsl:if>
 			<xsl:if test="$is-web-documentation">
 				<xsl:processing-instruction name="php">
@@ -202,8 +201,8 @@
 		</xsl:if>
 		<h2>
 			<xsl:choose>
-				<xsl:when test="lang('de')">Änderungshistorie</xsl:when>
-				<xsl:otherwise>Changelog</xsl:otherwise>
+				<xsl:when test="lang('de')">Konstanten</xsl:when>
+				<xsl:otherwise>Constants</xsl:otherwise>
 			</xsl:choose>
 		</h2>
 		<table class="text">
@@ -237,6 +236,7 @@
 				</tr>
 			</thead>
 			<tbody>
+				<xsl:call-template name="bitmaskTable"/>
 				<xsl:for-each select="const">
 					<tr>
 						<xsl:if test="position() mod 2=0">
@@ -282,6 +282,7 @@
 				</xsl:for-each>
 			</tbody>
 		</table>
+		<xsl:call-template name="bitmaskBitfield"/>
 		<xsl:call-template name="examples"/>
 		<xsl:call-template name="history"/>
 	</xsl:template>
@@ -640,6 +641,7 @@
 			<xsl:apply-templates select="caption"/>
 			<xsl:apply-templates select="rowh"/>
 			<tbody>
+				<xsl:call-template name="bitmaskTable"/>
 				<xsl:for-each select="row">
 					<tr>
 						<xsl:apply-templates select="@id"/>
@@ -662,6 +664,7 @@
 				</xsl:for-each>
 			</tbody>
 		</table>
+		<xsl:call-template name="bitmaskBitfield"/>
 		<xsl:apply-templates select="bitmask"/>
 	</xsl:template>
 
@@ -695,6 +698,26 @@
 				<xsl:value-of select="$num"/>
 			</xsl:attribute>
 		</input>
+	</xsl:template>
+
+	<xsl:template name="bitmaskBitfield">
+		<xsl:if test="@activateBitmask='true'">
+			<label>
+				<xsl:choose>
+					<xsl:when test="name(.) = 'constGroup'"><xsl:text>Konstantenfeld-Namenlos</xsl:text></xsl:when>
+					<xsl:otherwise><xsl:value-of select="@bitmaskName"/></xsl:otherwise>
+				</xsl:choose>
+				<xsl:text>: </xsl:text>
+				<input oninput="calculateTable(event);" type="number" min="0"/>
+			</label>
+		</xsl:if>
+	</xsl:template>
+
+	<xsl:template name="bitmaskTable">
+		<xsl:if test="@activateBitmask='true'">
+			<xsl:attribute name="style">cursor:pointer;</xsl:attribute>
+			<xsl:attribute name="onClick">calculateBitfieldValue(event);</xsl:attribute>
+		</xsl:if>
 	</xsl:template>
 
 	<xsl:template match="rowh">

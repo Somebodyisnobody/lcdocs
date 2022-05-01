@@ -10,12 +10,12 @@ font-size: 13px;
 line-height: 18px;
 }
 
-.text, div.fnsyntax, pre.code, ul, ol {
+.text, div.fnsyntax, pre.code, ul, ol, label {
 margin-bottom: 18px;
 margin-top: 0;
 }
 
-h3, h4, h5, h6, .text, div.fnsyntax, pre.code, dt, ul, ol {
+h3, h4, h5, h6, .text, div.fnsyntax, pre.code, dt, ul, ol, label {
 margin-left: 18px;
 margin-right: 2%;
 }
@@ -194,7 +194,7 @@ text-decoration: none;
     background-color: #393737de;
     border: 1px solid black;
     color: white;
-    top: 20px;
+    top: 25px;
     left: 20px;
     border-radius: 1em;
     padding: 3px 1em;
