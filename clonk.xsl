@@ -14,7 +14,9 @@
 		<xsl:for-each select="collection(concat($input-folder, '?select=*.xml;recurse=yes'))">
 			<xsl:variable name="procinst" select="processing-instruction('xml-stylesheet')"/>
 			<xsl:variable name="relpath" select="substring-after(substring-before($procinst, 'clonk.xsl'),'href=&quot;')"/>
+			<!-- Logging current handled file for debugging warnings-->
 			<xsl:message><xsl:text>Transforming </xsl:text><xsl:value-of select="concat($output-folder, '/' , substring-before(substring-after(document-uri(.), $input-folder), '.xml'), $fileext)"></xsl:value-of> </xsl:message>
+
 			<!--<xsl:result-document href="out/sdk/{tokenize(document-uri(.), '/')[last()]}"> packing everything in one folder-->
 			<!--	online/de/sdk [output-folder] + (/...../sdk/index.xml [document-uri] - everything before sdk/ [input-folder] - ".xml") + .html	-->
 			<xsl:result-document href="{concat($output-folder, '/' , substring-before(substring-after(document-uri(.), $input-folder), '.xml'), $fileext)}">
@@ -702,6 +704,13 @@
 		</input>
 	</xsl:template>
 
+	<xsl:template name="bitmaskTable">
+		<xsl:if test="@activateBitmask='true'">
+			<xsl:attribute name="style">cursor:pointer;</xsl:attribute>
+			<xsl:attribute name="onClick">calculateBitfieldValue(event);</xsl:attribute>
+		</xsl:if>
+	</xsl:template>
+
 	<xsl:template name="bitmaskBitfield">
 		<xsl:if test="@activateBitmask='true'">
 			<label>
@@ -710,15 +719,9 @@
 					<xsl:otherwise><xsl:value-of select="@bitmaskName"/></xsl:otherwise>
 				</xsl:choose>
 				<xsl:text>: </xsl:text>
-				<input oninput="calculateTable(event);" type="number" min="0"/>
+				<input oninput="bitfieldChange(event);" type="number" min="0"/>
 			</label>
-		</xsl:if>
-	</xsl:template>
-
-	<xsl:template name="bitmaskTable">
-		<xsl:if test="@activateBitmask='true'">
-			<xsl:attribute name="style">cursor:pointer;</xsl:attribute>
-			<xsl:attribute name="onClick">calculateBitfieldValue(event);</xsl:attribute>
+			<br/>
 		</xsl:if>
 	</xsl:template>
 
