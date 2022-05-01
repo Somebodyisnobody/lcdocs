@@ -13474,7 +13474,7 @@ msgstr "If 0 is given for pObj/idDef in a call to <placeholder-1/>, the object o
 
 #: sdk/script/GetXXVal.xml:59(text)
 msgid "Die Zusatzfunktionen in GetXVal.c (in System.c4g) ermöglichen Aufrufe verschiedener Get*Val-Funktionen durch globale Scriptfunktionen (z.B. <code>GetObjWidth()</code>, entspricht <code><placeholder-1/>(\"Width\", 0, -obj-)</code>)."
-msgstr "There is a number of additional wrapper functions located in System.c4g/GetXVal.c. These functions allow for easy access to various common Get*Val functions (e.g. <code>GetObjWidth()</code> for <code><i><placeholder-1/></i>(\"Width\", 0, -obj-)</code>)."
+msgstr "There is a number of additional wrapper functions located in System.c4g/GetXVal.c. These functions allow for easy access to various common Get*Val functions (e.g. <code>GetObjWidth()</code> for <code><placeholder-1/>(\"Width\", 0, -obj-)</code>)."
 
 #: sdk/script/Funcs.xml:9(text)
 msgid "Eine Skriptfunktion fasst ein bestimmtes Stück Code zusammen, welches dann von der Engine oder einem anderen Script aufgerufen (also ausgeführt) werden kann. Das gesamte Script eines Szenarios oder Objekts ist in solchen Funktionen untergebracht."
