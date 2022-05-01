@@ -37,7 +37,7 @@ jobs:
       - name: Setup saxonb-xslt, python, gettext
         run: sudo DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends libsaxonb-java python-libxml2 gettext -y
 
-      - name: Build function list
+      - name: Build docs
         run: |
           make -j$(nproc)
 
