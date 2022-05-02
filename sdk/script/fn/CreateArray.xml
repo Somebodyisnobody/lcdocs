@@ -5,7 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
 	<func>
 		<title>CreateArray</title>
-		<category>Script</category><subcat>Strings</subcat>
+		<category>Script/Strings</category>
 		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
 			<rtype>array</rtype>

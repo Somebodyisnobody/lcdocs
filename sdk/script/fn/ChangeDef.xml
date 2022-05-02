@@ -5,7 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
   <func>
     <title>ChangeDef</title>
-    <category>Objekte</category><subcat>Status</subcat>
+    <category>Objekte/Status</category>
     <versions><version>4.6.5.0 CP</version></versions>
     <syntax>
       <rtype>bool</rtype>

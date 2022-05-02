@@ -20,15 +20,15 @@
 			</params>
 		</syntax>
 		<desc>Verändert Parallaxität und Scrollgeschwindigkeit des Himmels.</desc>
-		<remark>Wird für einen der Parameter <funclink>SkyPar_Keep</funclink>() angegeben, wird der vorherige Wert beibehalten.</remark>
+		<remark>Wird für einen der Parameter <constlink>SkyPar_Keep</constlink>() angegeben, wird der vorherige Wert beibehalten.</remark>
 		<examples>
 			<example>
-				<code>SetSkyParallax(1, 20,20, 0,0, <funclink>SkyPar_Keep</funclink>(),<funclink>SkyPar_Keep</funclink>());</code>
+				<code>SetSkyParallax(1, 20,20, 0,0, <constlink>SkyPar_Keep</constlink>,<constlink>SkyPar_Keep</constlink>);</code>
 				<text>Setzt den Himmel auf parallax und mit dem Wind bewegend.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>SkyPar_Keep</funclink>
+			<constlink>SkyPar_Keep</constlink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-04</date>

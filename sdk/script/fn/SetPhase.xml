@@ -5,7 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
   <func>
     <title>SetPhase</title>
-    <category>Objekte</category><subcat>Aktivität</subcat>
+    <category>Objekte/Aktivität</category>
     <versions><version>4.6.5.0 CP</version></versions>
     <syntax>
       <rtype>bool</rtype>

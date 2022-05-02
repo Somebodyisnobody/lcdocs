@@ -5,7 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
 				<func>
 								<title>GetVertexNum</title>
-								<category>Objekte</category><subcat>Vertices</subcat>
+								<category>Objekte/Vertices</category>
 								<versions><version>4.6.5.0 CP</version></versions>
 								<syntax>
 												<rtype>int</rtype>

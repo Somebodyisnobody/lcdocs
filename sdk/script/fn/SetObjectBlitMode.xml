@@ -5,7 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
 	<func>
 		<title>SetObjectBlitMode</title>
-		<category>Objekte</category><subcat>Darstellung</subcat>
+		<category>Objekte/Darstellung</category>
 		<versions><version>4.9.5.0 CE</version><extversion>4.9.6.0 CR</extversion></versions>
 		<syntax>
 			<rtype>int</rtype>

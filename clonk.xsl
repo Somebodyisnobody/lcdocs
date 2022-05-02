@@ -592,13 +592,21 @@
 
 	<xsl:template match="funclink">
 		<xsl:param name="relpath" tunnel="yes"/>
-		<a>
-			<xsl:attribute name="href">
-				<xsl:value-of select="$relpath"/><xsl:text>sdk/script/fn/</xsl:text><xsl:value-of select="."/><xsl:value-of
-					select="$fileext"/>
-			</xsl:attribute>
-			<xsl:value-of select="."/>
-		</a>
+		<xsl:choose>
+			<xsl:when test="document(concat('sdk/script/fn/', ., '.xml'))">
+				<a>
+					<xsl:attribute name="href">
+						<xsl:value-of select="$relpath"/><xsl:text>sdk/script/fn/</xsl:text><xsl:value-of select="."/><xsl:value-of
+							select="$fileext"/>
+					</xsl:attribute>
+					<xsl:value-of select="normalize-space(.)"/>
+				</a>
+			</xsl:when>
+			<xsl:otherwise>
+				<!-- TODO set terminate=yes when running in production-->
+				<xsl:message terminate="no">Can't find the function "<xsl:value-of select="normalize-space(.)"/>"</xsl:message>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 
 	<xsl:template match="emlink" name="link">
@@ -628,6 +636,25 @@
 			</xsl:if>
 			<xsl:value-of select="$text"/>
 		</a>
+	</xsl:template>
+
+	<xsl:template match="constlink">
+		<xsl:param name="relpath" tunnel="yes"/>
+		<xsl:choose>
+			<xsl:when test="document(concat('sdk/script/constants/', ., '.xml'))">
+				<a>
+					<xsl:attribute name="href">
+						<xsl:value-of select="$relpath"/><xsl:text>sdk/script/constants/</xsl:text><xsl:value-of select="."/><xsl:value-of
+							select="$fileext"/>
+					</xsl:attribute>
+					<xsl:value-of select="normalize-space(.)"/>
+				</a>
+			</xsl:when>
+			<xsl:otherwise>
+				<!-- TODO set terminate=yes when running in production-->
+				<xsl:message terminate="no">Can't find the constant "<xsl:value-of select="normalize-space(.)"/>"</xsl:message>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 
 	<xsl:template match="author">

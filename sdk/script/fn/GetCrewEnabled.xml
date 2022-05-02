@@ -5,8 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
 	<func>
 		<title>GetCrewEnabled</title>
-		<category>Objekte</category>
-		<subcat>Mannschaft</subcat>
+		<category>Objekte/Mannschaft</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
 			<rtype>bool</rtype>

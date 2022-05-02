@@ -5,7 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
 	<func>
 		<title>Collect</title>
-		<category>Objekte</category><subcat>Inhalt</subcat>
+		<category>Objekte/Inhalt</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
 			<rtype>bool</rtype>

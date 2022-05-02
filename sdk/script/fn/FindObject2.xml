@@ -5,7 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
 	<func>
 		<title>FindObject2</title>
-		<category>Objekte</category><subcat>Suche</subcat>
+		<category>Objekte/Suche</category>
 		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
 			<rtype>object</rtype>

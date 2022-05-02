@@ -52,7 +52,6 @@
                                 <!-- Title must have the function name without whitespaces or "()" -->
                                 <xs:element name="title" type="entityName"/>
                                 <xs:element name="category" type="functionCategory"/>
-                                <xs:element minOccurs="0" name="subcat" type="functionSubCategory"/>
                                 <xs:element name="versions" type="entityVersions"/>
                                 <xs:element minOccurs="0" name="deprecated" type="deprecated"/>
                                 <xs:element name="syntax">
@@ -218,53 +217,50 @@
     <xs:simpleType name="functionCategory">
         <xs:restriction base="xs:string">
             <xs:enumeration value="Arithmetik"/>
-            <xs:enumeration value="Callbacks"/>
+            <xs:enumeration value="Callbacks/Objekte"/>
+            <xs:enumeration value="Callbacks/Szenarien"/>
             <xs:enumeration value="Effekte"/>
             <xs:enumeration value="Entwickler"/>
-            <xs:enumeration value="Get*Val"/>
             <xs:enumeration value="Global"/>
+            <!-- TODO rename @maxmitti -->
+            <xs:enumeration value="Get*Val"/>
             <xs:enumeration value="Himmel"/>
             <xs:enumeration value="Interface"/>
             <xs:enumeration value="Landschaft"/>
+            <xs:enumeration value="Landschaft/Material"/>
             <xs:enumeration value="Musik"/>
             <xs:enumeration value="Nachrichten"/>
             <xs:enumeration value="Objekte"/>
+            <xs:enumeration value="Objekte/Aktivität"/>
+            <xs:enumeration value="Objekte/Bewegung"/>
+            <xs:enumeration value="Objekte/Commands"/>
+            <xs:enumeration value="Objekte/Darstellung"/>
+            <xs:enumeration value="Objekte/Erzeugung"/>
+            <xs:enumeration value="Objekte/Existenz"/>
+            <xs:enumeration value="Objekte/Inhalt"/>
+            <xs:enumeration value="Objekte/Kategorie"/>
+            <xs:enumeration value="Objekte/Komponenten"/>
+            <xs:enumeration value="Objekte/Lebewesen"/>
+            <xs:enumeration value="Objekte/Mannschaft"/>
+            <xs:enumeration value="Objekte/Menü"/>
+            <xs:enumeration value="Objekte/OCF"/>
+            <xs:enumeration value="Objekte/Position"/>
+            <xs:enumeration value="Objekte/Sichtbarkeit"/>
+            <xs:enumeration value="Objekte/Status"/>
+            <xs:enumeration value="Objekte/Suche"/>
+            <xs:enumeration value="Objekte/Vertices"/>
             <xs:enumeration value="Partikel"/>
             <xs:enumeration value="Script"/>
+            <xs:enumeration value="Script/Funktionsaufruf"/>
+            <xs:enumeration value="Script/Strings"/>
             <xs:enumeration value="Spieler"/>
+            <xs:enumeration value="Spieler/Sicht"/>
             <xs:enumeration value="System"/>
             <xs:enumeration value="Teams"/>
             <xs:enumeration value="Umwelt"/>
+            <xs:enumeration value="Umwelt/Effekte"/>
+            <xs:enumeration value="Umwelt/Wetter"/>
             <xs:enumeration value="Variablen"/>
-        </xs:restriction>
-    </xs:simpleType>
-    <xs:simpleType name="functionSubCategory">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="Objekte"/>
-            <xs:enumeration value="Material"/>
-            <xs:enumeration value="Aktivität"/>
-            <xs:enumeration value="Bewegung"/>
-            <xs:enumeration value="Commands"/>
-            <xs:enumeration value="Darstellung"/>
-            <xs:enumeration value="Erzeugung"/>
-            <xs:enumeration value="Existenz"/>
-            <xs:enumeration value="Inhalt"/>
-            <xs:enumeration value="Kategorie"/>
-            <xs:enumeration value="Komponenten"/>
-            <xs:enumeration value="Lebewesen"/>
-            <xs:enumeration value="Mannschaft"/>
-            <xs:enumeration value="Menü"/>
-            <xs:enumeration value="OCF"/>
-            <xs:enumeration value="Position"/>
-            <xs:enumeration value="Sichtbarkeit"/>
-            <xs:enumeration value="Status"/>
-            <xs:enumeration value="Suche"/>
-            <xs:enumeration value="Vertices"/>
-            <xs:enumeration value="Funktionsaufruf"/>
-            <xs:enumeration value="Strings"/>
-            <xs:enumeration value="Sicht"/>
-            <xs:enumeration value="Effekte"/>
-            <xs:enumeration value="Wetter"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:complexType name="entityVersions">
@@ -335,6 +331,7 @@
                     <xs:attribute name="href" use="required"/>
                 </xs:complexType>
             </xs:element>
+            <xs:element name="constlink" type="entityName"/>
         </xs:choice>
     </xs:group>
     <xs:complexType name="history">

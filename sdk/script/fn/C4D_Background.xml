@@ -5,7 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
 	<func>
 		<title>C4D_Background</title>
-		<category>Objekte</category><subcat>Kategorie</subcat>
+		<category>Objekte/Kategorie</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
 			<rtype>int</rtype>

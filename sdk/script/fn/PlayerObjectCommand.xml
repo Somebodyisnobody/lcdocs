@@ -5,8 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
     <func>
         <title>PlayerObjectCommand</title>
-        <category>Objekte</category>
-        <subcat>Commands</subcat>
+        <category>Objekte/Commands</category>
         <versions>
             <version>4.9.6.0 CR</version>
         </versions>
@@ -77,9 +76,7 @@
             </params>
         </syntax>
 
-        <desc>Führt das Kommando szCommand für den gerade ausgewählten Clonk von Spieler iPlr aus. Siehe <funclink>
-            SetCommand
-        </funclink> für mögliche Befehle.
+        <desc>Führt das Kommando szCommand für den gerade ausgewählten Clonk von Spieler iPlr aus. Siehe <funclink>SetCommand</funclink> für mögliche Befehle.
         </desc>
 
         <examples>

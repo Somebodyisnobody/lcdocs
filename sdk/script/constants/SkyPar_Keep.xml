@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
+	<constGroup activateBitmask="false">
+		<title>SkyPar_Keep</title>
+		<description>Konstante für <funclink>SetSkyParallax</funclink>.</description>
+		<const>
+			<name>SkyPar_Keep</name>
+			<category>Himmel</category>
+			<description>Konstante für <funclink>SetSkyParallax</funclink>.</description>
+			<version>4.9.1.0 GWE</version>
+			<value>-163764</value>
+		</const>
+	</constGroup>
+	<author>Sven2</author><date>2002-04</date>
+</clonkDoc>

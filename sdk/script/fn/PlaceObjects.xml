@@ -5,7 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
 	<func>
 		<title>PlaceObjects</title>
-		<category>Objekte</category><subcat>Erzeugung</subcat>
+		<category>Objekte/Erzeugung</category>
 		<versions><version>4.9.5.0 CE</version></versions>
 		<syntax>
 			<rtype>int</rtype>

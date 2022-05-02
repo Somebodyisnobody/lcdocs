@@ -5,7 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
 	<func>
 		<title>FightWith</title>
-		<category>Objekte</category><subcat>Status</subcat>
+		<category>Objekte/Status</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
 			<rtype>bool</rtype>

@@ -5,8 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
   <func>
     <title>SetViewCursor</title>
-    <category>Spieler</category>
-    <subcat>Sicht</subcat>
+    <category>Spieler/Sicht</category>
     <versions><version>4.9.7.0 CR</version></versions>
     <syntax>
       <rtype>bool</rtype>

@@ -5,8 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
  <func>
   <title>AbsX</title>
-  <category>Objekte</category>
-  <subcat>Position</subcat>
+  <category>Objekte/Position</category>
   <versions><version>4.9.1.0 GWE</version></versions>
   <syntax>
    <rtype>int</rtype>

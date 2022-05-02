@@ -5,7 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
   <func>
     <title>WildcardMatch</title>
-    <category>Script</category><subcat>Strings</subcat>
+    <category>Script/Strings</category>
     <versions><version>4.9.5.0 CE</version></versions>
     <syntax>
       <rtype>string</rtype>

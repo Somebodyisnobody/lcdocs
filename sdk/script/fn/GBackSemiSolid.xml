@@ -5,8 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
 	<func>
 		<title>GBackSemiSolid</title>
-		<category>Landschaft</category>
-		<subcat>Material</subcat>
+		<category>Landschaft/Material</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
 			<rtype>bool</rtype>

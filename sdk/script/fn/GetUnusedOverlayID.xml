@@ -5,7 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
   <func>
     <title>GetUnusedOverlayID</title>
-    <category>Objekte</category><subcat>Darstellung</subcat>
+    <category>Objekte/Darstellung</category>
     <versions><version>4.9.8.5 CR</version></versions>
     <syntax>
       <rtype>int</rtype>

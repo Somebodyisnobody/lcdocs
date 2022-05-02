@@ -5,7 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
 	<func>
 		<title>SetVisibility</title>
-		<category>Objekte</category><subcat>Sichtbarkeit</subcat>
+		<category>Objekte/Sichtbarkeit</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
 			<rtype>bool</rtype>

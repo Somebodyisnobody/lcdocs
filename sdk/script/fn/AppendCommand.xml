@@ -5,8 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
   <func>
     <title>AppendCommand</title>
-    <category>Objekte</category>
-    <subcat>Commands</subcat>
+    <category>Objekte/Commands</category>
     <versions><version>4.6.5.0 CP</version><extversion>4.9.1.0 GWE</extversion></versions>
     <syntax>
       <rtype>bool</rtype>

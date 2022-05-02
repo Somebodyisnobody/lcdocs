@@ -5,8 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
     <func>
         <title>GetComponent</title>
-        <category>Objekte</category>
-        <subcat>Komponenten</subcat>
+        <category>Objekte/Komponenten</category>
         <versions>
             <version>4.6.5.0 CP</version>
         </versions>

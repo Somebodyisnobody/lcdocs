@@ -5,7 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
 	<func>
 		<title>Buy</title>
-		<category>Objekte</category><subcat>Erzeugung</subcat>
+		<category>Objekte/Erzeugung</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
 			<rtype>object</rtype>

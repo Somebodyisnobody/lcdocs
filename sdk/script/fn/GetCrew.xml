@@ -5,8 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
 	<func>
 		<title>GetCrew</title>
-		<category>Objekte</category>
-		<subcat>Mannschaft</subcat>
+		<category>Objekte/Mannschaft</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
 			<rtype>object</rtype>

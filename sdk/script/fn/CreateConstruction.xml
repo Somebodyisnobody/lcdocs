@@ -5,8 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
     <func>
         <title>CreateConstruction</title>
-        <category>Objekte</category>
-        <subcat>Erzeugung</subcat>
+        <category>Objekte/Erzeugung</category>
         <versions>
             <version>4.6.5.0 CP</version>
         </versions>

@@ -5,7 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
 	<func>
 		<title>SetBridgeActionData</title>
-		<category>Objekte</category><subcat>Aktivität</subcat>
+		<category>Objekte/Aktivität</category>
 		<versions><version>4.9.9.0 CR</version></versions>
 		<syntax>
 			<rtype>bool</rtype>

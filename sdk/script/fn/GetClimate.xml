@@ -5,7 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
 				<func>
 								<title>GetClimate</title>
-								<category>Umwelt</category><subcat>Wetter</subcat>
+								<category>Umwelt/Wetter</category>
 								<versions><version>4.6.5.0 CP</version></versions>
 								<syntax>
 												<rtype>int</rtype>

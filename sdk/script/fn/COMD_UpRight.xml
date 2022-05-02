@@ -5,7 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
 	<func>
 		<title>COMD_UpRight</title>
-		<category>Objekte</category><subcat>Bewegung</subcat>
+		<category>Objekte/Bewegung</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
 			<rtype>int</rtype>

@@ -5,7 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
 	<func>
 		<title>GameCallEx</title>
-		<category>Script</category><subcat>Funktionsaufruf</subcat>
+		<category>Script/Funktionsaufruf</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
 			<rtype>any</rtype>
