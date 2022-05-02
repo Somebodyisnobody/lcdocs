@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
+	<constGroup activateBitmask="true">
+		<title>OCF</title>
+		<description>OFC steht für <tt>Object Character Flag</tt>. Objekte können mittels OCF bestimmte Eigenschaften
+			zugewiesen werden. Mit <funclink>GetOCF</funclink> werden die aktuell gesetzten Flags als Bitmaske
+			ausgegeben. Alternativ kann man auch nach bestimmten Flags mit <funclink>Find_OCF</funclink> suchen.
+			Für weitere Informationen und Beispiele zur Benutzung dieser Konstanten siehe <emlink
+					href="definition/ocf.html">Object character flags</emlink>.
+		</description>
+		<const>
+			<name>OCF_Normal</name>
+			<category>Objekte/OCF</category>
+			<description>Intern reserviert, nicht anwählbar.</description>
+			<version>4.6.5.0 CP</version>
+			<value>1</value>
+		</const>
+		<const>
+			<name>OCF_Construct</name>
+			<category>Objekte/OCF</category>
+			<description>Markiert das Objekt als Baustelle.</description>
+			<version>4.6.5.0 CP</version>
+			<value>2</value>
+		</const>
+		<const>
+			<name>OCF_Grab</name>
+			<category>Objekte/OCF</category>
+			<description>Anfassbares Objekt.</description>
+			<version>4.6.5.0 CP</version>
+			<value>4</value>
+		</const>
+		<const>
+			<name>OCF_Collectible</name>
+			<category>Objekte/OCF</category>
+			<description>Einsammelbares Objekt. Intern unter "OCF_Carryable" geführt.</description>
+			<version>4.6.5.0 CP</version>
+			<value>8</value>
+		</const>
+		<const>
+			<name>OCF_OnFire</name>
+			<category>Objekte/OCF</category>
+			<description>Brennendes Objekt.</description>
+			<version>4.6.5.0 CP</version>
+			<value>16</value>
+		</const>
+		<const>
+			<name>OCF_HitSpeed1</name>
+			<category>Objekte/OCF</category>
+			<description>Objekt, das sich mit mindestens 1.5 Pixel pro Frame bewegt.</description>
+			<version>4.9.1.0 GWE</version>
+			<value>32</value>
+		</const>
+		<const>
+			<name>OCF_Fullcon</name>
+			<category>Objekte/OCF</category>
+			<description>Zu mindestens 100 % fertig gebautes Objekt. Das Objekt ist also zum Beispiel keine Baustelle,
+				bzw. als Lebewesen ist es mindestens voll ausgewachsen. Siehe auch <funclink>GetCon</funclink>, <funclink>
+					DoCon
+				</funclink> und <funclink>SetCon</funclink>.
+			</description>
+			<version>4.6.5.0 CP</version>
+			<value>64</value>
+		</const>
+		<const>
+			<name>OCF_Inflammable</name>
+			<category>Objekte/OCF</category>
+			<description>Brennbares Objekt.</description>
+			<version>4.9.1.0 GWE</version>
+			<value>128</value>
+		</const>
+		<const>
+			<name>OCF_Chop</name>
+			<category>Objekte/OCF</category>
+			<description>Fällbares Objekt. Normalerweise sind das Bäume.</description>
+			<version>4.6.5.0 CP</version>
+			<value>256</value>
+		</const>
+		<const>
+			<name>OCF_Rotate</name>
+			<category>Objekte/OCF</category>
+			<description>Drehbares Objekt.</description>
+			<version>4.9.1.0 GWE</version>
+			<value>512</value>
+		</const>
+		<const>
+			<name>OCF_Exclusive</name>
+			<category>Objekte/OCF</category>
+			<description>Das Objekt blockiert (versteckt) dahinter befindliche Objekte und verhindert, dass weitere
+				Objekte vor diesem gebaut werden. Dieses Flag wird durch den <emlink href="definition/defcore.html">
+					DefCore</emlink>-Eintrag "Exclusive" gesetzt.
+			</description>
+			<version>4.9.1.0 GWE</version>
+			<value>1024</value>
+		</const>
+		<const>
+			<name>OCF_Entrance</name>
+			<category>Objekte/OCF</category>
+			<description>Das Objekt besitzt einen aktiven Eingangsbereich. Dies ist der Fall, wenn ein Eingangsbereich
+				definiert ist (siehe <emlink href="definition/defcore.html">DefCore.txt</emlink>), das Objekt fertig
+				gebaut und nicht verdreht ist.
+			</description>
+			<version>4.9.1.0 GWE</version>
+			<value>2048</value>
+		</const>
+		<const>
+			<name>OCF_HitSpeed2</name>
+			<category>Objekte/OCF</category>
+			<description>Objekt, das sich mit mindestens 2 Pixel pro Frame bewegt.</description>
+			<version>4.9.1.0 GWE</version>
+			<value>4096</value>
+		</const>
+		<const>
+			<name>OCF_HitSpeed3</name>
+			<category>Objekte/OCF</category>
+			<description>Objekt, das sich mit mindestens 6 Pixel pro Frame bewegt.</description>
+			<version>4.9.1.0 GWE</version>
+			<value>8192</value>
+		</const>
+		<const>
+			<name>OCF_Collection</name>
+			<category>Objekte/OCF</category>
+			<description>Das Objekt besitzt einen Collection-Bereich, ist nicht voll (CollectionLimit), verdreht oder
+				unfertig. Siehe auch <funclink>Collect</funclink>.
+			</description>
+			<version>4.9.1.0 GWE</version>
+			<value>16384</value>
+		</const>
+		<const>
+			<name>OCF_Living</name>
+			<category>Objekte/OCF</category>
+			<description>Objekt ist ein Lebewesen. Achtung: Tote Lebewesen sind immer noch OCF_Living. Für lebende
+				Lebewesen gibt es OCF_Alive.
+			</description>
+			<version>4.6.5.0 CP</version>
+			<value>32768</value>
+		</const>
+		<const>
+			<name>OCF_HitSpeed4</name>
+			<category>Objekte/OCF</category>
+			<description>Objekt, das sich mit mindestens 8 Pixel pro Frame bewegt.</description>
+			<version>4.9.1.0 GWE</version>
+			<value>65536</value>
+		</const>
+		<const>
+			<name>OCF_FightReady</name>
+			<category>Objekte/OCF</category>
+			<description>Das Objekt ist ein Lebewesen, hat eine Aktivität und kein ObjectDisabled in dieser Aktivität.
+			</description>
+			<version>4.9.1.0 GWE</version>
+			<value>131072</value>
+		</const>
+		<const>
+			<name>OCF_LineConstruct</name>
+			<category>Objekte/OCF</category>
+			<description>Am Objekt kann zurzeit eine Leitung angeschlossen werden.</description>
+			<version>4.9.1.0 GWE</version>
+			<value>262144</value>
+		</const>
+		<const>
+			<name>OCF_Prey</name>
+			<category>Objekte/OCF</category>
+			<description>Beutetier, wie zum Beispiel Wipfe, Clonks, etc.</description>
+			<version>4.6.5.0 CP</version>
+			<value>524288</value>
+		</const>
+		<const>
+			<name>OCF_AttractLightning</name>
+			<category>Objekte/OCF</category>
+			<description>Objekt das Blitze anzieht. Dieses Flag wird durch die <emlink href="definition/defcore.html">
+				DefCore</emlink>-Eigenschaft "AttractLightning" kontrolliert.
+			</description>
+			<version>4.6.5.0 CP</version>
+			<value>1048576</value>
+		</const>
+		<const>
+			<name>OCF_NotContained</name>
+			<category>Objekte/OCF</category>
+			<description>Objekt befindet sich im Freien. Siehe auch <funclink>NoContainer</funclink>.
+			</description>
+			<version>4.9.1.0 GWE</version>
+			<value>2097152</value>
+		</const>
+		<const>
+			<name>OCF_CrewMember</name>
+			<category>Objekte/OCF</category>
+			<description>Das Objekt kann theoretisch zu einer Crew hinzugefügt werden oder gehört schon zu einer Crew.
+				Das heißt, es hat die entsprechende <emlink href="definition/defcore.html">DefCore</emlink>-Eigenschaft
+				gesetzt, und lebt.
+				<br/>
+				Objekte, die das OCF_CrewMember()-Flag gesetzt haben, bekommen von der Engine außerdem einige
+				Sonderbehandlungen:
+				<br/>
+				<ul>
+					<li>Es sucht auch ohne PathFinder=1 in der DefCore mit dem PathFinder</li>
+					<li>Es benutzt einige PathFinder-interne Optimierungen, die auf die Größe eines Clonks zugeschnitten
+						sind
+					</li>
+					<li>Er benutzt auch ohne PathFinder=1 die veränderten Sprungmethoden (z.B. kurze Sprünge)</li>
+					<li>Er kann durch das Attack-Command angegriffen werden</li>
+					<li>Es werden Fehlernachrichten durch fehlgeschlagene Commands ausgegeben und %sFailed-Calls im
+						Zielobjekt des Kommandos getätigt
+					</li>
+					<li>Es wird automatisch ein Acquire-Command gesetzt, wenn bei einer BUILD-Action Material fehlt -
+						dafür wird kein BuildNeedsMaterial aufgerufen
+					</li>
+					<li>Beim Rechtsklick mit der Maus werden Context*-Scriptfunktionen nur dann angezeigt, wenn der
+						Besitzer gleich ist
+					</li>
+					<li>Der Objektname wird angezeigt, wenn die Spielernummer nicht gleich und nicht -1 ist, die Spieler
+						verbündet sind, und das Feature in den Optionen aktiviert ist
+					</li>
+					<li>Das Objekt kann nicht verkauft werden</li>
+				</ul>
+			</description>
+			<version>4.6.5.0 CP</version>
+			<value>4194304</value>
+		</const>
+		<const>
+			<name>OCF_Edible</name>
+			<category>Objekte/OCF</category>
+			<description>Essbares Objekt. Dieses Flag wird durch den <emlink href="definition/defcore.html">
+				DefCore</emlink>-Eintrag "Edible" gesetzt.
+			</description>
+			<version>4.6.5.0 CP</version>
+			<value>8388608</value>
+		</const>
+		<const>
+			<name>OCF_InLiquid</name>
+			<category>Objekte/OCF</category>
+			<description>Das Objekt befindet sich in einer Flüssigkeit. Siehe auch <funclink>GBackLiquid</funclink>.
+			</description>
+			<version>4.6.5.0 CP</version>
+			<value>16777216</value>
+		</const>
+		<const>
+			<name>OCF_InSolid</name>
+			<category>Objekte/OCF</category>
+			<description>Die Objektmitte steckt im Boden. Siehe auch <funclink>GBackSolid</funclink> und <funclink>
+				Stuck</funclink>.
+			</description>
+			<version>4.6.5.0 CP</version>
+			<value>33554432</value>
+		</const>
+		<const>
+			<name>OCF_InFree</name>
+			<category>Objekte/OCF</category>
+			<description>Die Objektmitte liegt frei.</description>
+			<version>4.6.5.0 CP</version>
+			<value>67108864</value>
+		</const>
+		<const>
+			<name>OCF_Available</name>
+			<category>Objekte/OCF</category>
+			<description>Das Objekt kann von einem Clonk theoretisch geholt werden. Das heißt, es liegt entweder frei
+				oder steckt in einem Behälter, auf den der Clonk zugreifen kann (Gebäude mit Eingang, anfassbare
+				Vehikel, etc.).
+			</description>
+			<version>4.6.5.0 CP</version>
+			<value>134217728</value>
+		</const>
+		<const>
+			<name>OCF_PowerConsumer</name>
+			<category>Objekte/OCF</category>
+			<description>Energieverbraucher. Diese Eigenschaft wird durch die <emlink href="definition/defcore.html">
+				DefCore</emlink>-Eigenschaft "LineConnect" geregelt. Das Gebäude muss außerdem fertig gebaut sein.
+			</description>
+			<version>4.6.5.0 CP</version>
+			<value>268435456</value>
+		</const>
+		<const>
+			<name>OCF_PowerSupply</name>
+			<category>Objekte/OCF</category>
+			<description>Energiequelle. Diese Eigenschaft wird durch die <emlink href="definition/defcore.html">
+				DefCore</emlink>-Eigenschaft "LineConnect" geregelt. Dabei zählen immer reine Energieerzeuger, sowie
+				auch normale Energieverbraucher, wenn sie einen momentanen Energiewert >0 besitzen und eine
+				Energieleitung angeschlossen werden kann. Das Gebäude muss außerdem fertig gebaut sein.
+			</description>
+			<version>4.6.5.0 CP</version>
+			<value>536870912</value>
+		</const>
+		<const>
+			<name>OCF_Container</name>
+			<category>Objekte/OCF</category>
+			<description>Das Objekt ist ein Behälter, auf den ein Clonk theoretisch zugreifen kann (Gebäude mit Eingang,
+				anfassbare Vehikel, etc.).
+			</description>
+			<version>4.6.5.0 CP</version>
+			<value>1073741824</value>
+		</const>
+		<const>
+			<name>OCF_Alive</name>
+			<category>Objekte/OCF</category>
+			<description>Das Objekt ist ein lebendes Lebewesen.</description>
+			<version>4.9.1.0 GWE</version>
+			<value>2147483648</value>
+		</const>
+		<examples>
+			<example>
+				<code><funclink>ObjectCount2</funclink>(Find_OCF(OCF_InLiquid | OCF_InSolid));
+				</code>
+				<text>Gibt die Anzahl der Objekte zurück, die sich in Flüssigkeit befinden oder im Boden stecken.</text>
+			</example>
+			<example>
+				<code><funclink>FindObject2</funclink>(Find_OCF(OCF_Alive), Find_OCF(OCF_OnFire));
+				</code>
+				<text>Gibt das erstbeste brennende Lebewesen zurück, falls ein solches existiert.</text>
+			</example>
+		</examples>
+		<history>
+			<change>
+				<author>Sven2</author>
+				<date>2002-05</date>
+				<version>4.6.5.0 CP</version>
+				<description>Konstanten hinzugefügt.</description>
+				<affecting>OCF_Normal, OCF_Construct, OCF_Grab, OCF_Collectible, OCF_OnFire, OCF_Fullcon, OCF_Chop,
+					OCF_Living, OCF_Prey, OCF_AttractLightning, OCF_CrewMember, OCF_Edible, OCF_InLiquid, OCF_InSolid,
+					OCF_InFree, OCF_Available, OCF_PowerConsumer, OCF_PowerSupply, OCF_Container
+				</affecting>
+			</change>
+			<change>
+				<author>Sven2</author>
+				<date>2002-05</date>
+				<version>4.9.1.0 GWE</version>
+				<description>Konstanten hinzugefügt.</description>
+				<affecting>OCF_HitSpeed1, OCF_Inflammable, OCF_Rotate, OCF_Exclusive, OCF_Entrance, OCF_HitSpeed2,
+					OCF_HitSpeed3, OCF_Collection, OCF_HitSpeed4, OCF_FightReady, OCF_LineConstruct, OCF_NotContained,
+					OCF_Alive
+				</affecting>
+			</change>
+		</history>
+	</constGroup>
+	<author>Sven2</author>
+	<date>2002-05</date>
+</clonkDoc>

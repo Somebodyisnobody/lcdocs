@@ -35,7 +35,7 @@ MakeCrewMember(nclnk, <funclink>GetOwner</funclink>());
    </example>
   </examples>
   <related>
-   <funclink>GetCrew</funclink><funclink>CrewMember</funclink><funclink>OCF_CrewMember</funclink><funclink>GrabObjectInfo</funclink><funclink>SetCrewStatus</funclink>
+   <funclink>GetCrew</funclink><funclink>CrewMember</funclink><constlink constGroup="OCF">OCF_CrewMember</constlink><funclink>GrabObjectInfo</funclink><funclink>SetCrewStatus</funclink>
   </related>
  </func>
  <author>PeterW</author><date>2001-12</date>

@@ -32,7 +32,7 @@
         <desc>Tötet ein Objekt. Nur Lebewesen.</desc>
         <examples>
             <example>
-                <code>Kill(<funclink>FindObject</funclink>(0, 0,0,0,0, <funclink>OCF_Alive</funclink>()));
+                <code>Kill(<funclink>FindObject</funclink>(0, 0,0,0,0, <constlink constGroup="OCF">OCF_Alive</constlink>));
                 </code>
                 <text>Tötet ein Lebewesen.</text>
             </example>

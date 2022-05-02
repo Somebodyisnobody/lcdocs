@@ -41,7 +41,7 @@
    <funclink>Kill</funclink>
    <funclink>GetCrew</funclink>
    <funclink>CrewMember</funclink>
-   <funclink>OCF_CrewMember</funclink>
+   <constlink constGroup="OCF">OCF_CrewMember</constlink>
   </related>
  </func>
  <author>Sven2</author><date>2002-05</date>

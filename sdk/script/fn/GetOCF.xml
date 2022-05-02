@@ -20,7 +20,7 @@
 protected func Damage()
 {
 	// Brennt?
-	if(GetOCF() &amp; <funclink>OCF_OnFire</funclink>())
+	if(GetOCF() &amp; <constlink constGroup="OCF">OCF_OnFire</constlink>)
 		// Freuen
 		<funclink>Message</funclink>("Juhu! Ich brenne!", <funclink>this</funclink>());
 <funclink>return</funclink>(1);

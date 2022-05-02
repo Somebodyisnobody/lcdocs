@@ -19,7 +19,7 @@
 		<remark>Die Kriterien werden genau so angegeben wie bei <funclink>FindObjects</funclink> und <funclink>ObjectCount2</funclink>. Siehe <funclink>FindObjects</funclink> für weitere Kriterium-Beispiele.</remark>
 		<examples>
 			<example>
-<code><funclink>if</funclink>(<funclink>FindObject2</funclink>(<funclink>Find_Distance</funclink>(10), <funclink>Find_OCF</funclink>(<funclink>OCF_CrewMember</funclink>), <funclink>Find_Hostile</funclink>(<funclink>GetOwner</funclink>()))
+<code><funclink>if</funclink>(<funclink>FindObject2</funclink>(<funclink>Find_Distance</funclink>(10), <funclink>Find_OCF</funclink>(<constlink constGroup="OCF">OCF_CrewMember</constlink>), <funclink>Find_Hostile</funclink>(<funclink>GetOwner</funclink>()))
   <funclink>Explode</funclink>(20);</code>
 				<text>Wenn sich ein feindlicher Clonk näher als 10 Pixel an das Objekt heranwagt, explodiert dieses.</text>
 			</example>

@@ -25,7 +25,7 @@ protected func Timer()
   <funclink>if</funclink>(!oFeind)
   {
     // Alarm schlagen?
-    <funclink>while</funclink>(oAlarm = <funclink>FindObject</funclink>(0, -100, -100, 200, 200, <funclink>OCF_CrewMember</funclink>(), 0, 0, 0, oAlarm))
+    <funclink>while</funclink>(oAlarm = <funclink>FindObject</funclink>(0, -100, -100, 200, 200, <constlink constGroup="OCF">OCF_CrewMember</constlink>, 0, 0, 0, oAlarm))
       <funclink>if</funclink>(<funclink>Hostile</funclink>(<funclink>GetOwner</funclink>(oAlarm), <funclink>GetOwner</funclink>()))
       {
         // Ein feindlicher Clonk!

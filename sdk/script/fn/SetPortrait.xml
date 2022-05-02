@@ -29,7 +29,7 @@
     <desc>Ändert das Portrait eines Crew-Mitglieds während des Spiels.</desc>
     <examples>
       <example>
-        <code>SetPortrait("random", <funclink>FindObject</funclink>(0, 0,0,0,0, <funclink>OCF_CrewMember</funclink>) );</code>
+        <code>SetPortrait("random", <funclink>FindObject</funclink>(0, 0,0,0,0, <constlink constGroup="OCF">OCF_CrewMember</constlink>) );</code>
         <text>Weißt einem Clonk ein zufälliges Portrait zu.</text>
       </example>
       <example>

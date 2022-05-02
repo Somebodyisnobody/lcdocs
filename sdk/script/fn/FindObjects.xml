@@ -26,7 +26,7 @@
 			<example>
 <code>protected func Hit()
 {
-  <funclink>for</funclink>(var pStructure in FindObjects(<funclink>Find_AtPoint</funclink>(), <funclink>Find_Category</funclink>(<funclink>C4D_Structure</funclink>), <funclink>Find_OCF</funclink>(<funclink>OCF_Inflammable</funclink>)))
+  <funclink>for</funclink>(var pStructure in FindObjects(<funclink>Find_AtPoint</funclink>(), <funclink>Find_Category</funclink>(<funclink>C4D_Structure</funclink>), <funclink>Find_OCF</funclink>(<constlink constGroup="OCF">OCF_Inflammable</constlink>)))
     Incinerate(pStructure);
   <funclink>RemoveObject</funclink>();
 }</code>

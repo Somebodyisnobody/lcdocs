@@ -20,7 +20,7 @@
     <desc>Zündet das übergebene Objekt an. In dem jeweiligen Objekt wird ggf. Incineration() aufgerufen</desc>
     <related>
       <funclink>OnFire</funclink>
-      <funclink>OCF_OnFire</funclink>
+      <constlink constGroup="OCF">OCF_OnFire</constlink>
       <funclink>Extinguish</funclink>
     </related>
   </func>

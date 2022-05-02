@@ -35,7 +35,7 @@
 		<examples>
 			<example>
 <code>var obj;
-if (FindObject(0, <funclink>LandscapeWidth</funclink>()-100, 0, 100,<funclink>LandscapeHeight</funclink>(), <funclink>OCF_CrewMember</funclink>()))
+if (FindObject(0, <funclink>LandscapeWidth</funclink>()-100, 0, 100,<funclink>LandscapeHeight</funclink>(), <constlink constGroup="OCF">OCF_CrewMember</constlink>))
   <funclink>Message</funclink> (<funclink>Format</funclink> ("&lt;%s&gt;|Hier gehts nicht weiter.", obj, <funclink>GetName</funclink> (obj)");</code>
 				<text>Lässt den Clonk realisieren, dass die Landschaft am rechten Rand endlich ist.</text>
 			</example>
@@ -44,7 +44,7 @@ if (FindObject(0, <funclink>LandscapeWidth</funclink>()-100, 0, 100,<funclink>La
 				<text>Entzündet den nächstliegenden Clonk.</text>
 			</example>
 			<example>
-				<code><funclink>Explode</funclink>(100, FindObject(0, 100, 100, 0, 0, <funclink>OCF_Living</funclink>(), "Jump"));</code>
+				<code><funclink>Explode</funclink>(100, FindObject(0, 100, 100, 0, 0, <constlink constGroup="OCF">OCF_Living</constlink>, "Jump"));</code>
 				<text>Lässt einen Clonk explodieren, der sich an Position 100/100 befindet, und springt.</text>
 			</example>
 			<example>

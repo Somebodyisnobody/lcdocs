@@ -23,7 +23,7 @@
                 <related>
       <funclink>SetCon</funclink>
       <funclink>DoCon</funclink>
-      <funclink>OCF_Fullcon</funclink>
+      <constlink constGroup="OCF">OCF_Fullcon</constlink>
                 </related>
         </func>
         <author>Cucaracha</author><date>2002-05</date>

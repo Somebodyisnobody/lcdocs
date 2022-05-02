@@ -22,7 +22,7 @@
       <example>
 
 <code>var obj;
-<funclink>while</funclink> (obj=<funclink>FindObject</funclink>(0,0,0,0,0,<funclink>OCF_Construct</funclink>(),0,0,<funclink>NoContainer</funclink>(),obj)) DoCon(100,obj);</code>
+<funclink>while</funclink> (obj=<funclink>FindObject</funclink>(0,0,0,0,0,<constlink constGroup="OCF">OCF_Construct</constlink>,0,0,<funclink>NoContainer</funclink>(),obj)) DoCon(100,obj);</code>
 
         <text>Baut alle Baustellen fertig.</text>
       </example>

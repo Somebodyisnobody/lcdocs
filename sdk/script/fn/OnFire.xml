@@ -15,7 +15,7 @@
 		</syntax>
 		<desc>Gibt zurück, ob ein Objekt brennt.</desc>
 		<related>
-			<funclink>OCF_OnFire</funclink>
+			<constlink constGroup="OCF">OCF_OnFire</constlink>
 			<funclink>Incinerate</funclink>
 			<funclink>Extinguish</funclink>
 		</related>

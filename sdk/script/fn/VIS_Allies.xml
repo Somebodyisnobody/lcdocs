@@ -16,7 +16,7 @@
 			<example>
 
 <code>var obj;
-while (obj=FindObject(0,0,0,0,0,<funclink>OCF_CrewMember</funclink>,0,0,0,obj)) SetVisibility(VIS_Owner() | VIS_Allies(), obj);</code>
+while (obj=FindObject(0,0,0,0,0,<constlink constGroup="OCF">OCF_CrewMember</constlink>,0,0,0,obj)) SetVisibility(VIS_Owner() | VIS_Allies(), obj);</code>
 
 				<text>Macht alle gesteuerten Clonks nur noch für ihre Besitzer und deren Verbündete sichtbar.</text>
 			</example>

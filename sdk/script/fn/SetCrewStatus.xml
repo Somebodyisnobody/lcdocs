@@ -29,7 +29,7 @@ SetCrewStatus(<funclink>GetOwner</funclink>(), true, nclnk);</code>
    <funclink>GetCrew</funclink>
    <funclink>CrewMember</funclink>
    <funclink>MakeCrewMember</funclink>
-   <funclink>OCF_CrewMember</funclink>
+   <constlink constGroup="OCF">OCF_CrewMember</constlink>
    <funclink>GrabObjectInfo</funclink>
   </related>
  </func>

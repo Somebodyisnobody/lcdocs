@@ -14,16 +14,16 @@
 				<param><type>object</type><name>pFighter</name><desc>Objekt, das kämpfen soll. 0 bei lokalem Aufruf.</desc><optional /></param>
 			</params>
 		</syntax>
-		<desc>Beginnt einen Zweikampf. Mit diesem Befehl können auch Clonks nicht verfeindeter Spieler einen Kampf beginnen. Beide Teilnehmer müssen <funclink>OCF_FightReady</funclink> sein.</desc>
+		<desc>Beginnt einen Zweikampf. Mit diesem Befehl können auch Clonks nicht verfeindeter Spieler einen Kampf beginnen. Beide Teilnehmer müssen <constlink constGroup="OCF">OCF_FightReady</constlink> sein.</desc>
 		<examples>
 			<example>
-				<code>FightWith(<funclink>FindObject</funclink>(0, -8,-10,16,20 <funclink>OCF_FightReady</funclink>()));</code>
+				<code>FightWith(<funclink>FindObject</funclink>(0, -8,-10,16,20 <constlink constGroup="OCF">OCF_FightReady</constlink>));</code>
 				<text>Bekämpft ein direkt in der Nähe stehendes Objekt.</text>
 			</example>
 		</examples>
 		<related>
 			<funclink>Punch</funclink>
-			<funclink>OCF_FightReady</funclink>
+			<constlink constGroup="OCF">OCF_FightReady</constlink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-05</date>

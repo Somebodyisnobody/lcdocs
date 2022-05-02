@@ -15,49 +15,49 @@ werden.</text>
 <text>Alle OCF-Flags sind als Bitmaske in einem 32Bit-DWORD gespeichert. Dadurch
 können sie mit einem einfachen bitweisen "und" getestet werden. Also zum Beispiel:</text>
 
-<code>if (<funclink>GetOCF</funclink>(objekt) &amp; <funclink>OCF_Living</funclink>)
+<code>if (<funclink>GetOCF</funclink>(objekt) &amp; <constlink constGroup="OCF">OCF_Living</constlink>)
   <funclink>Log</funclink>("Das Objekt ist ein Lebewesen.");</code>
 
 <text>Die häufigste Anwendung für OCFs sind FindObject-Schleifen:</text>
 
 <code>var obj;
-while (obj = <funclink>FindObject</funclink>(0, -100,-100,200,200, <funclink>OCF_Rotate</funclink>, 0,0, <funclink>NoContainer</funclink>(), obj)
+while (obj = <funclink>FindObject</funclink>(0, -100, -100, 200, 200, <constlink constGroup="OCF">OCF_Rotate</constlink>, 0, 0, <funclink>NoContainer</funclink>(), obj)
   <funclink>SetR</funclink>(180, obj);</code>
 <text>Dieses Script dreht alle Objekte auf den Kopf.</text>
 <h id="ocf_fns">OCF-Konstanten</h>
 <text>Es sind folgende OCFs im Script definiert:</text>
 
-<text><funclink>OCF_Alive</funclink>,
-<funclink>OCF_AttractLightning</funclink>,
-<funclink>OCF_Available</funclink>,
-<funclink>OCF_Chop</funclink>,
-<funclink>OCF_Collectible</funclink>,
-<funclink>OCF_Collection</funclink>,
-<funclink>OCF_Construct</funclink>,
-<funclink>OCF_Container</funclink>,
-<funclink>OCF_CrewMember</funclink>,
-<funclink>OCF_Edible</funclink>,
-<funclink>OCF_Entrance</funclink>,
-<funclink>OCF_Exclusive</funclink>,
-<funclink>OCF_FightReady</funclink>,
-<funclink>OCF_Fullcon</funclink>,
-<funclink>OCF_Grab</funclink>,
-<funclink>OCF_HitSpeed1</funclink>,
-<funclink>OCF_HitSpeed2</funclink>,
-<funclink>OCF_HitSpeed3</funclink>,
-<funclink>OCF_HitSpeed4</funclink>,
-<funclink>OCF_Inflammable</funclink>,
-<funclink>OCF_InFree</funclink>,
-<funclink>OCF_InLiquid</funclink>,
-<funclink>OCF_InSolid</funclink>,
-<funclink>OCF_LineConstruct</funclink>,
-<funclink>OCF_Living</funclink>,
-<funclink>OCF_NotContained</funclink>,
-<funclink>OCF_OnFire</funclink>,
-<funclink>OCF_Powerconsumer</funclink>,
-<funclink>OCF_PowerSupply</funclink>,
-<funclink>OCF_Prey</funclink>,
-<funclink>OCF_Rotate</funclink>
+<text><constlink constGroup="OCF">OCF_Alive</constlink>,
+<constlink constGroup="OCF">OCF_AttractLightning</constlink>,
+<constlink constGroup="OCF">OCF_Available</constlink>,
+<constlink constGroup="OCF">OCF_Chop</constlink>,
+<constlink constGroup="OCF">OCF_Collectible</constlink>,
+<constlink constGroup="OCF">OCF_Collection</constlink>,
+<constlink constGroup="OCF">OCF_Construct</constlink>,
+<constlink constGroup="OCF">OCF_Container</constlink>,
+<constlink constGroup="OCF">OCF_CrewMember</constlink>,
+<constlink constGroup="OCF">OCF_Edible</constlink>,
+<constlink constGroup="OCF">OCF_Entrance</constlink>,
+<constlink constGroup="OCF">OCF_Exclusive</constlink>,
+<constlink constGroup="OCF">OCF_FightReady</constlink>,
+<constlink constGroup="OCF">OCF_Fullcon</constlink>,
+<constlink constGroup="OCF">OCF_Grab</constlink>,
+<constlink constGroup="OCF">OCF_HitSpeed1</constlink>,
+<constlink constGroup="OCF">OCF_HitSpeed2</constlink>,
+<constlink constGroup="OCF">OCF_HitSpeed3</constlink>,
+<constlink constGroup="OCF">OCF_HitSpeed4</constlink>,
+<constlink constGroup="OCF">OCF_Inflammable</constlink>,
+<constlink constGroup="OCF">OCF_InFree</constlink>,
+<constlink constGroup="OCF">OCF_InLiquid</constlink>,
+<constlink constGroup="OCF">OCF_InSolid</constlink>,
+<constlink constGroup="OCF">OCF_LineConstruct</constlink>,
+<constlink constGroup="OCF">OCF_Living</constlink>,
+<constlink constGroup="OCF">OCF_NotContained</constlink>,
+<constlink constGroup="OCF">OCF_OnFire</constlink>,
+<constlink constGroup="OCF">OCF_Powerconsumer</constlink>,
+<constlink constGroup="OCF">OCF_PowerSupply</constlink>,
+<constlink constGroup="OCF">OCF_Prey</constlink>,
+<constlink constGroup="OCF">OCF_Rotate</constlink>
 </text>
 
 </doc><author>Sven2</author><date>2002-05</date>

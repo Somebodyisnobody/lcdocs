@@ -19,7 +19,7 @@
     </syntax>
     <desc>Gibt TRUE zurück, wenn sich das Objekt in einer Flüssigkeit befindet.</desc>
     <related>
-      <funclink>OCF_InLiquid</funclink>
+      <constlink constGroup="OCF">OCF_InLiquid</constlink>
       <funclink>GBackLiquid</funclink>
     </related>
   </func>
