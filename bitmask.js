@@ -1,74 +1,89 @@
-let bitfieldValue;
+class Bitmask {
+    table;
+    bitfield;
+    rowsCount;
+    maximumBitfieldValue;
+    bitfieldValue;
 
-function calculateBitfieldValue(e) {
-    e = e || window.event;
-    var target = e.target || e.srcElement;
-    const clickedRow = target.closest('tr');
-    const clickedTable = clickedRow.closest('table');
-    // Not every table has a header according to the XSD. Check if table has a header as it goes into the rowIndex.
-    const bit = tableHasHeader(clickedTable) ? clickedRow.rowIndex - 1 : clickedRow.rowIndex;
-
-    // Get current value from bitfield. If we have more than one bitmask in the document the global variable makes problems.
-    // TODO make objects instead global variable
-    if (clickedTable.nextElementSibling.nodeName === 'LABEL') {
-        bitfieldValue = clickedTable.nextElementSibling.querySelector('input').value;
-    }
-
-    // Calculate new bit value. Move 0001 {bit} digits to the left. If bit = 1 => 0010
-    bitfieldValue = bitfieldValue ^ (1 << bit);
-    markRow(bit, clickedRow)
-
-    // Update numeric input below the table
-    if (clickedTable.nextElementSibling.nodeName === 'LABEL') {
-        clickedTable.nextElementSibling.querySelector('input').value = bitfieldValue;
-    }
-}
-
-function bitfieldChange(e) {
-    e = e || window.event;
-    const bitfield = e.target || e.srcElement;
-    if (bitfield.nodeName !== 'INPUT') return;
-    const table = bitfield.parentElement.previousElementSibling;
-
-    if (table.nodeName === 'TABLE') calculateTable(bitfield, table);
-}
-
-function tableHasHeader(table) {
-    return table.querySelectorAll('th').length > 0;
-}
-
- // Mark row that exist in the bitmask
-function markRow(bit, row) {
-    // Example: 2nd bit (bit = 1), bitfieldValue = 7
-    // bitfieldValue in binary == 0111
-    // (1 << bit) == (0001 << 1) => 0010
-    // Bitwise operation AND-connected 0010 & 0111 == 0010 == in decimal 2 != 0 => evaluates to "true"
-    row.classList.toggle("mark", (1 << bit) & bitfieldValue);
-}
-
-function calculateTable(bitfield, table) {
+    constructor(bitmaskDiv) {
+        this.table = bitmaskDiv.getElementsByTagName('table')[0];
+        this.bitfield = bitmaskDiv.getElementsByTagName('input')[bitmaskDiv.getElementsByTagName('input').length - 1];
         // rows.length may contain header row which we need to ignore
-        const rowsCount = tableHasHeader(table) ? table.rows.length - 1 : table.rows.length;
-
-        // bitfield.value must not be larger than the bitmask we can calculate with our set of table rows
-        const maximumBitfieldValue = ((1 << rowsCount) - 1);
-        if (bitfield.value > maximumBitfieldValue) {
-            // Maximum value of the bitmask reached. Resetting input field to maximum value
-            bitfieldValue = maximumBitfieldValue;
-            bitfield.value = maximumBitfieldValue;
-            console.log('Maximum value of the bitmask reached. Resetting input field to maximum value of %s', maximumBitfieldValue);
-        } else {
-            bitfieldValue = bitfield.value;
+        this.rowsCount = this.tableHasHeader() ? this.table.rows.length - 1 : this.table.rows.length;
+        if (this.rowsCount > 32) {
+            this.bitfield.disabled = true;
+            throw new DOMException("The maximum allowed row count for bitmasks is 32 as clonk uses a 32-bit integer.\nDisabling input field.");
         }
+        this.maximumBitfieldValue = ((1 << this.rowsCount) - 1)
+
+        // Update numeric input below the table. The corresponding numeric input could have a number cached.
+        this.bitfieldValue = this.bitfield.value;
+        // Update table
+        this.calculateTable();
+
+        //Add event listeners for input field and table body
+        this.table.querySelector('tbody').addEventListener("click",
+            (e) => {
+                e = e || window.event;
+                const clickedElement = e.target || e.srcElement;
+                this.calculateBitfieldValue(clickedElement.closest('tr'));
+            }
+        );
+        this.bitfield.addEventListener("input",
+            (e) => {
+                this.calculateTable();
+            }
+        );
+    }
+
+    calculateBitfieldValue(clickedRow) {
+        // Not every table has a header according to the XSD. Check if table has a header as it goes into the rowIndex.
+        const bit = this.tableHasHeader() ? clickedRow.rowIndex - 1 : clickedRow.rowIndex;
+
+        // Calculate new bit value. Move 0001 {bit} digits to the left. If bit = 1 => 0010
+        this.bitfieldValue = this.bitfieldValue ^ (1 << bit);
+        this.markRow(bit, clickedRow)
+
+        // Update numeric input below the table
+        this.bitfield.value = this.bitfieldValue;
+    }
+
+    tableHasHeader() {
+        return this.table.querySelectorAll('th').length > 0;
+    }
+
+    // Mark rows that exist in the bitmask
+    markRow(bit, row) {
+        // Example: 2nd bit (bit = 1), bitfieldValue = 7
+        // bitfieldValue in binary == 0111
+        // (1 << bit) == (0001 << 1) => 0010
+        // Bitwise operation AND-connected 0010 & 0111 == 0010 == in decimal 2 != 0 => evaluates to "true"
+        row.classList.toggle("mark", (1 << bit) & this.bitfieldValue);
+    }
+
+    calculateTable() {
+        // bitfield.value must not be larger than the bitmask we can calculate with our set of table rows
+        if (this.bitfield.value > this.maximumBitfieldValue) {
+            // Maximum value of the bitmask reached. Resetting input field to maximum value
+            this.bitfield.value = this.maximumBitfieldValue;
+            console.log('Maximum value of the bitmask reached. Resetting input field to maximum value of %s', this.maximumBitfieldValue);
+        }
+        this.bitfieldValue = this.bitfield.value;
 
         // Send every row to markRow() but mind the table header
-        for(let bit = 0; bit < rowsCount; ++bit) markRow(bit, tableHasHeader(table) ? table.rows[bit + 1] : table.rows[bit]);
+        for(let bit = 0; bit < this.rowsCount; ++bit) this.markRow(bit, this.tableHasHeader() ? this.table.rows[bit + 1] : this.table.rows[bit]);
+    }
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
-    for (const table of document.querySelectorAll('table')) {
-        // Update numeric input below the table. The corresponding numeric input could have a number cached.
-        if (table.nextElementSibling.nodeName === 'LABEL') calculateTable(table.nextElementSibling.querySelector('input'), table);
+    let loadedBitmasks = 0;
+    for (const div of document.getElementsByClassName('bitmaskTable')) {
+        try {
+            new Bitmask(div);
+            loadedBitmasks++;
+        } catch (e) {
+            console.error(e)
+        }
     }
-    console.log("Bitmasks loaded");
+    console.log("%s Bitmask%s loaded", loadedBitmasks, loadedBitmasks > 1 ? "s" : "");
 });

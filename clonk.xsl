@@ -209,6 +209,23 @@
 				<xsl:otherwise>Constants</xsl:otherwise>
 			</xsl:choose>
 		</h2>
+		<xsl:choose>
+			<xsl:when test="@activateBitmask='true'">
+				<div>
+					<xsl:attribute name="class">bitmaskTable</xsl:attribute>
+					<xsl:call-template name="constTable"/>
+					<xsl:call-template name="bitmaskBitfield"/>
+				</div>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:call-template name="constTable"/>
+			</xsl:otherwise>
+		</xsl:choose>
+		<xsl:call-template name="examples"/>
+		<xsl:call-template name="history"/>
+	</xsl:template>
+
+	<xsl:template name="constTable">
 		<table class="text">
 			<thead>
 				<tr>
@@ -240,7 +257,6 @@
 				</tr>
 			</thead>
 			<tbody>
-				<xsl:call-template name="bitmaskTable"/>
 				<xsl:for-each select="const">
 					<tr>
 						<xsl:if test="position() mod 2=0">
@@ -286,9 +302,6 @@
 				</xsl:for-each>
 			</tbody>
 		</table>
-		<xsl:call-template name="bitmaskBitfield"/>
-		<xsl:call-template name="examples"/>
-		<xsl:call-template name="history"/>
 	</xsl:template>
 
 	<xsl:template match="syntax">
@@ -593,6 +606,7 @@
 		<!-- so this template can be called for the navigation -->
 		<xsl:param name="href" select="@href"/>
 		<xsl:param name="text" select="."/>
+		<xsl:param name="icon" select="@icon" required="no"/>
 		<a>
 			<xsl:attribute name="href">
 				<xsl:value-of select="$relpath"/><xsl:text>sdk/</xsl:text>
@@ -607,6 +621,11 @@
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:attribute>
+			<xsl:if test="$icon">
+				<img alt='Icon'>
+					<xsl:attribute name="src"><xsl:value-of select="$icon"/></xsl:attribute>
+				</img>
+			</xsl:if>
 			<xsl:value-of select="$text"/>
 		</a>
 	</xsl:template>
@@ -641,21 +660,34 @@
 	</xsl:template>
 
 	<xsl:template match="table">
+		<xsl:choose>
+			<xsl:when test="@activateBitmask='true'">
+				<div>
+					<xsl:attribute name="class">bitmaskTable</xsl:attribute>
+					<xsl:call-template name="table"/>
+					<xsl:call-template name="bitmaskBitfield"/>
+				</div>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:call-template name="table"/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+
+	<xsl:template match="table/caption">
+		<caption>
+			<xsl:apply-templates select="@id|node()"/>
+		</caption>
+	</xsl:template>
+
+	<xsl:template name="table">
 		<table>
 			<xsl:apply-templates select="caption"/>
 			<xsl:apply-templates select="rowh"/>
 			<tbody>
-				<xsl:call-template name="bitmaskTable"/>
 				<xsl:for-each select="row">
 					<tr>
 						<xsl:apply-templates select="@id"/>
-						<xsl:if test="../bitmask">
-							<xsl:attribute name="style">cursor:pointer;</xsl:attribute>
-							<xsl:attribute name="id">bit<xsl:value-of select="position() - 1"/>
-							</xsl:attribute>
-							<xsl:attribute name="onClick">Switch(<xsl:value-of select="position() - 1"/>);
-							</xsl:attribute>
-						</xsl:if>
 						<xsl:if test="position() mod 2=0">
 							<xsl:attribute name="class">dark</xsl:attribute>
 						</xsl:if>
@@ -668,60 +700,33 @@
 				</xsl:for-each>
 			</tbody>
 		</table>
-		<xsl:call-template name="bitmaskBitfield"/>
-		<xsl:apply-templates select="bitmask"/>
-	</xsl:template>
-
-	<xsl:template match="table/caption">
-		<caption>
-			<xsl:apply-templates select="@id|node()"/>
-		</caption>
-	</xsl:template>
-
-	<xsl:template match="table/bitmask">
-		<xsl:value-of select="."/>:
-		<input id="input" onKeyUp="Calc();" name="input" type="text">
-			<xsl:variable name="num">
-				<xsl:choose>
-					<xsl:when test="count(../row)&lt;3">1</xsl:when>
-					<xsl:when test="count(../row)&lt;6">2</xsl:when>
-					<xsl:when test="count(../row)&lt;9">3</xsl:when>
-					<xsl:when test="count(../row)&lt;13">4</xsl:when>
-					<xsl:when test="count(../row)&lt;16">5</xsl:when>
-					<xsl:when test="count(../row)&lt;19">6</xsl:when>
-					<xsl:when test="count(../row)&lt;23">7</xsl:when>
-					<xsl:when test="count(../row)&lt;26">8</xsl:when>
-					<xsl:when test="count(../row)&lt;29">9</xsl:when>
-					<xsl:when test="count(../row)&lt;33">10</xsl:when>
-				</xsl:choose>
-			</xsl:variable>
-			<xsl:attribute name="size">
-				<xsl:value-of select="$num"/>
-			</xsl:attribute>
-			<xsl:attribute name="maxlength">
-				<xsl:value-of select="$num"/>
-			</xsl:attribute>
-		</input>
-	</xsl:template>
-
-	<xsl:template name="bitmaskTable">
-		<xsl:if test="@activateBitmask='true'">
-			<xsl:attribute name="style">cursor:pointer;</xsl:attribute>
-			<xsl:attribute name="onClick">calculateBitfieldValue(event);</xsl:attribute>
-		</xsl:if>
 	</xsl:template>
 
 	<xsl:template name="bitmaskBitfield">
 		<xsl:if test="@activateBitmask='true'">
 			<label>
 				<xsl:choose>
-					<xsl:when test="name(.) = 'constGroup'"><xsl:text>Konstantenfeld-Namenlos</xsl:text></xsl:when>
+					<xsl:when test="name(.) = 'constGroup'">
+						<xsl:choose>
+							<xsl:when test='lang("de")'><xsl:text>Wert der Bitmaske</xsl:text></xsl:when>
+							<xsl:otherwise><xsl:text>Bitmask value</xsl:text></xsl:otherwise>
+						</xsl:choose>
+					</xsl:when>
 					<xsl:otherwise><xsl:value-of select="@bitmaskName"/></xsl:otherwise>
 				</xsl:choose>
 				<xsl:text>: </xsl:text>
-				<input oninput="bitfieldChange(event);" type="number" min="0"/>
+				<input type="number" min="0"/>
+				<xsl:call-template name="link">
+					<xsl:with-param name="href" select="'script/operatoren.html#Bitweise'"/>
+					<xsl:with-param name="text">
+						<xsl:choose>
+							<xsl:when test='lang("de")'><xsl:text>Weitere Informationen zu Bitmasken</xsl:text></xsl:when>
+							<xsl:otherwise><xsl:text>More information about Bitmasks</xsl:text></xsl:otherwise>
+						</xsl:choose>
+					</xsl:with-param>
+					<xsl:with-param name="icon" select="'/images/question-mark-round-line.svg'"/>
+				</xsl:call-template>
 			</label>
-			<br/>
 		</xsl:if>
 	</xsl:template>
 
