@@ -130,12 +130,18 @@
                     <xs:element name="constGroup">
                         <xs:complexType>
                             <xs:sequence>
-                                <xs:element name="title" type="entityGroupName"/>
+                                <xs:element name="title" type="xs:string"/>
                                 <xs:element name="description" type="htmlText"/>
                                 <xs:element name="const" maxOccurs="unbounded">
                                     <xs:complexType>
                                         <xs:sequence maxOccurs="unbounded">
-                                            <xs:element name="name" type="xs:string"/>
+                                            <xs:element name="name">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:token">
+                                                        <xs:pattern value="(_|\w)(\w|_|\d)+"/>
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:element>
                                             <xs:element name="category" type="functionCategory"/>
                                             <xs:element name="description" type="htmlText"/>
                                             <xs:element name="version" type="clonkVersionOrUnknown"/>
