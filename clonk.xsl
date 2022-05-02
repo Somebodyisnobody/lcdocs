@@ -543,7 +543,7 @@
 	</xsl:template>
 
 	<!-- copy img, a, em and br literally -->
-	<xsl:template match="img|a|em|strong|br|code/i|code/b">
+	<xsl:template match="img|a|em|strong|br|code/i|code/b|tt">
 		<xsl:element name="{local-name()}">
 			<!-- including every attribute -->
 			<xsl:for-each select="@*">
@@ -607,8 +607,8 @@
 	<xsl:template match="emlink" name="link">
 		<xsl:param name="relpath" tunnel="yes"/>
 		<!-- so this template can be called for the navigation -->
-		<xsl:param name="href" select="@href"/>
-		<xsl:param name="text" select="."/>
+		<xsl:param name="href" select="normalize-space(@href)"/>
+		<xsl:param name="text" select="normalize-space(.)"/>
 		<xsl:param name="icon" select="@icon" required="no"/>
 		<a>
 			<xsl:attribute name="href">
