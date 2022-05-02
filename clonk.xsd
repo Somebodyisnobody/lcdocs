@@ -331,7 +331,15 @@
                     <xs:attribute name="href" use="required"/>
                 </xs:complexType>
             </xs:element>
-            <xs:element name="constlink" type="entityName"/>
+            <xs:element name="constlink">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name='constGroup' type="xs:string" use="required"></xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
         </xs:choice>
     </xs:group>
     <xs:complexType name="history">

@@ -120,9 +120,6 @@
 
 	<xsl:template match="func">
 		<h1>
-			<xsl:attribute name="id">
-				<xsl:value-of select="title"/>
-			</xsl:attribute>
 			<xsl:value-of select="title"/>
 			<xsl:apply-templates select="deprecated"/>
 		</h1>
@@ -184,9 +181,6 @@
 
 	<xsl:template match="constGroup">
 		<h1>
-			<xsl:attribute name="id">
-				<xsl:value-of select="title"/>
-			</xsl:attribute>
 			<xsl:value-of select="title"/>
 		</h1>
 		<div class="text">
@@ -266,6 +260,7 @@
 							<xsl:attribute name="class">strikeout</xsl:attribute>
 						</xsl:if>
 						<td>
+							<xsl:attribute name="id" select="./name"/>
 							<xsl:if test="descendant::deprecated">
 								<span>
 									<xsl:attribute name="class">deprecatedComment</xsl:attribute>
@@ -440,8 +435,8 @@
 								</xsl:choose>
 							</th>
 							<th>Version</th>
-							<!-- If we have a deprecated iterable like <const>s in a <constGroup> we should name it in a separate column-->
-							<xsl:if test="exists(//const/deprecated)">
+							<!-- If we have multiple entities in a file like <const>s in a <constGroup> we should name it in a separate column-->
+							<xsl:if test="exists(ancestor-or-self::constGroup)">
 								<th>
 									<xsl:choose>
 										<xsl:when test="lang('de')">Betrifft</xsl:when>
@@ -593,10 +588,10 @@
 	<xsl:template match="funclink">
 		<xsl:param name="relpath" tunnel="yes"/>
 		<xsl:choose>
-			<xsl:when test="document(concat('sdk/script/fn/', ., '.xml'))">
+			<xsl:when test="document(concat('sdk/script/fn/', normalize-space(.), '.xml'))">
 				<a>
 					<xsl:attribute name="href">
-						<xsl:value-of select="$relpath"/><xsl:text>sdk/script/fn/</xsl:text><xsl:value-of select="."/><xsl:value-of
+						<xsl:value-of select="$relpath"/><xsl:text>sdk/script/fn/</xsl:text><xsl:value-of select="normalize-space(.)"/><xsl:value-of
 							select="$fileext"/>
 					</xsl:attribute>
 					<xsl:value-of select="normalize-space(.)"/>
@@ -640,14 +635,27 @@
 
 	<xsl:template match="constlink">
 		<xsl:param name="relpath" tunnel="yes"/>
+		<xsl:param name="constGroup" select="@constGroup"/>
 		<xsl:choose>
-			<xsl:when test="document(concat('sdk/script/constants/', ., '.xml'))">
+			<xsl:when test="document(concat('sdk/script/constants/', $constGroup, '.xml'))">
 				<a>
 					<xsl:attribute name="href">
-						<xsl:value-of select="$relpath"/><xsl:text>sdk/script/constants/</xsl:text><xsl:value-of select="."/><xsl:value-of
+						<xsl:value-of select="$relpath"/><xsl:text>sdk/script/constants/</xsl:text><xsl:value-of select="$constGroup"/><xsl:value-of
 							select="$fileext"/>
+						<xsl:if test=". != ''"><xsl:text>#</xsl:text><xsl:value-of select="normalize-space(.)"/></xsl:if>
 					</xsl:attribute>
-					<xsl:value-of select="normalize-space(.)"/>
+					<xsl:choose>
+						<xsl:when test=". != ''">
+							<xsl:value-of select="normalize-space(.)"/>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:value-of select="$constGroup"/>
+							<xsl:choose>
+								<xsl:when test='lang("de")'><xsl:text>-Konstantengruppe</xsl:text></xsl:when>
+								<xsl:otherwise><xsl:text>-constant group</xsl:text></xsl:otherwise>
+						</xsl:choose>
+						</xsl:otherwise>
+					</xsl:choose>
 				</a>
 			</xsl:when>
 			<xsl:otherwise>
