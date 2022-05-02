@@ -15,7 +15,7 @@
                 </syntax>
                 <desc>Liefert die aktuelle Befehlsrichtung eines Objekts. Diese gibt die momentane, beabsichtigte Bewegungsrichtung an. Die Auswirkung dieser Richtung hängt von der <emlink href="definition/procedures.html">Prozedur</emlink> der aktuellen <emlink href="definition/actmap.html">Aktivität</emlink> ab.</desc>
                 <related>
-      <emlink href="definition/procedures.html">Prozedur</emlink>
+      <emlink href="definition/procedures.html">Prozeduren</emlink>
       <funclink>SetComDir</funclink>
       <funclink>GetDir</funclink>
       <funclink>GetProcedure</funclink>

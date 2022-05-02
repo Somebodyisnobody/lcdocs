@@ -368,7 +368,7 @@ public func Activate(object pCaster, object pCaster2)
   var iResult;
   if (iResult = CheckEffect("EarthquakeNSpell", 0, 150)) return(iResult!=-1 &amp;&amp; RemoveObject());
   // Effekt ausführen
-  if (GetDir(pCaster)==DIR_Left()) CastLeft(); else CastRight();
+  if (GetDir(pCaster)==<constlink constGroup="DIR">DIR_Left</constlink>) CastLeft(); else CastRight();
   // Zauberobjekt entfernen
   return(RemoveObject());
 }</code>

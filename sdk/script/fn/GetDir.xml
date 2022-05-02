@@ -33,13 +33,12 @@ protected func Activate()
 } 
 				</code>
 				<text>Clonk der einen Bogen verschluckt hat.</text>
-				<text>Hinweis: <funclink>DIR_Left</funclink>() = 0 / <funclink>DIR_Right</funclink>() = 1</text>
 			</example>
 		</examples>
 								<related>
 												<funclink>SetDir</funclink>
-												<funclink>DIR_Left</funclink>
-			<funclink>DIR_Right</funclink>
+												<constlink constGroup="DIR">DIR_Left</constlink>
+			<constlink constGroup="DIR">DIR_Right</constlink>
 								</related>
 	</func>
 	<author>wipfmetz</author><date>2002-06</date>

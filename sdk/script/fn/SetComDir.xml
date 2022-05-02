@@ -10,7 +10,7 @@
     <syntax>
       <rtype>int</rtype>
       <params>
-        <param><type>int</type><name>iComDir</name><desc>Befehlsrichtung. Muss <funclink>COMD_None</funclink>(), <funclink>COMD_Down</funclink>(), <funclink>COMD_DownLeft</funclink>(), <funclink>COMD_DownRight</funclink>(), <funclink>COMD_Left</funclink>(), <funclink>COMD_Right</funclink>(), <funclink>COMD_Up</funclink>(), <funclink>COMD_UpLeft</funclink>() oder <funclink>COMD_UpRight</funclink>() sein.</desc></param>
+        <param><type>int</type><name>iComDir</name><desc>Befehlsrichtung. Muss <constlink constGroup="COMD">COMD_None</constlink>, <constlink constGroup="COMD">COMD_Down</constlink>, <constlink constGroup="COMD">COMD_DownLeft</constlink>, <constlink constGroup="COMD">COMD_DownRight</constlink>, <constlink constGroup="COMD">COMD_Left</constlink>, <constlink constGroup="COMD">COMD_Right</constlink>, <constlink constGroup="COMD">COMD_Up</constlink>, <constlink constGroup="COMD">COMD_UpLeft</constlink> oder <constlink constGroup="COMD">COMD_UpRight</constlink> sein.</desc></param>
         <param><type>object</type><name>pObj</name><desc>Objekt, dessen Befehlsrichtung gesetzt werden soll. 0 bei lokalem Aufruf.</desc><optional/></param>
       </params>
     </syntax>
@@ -19,14 +19,14 @@
       <example>
 
 <code>var pClnk = <funclink>GetHiRank</funclink>(0);
-SetComDir(<funclink>COMD_None</funclink>(), pClnk);
+SetComDir(<constlink constGroup="COMD">COMD_None</constlink>, pClnk);
 <funclink>SetCommand</funclink>(pClnk, "");</code>
 
         <text>Gibt dem höchstrangigsten Clonk von Spieler 1 den Befehl, stehen zu bleiben. Vorhandene Kommandos werden gelöscht.</text>
 
 <code>var pClnk = <funclink>GetHiRank</funclink>(0);
 <funclink>ObjectSetAction</funclink>(pClnk, "Dig");
-SetComDir(<funclink>COMD_DownRight</funclink>());</code>
+SetComDir(<constlink constGroup="COMD">COMD_DownRight</constlink>);</code>
 
         <text>Lässt den höchstrangigsten Clonk von Spieler 1 nach rechts unten graben.</text>
 

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
+	<constGroup activateBitmask="false">
+		<title>COMD</title>
+		<description>Konstanten für Bewegungsrichtungen (Command Direction). Die Richtungen können mit <funclink>
+			GetComDir
+		</funclink> abgefragt und mit <funclink>SetComDir</funclink> gesetzt werden.
+		</description>
+		<const>
+			<name>COMD_None</name>
+			<category>Objekte/Bewegung</category>
+			<description>Anhalten.</description>
+			<version>4.6.5.0 CP</version>
+			<value>0</value>
+		</const>
+		<const>
+			<name>COMD_Stop</name>
+			<category>Objekte/Bewegung</category>
+			<description>Anhalten. COMD_None und COMD_Stop sind identisch.</description>
+			<version>4.6.5.0 CP</version>
+			<value>0</value>
+		</const>
+		<const>
+			<name>COMD_Up</name>
+			<category>Objekte/Bewegung</category>
+			<description>Hoch.</description>
+			<version>4.6.5.0 CP</version>
+			<value>1</value>
+		</const>
+		<const>
+			<name>COMD_UpRight</name>
+			<category>Objekte/Bewegung</category>
+			<description>Schräg nach oben rechts.</description>
+			<version>4.6.5.0 CP</version>
+			<value>2</value>
+		</const>
+		<const>
+			<name>COMD_Right</name>
+			<category>Objekte/Bewegung</category>
+			<description>Rechts.</description>
+			<version>4.6.5.0 CP</version>
+			<value>3</value>
+		</const>
+		<const>
+			<name>COMD_DownRight</name>
+			<category>Objekte/Bewegung</category>
+			<description>Schräg nach unten rechts.</description>
+			<version>4.6.5.0 CP</version>
+			<value>4</value>
+		</const>
+		<const>
+			<name>COMD_Down</name>
+			<category>Objekte/Bewegung</category>
+			<description>Runter.</description>
+			<version>4.6.5.0 CP</version>
+			<value>5</value>
+		</const>
+		<const>
+			<name>COMD_DownLeft</name>
+			<category>Objekte/Bewegung</category>
+			<description>Schräg nach unten links.</description>
+			<version>4.6.5.0 CP</version>
+			<value>6</value>
+		</const>
+		<const>
+			<name>COMD_Left</name>
+			<category>Objekte/Bewegung</category>
+			<description>Links.</description>
+			<version>4.6.5.0 CP</version>
+			<value>7</value>
+		</const>
+		<const>
+			<name>COMD_UpLeft</name>
+			<category>Objekte/Bewegung</category>
+			<description>Schräg nach oben links.</description>
+			<version>4.6.5.0 CP</version>
+			<value>8</value>
+		</const>
+		<examples>
+			<example>
+				<code><funclink>SetComDir</funclink>(COMD_Up, <funclink>FindObject</funclink>(BLMP));
+				</code>
+				<text>Ändert die Flugrichtung eines Luftschiffes nach oben.</text>
+			</example>
+			<example>
+				<code><funclink>GetCursor</funclink>(0)-><funclink>GetComDir</funclink>();
+				</code>
+				<text>Ermittelt in welche Richtung sich der aktuell gesteuerte Clonk bewegt.</text>
+			</example>
+			<example>
+				<code><funclink>SetComDir</funclink>(COMD_None(), <funclink>GetCursor</funclink>());
+				</code>
+				<text>Lässt den aktuell ausgewählten Clonk des ersten Spielers anhalten.</text>
+			</example>
+		</examples>
+		<history>
+			<change>
+				<author>Sven2</author>
+				<date>2002-04</date>
+				<version>4.6.5.0 CP</version>
+				<description>Einführung COMD-Gruppe.</description>
+				<affecting>Alle</affecting>
+			</change>
+			<change>
+				<author>Sven2</author>
+				<date>2003-06</date>
+				<version>4.6.5.0 CP</version>
+				<description>Die Dokumentation wurde um zusätzliche Konstanten ergänzt.</description>
+				<affecting>COMD_Stop und COMD_None</affecting>
+			</change>
+		</history>
+	</constGroup>
+	<author>Sven2</author>
+	<date>2003-06</date>
+</clonkDoc>

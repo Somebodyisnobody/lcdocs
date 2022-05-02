@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
+	<constGroup activateBitmask="false">
+		<title>DIR</title>
+		<description>Konstanten für Richtungen eines Objekts. Dies kann z.B. eine Blickrichtung des Clonks sein.
+			Verwendet werden diese Konstanten mit <funclink>GetDir</funclink> und <funclink>SetDir</funclink>.
+		</description>
+		<const>
+			<name>DIR_Left</name>
+			<category>Objekte/Aktivität</category>
+			<description>Richtung nach links.</description>
+			<version>4.6.5.0 CP</version>
+			<value>0</value>
+		</const>
+		<const>
+			<name>DIR_Right</name>
+			<category>Objekte/Aktivität</category>
+			<description>Richtung nach rechts.</description>
+			<version>4.6.5.0 CP</version>
+			<value>0</value>
+		</const>
+		<examples>
+			<example>
+				<code>
+					<funclink>SetComDir</funclink>(<constlink constGroup="COMD">COMD_None</constlink>, <funclink>
+					GetCursor</funclink>();
+					<funclink>SetDir</funclink>(DIR_Right(), <funclink>GetCursor</funclink>());
+				</code>
+				<text>Der ausgewählte Clonk hält an und schaut nach rechts.</text>
+			</example>
+		</examples>
+		<history>
+			<change>
+				<author>Sven2</author>
+				<date>2001-11</date>
+				<version>4.6.5.0 CP</version>
+				<description>Einführung DIR-Gruppe.</description>
+				<affecting>Alle</affecting>
+			</change>
+		</history>
+	</constGroup>
+	<author>Sven2</author>
+	<date>2001-11</date>
+</clonkDoc>

@@ -21,7 +21,7 @@
   {
   <funclink>SetAction</funclink>("Bridge");
   SetActionData(<funclink>Material</funclink>("Gold"));
-  <funclink>SetComDir</funclink>(<funclink>COMD_Up</funclink>());
+  <funclink>SetComDir</funclink>(<constlink constGroup="COMD">COMD_Up</constlink>);
   }</code>
 				<text>Scriptfunktion für einen Spezialclonk: Auf Spezial 2 baut er eine senkrechte Goldbrücke.</text>
 			</example>

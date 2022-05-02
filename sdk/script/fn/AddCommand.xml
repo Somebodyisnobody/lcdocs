@@ -138,7 +138,7 @@
                 <code>Timer:
                     var obj = <funclink>FindObject</funclink>(0, -20, -40, 40, 40, <funclink>OCF_CrewMember</funclink>();
                     if(obj)
-                    if(<funclink>GetComDir</funclink>(obj) == <funclink>COMD_Right</funclink>())
+                    if(<funclink>GetComDir</funclink>(obj) == <constlink constGroup="COMD">COMD_Right</constlink>)
                     <funclink>AddCommand</funclink>(obj, "Jump");
                     return();
                 </code>

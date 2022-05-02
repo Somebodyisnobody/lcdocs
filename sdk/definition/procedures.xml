@@ -27,7 +27,7 @@ festgelegtes Attach.</col>
   <col>WALK</col>
   <col>Laufen</col>
   <col>Nach <emlink href="definition/defcore.html#SektionPhysical">Physical</emlink> Walk und aktueller
-<emlink href="script/fn/SetComDir.html">ComDir</emlink>.</col>
+<constlink constGroup="COMD"></constlink>.</col>
   <col>CNAT_Bottom</col>
 </row><row>
   <col>FLIGHT</col>
@@ -43,26 +43,26 @@ festgelegtes Attach.</col>
   <col>SCALE</col>
   <col>Klettern</col>
   <col>Nach <emlink href="definition/defcore.html#SektionPhysical">Physical</emlink> Scale und aktueller
-<emlink href="script/fn/SetComDir.html">ComDir</emlink>.</col>
+<constlink constGroup="COMD"></constlink>.</col>
   <col>CNAT_Left/Right</col>
 </row><row>
   <col>HANGLE</col>
   <col>Hangeln</col>
   <col>Nach <emlink href="definition/defcore.html#SektionPhysical">Physical</emlink> Hangle und aktueller
-<emlink href="script/fn/SetComDir.html">ComDir</emlink>.</col>
+<constlink constGroup="COMD"></constlink>.</col>
   <col>CNAT_Top</col>
 </row><row>
   <col>DIG</col>
   <col>Graben</col>
   <col>Nach <emlink href="definition/defcore.html#SektionPhysical">Physical</emlink> Dig und aktueller
-<emlink href="script/fn/SetComDir.html">ComDir</emlink>. Bei 
+<constlink constGroup="COMD"></constlink>. Bei
 <emlink href="script/fn/SetActionData.html">Data</emlink>=1 wird Material freigegraben.</col>
   <col>CNAT_None</col>
 </row><row>
   <col>SWIM</col>
   <col>Schwimmen</col>
   <col>Nach <emlink href="definition/defcore.html#SektionPhysical">Physical</emlink> Swim und aktueller
-<emlink href="script/fn/SetComDir.html">ComDir</emlink>.</col>
+<constlink constGroup="COMD"></constlink>.</col>
   <col>CNAT_None</col>
 </row><row>
   <col>THROW</col>
@@ -72,7 +72,7 @@ festgelegtes Attach.</col>
 </row><row>
   <col>BRIDGE</col>
   <col>Brückenbau</col>
-  <col>Nach <emlink href="script/fn/SetComDir.html">ComDir</emlink>. Brückenmaterial als Index in
+  <col>Nach <constlink constGroup="COMD"></constlink>. Brückenmaterial als Index in
 <emlink href="script/fn/SetActionData.html">Data</emlink>.</col>
   <col>CNAT_Bottom</col>
 </row><row>
@@ -85,7 +85,7 @@ festgelegtes Attach.</col>
   <col>Schieben</col>
   <col>Schiebt das <emlink href="script/fn/SetAction.html">Zielobjekt</emlink> nach 
 <emlink href="definition/defcore.html#SektionPhysical">Physical</emlink> Push und 
-<emlink href="script/fn/SetComDir.html">ComDir</emlink>.</col>
+<constlink constGroup="COMD"></constlink>.</col>
   <col>CNAT_Bottom</col>
 </row><row>
   <col>CHOP</col>
@@ -97,13 +97,13 @@ festgelegtes Attach.</col>
   <col>LIFT</col>
   <col>Heben</col>
   <col>Hebt das <emlink href="script/fn/SetAction.html">Zielobjekt</emlink> nach 
-<emlink href="script/fn/SetComDir.html">ComDir</emlink>.</col>
+<constlink constGroup="COMD"></constlink>.</col>
   <col>CNAT_None</col>
 </row><row>
   <col>FLOAT</col>
   <col>Schweben</col>
   <col>Nach <emlink href="definition/defcore.html#SektionPhysical">Physical</emlink> Float und aktueller
-<emlink href="script/fn/SetComDir.html">ComDir</emlink>.</col>
+<constlink constGroup="COMD"></constlink>.</col>
   <col>CNAT_None</col>
 </row><row>
   <col>ATTACH</col>
@@ -131,7 +131,7 @@ von <emlink href="script/fn/SetActionData.html">ActionData</emlink> (Siehe
   <col>Ziehen</col>
   <col>Zieht das <emlink href="script/fn/SetAction.html">Zielobjekt</emlink> nach 
 <emlink href="definition/defcore.html#SektionPhysical">Physical</emlink> Push und 
-<emlink href="script/fn/SetComDir.html">ComDir</emlink>.</col>
+<constlink constGroup="COMD"></constlink>.</col>
   <col>CNAT_Bottom</col>
 </row></table>
 </text>
