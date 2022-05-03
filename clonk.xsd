@@ -148,6 +148,14 @@
                                             <xs:element name="value" type="xs:integer"/>
                                             <xs:element minOccurs="0" name="deprecated" type="deprecated"/>
                                         </xs:sequence>
+                                        <xs:attribute name="bitPos">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:nonNegativeInteger">
+                                                    <xs:minInclusive value="0"/>
+                                                    <xs:maxInclusive value="32"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:attribute>
                                     </xs:complexType>
                                 </xs:element>
                                 <xs:element minOccurs="0" name="examples" type="examples"/>

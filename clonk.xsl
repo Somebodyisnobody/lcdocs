@@ -253,6 +253,9 @@
 			<tbody>
 				<xsl:for-each select="const">
 					<tr>
+						<xsl:if test="exists(@bitPos)">
+							<xsl:attribute name="data-custom-bit-pos" select="@bitPos"/>
+						</xsl:if>
 						<xsl:if test="position() mod 2=0">
 							<xsl:attribute name="class">dark</xsl:attribute>
 						</xsl:if>
@@ -739,6 +742,7 @@
 
 	<xsl:template name="bitmaskBitfield">
 		<xsl:if test="@activateBitmask='true'">
+			<xsl:call-template name="bitmaskValidation"/>
 			<label>
 				<xsl:choose>
 					<xsl:when test="name(.) = 'constGroup'">
@@ -750,7 +754,7 @@
 					<xsl:otherwise><xsl:value-of select="@bitmaskName"/></xsl:otherwise>
 				</xsl:choose>
 				<xsl:text>: </xsl:text>
-				<input type="number"/>
+				<input type="number" value="0"/>
 				<xsl:call-template name="link">
 					<xsl:with-param name="href" select="'script/operatoren.html#Bitweise'"/>
 					<xsl:with-param name="text">
@@ -762,6 +766,27 @@
 					<xsl:with-param name="icon" select="'/images/question-mark-round-line.svg'"/>
 				</xsl:call-template>
 			</label>
+		</xsl:if>
+	</xsl:template>
+	
+	<xsl:template name="bitmaskValidation">
+		<xsl:if test="name(.) = 'constGroup'">
+			<xsl:if test="exists(const/@bitPos)">
+				<xsl:for-each select="const">
+					<xsl:if test="@bitPos &lt; 0 or @bitPos > 32">
+						<xsl:message terminate="yes"><xsl:text>Invalid bit position set in constant "</xsl:text><xsl:value-of select="./name"/><xsl:text>". The maximum allowed bit position for bitmasks is 32 as clonk uses a 32-bit integer.</xsl:text></xsl:message>
+					</xsl:if>
+				</xsl:for-each>
+				<xsl:if test="not(count(const/@bitPos) = count(const))">
+					<xsl:message terminate="yes"><xsl:text>Invalid constellation in bitmask: Counted </xsl:text><xsl:value-of select="count(const)"/><xsl:text> constants but </xsl:text><xsl:value-of select="count(const/@bitPos)"/><xsl:text> "bitPos"-attributes. Every const-node needs a "bitPos" attribute if any const-node has one.</xsl:text></xsl:message>
+				</xsl:if>
+			</xsl:if>
+			<xsl:if test="count(const) > 32">
+				<xsl:message terminate="yes">Invalid constellation in bitmask: Counted <xsl:value-of select="count(const)"/> const-elements. The maximum allowed const-elements for bitmasks is 32 as clonk uses a 32-bit integer.</xsl:message>
+			</xsl:if>
+		</xsl:if>
+		<xsl:if test="name(.) = 'table' and count(row) > 32">
+			<xsl:message terminate="yes">Invalid constellation in bitmask: Counted <xsl:value-of select="count(row)"/> rows. The maximum allowed rows for bitmasks is 32 as clonk uses a 32-bit integer.</xsl:message>
 		</xsl:if>
 	</xsl:template>
 

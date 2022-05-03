@@ -217,14 +217,18 @@ tr.strikeout td:before {
     margin-bottom: 2em;
 }
 
-.bitmaskTable table tbody {
+.bitmaskTable > table > tbody {
     cursor:pointer;
 }
 
-.bitmaskTable label input {
+.bitmaskTable > label > input {
     margin-right: 1em;
 }
 
-.bitmaskTable label a img {
+.bitmaskTable > label > a > img {
     height: 1em;
+}
+
+.bitmaskTable > table > thead > tr > th:nth-child(4) {
+    min-width: 8em;
 }
