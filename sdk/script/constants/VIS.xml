@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
+	<constGroup activateBitmask="true">
+		<title>VIS</title>
+		<description>Konstanten zum Setzen oder Abrufen von Sichtbarkeiten eines Objektes. Dies kann z.B. eine
+			Blickrichtung des Clonks sein.
+			Verwendet werden diese Konstanten mit <funclink>GetVisibility</funclink> und <funclink>SetVisibility</funclink>.
+		</description>
+		<const bitPos="0">
+			<name>VIS_All</name>
+			<category>Objekte/Sichtbarkeit</category>
+			<description>Das Objekt ist für alle sichtbar. Daher kann dieser Wert logischerweise nicht mit anderen
+				VIS-Konstanten kombiniert werden.
+			</description>
+			<version>4.9.1.0 GWE</version>
+			<value>0</value>
+		</const>
+		<const bitPos="1">
+			<name>VIS_None</name>
+			<category>Objekte/Sichtbarkeit</category>
+			<description>Das Objekt ist für niemanden sichtbar.</description>
+			<version>4.9.1.0 GWE</version>
+			<value>1</value>
+		</const>
+		<const bitPos="2">
+			<name>VIS_Owner</name>
+			<category>Objekte/Sichtbarkeit</category>
+			<description>Das Objekt ist für den Besitzer sichtbar.</description>
+			<version>4.9.1.0 GWE</version>
+			<value>2</value>
+		</const>
+		<const bitPos="3">
+			<name>VIS_Allies</name>
+			<category>Objekte/Sichtbarkeit</category>
+			<description>Das Objekt ist für alle Verbündeten des Besitzers sichtbar.</description>
+			<version>4.9.1.0 GWE</version>
+			<value>4</value>
+		</const>
+		<const bitPos="4">
+			<name>VIS_Enemies</name>
+			<category>Objekte/Sichtbarkeit</category>
+			<description>Das Objekt ist für alle Feinde des Besitzers sichtbar.</description>
+			<version>4.9.1.0 GWE</version>
+			<value>8</value>
+		</const>
+		<const bitPos="5">
+			<name>VIS_Local</name>
+			<category>Objekte/Sichtbarkeit</category>
+			<description>Die Sichtbarkeit eines Objekts richtet sich jeweils nach den unbenannten, lokalen Variablen in
+				diesem Objekt. Dabei können in jeder lokalen Variable 32 Spieler in einer Bitmaske festgelegt werden.
+			</description>
+			<version>4.9.1.0 GWE</version>
+			<value>16</value>
+		</const>
+		<const bitPos="6">
+			<name>VIS_God</name>
+			<category>Objekte/Sichtbarkeit</category>
+			<description>Das Objekt ist nur im allgemeinen Viewport (Sichtfenster im Entwicklermodus oder Spielfläche im
+				Netzwerk ohne Spieler) sichtbar.
+			</description>
+			<version>4.9.1.0 GWE</version>
+			<value>32</value>
+		</const>
+		<const bitPos="7">
+			<name>VIS_LayerToggle</name>
+			<category>Objekte/Sichtbarkeit</category>
+			<description>Die Sichtbarkeit eines Objekts richtet sich nach der Sichtbarkeit des Layers, in dem sich das
+				Objekt befindet: Wenn der Layer in dem sich das Objekt befindet, VIS_LayerToggle hat, dann ist das
+				Objekt unsichtbar, wenn der Layer sichtbar ist. Ist der Layer hingegen unsichtbar, ist die Sichtbarkeit
+				des Objekts unbeeinflusst.
+			</description>
+			<version>4.9.7.0 CR</version>
+			<value>64</value>
+		</const>
+		<const bitPos="8">
+			<name>VIS_OverlayOnly</name>
+			<category>Objekte/Sichtbarkeit</category>
+			<description>Das Objekt ist nur als Overlay sichtbar. Kann nicht mit anderen VIS-Konstanten kombiniert
+				werden.
+			</description>
+			<version>4.9.7.0 CR</version>
+			<value>128</value>
+		</const>
+		<examples>
+			<example>
+				<code>var obj;
+					while (obj=<funclink>FindObject</funclink>(WIPF,0,0,0,0,0,0,0,0,obj)) <funclink>
+						SetVisibility</funclink>(VIS_None, obj);
+				</code>
+				<text>Macht alle Wipfe unsichtbar.</text>
+			</example>
+			<example>
+				<code><funclink>Local</funclink>(0)=9; SetVisibility(VIS_Local);
+				</code>
+				<text>Das aufrufende Objekt ist nur noch für Spieler 0 und Spieler 3 sichtbar</text>
+			</example>
+			<example>
+				<code><funclink>Local</funclink>(1)=2; SetVisibility(VIS_Local | VIS_God);
+				</code>
+				<text>Das aufrufende Objekt ist nur noch für Spieler 33 sichtbar</text>
+			</example>
+			<example>
+				<code><funclink>Local</funclink>(<funclink>GetOwner</funclink>()/32)=1&lt;&lt;(<funclink>
+					GetOwner</funclink>()%32); SetVisibility(VIS_Local);
+				</code>
+				<text>Das aufrufende Objekt ist nur noch von seinem Besitzer sichtbar (entspricht VIS_Owner)</text>
+			</example>
+		</examples>
+		<history>
+			<change>
+				<author>Sven2</author>
+				<date>2001-11</date>
+				<version>4.9.1.0 GWE</version>
+				<description>Einführung VIS-Gruppe.</description>
+				<affecting>Alle</affecting>
+			</change>
+			<change>
+				<author>Fulgen</author>
+				<date>2016-07</date>
+				<version>4.9.7.0 CR</version>
+				<description>Konstanten aus dem Clonk-Wiki hinzugefügt.</description>
+				<affecting>VIS_LayerToggle und VIS_OverlayOnly</affecting>
+			</change>
+		</history>
+	</constGroup>
+	<author>Sven2</author>
+	<date>2001-11</date>
+	<author>Fulgen</author>
+	<date>2016-07</date>
+</clonkDoc>

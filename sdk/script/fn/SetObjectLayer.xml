@@ -21,7 +21,7 @@
 		 <related>
 			<funclink>GetObjectLayer</funclink>
 			<funclink>Find_Layer</funclink>
-			<funclink>VIS_LayerToggle</funclink>
+			<constlink constGroup="VIS">VIS_LayerToggle</constlink>
 		 </related>
 	</func>
 	<author>Fulgen, Clonk Wiki</author><date>2016-07</date>

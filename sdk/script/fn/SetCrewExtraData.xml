@@ -45,7 +45,7 @@ local fInvisible;
 protected func Recruitment(a,b,c,d,e,f,g,h,i,j)
   {
   var rVal = <funclink>_inherited</funclink>(a,b,c,d,e,f,g,h,i,j);
-  if (<funclink>GetCrewExtraData</funclink>(0, "C4ID_Invisible")) <funclink>SetVisibility</funclink>(<funclink>VIS_Owner</funclink>);
+  if (<funclink>GetCrewExtraData</funclink>(0, "C4ID_Invisible")) <funclink>SetVisibility</funclink>(<constlink constGroup="VIS">VIS_Owner</constlink>);
   <funclink>return</funclink>(rVal);
   }
     
@@ -54,7 +54,7 @@ protected func ControlSpecial()
   if (fInvisible = !fInvisible)
     <funclink>SetVisibility</funclink>();
   else
-    <funclink>SetVisibility</funclink>(<funclink>VIS_Owner</funclink>);
+    <funclink>SetVisibility</funclink>(<constlink constGroup="VIS">VIS_Owner</constlink>);
   SetCrewExtraData(0, "C4ID_Invisible", fInvisible);
   }</code>
     <text>Script für einen Spezialclonk: Der Clonk kann sich auf Taste Spezial unsichtbar und wieder sichtbar machen. Diese Unsichtbarkeit bleibt auch erhalten, wenn man das Szenario beendet und ein anderes Szenario mit diesem Clonk startet.</text>
