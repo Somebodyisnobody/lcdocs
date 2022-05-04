@@ -22,22 +22,14 @@
 				<code><funclink>if</funclink>(GetPlrKnowledge(0,HUT1))
 	<funclink>Message</funclink>("Spieler %s kann Bambushütten bauen",0,<funclink>GetPlayerName</funclink>(0));</code>
 				<text>Gibt einen Text aus, falls der erste Spieler sich im Besitz des Bauplanes für Bambushütten befindet.</text>
-				<code>var def = GetPlrKnowledge( 0,0,4,<funclink>C4D_Structure</funclink>()) );
+				<code>var def = GetPlrKnowledge( 0,0,4,<constlink constGroup="C4D">C4D_Structure</constlink>) );
 <funclink>Message</funclink>("Der fünfte Gebäude-Bauplan des Spielers ist %i",0,def);</code>
 				<text></text>
 			</example>
 		</examples>
 		<related>
 			<funclink>SetPlrKnowledge</funclink>
-			<funclink>C4D_All</funclink>
-			<funclink>C4D_Goal</funclink>
-			<funclink>C4D_Knowledge</funclink>
-			<funclink>C4D_Living</funclink>
-			<funclink>C4D_Object</funclink>
-			<funclink>C4D_Rule</funclink>
-			<funclink>C4D_StaticBack</funclink>
-			<funclink>C4D_Structure</funclink>
-			<funclink>C4D_Vehicle</funclink>
+			<constlink constGroup="C4D"></constlink>
 		</related>
 	</func>
 	<author>Günther</author><date>2002-02</date>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
+	<constGroup activateBitmask="true">
+		<!-- TODO @maxmitti: Adding other, undocumented constants and dissolve category.xml-->
+		<title>C4D</title>
+		<description>Konstanten zum Setzen oder Abrufen von Kategorien eines Objektes.
+			Verwendet werden diese Konstanten mit <funclink>GetCategory</funclink> und <funclink>SetCategory</funclink>.
+		</description>
+		<const bitPos="0">
+			<name>C4D_All</name>
+			<category>Objekte/Kategorie</category>
+			<description>Alle Kategorien.</description>
+			<version>4.6.5.0 CP</version>
+			<value>0</value>
+		</const>
+		<const bitPos="1">
+			<name>C4D_StaticBack</name>
+			<category>Objekte/Kategorie</category>
+			<description>Unbewegliche Hintergrundobjekte.</description>
+			<version>4.6.5.0 CP</version>
+			<value>1</value>
+		</const>
+		<const bitPos="2">
+			<name>C4D_Structure</name>
+			<category>Objekte/Kategorie</category>
+			<description>Gebäude.</description>
+			<version>4.6.5.0 CP</version>
+			<value>2</value>
+		</const>
+		<const bitPos="3">
+			<name>C4D_Vehicle</name>
+			<category>Objekte/Kategorie</category>
+			<description>Fahrzeuge.</description>
+			<version>4.6.5.0 CP</version>
+			<value>4</value>
+		</const>
+		<const bitPos="4">
+			<name>C4D_Living</name>
+			<category>Objekte/Kategorie</category>
+			<description>Lebewesen.</description>
+			<version>4.6.5.0 CP</version>
+			<value>8</value>
+		</const>
+		<const bitPos="5">
+			<name>C4D_Object</name>
+			<category>Objekte/Kategorie</category>
+			<description>Kleine Objekte.</description>
+			<version>4.6.5.0 CP</version>
+			<value>16</value>
+		</const>
+		<const bitPos="6">
+			<name>C4D_Goal</name>
+			<category>Objekte/Kategorie</category>
+			<description>Spielziele.</description>
+			<version>4.6.5.0 CP</version>
+			<value>32</value>
+		</const>
+		<const bitPos="11">
+			<name>C4D_Knowledge</name>
+			<category>Objekte/Kategorie</category>
+			<description>Baupläne.</description>
+			<version>4.6.5.0 CP</version>
+			<value>1024</value>
+		</const>
+		<const bitPos="20">
+			<name>C4D_Rule</name>
+			<category>Objekte/Kategorie</category>
+			<description>Spielregeln.</description>
+			<version>4.6.5.0 CP</version>
+			<value>524288</value>
+		</const>
+		<const bitPos="21">
+			<name>C4D_Background</name>
+			<category>Objekte/Kategorie</category>
+			<description>Wird hinter der Landschaft gezeichnet. Nützlich beispielsweise für Effektobjekte wie Wolken oder Himmelskörper. Diese Kategorie funktioniert nicht im 8-Bit-Grafiksystem.</description>
+			<version>4.9.1.0 GWE</version>
+			<value>1048576</value>
+		</const>
+		<const bitPos="22">
+			<name>C4D_Parallax</name>
+			<category>Objekte/Kategorie</category>
+			<description>
+				Bewegt sich parallax zum Rest der Landschaft. Das bedeutet, dass sich die scheinbare Objektposition je nach Scrollposition des Viewports ändert. Damit können beispielsweise Objekte scheinbar in den Hintergrund geschoben, oder Statusanzeigen realisiert werden.<br/>
+				Die parallaxe Verschiebung wird dabei prozentual zum Normalverhalten in den ersten beiden indizierten, lokalen Variablen (siehe <funclink>Local</funclink>()) des Objekts angegeben (Local(0) und Local(1) jeweils für die horizontale respektive vertikale Verschiebung). Das heißt, um das Normalverhalten zu erzielen, müssen diese Werte jeweils auf 100 gesetzt werden. Stehen sie auf 0, gleicht die Objektposition der Sichtfensterposition. Für Hintergrundparallaxität werden also gewöhnlich Werte zwischen 0 und 100 gewählt.<br/>
+				Um Objekte direkt am Sichtfenster des Spielers zu positionieren, um so zum Beispiel Statusanzeigen zu realisieren, können Local(0) und Local(1) auf 0 gesetzt werden. Die Objektposition ist dann immer relativ zur oberen linken Ecke des Sichtfensters. Ab CR können für die Position solcher Objekte auch negative Werte angegeben werden: Diese werden dann jeweils vom rechten bzw. unteren Rand des Sichtfensters gerechnet. Auf diese Weise lassen sich Statusanzeigen auch am rechten oder unteren Rand der Sichtfenster platzieren.<br/>
+				Siehe auch: <funclink>SetSkyParallax</funclink>.
+			</description>
+			<version>4.9.1.0 GWE</version>
+			<value>2097152</value>
+		</const>
+		<examples>
+			<example>
+				<code><funclink>SetCategory</funclink>(C4D_StaticBack, this());</code>
+				<text>Macht das Objekt zu einem Hintergrundobjekt. Wird z. B. bei Burgteilen verwendet, damit davor gebaut werden kann.</text>
+			</example>
+			<example>
+				<code><funclink>GetPlrKnowledge</funclink>(0, 0, 0, C4D_Structure);</code>
+				<text>Liefert das erste Gebäude zurück, das der 1. Spieler bauen kann.</text>
+			</example>
+			<example>
+				<code><funclink>GetDefinition</funclink>(0, C4D_Object);</code>
+				<text>Liefert die ID des ersten geladenen Objekts zurück. Ein ähnlicher Code wird vom Forschungslabor benutzt, um die erforschbaren Objekte aufzulisten.</text>
+			</example>
+			<example>
+				<code>var obj;
+					while (obj=<funclink>FindObject</funclink>(0, 0, 0, 0, 0, 0, 0, 0, 0, obj))
+					if (<funclink>GetCategory</funclink>(obj) <emlink href="script/operatoren.html">&amp;</emlink> C4D_Goal)
+					<funclink>RemoveObject</funclink>(obj);
+				</code>
+				<text>Entfernt alle Spielziele. Mit einem bitweisen AND kann man überprüfen, ob zwei Kategorien in mindestens einer Kategorie übereinstimmen.</text>
+			</example>
+			<example>
+				<code><funclink>if</funclink>(<funclink>GetCategory</funclink>( 0, <funclink>GetHomebaseMaterial</funclink>()) <emlink href="script/operatoren.html">&amp;</emlink> C4D_Knowledge) <funclink>Message</funclink>("Spieler 1 kann etwas kaufen, was er auch erforschen oder bauen könnte.");</code>
+				<text>Mit einem bitweisen AND kann man überprüfen, ob zwei Kategorien in mindestens einer Kategorie übereinstimmen.</text>
+			</example>
+			<example>
+				<code>for(var obj in <funclink>FindObjects</funclink>(<funclink>Find_Category</funclink>(C4D_Rule)))
+					<funclink>RemoveObject</funclink>(obj);</code>
+				<text>Entfernt alle Spielregeln. :-)</text>
+			</example>
+			<example>
+				<code><funclink>SetCategory</funclink>(<funclink>GetCategory</funclink>() | C4D_Background);</code>
+				<text>Versetzt das aufrufende Objekt in den Hintergrund.</text>
+			</example>
+			<example>
+				<code><funclink>SetCategory</funclink>(<funclink>GetCategory</funclink>() | C4D_Parallax | C4D_Background);
+					<funclink>Local</funclink>()=50; <funclink>Local</funclink>(1)=100;
+				</code>
+				<text>Versetzt das aufrufende Objekt in den Hintergrund, und gibt ihm horizontale Parallaxität.</text>
+			</example>
+		</examples>
+		<history>
+			<change>
+				<author>Sven2</author>
+				<date>2002-01</date>
+				<version>4.6.5.0 CP</version>
+				<description>Einführung C4D-Gruppe.</description>
+				<affecting>C4D_All, C4D_Goal</affecting>
+			</change>
+			<change>
+				<author>Günther</author>
+				<date>2002-02</date>
+				<version>4.6.5.0 CP</version>
+				<description>Konstanten ergänzt.</description>
+				<affecting>C4D_Living, C4D_Object, C4D_Knowledge</affecting>
+			</change>
+			<change>
+				<author>jwk</author>
+				<date>2002-04</date>
+				<version>4.6.5.0 CP</version>
+				<description>Konstanten ergänzt.</description>
+				<affecting>C4D_StaticBack, C4D_Structure, C4D_Vehicle, C4D_Rule</affecting>
+			</change>
+			<change>
+				<author>Sven2</author>
+				<date>2003-06</date>
+				<version>4.9.1.0 GWE</version>
+				<description>Konstantengruppe um neue Konstanten ergänzt.</description>
+				<affecting>C4D_Background, C4D_Parallax</affecting>
+			</change>
+		</history>
+	</constGroup>
+	<author>Sven2</author><date>2003-06</date>
+	<author>Günther</author><date>2002-02</date>
+	<author>jwk</author><date>2002-04</date>
+</clonkDoc>

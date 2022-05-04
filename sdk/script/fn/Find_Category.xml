@@ -25,12 +25,12 @@
         </remark>
         <examples>
             <example>
-                <code><funclink>FindObjects</funclink>(Find_Category(<funclink>C4D_Structure</funclink>))
+                <code><funclink>FindObjects</funclink>(Find_Category(<constlink constGroup="C4D">C4D_Structure</constlink>))
                 </code>
                 <text>Gibt eine Liste aller im Spiel befindlichen Gebäude zurück.</text>
             </example>
             <example>
-                <code><funclink>FindObjects</funclink>(Find_Category(<funclink>C4D_Rule</funclink> | <funclink>
+                <code><funclink>FindObjects</funclink>(Find_Category(<constlink constGroup="C4D">C4D_Rule</constlink> | <funclink>
                     C4D_Goal</funclink>))
                 </code>
                 <text>

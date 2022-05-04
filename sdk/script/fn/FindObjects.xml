@@ -19,14 +19,14 @@
 		<remark>Die Kriterien werden genau so angegeben wie bei <funclink>FindObject2</funclink> und <funclink>ObjectCount2</funclink>.</remark>
 		<examples>
 			<example>
-<code><funclink>for</funclink>(var pVehicle in FindObjects (<funclink>Find_Owner</funclink>(1), <funclink>Find_Category</funclink>(<funclink>C4D_Vehicle</funclink>)))
+<code><funclink>for</funclink>(var pVehicle in FindObjects (<funclink>Find_Owner</funclink>(1), <funclink>Find_Category</funclink>(<constlink constGroup="C4D">C4D_Vehicle</constlink>)))
   <funclink>RemoveObject</funclink> (pVehicle);</code>
 				<text>Lässt alle Fahrzeuge von Spieler 2 verschwinden.</text>
 			</example>
 			<example>
 <code>protected func Hit()
 {
-  <funclink>for</funclink>(var pStructure in FindObjects(<funclink>Find_AtPoint</funclink>(), <funclink>Find_Category</funclink>(<funclink>C4D_Structure</funclink>), <funclink>Find_OCF</funclink>(<constlink constGroup="OCF">OCF_Inflammable</constlink>)))
+  <funclink>for</funclink>(var pStructure in FindObjects(<funclink>Find_AtPoint</funclink>(), <funclink>Find_Category</funclink>(<constlink constGroup="C4D">C4D_Structure</constlink>), <funclink>Find_OCF</funclink>(<constlink constGroup="OCF">OCF_Inflammable</constlink>)))
     Incinerate(pStructure);
   <funclink>RemoveObject</funclink>();
 }</code>

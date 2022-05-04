@@ -648,7 +648,7 @@ var settings = defaults .. { Message = "Hello there!", Italic = true };
 			<text>Dieser Wert ergibt im Binär-System: (kann mit Windows-Taschenrechner umgerechnet werden)</text>
 			<code>10001000000001000</code>
 			<text>Hier sieht man, dass Bit 3, Bit 12 und Bit 16 gesetzt sind (es wird von rechts gezählt und mit 0 begonnen)</text>
-			<text>Dies entspricht der Reihe nach den C4D-Werten <funclink>C4D_Living</funclink> (Objekt ist ein Lebewesen), C4D_SelectAnimal (Objekt kann im Menu für Lebewesen hinzugefügt werden) und  C4D_TradeLiving (Objekt ist ein Lebewesen, darf aber trotzdem verkauft werden).</text>
+			<text>Dies entspricht der Reihe nach den C4D-Werten <constlink constGroup="C4D">C4D_Living</constlink> (Objekt ist ein Lebewesen), C4D_SelectAnimal (Objekt kann im Menu für Lebewesen hinzugefügt werden) und  C4D_TradeLiving (Objekt ist ein Lebewesen, darf aber trotzdem verkauft werden).</text>
 			<text>Im Script kann nun recht einfach geprüft werden, ob ein bestimmtes Bit gesetzt ist: man benutzt den Operator "Und" (<code>&amp;</code>), dem man den Wert und die "Maske" übergibt. In der Maske ist nur das Bit gesetzt, dass von Interesse ist. Auf diese Weise müssen im Ergebnis alle Bits, die nicht interessieren, 0 sein (denn sie sind es in der Maske). Ist nun das Bit, das interressiert, 1, so wird diese in das Ergebnis übernommen, ist es 0, so wird im Ergebnis dort auch 0 stehen. Im letzteren Fall ist sogar das gesamte Ergebnis 0, da alle anderen Bits ja auch 0 sind. Es genügt also zu überprüfen, ob das Ergebnis von <code>[Val] &amp; [Mask]</code> ungleich null ist, um herauszufinden, ob ein bestimmtes Bit gesetzt ist.</text>
 
 			<h>Beispiel:</h>
@@ -694,7 +694,7 @@ var settings = defaults .. { Message = "Hello there!", Italic = true };
 			<text>Hier ist das Ergebnis 0, denn das Bit in der Maske ist nicht beim Wert gesetzt.</text>
 			<text>Es bleibt noch die Frage zu klären, wo man die entsprechende Maske denn herbekommt. Im Fall der Category-Werte sind diese bereits mit Namen mitgeliefert, sie können über <code>C4D_[XXX]</code> abgerufen werden. Wollte man z.B. herausfinden, ob es sich bei einem Objekt um ein Lebewesen handelt, so sähe der Script folgendermaßen aus:</text>
 
-<code>if (<funclink>GetCategory</funclink>() &amp; <funclink>C4D_Living</funclink>)
+<code>if (<funclink>GetCategory</funclink>() &amp; <constlink constGroup="C4D">C4D_Living</constlink>)
   ;...;</code>
 
 			<text>Auf diese Weise kann man also einzelne Bits gezielt prüfen. Doch wie soll man diese nun bearbeiten?	Will man ein einzelnes Bit <strong>setzen</strong>, so wird der Operator "Oder" (<code>|</code>) benutzt. Dieser wird wieder auf Wert und Maske angewendet:</text>

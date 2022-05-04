@@ -17,7 +17,7 @@
 		<desc>Fragt die Objektkategorie eines Objekts ab. Die Objektkategorie wird normalerweise über die <emlink href="definition/defcore.html">DefCore</emlink> gesetzt, und danach höchstens in seltenen Fällen mit <funclink>SetCategory</funclink> geändert. Sie bestimmt das allgemeine Verhalten eines Objekts und dessen Platzierung. Eine mit GetCategory abgefragt Kategorie kann mit dem &amp;-Operator gegen eine C4D_-Konstante geprüft werden.</desc>
 		<examples>
 			<example>
-				<code><funclink>if</funclink> (GetCategory(obj) &amp; <funclink>C4D_Structure</funclink>()) <funclink>Incinerate</funclink>(obj);</code>
+				<code><funclink>if</funclink> (GetCategory(obj) &amp; <constlink constGroup="C4D">C4D_Structure</constlink>) <funclink>Incinerate</funclink>(obj);</code>
 				<text>Zündet obj an, wenn es ein Gebäude ist.</text>
 			</example>
 		</examples>

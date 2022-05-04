@@ -27,15 +27,7 @@
 			<funclink>GetHomebaseMaterial</funclink>
 			<funclink>DoHomebaseMaterial</funclink>
 			<funclink>DoHomebaseProduction</funclink>
-			<funclink>C4D_All</funclink>
-			<funclink>C4D_Goal</funclink>
-			<funclink>C4D_Knowledge</funclink>
-			<funclink>C4D_Living</funclink>
-			<funclink>C4D_Object</funclink>
-			<funclink>C4D_Rule</funclink>
-			<funclink>C4D_StaticBack</funclink>
-			<funclink>C4D_Structure</funclink>
-			<funclink>C4D_Vehicle</funclink>
+			<constlink constGroup="C4D"></constlink>
 		</related>
 	</func>
 	<author>Clonk-Karl</author><date>2008-03</date>
