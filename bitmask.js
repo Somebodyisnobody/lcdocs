@@ -45,7 +45,9 @@ class Bitmask {
             (e) => {
                 e = e || window.event;
                 const clickedElement = e.target || e.srcElement;
-                this.calculateBitfieldValue(clickedElement.closest('tr'));
+                const clickedRow = clickedElement.closest('tr') === null;
+                if (clickedRow === null) return;
+                this.calculateBitfieldValue(clickedRow);
             }
         );
         this.bitfield.addEventListener("input",
@@ -108,7 +110,6 @@ class Bitmask {
         // If bitmask value is zero we can mark the "All" or "None" lines which have no bit position (bit position = 0).
         if (bitPosition === 0) {
             row.classList.toggle("mark", this.bitfieldValue === 0);
-            console.log(this.bitfieldValue === 0);
             return;
         }
         // For bitwise operation we need to subtract by one. We don't want to shift 0001 one to the left if we handle the 1st bitPosition.
