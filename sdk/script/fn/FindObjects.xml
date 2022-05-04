@@ -33,8 +33,8 @@
 				<text>Der Feuerteufelflint: entzündet beim Auftreffen alle brennbaren Gebäude, die er berührt.</text>
 			</example>
 			<example>
-<code><funclink>for</funclink>(var pObj in FindObjects( <funclink>Find_Not</funclink>(<funclink>Find_Owner</funclink>(<funclink>NO_OWNER</funclink>)) ))
-  pObj-><funclink>SetOwner</funclink>(<funclink>NO_OWNER</funclink>);</code>
+<code><funclink>for</funclink>(var pObj in FindObjects( <funclink>Find_Not</funclink>(<funclink>Find_Owner</funclink>(<constlink constGroup="OWNER">NO_OWNER</constlink>)) ))
+  pObj-><funclink>SetOwner</funclink>(<constlink constGroup="OWNER">NO_OWNER</constlink>);</code>
 				<text>Anarchie! Kein Objekt gehört mehr einem Spieler.</text>
 			</example>
 		</examples>

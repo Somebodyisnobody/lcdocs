@@ -5,8 +5,7 @@
 		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
 	<constGroup activateBitmask="true">
 		<title>VIS</title>
-		<description>Konstanten zum Setzen oder Abrufen von Sichtbarkeiten eines Objektes. Dies kann z.B. eine
-			Blickrichtung des Clonks sein.
+		<description>Konstanten zum Setzen oder Abrufen von Sichtbarkeiten eines Objektes.
 			Verwendet werden diese Konstanten mit <funclink>GetVisibility</funclink> und <funclink>SetVisibility</funclink>.
 		</description>
 		<const bitPos="0">

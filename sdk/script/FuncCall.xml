@@ -77,7 +77,7 @@ func Aufruf()
 		</text>
 
 		<text>Das folgende Script erstellt einen Flint an den globalen Koordinaten 10/10, sogar wenn es innerhalb eines Objektes ausgeführt wird:</text>
-		<code>global-><funclink>CreateObject</funclink>(FLNT, 10, 10, <funclink>NO_OWNER</funclink>);</code>
+		<code>global-><funclink>CreateObject</funclink>(FLNT, 10, 10, <constlink constGroup="OWNER">NO_OWNER</constlink>);</code>
 	</part>
 
 
