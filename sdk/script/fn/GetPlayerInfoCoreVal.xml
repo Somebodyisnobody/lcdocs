@@ -41,11 +41,11 @@
     <remark>Es kann aus technischen Gründen keine analoge Funktion SetPlayerVal geben.</remark>
 
     <related>
-      <funclink>GetObjectVal</funclink>
-      <funclink>GetObjectInfoCoreVal</funclink>
-      <funclink>GetActMapVal</funclink>
-      <funclink>GetScenarioVal</funclink>
-      <funclink>GetPlayerVal</funclink>
+      <funcLink>GetObjectVal</funcLink>
+      <funcLink>GetObjectInfoCoreVal</funcLink>
+      <funcLink>GetActMapVal</funcLink>
+      <funcLink>GetScenarioVal</funcLink>
+      <funcLink>GetPlayerVal</funcLink>
     </related>
 
   </func>

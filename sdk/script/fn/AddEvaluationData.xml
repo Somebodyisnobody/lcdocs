@@ -16,7 +16,7 @@
 		<desc>Zeigt szData im Auswertungsdialog am Ende der Runde an. </desc>
 		 
 		 <related>
-			<funclink>HideSettlementScoreInEvaluation</funclink>
+			<funcLink>HideSettlementScoreInEvaluation</funcLink>
 		 </related>
 	</func>
 	<author>Fulgen, Clonk Wiki</author><date>2016-07</date>

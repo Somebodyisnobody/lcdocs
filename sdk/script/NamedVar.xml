@@ -8,7 +8,7 @@
 
 <h>Benannte Variablen</h>
 <part>
-	<text>Variablen dienen innerhalb von Scripts zur Speicherung von Daten. Es gibt bestimmte <emlink href="script/Typechecks.html">Datentypen</emlink>, die Variablen annehmen können.</text>
+	<text>Variablen dienen innerhalb von Scripts zur Speicherung von Daten. Es gibt bestimmte <emLink href="script/Typechecks.html">Datentypen</emLink>, die Variablen annehmen können.</text>
 
 	<text>Außerdem kann eine Variable einen von drei Gültigkeitsbereichen haben. Die Variable ist außerhalb ihres Gültigkeitsbereiches nicht sichtbar.</text>
 
@@ -63,23 +63,23 @@ protected func Timer()
 {
   if(!--iTimeToLive)
   {
-    <funclink>RemoveObject</funclink>();
-    <funclink>return</funclink>();
+    <funcLink>RemoveObject</funcLink>();
+    <funcLink>return</funcLink>();
   }
 
-  var obj = <funclink>FindObject</funclink>(CLNK, 0, 0, -1, -1);
+  var obj = <funcLink>FindObject</funcLink>(CLNK, 0, 0, -1, -1);
 
-  if(<funclink>ObjectDistance</funclink>(obj) &lt; 20)
-    <funclink>DoDamage</funclink>(-10, obj);
+  if(<funcLink>ObjectDistance</funcLink>(obj) &lt; 20)
+    <funcLink>DoDamage</funcLink>(-10, obj);
 
-  <funclink>return</funclink>();
+  <funcLink>return</funcLink>();
 }</code>
 	
 	<h>Ergänzungen:</h>
 	
 	<text><ul>
 		<li>Definitionen objektlokaler Variablen werden sowohl bei #appendto also auch bei #include mit übernommen.</li>
-		<li>Mittels der Funktionen <funclink>VarN</funclink>(), <funclink>LocalN</funclink>(), und <funclink>GlobalN</funclink>() kann indirekt auf Variablen zugegriffen werden. Mittels <funclink>LocalN</funclink>() kann speziell auch auf lokale Variablen in anderen Objekten zugreifen.</li>
+		<li>Mittels der Funktionen <funcLink>VarN</funcLink>(), <funcLink>LocalN</funcLink>(), und <funcLink>GlobalN</funcLink>() kann indirekt auf Variablen zugegriffen werden. Mittels <funcLink>LocalN</funcLink>() kann speziell auch auf lokale Variablen in anderen Objekten zugreifen.</li>
 		<li>Sind an einer Stelle zwei Variablen desselben Namens sichtbar, so bezeichnet der Name im Script jeweils die Variable mit dem kleineren Geltungsbereich. Das heißt z.B., dass eine objektlokale Variable eine globale Variable "verdeckt".</li>
 		<li>Wird eine Variable mehrfach deklariert, so existiert die Variable nachher trotzdem nur einmal und es wird kein Fehler ausgegeben. Initialisierungen gelten als Zuweisungen und werden wie eine entsprechende Anweisung ggf. auch mehrfach ausgeführt.</li>
 		<li>Eine <code>static</code>-Variable darf auch in Objektscripten verwendet werden (siehe Beispiel). Wird eine <code>static</code>-Variable mit gleichem Namen in einem anderen Script definiert, so bezeichnen beide auch dieselbe Variable.</li>

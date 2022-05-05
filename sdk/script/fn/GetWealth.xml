@@ -15,8 +15,8 @@
                 </syntax>
                 <desc>Liefert das Vermögen von iOwner.</desc>
                 <related>
-                        <funclink>SetWealth</funclink>
-						<funclink>DoWealth</funclink>
+                        <funcLink>SetWealth</funcLink>
+						<funcLink>DoWealth</funcLink>
                 </related>
         </func>
         <author>Cucaracha</author><date>2002-05</date>

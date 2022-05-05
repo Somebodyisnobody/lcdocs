@@ -14,12 +14,12 @@
       </params>
     </syntax>
     <desc>
-	Wandelt eine Objektdefinitions-ID in eine Zahl um, die als Spaltenidentifikator für <funclink>SetScoreboardData</funclink> verwendet werden kann. Diese Funktion ist dann interessant, wenn ein Objekt auf das Scoreboard zugreifen will, aber dabei sicher stellen muss, dass es nicht dieselbe ID wie ein anderes Objekt verwendet.
+	Wandelt eine Objektdefinitions-ID in eine Zahl um, die als Spaltenidentifikator für <funcLink>SetScoreboardData</funcLink> verwendet werden kann. Diese Funktion ist dann interessant, wenn ein Objekt auf das Scoreboard zugreifen will, aber dabei sicher stellen muss, dass es nicht dieselbe ID wie ein anderes Objekt verwendet.
     </desc>
     <related>
-      <funclink>SetScoreboardData</funclink>
-      <funclink>SortScoreboard</funclink>
-      <funclink>DoScoreboardShow</funclink>
+      <funcLink>SetScoreboardData</funcLink>
+      <funcLink>SortScoreboard</funcLink>
+      <funcLink>DoScoreboardShow</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2006-02</date>

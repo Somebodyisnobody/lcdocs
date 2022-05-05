@@ -16,12 +16,12 @@
     <desc>Gibt den Index eines Materials anhand seines Namens zurück. Dieser Index wird in den meisten materialbezogenen Funktionen verwendet.</desc>
     <examples>
       <example>
-        <code><funclink>InsertMaterial</funclink>(Material("Gold"), 200, 100);</code>
+        <code><funcLink>InsertMaterial</funcLink>(Material("Gold"), 200, 100);</code>
         <text>Fügt ein Pixel Gold an Position 200/100 ein.</text>
       </example>
     </examples>
     <related>
-      <funclink>MaterialName</funclink>
+      <funcLink>MaterialName</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2001-11</date>

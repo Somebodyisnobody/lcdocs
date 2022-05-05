@@ -36,20 +36,20 @@
       </params>
     </syntax>
 
-    <desc>Gibt einen Eigenschaftswert einer Materialdefinition nach seinem Namen in der <emlink href="material/c4m.html">Materialdatei</emlink>
+    <desc>Gibt einen Eigenschaftswert einer Materialdefinition nach seinem Namen in der <emLink href="material/c4m.html">Materialdatei</emLink>
           zurück.</desc>
 
     <examples>
       <example>
-        <code>GetMaterialVal("BlastFree", "Material", <funclink>GetMaterial</funclink>(20, 0))</code>
+        <code>GetMaterialVal("BlastFree", "Material", <funcLink>GetMaterial</funcLink>(20, 0))</code>
         <text>Überprüft, ob das Material rechts vom aufrufenden Objekt sprengbar ist.</text>
       </example>
     </examples>
 
 
     <related>
-      <funclink>GetMaterial</funclink>
-      <funclink>Material</funclink>
+      <funcLink>GetMaterial</funcLink>
+      <funcLink>Material</funcLink>
     </related>
 
   </func>

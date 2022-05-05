@@ -10,20 +10,20 @@
 		<syntax>
 			<rtype>bool</rtype>
 			<params>
-				<param><type>object</type><name>pCallbackObject</name><desc>Objekt, in dem <emlink href="script/fn/InputCallback.html">InputCallback</emlink> aufgerufen wird.</desc></param>
+				<param><type>object</type><name>pCallbackObject</name><desc>Objekt, in dem <emLink href="script/fn/InputCallback.html">InputCallback</emLink> aufgerufen wird.</desc></param>
 				<param><type>bool</type><name>bCapitalize</name><desc>Wenn true, wird die Eingabe in Großbuchstaben zurückgegeben.</desc></param>
 				<param><type>string</type><name>szTitle</name><desc>Text, der links neben / über dem Eingabefeld steht.</desc></param>
 				<param><type>int</type><name>iPlayer</name><desc>Spieler, für den die Eingabezeile erzeugt werden soll.</desc></param>
 			</params>
 		</syntax>
-		<desc>Zeigt eine Eingabezeile (ähnlich der Chat-Eingabe) für den Spieler iPlayer (ggf. mit Verzögerung). Wenn die Eingabe abgeschlossen wird, wird in pCallbackObject <code><emlink href="script/fn/InputCallback.html">InputCallback</emlink>(string szInput)</code>
+		<desc>Zeigt eine Eingabezeile (ähnlich der Chat-Eingabe) für den Spieler iPlayer (ggf. mit Verzögerung). Wenn die Eingabe abgeschlossen wird, wird in pCallbackObject <code><emLink href="script/fn/InputCallback.html">InputCallback</emLink>(string szInput)</code>
 		aufgerufen, wobei szInput die Eingabe enthält.</desc>
 		<remark>Diese Eingabezeile funktioniert nur im Vollbildmodus, nicht im Konsolenmodus!</remark>
 		 
 		 <related>
-			<funclink>InputCallback</funclink>
-			<funclink>AbortMessageBoard</funclink>
-			<funclink>TestMessageBoard</funclink>
+			<funcLink>InputCallback</funcLink>
+			<funcLink>AbortMessageBoard</funcLink>
+			<funcLink>TestMessageBoard</funcLink>
 		 </related>
 	</func>
 	<author>Fulgen, Clonk Wiki</author><date>2016-07</date>

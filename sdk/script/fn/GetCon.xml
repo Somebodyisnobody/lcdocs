@@ -13,17 +13,17 @@
                                 <param><type>object</type><name>pObj</name><desc>Objekt dessen Fertigstellung abgefragt werden soll.</desc><optional /></param>
                         </params>
                 </syntax>
-                <desc>Liefert die Fertigstellung eines Objekts in Prozent. Bei Baustellen ist dies die Fertigstellung, während es bei Tieren und Pflanzen die Größe angibt (Siehe StretchGrowth/OverSize in der <emlink href="definition/defcore.html">DefCore</emlink>)</desc>
+                <desc>Liefert die Fertigstellung eines Objekts in Prozent. Bei Baustellen ist dies die Fertigstellung, während es bei Tieren und Pflanzen die Größe angibt (Siehe StretchGrowth/OverSize in der <emLink href="definition/defcore.html">DefCore</emLink>)</desc>
     <examples>
       <example>
-        <code><funclink>if</funclink> (GetCon(<funclink>GetCursor</funclink>()) > 50) <funclink>DoCon</funclink>(-10, <funclink>GetCursor</funclink>());</code>
+        <code><funcLink>if</funcLink> (GetCon(<funcLink>GetCursor</funcLink>()) > 50) <funcLink>DoCon</funcLink>(-10, <funcLink>GetCursor</funcLink>());</code>
         <text>Schrumpft den ausgewählten Clonk des ersten Spielers um 10% seiner Normalgröße, wenn er nicht schon auf halbe Größe geschrumpft ist.</text>
       </example>
     </examples>
                 <related>
-      <funclink>SetCon</funclink>
-      <funclink>DoCon</funclink>
-      <constlink constGroup="OCF">OCF_Fullcon</constlink>
+      <funcLink>SetCon</funcLink>
+      <funcLink>DoCon</funcLink>
+      <constLink constGroup="OCF">OCF_Fullcon</constLink>
                 </related>
         </func>
         <author>Cucaracha</author><date>2002-05</date>

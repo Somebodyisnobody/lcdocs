@@ -34,7 +34,7 @@
         <desc>Gibt den Namen der Taste iCon von iPlr zurück.</desc>
 		<examples>
 			<example>
-				<code><funclink>Log</funclink>(GetPlrControlName(0, CON_Dig));</code>
+				<code><funcLink>Log</funcLink>(GetPlrControlName(0, CON_Dig));</code>
 				<text>Gibt den Namen der Taste [Graben] vom ersten Spieler im Log aus. Dies ist "D", wenn dieser das unveränderte Tastaturprofil 1 hat.</text>
 			</example>
 		</examples>

@@ -18,8 +18,8 @@
 		<examples>
 			<example>
 				<code>var i = 0;
-<funclink>for</funclink> (var plrnum = <funclink>GetPlayerCount</funclink> (); plrnum; i++)
-  if (<funclink>GetPlayerName</funclink> (i)) {
+<funcLink>for</funcLink> (var plrnum = <funcLink>GetPlayerCount</funcLink> (); plrnum; i++)
+  if (<funcLink>GetPlayerName</funcLink> (i)) {
     plrnum--;
     SetFoW (0, i);
   }</code>
@@ -27,8 +27,8 @@
 			</example>
 		</examples>
 		<related>
-			<funclink>SetPlrView</funclink>
-			<funclink>SetPlrViewRange</funclink>
+			<funcLink>SetPlrView</funcLink>
+			<funcLink>SetPlrViewRange</funcLink>
 		</related>
 	</func>
 	<author>Günther</author><date>2002-11</date>

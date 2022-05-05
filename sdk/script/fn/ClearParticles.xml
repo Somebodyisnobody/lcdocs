@@ -11,7 +11,7 @@
 			<rtype>bool</rtype>
 			<params>
 				<param><type>string</type><name>szName</name><desc>Name der Partikeldefinition, dessen Instanzen gelöscht werden sollen. Bei 0 werden alle Partikel entfernt.</desc></param>
-				<param><type>object</type><name>pObj</name><desc>Zielobjekt der Partikel, die gelöscht werden sollen. Siehe dazu pObj bei <funclink>CreateParticle</funclink></desc></param>
+				<param><type>object</type><name>pObj</name><desc>Zielobjekt der Partikel, die gelöscht werden sollen. Siehe dazu pObj bei <funcLink>CreateParticle</funcLink></desc></param>
 			</params>
 		</syntax>
 		<desc>Entfernt alle Partikel eines angegebenen Typs vom Zielobjekt pObj.</desc>
@@ -21,13 +21,13 @@
 				<text>Entfernt den Rauch.</text>
 			</example>
 			<example>
-				<code>ClearParticles("Smoke", <funclink>FindObject2</funclink>(<funclink>Find_ID</funclink>(CLNK)));</code>
+				<code>ClearParticles("Smoke", <funcLink>FindObject2</funcLink>(<funcLink>Find_ID</funcLink>(CLNK)));</code>
 				<text>Entfernt alle Rauchpartikel von einem Clonk in der Landschaft.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>CreateParticle</funclink>
-			<funclink>PushParticles</funclink>
+			<funcLink>CreateParticle</funcLink>
+			<funcLink>PushParticles</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-04</date>

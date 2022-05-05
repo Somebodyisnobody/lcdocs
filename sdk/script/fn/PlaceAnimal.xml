@@ -13,9 +13,9 @@
     <param><type>id</type><name>id</name><desc>ID des zu erstellenden Tieres.</desc></param>
    </params>
   </syntax>
-  <desc>Erzeugt ein Lebewesen vom angegebenen Typ in der Landschaft. Die Startposition bestimmt sich dabei aus dem Wert Placement im <emlink href="definition/defcore.html">DefCore</emlink> des Lebewesens. Rückgabewert ist ein Zeiger auf das neu erzeugte Objekt.</desc>
+  <desc>Erzeugt ein Lebewesen vom angegebenen Typ in der Landschaft. Die Startposition bestimmt sich dabei aus dem Wert Placement im <emLink href="definition/defcore.html">DefCore</emLink> des Lebewesens. Rückgabewert ist ein Zeiger auf das neu erzeugte Objekt.</desc>
   <related>
-  	<funclink>PlaceVegetation</funclink>
+  	<funcLink>PlaceVegetation</funcLink>
   </related>
  </func>
  <author>jwk</author><date>2002-08</date>

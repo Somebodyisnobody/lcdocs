@@ -15,16 +15,16 @@
 		</syntax>
 		<desc>Fragt den aktuellen Sichtmodus eines Spielers ab. Die Funktion gibt einen der folgenden Werte zurück:
           <ul>
-            <li>0: Cursor - Die Sicht des Spielers folgt dem aktuell selektierten Clonk (siehe <funclink>GetCursor</funclink>)</li>
-            <li>1: Target - Die Sicht folgt einem anderen Objekt, welches durch den Befehl <funclink>SetPlrView</funclink> im Script gesetzt wurde. Siehe auch <funclink>GetPlrView</funclink>.</li>
+            <li>0: Cursor - Die Sicht des Spielers folgt dem aktuell selektierten Clonk (siehe <funcLink>GetCursor</funcLink>)</li>
+            <li>1: Target - Die Sicht folgt einem anderen Objekt, welches durch den Befehl <funcLink>SetPlrView</funcLink> im Script gesetzt wurde. Siehe auch <funcLink>GetPlrView</funcLink>.</li>
             <li>2: Scroll - Der Spieler bewegt seine Sicht unabhängig von der Position eines Objekts. Dies geschieht, wenn der Spieler die Maus an den Rand seines Sichtbereichs zieht.</li>
           </ul>
     </desc>
     <remark>Da die Maus nicht über Netzwerk synchronisiert wird, gibt die Funktion für Record, Replay und Netzwerkspiele
             immer -1 zurück.</remark>
     <related>
-      <funclink>SetPlrView</funclink>
-      <funclink>GetPlrView</funclink>
+      <funcLink>SetPlrView</funcLink>
+      <funcLink>GetPlrView</funcLink>
     </related>
 	</func>
 	<author>PeterW</author><date>2003-06</date>

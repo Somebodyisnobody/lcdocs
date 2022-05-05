@@ -15,7 +15,7 @@
                 </syntax>
                 <desc>Liefert die Rang-Nummer von pObj. 0 ist ein unbeförderter Clonk. *pObj ist Null bei lokalem Aufruf.</desc>
                 <related>
-                        <funclink>GetHiRank</funclink>
+                        <funcLink>GetHiRank</funcLink>
                 </related>
         </func>
         <author>Cucaracha</author><date>2002-05</date>

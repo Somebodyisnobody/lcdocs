@@ -17,17 +17,17 @@
 		<desc>Gibt den momentan kontrollierten Clonk eines Spielers zurück. Werden mehrere Clonks gelenkt, ist es bei iIndex=0 (oder weggelassen) immer das primär ausgewählte Mannschaftsmitglied. Also das, dem beispielsweise auch die Sicht folgt.</desc>
 		<examples>
 			<example>
-				<code><funclink>if</funclink> (!GetCursor(0)) <funclink>SetCursor</funclink>(<funclink>GetHiRank</funclink>(0));</code>
+				<code><funcLink>if</funcLink> (!GetCursor(0)) <funcLink>SetCursor</funcLink>(<funcLink>GetHiRank</funcLink>(0));</code>
 				<text>Wählt den höchstrangigen Clonk des ersten Spielers aus, wenn ansonsten gerade kein anderer Clonk ausgewählt ist.</text>
 			</example>
 			<example>
-				<code>var pCrew,i; <funclink>while</funclink> (pCrew=GetCursor(0,i++)) <funclink>Message</funclink>("Hurra!", i);</code>
+				<code>var pCrew,i; <funcLink>while</funcLink> (pCrew=GetCursor(0,i++)) <funcLink>Message</funcLink>("Hurra!", i);</code>
 				<text>Gibt eine Nachricht über allen ausgewählten Clonks des ersten Spielers aus.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>GetHiRank</funclink>
-			<funclink>GetCrew</funclink>
+			<funcLink>GetHiRank</funcLink>
+			<funcLink>GetCrew</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2003-02</date>

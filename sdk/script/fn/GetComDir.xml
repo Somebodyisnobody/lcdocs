@@ -13,12 +13,12 @@
                                 <param><type>object</type><name>pObj</name><desc>Objekt dessen ComDir abgefragt werden soll. 0 bei lokalem Aufruf.</desc><optional /></param>
                         </params>
                 </syntax>
-                <desc>Liefert die aktuelle Befehlsrichtung eines Objekts. Diese gibt die momentane, beabsichtigte Bewegungsrichtung an. Die Auswirkung dieser Richtung hängt von der <emlink href="definition/procedures.html">Prozedur</emlink> der aktuellen <emlink href="definition/actmap.html">Aktivität</emlink> ab.</desc>
+                <desc>Liefert die aktuelle Befehlsrichtung eines Objekts. Diese gibt die momentane, beabsichtigte Bewegungsrichtung an. Die Auswirkung dieser Richtung hängt von der <emLink href="definition/procedures.html">Prozedur</emLink> der aktuellen <emLink href="definition/actmap.html">Aktivität</emLink> ab.</desc>
                 <related>
-      <emlink href="definition/procedures.html">Prozeduren</emlink>
-      <funclink>SetComDir</funclink>
-      <funclink>GetDir</funclink>
-      <funclink>GetProcedure</funclink>
+      <emLink href="definition/procedures.html">Prozeduren</emLink>
+      <funcLink>SetComDir</funcLink>
+      <funcLink>GetDir</funcLink>
+      <funcLink>GetProcedure</funcLink>
                 </related>
         </func>
         <author>Cucaracha</author><date>2002-05</date>

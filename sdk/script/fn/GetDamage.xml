@@ -16,13 +16,13 @@
     <desc>Fragt den Schadenswert eines Objekts ab.</desc>
     <examples>
       <example>
-        <code><funclink>if</funclink>(GetDamage() > 100) <funclink>Split2Components</funclink>();</code>
+        <code><funcLink>if</funcLink>(GetDamage() > 100) <funcLink>Split2Components</funcLink>();</code>
         <text>Zerlegt das aufrufende Objekt, falls es zu viel Schaden genommen hat.</text>
       </example>
     </examples>
     <related>
-      <funclink>DoDamage</funclink>
-      <funclink>DoEnergy</funclink>
+      <funcLink>DoDamage</funcLink>
+      <funcLink>DoEnergy</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2002-05</date>

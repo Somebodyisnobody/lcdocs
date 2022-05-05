@@ -25,23 +25,23 @@
   </syntax>
 
   <desc>Überträgt die Infosektion von einem anderen Objekt zu pFrom bzw. dem aufrufenden Objekt. Die Infosektion enthält Namen, Rang, permantente Physicals, usw. Mit diesem Befehl lassen sich beispielsweise Wiederbelebungen realisieren, indem einfach beim Tod eines Clonks ein neuer erstellt und die Infosektion übertragen wird.</desc>
-  <remark>Der Befehl impliziert ein <funclink>MakeCrewMember</funclink> zum bestizenden Spieler. Der Clonk sollte also nicht schon vor dem Aufruf mit MakeCrewMember zur Spielercrew hinzugefügt werden, weil dadurch jeweils ein neuer Clonk aus der Crew eingestellt und sofort wieder entlassen würde.</remark>
+  <remark>Der Befehl impliziert ein <funcLink>MakeCrewMember</funcLink> zum bestizenden Spieler. Der Clonk sollte also nicht schon vor dem Aufruf mit MakeCrewMember zur Spielercrew hinzugefügt werden, weil dadurch jeweils ein neuer Clonk aus der Crew eingestellt und sofort wieder entlassen würde.</remark>
 
   <examples>
    <example>
 <code>protected Death:
-  var newclnk = <funclink>CreateObject</funclink>(<funclink>GetID</funclink>(), <funclink>Random</funclink>(<funclink>LandscapeWidth</funclink>())-<funclink>GetX</funclink>(), <funclink>Random</funclink>(<funclink>LandscapeHeight</funclink>())-<funclink>GetY</funclink>(), <funclink>GetOwner</funclink>());
-  GrabObjectInfo(<funclink>this</funclink>(), newclnk);
-  <funclink>return</funclink>(1);</code>
+  var newclnk = <funcLink>CreateObject</funcLink>(<funcLink>GetID</funcLink>(), <funcLink>Random</funcLink>(<funcLink>LandscapeWidth</funcLink>())-<funcLink>GetX</funcLink>(), <funcLink>Random</funcLink>(<funcLink>LandscapeHeight</funcLink>())-<funcLink>GetY</funcLink>(), <funcLink>GetOwner</funcLink>());
+  GrabObjectInfo(<funcLink>this</funcLink>(), newclnk);
+  <funcLink>return</funcLink>(1);</code>
     <text>Dieser Teil eines Objektscripts sorgt dafür, dass ein Clonk bei seinem Tod irgendwo in der Landschaft neu erstellt wird, und unter demselben Namen und mit denselben Physicals weiterspielen kann.</text>
    </example>
   </examples>
   <related>
-   <funclink>MakeCrewMember</funclink>
-   <funclink>Kill</funclink>
-   <funclink>GetCrew</funclink>
-   <funclink>CrewMember</funclink>
-   <constlink constGroup="OCF">OCF_CrewMember</constlink>
+   <funcLink>MakeCrewMember</funcLink>
+   <funcLink>Kill</funcLink>
+   <funcLink>GetCrew</funcLink>
+   <funcLink>CrewMember</funcLink>
+   <constLink constGroup="OCF">OCF_CrewMember</constLink>
   </related>
  </func>
  <author>Sven2</author><date>2002-05</date>

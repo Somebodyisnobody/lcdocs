@@ -17,7 +17,7 @@
     <desc>Gibt eine ungenutzte Overlay-ID zurück. Es wird der erste freie Overlay nach iBaseIndex zurückgegeben.</desc>
     <remark>Die Basisgrafik zählt nicht als Overlay, also sollte iBaseIndex mindestens 1 sein.</remark>
     <related>
-      <funclink>SetGraphics</funclink>
+      <funcLink>SetGraphics</funcLink>
     </related>
   </func>
   <author>Clonkonaut</author><date>2008-05</date>

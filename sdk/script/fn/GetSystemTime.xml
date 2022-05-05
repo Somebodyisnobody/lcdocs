@@ -34,12 +34,12 @@
 			<example>
 				<code>func SageUhrzeit()
 {
-	<funclink>Message</funclink>("Die momentane Uhrzeit ist: %02d:%02d:%02d", <funclink>this</funclink>(), GetSystemTime(4), GetSystemTime(5), GetSystemTime(6));
+	<funcLink>Message</funcLink>("Die momentane Uhrzeit ist: %02d:%02d:%02d", <funcLink>this</funcLink>(), GetSystemTime(4), GetSystemTime(5), GetSystemTime(6));
 }</code>
 			</example>
 		</examples>
 		<related>
-			<funclink>GetTime</funclink>
+			<funcLink>GetTime</funcLink>
 		</related>
 	</func>
 	<author>Peter</author><date>2002-08</date>

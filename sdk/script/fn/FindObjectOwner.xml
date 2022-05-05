@@ -18,23 +18,23 @@
 				<param><type>int</type><name>iHgt</name><desc>Suchrechteck Höhe</desc><optional /></param>
 				<param><type>int</type><name>dwOCF</name><desc>Objektattribute. Es werden nur Objekte gefunden, die alle angegebenen Objektattribute besitzen. 0 findet alle Objekte.</desc><optional /></param>
 				<param><type>string</type><name>szAction</name><desc>Aktivität des zu findenden Objekts</desc><optional /></param>
-				<param><type>object</type><name>pActionTarget</name><desc>Aktivitätsziel, das das Objekt besitzen muss. Siehe dazu auch <funclink>SetAction</funclink>, <funclink>GetActionTarget</funclink></desc><optional /></param>
+				<param><type>object</type><name>pActionTarget</name><desc>Aktivitätsziel, das das Objekt besitzen muss. Siehe dazu auch <funcLink>SetAction</funcLink>, <funcLink>GetActionTarget</funcLink></desc><optional /></param>
 				<param><type>object</type><name>pFindNext</name><desc>Objekt, hinter dem die Suche begonnen wird. Über diesen Parameter können in einer Schleife alle Objekte gefunden werden, die den Suchkriterien entsprechen.</desc><optional /></param>
 			</params>
 		</syntax>
-		<desc>Sucht Objekte nach ihrem Besitzer und anderen Kriterien, analog zu <funclink>FindObject</funclink>.</desc>
+		<desc>Sucht Objekte nach ihrem Besitzer und anderen Kriterien, analog zu <funcLink>FindObject</funcLink>.</desc>
 		<examples>
 			<example>
-				<code><funclink>RemoveObject</funclink>(FindObjectOwner(FLAG, 0));</code>
+				<code><funcLink>RemoveObject</funcLink>(FindObjectOwner(FLAG, 0));</code>
 				<text>Entfernt die Flagge des ersten Spielers.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>FindObject</funclink>
-			<funclink>FindObject2</funclink>
-			<funclink>FindObjects</funclink>
-			<funclink>GetOwner</funclink>
-			<funclink>SetOwner</funclink>
+			<funcLink>FindObject</funcLink>
+			<funcLink>FindObject2</funcLink>
+			<funcLink>FindObjects</funcLink>
+			<funcLink>GetOwner</funcLink>
+			<funcLink>SetOwner</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

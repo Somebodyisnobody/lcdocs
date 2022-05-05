@@ -10,7 +10,7 @@
 		<syntax>
 			<rtype>void</rtype>
 		</syntax>
-		<desc>Siehe <emlink href="script/for.html">Die For-Schleife</emlink></desc>
+		<desc>Siehe <emLink href="script/for.html">Die For-Schleife</emLink></desc>
 	</func>
 	<author>jwk</author><date>2002-04</date>
 </clonkDoc>

@@ -22,12 +22,12 @@
 		<dt id="Graphicspng"><img src="../../images/icon_image.gif" width="16" height="16"/>Graphics.png</dt>
 		<dd>
 			<text>Partikelgrafik.</text>
-			<text>Zusätzlich dazu sind natürlich auch alle von <emlink href="definition/index.html">Objektdefinitionen</emlink> bekannten Elemente für das Frontend verfügbar (also z.B. Title.bmp, DescDE/US.txt, etc.)</text>
+			<text>Zusätzlich dazu sind natürlich auch alle von <emLink href="definition/index.html">Objektdefinitionen</emLink> bekannten Elemente für das Frontend verfügbar (also z.B. Title.bmp, DescDE/US.txt, etc.)</text>
 		</dd>
 	</dl>
 	
 	<h id="Particletxt">Particle.txt</h>
-	<text>In dieser Datei werden - analog zur <emlink href="definition/defcore.html">DefCore.txt</emlink> bei <emlink href="definition/index.html">Objektdefinitionen</emlink> - die Eigenschaften des Partikeltyps beschrieben.</text>
+	<text>In dieser Datei werden - analog zur <emLink href="definition/defcore.html">DefCore.txt</emLink> bei <emLink href="definition/index.html">Objektdefinitionen</emLink> - die Eigenschaften des Partikeltyps beschrieben.</text>
 	<text><table activateBitmask="false" bitmaskName="">
 		<caption id="SektionDefCore">Sektion [Particle]</caption>
 		<rowh>
@@ -157,7 +157,7 @@
 	<text>Jedes Partikel hat eine Position (x, y), Impulse horizontal (xdir) und vertikal (ydir), sowie eine Lebenszeit (life) und zwei Extraparameter (a und b). Diese werden von den <a href="#funcs">Partikelfunktionen</a> verwaltet, und können bei der Erzeugung im Script nur mit Startwerten versehen werden. Für die Bedeutung der Attribute im Einzelnen siehe <a href="#funcs">Partikelfunktionen</a> und <a href="#drawfuncs">Zeichenfunktionen</a>.</text>
 	
 	<h id="face">Grafik</h>
-	<text>Die Koordinaten für das Zielrechteck der Grafik in die Graphics.png sind vergleichbar mit Face in der <emlink href="definition/actmap.html">ActMap.txt</emlink>. Die geben nur die erste Animationsphase an, und alle weiteren Phasen sollten rechts (Bei Rauch auch unterhalb) davon liegen; die Animationslänge wird automatisch aus der Größe der Grafik ermittelt. Für das Grafikoffset sollte normalerweise die halbe Objektgröße angegeben werden, da das Standardoffset 0/0 bedeuten würde, dass das die Grafik rechts unterhalb der eigentlichen Partikelposition gezeichnet wird.</text>
+	<text>Die Koordinaten für das Zielrechteck der Grafik in die Graphics.png sind vergleichbar mit Face in der <emLink href="definition/actmap.html">ActMap.txt</emLink>. Die geben nur die erste Animationsphase an, und alle weiteren Phasen sollten rechts (Bei Rauch auch unterhalb) davon liegen; die Animationslänge wird automatisch aus der Größe der Grafik ermittelt. Für das Grafikoffset sollte normalerweise die halbe Objektgröße angegeben werden, da das Standardoffset 0/0 bedeuten würde, dass das die Grafik rechts unterhalb der eigentlichen Partikelposition gezeichnet wird.</text>
 	<text>Wenn für Delay 0 angegeben ist, wird bei der Initialisierung eine zufällige Animationsphase ausgesucht, und beibehalten. Das Partikel existiert dann, bis es aus der Landschaft geflogen ist.</text>
 	
 	<h id="maxcount">Mengenkontrolle</h>
@@ -208,7 +208,7 @@
 	</dl>
 	
 	<h id="control">Kontrolle</h>
-	<text>Die externe Kontrolle von Partikeln beschränkt sich auf wenige Funktionen zur Erzeugung, Gesamtverschiebung und Gesamtzerstörung. Das muss so sein, da Partikel nicht syncrelevant sind, und damit so gut wie gar nicht vom Script aus abfragbar sein können (ansonsten würden unterschiedliche Effektmengen im Netzwerk zu Desyncs führen). Partikel werden mit <funclink>CreateParticle</funclink> erschaffen.</text>
+	<text>Die externe Kontrolle von Partikeln beschränkt sich auf wenige Funktionen zur Erzeugung, Gesamtverschiebung und Gesamtzerstörung. Das muss so sein, da Partikel nicht syncrelevant sind, und damit so gut wie gar nicht vom Script aus abfragbar sein können (ansonsten würden unterschiedliche Effektmengen im Netzwerk zu Desyncs führen). Partikel werden mit <funcLink>CreateParticle</funcLink> erschaffen.</text>
 </part>
 
 </doc><author>Sven2</author><date>2002-04</date>

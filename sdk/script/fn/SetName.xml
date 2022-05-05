@@ -54,15 +54,15 @@
    <example>
 <code>protected func InitializePlayer(iPlr)
   {
-  SetName("Strunzmuffel", <funclink>GetHiRank</funclink>(iPlr));
-  <funclink>return</funclink>(1);
+  SetName("Strunzmuffel", <funcLink>GetHiRank</funcLink>(iPlr));
+  <funcLink>return</funcLink>(1);
   }</code>
     <text>Szenarioscript: Die höchstrangigen Clonks neu beitretender Spieler heißen in dieser Runde anders. <!--werden umgetauft (Und bleiben es auch nach Beenden der Runde!).--></text>
    </example>
   </examples>
   <related>
-   <funclink>MakeCrewMember</funclink>
-   <funclink>GetName</funclink>
+   <funcLink>MakeCrewMember</funcLink>
+   <funcLink>GetName</funcLink>
   </related>
  </func>
  <author>Sven2</author><date>2003-06</date>

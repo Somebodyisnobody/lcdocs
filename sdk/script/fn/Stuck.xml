@@ -16,14 +16,14 @@
 		<desc>Ermittelt, ob ein Objekt feststeckt, d.h., ob sich einer seiner Vertices in festem Material befindet.</desc>
 		<examples>
 			<example>
-				<code><funclink>if</funclink>(Stuck(<funclink>GetCursor</funclink>())) <funclink>Message</funclink>("Help!, <funclink>GetCursor</funclink>());</code>
+				<code><funcLink>if</funcLink>(Stuck(<funcLink>GetCursor</funcLink>())) <funcLink>Message</funcLink>("Help!, <funcLink>GetCursor</funcLink>());</code>
 				<text>Lässt eine Nachricht über dem ausgewählten Clonk des ersten Spielers ausgeben, wenn dieser zum Zeitpunkt des Aufrufes feststeckt.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>GetContact</funclink>
-			<funclink>GetVertex</funclink>
-			<funclink>GetMaterial</funclink>
+			<funcLink>GetContact</funcLink>
+			<funcLink>GetVertex</funcLink>
+			<funcLink>GetMaterial</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-08</date>

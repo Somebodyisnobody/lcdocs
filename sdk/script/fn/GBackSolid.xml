@@ -17,16 +17,16 @@
 		<desc>Überprüft ob sich an angegebener Position in der Landschaft feste Materie befindet. Also alles wo Objekte nicht durchkönnen.</desc>
 		<examples>
 			<example>
-				<code>var obj=<funclink>FindObject</funclink>(ROCK);
-while(GBackSolid(<funclink>GetX</funclink>(obj)<emlink href="script/operatoren.html">-</emlink><funclink>GetX</funclink>(),<funclink>GetY</funclink>(obj)<emlink href="script/operatoren.html">-</emlink><funclink>GetY</funclink>())) <funclink>SetPosition</funclink>(<funclink>GetX</funclink>(obj),<funclink>GetY</funclink>(obj)<emlink href="script/operatoren.html">-</emlink>1,obj);</code>
+				<code>var obj=<funcLink>FindObject</funcLink>(ROCK);
+while(GBackSolid(<funcLink>GetX</funcLink>(obj)<emLink href="script/operatoren.html">-</emLink><funcLink>GetX</funcLink>(),<funcLink>GetY</funcLink>(obj)<emLink href="script/operatoren.html">-</emLink><funcLink>GetY</funcLink>())) <funcLink>SetPosition</funcLink>(<funcLink>GetX</funcLink>(obj),<funcLink>GetY</funcLink>(obj)<emLink href="script/operatoren.html">-</emLink>1,obj);</code>
 				<text>Dieses kleine Stückchen Script versetzt einen Stein an die Oberfläche oder auf den Grund eines Sees.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>GBackLiquid</funclink>
-			<funclink>GBackSemiSolid</funclink>
-			<funclink>GBackSky</funclink>
-			<funclink>GetMaterial</funclink>
+			<funcLink>GBackLiquid</funcLink>
+			<funcLink>GBackSemiSolid</funcLink>
+			<funcLink>GBackSky</funcLink>
+			<funcLink>GetMaterial</funcLink>
 		</related>
 	</func>
 	<author>Günther</author><date>2002-04</date>

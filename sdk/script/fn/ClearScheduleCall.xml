@@ -14,17 +14,17 @@
         <param><type>string</type><name>szFunction</name><desc>Name der Funktion, die durch die abzubrechenden Aufrufe aufgerufen würde.</desc></param>
       </params>
     </syntax>
-    <desc>Bricht durch <funclink>ScheduleCall</funclink> erzeugte verzögerte Funktionsaufrufe ab. Alle momentan wartenden Funktionsaufrufe an
+    <desc>Bricht durch <funcLink>ScheduleCall</funcLink> erzeugte verzögerte Funktionsaufrufe ab. Alle momentan wartenden Funktionsaufrufe an
 		     die angegebene Funktion und das angegebene Objekt werden abgebrochen.</desc>
     <examples>
       <example>
-				<code>ClearScheduleCall(<funclink>FindObject</funclink>(CLNK), "Redefine");</code>
+				<code>ClearScheduleCall(<funcLink>FindObject</funcLink>(CLNK), "Redefine");</code>
 				<text>Bricht alle verzögerten "Redefine"-Aufrufe an den ersten Clonk ab.</text>
 			</example>
 		</examples>
     <related>
-      <funclink>Schedule</funclink>
-      <funclink>ScheduleCall</funclink>
+      <funcLink>Schedule</funcLink>
+      <funcLink>ScheduleCall</funcLink>
     </related>
   </func>
   <author>PeterW</author><date>2005-08</date>

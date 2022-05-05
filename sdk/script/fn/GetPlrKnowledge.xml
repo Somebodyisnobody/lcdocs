@@ -19,17 +19,17 @@
 		<desc>Bei angegebenen id gibt die Funktion TRUE zurück, wenn der Spieler den Bauplan des betreffenden herstellbaren Objekts besitzt. iIndex und dwCategory werden hierbei ignoriert. Wird als id Null übergeben, liefert die Funktion den indizierten Bauplan der entsprechenden Kategorie des Spielers.</desc>
 		<examples>
 			<example>
-				<code><funclink>if</funclink>(GetPlrKnowledge(0,HUT1))
-	<funclink>Message</funclink>("Spieler %s kann Bambushütten bauen",0,<funclink>GetPlayerName</funclink>(0));</code>
+				<code><funcLink>if</funcLink>(GetPlrKnowledge(0,HUT1))
+	<funcLink>Message</funcLink>("Spieler %s kann Bambushütten bauen",0,<funcLink>GetPlayerName</funcLink>(0));</code>
 				<text>Gibt einen Text aus, falls der erste Spieler sich im Besitz des Bauplanes für Bambushütten befindet.</text>
-				<code>var def = GetPlrKnowledge( 0,0,4,<constlink constGroup="C4D">C4D_Structure</constlink>) );
-<funclink>Message</funclink>("Der fünfte Gebäude-Bauplan des Spielers ist %i",0,def);</code>
+				<code>var def = GetPlrKnowledge( 0,0,4,<constLink constGroup="C4D">C4D_Structure</constLink>) );
+<funcLink>Message</funcLink>("Der fünfte Gebäude-Bauplan des Spielers ist %i",0,def);</code>
 				<text></text>
 			</example>
 		</examples>
 		<related>
-			<funclink>SetPlrKnowledge</funclink>
-			<constlink constGroup="C4D"></constlink>
+			<funcLink>SetPlrKnowledge</funcLink>
+			<constLink constGroup="C4D"></constLink>
 		</related>
 	</func>
 	<author>Günther</author><date>2002-02</date>

@@ -10,19 +10,19 @@
 		<syntax>
 			<rtype>int</rtype>
 			<params>
-				<param><type>int</type><name>iDir</name><desc>Aktionsrichtung. Vordefinierte Werte: <constlink constGroup="DIR">DIR_Right</constlink> / <constlink constGroup="DIR">DIR_Left</constlink></desc></param>
+				<param><type>int</type><name>iDir</name><desc>Aktionsrichtung. Vordefinierte Werte: <constLink constGroup="DIR">DIR_Right</constLink> / <constLink constGroup="DIR">DIR_Left</constLink></desc></param>
 				<param><type>object</type><name>pObj</name><desc>Objekt, dessen Richtung gesetzt werden soll. 0 bei lokalem Aufruf.</desc><optional/></param>
 			</params>
 		</syntax>
 		<desc>Setzt die Richtung eines Objekts.</desc>
-		<remark>SetDir beeinflusst nur die grafische Darstellung das Objekts; für Veränderung der Bewegungsrichtung ist <funclink>SetComDir</funclink> zuständig!</remark>
-		<remark>Wenn bei der Aktion mehr als zwei Richtungen angegeben werden (siehe <emlink href="definition/actmap.html">ActMap.txt</emlink>), dürfen auch andere Werte als <constlink constGroup="DIR">DIR_Right</constlink>
-						und <constlink constGroup="DIR">DIR_Left</constlink> übergeben werden.</remark>
+		<remark>SetDir beeinflusst nur die grafische Darstellung das Objekts; für Veränderung der Bewegungsrichtung ist <funcLink>SetComDir</funcLink> zuständig!</remark>
+		<remark>Wenn bei der Aktion mehr als zwei Richtungen angegeben werden (siehe <emLink href="definition/actmap.html">ActMap.txt</emLink>), dürfen auch andere Werte als <constLink constGroup="DIR">DIR_Right</constLink>
+						und <constLink constGroup="DIR">DIR_Left</constLink> übergeben werden.</remark>
 		<related>
-			<funclink>GetDir</funclink>
-			<constlink constGroup="DIR">DIR_Left</constlink>
-			<constlink constGroup="DIR">DIR_Right</constlink>
-			<funclink>SetAction</funclink>
+			<funcLink>GetDir</funcLink>
+			<constLink constGroup="DIR">DIR_Left</constLink>
+			<constLink constGroup="DIR">DIR_Right</constLink>
+			<funcLink>SetAction</funcLink>
 		</related>
 	</func>
 	<author>jwk</author><date>2002-08</date>

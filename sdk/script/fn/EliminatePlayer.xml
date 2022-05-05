@@ -17,12 +17,12 @@
 		<desc>Eliminiert einen Spieler. Die Runde gilt für diesen Spieler als verloren.</desc>
 		<examples>
 			<example>
-				<code>if (!<funclink>FindObjectOwner</funclink>(FLAG, 0)) EliminatePlayer(0);</code>
+				<code>if (!<funcLink>FindObjectOwner</funcLink>(FLAG, 0)) EliminatePlayer(0);</code>
 				<text>Wenn der erste Spieler keine Flagge mehr hat, wird er eliminiert.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>GameOver</funclink>
+			<funcLink>GameOver</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

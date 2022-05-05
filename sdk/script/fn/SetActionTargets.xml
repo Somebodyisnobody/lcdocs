@@ -15,20 +15,20 @@
 				<param><type>object</type><name>pObj</name><desc>Objekt, dessen Zielobjekte gesetzt werden sollen. 0 bei lokalem Aufruf.</desc><optional /></param>
 			</params>
 		</syntax>
-		<desc>Setzt die aktuellen Aktivitätszielobjekte eines Objekts. Die Auswirkung der Zielobjekte richtet sich nach der <emlink href="definition/procedures.html">Prozedur</emlink> der aktuell gesetzten Aktivität.</desc>
+		<desc>Setzt die aktuellen Aktivitätszielobjekte eines Objekts. Die Auswirkung der Zielobjekte richtet sich nach der <emLink href="definition/procedures.html">Prozedur</emLink> der aktuell gesetzten Aktivität.</desc>
 		<examples>
 			<example>
 				<code>protected func Entrance(pIntoObj)
   {
-  <funclink>return</funclink>(SetActionTargets(pIntoObj));
+  <funcLink>return</funcLink>(SetActionTargets(pIntoObj));
   }</code>
 				<text>Scriptteil für einen Schildzauber, der gerade eine ATTACH-Aktivität ausführt: Wenn der tragende Clonk ein Gebäude betritt, klebt er sich an dieses Gebäude. Das Script sorgt allerdings nicht dafür, dass sich der Zauber wieder an den Clonk klebt, wenn dieser das Gebäude verlässt.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>GetAction</funclink>
-			<funclink>GetActionTarget</funclink>
-			<funclink>GetProcedure</funclink>
+			<funcLink>GetAction</funcLink>
+			<funcLink>GetActionTarget</funcLink>
+			<funcLink>GetProcedure</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2003-06</date>

@@ -14,15 +14,15 @@
 			</params>
 		</syntax>
 		<desc>Suchkriterium: findet genau alle Objekte, die nicht das angegebene Kriterium erfüllen.</desc>
-		<remark>Für weitere Informationen und Beispiele zur Benutzung dieser Funktion sehe <funclink>FindObjects</funclink>.</remark>
+		<remark>Für weitere Informationen und Beispiele zur Benutzung dieser Funktion sehe <funcLink>FindObjects</funcLink>.</remark>
 		<examples>
 			<example>
-<code><funclink>FindObjects</funclink>(<funclink>Find_Distance</funclink>(50), Find_Not(<funclink>Find_Distance</funclink>(30))</code>
+<code><funcLink>FindObjects</funcLink>(<funcLink>Find_Distance</funcLink>(50), Find_Not(<funcLink>Find_Distance</funcLink>(30))</code>
 				<text>Ergibt eine Auflistung aller Objekte, die höchstens 50 - aber mehr als 30 - Pixel entfernt sind.</text>
 			</example>
 		</examples>		
 		<related>
-			<funclink>FindObjects</funclink>
+			<funcLink>FindObjects</funcLink>
 		</related>
 	</func>
 	<author>Clonkonaut</author><date>2006-07</date>

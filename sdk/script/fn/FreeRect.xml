@@ -21,14 +21,14 @@
     <remark>Der Befehl arbeitet bei groﬂen Bereichen nicht sehr schnell.</remark>
     <examples>
       <example>
-        <code>FreeRect(0, 0, <funclink>LandscapeWidth</funclink>(), <funclink>LandscapeHeight</funclink>());</code>
+        <code>FreeRect(0, 0, <funcLink>LandscapeWidth</funcLink>(), <funcLink>LandscapeHeight</funcLink>());</code>
         <text>Leert die Karte aus.</text>
       </example>
     </examples>
     <related>
-      <funclink>DigFree</funclink>
-      <funclink>DigFreeRect</funclink>
-      <funclink>Explode</funclink>
+      <funcLink>DigFree</funcLink>
+      <funcLink>DigFreeRect</funcLink>
+      <funcLink>Explode</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2001-11</date>

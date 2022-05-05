@@ -15,7 +15,7 @@
 		</syntax>
 		<desc>Liefert das Objekt, in dem sich pObj befindet. Rückgabewert Null, wenn pObj sich im Freien befindet.</desc>
 		<related>
-			<funclink>Contents</funclink>
+			<funcLink>Contents</funcLink>
 		</related>
 	</func>
 	<author>springer</author><date>2002-04</date>

@@ -20,15 +20,15 @@
 		<desc>Kauft ein Objekt für iForPlr, und zieht iPayPlr Geld ab. Wenn dieser nicht genug Geld oder das Objekt nicht im Heimatbasismaterial hat, wird der Vorgang nicht ausgeführt.</desc>
 		<examples>
 			<example>
-				<code>Buy(CNKT, 0, 0, <funclink>FindBase</funclink>(0), 1);</code>
+				<code>Buy(CNKT, 0, 0, <funcLink>FindBase</funcLink>(0), 1);</code>
 				<text>Kauft einen Stein in der Basis des ersten Spielers.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>Sell</funclink>
-			<funclink>GetWealth</funclink>
-			<funclink>GetBase</funclink>
-			<funclink>FindBase</funclink>
+			<funcLink>Sell</funcLink>
+			<funcLink>GetWealth</funcLink>
+			<funcLink>GetBase</funcLink>
+			<funcLink>FindBase</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

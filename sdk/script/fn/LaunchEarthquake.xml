@@ -24,8 +24,8 @@
     </syntax>
     <desc>Erzeugt einen Erdbeben an angegebener Stelle. Koordinaten auch bei lokalem Aufruf global</desc>
     <related>
-      <funclink>LaunchLightning</funclink>
-      <funclink>LaunchVolcano</funclink>
+      <funcLink>LaunchLightning</funcLink>
+      <funcLink>LaunchVolcano</funcLink>
     </related>
   </func>
   <author>PeterW</author><date>2001-11</date>

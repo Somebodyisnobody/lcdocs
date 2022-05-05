@@ -39,13 +39,13 @@
   <examples>
    <example>
     <code>Timer:
-  for(var i=0; i&lt;<funclink>GetPlayerCount</funclink>(); i++)
-    SetPlrExtraData(i, "MySzen_Wealth", <funclink>GetWealth</funclink>(i));
+  for(var i=0; i&lt;<funcLink>GetPlayerCount</funcLink>(); i++)
+    SetPlrExtraData(i, "MySzen_Wealth", <funcLink>GetWealth</funcLink>(i));
   return();
 
 Initialize:
-  for(var i=0; i&lt;<funclink>GetPlayerCount</funclink>(); i++)
-    <funclink>SetWealth</funclink>(i, <funclink>GetPlrExtraData</funclink>(i, "MySzen_Wealth"));
+  for(var i=0; i&lt;<funcLink>GetPlayerCount</funcLink>(); i++)
+    <funcLink>SetWealth</funcLink>(i, <funcLink>GetPlrExtraData</funcLink>(i, "MySzen_Wealth"));
   return();
   </code>
     <text>Die erste Funktion speichert periodisch das Vermögen unter dem Namen "MySzen_Wealth" in dem entspr. Spieler ab. Wird die Runde nun neu gestartet und das Objekt
@@ -53,8 +53,8 @@ Initialize:
    </example>
   </examples>
   <related>
-   <funclink>GetPlrExtraData</funclink>
-   <funclink>SetCrewExtraData</funclink>
+   <funcLink>GetPlrExtraData</funcLink>
+   <funcLink>SetCrewExtraData</funcLink>
   </related>
  </func>
  <author>PeterW</author><date>2002-01</date>

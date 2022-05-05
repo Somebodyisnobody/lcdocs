@@ -19,14 +19,14 @@
 		</syntax>
 		<desc>Setzt Zusatzparameter für eine aktuell ausgeführte BRIDGE-Prozedur.</desc>
 		<related>
-			<funclink>SetAction</funclink>
-			<funclink>ObjectSetAction</funclink>
-			<funclink>SetActionData</funclink>
-			<funclink>GetAction</funclink>
-			<funclink>GetActionTarget</funclink>
-			<funclink>SetPhase</funclink>
-			<funclink>SetDir</funclink>
-			<funclink>SetComDir</funclink>
+			<funcLink>SetAction</funcLink>
+			<funcLink>ObjectSetAction</funcLink>
+			<funcLink>SetActionData</funcLink>
+			<funcLink>GetAction</funcLink>
+			<funcLink>GetActionTarget</funcLink>
+			<funcLink>SetPhase</funcLink>
+			<funcLink>SetDir</funcLink>
+			<funcLink>SetComDir</funcLink>
 		</related>
 	</func>
 	<author>Clonkonaut</author><date>2008-05</date>

@@ -40,7 +40,7 @@
 				<text>Rotiert das Objekt ohne es tatsächlich zu rotieren (Vertices usw. bleiben da wo sie sind).</text>
 			</example>
 			<example>
-				<code>SetObjDrawTransform(1000,0,0,0,-1000,0,<funclink>GetHiRank</funclink>(0));</code>
+				<code>SetObjDrawTransform(1000,0,0,0,-1000,0,<funcLink>GetHiRank</funcLink>(0));</code>
 				<text>Dreht den höchstrangigsten Clonk des ersten Spielers um, so dass er auf dem Kopf steht.</text>
 			</example>
 			<example>

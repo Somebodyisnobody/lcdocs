@@ -20,16 +20,16 @@
 		<examples>
 			<example>
 
-<code>var bgmat=<funclink>GetMaterial</funclink>(<funclink>GetX</funclink>(<funclink>GetCursor</funclink>(0)), <funclink>GetY</funclink>(<funclink>GetCursor</funclink>(0))+12));
-<funclink>SetSkyFade</funclink>(GetMaterialColor(bgmat,0,0),GetMaterialColor(bgmat,0,1),GetMaterialColor(bgmat,0,2),GetMaterialColor(bgmat,1,0),GetMaterialColor(bgmat,1,1),GetMaterialColor(bgmat,1,2));
+<code>var bgmat=<funcLink>GetMaterial</funcLink>(<funcLink>GetX</funcLink>(<funcLink>GetCursor</funcLink>(0)), <funcLink>GetY</funcLink>(<funcLink>GetCursor</funcLink>(0))+12));
+<funcLink>SetSkyFade</funcLink>(GetMaterialColor(bgmat,0,0),GetMaterialColor(bgmat,0,1),GetMaterialColor(bgmat,0,2),GetMaterialColor(bgmat,1,0),GetMaterialColor(bgmat,1,1),GetMaterialColor(bgmat,1,2));
 </code>
 
 				<text>Setzt die Himmelsfarben nach dem Material, auf dem der geraude ausgewählte Clonks des ersten Spielers steht.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>SetMaterialColor</funclink>
-			<funclink>Material</funclink>
+			<funcLink>SetMaterialColor</funcLink>
+			<funcLink>Material</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

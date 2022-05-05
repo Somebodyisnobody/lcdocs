@@ -7,7 +7,7 @@
 <doc>
 <title>Sort_*</title>
 <h>Sort_*</h>
-<text>Die Sort_* - Funktionen dienen dem Sortieren von Suchergebnissen von <funclink>FindObjects</funclink>.</text>
+<text>Die Sort_* - Funktionen dienen dem Sortieren von Suchergebnissen von <funcLink>FindObjects</funcLink>.</text>
 <text><table activateBitmask="false" bitmaskName="">
 	<rowh><col>Name</col><col>Beschreibung</col></rowh>
 	<row><col>Sort_Reverse(array sort)</col><col>Sortiert entsprechend den in sort angegebenen Sortierspezifikationen aber in umgekehrter Reihenfolge.</col></row>

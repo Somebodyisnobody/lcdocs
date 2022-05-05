@@ -26,13 +26,13 @@
     <remark>Die Eckpunkte des Polygons sollten rechtsherum angegeben werden, und die Polygonkanten sollten sich nicht kreuzen. Für komplexere Formen kann die Funktion einfach mehrfach aufgerufen werden.</remark>
     <examples>
       <example>
-        <code>DrawMaterialQuad("Gold-Rough", 0,0, <funclink>LandscapeWidth</funclink>()-1,0, <funclink>LandscapeWidth</funclink>()-1,<funclink>LandscapeHeight</funclink>()-1, 0,<funclink>LandscapeHeight</funclink>()-1);</code>
+        <code>DrawMaterialQuad("Gold-Rough", 0,0, <funcLink>LandscapeWidth</funcLink>()-1,0, <funcLink>LandscapeWidth</funcLink>()-1,<funcLink>LandscapeHeight</funcLink>()-1, 0,<funcLink>LandscapeHeight</funcLink>()-1);</code>
         <text>Füllt die gesamte Landschaft mit Gold.</text>
       </example>
     </examples>
     <related>
-      <funclink>InsertMaterial</funclink>
-      <funclink>SetLandscapePixel</funclink>
+      <funcLink>InsertMaterial</funcLink>
+      <funcLink>SetLandscapePixel</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2002-05</date>

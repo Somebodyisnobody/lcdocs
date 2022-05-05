@@ -16,14 +16,14 @@
 		<desc>Löst einen Error aus, der bei aktiviertem Debug-Modus im Log und als Nachricht erscheint. Die aktuelle Ausführung wird abgebrochen und der Stacktrace wird ausgegeben.</desc>
 		<examples>
 			<example>
-				<code><funclink>if</funclink>(!<funclink>GetLeague</funclink>()) FatalError("Scenario must be played in league!");</code>
+				<code><funcLink>if</funcLink>(!<funcLink>GetLeague</funcLink>()) FatalError("Scenario must be played in league!");</code>
 				<text>Gibt einen Fehler aus, wenn das Szenario nicht in der Liga gespielt wird.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>Format</funclink>
-			<funclink>Message</funclink>
-			<funclink>Log</funclink>
+			<funcLink>Format</funcLink>
+			<funcLink>Message</funcLink>
+			<funcLink>Log</funcLink>
 		</related>
 	</func>
 	<author>Fulgen / Clonk Wiki</author><date>2016-07</date>

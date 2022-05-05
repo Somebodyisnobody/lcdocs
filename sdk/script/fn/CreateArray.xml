@@ -15,8 +15,8 @@
 		</syntax>
 		<desc>Erzeugt ein neues, mit Nullen gefülltes Feld.</desc>
 		<related>
-			<funclink>SetLength</funclink>
-			<funclink>GetLength</funclink>
+			<funcLink>SetLength</funcLink>
+			<funcLink>GetLength</funcLink>
 		</related>
 	</func>
 	<author>Günther</author><date>2006-06</date>

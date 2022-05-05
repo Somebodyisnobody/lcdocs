@@ -255,7 +255,7 @@
 		<row>
 		 <col>3l</col>
 		 <col>??</col>
-		 <col>Liefert den nachgestellten Wert falls der vorangestellte nil ist, den vorangestellte andernfalls. ab <emlink href="script/Strict.html">#strict 3</emlink></col>
+		 <col>Liefert den nachgestellten Wert falls der vorangestellte nil ist, den vorangestellte andernfalls. ab <emLink href="script/Strict.html">#strict 3</emLink></col>
 		 <col>postfix</col>
 		 <col>any, any/any</col>
 		</row>
@@ -360,7 +360,7 @@
 	 <row>
 		 <col>2r</col>
 		 <col>??=</col>
-		 <col>Weist der vorangestellten Variable den nachgestellten Wert zu, falls, die vorangestellte Variable nil ist. ab <emlink href="script/Strict.html">#strict 3</emlink></col>
+		 <col>Weist der vorangestellten Variable den nachgestellten Wert zu, falls, die vorangestellte Variable nil ist. ab <emLink href="script/Strict.html">#strict 3</emLink></col>
 		 <col>postfix</col>
 		 <col>Referenz, Referenz/any</col>
 	 </row>
@@ -432,7 +432,7 @@ while(<strong>++Var(0)</strong> &lt; 10)
 
 		<h id="andor">Die Operatoren &amp;&amp; und ||</h>
 		<part>
-			<text>Diese beiden Operatoren haben (ab <emlink href="script/Strict.html">#strict 2</emlink>) eine Besonderheit. Wenn das Ergebnis bereits nach Auswertung des ersten Parameter feststeht, wird der zweite Parameter gar nicht erst ausgewertet. Beispielsweise explodiert ein Objekt durch dieses Script nicht, weil das Ergebnis 0 wäre, egal was Explode zurücklieferte:</text>
+			<text>Diese beiden Operatoren haben (ab <emLink href="script/Strict.html">#strict 2</emLink>) eine Besonderheit. Wenn das Ergebnis bereits nach Auswertung des ersten Parameter feststeht, wird der zweite Parameter gar nicht erst ausgewertet. Beispielsweise explodiert ein Objekt durch dieses Script nicht, weil das Ergebnis 0 wäre, egal was Explode zurücklieferte:</text>
 			<code>0 &amp;&amp; Explode(20);</code>
 			<text>Außerdem ist das Ergebnis des Operators der Wert des ersten oder zweiten Parameters, je nachdem ob einer oder beide ausgewertet wurden. Beispielsweise kann man so wenn möglich einen Ritter, und ansonsten einen Clonk erzeugen:</text>
 			<code>CreateObject(KNIG,0,0,GetOwner()) || CreateObject(CLNK,0,0,GetOwner())</code>
@@ -446,7 +446,7 @@ while(<strong>++Var(0)</strong> &lt; 10)
 				Im Gegensatz zu || wird explizit auf nil geprüft ohne den Wert in einen bool zu verwandeln.
 			</text>
 			<text>
-				Die Operatoren sind so wie nil nur ab <emlink href="script/Strict.html">#strict 3</emlink> verfügbar.
+				Die Operatoren sind so wie nil nur ab <emLink href="script/Strict.html">#strict 3</emLink> verfügbar.
 			</text>
 				<h>Beispiele:</h>
 				<code>
@@ -648,7 +648,7 @@ var settings = defaults .. { Message = "Hello there!", Italic = true };
 			<text>Dieser Wert ergibt im Binär-System: (kann mit Windows-Taschenrechner umgerechnet werden)</text>
 			<code>10001000000001000</code>
 			<text>Hier sieht man, dass Bit 3, Bit 12 und Bit 16 gesetzt sind (es wird von rechts gezählt und mit 0 begonnen)</text>
-			<text>Dies entspricht der Reihe nach den C4D-Werten <constlink constGroup="C4D">C4D_Living</constlink> (Objekt ist ein Lebewesen), C4D_SelectAnimal (Objekt kann im Menu für Lebewesen hinzugefügt werden) und  C4D_TradeLiving (Objekt ist ein Lebewesen, darf aber trotzdem verkauft werden).</text>
+			<text>Dies entspricht der Reihe nach den C4D-Werten <constLink constGroup="C4D">C4D_Living</constLink> (Objekt ist ein Lebewesen), C4D_SelectAnimal (Objekt kann im Menu für Lebewesen hinzugefügt werden) und  C4D_TradeLiving (Objekt ist ein Lebewesen, darf aber trotzdem verkauft werden).</text>
 			<text>Im Script kann nun recht einfach geprüft werden, ob ein bestimmtes Bit gesetzt ist: man benutzt den Operator "Und" (<code>&amp;</code>), dem man den Wert und die "Maske" übergibt. In der Maske ist nur das Bit gesetzt, dass von Interesse ist. Auf diese Weise müssen im Ergebnis alle Bits, die nicht interessieren, 0 sein (denn sie sind es in der Maske). Ist nun das Bit, das interressiert, 1, so wird diese in das Ergebnis übernommen, ist es 0, so wird im Ergebnis dort auch 0 stehen. Im letzteren Fall ist sogar das gesamte Ergebnis 0, da alle anderen Bits ja auch 0 sind. Es genügt also zu überprüfen, ob das Ergebnis von <code>[Val] &amp; [Mask]</code> ungleich null ist, um herauszufinden, ob ein bestimmtes Bit gesetzt ist.</text>
 
 			<h>Beispiel:</h>
@@ -694,7 +694,7 @@ var settings = defaults .. { Message = "Hello there!", Italic = true };
 			<text>Hier ist das Ergebnis 0, denn das Bit in der Maske ist nicht beim Wert gesetzt.</text>
 			<text>Es bleibt noch die Frage zu klären, wo man die entsprechende Maske denn herbekommt. Im Fall der Category-Werte sind diese bereits mit Namen mitgeliefert, sie können über <code>C4D_[XXX]</code> abgerufen werden. Wollte man z.B. herausfinden, ob es sich bei einem Objekt um ein Lebewesen handelt, so sähe der Script folgendermaßen aus:</text>
 
-<code>if (<funclink>GetCategory</funclink>() &amp; <constlink constGroup="C4D">C4D_Living</constlink>)
+<code>if (<funcLink>GetCategory</funcLink>() &amp; <constLink constGroup="C4D">C4D_Living</constLink>)
   ;...;</code>
 
 			<text>Auf diese Weise kann man also einzelne Bits gezielt prüfen. Doch wie soll man diese nun bearbeiten?	Will man ein einzelnes Bit <strong>setzen</strong>, so wird der Operator "Oder" (<code>|</code>) benutzt. Dieser wird wieder auf Wert und Maske angewendet:</text>
@@ -789,7 +789,7 @@ var settings = defaults .. { Message = "Hello there!", Italic = true };
 = 00000010000000010</code>
 
 			<text>Mathematisch entspricht der Operator &lt;&lt; der Multiplikation mit <code>2 ^ X</code> (genau wie im Zehnersystem das Anhängen einer Null mit einer Multiplikation mit 10 gleichkommt) und der Operator &gt;&gt; einer Division mit <code>2 ^ X</code> (mit anschließendem Abrunden).</text>
-			<text>Mit den Operatoren können vor allem Masken erstellt (1 &lt;&lt; BitNr), und <funclink>RGB</funclink>-Farbwerte zusammengesetzt und auseinandergenommen werden.</text>
+			<text>Mit den Operatoren können vor allem Masken erstellt (1 &lt;&lt; BitNr), und <funcLink>RGB</funcLink>-Farbwerte zusammengesetzt und auseinandergenommen werden.</text>
 		</part>
 	</part>
 </part>

@@ -19,14 +19,14 @@
 			<example>
 
 <code>var hut;
-<funclink>if</funclink> (hut=<funclink>FindObject</funclink>(HUT2)) <funclink>Exit</funclink>(FindContents(CLNK, hut), <funclink>GetX</funclink>(hut), <funclink>GetY</funclink>(hut));</code>
+<funcLink>if</funcLink> (hut=<funcLink>FindObject</funcLink>(HUT2)) <funcLink>Exit</funcLink>(FindContents(CLNK, hut), <funcLink>GetX</funcLink>(hut), <funcLink>GetY</funcLink>(hut));</code>
 				<text>Befördert einen Clonk aus einer Hütte heraus.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>FindOtherContents</funclink>
-			<funclink>Contents</funclink>
-			<funclink>FindObject</funclink>
+			<funcLink>FindOtherContents</funcLink>
+			<funcLink>Contents</funcLink>
+			<funcLink>FindObject</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

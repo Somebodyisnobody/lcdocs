@@ -18,18 +18,18 @@
     </desc>
 <examples>
                         <example>
-<code><funclink>for</funclink>(var i = 0; i &lt; <funclink>GetTeamCount</funclink>(); i++)
-  <funclink>Log</funclink>("Willkommen im Spiel, Spieler von %s", <funclink>GetTeamName</funclink>(GetTeamByIndex(i)));</code>
+<code><funcLink>for</funcLink>(var i = 0; i &lt; <funcLink>GetTeamCount</funcLink>(); i++)
+  <funcLink>Log</funcLink>("Willkommen im Spiel, Spieler von %s", <funcLink>GetTeamName</funcLink>(GetTeamByIndex(i)));</code>
                                 <text>Begrüßt alle Spieler anhand ihrer Teams im Log.</text>
                         </example>
                 </examples>
 	<related>
-		<emlink href="scenario/Teams.html">Teams</emlink>
-		<funclink>GetTeamColor</funclink>
-		<funclink>GetTeamName</funclink>
-		<funclink>GetPlayerTeam</funclink>
-		<funclink>GetTeamCount</funclink>
-		<funclink>GetTeamConfig</funclink>
+		<emLink href="scenario/Teams.html">Teams</emLink>
+		<funcLink>GetTeamColor</funcLink>
+		<funcLink>GetTeamName</funcLink>
+		<funcLink>GetPlayerTeam</funcLink>
+		<funcLink>GetTeamCount</funcLink>
+		<funcLink>GetTeamConfig</funcLink>
 	</related>
   </func>
   <author>Clonkonaut</author><date>2008-04</date>

@@ -16,7 +16,7 @@
 		<desc>Bildet den Absolutwert (Betrag), entfernt also das Vorzeichen des ersten Parameters.</desc>
 		<examples>
 			<example>
-				<code><funclink>Log</funclink>("Aktuelle Fluggeschwindigkeit: %d Clonks/min", Abs(<funclink>GetXDir</funclink>(<funclink>FindObject</funclink>(BLMP))));</code>
+				<code><funcLink>Log</funcLink>("Aktuelle Fluggeschwindigkeit: %d Clonks/min", Abs(<funcLink>GetXDir</funcLink>(<funcLink>FindObject</funcLink>(BLMP))));</code>
 				<text>Gibt die Fluggeschwindigkeit eines Luftschiffes aus.</text>
 			</example>
 		</examples>

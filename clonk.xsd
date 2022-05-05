@@ -339,13 +339,13 @@
     </xs:complexType>
     <xs:group name="htmlDocsLinks">
         <xs:choice>
-            <xs:element name="funclink" type="entityName"/>
-            <xs:element name="emlink">
+            <xs:element name="funcLink" type="entityName"/>
+            <xs:element name="emLink">
                 <xs:complexType mixed="true">
                     <xs:attribute name="href" use="required"/>
                 </xs:complexType>
             </xs:element>
-            <xs:element name="constlink">
+            <xs:element name="constLink">
                 <xs:complexType>
                     <xs:simpleContent>
                         <xs:extension base="xs:string">
@@ -354,7 +354,7 @@
                     </xs:simpleContent>
                 </xs:complexType>
             </xs:element>
-            <xs:element name="callbacklink" type="entityName"/>
+            <xs:element name="callbackLink" type="entityName"/>
         </xs:choice>
     </xs:group>
     <xs:complexType name="history">

@@ -5,11 +5,11 @@
 		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
 	<constGroup activateBitmask="false">
 		<title>SkyPar_Keep</title>
-		<description>Konstante für <funclink>SetSkyParallax</funclink>.</description>
+		<description>Konstante für <funcLink>SetSkyParallax</funcLink>.</description>
 		<const>
 			<name>SkyPar_Keep</name>
 			<category>Himmel</category>
-			<description>Konstante für <funclink>SetSkyParallax</funclink>.</description>
+			<description>Konstante für <funcLink>SetSkyParallax</funcLink>.</description>
 			<version>4.9.1.0 GWE</version>
 			<value>-163764</value>
 		</const>

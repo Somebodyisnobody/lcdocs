@@ -21,10 +21,10 @@
 protected func ControlSpecial()
 {
 	// Magersüchtig?
-	if(<funclink>GetMass</funclink>() &lt; 50) // Normalmasse des CLNK: 50
+	if(<funcLink>GetMass</funcLink>() &lt; 50) // Normalmasse des CLNK: 50
 		// Magensäure frisst sich nach aussen
-		<funclink>CastPXS</funclink>("Acid", 150, 30);
-<funclink>return</funclink>(1);
+		<funcLink>CastPXS</funcLink>("Acid", 150, 30);
+<funcLink>return</funcLink>(1);
 }		
 				</code>
 				<text>Magersucht</text>

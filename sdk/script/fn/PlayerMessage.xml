@@ -12,22 +12,22 @@
 			<params>
 				<param><type>int</type><name>iPlr</name><desc>Nummer des Spielers, bei dem die Nachricht ausgegeben wird</desc></param>
 				<param><type>string</type><name>szMessage</name><desc>Nachricht, die ausgegeben wird</desc></param>
-				<param><type>object</type><name>pObj</name><desc>Objekt, bei dem die Nachricht ausgegeben wird. Ohne angegebenes Objekt wird die Nachricht global (analog zu <funclink>PlrMessage</funclink>) ausgegeben.</desc><optional /></param>
-				<param><type>any</type><name>...</name><desc>Zusatzparameter, die die Nachricht formatieren. Siehe dazu auch <funclink>Format</funclink></desc><optional /></param>
+				<param><type>object</type><name>pObj</name><desc>Objekt, bei dem die Nachricht ausgegeben wird. Ohne angegebenes Objekt wird die Nachricht global (analog zu <funcLink>PlrMessage</funcLink>) ausgegeben.</desc><optional /></param>
+				<param><type>any</type><name>...</name><desc>Zusatzparameter, die die Nachricht formatieren. Siehe dazu auch <funcLink>Format</funcLink></desc><optional /></param>
 			</params>
 		</syntax>
-		<desc>Gibt eine Nachricht nur im Viewport eines Spielers aus. Die Nachrichtenformatierung erfolgt analog zu <funclink>Message</funclink>.</desc>
+		<desc>Gibt eine Nachricht nur im Viewport eines Spielers aus. Die Nachrichtenformatierung erfolgt analog zu <funcLink>Message</funcLink>.</desc>
 		<examples>
 			<example>
-				<code>var pCrsr; PlayerMessage(0, "Hallo, ich bin %s!", pCrsr=<funclink>GetCursor</funclink>(0), <funclink>GetName</funclink>(pCrsr));</code>
+				<code>var pCrsr; PlayerMessage(0, "Hallo, ich bin %s!", pCrsr=<funcLink>GetCursor</funcLink>(0), <funcLink>GetName</funcLink>(pCrsr));</code>
 				<text>Lässt den ausgewählten Clonk des ersten Spielers nur selbigen den Namen verraten.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>Message</funclink>
-			<funclink>PlrMessage</funclink>
-			<funclink>CustomMessage</funclink>
-			<funclink>AddMessage</funclink>
+			<funcLink>Message</funcLink>
+			<funcLink>PlrMessage</funcLink>
+			<funcLink>CustomMessage</funcLink>
+			<funcLink>AddMessage</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-08</date>

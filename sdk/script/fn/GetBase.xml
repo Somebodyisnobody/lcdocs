@@ -15,7 +15,7 @@
                 </syntax>
                 <desc>Liefert die Nummer des Spielers, dessen Heimatbasis pObj ist. Rückgabewert -1 wenn pObj keine Heimatbasis ist.</desc>
                 <related>
-                        <funclink>FindBase</funclink>
+                        <funcLink>FindBase</funcLink>
                 </related>
         </func>
         <author>jwk</author><date>2002-06</date>

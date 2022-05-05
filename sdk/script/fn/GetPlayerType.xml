@@ -28,16 +28,16 @@
   if (GetPlayerType(iPlr) == C4PT_Script)
     {
     // Dann ein KI-Objekt erstellen
-    <funclink>CreateObject</funclink>(_EAI, 50,50, iPlr);
+    <funcLink>CreateObject</funcLink>(_EAI, 50,50, iPlr);
     }
-  <funclink>return</funclink> true;
+  <funcLink>return</funcLink> true;
   }</code>
                                 <text>Szenarienscript: Sobald ein Scritpspieler beitritt, wird ein Objekt der Definition _EAI im Besitz dieses Spielers erstellt. Dieses Objekt könnte zum Beispiel alle Clonks im Besitz des Spielers steuern.</text>
                         </example>
                 </examples>
                 <related>
-                <emlink href="script/ScriptPlayers.html">Scriptspieler</emlink>
-			<funclink>CreateScriptPlayer</funclink>
+                <emLink href="script/ScriptPlayers.html">Scriptspieler</emLink>
+			<funcLink>CreateScriptPlayer</funcLink>
                 </related>
         </func>
         <author>Sven2</author><date>2007-12</date>

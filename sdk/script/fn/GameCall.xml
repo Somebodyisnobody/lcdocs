@@ -22,10 +22,10 @@
 			</example>
 		</examples>
 		<related>
-			<funclink>Call</funclink>
-			<funclink>ObjectCall</funclink>
-			<funclink>DefinitionCall</funclink>
-			<funclink>GameCallEx</funclink>
+			<funcLink>Call</funcLink>
+			<funcLink>ObjectCall</funcLink>
+			<funcLink>DefinitionCall</funcLink>
+			<funcLink>GameCallEx</funcLink>
 		</related>
 	</func>
 	<author>Günther</author><date>2002-04</date>

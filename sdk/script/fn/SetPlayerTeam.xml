@@ -22,8 +22,8 @@
     Es wird in allen Spielziel, -regel und Umweltobjekten, sowie dem Szenarioscript die Funktion "RejectTeamSwitch" mit der Spieler- und der Teamnummer als Parameter aufgerufen. Sollte diese irgendwo WAHR zurückliefern, kann so der Wechsel verhindert werden. Nach dem erfolgreichen Wechsel eines Spielers, wird wiederum "OnTeamSwitch" (mit der Spielernummer, der neuen und der alten Teamnummer als Parameter) an all diesen Orten aufgerufen.
     </remark>
 	<related>
-		<emlink href="scenario/Teams.html">Teams</emlink>
-		<funclink>GetPlayerTeam</funclink>
+		<emLink href="scenario/Teams.html">Teams</emLink>
+		<funcLink>GetPlayerTeam</funcLink>
 	</related>
   </func>
   <author>Clonkonaut</author><date>2008-04</date>

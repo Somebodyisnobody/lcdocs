@@ -12,8 +12,8 @@ einrichten. Dazu gehören zum Beispiel die Kategorie, also ob es sich um ein Gebä
 die Grafik, Eingangs- und Einsammelbereiche, Brennbarkeit, Wert, Masse, und so weiter.
 Außerdem wird hier das Objekt-ID angegeben, mit dem dieser Objekttyp
 später in Scripten referenziert wird - es ist wichtig, dass jedes Objekt ein eigenes ID hat.
-Hierzu siehe auch <emlink href="definition/index.html#ObjektundEntwicklerIdentifikation">Objekt- und
-Entwickleridentifikation</emlink>.</text>
+Hierzu siehe auch <emLink href="definition/index.html#ObjektundEntwicklerIdentifikation">Objekt- und
+Entwickleridentifikation</emLink>.</text>
 
 <text>
 <table activateBitmask="false" bitmaskName="">
@@ -27,14 +27,14 @@ Entwickleridentifikation</emlink>.</text>
 <row><col>Name</col><col>Zeichenfolge (max. 30)</col>
   <col>Name des Objekts. Bei Mehrsprachigkeit Names.txt nutzen.</col></row>
 <row><col>Category</col><col>Integer</col>
-  <col>Kategorie des Objekts. Siehe <emlink href="definition/category.html">Objektkategorien</emlink>.</col></row>
+  <col>Kategorie des Objekts. Siehe <emLink href="definition/category.html">Objektkategorien</emLink>.</col></row>
 <row><col>MaxUserSelect</col><col>Integer</col>
   <col>Maximale Anzahl beim Platzieren des Objekts im Menüsystem.</col></row>
 <row><col>RequireDef</col><col>Definitions-ID</col>
   <col>Die Definition wird nur geladen, wenn die angegebene Definition auch geladen wurde. So lassen sich Errors vermeiden, wenn sich beispielsweise im Script ein #include C4ID befindet, diese Definiton aber nicht vorhanden ist, weil sie sich in einem nicht geladenen Pack befindet.</col></row>
 <row><col>TimerCall</col><col>Zeichenfolge (max. 30)</col>
   <col>Regelmäßig aufgerufene Funktion des Objektscripts.
-  Siehe <emlink href="definition/script.html">Objektscripte</emlink>.</col></row>
+  Siehe <emLink href="definition/script.html">Objektscripte</emLink>.</col></row>
 <row><col>Timer</col><col>Integer</col>
   <col>Zeitabstand der TimerCalls in Frames. Ohne Angabe gilt der Vorgabewert 35.</col></row>
 <row><col>ContactCalls</col><col>Integer</col>
@@ -64,12 +64,12 @@ Entwickleridentifikation</emlink>.</text>
   <col>Anzahl der Eckpunkte des Objekts. 1 bis 30.</col></row>
 <row><col>VertexX</col><col>bis zu 30 Integer</col>
   <col>Liste der horizontalen Koordinaten der Eckpunkte des Objekts.
-  Siehe <emlink href="definition/vertices.html">Vertices</emlink>.</col></row>
+  Siehe <emLink href="definition/vertices.html">Vertices</emLink>.</col></row>
 <row><col>VertexY</col><col>bis zu 30 Integer</col>
   <col>Liste der vertikalen Koordinaten der Eckpunkte des Objekts.</col></row>
 <row><col>VertexCNAT</col><col>bis zu 30 Integer</col>
   <col>Liste der Ausrichtungsbestimmungen der Eckpunkte.
-  Siehe <emlink href="definition/cnat.html">CNAT</emlink>.</col></row>
+  Siehe <emLink href="definition/cnat.html">CNAT</emLink>.</col></row>
 <row><col>VertexFriction</col><col>bis zu 30 Integer</col>
   <col>Liste der Reibungswerte der Eckpunkte, jeweils 1 bis 100.</col></row>
 <row><col>Entrance</col><col>4 Integer</col>
@@ -95,14 +95,14 @@ Entwickleridentifikation</emlink>.</text>
   <col>1 Energieleitung, 2 Zuflussrohr, 3 Abflussrohr.</col></row>
 <row><col>LineConnect</col><col>Integer</col>
   <col>Anschlussfähigkeit für Leitungen.
-  Siehe <emlink href="definition/lineconnect.html">LineConnect</emlink>.</col></row>
+  Siehe <emLink href="definition/lineconnect.html">LineConnect</emLink>.</col></row>
 <row><col>Prey</col><col>Integer</col>
   <col>0 oder 1. Legt fest, ob das Objekt ein Beutelebewesen ist.</col></row>
 <row><col>Edible</col><col>Integer</col>
   <col>0 oder 1. Legt fest, ob das Objekt essbar ist (noch nicht unterstützt).</col></row>
 <row><col>CrewMember</col><col>Integer</col>
   <col>0 oder 1. Wenn 1, wird das Objekt beim Kauf der Mannschaft hinzugefügt.
-  Mit CreateObject erzeugte CrewMember-Objekte müssen mit <emlink href="script/fn/MakeCrewMember">MakeCrewMember</emlink>
+  Mit CreateObject erzeugte CrewMember-Objekte müssen mit <emLink href="script/fn/MakeCrewMember">MakeCrewMember</emLink>
   der Mannschaft eines Spielers hinzugefügt werden.</col></row>
 <row><col>Growth</col><col>Integer</col>
   <col>Wachstum des Objekts. Baum 1-4, Lebewesen 15.</col></row>
@@ -138,7 +138,7 @@ Entwickleridentifikation</emlink>.</text>
   <col>Wenn ungleich 0 (8-10) sitzt das Objekt aufgerichtet auf Massivbereichen auf.</col></row>
 <row><col>StretchGrowth</col><col>Integer</col>
   <col>0 oder 1. Bei Wert 1 wird das Objekt wie ein Lebewesen vergrößert (abhängig von der Fertigstellung.
-  Siehe <emlink href="script/fn/GetCon.html">GetCon</emlink>)</col></row>
+  Siehe <emLink href="script/fn/GetCon.html">GetCon</emLink>)</col></row>
 <row><col>Basement</col><col>Integer</col>
   <col>0 kein Fundament, 1 Fundament, andere Werte speziell</col></row>
 <row><col>NoBurnDecay</col><col>Integer</col>
@@ -159,7 +159,7 @@ Entwickleridentifikation</emlink>.</text>
   werden. Bei aktiviertem VehicleControl werden die selbständig auszuführenden Befehle (Commands) eines Clonks
   als ControlCommand-Aufrufe an das Script des entsprechenden Fahrzeugs weitergeleitet und können von diesem
   ausgewertet und abgefangen werden.
-  Siehe <emlink href="definition/script.html#ControlFunktionen">Control-Funktionen</emlink>.</col></row>
+  Siehe <emLink href="definition/script.html#ControlFunktionen">Control-Funktionen</emLink>.</col></row>
 <row><col>Pathfinder</col><col>Integer</col>
   <col>1 - 10. Beeinflusst die Suchtiefe des Wegfindungsalgorithmus (Standard: 1). Vorsicht: hohe Werte sind sehr rechenintensiv.
   Mit diesem Wert setzen auch Objekte ohne CrewMember-Wert bei der Ausführung von Kommandos (z.B. MoveTo)
@@ -194,7 +194,7 @@ Entwickleridentifikation</emlink>.</text>
 <row><col>NoFight</col><col>Integer</col>
   <col>0 oder 1. Bei 1 kämpft das Objekt nicht mit anderen Lebewesen, selbst wenn es selber ein Lebewesen ist.</col></row>
 <row><col>LiftTop</col><col>Integer</col>
-  <col>Wird ein Objekt bei einer Action mit der Procedure "<emlink href="definition/procedures.html">LIFT</emlink>" mehr als die angegebene Höhe
+  <col>Wird ein Objekt bei einer Action mit der Procedure "<emLink href="definition/procedures.html">LIFT</emLink>" mehr als die angegebene Höhe
   über der Objektmitte angehoben, wird die Funktion LiftTop im Script aufgerufen.</col></row>
 <row><col>RotatedEntrance</col><col>Integer</col>
   <col>0 Eingang ist nur bei aufgerichtetem Objekt geöffnet, 1 Eingang ist immer geöffnet, 2-360 Eingang ist innerhalb des entsprechenden Bereichs geöffnet. Ab 4.95.4.</col></row>

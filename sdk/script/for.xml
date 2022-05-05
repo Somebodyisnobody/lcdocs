@@ -30,7 +30,7 @@ Strichpunkten also freizulassen. Wird die Bedingung weggelassen, so wird die Sch
 automatisch abgebrochen. (Um die Schleife zu beenden, sollte dann <code>break</code> verwendet
 werden.) Auf diese Weise lässt sich z.B. eine Endlosschleife konstruieren: </text>
 <code>for(;;)
-  <funclink>Log</funclink>("Fl00d!");
+  <funcLink>Log</funcLink>("Fl00d!");
 </code>
 
 <h id="Zaehlschleife">Gebrauch der for-Schleife als Zählschleife</h>
@@ -39,15 +39,15 @@ werden.) Auf diese Weise lässt sich z.B. eine Endlosschleife konstruieren: </tex
 z.B. alle Zahlen zwischen 1 und 10 ausgeben lassen, so sieht das Script folgendermaßen aus: </text>
 
 <code>for(var i = 1; i &lt;= 10; i++)
-  <funclink>Log</funclink>("%d", i);
+  <funcLink>Log</funcLink>("%d", i);
 </code>
 
-<text> Zur Verdeutlichung: Die folgende <funclink>while</funclink>-Schleife tut
+<text> Zur Verdeutlichung: Die folgende <funcLink>while</funcLink>-Schleife tut
 exakt dasselbe: </text>
 
 <code>var i = 0;
-<funclink>while</funclink>(++i &lt;= 10)
-  <funclink>Log</funclink>("%d", i);
+<funcLink>while</funcLink>(++i &lt;= 10)
+  <funcLink>Log</funcLink>("%d", i);
 </code>
 
 <h id="Arrayschleife">Gebrauch der for-Schleife zum Durchlauf von Arrays</h>
@@ -56,7 +56,7 @@ exakt dasselbe: </text>
 und für einen Durchlauf ein Element in einer Variable zu speichern. Das Script sieht folgendermaßen aus: </text>
 
 <code>for(var element in a)
-  <funclink>Log</funclink>("%v", element);
+  <funcLink>Log</funcLink>("%v", element);
 </code>
 
 <text> Mit diesem Script würden alle Elemente des Array <code>a</code> ins Log ausgegeben.</text>
@@ -66,7 +66,7 @@ und für einen Durchlauf ein Element in einer Variable zu speichern. Das Script s
 <text> Eine weitere Funktion der <code>for</code>-Schleife ist es, Schlüssel-Wert-Paare von Maps nacheinander zu durchlaufen. Das Script sieht folgendermaßen aus: </text>
 
 <code>for(var key, value in m)
-  <funclink>Log</funclink>("%v => %v", key, value);
+  <funcLink>Log</funcLink>("%v => %v", key, value);
 </code>
 
 <text> Mit diesem Script würden alle Einträge der Map <code>m</code> durchlaufen und im Format "Schlüssel => Wert" geloggt.</text>
@@ -74,23 +74,23 @@ und für einen Durchlauf ein Element in einer Variable zu speichern. Das Script s
 <h>Weitere Beispiele:</h>
 
 <code>for(var i = 10; i &gt;= 1; i--)
-  <funclink>Log</funclink>("%d", i);
+  <funcLink>Log</funcLink>("%d", i);
 </code>
 
 <text>
 Zählt rückwärts von 10 bis 1.
 </text>
 
-<code><funclink>Var</funclink>(0) = 2;
-<funclink>Var</funclink>(1) = 1;
-<funclink>Var</funclink>(2) = 4;
-<funclink>Var</funclink>(3) = 3;
-<funclink>Var</funclink>(4) = 2;
-for(var i = 0; <funclink>Var</funclink>(i) != 3; i++)
-  <funclink>Log</funclink>("Var(%d) = %d", i, <funclink>Var</funclink>(i));
+<code><funcLink>Var</funcLink>(0) = 2;
+<funcLink>Var</funcLink>(1) = 1;
+<funcLink>Var</funcLink>(2) = 4;
+<funcLink>Var</funcLink>(3) = 3;
+<funcLink>Var</funcLink>(4) = 2;
+for(var i = 0; <funcLink>Var</funcLink>(i) != 3; i++)
+  <funcLink>Log</funcLink>("Var(%d) = %d", i, <funcLink>Var</funcLink>(i));
 </code>
 
-<text> Gibt die lokalen nummerierten Variablen (siehe <code><funclink>Var</funclink>()</code>) aus,
+<text> Gibt die lokalen nummerierten Variablen (siehe <code><funcLink>Var</funcLink>()</code>) aus,
 bis die erste  3 gefunden wird. Im Beispiel wird also folgende Ausgabe erzeugt: </text>
 
 <code>Var(0) = 2

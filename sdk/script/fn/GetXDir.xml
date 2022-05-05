@@ -17,12 +17,12 @@
                 <desc>Liefert die Geschwindigkeit in X-Richtung von pObj.</desc>
                 <remark>Es wird immer die wahre Geschwindigkeit (in Pixeln pro Frame) mal iPrecision zurückgegeben. Wird iPrecision also nicht angegeben, wird immer das zehnfache der "wahren" Geschwindigkeit zurückgegeben!</remark>
                 <related>
-                        <funclink>GetYDir</funclink>
-                        <funclink>SetXDir</funclink>
-                        <funclink>SetYDir</funclink>
-                        <funclink>GetX</funclink>
-                        <funclink>GetY</funclink>
-                        <funclink>SetPosition</funclink>
+                        <funcLink>GetYDir</funcLink>
+                        <funcLink>SetXDir</funcLink>
+                        <funcLink>SetYDir</funcLink>
+                        <funcLink>GetX</funcLink>
+                        <funcLink>GetY</funcLink>
+                        <funcLink>SetPosition</funcLink>
                 </related>
         </func>
         <author>Cucaracha</author><date>2002-05</date>

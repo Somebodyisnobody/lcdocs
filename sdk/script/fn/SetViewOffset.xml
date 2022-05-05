@@ -17,7 +17,7 @@
     </syntax>
     <desc>Verschiebt die Sicht eines Spielers permanent um einen bestimmten Betrag. Ein erneuter Aufruf überschreibt die Verschiebung wieder, ein Aufruf mit 0-Koordinaten setzt die Sicht wieder in den Normalzustand zurück.</desc>
     <related>
-      <funclink>SetPlrView</funclink>
+      <funcLink>SetPlrView</funcLink>
     </related>
   </func>
   <author>PeterW</author><date>2004-09</date>

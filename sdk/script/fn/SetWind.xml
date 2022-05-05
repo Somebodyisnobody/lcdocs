@@ -34,7 +34,7 @@ protected func ControlRight()
 			</example>
 		</examples>
 								<related>
-												<funclink>GetWind</funclink>
+												<funcLink>GetWind</funcLink>
 								</related>
 	</func>
 	<author>wipfmetz</author><date>2002-08</date>

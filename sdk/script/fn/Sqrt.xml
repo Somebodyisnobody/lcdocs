@@ -19,17 +19,17 @@
 
 <code>global func ObjectDistance(pObj1, pObj2)
 {
-  var dx = <funclink>GetX</funclink>(pObj1) - <funclink>GetX</funclink>(pObj2);
-  var dy = <funclink>GetY</funclink>(pObj1) - <funclink>GetY</funclink>(pObj2);
-  <funclink>return</funclink>(Sqrt(dx*dx+dy*dy));
+  var dx = <funcLink>GetX</funcLink>(pObj1) - <funcLink>GetX</funcLink>(pObj2);
+  var dy = <funcLink>GetY</funcLink>(pObj1) - <funcLink>GetY</funcLink>(pObj2);
+  <funcLink>return</funcLink>(Sqrt(dx*dx+dy*dy));
 }</code>
 
         <text>Berechnet den Abstand zwischen zwei Objekten nach dem Satz des Pythagoras. <br/>Anmerkung: ObjectDistance existiert bereits als Engine-Funktion.</text>
       </example>
     </examples>
     <related>
-      <funclink>Distance</funclink>
-      <funclink>ObjectDistance</funclink>
+      <funcLink>Distance</funcLink>
+      <funcLink>ObjectDistance</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2001-11</date>

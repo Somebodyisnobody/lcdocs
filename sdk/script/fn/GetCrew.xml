@@ -17,15 +17,15 @@
 		<desc>Gibt ein Mannschaftsmitglied eines Spielers zurück.</desc>
 		<examples>
 			<example>
-				<code>var i=<funclink>GetCrewCount</funclink>(0); <funclink>while</funclink> (i--) <funclink>Kill</funclink>(GetCrew(0, i));</code>
+				<code>var i=<funcLink>GetCrewCount</funcLink>(0); <funcLink>while</funcLink> (i--) <funcLink>Kill</funcLink>(GetCrew(0, i));</code>
 				<text>Tötet die gesamte Crew des ersten Spielers.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>GetCrewCount</funclink>
-			<funclink>GetHiRank</funclink>
-			<funclink>GetCursor</funclink>
-			<funclink>GetCaptain</funclink>
+			<funcLink>GetCrewCount</funcLink>
+			<funcLink>GetHiRank</funcLink>
+			<funcLink>GetCursor</funcLink>
+			<funcLink>GetCaptain</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-05</date>

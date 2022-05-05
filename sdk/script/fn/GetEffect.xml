@@ -62,32 +62,32 @@
       <example>
         <code>var obj, i, iEffect;
 // Alle Objekte durchsuchen
-<funclink>while</funclink> (obj=<funclink>FindObject</funclink>(0, 0,0,0,0, 0, 0,0, 0, obj))
+<funcLink>while</funcLink> (obj=<funcLink>FindObject</funcLink>(0, 0,0,0,0, 0, 0,0, 0, obj))
   {
   // Von Effektzahl abwärts zählen, da Effekte entfernt werden
-  i = <funclink>GetEffectCount</funclink>(0, obj);
-  <funclink>while</funclink> (i--)
-    <funclink>if</funclink> (iEffect = GetEffect("*Spell", obj, i))
-      <funclink>RemoveEffect</funclink>(0, obj, iEffect);
+  i = <funcLink>GetEffectCount</funcLink>(0, obj);
+  <funcLink>while</funcLink> (i--)
+    <funcLink>if</funcLink> (iEffect = GetEffect("*Spell", obj, i))
+      <funcLink>RemoveEffect</funcLink>(0, obj, iEffect);
   }
 // Globale Effekte entfernen
-i = <funclink>GetEffectCount</funclink>();
-<funclink>while</funclink> (i--)
-  <funclink>if</funclink> (iEffect = GetEffect("*Spell", 0, i))
-    <funclink>RemoveEffect</funclink>(0, 0, iEffect);</code>
+i = <funcLink>GetEffectCount</funcLink>();
+<funcLink>while</funcLink> (i--)
+  <funcLink>if</funcLink> (iEffect = GetEffect("*Spell", 0, i))
+    <funcLink>RemoveEffect</funcLink>(0, 0, iEffect);</code>
         <text>Entfernt alle Zaubereffekte von allen Objekten und global.</text>
       </example>
     </examples>
 
     <related>
-      <emlink href="script/Effects.html">Effekte-Dokumentation</emlink>
-      <funclink>AddEffect</funclink>
-      <funclink>ChangeEffect</funclink>
-      <funclink>CheckEffect</funclink>
-      <funclink>GetEffectCount</funclink>
-      <funclink>EffectCall</funclink>
-      <funclink>EffectVar</funclink>
-      <funclink>RemoveEffect</funclink>
+      <emLink href="script/Effects.html">Effekte-Dokumentation</emLink>
+      <funcLink>AddEffect</funcLink>
+      <funcLink>ChangeEffect</funcLink>
+      <funcLink>CheckEffect</funcLink>
+      <funcLink>GetEffectCount</funcLink>
+      <funcLink>EffectCall</funcLink>
+      <funcLink>EffectVar</funcLink>
+      <funcLink>RemoveEffect</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2004-03</date>

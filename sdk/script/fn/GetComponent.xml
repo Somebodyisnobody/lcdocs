@@ -51,11 +51,11 @@
         <examples>
             <example>
                 <code>var i,cid,num;
-                    <funclink>while</funclink>
-                    (id = GetComponent(0, i++, 0, <funclink>GetID</funclink>()))
-                    if ((num = GetComponent(id) - GetComponent(id, 0, 0, <funclink>GetID</funclink>())) > 0)
-                    <funclink>while</funclink>
-                    (num--) <funclink>CreateObject</funclink>(id, 0, 0, <funclink>GetOwner</funclink>());
+                    <funcLink>while</funcLink>
+                    (id = GetComponent(0, i++, 0, <funcLink>GetID</funcLink>()))
+                    if ((num = GetComponent(id) - GetComponent(id, 0, 0, <funcLink>GetID</funcLink>())) > 0)
+                    <funcLink>while</funcLink>
+                    (num--) <funcLink>CreateObject</funcLink>(id, 0, 0, <funcLink>GetOwner</funcLink>());
                 </code>
                 <text>Erzeugt alle Komponenten, die dem aufrufenden Objekt noch fehlen (z.B. bei einer Baustelle),
                     direkt vor selbigem.
@@ -63,8 +63,8 @@
             </example>
         </examples>
         <related>
-            <funclink>SetComponent</funclink>
-            <funclink>Split2Components</funclink>
+            <funcLink>SetComponent</funcLink>
+            <funcLink>Split2Components</funcLink>
         </related>
     </func>
     <author>Cucaracha</author>

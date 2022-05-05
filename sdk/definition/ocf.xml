@@ -7,7 +7,7 @@
 <title>Object character flags</title>
 <h id="ocf">Object Character Flags</h>
 <text>Object Character Flags sind Attribute eines Objekts, die sich als Kombination
-aus einigen <emlink href="definition/defcore.html">DefCore</emlink>-Einträgen sowie
+aus einigen <emLink href="definition/defcore.html">DefCore</emLink>-Einträgen sowie
 dem aktuellen Zustand des Objekts in der Landschaft ergeben. Da sich diese Flags aus
 dem gegenwärtigen Zustand des Objekts ergeben, und automatisch von der Engine gesetzt
 werden, können sie natürlich nur getestet, und nicht direkt per Script manipuliert
@@ -15,49 +15,49 @@ werden.</text>
 <text>Alle OCF-Flags sind als Bitmaske in einem 32Bit-DWORD gespeichert. Dadurch
 können sie mit einem einfachen bitweisen "und" getestet werden. Also zum Beispiel:</text>
 
-<code>if (<funclink>GetOCF</funclink>(objekt) &amp; <constlink constGroup="OCF">OCF_Living</constlink>)
-  <funclink>Log</funclink>("Das Objekt ist ein Lebewesen.");</code>
+<code>if (<funcLink>GetOCF</funcLink>(objekt) &amp; <constLink constGroup="OCF">OCF_Living</constLink>)
+  <funcLink>Log</funcLink>("Das Objekt ist ein Lebewesen.");</code>
 
 <text>Die häufigste Anwendung für OCFs sind FindObject-Schleifen:</text>
 
 <code>var obj;
-while (obj = <funclink>FindObject</funclink>(0, -100, -100, 200, 200, <constlink constGroup="OCF">OCF_Rotate</constlink>, 0, 0, <funclink>NoContainer</funclink>(), obj)
-  <funclink>SetR</funclink>(180, obj);</code>
+while (obj = <funcLink>FindObject</funcLink>(0, -100, -100, 200, 200, <constLink constGroup="OCF">OCF_Rotate</constLink>, 0, 0, <funcLink>NoContainer</funcLink>(), obj)
+  <funcLink>SetR</funcLink>(180, obj);</code>
 <text>Dieses Script dreht alle Objekte auf den Kopf.</text>
 <h id="ocf_fns">OCF-Konstanten</h>
 <text>Es sind folgende OCFs im Script definiert:</text>
 
-<text><constlink constGroup="OCF">OCF_Alive</constlink>,
-<constlink constGroup="OCF">OCF_AttractLightning</constlink>,
-<constlink constGroup="OCF">OCF_Available</constlink>,
-<constlink constGroup="OCF">OCF_Chop</constlink>,
-<constlink constGroup="OCF">OCF_Collectible</constlink>,
-<constlink constGroup="OCF">OCF_Collection</constlink>,
-<constlink constGroup="OCF">OCF_Construct</constlink>,
-<constlink constGroup="OCF">OCF_Container</constlink>,
-<constlink constGroup="OCF">OCF_CrewMember</constlink>,
-<constlink constGroup="OCF">OCF_Edible</constlink>,
-<constlink constGroup="OCF">OCF_Entrance</constlink>,
-<constlink constGroup="OCF">OCF_Exclusive</constlink>,
-<constlink constGroup="OCF">OCF_FightReady</constlink>,
-<constlink constGroup="OCF">OCF_Fullcon</constlink>,
-<constlink constGroup="OCF">OCF_Grab</constlink>,
-<constlink constGroup="OCF">OCF_HitSpeed1</constlink>,
-<constlink constGroup="OCF">OCF_HitSpeed2</constlink>,
-<constlink constGroup="OCF">OCF_HitSpeed3</constlink>,
-<constlink constGroup="OCF">OCF_HitSpeed4</constlink>,
-<constlink constGroup="OCF">OCF_Inflammable</constlink>,
-<constlink constGroup="OCF">OCF_InFree</constlink>,
-<constlink constGroup="OCF">OCF_InLiquid</constlink>,
-<constlink constGroup="OCF">OCF_InSolid</constlink>,
-<constlink constGroup="OCF">OCF_LineConstruct</constlink>,
-<constlink constGroup="OCF">OCF_Living</constlink>,
-<constlink constGroup="OCF">OCF_NotContained</constlink>,
-<constlink constGroup="OCF">OCF_OnFire</constlink>,
-<constlink constGroup="OCF">OCF_Powerconsumer</constlink>,
-<constlink constGroup="OCF">OCF_PowerSupply</constlink>,
-<constlink constGroup="OCF">OCF_Prey</constlink>,
-<constlink constGroup="OCF">OCF_Rotate</constlink>
+<text><constLink constGroup="OCF">OCF_Alive</constLink>,
+<constLink constGroup="OCF">OCF_AttractLightning</constLink>,
+<constLink constGroup="OCF">OCF_Available</constLink>,
+<constLink constGroup="OCF">OCF_Chop</constLink>,
+<constLink constGroup="OCF">OCF_Collectible</constLink>,
+<constLink constGroup="OCF">OCF_Collection</constLink>,
+<constLink constGroup="OCF">OCF_Construct</constLink>,
+<constLink constGroup="OCF">OCF_Container</constLink>,
+<constLink constGroup="OCF">OCF_CrewMember</constLink>,
+<constLink constGroup="OCF">OCF_Edible</constLink>,
+<constLink constGroup="OCF">OCF_Entrance</constLink>,
+<constLink constGroup="OCF">OCF_Exclusive</constLink>,
+<constLink constGroup="OCF">OCF_FightReady</constLink>,
+<constLink constGroup="OCF">OCF_Fullcon</constLink>,
+<constLink constGroup="OCF">OCF_Grab</constLink>,
+<constLink constGroup="OCF">OCF_HitSpeed1</constLink>,
+<constLink constGroup="OCF">OCF_HitSpeed2</constLink>,
+<constLink constGroup="OCF">OCF_HitSpeed3</constLink>,
+<constLink constGroup="OCF">OCF_HitSpeed4</constLink>,
+<constLink constGroup="OCF">OCF_Inflammable</constLink>,
+<constLink constGroup="OCF">OCF_InFree</constLink>,
+<constLink constGroup="OCF">OCF_InLiquid</constLink>,
+<constLink constGroup="OCF">OCF_InSolid</constLink>,
+<constLink constGroup="OCF">OCF_LineConstruct</constLink>,
+<constLink constGroup="OCF">OCF_Living</constLink>,
+<constLink constGroup="OCF">OCF_NotContained</constLink>,
+<constLink constGroup="OCF">OCF_OnFire</constLink>,
+<constLink constGroup="OCF">OCF_Powerconsumer</constLink>,
+<constLink constGroup="OCF">OCF_PowerSupply</constLink>,
+<constLink constGroup="OCF">OCF_Prey</constLink>,
+<constLink constGroup="OCF">OCF_Rotate</constLink>
 </text>
 
 </doc><author>Sven2</author><date>2002-05</date>

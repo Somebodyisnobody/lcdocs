@@ -10,7 +10,7 @@
 Ausrichtungen von Objekten und Vorgängen zu verwalten. So kann z.B. einem Objekt-Vertex ein
 CNAT-Wert zugewiesen werden, der die Ausrichtung <em>Links</em> enthält. Sind für dieses
 Objekt <em>ContactCalls</em> aktiviert (siehe
-<emlink href="definition/defcore.html">DefCore.txt</emlink>), so ruft die Engine bei jedem Kontakt
+<emLink href="definition/defcore.html">DefCore.txt</emLink>), so ruft die Engine bei jedem Kontakt
 dieses Vertex mit der Landschaft die Objektscript-Funktion <em>ContactLeft</em> auf. CNAT-Werte
 setzen sich aus folgenden Bits zusammen:</text>
 <text>

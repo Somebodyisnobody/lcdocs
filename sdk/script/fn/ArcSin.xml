@@ -14,17 +14,17 @@
 				<param><type>int</type><name>iRadius</name><desc>Länge der Hypotenuse</desc></param>
 			</params>
 		</syntax>
-		<desc>Berechnet den Arcussinus von iVal/iRadius, also Result=arcsin(iVal/iRadius). Dies entspricht Sin(Result)=iVal/iRadius. Die Funktion wird benötigt, um Seitenverhältnisse zu einem Winkel umzurechnen. Für die meisten Fälle ist <funclink>Angle</funclink>() aber ausreichend und praktischer.</desc>
+		<desc>Berechnet den Arcussinus von iVal/iRadius, also Result=arcsin(iVal/iRadius). Dies entspricht Sin(Result)=iVal/iRadius. Die Funktion wird benötigt, um Seitenverhältnisse zu einem Winkel umzurechnen. Für die meisten Fälle ist <funcLink>Angle</funcLink>() aber ausreichend und praktischer.</desc>
 		<examples>
 			<example>
-				<code><funclink>Log</funclink>("Zielwinkel: %d Grad", ArcSin(<funclink>Abs</funclink>(<funclink>GetY</funclink>(target)-<funclink>GetY</funclink>()), <funclink>ObjectDistance</funclink>(target)));</code>
+				<code><funcLink>Log</funcLink>("Zielwinkel: %d Grad", ArcSin(<funcLink>Abs</funcLink>(<funcLink>GetY</funcLink>(target)-<funcLink>GetY</funcLink>()), <funcLink>ObjectDistance</funcLink>(target)));</code>
 				<text>Gibt den Zielwinkel vom aufrufenden Objekt zu target aus.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>Angle</funclink>
-			<funclink>ArcCos</funclink>
-			<funclink>Sin</funclink>
+			<funcLink>Angle</funcLink>
+			<funcLink>ArcCos</funcLink>
+			<funcLink>Sin</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

@@ -21,12 +21,12 @@
     <remark>Die Engine aktualisiert in diversen Fällen das Objektrechteck, wobei es die Definitionswerte zurückkopiert (und damit eventuelle, durch SetShape gesetzte Objektrechtecke verwirft). Die ist beispielsweise beim Ändern der Objektrotation, aber auch beim Neuladen der Spielstände der Fall. Die Funktion sollte also besser nur bei statischen, relativ unveränderten Objekten verwendet werden, und das Shape muss jeweils in einem Synchronisationsaufruf wie UpdateTransferZone neu gesetzt werden.</remark>
     <examples>
       <example>
-        <code>SetShape(-200,-300,400,600, <funclink>FindObject</funclink>(TRE1));</code>
+        <code>SetShape(-200,-300,400,600, <funcLink>FindObject</funcLink>(TRE1));</code>
         <text>Sorgt dafür, dass man einen Baum aus der Landschaft auch aus größerer Distanz fällen kann.</text>
       </example>
     </examples>
     <related>
-      <funclink>SetVertex</funclink>
+      <funcLink>SetVertex</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2003-06</date>

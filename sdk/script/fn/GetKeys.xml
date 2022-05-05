@@ -21,8 +21,8 @@
       </example>
     </examples>
     <related>
-      <emlink href="script/Typechecks.html">Datentypen</emlink>
-      <funclink>GetValues</funclink>
+      <emLink href="script/Typechecks.html">Datentypen</emLink>
+      <funcLink>GetValues</funcLink>
     </related>
   </func>
   <author>Der Tod</author><date>2019-10</date>

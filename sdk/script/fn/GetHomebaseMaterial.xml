@@ -19,18 +19,18 @@
 		<desc>Bei angegebenen id gibt die Funktion die Menge der Objekte zurück, die der Spieler in seiner Heimatbasis kaufen kann. iIndex und dwCategory werden hierbei ignoriert. Wird als id Null übergeben, liefert die Funktion den indizierten Objekttyp der entsprechenden Kategorie der kaufbaren Objekte des Spielers. Der Objekttyp (id) taucht in der Liste auf und wird zurückgeliefert, selbst wenn zur Zeit keine Objekte dieses Typs verfügbar sind.</desc>
 		<examples>
 			<example>
-				<code><funclink>Message</funclink>("Spieler %s kann %d Flintstones kaufen",0,<funclink>GetPlayerName</funclink>(0), GetHomebaseMaterial(0,FLNT));</code>
+				<code><funcLink>Message</funcLink>("Spieler %s kann %d Flintstones kaufen",0,<funcLink>GetPlayerName</funcLink>(0), GetHomebaseMaterial(0,FLNT));</code>
 				<text>Meldet die Anzahl Feuersteine, die sich der Erste Spieler kaufen kann (sofern er das benötigte Geld hat)</text>
-				<code>var def=GetHomebaseMaterial(0,0,3,<constlink constGroup="C4D">C4D_Vehicle</constlink>);
-<funclink>Message</funclink>("Der dritte kaufbare Fahrzeugtyp des Spielers ist %i",0,def);</code>
+				<code>var def=GetHomebaseMaterial(0,0,3,<constLink constGroup="C4D">C4D_Vehicle</constLink>);
+<funcLink>Message</funcLink>("Der dritte kaufbare Fahrzeugtyp des Spielers ist %i",0,def);</code>
 				<text>Meldet z.B. "Das dritte kaufbare Fahrzeug des Spielers ist XBOW"</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>DoHomebaseMaterial</funclink>
-			<funclink>GetHomebaseProduction</funclink>
-			<funclink>DoHomebaseProduction</funclink>
-			<constlink constGroup="C4D"></constlink>
+			<funcLink>DoHomebaseMaterial</funcLink>
+			<funcLink>GetHomebaseProduction</funcLink>
+			<funcLink>DoHomebaseProduction</funcLink>
+			<constLink constGroup="C4D"></constLink>
 		</related>
 	</func>
 	<author>Günther</author><date>2002-02</date>

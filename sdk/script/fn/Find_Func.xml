@@ -16,15 +16,15 @@
 		</syntax>
 		<desc>Suchkriterium: sucht alle Objekte bei denen der Aufruf der angegebenen Funktion <code>true</code> liefert. Wenn es eine lokale Funktion gibt, wird diese aufgerufen, sonst wenn vorhanden eine globale.</desc>
 		<remark><strong>Achtung:</strong> Niemals mit einer Funktion verwenden, die Seiteneffekte hat. Wenn nicht sichergestellt ist, dass die Funktion harmlos ist, muss auf Find_Func verzichtet werden. Stattdessen kann die Funktion mit einer Schleife über die gefundenen Objekte aufgerufen werden.</remark>
-		<remark>Für weitere Informationen und Beispiele zur Benutzung dieser Funktion sehe <funclink>FindObjects</funclink>.</remark>
+		<remark>Für weitere Informationen und Beispiele zur Benutzung dieser Funktion sehe <funcLink>FindObjects</funcLink>.</remark>
 		<examples>
 			<example>
-<code><funclink>FindObjects</funclink>(<funclink>Find_Func</funclink>("IsClonk"))</code>
+<code><funcLink>FindObjects</funcLink>(<funcLink>Find_Func</funcLink>("IsClonk"))</code>
 				<text>Liefert alles zurück, was ein Clonk ist (also auch Hydroclonks, Magier...).</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>FindObjects</funclink>
+			<funcLink>FindObjects</funcLink>
 		</related>
 	</func>
 	<author>Clonkonaut</author><date>2006-07</date>

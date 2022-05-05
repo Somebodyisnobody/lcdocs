@@ -19,7 +19,7 @@
     <desc>Erzeugt eine Rauchwolke an der angegebenen Position mit angegebener Farbe.</desc>
     <examples>
       <example>
-        <code>Smoke(0,0,50, <funclink>RGB</funclink>(255,0,0));</code>
+        <code>Smoke(0,0,50, <funcLink>RGB</funcLink>(255,0,0));</code>
         <text>Objektscript: Das Objekt stößt eine rote Rauchwolke aus.</text>
       </example>
     </examples>

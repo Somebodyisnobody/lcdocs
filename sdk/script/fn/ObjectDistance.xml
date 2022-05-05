@@ -16,10 +16,10 @@
 		</syntax>
 		<desc>Liefert die Distanz zwischen zwei Objekten. Ist pObj 0, Wird die Distanz zwischen dem aufrufenden Objekt und pObj2 gemessen.</desc>
 		<related>
-			<funclink>Distance</funclink>
-			<funclink>Sqrt</funclink>
-			<funclink>Sin</funclink>
-			<funclink>Cos</funclink>
+			<funcLink>Distance</funcLink>
+			<funcLink>Sqrt</funcLink>
+			<funcLink>Sin</funcLink>
+			<funcLink>Cos</funcLink>
 		</related>
 	</func>
 	<author>jwk</author><date>2002-08</date>

@@ -17,11 +17,11 @@
 		</syntax>
 		<desc>Ruft die geschützte oder öffentliche Funktion szFunction in pObj auf. Es sollte überlegt werden, ob der Aufruf wirklich nötig ist.</desc>
 		<related>
-			<funclink>ObjectCall</funclink>
-			<funclink>PrivateCall</funclink>
-			<funclink>Call</funclink>
-			<funclink>GameCall</funclink>
-			<funclink>eval</funclink>
+			<funcLink>ObjectCall</funcLink>
+			<funcLink>PrivateCall</funcLink>
+			<funcLink>Call</funcLink>
+			<funcLink>GameCall</funcLink>
+			<funcLink>eval</funcLink>
 		</related>
 	</func>
 	<author>jwk</author><date>2002-06</date>

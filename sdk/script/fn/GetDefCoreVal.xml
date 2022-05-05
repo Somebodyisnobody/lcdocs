@@ -36,7 +36,7 @@
       </params>
     </syntax>
 
-    <desc>Gibt einen Eigenschaftswert einer Objektdefinition nach seinem Namen in der <emlink href="definition/defcore.html">DefCore.txt</emlink>
+    <desc>Gibt einen Eigenschaftswert einer Objektdefinition nach seinem Namen in der <emLink href="definition/defcore.html">DefCore.txt</emLink>
           zurück.</desc>
 
     <remark>Ist der abzufragende Eintrag eine ID-Liste (z.B. "Components" in der DefCore.txt), so wird bei
@@ -48,7 +48,7 @@
         <text>Ermittelt die Breite des Objekts. Die beiden letzten Parameter könnten in diesem Fall weggelassen werden.</text>
       </example>
       <example>
-        <code><funclink>Log</funclink>(" Eine Werkstatt benötigt folgendes Material:");
+        <code><funcLink>Log</funcLink>(" Eine Werkstatt benötigt folgendes Material:");
 
 for(var i = 0;; i++)
 {
@@ -56,7 +56,7 @@ for(var i = 0;; i++)
   if(!id) break;
   var cnt = GetDefCoreVal("Components", "DefCore", WRKS, i*2+1);
 
-  <funclink>Log</funclink>("%d x %s", cnt, <funclink>GetName</funclink>(0, id));
+  <funcLink>Log</funcLink>("%d x %s", cnt, <funcLink>GetName</funcLink>(0, id));
 }</code>
         <text>Fragt den Materialbedarf für den Bau einer Werkstatt ab. <br/> Die Schleife läuft solange, bis GetDefCoreVal für
               die ID 0 zurückgibt, was das Ende der Liste markiert</text>
@@ -65,12 +65,12 @@ for(var i = 0;; i++)
 
 
     <related>
-      <funclink>GetObjectVal</funclink>
-      <funclink>GetObjectInfoCoreVal</funclink>
-      <funclink>GetActMapVal</funclink>
-      <funclink>GetScenarioVal</funclink>
-      <funclink>GetPlayerVal</funclink>
-      <funclink>GetPlayerInfoCoreVal</funclink>
+      <funcLink>GetObjectVal</funcLink>
+      <funcLink>GetObjectInfoCoreVal</funcLink>
+      <funcLink>GetActMapVal</funcLink>
+      <funcLink>GetScenarioVal</funcLink>
+      <funcLink>GetPlayerVal</funcLink>
+      <funcLink>GetPlayerInfoCoreVal</funcLink>
     </related>
 
   </func>

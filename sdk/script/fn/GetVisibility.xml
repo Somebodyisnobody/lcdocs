@@ -13,19 +13,19 @@
 				<param><type>object</type><name>pObj</name><desc>Objekt, von dem die Sichtbarkeit abgefragt wird. 0 bei lokalem Aufruf.</desc><optional /></param>
 			</params>
 		</syntax>
-		<desc>Fragt die Sichtbarkeit eines Objekts ab. Siehe dazu auch <funclink>SetVisibility</funclink>.</desc>
+		<desc>Fragt die Sichtbarkeit eines Objekts ab. Siehe dazu auch <funcLink>SetVisibility</funcLink>.</desc>
 		<examples>
 			<example>
 
-<code>var vis=<funclink>GetVisibility</funclink>();
-if (vis &amp;&amp; ~vis &amp; <constlink constGroup="VIS">VIS_Owner</constlink>) <funclink>SetVisibility</funclink>(vis | <constlink constGroup="VIS">VIS_Owner</constlink>);</code>
+<code>var vis=<funcLink>GetVisibility</funcLink>();
+if (vis &amp;&amp; ~vis &amp; <constLink constGroup="VIS">VIS_Owner</constLink>) <funcLink>SetVisibility</funcLink>(vis | <constLink constGroup="VIS">VIS_Owner</constLink>);</code>
 
 				<text>Wenn das aufrufende Objekt nicht für den Besitzer sichtbar war, wird es für ihn sichtbar gemacht.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>SetVisibility</funclink>
-			<constlink constGroup="VIS"></constlink>
+			<funcLink>SetVisibility</funcLink>
+			<constLink constGroup="VIS"></constLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

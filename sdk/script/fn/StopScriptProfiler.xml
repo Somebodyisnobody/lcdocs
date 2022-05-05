@@ -14,7 +14,7 @@
 		<remark>Mit dem Scriptprofiler lässt sich messen, wie viel Rechenzeit die Scriptengine in welchen Scriptfunktionen aufwendet. Dies kann nützlich sein, um in langsam laufenden Szenarien zu prüfen, ob und wo sich Flaschenhälse in der Ausführung von Scripten befinden. Gemessen werden immer jeweils die Scriptausführungen zwischen einem StartScriptProfiler und einem StopScriptProfiler-Aufruf.</remark>
 		<examples>
 			<example>
-				<text>Zunächst wird der Profiler gestartet, indem man irgendwo <funclink>StartScriptProfiler</funclink> ausführt - zum Beispiel im Konsolenfenster, wenn die Engine im Entwicklermodus gestartet wird. Nach einer Weile Spiel führt man dann <funclink>StopScriptProfiler</funclink> aus, und erhält zum Beispiel folgende Ausgabe im Log:</text>
+				<text>Zunächst wird der Profiler gestartet, indem man irgendwo <funcLink>StartScriptProfiler</funcLink> ausführt - zum Beispiel im Konsolenfenster, wenn die Engine im Entwicklermodus gestartet wird. Nach einer Weile Spiel führt man dann <funcLink>StopScriptProfiler</funcLink> aus, und erhält zum Beispiel folgende Ausgabe im Log:</text>
 				<code>Profiler statistics:
 ==============================
 00037ms	global Explode
@@ -35,12 +35,12 @@
 00002ms	_QSF::Detonate
 ==============================</code>
 				<text>In dieser Ausgabe sieht man, dass die größte Scriptbremse Explosionen sind. "global Explode" ist die Funktion Explode, die irgendwo global im Script definiert ist. Auf Platz zwei steht die Auftrefffunktion vom Superflint (SFLN::Hit). Hierbei ist zu beachten, dass alle Unteraufrufe von Scriptfunktionen auch immer mit einbezogen werden. Die rechenintesiven Explode-Aufrufe schlagen also sowohl in "global Explode", als auch in "SFLN::Hit" zu Buche. Rekursiv sich selbst aufrufende Funktionen zählen sich entsprechend auch für jede Rekursion doppelt.</text>
-				<text>"game DeployPlayer" ist ein Aufruf im Szenarienscript. "Direct exec" ist die Summe aller zur Laufzeit kompiliierten und ausgeführten Scripte. Das sind zum Beispiel <funclink>eval</funclink> oder Menü-Callbacks.</text>
+				<text>"game DeployPlayer" ist ein Aufruf im Szenarienscript. "Direct exec" ist die Summe aller zur Laufzeit kompiliierten und ausgeführten Scripte. Das sind zum Beispiel <funcLink>eval</funcLink> oder Menü-Callbacks.</text>
 				<text>Es ist zu beachten, dass rechenintensive Scripte nicht die einzigen Bremsen im Spiel sind. Wenn ein Objekt zum Beispiel sehr viele Partikel erzeugt, kann dies das Spiel bremsen, ohne in der Scriptengine aufzutauchen. Ein anderes Beispiel wäre das Erzeugen von sehr vielen Objekten.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>StartScriptProfiler</funclink>
+			<funcLink>StartScriptProfiler</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2007-03</date>

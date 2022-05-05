@@ -39,7 +39,7 @@
           Die zurückgegebene Map hat folgende Struktur:
           <table activateBitmask="false" bitmaskName="">
             <rowh><col>Schlüssel</col><col>Datentyp</col><col>Beschreibung</col></rowh>
-            <row><col>Length</col><col>int</col><col>Länge des gefundenen Weges, wie bei <funclink>GetPathLength</funclink></col></row>
+            <row><col>Length</col><col>int</col><col>Länge des gefundenen Weges, wie bei <funcLink>GetPathLength</funcLink></col></row>
             <row><col>Waypoints</col><col>array</col><col>Array mit Wegpunkten</col></row>
           </table>
 
@@ -51,25 +51,25 @@
               <row><col>TransferTarget</col><col>object</col><col>Transferzielobjekt. nur gesetzt, falls vorhanden.</col></row>
           </table>
    </desc>
-   <remark>Diese Funktion kann aufgrund der Mapsyntax nur ab #strict 3 verwendet werden. In älteren Versionen kann <funclink>GetPathLength</funclink> verwendet werden.</remark>
+   <remark>Diese Funktion kann aufgrund der Mapsyntax nur ab #strict 3 verwendet werden. In älteren Versionen kann <funcLink>GetPathLength</funcLink> verwendet werden.</remark>
 
     <examples>
       <example>
-        <code>var path = GetPath(<funclink>GetX</funclink>(), <funclink>GetY</funclink>(), <funclink>GetX</funclink>(<funclink>FindBase</funclink>(<funclink>GetOwner</funclink>())), <funclink>GetY</funclink>(<funclink>FindBase</funclink>(<funclink>GetOwner</funclink>())));
-<funclink>if</funclink> (path)
+        <code>var path = GetPath(<funcLink>GetX</funcLink>(), <funcLink>GetY</funcLink>(), <funcLink>GetX</funcLink>(<funcLink>FindBase</funcLink>(<funcLink>GetOwner</funcLink>())), <funcLink>GetY</funcLink>(<funcLink>FindBase</funcLink>(<funcLink>GetOwner</funcLink>())));
+<funcLink>if</funcLink> (path)
 {
-    <funclink>Log</funclink>("Anzahl der Wegpunkte: %d, Pfadlänge: %d", <funclink>GetLength</funclink>(path.Waypoints), path.Length);
+    <funcLink>Log</funcLink>("Anzahl der Wegpunkte: %d, Pfadlänge: %d", <funcLink>GetLength</funcLink>(path.Waypoints), path.Length);
 }
 else
 {
-    <funclink>Log</funclink>("Kein Pfad gefunden!");
+    <funcLink>Log</funcLink>("Kein Pfad gefunden!");
 }
         </code>
         <text>Loggt die Anzahl der Wegpunkte und die Pfadlänge zur ersten Basis des Besitzers des aufrufenden Objekts, falls ein Weg gefunden wurde.</text>
       </example>
     </examples>
     <related>
-        <funclink>GetPathLength</funclink>
+        <funcLink>GetPathLength</funcLink>
     </related>
   </func>
   <author>Fulgen</author><date>2019-10</date>

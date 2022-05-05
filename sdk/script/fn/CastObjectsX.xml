@@ -22,15 +22,15 @@
 		<desc>Verschleudert iNumber Objekte an angegebener Position mit einer Geschwindigkeit von iLevel mit dem Winkel angw. Bei einem lokalen Aufruf haben die erzeugten Objekte den selben Besitzer wie das aufrufende Objekt.</desc>
 		<examples>
 			<example>
-				<code>var num=<funclink>GetVertexNum</funclink>()<emlink href="script/operatoren.html">-</emlink>1;
-CastObjectsX(SPRK,1,20,<funclink>GetVertex</funclink>(num, 0)<emlink href="script/operatoren.html">-</emlink><funclink>GetX</funclink>(), <funclink>GetVertex</funclink>(num, 1)<emlink href="script/operatoren.html">-</emlink><funclink>GetY</funclink>(),90);
+				<code>var num=<funcLink>GetVertexNum</funcLink>()<emLink href="script/operatoren.html">-</emLink>1;
+CastObjectsX(SPRK,1,20,<funcLink>GetVertex</funcLink>(num, 0)<emLink href="script/operatoren.html">-</emLink><funcLink>GetX</funcLink>(), <funcLink>GetVertex</funcLink>(num, 1)<emLink href="script/operatoren.html">-</emLink><funcLink>GetY</funcLink>(),90);
 				</code>
 				<text>Erzeugt am letzten Vertex einer Linie einen Funken, der senkrecht nach oben geschleudert wird. Bei mehrmaligem Aufruf erzielt man damit den gleichen Effekt wie bei einem Blitzeinschlag.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>CreateObject</funclink>
-			<funclink>CastObjects</funclink>
+			<funcLink>CreateObject</funcLink>
+			<funcLink>CastObjects</funcLink>
 		</related>
 	</func>
 	<author>Fulgen / Clonk Wiki</author><date>2016-07</date>

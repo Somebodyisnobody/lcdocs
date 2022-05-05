@@ -23,11 +23,11 @@
 		</syntax>
 		<desc>Ruft die lokale Funktion szFunction auf. Stattdessen sollte dieselbe Syntax wie bei engineinternen Funktionen genutzt werden.</desc>
 		<related>
-			<funclink>ProtectedCall</funclink>
-			<funclink>PrivateCall</funclink>
-			<funclink>ObjectCall</funclink>
-			<funclink>GameCall</funclink>
-			<funclink>eval</funclink>
+			<funcLink>ProtectedCall</funcLink>
+			<funcLink>PrivateCall</funcLink>
+			<funcLink>ObjectCall</funcLink>
+			<funcLink>GameCall</funcLink>
+			<funcLink>eval</funcLink>
 		</related>
 	</func>
 	<author>jwk</author><date>2002-04</date>

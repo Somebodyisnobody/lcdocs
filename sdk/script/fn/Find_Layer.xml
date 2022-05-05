@@ -14,11 +14,11 @@
 			</params>
 		</syntax>
 		<desc>Suchkriterium: sucht alle Objekte mit dem entsprechenden Layerobjekt.</desc>
-		<remark>Für weitere Informationen und Beispiele zur Benutzung dieser Funktion sehe <funclink>FindObjects</funclink>.</remark>
+		<remark>Für weitere Informationen und Beispiele zur Benutzung dieser Funktion sehe <funcLink>FindObjects</funcLink>.</remark>
 		<related>
-			<funclink>FindObjects</funclink>
-			<funclink>SetObjectLayer</funclink>
-			<funclink>GetObjectLayer</funclink>
+			<funcLink>FindObjects</funcLink>
+			<funcLink>SetObjectLayer</funcLink>
+			<funcLink>GetObjectLayer</funcLink>
 		</related>
 	</func>
 	<author>Der Tod</author><date>2022-02</date>

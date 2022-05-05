@@ -17,16 +17,16 @@
 			</params>
 		</syntax>
 		<desc>Lässt ein Objekt explodieren. Die Explosion beschädigt Landschaft und Objekte, und das Objekt wird mitsamt Inhalt vor der Explosion entfernt. Wenn sich das Objekt in einen anderen Objekt befindet, werden alle anderen Inhaltsobjekte und das enthaltende Objekt beschädigt. Als Verursacher des Schadens gilt der Besitzer des explodierenden Objekts.</desc>
-		<remark>Siehe Hinweis zu <funclink>RemoveObject</funclink>.</remark>
+		<remark>Siehe Hinweis zu <funcLink>RemoveObject</funcLink>.</remark>
 		<examples>
 			<example>
-				<code>Explode(25, <funclink>GetHiRank</funclink>(0));</code>
+				<code>Explode(25, <funcLink>GetHiRank</funcLink>(0));</code>
 				<text>Der höchstrangige Clonk des ersten Spielers explodiert.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>RemoveObject</funclink>
-			<funclink>BlastObjects</funclink>
+			<funcLink>RemoveObject</funcLink>
+			<funcLink>BlastObjects</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

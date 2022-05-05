@@ -23,8 +23,8 @@
 			</example>
 		</examples>
 		<related>
-			<funclink>DigFreeRect</funclink>
-			<funclink>Explode</funclink>
+			<funcLink>DigFreeRect</funcLink>
+			<funcLink>Explode</funcLink>
 		</related>
 	</func>
 	<author>jwk</author><date>2002-04</date>

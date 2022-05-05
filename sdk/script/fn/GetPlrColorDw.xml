@@ -17,14 +17,14 @@
     <examples>
       <example>
 
-<code><funclink>Message</funclink>("&lt;c %x&gt;%s&lt;/c&gt; hat %d Punkte.", 0, GetPlrColorDw(0), <funclink>GetPlayerName</funclink>(0), <funclink>GetScore</funclink>(0));</code>
+<code><funcLink>Message</funcLink>("&lt;c %x&gt;%s&lt;/c&gt; hat %d Punkte.", 0, GetPlrColorDw(0), <funcLink>GetPlayerName</funcLink>(0), <funcLink>GetScore</funcLink>(0));</code>
 
         <text>Gibt Statusinformationen über den ersten Spieler aus, wobei dessen Spielername in seiner Spielerfarbe gefärbt wird.</text>
       </example>
     </examples>
     <related>
-      <funclink>GetColorDw</funclink>
-      <funclink>SetColorDw</funclink>
+      <funcLink>GetColorDw</funcLink>
+      <funcLink>SetColorDw</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2003-10</date>

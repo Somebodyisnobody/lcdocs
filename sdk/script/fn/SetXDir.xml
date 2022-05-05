@@ -17,11 +17,11 @@
 		</syntax>
 		<desc>Setzt die horizontale Geschwindigkeit eines Objekts.</desc>
 		<related>
-			<funclink>GetXDir</funclink>
-			<funclink>GetYDir</funclink>
-			<funclink>SetYDir</funclink>
-			<funclink>SetRDir</funclink>
-			<funclink>SetR</funclink>
+			<funcLink>GetXDir</funcLink>
+			<funcLink>GetYDir</funcLink>
+			<funcLink>SetYDir</funcLink>
+			<funcLink>SetRDir</funcLink>
+			<funcLink>SetR</funcLink>
 		</related>
 	</func>
 	<author>jwk</author><date>2002-08</date>

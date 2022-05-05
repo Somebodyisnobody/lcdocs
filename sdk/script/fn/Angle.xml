@@ -20,14 +20,14 @@
     <desc>Liefert den Winkel, in dem sich der zweite Punkt vom ersten Punkt aus gesehen befindet. Der Winkel wird in Grad zurückgeliefert, 0° ist senkrecht oben. Alle Koordinaten sind global.</desc>
     <examples>
       <example>
-<code><funclink>SetR</funclink>(Angle(<funclink>GetX</funclink>(<funclink>GetCursor</funclink>(0)), <funclink>GetY</funclink>(<funclink>GetCursor</funclink>(0)),
-           <funclink>GetX</funclink>(<funclink>GetCursor</funclink>(1)), <funclink>GetY</funclink>(<funclink>GetCursor</funclink>(1)) ));</code>
+<code><funcLink>SetR</funcLink>(Angle(<funcLink>GetX</funcLink>(<funcLink>GetCursor</funcLink>(0)), <funcLink>GetY</funcLink>(<funcLink>GetCursor</funcLink>(0)),
+           <funcLink>GetX</funcLink>(<funcLink>GetCursor</funcLink>(1)), <funcLink>GetY</funcLink>(<funcLink>GetCursor</funcLink>(1)) ));</code>
         <text>Das Objekt dreht sich, so dass es parallel zu der Gerade liegt, die durch die Mittelpunkte der ausgewählten Clonks von Spieler 1 und 2 geht.</text>
       </example>
     </examples>
     <related>
-      <funclink>Cos</funclink>
-      <funclink>Sin</funclink>
+      <funcLink>Cos</funcLink>
+      <funcLink>Sin</funcLink>
     </related>
   </func>
   <author>jwk</author><date>2002-04</date>

@@ -17,12 +17,12 @@
     Liefert die Farbe eines Teams.
     </desc>
 	<related>
-		<emlink href="scenario/Teams.html">Teams</emlink>
-		<funclink>GetTeamName</funclink>
-		<funclink>GetTeamCount</funclink>
-		<funclink>GetPlayerTeam</funclink>
-		<funclink>GetTeamByIndex</funclink>
-		<funclink>GetTeamConfig</funclink>
+		<emLink href="scenario/Teams.html">Teams</emLink>
+		<funcLink>GetTeamName</funcLink>
+		<funcLink>GetTeamCount</funcLink>
+		<funcLink>GetPlayerTeam</funcLink>
+		<funcLink>GetTeamByIndex</funcLink>
+		<funcLink>GetTeamConfig</funcLink>
 	</related>
   </func>
   <author>Clonkonaut</author><date>2008-04</date>

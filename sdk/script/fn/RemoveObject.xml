@@ -17,7 +17,7 @@
 		<desc>Entfernt ein Objekt.</desc>
 		<remark>
 			Beim Löschen eines Objekts werden viele interne Zeiger gelöscht, und das Objekt selber wird ungültig. Darum sollte der Zeiger auf dieses Objekt (z.B. innerhalb von threadlokalen Variablen) anschließend nicht mehr benutzt werden. Wenn sich ein Objekt selber entfernt, sollte die Funktion sofort mit return() beendet werden.<br />
-			Wenn sich das Objekt zu diesem Zeitpunkt in einer Crew befindet, wird das assoziierte Infoobjekt in der Crew nicht als getötet markiert. Das heißt, ein darauffolgender <funclink>MakeCrewMember</funclink>()-Aufruf kann wieder in demselben Mannschaftsmitglied resultieren. Um dies zu verhindern, sollte das Objekt zuvor mit <funclink>Kill</funclink>() getötet werden.
+			Wenn sich das Objekt zu diesem Zeitpunkt in einer Crew befindet, wird das assoziierte Infoobjekt in der Crew nicht als getötet markiert. Das heißt, ein darauffolgender <funcLink>MakeCrewMember</funcLink>()-Aufruf kann wieder in demselben Mannschaftsmitglied resultieren. Um dies zu verhindern, sollte das Objekt zuvor mit <funcLink>Kill</funcLink>() getötet werden.
 		</remark>
 		<examples>
 			<example>
@@ -26,9 +26,9 @@
 			</example>
 		</examples>
 		<related>
-			<funclink>Explode</funclink>
-			<funclink>CreateObject</funclink>
-			<funclink>Kill</funclink>
+			<funcLink>Explode</funcLink>
+			<funcLink>CreateObject</funcLink>
+			<funcLink>Kill</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-08</date>

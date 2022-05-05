@@ -7,7 +7,7 @@
 		<!-- TODO @maxmitti: Adding other, undocumented constants and dissolve category.xml-->
 		<title>C4D</title>
 		<description>Konstanten zum Setzen oder Abrufen von Kategorien eines Objektes.
-			Verwendet werden diese Konstanten mit <funclink>GetCategory</funclink> und <funclink>SetCategory</funclink>.
+			Verwendet werden diese Konstanten mit <funcLink>GetCategory</funcLink> und <funcLink>SetCategory</funcLink>.
 		</description>
 		<const bitPos="0">
 			<name>C4D_All</name>
@@ -84,50 +84,50 @@
 			<category>Objekte/Kategorie</category>
 			<description>
 				Bewegt sich parallax zum Rest der Landschaft. Das bedeutet, dass sich die scheinbare Objektposition je nach Scrollposition des Viewports ändert. Damit können beispielsweise Objekte scheinbar in den Hintergrund geschoben, oder Statusanzeigen realisiert werden.<br/>
-				Die parallaxe Verschiebung wird dabei prozentual zum Normalverhalten in den ersten beiden indizierten, lokalen Variablen (siehe <funclink>Local</funclink>()) des Objekts angegeben (Local(0) und Local(1) jeweils für die horizontale respektive vertikale Verschiebung). Das heißt, um das Normalverhalten zu erzielen, müssen diese Werte jeweils auf 100 gesetzt werden. Stehen sie auf 0, gleicht die Objektposition der Sichtfensterposition. Für Hintergrundparallaxität werden also gewöhnlich Werte zwischen 0 und 100 gewählt.<br/>
+				Die parallaxe Verschiebung wird dabei prozentual zum Normalverhalten in den ersten beiden indizierten, lokalen Variablen (siehe <funcLink>Local</funcLink>()) des Objekts angegeben (Local(0) und Local(1) jeweils für die horizontale respektive vertikale Verschiebung). Das heißt, um das Normalverhalten zu erzielen, müssen diese Werte jeweils auf 100 gesetzt werden. Stehen sie auf 0, gleicht die Objektposition der Sichtfensterposition. Für Hintergrundparallaxität werden also gewöhnlich Werte zwischen 0 und 100 gewählt.<br/>
 				Um Objekte direkt am Sichtfenster des Spielers zu positionieren, um so zum Beispiel Statusanzeigen zu realisieren, können Local(0) und Local(1) auf 0 gesetzt werden. Die Objektposition ist dann immer relativ zur oberen linken Ecke des Sichtfensters. Ab CR können für die Position solcher Objekte auch negative Werte angegeben werden: Diese werden dann jeweils vom rechten bzw. unteren Rand des Sichtfensters gerechnet. Auf diese Weise lassen sich Statusanzeigen auch am rechten oder unteren Rand der Sichtfenster platzieren.<br/>
-				Siehe auch: <funclink>SetSkyParallax</funclink>.
+				Siehe auch: <funcLink>SetSkyParallax</funcLink>.
 			</description>
 			<version>4.9.1.0 GWE</version>
 			<value>2097152</value>
 		</const>
 		<examples>
 			<example>
-				<code><funclink>SetCategory</funclink>(C4D_StaticBack, this());</code>
+				<code><funcLink>SetCategory</funcLink>(C4D_StaticBack, this());</code>
 				<text>Macht das Objekt zu einem Hintergrundobjekt. Wird z. B. bei Burgteilen verwendet, damit davor gebaut werden kann.</text>
 			</example>
 			<example>
-				<code><funclink>GetPlrKnowledge</funclink>(0, 0, 0, C4D_Structure);</code>
+				<code><funcLink>GetPlrKnowledge</funcLink>(0, 0, 0, C4D_Structure);</code>
 				<text>Liefert das erste Gebäude zurück, das der 1. Spieler bauen kann.</text>
 			</example>
 			<example>
-				<code><funclink>GetDefinition</funclink>(0, C4D_Object);</code>
+				<code><funcLink>GetDefinition</funcLink>(0, C4D_Object);</code>
 				<text>Liefert die ID des ersten geladenen Objekts zurück. Ein ähnlicher Code wird vom Forschungslabor benutzt, um die erforschbaren Objekte aufzulisten.</text>
 			</example>
 			<example>
 				<code>var obj;
-					while (obj=<funclink>FindObject</funclink>(0, 0, 0, 0, 0, 0, 0, 0, 0, obj))
-					if (<funclink>GetCategory</funclink>(obj) <emlink href="script/operatoren.html">&amp;</emlink> C4D_Goal)
-					<funclink>RemoveObject</funclink>(obj);
+					while (obj=<funcLink>FindObject</funcLink>(0, 0, 0, 0, 0, 0, 0, 0, 0, obj))
+					if (<funcLink>GetCategory</funcLink>(obj) <emLink href="script/operatoren.html">&amp;</emLink> C4D_Goal)
+					<funcLink>RemoveObject</funcLink>(obj);
 				</code>
 				<text>Entfernt alle Spielziele. Mit einem bitweisen AND kann man überprüfen, ob zwei Kategorien in mindestens einer Kategorie übereinstimmen.</text>
 			</example>
 			<example>
-				<code><funclink>if</funclink>(<funclink>GetCategory</funclink>( 0, <funclink>GetHomebaseMaterial</funclink>()) <emlink href="script/operatoren.html">&amp;</emlink> C4D_Knowledge) <funclink>Message</funclink>("Spieler 1 kann etwas kaufen, was er auch erforschen oder bauen könnte.");</code>
+				<code><funcLink>if</funcLink>(<funcLink>GetCategory</funcLink>( 0, <funcLink>GetHomebaseMaterial</funcLink>()) <emLink href="script/operatoren.html">&amp;</emLink> C4D_Knowledge) <funcLink>Message</funcLink>("Spieler 1 kann etwas kaufen, was er auch erforschen oder bauen könnte.");</code>
 				<text>Mit einem bitweisen AND kann man überprüfen, ob zwei Kategorien in mindestens einer Kategorie übereinstimmen.</text>
 			</example>
 			<example>
-				<code>for(var obj in <funclink>FindObjects</funclink>(<funclink>Find_Category</funclink>(C4D_Rule)))
-					<funclink>RemoveObject</funclink>(obj);</code>
+				<code>for(var obj in <funcLink>FindObjects</funcLink>(<funcLink>Find_Category</funcLink>(C4D_Rule)))
+					<funcLink>RemoveObject</funcLink>(obj);</code>
 				<text>Entfernt alle Spielregeln. :-)</text>
 			</example>
 			<example>
-				<code><funclink>SetCategory</funclink>(<funclink>GetCategory</funclink>() | C4D_Background);</code>
+				<code><funcLink>SetCategory</funcLink>(<funcLink>GetCategory</funcLink>() | C4D_Background);</code>
 				<text>Versetzt das aufrufende Objekt in den Hintergrund.</text>
 			</example>
 			<example>
-				<code><funclink>SetCategory</funclink>(<funclink>GetCategory</funclink>() | C4D_Parallax | C4D_Background);
-					<funclink>Local</funclink>()=50; <funclink>Local</funclink>(1)=100;
+				<code><funcLink>SetCategory</funcLink>(<funcLink>GetCategory</funcLink>() | C4D_Parallax | C4D_Background);
+					<funcLink>Local</funcLink>()=50; <funcLink>Local</funcLink>(1)=100;
 				</code>
 				<text>Versetzt das aufrufende Objekt in den Hintergrund, und gibt ihm horizontale Parallaxität.</text>
 			</example>

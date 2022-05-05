@@ -6,10 +6,10 @@
 	<constGroup activateBitmask="true">
 		<title>OCF</title>
 		<description>OFC steht für <tt>Object Character Flag</tt>. Objekte können mittels OCF bestimmte Eigenschaften
-			zugewiesen werden. Mit <funclink>GetOCF</funclink> werden die aktuell gesetzten Flags als Bitmaske
-			ausgegeben. Alternativ kann man auch nach bestimmten Flags mit <funclink>Find_OCF</funclink> suchen.
-			Für weitere Informationen und Beispiele zur Benutzung dieser Konstanten siehe <emlink
-					href="definition/ocf.html">Object character flags</emlink>.
+			zugewiesen werden. Mit <funcLink>GetOCF</funcLink> werden die aktuell gesetzten Flags als Bitmaske
+			ausgegeben. Alternativ kann man auch nach bestimmten Flags mit <funcLink>Find_OCF</funcLink> suchen.
+			Für weitere Informationen und Beispiele zur Benutzung dieser Konstanten siehe <emLink
+					href="definition/ocf.html">Object character flags</emLink>.
 		</description>
 		<const>
 			<name>OCF_Normal</name>
@@ -57,9 +57,9 @@
 			<name>OCF_Fullcon</name>
 			<category>Objekte/OCF</category>
 			<description>Zu mindestens 100 % fertig gebautes Objekt. Das Objekt ist also zum Beispiel keine Baustelle,
-				bzw. als Lebewesen ist es mindestens voll ausgewachsen. Siehe auch <funclink>GetCon</funclink>, <funclink>
+				bzw. als Lebewesen ist es mindestens voll ausgewachsen. Siehe auch <funcLink>GetCon</funcLink>, <funcLink>
 					DoCon
-				</funclink> und <funclink>SetCon</funclink>.
+				</funcLink> und <funcLink>SetCon</funcLink>.
 			</description>
 			<version>4.6.5.0 CP</version>
 			<value>64</value>
@@ -89,8 +89,8 @@
 			<name>OCF_Exclusive</name>
 			<category>Objekte/OCF</category>
 			<description>Das Objekt blockiert (versteckt) dahinter befindliche Objekte und verhindert, dass weitere
-				Objekte vor diesem gebaut werden. Dieses Flag wird durch den <emlink href="definition/defcore.html">
-					DefCore</emlink>-Eintrag "Exclusive" gesetzt.
+				Objekte vor diesem gebaut werden. Dieses Flag wird durch den <emLink href="definition/defcore.html">
+					DefCore</emLink>-Eintrag "Exclusive" gesetzt.
 			</description>
 			<version>4.9.1.0 GWE</version>
 			<value>1024</value>
@@ -99,7 +99,7 @@
 			<name>OCF_Entrance</name>
 			<category>Objekte/OCF</category>
 			<description>Das Objekt besitzt einen aktiven Eingangsbereich. Dies ist der Fall, wenn ein Eingangsbereich
-				definiert ist (siehe <emlink href="definition/defcore.html">DefCore.txt</emlink>), das Objekt fertig
+				definiert ist (siehe <emLink href="definition/defcore.html">DefCore.txt</emLink>), das Objekt fertig
 				gebaut und nicht verdreht ist.
 			</description>
 			<version>4.9.1.0 GWE</version>
@@ -123,7 +123,7 @@
 			<name>OCF_Collection</name>
 			<category>Objekte/OCF</category>
 			<description>Das Objekt besitzt einen Collection-Bereich, ist nicht voll (CollectionLimit), verdreht oder
-				unfertig. Siehe auch <funclink>Collect</funclink>.
+				unfertig. Siehe auch <funcLink>Collect</funcLink>.
 			</description>
 			<version>4.9.1.0 GWE</version>
 			<value>16384</value>
@@ -169,8 +169,8 @@
 		<const>
 			<name>OCF_AttractLightning</name>
 			<category>Objekte/OCF</category>
-			<description>Objekt das Blitze anzieht. Dieses Flag wird durch die <emlink href="definition/defcore.html">
-				DefCore</emlink>-Eigenschaft "AttractLightning" kontrolliert.
+			<description>Objekt das Blitze anzieht. Dieses Flag wird durch die <emLink href="definition/defcore.html">
+				DefCore</emLink>-Eigenschaft "AttractLightning" kontrolliert.
 			</description>
 			<version>4.6.5.0 CP</version>
 			<value>1048576</value>
@@ -178,7 +178,7 @@
 		<const>
 			<name>OCF_NotContained</name>
 			<category>Objekte/OCF</category>
-			<description>Objekt befindet sich im Freien. Siehe auch <funclink>NoContainer</funclink>.
+			<description>Objekt befindet sich im Freien. Siehe auch <funcLink>NoContainer</funcLink>.
 			</description>
 			<version>4.9.1.0 GWE</version>
 			<value>2097152</value>
@@ -187,7 +187,7 @@
 			<name>OCF_CrewMember</name>
 			<category>Objekte/OCF</category>
 			<description>Das Objekt kann theoretisch zu einer Crew hinzugefügt werden oder gehört schon zu einer Crew.
-				Das heißt, es hat die entsprechende <emlink href="definition/defcore.html">DefCore</emlink>-Eigenschaft
+				Das heißt, es hat die entsprechende <emLink href="definition/defcore.html">DefCore</emLink>-Eigenschaft
 				gesetzt, und lebt.
 				<br/>
 				Objekte, die das OCF_CrewMember()-Flag gesetzt haben, bekommen von der Engine außerdem einige
@@ -221,8 +221,8 @@
 		<const>
 			<name>OCF_Edible</name>
 			<category>Objekte/OCF</category>
-			<description>Essbares Objekt. Dieses Flag wird durch den <emlink href="definition/defcore.html">
-				DefCore</emlink>-Eintrag "Edible" gesetzt.
+			<description>Essbares Objekt. Dieses Flag wird durch den <emLink href="definition/defcore.html">
+				DefCore</emLink>-Eintrag "Edible" gesetzt.
 			</description>
 			<version>4.6.5.0 CP</version>
 			<value>8388608</value>
@@ -230,7 +230,7 @@
 		<const>
 			<name>OCF_InLiquid</name>
 			<category>Objekte/OCF</category>
-			<description>Das Objekt befindet sich in einer Flüssigkeit. Siehe auch <funclink>GBackLiquid</funclink>.
+			<description>Das Objekt befindet sich in einer Flüssigkeit. Siehe auch <funcLink>GBackLiquid</funcLink>.
 			</description>
 			<version>4.6.5.0 CP</version>
 			<value>16777216</value>
@@ -238,8 +238,8 @@
 		<const>
 			<name>OCF_InSolid</name>
 			<category>Objekte/OCF</category>
-			<description>Die Objektmitte steckt im Boden. Siehe auch <funclink>GBackSolid</funclink> und <funclink>
-				Stuck</funclink>.
+			<description>Die Objektmitte steckt im Boden. Siehe auch <funcLink>GBackSolid</funcLink> und <funcLink>
+				Stuck</funcLink>.
 			</description>
 			<version>4.6.5.0 CP</version>
 			<value>33554432</value>
@@ -264,8 +264,8 @@
 		<const>
 			<name>OCF_PowerConsumer</name>
 			<category>Objekte/OCF</category>
-			<description>Energieverbraucher. Diese Eigenschaft wird durch die <emlink href="definition/defcore.html">
-				DefCore</emlink>-Eigenschaft "LineConnect" geregelt. Das Gebäude muss außerdem fertig gebaut sein.
+			<description>Energieverbraucher. Diese Eigenschaft wird durch die <emLink href="definition/defcore.html">
+				DefCore</emLink>-Eigenschaft "LineConnect" geregelt. Das Gebäude muss außerdem fertig gebaut sein.
 			</description>
 			<version>4.6.5.0 CP</version>
 			<value>268435456</value>
@@ -273,8 +273,8 @@
 		<const>
 			<name>OCF_PowerSupply</name>
 			<category>Objekte/OCF</category>
-			<description>Energiequelle. Diese Eigenschaft wird durch die <emlink href="definition/defcore.html">
-				DefCore</emlink>-Eigenschaft "LineConnect" geregelt. Dabei zählen immer reine Energieerzeuger, sowie
+			<description>Energiequelle. Diese Eigenschaft wird durch die <emLink href="definition/defcore.html">
+				DefCore</emLink>-Eigenschaft "LineConnect" geregelt. Dabei zählen immer reine Energieerzeuger, sowie
 				auch normale Energieverbraucher, wenn sie einen momentanen Energiewert >0 besitzen und eine
 				Energieleitung angeschlossen werden kann. Das Gebäude muss außerdem fertig gebaut sein.
 			</description>
@@ -299,12 +299,12 @@
 		</const>
 		<examples>
 			<example>
-				<code><funclink>ObjectCount2</funclink>(Find_OCF(OCF_InLiquid | OCF_InSolid));
+				<code><funcLink>ObjectCount2</funcLink>(Find_OCF(OCF_InLiquid | OCF_InSolid));
 				</code>
 				<text>Gibt die Anzahl der Objekte zurück, die sich in Flüssigkeit befinden oder im Boden stecken.</text>
 			</example>
 			<example>
-				<code><funclink>FindObject2</funclink>(Find_OCF(OCF_Alive), Find_OCF(OCF_OnFire));
+				<code><funcLink>FindObject2</funcLink>(Find_OCF(OCF_Alive), Find_OCF(OCF_OnFire));
 				</code>
 				<text>Gibt das erstbeste brennende Lebewesen zurück, falls ein solches existiert.</text>
 			</example>

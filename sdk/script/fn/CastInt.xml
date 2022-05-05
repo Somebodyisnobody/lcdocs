@@ -15,9 +15,9 @@
 		</syntax>
 		<desc>Wandelt einen Wert in einen Integer um.</desc>
 		<related>
-			<funclink>CastAny</funclink>
-			<funclink>CastBool</funclink>
-			<funclink>CastC4ID</funclink>
+			<funcLink>CastAny</funcLink>
+			<funcLink>CastBool</funcLink>
+			<funcLink>CastC4ID</funcLink>
 		</related>
 	</func>
 	<author>Fulgen</author><date>2016-08</date>

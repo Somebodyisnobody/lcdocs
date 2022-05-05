@@ -15,8 +15,8 @@
                 </syntax>
                 <desc>Liefert die Rotation in Grad von *pObj. Der Rückgabewert liegt zwischen -180° und 180°. 0° ist der Normalzustand.</desc>
                 <related>
-                        <funclink>GetRDir</funclink>
-                        <funclink>SetR</funclink>
+                        <funcLink>GetRDir</funcLink>
+                        <funcLink>SetR</funcLink>
                 </related>
         </func>
         <author>Cucaracha</author><date>2002-05</date>

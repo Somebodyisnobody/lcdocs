@@ -50,9 +50,9 @@
       </examples>
 
       <related>
-        <funclink>SetVertex</funclink>
-        <funclink>AddVertex</funclink>
-        <funclink>RemoveVertex</funclink>
+        <funcLink>SetVertex</funcLink>
+        <funcLink>AddVertex</funcLink>
+        <funcLink>RemoveVertex</funcLink>
       </related>
   </func>
   <author>flgr</author><date>2002-01</date>

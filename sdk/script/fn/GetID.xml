@@ -16,7 +16,7 @@
 		<desc>Gibt die ID eines Objekts zurück.</desc>
 		<examples>
 			<example>
-				<code><funclink>CreateObject</funclink>(GetID(<funclink>this</funclink>()))</code>
+				<code><funcLink>CreateObject</funcLink>(GetID(<funcLink>this</funcLink>()))</code>
 				<text>Erstellt ein Duplikat des aufrufenden Objekts.</text>
 			</example>
 		</examples>

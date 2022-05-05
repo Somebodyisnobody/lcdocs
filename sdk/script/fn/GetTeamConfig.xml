@@ -42,11 +42,11 @@
 		zurückgegeben. 
 	</remark>
 	<related>
-		<emlink href="scenario/Teams.html">Teams</emlink>
-		<funclink>GetTeamColor</funclink>
-		<funclink>GetTeamName</funclink>
-		<funclink>GetPlayerTeam</funclink>
-		<funclink>GetTeamByIndex</funclink>
+		<emLink href="scenario/Teams.html">Teams</emLink>
+		<funcLink>GetTeamColor</funcLink>
+		<funcLink>GetTeamName</funcLink>
+		<funcLink>GetPlayerTeam</funcLink>
+		<funcLink>GetTeamByIndex</funcLink>
 	</related>
   </func>
   <author>Fulgen / Clonk Wiki</author><date>2016-07</date>

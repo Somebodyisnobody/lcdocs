@@ -18,13 +18,13 @@
 		<remark>Der Clonk muss eine Infosektion haben, das heißt er muss ein CrewMember sein und einem Spieler gehören.</remark>
 		<examples>
 			<example>
-<code>DoCrewExp(100, <funclink>GetCursor</funclink>());
-<funclink>Sound</funclink>("Applause", 1); <funclink>GameOver</funclink>();</code>
+<code>DoCrewExp(100, <funcLink>GetCursor</funcLink>());
+<funcLink>Sound</funcLink>("Applause", 1); <funcLink>GameOver</funcLink>();</code>
 				<text>Gibt dem ausgewählten Clonk des ersten Spielers 100 Punkte Erfahrung, spielt einen Applaus ab und beendet die Runde.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>GetRank</funclink>
+			<funcLink>GetRank</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-04</date>

@@ -13,13 +13,13 @@
 		<desc>Liest die Schwerkraft (in Prozent) aus.</desc>
 		<examples>
 			<example>
-<code><funclink>for</funclink> (var obj in <funclink>FindObjects</funclink>(<funclink>Find_Distance</funclink>(100)))
-  <funclink>SetYDir</funclink>(<funclink>GetYDir</funclink>(obj, 500) - GetGravity(), obj, 500);</code>
+<code><funcLink>for</funcLink> (var obj in <funcLink>FindObjects</funcLink>(<funcLink>Find_Distance</funcLink>(100)))
+  <funcLink>SetYDir</funcLink>(<funcLink>GetYDir</funcLink>(obj, 500) - GetGravity(), obj, 500);</code>
 				<text>Hebt die Gravitation in einem Radius von 100 Pixeln auf, wenn jeden Frame aufgerufen.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>SetGravity</funclink>
+			<funcLink>SetGravity</funcLink>
 		</related>
 	</func>
 	<author>jwk</author><date>2002-08</date>

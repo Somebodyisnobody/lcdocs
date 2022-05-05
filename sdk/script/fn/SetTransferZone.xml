@@ -21,14 +21,14 @@
     <remark>Transferzonen müssen neu gesetzt werden, wenn sich das Objekt bewegt. Außerdem sollten sie immer als Antwort auf einen UpdateTransferZone-Callback der Engine neu gesetzt werden.</remark>
     <examples>
       <example>
-<code>protected func Initialize() { <funclink>return</funclink>(UpdateTransferZone()); }
+<code>protected func Initialize() { <funcLink>return</funcLink>(UpdateTransferZone()); }
 
-protected func UpdateTransferZone() { <funclink>return</funclink>(SetTransferZone(-<funclink>GetX</funclink>(), -<funclink>GetY</funclink>(), <funclink>LandscapeWidth</funclink>(), <funclink>LandscapeHeight</funclink>()));
+protected func UpdateTransferZone() { <funcLink>return</funcLink>(SetTransferZone(-<funcLink>GetX</funcLink>(), -<funcLink>GetY</funcLink>(), <funcLink>LandscapeWidth</funcLink>(), <funcLink>LandscapeHeight</funcLink>()));
 
 protected func ControlTransfer(pClonk, iToX, iToY)
   {
-  <funclink>SetPosition</funclink>(iToX, iToY, pClonk);
-  <funclink>return</funclink>(1);
+  <funcLink>SetPosition</funcLink>(iToX, iToY, pClonk);
+  <funcLink>return</funcLink>(1);
   }</code>
         <text>Script für ein Cheatobjekt: Ein Spieler, der mit der Maussteuerung an ein Ziel klickt, wird sofort dorthin versetzt.</text>
       </example>

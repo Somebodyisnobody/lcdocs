@@ -16,9 +16,9 @@
 			</params>
 		</syntax>
 		<desc>Suchkriterium: Sucht alle Objekte, die höchstens den angegebenen Radius vom Bezugspunkt entfernt sind. Wird kein Bezugspunkt angegeben, gilt der Mittelpunkt des aufrufenden Objektes.</desc>
-		<remark>Für weitere Informationen und Beispiele zur Benutzung dieser Funktion sehe <funclink>FindObjects</funclink>.</remark>
+		<remark>Für weitere Informationen und Beispiele zur Benutzung dieser Funktion sehe <funcLink>FindObjects</funcLink>.</remark>
 		<related>
-			<funclink>FindObjects</funclink>
+			<funcLink>FindObjects</funcLink>
 		</related>
 	</func>
 	<author>PeterW</author><date>2006-10</date>

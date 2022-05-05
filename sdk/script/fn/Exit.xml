@@ -22,12 +22,12 @@
 		<desc>Versetzt ein Objekt aus seinem Behälter heraus, und setzt optional seine Geschwindigkeit.</desc>
 		<examples>
 			<example>
-				<code>Exit(<funclink>Contents</funclink>(), 0,-20, <funclink>Random</funclink>(360), 0,-15, <funclink>Random</funclink>(11)-5);</code>
+				<code>Exit(<funcLink>Contents</funcLink>(), 0,-20, <funcLink>Random</funcLink>(360), 0,-15, <funcLink>Random</funcLink>(11)-5);</code>
 				<text>Bewegt das erste Inhaltsobjekt oberhalb aus dem aufrufenden Objekt heraus, dreht es zufällig und schleudert es nach oben.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>Enter</funclink>
+			<funcLink>Enter</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

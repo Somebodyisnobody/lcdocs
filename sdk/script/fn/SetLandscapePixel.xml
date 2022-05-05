@@ -18,12 +18,12 @@
     <desc>Färbt ein Pixel in der Landschaft ein. Diese Funktion ist nicht im 8Bit-Grafiksystem verfügbar.</desc>
     <examples>
       <example>
-        <code>SetLandscapePixel(0, 0, <funclink>RGB</funclink>(185, 127, 0));</code>
+        <code>SetLandscapePixel(0, 0, <funcLink>RGB</funcLink>(185, 127, 0));</code>
         <text>Färbt das Landschaftspixel direkt hinter dem aufrufenden Objekt braun.</text>
       </example>
     </examples>
     <related>
-      <funclink>RGB</funclink>
+      <funcLink>RGB</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2002-04</date>

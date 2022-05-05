@@ -26,9 +26,9 @@
   <desc>Gibt den kleineren der beiden Werte zurück</desc>
 
   <related>
-   <funclink>Max</funclink>
-   <funclink>Inside</funclink>
-   <funclink>BoundBy</funclink>
+   <funcLink>Max</funcLink>
+   <funcLink>Inside</funcLink>
+   <funcLink>BoundBy</funcLink>
   </related>
  </func>
  <author>PeterW</author><date>2001-12</date>

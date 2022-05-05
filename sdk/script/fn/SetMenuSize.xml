@@ -16,7 +16,7 @@
       </params>
     </syntax>
     <desc>Ändert die Größe eines Objektmenüs, so dass die vorgegebene Anzahl an Menüeinträgen in Breite und Höhe hineinpassen.</desc>
-    <related><funclink>GetMenuSelection</funclink><funclink>GetMenu</funclink><funclink>CreateMenu</funclink><funclink>AddMenuItem</funclink><funclink>SetMenuDecoration</funclink><funclink>SetMenuTextProgress</funclink></related>
+    <related><funcLink>GetMenuSelection</funcLink><funcLink>GetMenu</funcLink><funcLink>CreateMenu</funcLink><funcLink>AddMenuItem</funcLink><funcLink>SetMenuDecoration</funcLink><funcLink>SetMenuTextProgress</funcLink></related>
   </func>
   <author>Sven2</author><date>2003-06</date>
 </clonkDoc>

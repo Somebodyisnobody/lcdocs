@@ -14,19 +14,19 @@
 				<param><type>int</type><name>iY</name><desc>Y-Position, an der das Material abgefragt werden soll. Offset bei lokalem Aufruf.</desc></param>
 			</params>
 		</syntax>
-		<desc>Fragt das Material an einer bestimmten Stelle der Landschaft ab. Der zurückgegebene Wert ist ein Materialindex, der mit anderen Indizes zum Beispiel über die Funktion <funclink>Material</funclink>() verglichen werden kann. Für Himmel gibt die Funktion -1 zurück.</desc>
+		<desc>Fragt das Material an einer bestimmten Stelle der Landschaft ab. Der zurückgegebene Wert ist ein Materialindex, der mit anderen Indizes zum Beispiel über die Funktion <funcLink>Material</funcLink>() verglichen werden kann. Für Himmel gibt die Funktion -1 zurück.</desc>
 		<remark>Die Funktion erfasst nur feste Materialpixel, also beispielsweise keinen herunterrieselnden Schnee. Materialflächen, die nur über den MassMover in Bewegung sind, werden natürlich erfasst.</remark>
 		<examples>
 			<example>
-				<code><funclink>if</funclink>(GetMaterial(0, +200) == <funclink>Material</funclink>("Oil")) <funclink>Message</funclink>("Ich bin reich!", <funclink>this</funclink>());</code>
+				<code><funcLink>if</funcLink>(GetMaterial(0, +200) == <funcLink>Material</funcLink>("Oil")) <funcLink>Message</funcLink>("Ich bin reich!", <funcLink>this</funcLink>());</code>
 				<text>Teil eines Clonkscripts: Wenn 200 Pixel unterhalb des aufrufenden Objekts Öl ist, wird eine entsprechende Meldung über dem Objekt ausgegeben.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>Material</funclink>
-			<funclink>GBackSolid</funclink>
-			<funclink>GBackLiquid</funclink>
-			<funclink>InsertMaterial</funclink>
+			<funcLink>Material</funcLink>
+			<funcLink>GBackSolid</funcLink>
+			<funcLink>GBackLiquid</funcLink>
+			<funcLink>InsertMaterial</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-08</date>

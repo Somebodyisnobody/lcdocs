@@ -121,13 +121,13 @@
             </params>
         </syntax>
 
-        <desc>Fügt ein Kommado in die Kommandoliste eines Objekts hinzu (an den Anfang, siehe auch <funclink>
-            AppendCommand</funclink>). D.h. es wird ein Kommando hinzugefügt, welches das Objekt vor anderen vorher
-            gegebenen Kommandos auszuführen hat (war vorher kein Kommando gesetzt, so entspricht AddCommand <funclink>
-                SetCommand</funclink>)
+        <desc>Fügt ein Kommado in die Kommandoliste eines Objekts hinzu (an den Anfang, siehe auch <funcLink>
+            AppendCommand</funcLink>). D.h. es wird ein Kommando hinzugefügt, welches das Objekt vor anderen vorher
+            gegebenen Kommandos auszuführen hat (war vorher kein Kommando gesetzt, so entspricht AddCommand <funcLink>
+                SetCommand</funcLink>)
             <br/>
             Für Kommando-Beschreibungen siehe
-            <funclink>SetCommand</funclink>
+            <funcLink>SetCommand</funcLink>
         </desc>
         <remark>
             Mit AddCommand hinzugefügte Befehle werden nicht an gesteuerte Fahrzeuge weitergeleitet (siehe
@@ -136,10 +136,10 @@
         <examples>
             <example>
                 <code>Timer:
-                    var obj = <funclink>FindObject</funclink>(0, -20, -40, 40, 40, <constlink constGroup="OCF">OCF_CrewMember</constlink>;
+                    var obj = <funcLink>FindObject</funcLink>(0, -20, -40, 40, 40, <constLink constGroup="OCF">OCF_CrewMember</constLink>;
                     if(obj)
-                    if(<funclink>GetComDir</funclink>(obj) == <constlink constGroup="COMD">COMD_Right</constlink>)
-                    <funclink>AddCommand</funclink>(obj, "Jump");
+                    if(<funcLink>GetComDir</funcLink>(obj) == <constLink constGroup="COMD">COMD_Right</constLink>)
+                    <funcLink>AddCommand</funcLink>(obj, "Jump");
                     return();
                 </code>
                 <text>
@@ -156,11 +156,11 @@
             </example>
         </examples>
         <related>
-            <funclink>SetCommand</funclink>
-            <funclink>GetCommand</funclink>
-            <funclink>AppendCommand</funclink>
-            <funclink>FinishCommand</funclink>
-            <funclink>PlayerObjectCommand</funclink>
+            <funcLink>SetCommand</funcLink>
+            <funcLink>GetCommand</funcLink>
+            <funcLink>AppendCommand</funcLink>
+            <funcLink>FinishCommand</funcLink>
+            <funcLink>PlayerObjectCommand</funcLink>
         </related>
     </func>
     <author>PeterW</author>

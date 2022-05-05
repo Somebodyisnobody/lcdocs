@@ -22,25 +22,25 @@
 protected func Timer()
 {
   // Bereits einen Feind gefunden?
-  <funclink>if</funclink>(!oFeind)
+  <funcLink>if</funcLink>(!oFeind)
   {
     // Alarm schlagen?
-    <funclink>while</funclink>(oAlarm = <funclink>FindObject</funclink>(0, -100, -100, 200, 200, <constlink constGroup="OCF">OCF_CrewMember</constlink>, 0, 0, 0, oAlarm))
-      <funclink>if</funclink>(<funclink>Hostile</funclink>(<funclink>GetOwner</funclink>(oAlarm), <funclink>GetOwner</funclink>()))
+    <funcLink>while</funcLink>(oAlarm = <funcLink>FindObject</funcLink>(0, -100, -100, 200, 200, <constLink constGroup="OCF">OCF_CrewMember</constLink>, 0, 0, 0, oAlarm))
+      <funcLink>if</funcLink>(<funcLink>Hostile</funcLink>(<funcLink>GetOwner</funcLink>(oAlarm), <funcLink>GetOwner</funcLink>()))
       {
         // Ein feindlicher Clonk!
-        SetPlrView(<funclink>GetOwner</funclink>(), oAlarm);
-        <funclink>Sound</funclink>("Bing");
+        SetPlrView(<funcLink>GetOwner</funcLink>(), oAlarm);
+        <funcLink>Sound</funcLink>("Bing");
         break;
       }
   }
   else
   {
-    <funclink>if</funclink>(<funclink>ObjectDistance</funclink>(oFeind) &lt; 120)
+    <funcLink>if</funcLink>(<funcLink>ObjectDistance</funcLink>(oFeind) &lt; 120)
     {
       // Noch einige ständige Effekte bei Alarm
-      <funclink>Sound</funclink>("Bing");
-      <funclink>Message</funclink>("!!! FEIND !!!", <funclink>this</funclink>());
+      <funcLink>Sound</funcLink>("Bing");
+      <funcLink>Message</funcLink>("!!! FEIND !!!", <funcLink>this</funcLink>());
     }
     else
     {
@@ -55,10 +55,10 @@ protected func Timer()
 			</example>
 		</examples>
 								<related>
-												<funclink>GetPlrView</funclink>
-												<funclink>GetPlrViewMode</funclink>
-												<funclink>SetPlrViewRange</funclink>
-												<funclink>SetFoW</funclink>
+												<funcLink>GetPlrView</funcLink>
+												<funcLink>GetPlrViewMode</funcLink>
+												<funcLink>SetPlrViewRange</funcLink>
+												<funcLink>SetFoW</funcLink>
 								</related>
 	</func>
 	<author>PeterW</author><date>2003-04</date>

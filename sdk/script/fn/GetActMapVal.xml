@@ -36,23 +36,23 @@
       </params>
     </syntax>
 
-    <desc>Fragt Aktionsdaten aus der <emlink href="definition/actmap.html">ActMap.txt</emlink> anhand deren dortigem Namen ab.</desc>
+    <desc>Fragt Aktionsdaten aus der <emLink href="definition/actmap.html">ActMap.txt</emLink> anhand deren dortigem Namen ab.</desc>
 
     <examples>
       <example>
-        <code>var iActLength = GetActMapVal("Length", <funclink>GetAction</funclink>()) * GetActMapVal("Delay", <funclink>GetAction</funclink>());</code>
+        <code>var iActLength = GetActMapVal("Length", <funcLink>GetAction</funcLink>()) * GetActMapVal("Delay", <funcLink>GetAction</funcLink>());</code>
         <text>Berechnet die Länge in Ticks, die die aktuelle Action dauert</text>
       </example>
     </examples>
 
 
     <related>
-      <funclink>GetDefCoreVal</funclink>
-      <funclink>GetObjectVal</funclink>
-      <funclink>GetObjectInfoCoreVal</funclink>
-      <funclink>GetScenarioVal</funclink>
-      <funclink>GetPlayerVal</funclink>
-      <funclink>GetPlayerInfoCoreVal</funclink>
+      <funcLink>GetDefCoreVal</funcLink>
+      <funcLink>GetObjectVal</funcLink>
+      <funcLink>GetObjectInfoCoreVal</funcLink>
+      <funcLink>GetScenarioVal</funcLink>
+      <funcLink>GetPlayerVal</funcLink>
+      <funcLink>GetPlayerInfoCoreVal</funcLink>
     </related>
 
   </func>

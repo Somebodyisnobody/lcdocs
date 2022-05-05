@@ -17,8 +17,8 @@
 		</syntax>
 		<desc>Gibt den Pfad zur Datei per Log aus, aus der angegebene Funktion geladen wurde und zeigt Überladungen an. Weiterhin kann über pObj direkt in einem Objekt gesucht werden, oder, falls pObj==0, in einer Definition über idDefinition.</desc>
 		<related>
-			<funclink>Log</funclink>
-			<funclink>DebugLog</funclink>
+			<funcLink>Log</funcLink>
+			<funcLink>DebugLog</funcLink>
 		</related>
 	</func>
 	<author>Fulgen / Clonk Wiki</author><date>2016-07</date>

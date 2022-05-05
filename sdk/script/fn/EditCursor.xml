@@ -14,8 +14,8 @@
     <examples>
     <example>
 <code>var pCur = EditCursor();
-<funclink>Message</funclink>("%s|x: %d y: %d|xdir: %d ydir: %d", pCur, <funclink>GetName</funclink>(pCur), <funclink>GetX</funclink>(pCur), <funclink>GetY</funclink>(pCur),
-  <funclink>GetXDir</funclink>(pCur), <funclink>GetYDir</funclink>(pCur));</code>
+<funcLink>Message</funcLink>("%s|x: %d y: %d|xdir: %d ydir: %d", pCur, <funcLink>GetName</funcLink>(pCur), <funcLink>GetX</funcLink>(pCur), <funcLink>GetY</funcLink>(pCur),
+  <funcLink>GetXDir</funcLink>(pCur), <funcLink>GetYDir</funcLink>(pCur));</code>
       <text>Zeigt einige Informationen über das Objekt an, über dem gerade der Mauscursor schwebt.</text>
     </example>
     </examples>

@@ -13,20 +13,20 @@
         <param><type>id</type><name>id</name><desc>Typ des zu erstellenden Objekts</desc></param>
         <param><type>int</type><name>iXOffset</name><desc>X-Koordinate</desc></param>
         <param><type>int</type><name>iYOffset</name><desc>Y-Koordinate</desc></param>
-        <param><type>int</type><name>iOwner</name><desc>Besitzer des zu erstellenden Objekts (Index eines Spielers oder <constlink constGroup="OWNER">NO_OWNER</constlink> für keinen Besitzer)</desc></param>
+        <param><type>int</type><name>iOwner</name><desc>Besitzer des zu erstellenden Objekts (Index eines Spielers oder <constLink constGroup="OWNER">NO_OWNER</constLink> für keinen Besitzer)</desc></param>
       </params>
     </syntax>
     <desc>Erzeugt ein Objekt des angegebenen Typs an der angegebenen Position. iXOffset und iYOffset bestimmen die Position in absoluten Pixel-Koordinaten der Landschaft (Mitte Unterkante des Objekts). Bei lokalen Aufrufen dieser Funktion wird die angegebene Position zu Offset-Koordinaten zum aufrufenden Objekt.</desc>
     <examples>
       <example>
-        <code>CreateObject(WIPF, 100,100, <constlink constGroup="OWNER">NO_OWNER</constlink>);</code>
+        <code>CreateObject(WIPF, 100,100, <constLink constGroup="OWNER">NO_OWNER</constLink>);</code>
         <text>Erschafft einen Wipf bei den Koordinaten 100/100 ohne Besitzer.</text>
       </example>
     </examples>
     <related>
-      <funclink>CreateConstruction</funclink>
-      <funclink>CreateContents</funclink>
-      <funclink>RemoveObject</funclink>
+      <funcLink>CreateConstruction</funcLink>
+      <funcLink>CreateContents</funcLink>
+      <funcLink>RemoveObject</funcLink>
     </related>
   </func>
   <author>springer</author><date>2002-04</date>

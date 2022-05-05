@@ -12,8 +12,8 @@
                 </syntax>
                 <desc>Liefert die globale Temperatur. Werte abhängig von Klima und Jahreszeit zwischen +80 und -80.</desc>
                 <related>
-                        <funclink>GetSeason</funclink>
-      <funclink>GetWind</funclink>
+                        <funcLink>GetSeason</funcLink>
+      <funcLink>GetWind</funcLink>
                 </related>
         </func>
         <author>jwk</author><date>2002-06</date>

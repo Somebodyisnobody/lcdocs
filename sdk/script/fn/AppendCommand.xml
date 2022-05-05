@@ -65,32 +65,32 @@
         <param>
           <type>int</type>
           <name>iBaseMode</name>
-          <desc>Befehlsstapelmodus. Werte siehe <funclink>AddCommand</funclink>.</desc>
+          <desc>Befehlsstapelmodus. Werte siehe <funcLink>AddCommand</funcLink>.</desc>
           <optional />
         </param>
       </params>
     </syntax>
 
     <desc>Fügt ein Kommando der Kommandoliste eines Objekts am Ende hinzu. Das Objekt wird also das zuerst gegebene Kommando ausführen und sich danach automatisch dem mit AppendCommand hinzugefügten widmen.<br />
-          Für Kommando-Beschreibungen siehe <funclink>SetCommand</funclink><br/>
+          Für Kommando-Beschreibungen siehe <funcLink>SetCommand</funcLink><br/>
           Bemerkung: Mit AppendCommand hinzugefügte Befehle werden nicht an gesteuerte Fahrzeuge weitergeleitet (siehe VehicleControl)</desc>
 
     <examples>
       <example>
-        <code>var base = <funclink>FindBase</funclink>();
-<funclink>SetCommand</funclink>(<funclink>this</funclink>(), "MoveTo", base);
-AppendCommand(<funclink>this</funclink>(), "Throw", 0, <funclink>GetX</funclink>(base), <funclink>GetY</funclink>(base));</code>
+        <code>var base = <funcLink>FindBase</funcLink>();
+<funcLink>SetCommand</funcLink>(<funcLink>this</funcLink>(), "MoveTo", base);
+AppendCommand(<funcLink>this</funcLink>(), "Throw", 0, <funcLink>GetX</funcLink>(base), <funcLink>GetY</funcLink>(base));</code>
         <text>
 Gibt dem Clonk den Befehl, zuerst zu der ersten (gefundenen) Basis zu laufen, und dann das erste Objekt, das er trägt, auf diese zu werfen.<br />
         </text>
       </example>
     </examples>
     <related>
-      <funclink>SetCommand</funclink>
-      <funclink>GetCommand</funclink>
-      <funclink>AddCommand</funclink>
-      <funclink>FinishCommand</funclink>
-	  <funclink>PlayerObjectCommand</funclink>
+      <funcLink>SetCommand</funcLink>
+      <funcLink>GetCommand</funcLink>
+      <funcLink>AddCommand</funcLink>
+      <funcLink>FinishCommand</funcLink>
+	  <funcLink>PlayerObjectCommand</funcLink>
     </related>
   </func>
   <author>PeterW</author><date>2001-11</date>

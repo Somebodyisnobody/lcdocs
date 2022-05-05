@@ -19,16 +19,16 @@
 			<example>
 <code>protected func ControlDig (pClonk)
 {
-	var obj; if (!(obj = <funclink>Contents</funclink>())) <funclink>return</funclink>(1);
-	if (!Collect(obj, pClonk)) <funclink>Message</funclink>("Herausnehmen nicht möglich", pClonk);
-	<funclink>return</funclink>(1);
+	var obj; if (!(obj = <funcLink>Contents</funcLink>())) <funcLink>return</funcLink>(1);
+	if (!Collect(obj, pClonk)) <funcLink>Message</funcLink>("Herausnehmen nicht möglich", pClonk);
+	<funcLink>return</funcLink>(1);
 }
 </code>
 				<text>Auf Graben wird das erste Inhaltsobjekt an den ausgewählten Clonk übergeben.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>Enter</funclink>
+			<funcLink>Enter</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-05</date>

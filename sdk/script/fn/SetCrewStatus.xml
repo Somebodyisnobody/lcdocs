@@ -20,17 +20,17 @@
 
   <examples>
    <example>
-    <code>var nclnk = <funclink>CreateObject</funclink>(CLNK, 0, 0, <funclink>GetOwner</funclink>());
-SetCrewStatus(<funclink>GetOwner</funclink>(), true, nclnk);</code>
+    <code>var nclnk = <funcLink>CreateObject</funcLink>(CLNK, 0, 0, <funcLink>GetOwner</funcLink>());
+SetCrewStatus(<funcLink>GetOwner</funcLink>(), true, nclnk);</code>
     <text>Dieser kurze Objektscript erstellt einen neuen Clonk und fügt ihn der Crew seines Besitzers hinzu.</text>
    </example>
   </examples>
   <related>
-   <funclink>GetCrew</funclink>
-   <funclink>CrewMember</funclink>
-   <funclink>MakeCrewMember</funclink>
-   <constlink constGroup="OCF">OCF_CrewMember</constlink>
-   <funclink>GrabObjectInfo</funclink>
+   <funcLink>GetCrew</funcLink>
+   <funcLink>CrewMember</funcLink>
+   <funcLink>MakeCrewMember</funcLink>
+   <constLink constGroup="OCF">OCF_CrewMember</constLink>
+   <funcLink>GrabObjectInfo</funcLink>
   </related>
  </func>
  <author>Clonkonaut</author><date>2008-05</date>

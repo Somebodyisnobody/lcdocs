@@ -16,7 +16,7 @@
 		<desc>Startet den Scriptprofiler.</desc>
 		<remark>Mit dem Scriptprofiler lässt sich messen, wie viel Rechenzeit die Scriptengine in welchen Scriptfunktionen aufwendet. Dies kann nützlich sein, um in langsam laufenden Szenarien zu prüfen, ob und wo sich Flaschenhälse in der Ausführung von Scripten befinden. Gemessen werden immer jeweils die Scriptausführungen zwischen einem StartScriptProfiler und einem StopScriptProfiler-Aufruf.</remark>
 		<related>
-			<funclink>StopScriptProfiler</funclink>
+			<funcLink>StopScriptProfiler</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2007-03</date>

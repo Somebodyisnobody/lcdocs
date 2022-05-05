@@ -18,7 +18,7 @@
 			<example>
 <code>protected func InitializePlayer(iPlr)
 {
-	<funclink>if</funclink> (<funclink>GetPlayerName</funclink>(iPlr) eq "Kamera") SetFilmView(iPlr);
+	<funcLink>if</funcLink> (<funcLink>GetPlayerName</funcLink>(iPlr) eq "Kamera") SetFilmView(iPlr);
 }</code>
 				<text>Dieses Szenarioscript setzt die Sicht in der Wiedergabe der aufgenommenen Runde auf den Spieler mit dem Namen "Kamera".</text>
 			</example>

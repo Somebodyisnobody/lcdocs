@@ -15,7 +15,7 @@
 				<param><type>any</type><name>...</name><desc>*</desc><optional /></param>
 			</params>
 		</syntax>
-		<desc>Gibt eine Nachricht nur im Viewport eines Spielers aus. Die Nachrichtenformatierung erfolgt analog zu <funclink>Message</funclink>.</desc>
+		<desc>Gibt eine Nachricht nur im Viewport eines Spielers aus. Die Nachrichtenformatierung erfolgt analog zu <funcLink>Message</funcLink>.</desc>
 		<examples>
 			<example>
 				<code>PlrMessage("Pssst! Dein Gegenspieler heiﬂt %s!", 0, GetPlayerName(1));</code>
@@ -23,10 +23,10 @@
 			</example>
 		</examples>
 		<related>
-			<funclink>Message</funclink>
-			<funclink>PlayerMessage</funclink>
-			<funclink>CustomMessage</funclink>
-			<funclink>AddMessage</funclink>
+			<funcLink>Message</funcLink>
+			<funcLink>PlayerMessage</funcLink>
+			<funcLink>CustomMessage</funcLink>
+			<funcLink>AddMessage</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

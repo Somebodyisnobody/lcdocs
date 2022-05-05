@@ -53,7 +53,7 @@ Diese Karten werden nur in der Szenarienauswahl im Spiel und nicht im Entwickler
 	<row>
 		<col>Access</col>
 		<col>Zeichenfolge</col>
-		<col>Wenn für diesen Benutzer das hier angegebene MissionAccess-Passwort freigeschaltet ist, wird die in dieser Sektion beschriebene Grafik auf der FolderMap angezeigt. Auf diese Weise können einzelne Bestandteile der Karte freigespielt werden. Siehe dazu die Scriptfunktion <funclink>GainMissionAccess</funclink>.</col>
+		<col>Wenn für diesen Benutzer das hier angegebene MissionAccess-Passwort freigeschaltet ist, wird die in dieser Sektion beschriebene Grafik auf der FolderMap angezeigt. Auf diese Weise können einzelne Bestandteile der Karte freigespielt werden. Siehe dazu die Scriptfunktion <funcLink>GainMissionAccess</funcLink>.</col>
 	</row>
 	<row>
 		<col>OverlayImage</col>
@@ -63,7 +63,7 @@ Diese Karten werden nur in der Szenarienauswahl im Spiel und nicht im Entwickler
 	<row>
 		<col>Area</col>
 		<col>4 Integer</col>
-		<col>Koordinaten des Bereiches, in dem das Bild angezeigt wird. Die Koordinaten sind relativ zum <emlink href="#background">Hintergrundbild</emlink>.</col>
+		<col>Koordinaten des Bereiches, in dem das Bild angezeigt wird. Die Koordinaten sind relativ zum <emLink href="#background">Hintergrundbild</emLink>.</col>
 </row></table></text>
 
 <text><table activateBitmask="false" bitmaskName="">
@@ -76,7 +76,7 @@ Diese Karten werden nur in der Szenarienauswahl im Spiel und nicht im Entwickler
 	<row>
 		<col>File</col>
 		<col>Zeichenfolge</col>
-		<col>Szenariendatei (inklusive Endung .c4s), für die mit dieser Sektion ein Knopf erstellt wird. Für jedes Szenario im Rundenordner sollte eine [Scenario]-Sektion erstellt werden. Es werden grundsätzlich nur die Knöpfe angezeigt, für die der Benutzer MissionAccess (siehe <funclink>GainMissionAccess</funclink>) freigeschaltet hat. </col>
+		<col>Szenariendatei (inklusive Endung .c4s), für die mit dieser Sektion ein Knopf erstellt wird. Für jedes Szenario im Rundenordner sollte eine [Scenario]-Sektion erstellt werden. Es werden grundsätzlich nur die Knöpfe angezeigt, für die der Benutzer MissionAccess (siehe <funcLink>GainMissionAccess</funcLink>) freigeschaltet hat. </col>
 	</row>
 	<row>
 		<col>BaseImage</col>
@@ -91,7 +91,7 @@ Diese Karten werden nur in der Szenarienauswahl im Spiel und nicht im Entwickler
 	<row>
 		<col>Area</col>
 		<col>4 Integer</col>
-		<col>Koordinaten des Bereiches, in dem der Knopf angezeigt wird. Die Koordinaten sind relativ zum <emlink href="#background">Hintergrundbild</emlink>.</col>
+		<col>Koordinaten des Bereiches, in dem der Knopf angezeigt wird. Die Koordinaten sind relativ zum <emLink href="#background">Hintergrundbild</emLink>.</col>
 	</row>
 	<row>
 		<col>Title</col>

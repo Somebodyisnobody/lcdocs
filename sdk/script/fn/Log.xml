@@ -14,17 +14,17 @@
 				<param><type>any</type><name>...</name><desc>Zusätzliche Parameter, mit denen der Text formatiert wird</desc><optional /></param>
 			</params>
 		</syntax>
-		<desc>Gibt einen Text im Messageboard am unteren Bildschirmrand aus. Die Parameter können über den C-Formatierungsstil in den Text eingebunden werden. Siehe dazu auch <funclink>Format</funclink>.</desc>
+		<desc>Gibt einen Text im Messageboard am unteren Bildschirmrand aus. Die Parameter können über den C-Formatierungsstil in den Text eingebunden werden. Siehe dazu auch <funcLink>Format</funcLink>.</desc>
 		<examples>
 			<example>
-				<code>Log("Moin, %s.", <funclink>GetPlayerName</funclink>(0));</code>
+				<code>Log("Moin, %s.", <funcLink>GetPlayerName</funcLink>(0));</code>
 				<text>Begrüßt den Spieler</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>Format</funclink>
-			<funclink>Message</funclink>
-			<funclink>DebugLog</funclink>
+			<funcLink>Format</funcLink>
+			<funcLink>Message</funcLink>
+			<funcLink>DebugLog</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

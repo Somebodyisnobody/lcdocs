@@ -20,25 +20,25 @@
 protected func Activate()
 {
 	// Pfeil erstellen
-	var pArrow = <funclink>CreateContents</funclink>(ARRW);
+	var pArrow = <funcLink>CreateContents</funcLink>(ARRW);
 	// X-Geschwindigkeit für den Pfeil ermitteln
-	var ispeedX = -10 + 20 * <funclink>GetDir</funclink>();
+	var ispeedX = -10 + 20 * <funcLink>GetDir</funcLink>();
 	// X-Ausgangsposition für den Pfeil ermitteln
-	var iexitX = -5 + 10 * <funclink>GetDir</funclink>();
+	var iexitX = -5 + 10 * <funcLink>GetDir</funcLink>();
 	// Rotation des Pfeiles
-	var irot = -90 + 180 * <funclink>GetDir</funclink>();
+	var irot = -90 + 180 * <funcLink>GetDir</funcLink>();
 	// Pfeil schleudern
-	<funclink>Exit</funclink>(pArrow, iexitX, 0, irot, ispeedX, 0);
-	<funclink>return</funclink>(1);
+	<funcLink>Exit</funcLink>(pArrow, iexitX, 0, irot, ispeedX, 0);
+	<funcLink>return</funcLink>(1);
 } 
 				</code>
 				<text>Clonk der einen Bogen verschluckt hat.</text>
 			</example>
 		</examples>
 								<related>
-												<funclink>SetDir</funclink>
-												<constlink constGroup="DIR">DIR_Left</constlink>
-			<constlink constGroup="DIR">DIR_Right</constlink>
+												<funcLink>SetDir</funcLink>
+												<constLink constGroup="DIR">DIR_Left</constLink>
+			<constLink constGroup="DIR">DIR_Right</constLink>
 								</related>
 	</func>
 	<author>wipfmetz</author><date>2002-06</date>

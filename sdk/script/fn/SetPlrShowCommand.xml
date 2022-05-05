@@ -30,10 +30,10 @@
           </table>
           Für Doppelkommandos (z.B. Doppel-Graben) muss jeweils 128 auf den Kommandowert aufaddiert werden.
 	    </desc>
-		<remark>Diese Funktion beeinflusst nicht die Darstellung des Steuerungsblocks (siehe <funclink>SetPlrShowControl</funclink>).</remark>
+		<remark>Diese Funktion beeinflusst nicht die Darstellung des Steuerungsblocks (siehe <funcLink>SetPlrShowControl</funcLink>).</remark>
 	    <related>
-	      <funclink>SetPlrShowControl</funclink>
-	      <funclink>SetPlrShowControlPos</funclink>
+	      <funcLink>SetPlrShowControl</funcLink>
+	      <funcLink>SetPlrShowControlPos</funcLink>
 	    </related>
 	</func>
 	<author>PeterW</author><date>2003-06</date>

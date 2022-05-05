@@ -17,13 +17,13 @@
 		<desc>Liefert das ID der indizierten von der Engine in dieser Runde geladenen Objektdefinition der angegebenen Kategorie (dwCategory 0 für alle Objektkategorien).</desc>
 		<examples>
 			<example>
-				<text>siehe <constlink constGroup="C4D">C4D_Goal</constlink>.</text>
+				<text>siehe <constLink constGroup="C4D">C4D_Goal</constLink>.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>GetHomebaseMaterial</funclink>
-			<funclink>GetPlrKnowledge</funclink>
-			<constlink constGroup="C4D"></constlink>
+			<funcLink>GetHomebaseMaterial</funcLink>
+			<funcLink>GetPlrKnowledge</funcLink>
+			<constLink constGroup="C4D"></constLink>
 		</related>
 	</func>
 	<author>Günther</author><date>2002-02</date>

@@ -19,18 +19,18 @@
 			<example>
 <code>protected func ControlSpecial()
   {
-  ShowInfo(<funclink>Contents</funclink>());
-  <funclink>return</funclink>(1);
+  ShowInfo(<funcLink>Contents</funcLink>());
+  <funcLink>return</funcLink>(1);
   }</code>
 				<text>Funktion für einen Spezialclonk: Auf Druck auf die Spezialtaste zeigt er die Beschreibung zum ersten Inhaltsobjekt in einem kleinen Fenster an. Trägt der Clonk kein Objekt, wird seine eigene Beschreibung angezeigt.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>SetCommand</funclink>
-			<funclink>GetDesc</funclink>
-			<funclink>CreateMenu</funclink>
-			<funclink>AddMenuItem</funclink>
-			<funclink>CloseMenu</funclink>
+			<funcLink>SetCommand</funcLink>
+			<funcLink>GetDesc</funcLink>
+			<funcLink>CreateMenu</funcLink>
+			<funcLink>AddMenuItem</funcLink>
+			<funcLink>CloseMenu</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-08</date>

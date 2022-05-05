@@ -11,22 +11,22 @@
 			<author>Clonkonaut</author>
 			<date>2006-07</date>
 			<version>4.9.6.0 CR</version>
-			<description>Mit <funclink>Find_AnyContainer</funclink> ist basierend auf <funclink>FindObjects</funclink> eine bessere Implementation verfügbar.</description>
+			<description>Mit <funcLink>Find_AnyContainer</funcLink> ist basierend auf <funcLink>FindObjects</funcLink> eine bessere Implementation verfügbar.</description>
 		</deprecated>
 		<syntax>
 			<rtype>int</rtype>
 		</syntax>
-		<desc>Wird an <funclink>FindObject</funclink>/<funclink>FindObjectOwner</funclink> übergeben, damit nur Objekte gefunden werden, die in einem anderen Objekt enthalten sind</desc>
+		<desc>Wird an <funcLink>FindObject</funcLink>/<funcLink>FindObjectOwner</funcLink> übergeben, damit nur Objekte gefunden werden, die in einem anderen Objekt enthalten sind</desc>
 		<examples>
 			<example>
-				<code><funclink>Punch</funclink>(<funclink>FindObject</funclink>(WIPF, 0, 0, 0, 0, 0, 0, 0, AnyContainer()), 5);</code>
+				<code><funcLink>Punch</funcLink>(<funcLink>FindObject</funcLink>(WIPF, 0, 0, 0, 0, 0, 0, 0, AnyContainer()), 5);</code>
 				<text>Schlägt einen sich versteckenden Wipf.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>Find_AnyContainer</funclink>
-			<funclink>FindObject</funclink>
-			<funclink>FindObjectOwner</funclink>
+			<funcLink>Find_AnyContainer</funcLink>
+			<funcLink>FindObject</funcLink>
+			<funcLink>FindObjectOwner</funcLink>
 		</related>
 	</func>
 	<author>jwk</author><date>2002-04</date>

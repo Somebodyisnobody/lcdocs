@@ -20,7 +20,7 @@
 		<code>OverloadMaterials
 		OverloadTextures</code> steht, werden die Materialien / Texturen aus der Standard-Material.c4g vor den eigenen Definitionen geladen und ggf. durch die eigenen ersetzt.</text></dd>
 	
-		<dt id="c4m"><img src="../../images/icon_material.gif" width="16" height="16"/><emlink href="material/c4m.html">*.c4m</emlink></dt>
+		<dt id="c4m"><img src="../../images/icon_material.gif" width="16" height="16"/><emLink href="material/c4m.html">*.c4m</emLink></dt>
 		<dd><text>Die Engine akzeptiert bis zu 125 Materialdefinitionen gleichzeitig. C4M-Dateien sind einfache Textdateien. Die Materialien Vehicle, Tunnel, Water, Snow, Granite, Sand und Earth müssen immer vorhanden sein.</text></dd>
 		
 		<dt id="bmp"><img src="../../images/icon_image.gif" width="16" height="16"/>*.png/*.bmp</dt>

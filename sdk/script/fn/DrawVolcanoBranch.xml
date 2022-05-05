@@ -21,8 +21,8 @@
     <desc>Zeichnet einen Vulkanarm mit dem Material, dessen Index gleich iMat ist.</desc>
     <remark>Die Parameter dieser Funktion sind undokumentiert!</remark>
     <related>
-      <funclink>InsertMaterial</funclink>
-      <funclink>SetLandscapePixel</funclink>
+      <funcLink>InsertMaterial</funcLink>
+      <funcLink>SetLandscapePixel</funcLink>
     </related>
   </func>
   <author>Fulgen</author><date>2016-08</date>

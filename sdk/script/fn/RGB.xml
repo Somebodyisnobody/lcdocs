@@ -18,14 +18,14 @@
 		<desc>Setzt einen 32Bit-Farbwert aus den drei Grundfarben zusammen. 0-255 für alle Parameter.</desc>
 		<examples>
 			<example>
-				<code><funclink>SetSkyAdjust</funclink>(RGB(255,0,0));</code>
+				<code><funcLink>SetSkyAdjust</funcLink>(RGB(255,0,0));</code>
 				<text>Färbt den Himmel rot.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>RGBa</funclink>
-			<funclink>HSL</funclink>
-			<funclink>HSLa</funclink>
+			<funcLink>RGBa</funcLink>
+			<funcLink>HSL</funcLink>
+			<funcLink>HSLa</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-04</date>

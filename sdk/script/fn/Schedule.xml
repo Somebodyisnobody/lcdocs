@@ -17,21 +17,21 @@
       </params>
     </syntax>
     <desc>Führt einen bestimmes Script mit Verzögerung aus.</desc>
-		<remark>Diese Funktion wird in der System.c4g durch einen <emlink href="script/Effects.html">Effekt</emlink> "IntSchedule" und
-					  die Funktion <funclink>eval</funclink> realisiert.</remark>
+		<remark>Diese Funktion wird in der System.c4g durch einen <emLink href="script/Effects.html">Effekt</emLink> "IntSchedule" und
+					  die Funktion <funcLink>eval</funcLink> realisiert.</remark>
 		<remark>Entsprechend darf das Script nur aus genau einem Befehl bestehen (es ist nicht möglich, mehrere Befehle mit ";" aufzulisten)</remark>
     <examples>
       <example>
-				<code>Schedule("<funclink>Explode</funclink>(50)", 1000, 0, <funclink>FindObject</funclink>(CLNK));</code>
+				<code>Schedule("<funcLink>Explode</funcLink>(50)", 1000, 0, <funcLink>FindObject</funcLink>(CLNK));</code>
 				<text>Lässt einen Clonk auf der Landschaft mit 1000 Ticks Verzögerung explodieren.</text>
 			</example>
       <example>
-				<code>Schedule("<funclink>SetWealth</funclink>(<funclink>GetPlayerByIndex</funclink>(0), <funclink>GetWealth</funclink>(<funclink>GetPlayerByIndex</funclink>(0)) + 1)", 1, 100);</code>
+				<code>Schedule("<funcLink>SetWealth</funcLink>(<funcLink>GetPlayerByIndex</funcLink>(0), <funcLink>GetWealth</funcLink>(<funcLink>GetPlayerByIndex</funcLink>(0)) + 1)", 1, 100);</code>
 				<text>Gibt dem ersten Spieler 100 Ticks lang jeden Tick 1 Goldstück. Man beachte dass wenn der erste Spieler stirbt, der Geldregen auf den nächsten Spieler übergeht, da bei jeder Ausführung das Ziel neu bestimmt wird.</text>
 			</example>
 		</examples>
     <related>
-      <funclink>ScheduleCall</funclink>
+      <funcLink>ScheduleCall</funcLink>
     </related>
   </func>
   <author>PeterW</author><date>2005-08</date>

@@ -13,7 +13,7 @@
 				<param><type>int</type><name>dwVisibility</name>
 					<desc>
 						Bitmaske, die die neue Sichtbarkeit angibt.<br />
-						Entweder <constlink constGroup="VIS">VIS_All</constlink>, <constlink constGroup="VIS">VIS_OverlayOnly</constlink> oder <constlink constGroup="VIS">VIS_None</constlink>, oder eine Bitmaske aus <constlink constGroup="VIS">VIS_Owner</constlink>, <constlink constGroup="VIS">VIS_Allies</constlink>, <constlink constGroup="VIS">VIS_Enemies</constlink>, <constlink constGroup="VIS">VIS_God</constlink> und <constlink constGroup="VIS">VIS_Local</constlink>.
+						Entweder <constLink constGroup="VIS">VIS_All</constLink>, <constLink constGroup="VIS">VIS_OverlayOnly</constLink> oder <constLink constGroup="VIS">VIS_None</constLink>, oder eine Bitmaske aus <constLink constGroup="VIS">VIS_Owner</constLink>, <constLink constGroup="VIS">VIS_Allies</constLink>, <constLink constGroup="VIS">VIS_Enemies</constLink>, <constLink constGroup="VIS">VIS_God</constLink> und <constLink constGroup="VIS">VIS_Local</constLink>.
 					</desc>
 				</param>
 				<param><type>object</type><name>pObj</name><desc>Objekt, dessen Sichtbarkeit geändert werden soll. 0 bei lokalem Aufruf.</desc><optional /></param>
@@ -24,17 +24,17 @@
 		</desc>
 		<examples>
 			<example>
-				<code>SetVisibility(<constlink constGroup="VIS">VIS_None</constlink>, <funclink>GetCursor</funclink>())</code>
+				<code>SetVisibility(<constLink constGroup="VIS">VIS_None</constLink>, <funcLink>GetCursor</funcLink>())</code>
 				<text>Macht den ausgewählten Clonk von Spieler 0 völlig unsichtbar.</text>
 			</example>
 			<example>
-				<code>SetVisibility(<constlink constGroup="VIS">VIS_Owner</constlink> | <constlink constGroup="VIS">VIS_Allies</constlink>, <funclink>GetCursor</funclink>())</code>
+				<code>SetVisibility(<constLink constGroup="VIS">VIS_Owner</constLink> | <constLink constGroup="VIS">VIS_Allies</constLink>, <funcLink>GetCursor</funcLink>())</code>
 				<text>Macht den ausgewählten Clonk von Spieler 0 nur für sich und Verbündete sichtbar.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>GetVisibility</funclink>
-			<constlink constGroup="VIS"></constlink>
+			<funcLink>GetVisibility</funcLink>
+			<constLink constGroup="VIS"></constLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

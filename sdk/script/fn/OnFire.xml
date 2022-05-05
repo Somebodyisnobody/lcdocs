@@ -15,9 +15,9 @@
 		</syntax>
 		<desc>Gibt zurück, ob ein Objekt brennt.</desc>
 		<related>
-			<constlink constGroup="OCF">OCF_OnFire</constlink>
-			<funclink>Incinerate</funclink>
-			<funclink>Extinguish</funclink>
+			<constLink constGroup="OCF">OCF_OnFire</constLink>
+			<funcLink>Incinerate</funcLink>
+			<funcLink>Extinguish</funcLink>
 		</related>
 	</func>
 	<author>jwk</author><date>2002-05</date>

@@ -16,7 +16,7 @@
 		<desc>Blendet die Siedlungspunkte aus dem Auswertungsdialog am Ende der Runde aus, wenn fHide true ist.</desc>
 
 		 <related>
-			<funclink>AddEvaluationData</funclink>
+			<funcLink>AddEvaluationData</funcLink>
 		 </related>
 	</func>
 	<author>Fulgen, Clonk Wiki</author><date>2016-07</date>

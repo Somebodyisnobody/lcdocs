@@ -13,20 +13,20 @@
         <param><type>object</type><name>pObj</name><desc>Abgefragtes Objekt. 0 bei lokalem Aufruf.</desc><optional /></param>
       </params>
     </syntax>
-    <desc>Fragt den RGB-Farbwert der Färbung der ColorByOwner-Flächen eines Objekts ab. Diese werden beispielsweise durch <funclink>SetOwner</funclink>, <funclink>SetColor</funclink> oder <funclink>SetColorDw</funclink> gesetzt.</desc>
+    <desc>Fragt den RGB-Farbwert der Färbung der ColorByOwner-Flächen eines Objekts ab. Diese werden beispielsweise durch <funcLink>SetOwner</funcLink>, <funcLink>SetColor</funcLink> oder <funcLink>SetColorDw</funcLink> gesetzt.</desc>
     <examples>
       <example>
 
-<code><funclink>SetColorDw</funclink>(GetColorDw(), caller);</code>
+<code><funcLink>SetColorDw</funcLink>(GetColorDw(), caller);</code>
 
         <text>Färbt caller so ein wie das aktuelle Objekt.</text>
       </example>
     </examples>
     <related>
-      <funclink>GetPlrColorDw</funclink>
-      <funclink>GetColor</funclink>
-      <funclink>SetColorDw</funclink>
-      <funclink>GetClrModulation</funclink>
+      <funcLink>GetPlrColorDw</funcLink>
+      <funcLink>GetColor</funcLink>
+      <funcLink>SetColorDw</funcLink>
+      <funcLink>GetClrModulation</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2002-05</date>

@@ -17,12 +17,12 @@
 		<desc>Sucht eine Heimatbasis eines Spielers. Die Heimatbasis ist zumeist das Gebäude, auf dem eine Flagge weht.</desc>
 		<examples>
 			<example>
-				<code><funclink>SetCommand</funclink>(<funclink>GetCursor</funclink>(0), "Enter", FindBase(0));</code>
+				<code><funcLink>SetCommand</funcLink>(<funcLink>GetCursor</funcLink>(0), "Enter", FindBase(0));</code>
 				<text>Gibt dem ausgewählten Clonk des ersten Spielers das Kommando, seine Basis zu betreten.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>GetBase</funclink>
+			<funcLink>GetBase</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

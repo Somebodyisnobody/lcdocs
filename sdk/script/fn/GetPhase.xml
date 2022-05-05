@@ -15,8 +15,8 @@
                 </syntax>
                 <desc>Liefert die Aktivitätsphase von *pObj. *pObj ist Null bei lokalem Aufruf.</desc>
                 <related>
-                        <funclink>GetAction</funclink>
-                        <funclink>GetActTime</funclink>
+                        <funcLink>GetAction</funcLink>
+                        <funcLink>GetActTime</funcLink>
                 </related>
         </func>
         <author>jwk</author><date>2002-06</date>

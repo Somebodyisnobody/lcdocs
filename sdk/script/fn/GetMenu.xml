@@ -13,7 +13,7 @@
         <param><type>object</type><name>pObj</name><desc>Menüobjekt</desc></param>
       </params>
     </syntax>
-    <desc>Liefert die ID des Menüs, falls das Objekt ein Menü geöffnet hat. Normalerweise ist das die ID des Menüsymbols (idSymbol), wenn nicht bei <funclink>CreateMenu</funclink> explizit eine andere Menü-ID als idMenuID angegeben wurde. 0 bei keinem Menü oder bei keinem Symbol.</desc>
+    <desc>Liefert die ID des Menüs, falls das Objekt ein Menü geöffnet hat. Normalerweise ist das die ID des Menüsymbols (idSymbol), wenn nicht bei <funcLink>CreateMenu</funcLink> explizit eine andere Menü-ID als idMenuID angegeben wurde. 0 bei keinem Menü oder bei keinem Symbol.</desc>
     <remark>Ein Rückgabewert von -1 bedeutet, dass kein gültiges Symbol ermittelt werden konnte. Dies kann z.B. dann auftreten, wenn bei einem globalen Aufruf kein Objektzeiger an die Funktion übergeben wurde. Engineinterne Menüs (Kaufen, Verkaufen, etc.) geben keine gültigen IDs zurück.</remark>
     <examples>
       <example>
@@ -23,7 +23,7 @@ protected func ControlSpecial()
   /* überhaupt ein Menü offen und ein Symbol angegeben? */
   if(GetMenu())
     /* Mutieren */
-    <funclink>ChangeDef</funclink>(GetMenu());
+    <funcLink>ChangeDef</funcLink>(GetMenu());
   return(1);
 }
         </code>
@@ -31,10 +31,10 @@ protected func ControlSpecial()
       </example>
     </examples>
     <related>
-            <funclink>CreateMenu</funclink>
-            <funclink>CloseMenu</funclink>
-			<funclink>SetMenuDecoration</funclink>
-			<funclink>SetMenuTextProgress</funclink>
+            <funcLink>CreateMenu</funcLink>
+            <funcLink>CloseMenu</funcLink>
+			<funcLink>SetMenuDecoration</funcLink>
+			<funcLink>SetMenuTextProgress</funcLink>
     </related>
   </func>
   <author>wipfmetz</author><date>2002-08</date>

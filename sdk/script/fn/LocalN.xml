@@ -25,28 +25,28 @@
 		<remark>Diese Funktion dient der Kompatibilität zu älteren Spielinhalten. In neueren Scripts sollte <code>obj["name"]</code> oder <code>obj.name</code>, letzteres bei aktiviertem <code>#strict 3</code>, verwendet werden.</remark>
 		<examples>
 			<example>
-				<code><emlink href="script/NamedVar.html">var</emlink> obj;
-if (obj <emlink href="script/operatoren.html">=</emlink> LocalN ("basement", <funclink>FindObject</funclink> (WTWR))) <funclink>Explode</funclink> (20, obj);</code>
-				<text>Lässt ein Fundament eines Zauberturms explodieren. Funktioniert nur bei einem Zauberturm, alle anderen Objekte benutzen <funclink>Local</funclink> (9) zum Speichern des Fundamentobjektes.</text>
+				<code><emLink href="script/NamedVar.html">var</emLink> obj;
+if (obj <emLink href="script/operatoren.html">=</emLink> LocalN ("basement", <funcLink>FindObject</funcLink> (WTWR))) <funcLink>Explode</funcLink> (20, obj);</code>
+				<text>Lässt ein Fundament eines Zauberturms explodieren. Funktioniert nur bei einem Zauberturm, alle anderen Objekte benutzen <funcLink>Local</funcLink> (9) zum Speichern des Fundamentobjektes.</text>
 			</example>
 			<example>
-				<code>func <emlink href="definition/script.html#ObjektCallsderEngine">Initialize</emlink> () {
-  <emlink href="script/NamedVar.html">local</emlink> Baum <emlink href="script/operatoren.html">=</emlink> <funclink>CreateObject</funclink> (<emlink href="script/Typechecks.html">TRE1</emlink>);
+				<code>func <emLink href="definition/script.html#ObjektCallsderEngine">Initialize</emLink> () {
+  <emLink href="script/NamedVar.html">local</emLink> Baum <emLink href="script/operatoren.html">=</emLink> <funcLink>CreateObject</funcLink> (<emLink href="script/Typechecks.html">TRE1</emLink>);
 }
-//Mit Timer=1 in der <emlink href="definition/defcore.html">DefCore.txt</emlink> jeden Frame aufgerufen
+//Mit Timer=1 in der <emLink href="definition/defcore.html">DefCore.txt</emLink> jeden Frame aufgerufen
 func TimerCall () {
-  <funclink>SetPosition</funclink> (<funclink>GetX</funclink> (), <funclink>GetY</funclink> (), LocalN("Baum"));
+  <funcLink>SetPosition</funcLink> (<funcLink>GetX</funcLink> (), <funcLink>GetY</funcLink> (), LocalN("Baum"));
 }
 </code>
 				<text>Das Objekt trägt einen Baum mit sich herum.</text>
 			</example>
 		</examples>
 		<related>
-			<emlink href="script/NamedVar.html">benannte Variablen</emlink>
-			<funclink>Local</funclink>
-			<funclink>IsRef</funclink>
-			<funclink>VarN</funclink>
-			<funclink>GlobalN</funclink>
+			<emLink href="script/NamedVar.html">benannte Variablen</emLink>
+			<funcLink>Local</funcLink>
+			<funcLink>IsRef</funcLink>
+			<funcLink>VarN</funcLink>
+			<funcLink>GlobalN</funcLink>
 		</related>
 	</func>
 	<author>Günther</author><date>2002-11</date>

@@ -16,22 +16,22 @@
       </params>
     </syntax>
     <desc>Fragt Name oder ID des Portraits eines Crew-Mitglieds ab.</desc>
-    <remark>Hat das Crew-Mitglied ein individuelles Portrait, so gibt die Funktion "custom" bzw. die ID NONE zurück. Siehe dazu auch die Tabelle und die Beschreibung des fCopyGfx-Parameters von <funclink>SetPortrait</funclink></remark>
+    <remark>Hat das Crew-Mitglied ein individuelles Portrait, so gibt die Funktion "custom" bzw. die ID NONE zurück. Siehe dazu auch die Tabelle und die Beschreibung des fCopyGfx-Parameters von <funcLink>SetPortrait</funcLink></remark>
     <examples>
       <example>
-        <code>if(!WildcardMatch(<funclink>GetPortrait</funclink>(0, 0, 1), "?") )
-  <funclink>SetPortrait</funclink>("random", 0, <funclink>GetPortrait</funclink>(0, 1, 1), 1);
+        <code>if(!WildcardMatch(<funcLink>GetPortrait</funcLink>(0, 0, 1), "?") )
+  <funcLink>SetPortrait</funcLink>("random", 0, <funcLink>GetPortrait</funcLink>(0, 1, 1), 1);
         </code>
         <text>Weißt dem aufrufenden Clonk ein zufälliges Portrait zu, wenn der Name des momentanen Portraits nicht aus nur einem Zeichen besteht (zum Beispiel wenn die Portraits mit "1", "2", "3" etc. durchnummeriert sind), sondern länger ist (beispielsweise "Armored1" oder "Armored2").</text>
       </example>
       <example>
-        <code><funclink>SetPortrait</funclink>(<funclink>GetPortrait</funclink>(0, 0, 1), 0, <funclink>GetPortrait</funclink>(0, 1, 1) );
+        <code><funcLink>SetPortrait</funcLink>(<funcLink>GetPortrait</funcLink>(0, 0, 1), 0, <funcLink>GetPortrait</funcLink>(0, 1, 1) );
         </code>
         <text>Stellt das Standardportrait eines Clonkes wieder her, falls es zwischenzeitlich durch andere SetPortrait-Aufrufe geändert wurde.</text>
       </example>
     </examples>
     <related>
-      <funclink>SetPortrait</funclink>
+      <funcLink>SetPortrait</funcLink>
     </related>
   </func>
   <author>Clonk-Karl</author><date>2005-12</date>

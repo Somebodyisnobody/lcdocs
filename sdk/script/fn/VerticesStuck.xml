@@ -30,8 +30,8 @@ if (VerticesStuck(obj)) RemoveObject(obj);</code>
       </examples>
 
       <related>
-        <funclink>GetVertex</funclink>
-        <funclink>Stuck</funclink>
+        <funcLink>GetVertex</funcLink>
+        <funcLink>Stuck</funcLink>
       </related>
   </func>
   <author>flgr</author><date>2002-01</date>

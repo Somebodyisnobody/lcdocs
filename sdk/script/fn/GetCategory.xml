@@ -14,15 +14,15 @@
 				<param><type>id</type><name>idDef</name><desc>Wenn angegeben, wird die Kategorie dieser Definition zurückgegeben.</desc><optional /></param>
 			</params>
 		</syntax>
-		<desc>Fragt die Objektkategorie eines Objekts ab. Die Objektkategorie wird normalerweise über die <emlink href="definition/defcore.html">DefCore</emlink> gesetzt, und danach höchstens in seltenen Fällen mit <funclink>SetCategory</funclink> geändert. Sie bestimmt das allgemeine Verhalten eines Objekts und dessen Platzierung. Eine mit GetCategory abgefragt Kategorie kann mit dem &amp;-Operator gegen eine C4D_-Konstante geprüft werden.</desc>
+		<desc>Fragt die Objektkategorie eines Objekts ab. Die Objektkategorie wird normalerweise über die <emLink href="definition/defcore.html">DefCore</emLink> gesetzt, und danach höchstens in seltenen Fällen mit <funcLink>SetCategory</funcLink> geändert. Sie bestimmt das allgemeine Verhalten eines Objekts und dessen Platzierung. Eine mit GetCategory abgefragt Kategorie kann mit dem &amp;-Operator gegen eine C4D_-Konstante geprüft werden.</desc>
 		<examples>
 			<example>
-				<code><funclink>if</funclink> (GetCategory(obj) &amp; <constlink constGroup="C4D">C4D_Structure</constlink>) <funclink>Incinerate</funclink>(obj);</code>
+				<code><funcLink>if</funcLink> (GetCategory(obj) &amp; <constLink constGroup="C4D">C4D_Structure</constLink>) <funcLink>Incinerate</funcLink>(obj);</code>
 				<text>Zündet obj an, wenn es ein Gebäude ist.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>SetCategory</funclink>
+			<funcLink>SetCategory</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-04</date>

@@ -23,11 +23,11 @@
 			</example>
 		</examples>
 		<related>
-			<funclink>GetHomebaseMaterial</funclink>
-			<funclink>GetHomebaseProduction</funclink>
-			<funclink>DoHomebaseProduction</funclink>
-			<funclink>Buy</funclink>
-			<funclink>Sell</funclink>
+			<funcLink>GetHomebaseMaterial</funcLink>
+			<funcLink>GetHomebaseProduction</funcLink>
+			<funcLink>DoHomebaseProduction</funcLink>
+			<funcLink>Buy</funcLink>
+			<funcLink>Sell</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

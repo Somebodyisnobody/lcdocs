@@ -33,17 +33,17 @@
 
     <desc>Zählt die Effekte in einem Objekt oder globale Effekte.</desc>
 
-    <remark>Beispiel siehe <funclink>GetEffect</funclink>.</remark>
+    <remark>Beispiel siehe <funcLink>GetEffect</funcLink>.</remark>
 
     <related>
-      <emlink href="script/Effects.html">Effekte-Dokumentation</emlink>
-      <funclink>AddEffect</funclink>
-      <funclink>ChangeEffect</funclink>
-      <funclink>CheckEffect</funclink>
-      <funclink>EffectCall</funclink>
-      <funclink>EffectVar</funclink>
-      <funclink>GetEffect</funclink>
-      <funclink>RemoveEffect</funclink>
+      <emLink href="script/Effects.html">Effekte-Dokumentation</emLink>
+      <funcLink>AddEffect</funcLink>
+      <funcLink>ChangeEffect</funcLink>
+      <funcLink>CheckEffect</funcLink>
+      <funcLink>EffectCall</funcLink>
+      <funcLink>EffectVar</funcLink>
+      <funcLink>GetEffect</funcLink>
+      <funcLink>RemoveEffect</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2004-03</date>

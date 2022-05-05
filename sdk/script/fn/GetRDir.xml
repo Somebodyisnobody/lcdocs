@@ -16,8 +16,8 @@
                 </syntax>
                 <desc>Liefert die Rotations-Geschwindigkeit von pObj.</desc>
                 <related>
-                        <funclink>SetRDir</funclink>
-                        <funclink>GetR</funclink>
+                        <funcLink>SetRDir</funcLink>
+                        <funcLink>GetR</funcLink>
                 </related>
         </func>
         <author>Cucaracha</author><date>2002-05</date>

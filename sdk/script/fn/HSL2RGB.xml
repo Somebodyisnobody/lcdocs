@@ -15,7 +15,7 @@
 		</syntax>
 		<desc>
 		Wandelt einen 24Bit HSL-Wert in den bekannten 32Bit RGB-Farbwert um.<br/>
-		Der 24Bit HSL-Wert kann mit <funclink>RGB</funclink>(Hue,Saturation,Lightness) erzeugt werden.<br/>
+		Der 24Bit HSL-Wert kann mit <funcLink>RGB</funcLink>(Hue,Saturation,Lightness) erzeugt werden.<br/>
 		</desc>
 		<remark>
 		Da es in Clonk keinen Float-Datentyp gibt können die umgerechneten Werte einen geringen Fehler enthalten. (Im Regelfall nicht mehr als +1 bzw. -1) 
@@ -26,27 +26,27 @@
 #appendto CLNK
 
 func Initialize() {
-  <funclink>AddEffect</funclink>("VariateHue",<funclink>this</funclink>(),200,1,<funclink>this</funclink>());
-  <funclink>return</funclink>(<funclink>_inherited</funclink>());
+  <funcLink>AddEffect</funcLink>("VariateHue",<funcLink>this</funcLink>(),200,1,<funcLink>this</funcLink>());
+  <funcLink>return</funcLink>(<funcLink>_inherited</funcLink>());
 }
 
 func FxVariateHueTimer() {
-  var rgb, hsl=RGB2HSL(<funclink>GetColorDw</funclink>());
+  var rgb, hsl=RGB2HSL(<funcLink>GetColorDw</funcLink>());
   var hue, sat, light;
-  <funclink>SplitRGBaValue</funclink>(hsl, hue, sat, light);
+  <funcLink>SplitRGBaValue</funcLink>(hsl, hue, sat, light);
   hue+=2;
   if(hue>255) hue=0;
-  rgb=<funclink>HSL2RGB</funclink>(<funclink>RGB</funclink>(hue,sat,light));
-  <funclink>SetColorDw</funclink>(rgb);
+  rgb=<funcLink>HSL2RGB</funcLink>(<funcLink>RGB</funcLink>(hue,sat,light));
+  <funcLink>SetColorDw</funcLink>(rgb);
 }
 </code>
 				<text>Erzeugt in jedem Clonk einen Effekt der die Farbe der Clonks Regenbogenartig variieren lässt.<br/>Zum ausprobieren den Script am besten in einen Szenarienlokale System.c4g Ordner kopieren<br/>Der Hue-Wert wird hier mit Absicht mit jeweils um 2 erhöht, da der geringe Fehler bei der Umrechnung sonst wirksam wird und gar nichts geschieht.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>RGB2HSL</funclink>
-			<funclink>SetRGBaValue</funclink>
-			<funclink>RGB</funclink>
+			<funcLink>RGB2HSL</funcLink>
+			<funcLink>SetRGBaValue</funcLink>
+			<funcLink>RGB</funcLink>
 		</related>
 	</func>
 	<author>Tyron</author><date>2004-09</date>

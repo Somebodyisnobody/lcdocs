@@ -20,18 +20,18 @@
             </params>
         </syntax>
         <desc>Suchkriterium: sucht alle Objekte mit der entsprechenden Kategorie.</desc>
-        <remark>Für weitere Informationen und Beispiele zur Benutzung dieser Funktion sehe <funclink>
-            FindObjects</funclink>.
+        <remark>Für weitere Informationen und Beispiele zur Benutzung dieser Funktion sehe <funcLink>
+            FindObjects</funcLink>.
         </remark>
         <examples>
             <example>
-                <code><funclink>FindObjects</funclink>(Find_Category(<constlink constGroup="C4D">C4D_Structure</constlink>))
+                <code><funcLink>FindObjects</funcLink>(Find_Category(<constLink constGroup="C4D">C4D_Structure</constLink>))
                 </code>
                 <text>Gibt eine Liste aller im Spiel befindlichen Gebäude zurück.</text>
             </example>
             <example>
-                <code><funclink>FindObjects</funclink>(Find_Category(<constlink constGroup="C4D">C4D_Rule</constlink> | <funclink>
-                    C4D_Goal</funclink>))
+                <code><funcLink>FindObjects</funcLink>(Find_Category(<constLink constGroup="C4D">C4D_Rule</constLink> | <funcLink>
+                    C4D_Goal</funcLink>))
                 </code>
                 <text>
                     Liefert alle aktiven Spielregeln und Spielziele zurück. Man beachte, dass sich die Kategorien mit
@@ -42,7 +42,7 @@
             </example>
         </examples>
         <related>
-            <funclink>FindObjects</funclink>
+            <funcLink>FindObjects</funcLink>
         </related>
     </func>
     <author>Clonkonaut</author>

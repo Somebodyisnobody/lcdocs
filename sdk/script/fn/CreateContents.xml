@@ -18,14 +18,14 @@
 		<desc>Erzeugt ein Objekt vom Typ id als Inhalt von pObj.</desc>
 		<examples>
 			<example>
-				<code>CreateContents(ROCK,<funclink>GetHiRank</funclink>(0));</code>
+				<code>CreateContents(ROCK,<funcLink>GetHiRank</funcLink>(0));</code>
 				<text>Der höchstrangige Clonk des Spielers erhält einen Stein.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>CreateConstruction</funclink>
-			<funclink>CreateObject</funclink>
-			<funclink>RemoveObject</funclink>
+			<funcLink>CreateConstruction</funcLink>
+			<funcLink>CreateObject</funcLink>
+			<funcLink>RemoveObject</funcLink>
 		</related>
 	</func>
 	<author>springer</author><date>2002-04</date>

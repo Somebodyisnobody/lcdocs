@@ -19,15 +19,15 @@
 		<remark>Achtung: Bei jeder Vertexaktualisierung (also beispielsweise dann, wenn sich Fertigstellungswert oder Rotation eines Objekts ändern) werden alle Vertices wieder auf die Definitionswerte zurückgesetzt.</remark>
 		<examples>
 			<example>
-				<code>AddVertex(50,0, <funclink>GetHiRank</funclink>(0));</code>
+				<code>AddVertex(50,0, <funcLink>GetHiRank</funcLink>(0));</code>
 				<text>Lässt den Captain des ersten Spielers im Boden festhängen.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>GetVertex</funclink>
-			<funclink>SetVertex</funclink>
-			<funclink>GetVertexNum</funclink>
-			<funclink>RemoveVertex</funclink>
+			<funcLink>GetVertex</funcLink>
+			<funcLink>SetVertex</funcLink>
+			<funcLink>GetVertexNum</funcLink>
+			<funcLink>RemoveVertex</funcLink>
 		</related>
 	</func>
 	<author>jwk</author><date>2002-04</date>

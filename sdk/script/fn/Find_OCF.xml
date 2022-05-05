@@ -14,20 +14,20 @@
 			</params>
 		</syntax>
 		<desc>Suchkriterium: Sucht alle Objekte, bei denen eine der angegebenen Object-Character-Flags gesetzt ist.</desc>
-		<remark>Für weitere Informationen und Beispiele zur Benutzung dieser Funktion sehe <funclink>FindObjects</funclink>.</remark>
+		<remark>Für weitere Informationen und Beispiele zur Benutzung dieser Funktion sehe <funcLink>FindObjects</funcLink>.</remark>
 		<examples>
 			<example>
-				<code><funclink>ObjectCount2</funclink>(Find_OCF(<constlink constGroup="OCF">OCF_InLiquid</constlink> | <constlink constGroup="OCF">OCF_InSolid</constlink>))</code>
+				<code><funcLink>ObjectCount2</funcLink>(Find_OCF(<constLink constGroup="OCF">OCF_InLiquid</constLink> | <constLink constGroup="OCF">OCF_InSolid</constLink>))</code>
 				<text>Gibt die Anzahl der Objekte zurück, die sich in Flüssigkeit befinden oder im Boden stecken.</text>
 			</example>
 			<example>
-				<code><funclink>FindObject2</funclink>(Find_OCF(<constlink constGroup="OCF">OCF_Alive</constlink>), Find_OCF(<constlink constGroup="OCF">OCF_OnFire</constlink>))</code>
+				<code><funcLink>FindObject2</funcLink>(Find_OCF(<constLink constGroup="OCF">OCF_Alive</constLink>), Find_OCF(<constLink constGroup="OCF">OCF_OnFire</constLink>))</code>
 				<text>Gibt das erstbeste brennende Lebewesen zurück, falls ein solches existiert.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>FindObjects</funclink>
-			<emlink href="definition/ocf.html">Object character flags</emlink>
+			<funcLink>FindObjects</funcLink>
+			<emLink href="definition/ocf.html">Object character flags</emLink>
 		</related>
 	</func>
 	<author>Clonkonaut</author><date>2006-07</date>

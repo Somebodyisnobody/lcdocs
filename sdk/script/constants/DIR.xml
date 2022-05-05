@@ -6,7 +6,7 @@
 	<constGroup activateBitmask="false">
 		<title>DIR</title>
 		<description>Konstanten für Richtungen eines Objekts. Dies kann z.B. eine Blickrichtung des Clonks sein.
-			Verwendet werden diese Konstanten mit <funclink>GetDir</funclink> und <funclink>SetDir</funclink>.
+			Verwendet werden diese Konstanten mit <funcLink>GetDir</funcLink> und <funcLink>SetDir</funcLink>.
 		</description>
 		<const>
 			<name>DIR_Left</name>
@@ -25,9 +25,9 @@
 		<examples>
 			<example>
 				<code>
-					<funclink>SetComDir</funclink>(<constlink constGroup="COMD">COMD_None</constlink>, <funclink>
-					GetCursor</funclink>();
-					<funclink>SetDir</funclink>(DIR_Right(), <funclink>GetCursor</funclink>());
+					<funcLink>SetComDir</funcLink>(<constLink constGroup="COMD">COMD_None</constLink>, <funcLink>
+					GetCursor</funcLink>();
+					<funcLink>SetDir</funcLink>(DIR_Right(), <funcLink>GetCursor</funcLink>());
 				</code>
 				<text>Der ausgewählte Clonk hält an und schaut nach rechts.</text>
 			</example>

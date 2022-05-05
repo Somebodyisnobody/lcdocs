@@ -15,9 +15,9 @@
 		</syntax>
 		<desc>Ermittelt die Länge einer Zeichenkette oder eines Arrays.</desc>
 		<related>
-			<funclink>SetLength</funclink>
-			<funclink>GetChar</funclink>
-			<funclink>CreateArray</funclink>
+			<funcLink>SetLength</funcLink>
+			<funcLink>GetChar</funcLink>
+			<funcLink>CreateArray</funcLink>
 		</related>
 	</func>
 	<author>Günther</author><date>2006-06</date>

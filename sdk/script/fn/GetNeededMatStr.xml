@@ -20,9 +20,9 @@
 private func Building()
 {
   /* benötigtes Baumaterial abfragen */
-  var string=GetNeededMatStr(<funclink>GetActionTarget</funclink>());
+  var string=GetNeededMatStr(<funcLink>GetActionTarget</funcLink>());
   /* Ausgeben */
-  <funclink>Message</funclink>(<funclink>Format</funclink>("%s",string),<funclink>this</funclink>());
+  <funcLink>Message</funcLink>(<funcLink>Format</funcLink>("%s",string),<funcLink>this</funcLink>());
   return(1);
 }
 				</code>
@@ -30,9 +30,9 @@ private func Building()
 			</example>
 		</examples>
 								<related>
-												<funclink>GetComponent</funclink>
-												<funclink>GetCon</funclink>
-												<funclink>ComponentAll</funclink>
+												<funcLink>GetComponent</funcLink>
+												<funcLink>GetCon</funcLink>
+												<funcLink>ComponentAll</funcLink>
 								</related>
 	</func>
 	<author>wipfmetz</author><date>2002-08</date>

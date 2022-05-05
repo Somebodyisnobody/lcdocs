@@ -29,7 +29,7 @@
     </syntax>
     <desc>Gibt TRUE zurück, wenn iVal &gt;= iRange1 und iVal &lt;= iRange2 ist.</desc>
     <related>
-      <funclink>BoundBy</funclink>
+      <funcLink>BoundBy</funcLink>
     </related>
   </func>
   <author>PeterW</author><date>2001-11</date>

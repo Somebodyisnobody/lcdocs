@@ -11,7 +11,7 @@
 			<author>Clonkonaut</author>
 			<date>2006-07</date>
 			<version>4.9.6.0 CR</version>
-			<description>Die Funktion ist durch Einführung von <funclink>FindObject2</funclink> und <funclink>FindObjects</funclink> veraltet.</description>
+			<description>Die Funktion ist durch Einführung von <funcLink>FindObject2</funcLink> und <funcLink>FindObjects</funcLink> veraltet.</description>
 		</deprecated>
 		<syntax>
 			<rtype>object</rtype>
@@ -23,8 +23,8 @@
 				<param><type>int</type><name>iHgt</name><desc>Höhe des Suchrechtecks. Siehe auch Hinweis unten.</desc><optional /></param>
 				<param><type>int</type><name>dwOCF</name><desc>Bitmaske von Objektattributen. Es werden alle Objekte gefunden, die mindestens eines der übergebenen Objektattribute besitzen. 0 findet alle Objekte.</desc><optional /></param>
 				<param><type>string</type><name>szAction</name><desc>Aktivität des zu findenden Objekts.</desc><optional /></param>
-				<param><type>object</type><name>pActionTarget</name><desc>Aktivitätsziel des zu findenden Objekts. Siehe dazu auch <funclink>SetAction</funclink>, <funclink>GetActionTarget</funclink></desc><optional /></param>
-				<param><type>any</type><name>pContainer</name><desc>Behälter des zu findenden Objekts. Wenn angegeben, wird nur dieser Behälter durchsucht. Möglich sind auch <funclink>NoContainer</funclink> für Objekte, die sich im Freien befinden und <funclink>AnyContainer</funclink> für alle Objekte.</desc><optional /></param>
+				<param><type>object</type><name>pActionTarget</name><desc>Aktivitätsziel des zu findenden Objekts. Siehe dazu auch <funcLink>SetAction</funcLink>, <funcLink>GetActionTarget</funcLink></desc><optional /></param>
+				<param><type>any</type><name>pContainer</name><desc>Behälter des zu findenden Objekts. Wenn angegeben, wird nur dieser Behälter durchsucht. Möglich sind auch <funcLink>NoContainer</funcLink> für Objekte, die sich im Freien befinden und <funcLink>AnyContainer</funcLink> für alle Objekte.</desc><optional /></param>
 				<param><type>object</type><name>pFindNext</name><desc>Objekt, nach dem die Suche begonnen wird. Über diesen Parameter können in einer Schleife nacheinander alle Objekte gefunden werden, die den Suchkriterien entsprechen.</desc><optional /></param>
 			</params>
 		</syntax>
@@ -35,32 +35,32 @@
 		<examples>
 			<example>
 <code>var obj;
-if (FindObject(0, <funclink>LandscapeWidth</funclink>()-100, 0, 100,<funclink>LandscapeHeight</funclink>(), <constlink constGroup="OCF">OCF_CrewMember</constlink>))
-  <funclink>Message</funclink> (<funclink>Format</funclink> ("&lt;%s&gt;|Hier gehts nicht weiter.", obj, <funclink>GetName</funclink> (obj)");</code>
+if (FindObject(0, <funcLink>LandscapeWidth</funcLink>()-100, 0, 100,<funcLink>LandscapeHeight</funcLink>(), <constLink constGroup="OCF">OCF_CrewMember</constLink>))
+  <funcLink>Message</funcLink> (<funcLink>Format</funcLink> ("&lt;%s&gt;|Hier gehts nicht weiter.", obj, <funcLink>GetName</funcLink> (obj)");</code>
 				<text>Lässt den Clonk realisieren, dass die Landschaft am rechten Rand endlich ist.</text>
 			</example>
 			<example>
-				<code><funclink>Incinerate</funclink>(FindObject(CLNK, 0,0, -1,-1));</code>
+				<code><funcLink>Incinerate</funcLink>(FindObject(CLNK, 0,0, -1,-1));</code>
 				<text>Entzündet den nächstliegenden Clonk.</text>
 			</example>
 			<example>
-				<code><funclink>Explode</funclink>(100, FindObject(0, 100, 100, 0, 0, <constlink constGroup="OCF">OCF_Living</constlink>, "Jump"));</code>
+				<code><funcLink>Explode</funcLink>(100, FindObject(0, 100, 100, 0, 0, <constLink constGroup="OCF">OCF_Living</constLink>, "Jump"));</code>
 				<text>Lässt einen Clonk explodieren, der sich an Position 100/100 befindet, und springt.</text>
 			</example>
 			<example>
 
 <code>var obj;
-<funclink>while</funclink> (obj=FindObject(WIPF, 0,0,0,0, 0, 0,0, <funclink>NoContainer</funclink>(), obj)) <funclink>Incinerate</funclink>(obj);</code>
+<funcLink>while</funcLink> (obj=FindObject(WIPF, 0,0,0,0, 0, 0,0, <funcLink>NoContainer</funcLink>(), obj)) <funcLink>Incinerate</funcLink>(obj);</code>
 
 				<text>Entzündet alle Wipfe, die nirgends enthalten sind.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>NoContainer</funclink>
-			<funclink>AnyContainer</funclink>
-			<funclink>FindObjects</funclink>
-			<funclink>FindObject2</funclink>
-			<funclink>FindObjectOwner</funclink>
+			<funcLink>NoContainer</funcLink>
+			<funcLink>AnyContainer</funcLink>
+			<funcLink>FindObjects</funcLink>
+			<funcLink>FindObject2</funcLink>
+			<funcLink>FindObjectOwner</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

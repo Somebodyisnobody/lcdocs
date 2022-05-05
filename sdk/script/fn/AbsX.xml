@@ -17,16 +17,16 @@
   <examples>
    <example>
 
-<code><funclink>CreateObject</funclink>(WIPF, AbsX(100), AbsY(500), -1);</code>
+<code><funcLink>CreateObject</funcLink>(WIPF, AbsX(100), AbsY(500), -1);</code>
 
     <text>Erzeugt einen Wipf an der Position 100/500 auch wenn in einem Objektscript benutzt.</text>
    </example>
   </examples>
   <related>
-   <funclink>AbsY</funclink>
-   <funclink>GetX</funclink>
-   <funclink>GetY</funclink>
-   <funclink>CreateObject</funclink>
+   <funcLink>AbsY</funcLink>
+   <funcLink>GetX</funcLink>
+   <funcLink>GetY</funcLink>
+   <funcLink>CreateObject</funcLink>
   </related>
  </func>
  <author>flgr</author><date>2002-01</date>

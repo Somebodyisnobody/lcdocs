@@ -15,8 +15,8 @@
 		</syntax>
 		<desc>Gibt das Layerobjekt von pObj zurück.</desc>
 		 <related>
-			<funclink>SetObjectLayer</funclink>
-			<funclink>Find_Layer</funclink>
+			<funcLink>SetObjectLayer</funcLink>
+			<funcLink>Find_Layer</funcLink>
 		 </related>
 	</func>
 	<author>Der Tod</author><date>2022-02</date>

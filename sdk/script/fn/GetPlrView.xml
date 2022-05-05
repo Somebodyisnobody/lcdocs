@@ -15,15 +15,15 @@
 		</syntax>
 		<desc>Gibt das Objekt zurück, dem die Sicht eines Spielers folgt. Gibt 0 zurück, wenn kein
 		      Spieler mit der angegebenen Nummer existiert oder die Spielersicht keinem per Script
-		      gesetztem Objekt folgt (siehe <funclink>GetPlrViewMode</funclink>).
+		      gesetztem Objekt folgt (siehe <funcLink>GetPlrViewMode</funcLink>).
     </desc>
     <remark>
-      Wurde die Sicht nicht durch den Script gesetzt (<funclink>SetPlrView</funclink>), so folgt
-      die Sicht dem aktuell selektiertem Clonk (außer im Sichtmodus "Scroll", siehe <funclink>GetViewMode</funclink>).
-      Dieser kann mit der Funktion <funclink>GetCursor</funclink> abgefragt werden.
+      Wurde die Sicht nicht durch den Script gesetzt (<funcLink>SetPlrView</funcLink>), so folgt
+      die Sicht dem aktuell selektiertem Clonk (außer im Sichtmodus "Scroll", siehe <funcLink>GetViewMode</funcLink>).
+      Dieser kann mit der Funktion <funcLink>GetCursor</funcLink> abgefragt werden.
     </remark>
     <related>
-      <funclink>SetPlrView</funclink>
+      <funcLink>SetPlrView</funcLink>
     </related>
 	</func>
 	<author>PeterW</author><date>2003-06</date>

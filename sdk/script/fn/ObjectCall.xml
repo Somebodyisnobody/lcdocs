@@ -24,11 +24,11 @@
 		</syntax>
 		<desc>Ruft die öffentliche Funktion szFunction in pObj auf. Stattdessen sollte die neue Syntax [pObj]->[szFunction]() oder [pObj]->[idObj]::[szFunction]() genutzt werden.</desc>
 		<related>
-			<funclink>ProtectedCall</funclink>
-			<funclink>PrivateCall</funclink>
-			<funclink>Call</funclink>
-			<funclink>GameCall</funclink>
-			<funclink>eval</funclink>
+			<funcLink>ProtectedCall</funcLink>
+			<funcLink>PrivateCall</funcLink>
+			<funcLink>Call</funcLink>
+			<funcLink>GameCall</funcLink>
+			<funcLink>eval</funcLink>
 		</related>
 	</func>
 	<author>jwk</author><date>2002-04</date>

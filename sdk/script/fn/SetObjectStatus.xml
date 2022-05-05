@@ -21,11 +21,11 @@
 				<param><type>bool</type><name>fClearPointers</name><desc>Wenn true, werden alle engine-internen Verbindungen zum Objekt aufgelöst. Das Objekt wird aus seinem Container genommen, Inhalte werden herausgenommen, Effekte mit dem Objekt als Ziel werden gelöscht usw.</desc></param>
 			</params>
 		</syntax>
-		<desc>Ändert den internen Status eines Objektes. Wird vor allem bei <funclink>LoadScenarioSection</funclink> benötigt.</desc>
+		<desc>Ändert den internen Status eines Objektes. Wird vor allem bei <funcLink>LoadScenarioSection</funcLink> benötigt.</desc>
 		 
 		 <related>
-			<funclink>LoadScenarioSection</funclink>
-			<funclink>GetObjectStatus</funclink>
+			<funcLink>LoadScenarioSection</funcLink>
+			<funcLink>GetObjectStatus</funcLink>
 		 </related>
 	</func>
 	<author>Fulgen, Clonk Wiki</author><date>2016-07</date>

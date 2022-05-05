@@ -52,22 +52,22 @@
       </example>
       <example>
         <code>var obj, i, iEffect;
-<funclink>while</funclink> ((i=0) || obj=<funclink>FindObject</funclink>(0, 0,0,0,0, 0, 0,0, 0, obj))
-  <funclink>while</funclink> (iEffect = <funclink>GetEffect</funclink>("*Fire*", obj, i))
-    ChangeEffect(0, obj, i++, <funclink>GetEffect</funclink>(0, obj, iIndex, 1), 2);</code>
+<funcLink>while</funcLink> ((i=0) || obj=<funcLink>FindObject</funcLink>(0, 0,0,0,0, 0, 0,0, 0, obj))
+  <funcLink>while</funcLink> (iEffect = <funcLink>GetEffect</funcLink>("*Fire*", obj, i))
+    ChangeEffect(0, obj, i++, <funcLink>GetEffect</funcLink>(0, obj, iIndex, 1), 2);</code>
         <text>Schaltet alle Feuer in den Zeitraffer.</text>
       </example>
     </examples>
 
     <related>
-      <emlink href="script/Effects.html">Effekte-Dokumentation</emlink>
-      <funclink>AddEffect</funclink>
-      <funclink>CheckEffect</funclink>
-      <funclink>GetEffectCount</funclink>
-      <funclink>EffectCall</funclink>
-      <funclink>EffectVar</funclink>
-      <funclink>GetEffect</funclink>
-      <funclink>RemoveEffect</funclink>
+      <emLink href="script/Effects.html">Effekte-Dokumentation</emLink>
+      <funcLink>AddEffect</funcLink>
+      <funcLink>CheckEffect</funcLink>
+      <funcLink>GetEffectCount</funcLink>
+      <funcLink>EffectCall</funcLink>
+      <funcLink>EffectVar</funcLink>
+      <funcLink>GetEffect</funcLink>
+      <funcLink>RemoveEffect</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2004-03</date>

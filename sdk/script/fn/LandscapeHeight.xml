@@ -12,7 +12,7 @@
     </syntax>
     <desc>Gibt die Höhe der Landschaft in Pixel zurück.</desc>
     <related>
-      <funclink>LandscapeWidth</funclink>
+      <funcLink>LandscapeWidth</funcLink>
     </related>
   </func>
   <author>PeterW</author><date>2001-11</date>

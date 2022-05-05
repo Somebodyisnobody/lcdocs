@@ -19,7 +19,7 @@
         <param><type>object</type><name>pObj</name><desc>Objekt, dessen fester Bereich geändert werden soll. 0 bei lokalem Aufruf.</desc><optional /></param>
       </params>
     </syntax>
-    <desc>Setzt einen neuen, festen Bereich eines Objekts. Das Quellrechteck der Grafik gibt dabei an, welche Pixel im Rechteck fest werden sollen: Alle Pixel, die zu weniger als 50% transparent sind, werden fest. Siehe auch Eintrag SolidMask in der <emlink href="definition/defcore.html">DefCore.txt</emlink>.</desc>
+    <desc>Setzt einen neuen, festen Bereich eines Objekts. Das Quellrechteck der Grafik gibt dabei an, welche Pixel im Rechteck fest werden sollen: Alle Pixel, die zu weniger als 50% transparent sind, werden fest. Siehe auch Eintrag SolidMask in der <emLink href="definition/defcore.html">DefCore.txt</emLink>.</desc>
     <remark>Feste Bereiche werden intern in der Landschaft als Pixel mit dem Material "Vehicle" eingefügt.</remark>
     <examples>
       <example>

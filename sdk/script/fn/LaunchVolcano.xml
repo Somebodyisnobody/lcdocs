@@ -19,7 +19,7 @@
     </syntax>
     <desc>Erzeugt einen Vulkan an angegebener Position. Da Vulkane immer von der Unterseite der Landschaft ausgehen, wird hier kein Y-Parameter benötigt.</desc>
     <related>
-      <funclink>LaunchLightning</funclink> <funclink>LaunchEarthquake</funclink>
+      <funcLink>LaunchLightning</funcLink> <funcLink>LaunchEarthquake</funcLink>
     </related>
   </func>
   <author>PeterW</author><date>2001-11</date>

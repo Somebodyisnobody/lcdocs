@@ -13,7 +13,7 @@
         <param><type>int</type><name>iLevel</name><desc>Gewünschte Lautstärke (0-100).</desc></param>
       </params>
     </syntax>
-    <desc>Setzt die Lautstärke, mit der die Hintergrundmusik abgespielt wird (siehe <funclink>Music</funclink>).</desc>
+    <desc>Setzt die Lautstärke, mit der die Hintergrundmusik abgespielt wird (siehe <funcLink>Music</funcLink>).</desc>
     <examples>
       <example>
         <code>local iVolume;
@@ -29,15 +29,15 @@ func Timer()
   MusicLevel(iVolume);
   if(iVolume &lt;= 0)
   {
-    <funclink>Music</funclink>();
-    <funclink>RemoveObject</funclink>();
+    <funcLink>Music</funcLink>();
+    <funcLink>RemoveObject</funcLink>();
   }
 }</code>
         <text>Script eines Musik-Fadeout-Objekts. Die Musiklautstärke wird in der Funktion "Timer" bei jedem Aufruf ein Stück reduziert, bis die Lautstärke 0 ist. Dann wird die Musik deaktiviert und das Objekt gelöscht.</text>
       </example>
     </examples>
     <related>
-      <funclink>Music</funclink>
+      <funcLink>Music</funcLink>
     </related>
   </func>
   <author>PeterW</author><date>2003-02</date>

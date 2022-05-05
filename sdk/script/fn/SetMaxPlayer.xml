@@ -16,12 +16,12 @@
                 <desc>Ändert die Maximalzahl der Spieler, die an der Runde teilnehmen können. Dieser Wert wirkt sich nur auf Neubeitritte aus; es werden keine vorhandenen Spieler eliminiert, um das Limit zu erfüllen.</desc>
                 <examples>
                         <example>
-				<code>protected func Script100() { <funclink>return</funclink>(SetMaxPlayer()); }</code>
+				<code>protected func Script100() { <funcLink>return</funcLink>(SetMaxPlayer()); }</code>
                                 <text>Teil eines Szenarioscripts: Nach einiger Zeit können keine weiteren Spieler beitreten.</text>
                         </example>
                 </examples>
                 <related>
-                        <funclink>GetPlayerCount</funclink>
+                        <funcLink>GetPlayerCount</funcLink>
                 </related>
         </func>
         <author>Sven2</author><date>2003-06</date>

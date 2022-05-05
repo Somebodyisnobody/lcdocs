@@ -19,13 +19,13 @@
 		<remark>Es sollten nur Objekte gleicher Kategorie voreinander angeordnet werden, da sonst die interne Objektsortierung durcheinandergerät.<br />Die eigentliche Umsortierung findet erst später, aber mit Sicherheit noch im selben Frame wie der Scriptaufruf statt.</remark>
 		<examples>
 			<example>
-				<code>SetObjectOrder(<funclink>FindObject</funclink>(TRE1), <funclink>FindObject</funclink>(TRE2));</code>
+				<code>SetObjectOrder(<funcLink>FindObject</funcLink>(TRE1), <funcLink>FindObject</funcLink>(TRE2));</code>
 				<text>Ordnet den ersten, gefundenen Baum vom Typ TRE2 vor den ersten, gefundenen Baum vom Typ TRE1.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>ResortObjects</funclink>
-			<funclink>Resort</funclink>
+			<funcLink>ResortObjects</funcLink>
+			<funcLink>Resort</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-04</date>

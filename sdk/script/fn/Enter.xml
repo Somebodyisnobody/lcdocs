@@ -17,13 +17,13 @@
 		<desc>Versetzt ein Objekt in ein anderes hinein. Bei diesem Vorgang wird weder RejectCollect, noch Collection oder ActivateEntrance im Zielobjekt aufgerufen. Dafür aber RejectEntrance und Entrance im Objekt, das hineinversetzt werden soll.</desc>
 		<examples>
 			<example>
-				<code>Enter(<funclink>FindObject</funclink>(HUT1), <funclink>GetCursor</funclink>(0));</code>
+				<code>Enter(<funcLink>FindObject</funcLink>(HUT1), <funcLink>GetCursor</funcLink>(0));</code>
 				<text>Der ausgewählte Clonk des ersten Spielers wird in die erstbeste Hütte versetzt.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>Exit</funclink>
-			<funclink>Collect</funclink>
+			<funcLink>Exit</funcLink>
+			<funcLink>Collect</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

@@ -50,8 +50,8 @@
 			</example>
 		</examples>
 	    <related>
-	      <funclink>SetPlrShowControlPos</funclink>
-	      <funclink>SetPlrShowCommand</funclink>
+	      <funcLink>SetPlrShowControlPos</funcLink>
+	      <funcLink>SetPlrShowCommand</funcLink>
 	    </related>
 	</func>
 	<author>PeterW</author><date>2003-06</date>

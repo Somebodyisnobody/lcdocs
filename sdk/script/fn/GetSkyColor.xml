@@ -16,8 +16,8 @@
                 </syntax>
                 <desc>Liefert den Farbwert des Himmels. Mit iRGB kann angegeben werden ob entweder Rot (iRGB ist 0), Grün (iRGB ist 1) oder Blau (iRGB ist 2) zurück gegeben werden soll. Mit iIndex wird festgelegt von welchem Palettenindex (0 - 19) der Wert zurück gegeben werden soll.</desc>
                 <related>
-                        <funclink>SetSkyColor</funclink>
-                        <funclink>SetSkyFade</funclink>
+                        <funcLink>SetSkyColor</funcLink>
+                        <funcLink>SetSkyFade</funcLink>
                 </related>
         </func>
         <author>Cucaracha</author><date>2002-05</date>

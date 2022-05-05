@@ -6,7 +6,7 @@
 	<constGroup activateBitmask="true">
 		<title>VIS</title>
 		<description>Konstanten zum Setzen oder Abrufen von Sichtbarkeiten eines Objektes.
-			Verwendet werden diese Konstanten mit <funclink>GetVisibility</funclink> und <funclink>SetVisibility</funclink>.
+			Verwendet werden diese Konstanten mit <funcLink>GetVisibility</funcLink> und <funcLink>SetVisibility</funcLink>.
 		</description>
 		<const bitPos="0">
 			<name>VIS_All</name>
@@ -86,24 +86,24 @@
 		<examples>
 			<example>
 				<code>var obj;
-					while (obj=<funclink>FindObject</funclink>(WIPF,0,0,0,0,0,0,0,0,obj)) <funclink>
-						SetVisibility</funclink>(VIS_None, obj);
+					while (obj=<funcLink>FindObject</funcLink>(WIPF,0,0,0,0,0,0,0,0,obj)) <funcLink>
+						SetVisibility</funcLink>(VIS_None, obj);
 				</code>
 				<text>Macht alle Wipfe unsichtbar.</text>
 			</example>
 			<example>
-				<code><funclink>Local</funclink>(0)=9; SetVisibility(VIS_Local);
+				<code><funcLink>Local</funcLink>(0)=9; SetVisibility(VIS_Local);
 				</code>
 				<text>Das aufrufende Objekt ist nur noch für Spieler 0 und Spieler 3 sichtbar</text>
 			</example>
 			<example>
-				<code><funclink>Local</funclink>(1)=2; SetVisibility(VIS_Local | VIS_God);
+				<code><funcLink>Local</funcLink>(1)=2; SetVisibility(VIS_Local | VIS_God);
 				</code>
 				<text>Das aufrufende Objekt ist nur noch für Spieler 33 sichtbar</text>
 			</example>
 			<example>
-				<code><funclink>Local</funclink>(<funclink>GetOwner</funclink>()/32)=1&lt;&lt;(<funclink>
-					GetOwner</funclink>()%32); SetVisibility(VIS_Local);
+				<code><funcLink>Local</funcLink>(<funcLink>GetOwner</funcLink>()/32)=1&lt;&lt;(<funcLink>
+					GetOwner</funcLink>()%32); SetVisibility(VIS_Local);
 				</code>
 				<text>Das aufrufende Objekt ist nur noch von seinem Besitzer sichtbar (entspricht VIS_Owner)</text>
 			</example>

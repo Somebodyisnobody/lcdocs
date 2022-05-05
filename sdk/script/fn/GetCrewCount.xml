@@ -16,15 +16,15 @@
     <desc>Liefert die Anzahl der Mannschaftsmitglieder eines Spielers zurück.</desc>
     <examples>
       <example>
-        <code><funclink>while</funclink> (<funclink>GetCrewCount</funclink>(0) &gt; 3) <funclink>Kill</funclink>(<funclink>GetHiRank</funclink>(0));</code>
+        <code><funcLink>while</funcLink> (<funcLink>GetCrewCount</funcLink>(0) &gt; 3) <funcLink>Kill</funcLink>(<funcLink>GetHiRank</funcLink>(0));</code>
         <text>Tötet die höchstrangigen Clonks des ersten Spielers, bis er nur noch drei oder weniger Clonks hat.</text>
       </example>
     </examples>
     <related>
-      <funclink>GetCrew</funclink>
-      <funclink>GetHiRank</funclink>
-      <funclink>GetCursor</funclink>
-      <funclink>GetCaptain</funclink>
+      <funcLink>GetCrew</funcLink>
+      <funcLink>GetHiRank</funcLink>
+      <funcLink>GetCursor</funcLink>
+      <funcLink>GetCaptain</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2002-05</date>

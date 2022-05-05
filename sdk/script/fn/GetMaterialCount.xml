@@ -22,18 +22,18 @@
 public func IsFulfilled()
 {
   // Gold noch nicht gezählt?
-  if ((var iGold=GetMaterialCount(<funclink>Material</funclink>("Gold")))==-1) return();
+  if ((var iGold=GetMaterialCount(<funcLink>Material</funcLink>("Gold")))==-1) return();
   // noch zu viel?
   if (iGold >= 150) return();
   // noch Goldstücke abzubauen?
-  return(!<funclink>ObjectCount</funclink>(GOLD));
+  return(!<funcLink>ObjectCount</funcLink>(GOLD));
 }
 				</code>
 				<text>Auszug aus dem Goldminen-Spielzielobjekt (GLDM).</text>
 			</example>
 		</examples>
 								<related>
-												<funclink>Material</funclink>
+												<funcLink>Material</funcLink>
 								</related>
 	</func>
 	<author>wipfmetz</author><date>2002-08</date>

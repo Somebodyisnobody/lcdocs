@@ -60,7 +60,7 @@ protected func Destruction()
 	<text>Dieses Script hat allerdings auch einige Probleme: Beispielsweise kann der Zauberer keinen weiteren Unsichtbarkeitszauber sprechen, während er unsichtbar ist. Der zweite Zauber wäre praktisch wirkungslos, weil der erste Zauber bei seinem Ablauf schon den Clonk sichtbar macht. Der Zauber müsste also eine Spezialbehandlung für diesen Fall einführen - aber nicht nur für diesen, sondern für alle anderen Zauber, die Sichtbarkeit oder Färbung des Clonks verändern. Zwar berechnet das Script eine vorherige Verfärbung mit ein, betrachtet aber nicht den Fall, dass ein anderer Effekt diese zwischenzeitlich ändern könnte. Dieselben Probleme ergäben sich, wenn mehrere Effekte auf Clonk-Physicals (Sprunghöhe, Laufgeschwindigkeit, Kampfstärke, usw.), Sichtradius, Energie, Zauberenergie oder sonstigen Status einwirken. Über Effekte kann dies umgangen werden.</text>
 	
 	<h id="Usage">Anwendung</h>
-	<text>Effekte werden mit der Scriptfunktion <funclink>AddEffect</funclink> erstellt und analog mit <funclink>RemoveEffect</funclink> entfernt. Wenn ein Effekt erfolgreich zum Objekt hinzugefügt wurde, wird der Callback Fx*Start aufgerufen (* steht dabei für den Effektnamen). Je nach Parametern kann dann ein periodischer Aufruf von Fx*Timer erfolgen, in dem der Effekt Partikel sprühen, Lebensenergie abziehen oder sonstige Dinge tun kann. Schließlich erfolgt, wenn der Effekt entfernt wird, ein Aufruf Fx*Stop, durchgeführt, in dem sich der Effekt entfernen sollte. Als Beispiel hier der oben beschriebene Unsichtbarkeitszauber mit Effekten:</text>
+	<text>Effekte werden mit der Scriptfunktion <funcLink>AddEffect</funcLink> erstellt und analog mit <funcLink>RemoveEffect</funcLink> entfernt. Wenn ein Effekt erfolgreich zum Objekt hinzugefügt wurde, wird der Callback Fx*Start aufgerufen (* steht dabei für den Effektnamen). Je nach Parametern kann dann ein periodischer Aufruf von Fx*Timer erfolgen, in dem der Effekt Partikel sprühen, Lebensenergie abziehen oder sonstige Dinge tun kann. Schließlich erfolgt, wenn der Effekt entfernt wird, ein Aufruf Fx*Stop, durchgeführt, in dem sich der Effekt entfernen sollte. Als Beispiel hier der oben beschriebene Unsichtbarkeitszauber mit Effekten:</text>
 	
 	<code>/* Unsichtbarkeitszauber mit Effektsystem */
 	
@@ -113,7 +113,7 @@ protected func FxInvisPSpellStop(pTarget, iEffectNumber)
   return(-1);
 }</code>
 	
-	<text>Zum Speichern der vorherigen Statuswerte des Effektziels wird der spezielle Speicherbereich in <funclink>EffectVar</funclink>() verwendet. Dies ist nötig, da die Effekt-Callbacks in diesem Fall keinen Befehlskontext haben. Es können also keine objektlokalen Variablen (<code>local</code>) verwendet werden - das Zauberobjekt wurde schließlich gelöscht. Falls ein Objektkontext benötigt wird, kann man diesen auch an <funclink>AddEffect</funclink>() übergeben. Die Aufrufe sind dann objektlokal, und der Effekt wird automatisch gelöscht, wenn das Befehlszielobjekt gelöscht wurde.</text>
+	<text>Zum Speichern der vorherigen Statuswerte des Effektziels wird der spezielle Speicherbereich in <funcLink>EffectVar</funcLink>() verwendet. Dies ist nötig, da die Effekt-Callbacks in diesem Fall keinen Befehlskontext haben. Es können also keine objektlokalen Variablen (<code>local</code>) verwendet werden - das Zauberobjekt wurde schließlich gelöscht. Falls ein Objektkontext benötigt wird, kann man diesen auch an <funcLink>AddEffect</funcLink>() übergeben. Die Aufrufe sind dann objektlokal, und der Effekt wird automatisch gelöscht, wenn das Befehlszielobjekt gelöscht wurde.</text>
 	
 	<h id="Priorities">Prioritäten</h>
 	<text>Beim Erstellen eines Effektes wird immer eine Priorität mit angegeben, die die Überladungsreihenfolge der Effekte angibt. Die Engine garantiert dabei, dass Effekte mit niedriger Priorität immer vor Effekten mit hoher Priorität hinzugefügt werden - notfalls durch temporäres Entfernen von Effekten mit höherer Priorität. Wenn also ein Effekt einen Clonk grün färbt, und ein anderer rot, so wird das Ergebnis das des Effektes mit höherer Priorität sein, da dieser Effekt zuletzt angewendet wurde. Haben zwei Effekte die gleiche Priorität, ist die Reihenfolge nicht definiert. Es ist jedoch garantiert, dass später zugewiesene Effekte stets an den Fx*Effect-Callback gleicher Priorität mit übergeben werden.</text>
@@ -308,7 +308,7 @@ protected func FxGravChangeUSpellStop(pTarget, iEffectNumber)
   return(1);
 }</code>
 	
-	<text>pTarget wird hier in allen Effektaufrufen 0 sein. Trotzdem sollte der Parameter immer an Aufrufe wie <funclink>EffectVar</funclink>() übergeben werden, da es dann auch möglich ist, den Effekt an den Zauberer oder ggf. den Zauberturm zu binden. In diesem Fall würde die Gravitation automatisch zurückgesetzt, sobald der Zauberer stirbt oder der Turm gelöscht wird.</text>
+	<text>pTarget wird hier in allen Effektaufrufen 0 sein. Trotzdem sollte der Parameter immer an Aufrufe wie <funcLink>EffectVar</funcLink>() übergeben werden, da es dann auch möglich ist, den Effekt an den Zauberer oder ggf. den Zauberturm zu binden. In diesem Fall würde die Gravitation automatisch zurückgesetzt, sobald der Zauberer stirbt oder der Turm gelöscht wird.</text>
 	
 	<h id="AddEffects">Zusammenfassen von Effekten</h>
 	<text>Im letzten Beispiel wurden mehrere Gravitationseffekte zusammen gefasst, so dass die Änderung der Gravitation länger andauert, wenn mehrmals gezaubert wurde. Die Zusammenfassung durfte nicht im Effect-Callback passieren, da der Gravitationseffekt immer noch von einem Effekt mit höherer Priorität (beispielsweise ein keine-globalen-Zauber-erlauben-Effekt) abgelehnt werden könnte. Über den speziellen Fx*Add-Callback kann man dasselbe Ergebnis aber auch einfacher (oder zumindest übersichtlicher) erreichen:</text>
@@ -352,7 +352,7 @@ global func RemoveAllHotEffects(pTarget)
       RemoveEffect(0, pTarget, iEffect);
 }</code>
 	
-	<text>Über <funclink>EffectCall</funclink>() können natürlich auch Funktionen im Effekt ausgelöst werden; beispielsweise um bestimmte Effekte zu verlängern.</text>
+	<text>Über <funcLink>EffectCall</funcLink>() können natürlich auch Funktionen im Effekt ausgelöst werden; beispielsweise um bestimmte Effekte zu verlängern.</text>
 	
 	<h id="BlendFx">Blindeffekte</h>
 	<text>Manchmal müsste ein Effekt nur erzeugt werden, um die entsprechenden Callbacks in anderen Effekten auszuführen - beispielsweise bei Zaubern, die keine längere Animation benötigen, aber trotzdem durch andere Effekte blockiert können werden sollen. Ein Beispiel ist der Erdbebenzauber:</text>
@@ -368,12 +368,12 @@ public func Activate(object pCaster, object pCaster2)
   var iResult;
   if (iResult = CheckEffect("EarthquakeNSpell", 0, 150)) return(iResult!=-1 &amp;&amp; RemoveObject());
   // Effekt ausführen
-  if (GetDir(pCaster)==<constlink constGroup="DIR">DIR_Left</constlink>) CastLeft(); else CastRight();
+  if (GetDir(pCaster)==<constLink constGroup="DIR">DIR_Left</constLink>) CastLeft(); else CastRight();
   // Zauberobjekt entfernen
   return(RemoveObject());
 }</code>
 	
-	<text>Der Rückgabewert von <funclink>CheckEffect</funclink>() ist -1 wenn der Effekt abgelehnt, und positiv oder -2 wenn er aufgenommen wurde. In beiden Fällen sollte der Effekt selber nicht ausgeführt werden; aber in letzterem Fall kann die Activate-Funktion Erfolg signalisieren und 1 zurückgeben.</text>
+	<text>Der Rückgabewert von <funcLink>CheckEffect</funcLink>() ist -1 wenn der Effekt abgelehnt, und positiv oder -2 wenn er aufgenommen wurde. In beiden Fällen sollte der Effekt selber nicht ausgeführt werden; aber in letzterem Fall kann die Activate-Funktion Erfolg signalisieren und 1 zurückgeben.</text>
 	
 	<h id="Ext">Erweiterte Möglichkeiten</h>
 	<text>Da jeder Effekt seinen eigenen Datenspeicher hat, ist dies eine Möglichkeit, extern Daten an Objekte zu binden, ohne dabei die Definitionen verändern zu müssen. Außerdem können so einfache Aufrufe verzögert durchgeführt werden - beispielsweise erst ein Frame nach der Zerstörung eines Objekts, wie an einer Stelle im Ritterpack:</text>
@@ -451,7 +451,7 @@ global func FxExplodeOnDeathCurseStop(pTarget, iEffectNumber, iReason)
 		</row>
 		<row>
 			<col>*Fire*</col>
-			<col>Feuereffekt - die Funktion <funclink>Extinguish</funclink>() entfernt alle Effekte dieser Maske.</col>
+			<col>Feuereffekt - die Funktion <funcLink>Extinguish</funcLink>() entfernt alle Effekte dieser Maske.</col>
 		</row>
 		<row>
 			<col>*Curse*</col>
@@ -479,10 +479,10 @@ global func FxExplodeOnDeathCurseStop(pTarget, iEffectNumber, iReason)
 		
 		<h>Fx*Start</h>
 		<text><code>int Fx*Start (object pTarget, int iEffectNumber, int iTemp, C4Value var1, C4Value var2, C4Value var3, C4Value var4);</code></text>
-		<text>Wird beim Start des Effektes aufgerufen. pTarget gibt das Zielobjekt des Effektes an, und iEffectNumber den Index. Über diese beiden Parameter lässt sich der Effekt eindeutig identifizieren, um beispielsweise zugehörige Variablen in <funclink>EffectVar</funclink>() zu manipulieren.</text>
+		<text>Wird beim Start des Effektes aufgerufen. pTarget gibt das Zielobjekt des Effektes an, und iEffectNumber den Index. Über diese beiden Parameter lässt sich der Effekt eindeutig identifizieren, um beispielsweise zugehörige Variablen in <funcLink>EffectVar</funcLink>() zu manipulieren.</text>
 		<text>Der Parameter iTemp ist 0 beim normalen Hinzufügen des Effektes, 1 wenn der Effekt nur hinzugefügt wird, weil er vorher temporär entfernt wurde, und 2 wenn der Effekt hinzugefügt wird, weil er zuvor temporär entfernt wurde aber jetzt selber gelöscht werden soll (in dem Fall folgt dann ein Remove-Aufruf).</text>
-		<text>Die Werte var1 bis var4 entsprechen den übergebenen Parametern an <funclink>AddEffect</funclink>(), und können verwendet werden, um Effekte mit unterschiedlichen Eigenschaften zu erzeugen.</text>
-		<text>Wenn iTemp 0 ist und dieser Callback -1 zurückgibt, wird der Effekt nicht erzeugt und der zugehörige <funclink>AddEffect</funclink>()-Aufruf gibt 0 zurück.</text>
+		<text>Die Werte var1 bis var4 entsprechen den übergebenen Parametern an <funcLink>AddEffect</funcLink>(), und können verwendet werden, um Effekte mit unterschiedlichen Eigenschaften zu erzeugen.</text>
+		<text>Wenn iTemp 0 ist und dieser Callback -1 zurückgibt, wird der Effekt nicht erzeugt und der zugehörige <funcLink>AddEffect</funcLink>()-Aufruf gibt 0 zurück.</text>
 		
 		<h>Fx*Stop</h>
 		<text><code>int Fx*Stop (object pTarget, int iEffectNumber, int iReason, bool fTemp);</code></text>
@@ -503,17 +503,17 @@ global func FxExplodeOnDeathCurseStop(pTarget, iEffectNumber, iReason)
 		<h>Fx*Timer</h>
 		<text><code>int Fx*Timer (object pTarget, int iEffectNumber, int iEffectTime);</code></text>
 		<text>Periodischer Timer-Aufruf, wenn bei der Effekterzeugung ein Timer-Intervall angegeben wurde. pTarget und iEffectNumber spezifizieren auch hier Zielobjekt und Effekt.</text>
-		<text>iEffectTime gibt die die Zeit an, die der Effekt schon läuft. Diese lässt sich auch über <funclink>GetEffect</funclink>() mit entsprechenden Parametern abfragen.</text>
+		<text>iEffectTime gibt die die Zeit an, die der Effekt schon läuft. Diese lässt sich auch über <funcLink>GetEffect</funcLink>() mit entsprechenden Parametern abfragen.</text>
 		<text>Ein Rückgabewert von -1 bedeutet, dass der Effekt nach dem Aufruf gelöscht wird. Dasselbe passiert, wenn die Funktion nicht implementiert wird.</text>
 		
 		
 		<h>Fx*Effect</h>
 		<text><code>int Fx*Effect (string szNewEffectName, object pTarget, int iEffectNumber, int iNewEffectNumber, C4Value var1, C4Value var2, C4Value var3, C4Value var4);</code></text>
 		<text>Aufruf an alle Effekte mit höherer Priorität, wenn ein neuer Effekt zu demselben Objekt (pTarget) hinzugefügt werden soll. szNewEffectName gibt den Namen des neuen Effektes an; iEffectNumber den Effektindex des Effektes, bei dem angefragt wird, und iNewEffectNumber den Index des neu zu erzeugenden Effektes.</text>
-		<text>Achtung: Der neue Effekt ist noch nicht fertig initialisiert, und sollte daher nicht manipuliert werden. Insbesondere das Priority-Feld ist möglicherweise noch nicht initialisiert. Der iNewEffectNumber-Parameter kann aber verwendet werden, um mit <funclink>EffectCall</funclink>() Informationen über den Effekt abzufragen. Bei Aufrufen durch die <funclink>CheckEffect</funclink>()-Funktion ist iNewEffectNumber 0.</text>
+		<text>Achtung: Der neue Effekt ist noch nicht fertig initialisiert, und sollte daher nicht manipuliert werden. Insbesondere das Priority-Feld ist möglicherweise noch nicht initialisiert. Der iNewEffectNumber-Parameter kann aber verwendet werden, um mit <funcLink>EffectCall</funcLink>() Informationen über den Effekt abzufragen. Bei Aufrufen durch die <funcLink>CheckEffect</funcLink>()-Funktion ist iNewEffectNumber 0.</text>
 		<text>Die Funktion sollte -1 zurückgeben, wenn sie den neuen Effekt ablehnt. Da der Effekt auch noch von einem anderen Effekt abgelehnt werden kann, sollte dieser Callback nicht dazu verwendet werden, um beispielsweise Effekte zusammenzufassen (siehe Beispiel zum Gravitationszauber). Überhaupt sollte es möglichst vermieden werden, in diesem Aufruf die Effektliste zu manipulieren.</text>
 		<text>Ein Rückgabewert von -2 oder -3 sollte angegeben werden, wenn der Effekt übernommen wird. Sofern der Effekt dann von keinem anderen Effekt abgelehnt wurde (über Rückgabewert -1), wird ein Fx*Add-Aufruf an den übernehmenden Effekt gesendet, der neue Effekt selber entfernt, und die aufrufende AddEffect-Funktion erhält als Rückgabewert die Nummer des übernehmenden Effektes. Rückgabewert -3 bedeutet dabei im Gegensatz zu -2, dass vor dem Fx*Add-Aufruf alle Effekte mit höherer Priorität temporär entfernt, und nach dem Aufruf dieselben wieder temporär hinzugefügt werden.</text>
-		<text>var1 bis var4 sind die Parameter, die an die <funclink>AddEffect</funclink>()-Funktion übergeben wurden.</text>
+		<text>var1 bis var4 sind die Parameter, die an die <funcLink>AddEffect</funcLink>()-Funktion übergeben wurden.</text>
 		
 		<h>Fx*Add</h>
 		<text><code>int Fx*Add (object pTarget, int iEffectNumber, string szNewEffectName, int iNewEffectTimer, C4Value var1, C4Value var2, C4Value var3, C4Value var4);</code></text>
@@ -532,11 +532,11 @@ global func FxExplodeOnDeathCurseStop(pTarget, iEffectNumber, iReason)
 		
 		<text><table activateBitmask="false" bitmaskName="">
 			<rowh><col>Scriptkonstante</col><col>iCause</col><col>Bedeutung</col></rowh>
-			<row><col>FX_Call_DmgScript</col><col>0</col><col>Schaden durch Scriptaufruf <funclink>DoDamage</funclink>()</col></row>
+			<row><col>FX_Call_DmgScript</col><col>0</col><col>Schaden durch Scriptaufruf <funcLink>DoDamage</funcLink>()</col></row>
 			<row><col>FX_Call_DmgBlast</col><col>1</col><col>Schaden durch Explosion</col></row>
 			<row><col>FX_Call_DmgFire</col><col>2</col><col>Schaden durch Feuer</col></row>
 			<row><col>FX_Call_DmgChop</col><col>3</col><col>Schaden durch Fällen (nur Bäume)</col></row>
-			<row><col>FX_Call_EngScript</col><col>32</col><col>Energieänderung durch Scriptaufruf <funclink>DoEnergy</funclink>()</col></row>
+			<row><col>FX_Call_EngScript</col><col>32</col><col>Energieänderung durch Scriptaufruf <funcLink>DoEnergy</funcLink>()</col></row>
 			<row><col>FX_Call_EngBlast</col><col>33</col><col>Energieverlust durch Explosion</col></row>
 			<row><col>FX_Call_EngObjHit</col><col>34</col><col>Energieverlust durch Objekttreffer</col></row>
 			<row><col>FX_Call_EngFire</col><col>35</col><col>Energieverlust durch Feuer</col></row>
@@ -560,14 +560,14 @@ global func FxExplodeOnDeathCurseStop(pTarget, iEffectNumber, iReason)
 	<text>Es gibt folgende Funktionen sind zum Manipulieren und Abfragen von Effekten:</text>
 	
 	<text><ul>
-		<li><funclink>AddEffect</funclink>() - zum Erzeugen von Effekten</li>
-		<li><funclink>RemoveEffect</funclink>() - zum Entfernen von Effekten</li>
-		<li><funclink>GetEffect</funclink>() - zum Abfragen von Effekten und Parametern</li>
-		<li><funclink>GetEffectCount</funclink>() - um Effekte zu zählen</li>
-		<li><funclink>EffectCall</funclink>() - für Benutzeraufrufe in Effekten</li>
-		<li><funclink>EffectVar</funclink>() - zum Abfragen von Effektvariablen</li>
-		<li><funclink>ChangeEffect</funclink>() - zum Ändern von Effektnamen und -timern (beispielsweise für mehrstufige Effekte)</li>
-		<li><funclink>CheckEffect</funclink>() - um Effekt-Callbacks auszuführen, ohne den Effekt selber zu erstellen</li>
+		<li><funcLink>AddEffect</funcLink>() - zum Erzeugen von Effekten</li>
+		<li><funcLink>RemoveEffect</funcLink>() - zum Entfernen von Effekten</li>
+		<li><funcLink>GetEffect</funcLink>() - zum Abfragen von Effekten und Parametern</li>
+		<li><funcLink>GetEffectCount</funcLink>() - um Effekte zu zählen</li>
+		<li><funcLink>EffectCall</funcLink>() - für Benutzeraufrufe in Effekten</li>
+		<li><funcLink>EffectVar</funcLink>() - zum Abfragen von Effektvariablen</li>
+		<li><funcLink>ChangeEffect</funcLink>() - zum Ändern von Effektnamen und -timern (beispielsweise für mehrstufige Effekte)</li>
+		<li><funcLink>CheckEffect</funcLink>() - um Effekt-Callbacks auszuführen, ohne den Effekt selber zu erstellen</li>
 	</ul></text>
 </part>
 

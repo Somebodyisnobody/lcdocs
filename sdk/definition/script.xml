@@ -9,7 +9,7 @@
     <part>
         <text>Objektscripte kontrollieren die komplexen Verhaltensweisen eines Objekts. Für eine
             Beschreibung der Scriptsprache C4Script siehe
-            <emlink href="script/index.html">C4Script</emlink>-Dokumentation.
+            <emLink href="script/index.html">C4Script</emLink>-Dokumentation.
         </text>
 
         <h>Erschaffung</h>
@@ -20,8 +20,8 @@
 
         <code>func Initialize()
             {
-            <emlink href="script/fn/CreateContents.html">CreateContents</emlink>(ROCK);
-            <emlink href="script/fn/return.html">return</emlink>(1);
+            <emLink href="script/fn/CreateContents.html">CreateContents</emLink>(ROCK);
+            <emLink href="script/fn/return.html">return</emLink>(1);
             }
         </code>
 
@@ -31,7 +31,7 @@
             erst, wenn sie voll ausgewachsen sind.
         </text>
         <h>TimerCall</h>
-        <text>Jede Objektdefinition kann im <emlink href="definition/defcore.html">DefCore</emlink> einen
+        <text>Jede Objektdefinition kann im <emLink href="definition/defcore.html">DefCore</emLink> einen
             TimerCall bestimmen. Der TimerCall ist eine Funktion, die in regelmäßigen Abständen
             im Objektscript aufgerufen wird. Den Zeitabstand der Aufrufe bestimmt der DefCore-Eintrag Timer.
             Ohne spezielle Angabe für den Timer gilt der Vorgabewert von 35 Frames (also ca. einmal pro
@@ -39,7 +39,7 @@
         </text>
         <h>ActMap.txt</h>
         <text>Ein aktives Objekt kann außerdem in seiner
-            <emlink href="definition/actmap.html">Aktivitätsdefinition</emlink>
+            <emLink href="definition/actmap.html">Aktivitätsdefinition</emLink>
             Script-Aufrufe enthalten. Die
             als StartCall definierte Funktion wird immer dann aufgerufen wird, wenn die Aktivitätsschleife
             erneut startet. EndCall wird aufgerufen, wenn die Aktivitätsschleife endet. PhaseCall wird bei
@@ -53,7 +53,7 @@
         <text>An dieser Position wird das komplette Script der jeweiligen Objektdefinition (hier des Clonks)
             eingefügt, die selbstverständlich vorhanden und geladen sein muss. Funktionen können
             durch später im Script folgende Funktionen gleichen Namens überladen werden. Siehe auch
-            <funclink>inherited</funclink>().
+            <funcLink>inherited</funcLink>().
         </text>
         <h id="Zugangsberechtigung">Zugangsberechtigung</h>
         <text>Für Funktionen in Objektscripten kann eine Zugangsberechtigung festgelegt werden:
@@ -94,7 +94,7 @@
                     <col>Initialize</col>
                     <col></col>
                     <col>Wenn das Objekt fertiggestellt wird (
-                        <emlink href="script/fn/GetCon.html">Con</emlink>
+                        <emLink href="script/fn/GetCon.html">Con</emLink>
                         größer gleich 100).
                     </col>
                 </row>
@@ -108,7 +108,7 @@
                     <col>object pByObj</col>
                     <col>Wenn das Objekt erzeugt wird. Als Parameter wird das Objekt übergeben, in dem das erzeugende
                         Script steht. Siehe auch
-                        <emlink href="script/fn/Construction.html">Construction</emlink>
+                        <emLink href="script/fn/Construction.html">Construction</emLink>
                     </col>
                 </row>
                 <row id="Destruction">
@@ -120,12 +120,12 @@
                     <col>Hit</col>
                     <col>int xdir, int ydir</col>
                     <col>Wenn das Objekt bei hoher Geschwindigkeit (>= 15; siehe
-                        <emlink href="script/fn/OCF_HitSpeed1.html">OCF_HitSpeed1</emlink>) mit der Landschaft
+                        <emLink href="script/fn/OCF_HitSpeed1.html">OCF_HitSpeed1</emLink>) mit der Landschaft
                         kollidiert oder
                         aufgenommen wird (Collection).
                         <br/>
-                        xdir und ydir geben die Aufprallgeschwindigkeit mit Precision 100 (siehe <emlink
-                                href="script/fn/GetXDir.html">GetXDir</emlink>) an. Die Parameter werden bei Collection
+                        xdir und ydir geben die Aufprallgeschwindigkeit mit Precision 100 (siehe <emLink
+                                href="script/fn/GetXDir.html">GetXDir</emLink>) an. Die Parameter werden bei Collection
                         nicht übergeben.
                     </col>
                 </row>
@@ -133,14 +133,14 @@
                     <col>Hit2</col>
                     <col>int xdir, int ydir</col>
                     <col>Wie Hit, bei Geschwindigkeiten >= 20 (siehe
-                        <emlink href="script/fn/OCF_HitSpeed2.html">OCF_HitSpeed2</emlink>).
+                        <emLink href="script/fn/OCF_HitSpeed2.html">OCF_HitSpeed2</emLink>).
                     </col>
                 </row>
                 <row id="Hit3">
                     <col>Hit3</col>
                     <col>int xdir, int ydir</col>
                     <col>Wie Hit, bei Geschwindigkeiten >= 60 (siehe
-                        <emlink href="script/fn/OCF_HitSpeed3.html">OCF_HitSpeed3</emlink>).
+                        <emLink href="script/fn/OCF_HitSpeed3.html">OCF_HitSpeed3</emLink>).
                     </col>
                 </row>
                 <row id="Grab">
@@ -205,8 +205,8 @@
                 <row id="Contact_">
                     <col>Contact_</col>
                     <col></col>
-                    <col>Wenn das Objekt die Landschaft berührt. Siehe <emlink href="definition/cnat.html">CNAT
-                        - Contact Attachment</emlink>.
+                    <col>Wenn das Objekt die Landschaft berührt. Siehe <emLink href="definition/cnat.html">CNAT
+                        - Contact Attachment</emLink>.
                     </col>
                 </row>
                 <row id="Control_">
@@ -245,15 +245,15 @@
                     <col>Wenn ein durch die Wegfindungsroutine gesteuertes Objekt (pObj) die Transferzone dieses
                         Objekts zum Zielpunkt iTx/iTy passieren möchte. Die Transferfunktion kann dem Objekt
                         entsprechende Kommandos geben und sollte bei erfolgreicher Bearbeitung true zurückliefern.
-                        Siehe auch <emlink href="script/fn/SetTransferZone.html">SetTransferZone</emlink>().
+                        Siehe auch <emLink href="script/fn/SetTransferZone.html">SetTransferZone</emLink>().
                     </col>
                 </row>
                 <row id="UpdateTransferZone">
                     <col>UpdateTransferZone</col>
                     <col></col>
                     <col>Wenn ein Objekt geladen oder synchronisiert wird. Objekte mit einer TransferZone sollten
-                        diese bei jedem Aufruf von UpdateTransferZone neu setzen. Siehe auch <emlink
-                                href="script/fn/SetTransferZone.html">SetTransferZone</emlink>().
+                        diese bei jedem Aufruf von UpdateTransferZone neu setzen. Siehe auch <emLink
+                                href="script/fn/SetTransferZone.html">SetTransferZone</emLink>().
                     </col>
                 </row>
                 <row id="MenuQueryCancel">
@@ -339,15 +339,15 @@
                 <row id="CalcValue">
                     <col>CalcValue</col>
                     <col>object pInBase, int iForPlayer</col>
-                    <col>Ermittelt den Wert eines Objekts. Siehe auch <emlink href="script/fn/GetValue.html">
-                        GetValue</emlink>().
+                    <col>Ermittelt den Wert eines Objekts. Siehe auch <emLink href="script/fn/GetValue.html">
+                        GetValue</emLink>().
                     </col>
                 </row>
                 <row id="CalcDefValue">
                     <col>CalcDefValue</col>
                     <col>object pInBase, int iForPlayer</col>
-                    <col>Ermittelt den Wert eines (noch nicht gekauften) Objekttyps. Siehe auch <emlink
-                            href="script/fn/GetValue.html">GetValue</emlink>().
+                    <col>Ermittelt den Wert eines (noch nicht gekauften) Objekttyps. Siehe auch <emLink
+                            href="script/fn/GetValue.html">GetValue</emLink>().
                     </col>
                 </row>
                 <row id="CalcBuyValue">
@@ -462,7 +462,7 @@
                     <col>RejectTeamSwitch</col>
                     <col>int iPlr, int iNewTeam</col>
                     <col>Aufruf in Spielziel, -regel und Umweltobjekten und dem Szenarioscript. Wenn RejectTeamSwitch
-                        true zurückgibt, kann der Teamwechsel eines Spielers (durch <funclink>SetPlayerTeam</funclink>)
+                        true zurückgibt, kann der Teamwechsel eines Spielers (durch <funcLink>SetPlayerTeam</funcLink>)
                         verhindert werden. Ab 4.9.6.0 CR.
                     </col>
                 </row>
@@ -538,11 +538,11 @@
         </text>
         <code>func ControlThrow()
             {
-            <emlink href="script/fn/if.html">if</emlink>
-            (<emlink href="script/fn/FindContents.html">FindContents</emlink>(SPER))
-            <emlink href="script/fn/return.html">return</emlink>(<emlink href="script/fn/SetAction.html">
-                SetAction</emlink>(&quot;ThrowSpear&quot;));
-            <emlink href="script/fn/return.html">return</emlink>(0);
+            <emLink href="script/fn/if.html">if</emLink>
+            (<emLink href="script/fn/FindContents.html">FindContents</emLink>(SPER))
+            <emLink href="script/fn/return.html">return</emLink>(<emLink href="script/fn/SetAction.html">
+                SetAction</emLink>(&quot;ThrowSpear&quot;));
+            <emLink href="script/fn/return.html">return</emLink>(0);
             }
         </code>
         <text>Trägt ein Clonk mit diesem Script einen Speer, so führt er seine eigene spezielle
@@ -578,25 +578,25 @@
             object pCmdObj)
             {
             // Ein Kommando mit Zielobjekt
-            <emlink href="script/fn/if.html">if</emlink>
+            <emLink href="script/fn/if.html">if</emLink>
             (pTarget)
-            <emlink href="script/fn/Message.html">Message</emlink>(&quot;Befehl: %s Ziel: %s Koordinaten:
-            %d/%d&quot;, <emlink href="script/fn/this.html">this</emlink>(), strCommand, pTarget->GetName(), iTx, iTy);
+            <emLink href="script/fn/Message.html">Message</emLink>(&quot;Befehl: %s Ziel: %s Koordinaten:
+            %d/%d&quot;, <emLink href="script/fn/this.html">this</emLink>(), strCommand, pTarget->GetName(), iTx, iTy);
             // Ein Kommando ohne Zielobjekt
             else
-            <emlink href="script/fn/Message.html">Message</emlink>(&quot;Befehl: %s Koordinaten: %d/%d&quot;, <emlink
-                    href="script/fn/this.html">this</emlink>(), strCommand, iTx, iTy);
+            <emLink href="script/fn/Message.html">Message</emLink>(&quot;Befehl: %s Koordinaten: %d/%d&quot;, <emLink
+                    href="script/fn/this.html">this</emLink>(), strCommand, iTx, iTy);
             // Kommando nicht abfangen
-            <emlink href="script/fn/return.html">return</emlink>(0);
+            <emLink href="script/fn/return.html">return</emLink>(0);
             }
         </code>
 
         <text>Durch Rückgabe des Werts 1 kann der Befehl abgefangen und die interne Verarbeitung
             verhindert werden. "pCmdObj" ist in jedem Fall das Objekt, für das das Kommando gesetzt werden
-            soll, auch wenn der Aufruf von einem enthaltenen Objekt kommt (siehe VehicleControl in der <emlink
-                    href="definition/defcore.html">DefCore</emlink>). Der Script-Befehl <emlink
+            soll, auch wenn der Aufruf von einem enthaltenen Objekt kommt (siehe VehicleControl in der <emLink
+                    href="definition/defcore.html">DefCore</emLink>). Der Script-Befehl <emLink
                     href="script/fn/SetCommand.html">SetCommand
-            </emlink> verursacht keinen ControlCommand-Aufruf.
+            </emLink> verursacht keinen ControlCommand-Aufruf.
         </text>
         <text>ControlCommand-Aufrufe werden an angefasste oder von innen gesteuerte Fahrzeuge
             weitergeleitet, wenn diese ein entsprechendes VehicleControl-Flag besitzen. Diese Weiterleitung wird

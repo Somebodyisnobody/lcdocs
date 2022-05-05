@@ -19,19 +19,19 @@
 			<example>
 				<code>func TestCos()
 {
-	if(<funclink>IsNetwork</funclink>()) <funclink>return</funclink>(<funclink>Log</funclink>("TestCos funktioniert im Netzwerk nicht!"));
+	if(<funcLink>IsNetwork</funcLink>()) <funcLink>return</funcLink>(<funcLink>Log</funcLink>("TestCos funktioniert im Netzwerk nicht!"));
 	var iStartTime = GetTime();
-	for(var i = 0; i &lt; 100; i++) var x = <funclink>Cos</funclink>(i, 100);
+	for(var i = 0; i &lt; 100; i++) var x = <funcLink>Cos</funcLink>(i, 100);
 	var iTime = GetTime() - iStartTime;
-	<funclink>Log</funclink>("Ein Cos-Aufruf benötigt: %d.%02d ms", iTime / 100, iTime % 100);
+	<funcLink>Log</funcLink>("Ein Cos-Aufruf benötigt: %d.%02d ms", iTime / 100, iTime % 100);
 }</code>
-				<text>Diese Funktion prüft die Performance der Funktion "<funclink>Cos</funclink>".
+				<text>Diese Funktion prüft die Performance der Funktion "<funcLink>Cos</funcLink>".
 							Dabei wird die Funktion 100-mal aufgerufen und die verbrauchte Zeit mittels GetTime()
 							gemessen.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>GetSystemTime</funclink>
+			<funcLink>GetSystemTime</funcLink>
 		</related>
 	</func>
 	<author>Peter</author><date>2002-08</date>

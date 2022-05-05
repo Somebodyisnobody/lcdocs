@@ -13,10 +13,10 @@
         <param><type>object</type><name>pObj</name><desc>Objekt, dessen Inhalt rotiert werden soll. 0 bei lokalem Aufruf.</desc></param>
       </params>
     </syntax>
-    <desc>Rotiert den Inhalt eines Objekts. Dabei wird immer genau ein Objekt weiter gescrollt (im Gegensatz zu <funclink>ShiftContents</funclink>). Es wird außerdem kein ControlContents aufgerufen. <br/>
+    <desc>Rotiert den Inhalt eines Objekts. Dabei wird immer genau ein Objekt weiter gescrollt (im Gegensatz zu <funcLink>ShiftContents</funcLink>). Es wird außerdem kein ControlContents aufgerufen. <br/>
           Zurückgegeben wird ein Pointer auf das Objekt, das sich nach der Rotation am Anfang der Inhaltsliste befindet.</desc>
     <related>
-      <funclink>ShiftContents</funclink>
+      <funcLink>ShiftContents</funcLink>
     </related>
   </func>
   <author>PeterW</author><date>2003-02</date>

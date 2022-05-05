@@ -588,7 +588,7 @@
 		</div>
 	</xsl:template>
 
-	<xsl:template match="funclink">
+	<xsl:template match="funcLink">
 		<xsl:param name="relpath" tunnel="yes"/>
 		<xsl:choose>
 			<xsl:when test="document(concat('sdk/script/fn/', normalize-space(.), '.xml'))">
@@ -607,7 +607,7 @@
 		</xsl:choose>
 	</xsl:template>
 
-	<xsl:template match="emlink" name="link">
+	<xsl:template match="emLink" name="link">
 		<xsl:param name="relpath" tunnel="yes"/>
 		<!-- so this template can be called for the navigation -->
 		<xsl:param name="href" select="normalize-space(@href)"/>
@@ -636,7 +636,7 @@
 		</a>
 	</xsl:template>
 
-	<xsl:template match="constlink">
+	<xsl:template match="constLink">
 		<xsl:param name="relpath" tunnel="yes"/>
 		<xsl:param name="constGroup" select="@constGroup"/>
 		<xsl:choose>
@@ -667,7 +667,7 @@
 		</xsl:choose>
 	</xsl:template>
 
-	<xsl:template match="callbacklink">
+	<xsl:template match="callbackLink">
 		<xsl:param name="relpath" tunnel="yes"/>
 		<xsl:choose>
 			<xsl:when test="document(concat('sdk/script/fn/callbacks/', normalize-space(.), '.xml'))">

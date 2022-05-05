@@ -14,18 +14,18 @@
         <param><type>object</type><name>pObj</name><desc>Zielobjekt. 0 bei lokalem Aufruf.</desc><optional /></param>
       </params>
     </syntax>
-    <desc>Setzt die ColorByOwner-Färbung eines Objekts. Dieser Aufruf entspricht dem Setzen eines neuen Besitzers mit <funclink>SetOwner</funclink> bei einem Spieler mit der Spielerfarbe iColor.</desc>
+    <desc>Setzt die ColorByOwner-Färbung eines Objekts. Dieser Aufruf entspricht dem Setzen eines neuen Besitzers mit <funcLink>SetOwner</funcLink> bei einem Spieler mit der Spielerfarbe iColor.</desc>
     <examples>
       <example>
 
-<code>SetColor(2, <funclink>GetCursor</funclink>(0));</code>
+<code>SetColor(2, <funcLink>GetCursor</funcLink>(0));</code>
 
         <text>Färbt die nach dem Besitzer gefärbten Flächen des ausgewählten Clonk des ersten Spielers rot.</text>
       </example>
     </examples>
     <related>
-      <funclink>SetColorDw</funclink>
-      <funclink>GetColor</funclink>
+      <funcLink>SetColorDw</funcLink>
+      <funcLink>GetColor</funcLink>
     </related>
   </func>
   <author>jwk</author><date>2002-08</date>

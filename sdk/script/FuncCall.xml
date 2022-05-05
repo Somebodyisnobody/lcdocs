@@ -17,7 +17,7 @@
 		<h>Beispiel:</h>
 		<code>func TestFunktion()
 {
-  <funclink>Log</funclink>("Die Test-Funktion wurde aufgerufen!");
+  <funcLink>Log</funcLink>("Die Test-Funktion wurde aufgerufen!");
 }
 
 func Aufruf()
@@ -37,15 +37,15 @@ func Aufruf()
 
 		<code>func Activate()
 {
-  <funclink>Log</funclink>("Activate wurde in Objekt A aufgerufen!");
-  <funclink>Explode</funclink>(20);
+  <funcLink>Log</funcLink>("Activate wurde in Objekt A aufgerufen!");
+  <funcLink>Explode</funcLink>(20);
 }</code>
 
 		<text>Script Objekt B:</text>
 
 		<code>func Activate()
 {
-  var obj = <funclink>FindObject</funclink>(AAAA, -1, -1, -1, -1);
+  var obj = <funcLink>FindObject</funcLink>(AAAA, -1, -1, -1, -1);
   obj->Activate();
 }	</code>
 
@@ -57,14 +57,14 @@ func Aufruf()
 
 		<code>func Activate()
 {
-  <funclink>FindObject</funclink>(AAAA, -1, -1, -1, -1)->Activate();
+  <funcLink>FindObject</funcLink>(AAAA, -1, -1, -1, -1)->Activate();
 }</code>
 
 		<text>Es kann zusätzlich zum Namen der aufzurufenden Funktion noch die ID der Definition der Scriptfunktion mit angegeben werden. Das macht den Aufruf zum einen in vielen Fällen leicht schneller, außerdem können so auch überladene Funktionen im Zielscript aufgerufen werden (siehe #include/#appendto).</text>
 
 		<code>func Activate()
 {
-  var obj = <funclink>FindObject</funclink>(AAAA, -1, -1, -1, -1);
+  var obj = <funcLink>FindObject</funcLink>(AAAA, -1, -1, -1, -1);
   obj->AAAA::Activate();
 }</code>
 	</part>
@@ -77,23 +77,23 @@ func Aufruf()
 		</text>
 
 		<text>Das folgende Script erstellt einen Flint an den globalen Koordinaten 10/10, sogar wenn es innerhalb eines Objektes ausgeführt wird:</text>
-		<code>global-><funclink>CreateObject</funclink>(FLNT, 10, 10, <constlink constGroup="OWNER">NO_OWNER</constlink>);</code>
+		<code>global-><funcLink>CreateObject</funcLink>(FLNT, 10, 10, <constLink constGroup="OWNER">NO_OWNER</constLink>);</code>
 	</part>
 
 
 	<h>Indirekter Aufruf von Skriptfunktionen</h>
 	<part>
-		<text>In manchen Situationen kann allerdings auch ein "indirekter" Aufruf durch die Engine-Funktionen <funclink>Call</funclink> und Verwandte sinnvoll sein. Hier wird der Funktionsname als String übergeben, was den Aufruf einer Funktion "nach Namen" ermöglicht.</text>
+		<text>In manchen Situationen kann allerdings auch ein "indirekter" Aufruf durch die Engine-Funktionen <funcLink>Call</funcLink> und Verwandte sinnvoll sein. Hier wird der Funktionsname als String übergeben, was den Aufruf einer Funktion "nach Namen" ermöglicht.</text>
 
 		<h>Beispiel:</h>
 		<code>func TestFunktion()
 {
-  <funclink>Log</funclink>("Die Test-Funktion wurde aufgerufen!");
+  <funcLink>Log</funcLink>("Die Test-Funktion wurde aufgerufen!");
 }
 
 func Aufruf()
 {
-  <funclink>Call</funclink>("TestFunktion");
+  <funcLink>Call</funcLink>("TestFunktion");
 }</code>
 
 		<text>Ein solcher indirekter Aufruf ist allerdings in der Regel deutlich langsamer als der direkte Aufruf, da bei Call die entsprechende Funktion erst zur Laufzeit im Script gesucht werden muss. Beim direkten Aufruf steht die aufzurufende Funktion dagegen in der Regel bereits zur Zeit des Parsens (also beim Start der Engine) fest, weshalb dieser Aufruf besser optimiert werden kann und deshalb schneller ist.</text>
@@ -102,16 +102,16 @@ func Aufruf()
 
 		<code>func TestFunktion()
 {
-  <funclink>Call</funclink>(<funclink>Format</funclink>("Aufruf%d", <funclink>Random</funclink>(3)));
+  <funcLink>Call</funcLink>(<funcLink>Format</funcLink>("Aufruf%d", <funcLink>Random</funcLink>(3)));
 }
 
-func Aufruf0() { <funclink>Log</funclink>("Die erste Funktion wurde aufgerufen!"); }
-func Aufruf1() { <funclink>Log</funclink>("Die zweite Funktion wurde aufgerufen!"); }
-func Aufruf2() { <funclink>Log</funclink>("Die dritte Funktion wurde aufgerufen!"); }</code>
+func Aufruf0() { <funcLink>Log</funcLink>("Die erste Funktion wurde aufgerufen!"); }
+func Aufruf1() { <funcLink>Log</funcLink>("Die zweite Funktion wurde aufgerufen!"); }
+func Aufruf2() { <funcLink>Log</funcLink>("Die dritte Funktion wurde aufgerufen!"); }</code>
 
-		<text>Hier wird in TestFunktion() eine <em>zufällige</em> Funktion aufgerufen (mittels <funclink>Random</funclink> und <funclink>Format</funclink> wird zufällig einer der drei Strings "Aufruf1", "Aufruf2" oder "Aufruf3" an Call übergeben).</text>
+		<text>Hier wird in TestFunktion() eine <em>zufällige</em> Funktion aufgerufen (mittels <funcLink>Random</funcLink> und <funcLink>Format</funcLink> wird zufällig einer der drei Strings "Aufruf1", "Aufruf2" oder "Aufruf3" an Call übergeben).</text>
 		<text>Call muss hier verwendet werden, da erst zur Laufzeit bestimmt wird, welche Funktion aufgerufen wird. Außerdem wird bei jeder Ausführung von TestFunktion() eine andere Scriptfunktion ausgewählt, die aufgerufen wird. Dies wäre mit einem direkten Aufruf nicht möglich.</text>
-		<text>Außer Call können auch andere Zugriffsarten indirekt erfolgen, siehe dazu <funclink>ObjectCall</funclink> und <funclink>GameCall</funclink>. Besondere Beachtung verdienen außerdem noch <funclink>PrivateCall</funclink> und <funclink>ProtectedCall</funclink>. Sie ermöglichen die Umgehung der <emlink href="script/Funcs.html#Aufrufb">Aufrufbeschränkung</emlink> und existieren nur in der "Indirekt-Aufruf-Version".</text>
+		<text>Außer Call können auch andere Zugriffsarten indirekt erfolgen, siehe dazu <funcLink>ObjectCall</funcLink> und <funcLink>GameCall</funcLink>. Besondere Beachtung verdienen außerdem noch <funcLink>PrivateCall</funcLink> und <funcLink>ProtectedCall</funcLink>. Sie ermöglichen die Umgehung der <emLink href="script/Funcs.html#Aufrufb">Aufrufbeschränkung</emLink> und existieren nur in der "Indirekt-Aufruf-Version".</text>
 	</part>
 </part>
 

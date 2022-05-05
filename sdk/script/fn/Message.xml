@@ -34,8 +34,8 @@
             </params>
         </syntax>
 
-        <desc>Zeigt eine Nachricht an. Diese kann nach dem C-Formatierungsstil formatiert werden (siehe <funclink>
-            Format</funclink>)
+        <desc>Zeigt eine Nachricht an. Diese kann nach dem C-Formatierungsstil formatiert werden (siehe <funcLink>
+            Format</funcLink>)
         </desc>
 
         <remark>Durch Verwendung des Zeichens "|" kann ein Zeilenvorschub erreicht werden.
@@ -47,8 +47,8 @@
 
         <examples>
             <example>
-                <code>Message("Hallo %s!|Ich bin dein Clonk %s!", <funclink>this</funclink>(), <funclink>
-                    GetPlayerName</funclink>(<funclink>GetOwner</funclink>()), <funclink>GetName</funclink>());
+                <code>Message("Hallo %s!|Ich bin dein Clonk %s!", <funcLink>this</funcLink>(), <funcLink>
+                    GetPlayerName</funcLink>(<funcLink>GetOwner</funcLink>()), <funcLink>GetName</funcLink>());
                 </code>
                 <text>
                     Wird dieser Script in einem Clonk ausgeführt, so erscheint über seinem Kopf der entsprechende Text
@@ -58,11 +58,11 @@
         </examples>
 
         <related>
-            <funclink>Log</funclink>
-            <funclink>PlayerMessage</funclink>
-            <funclink>PlrMessage</funclink>
-            <funclink>CustomMessage</funclink>
-            <funclink>AddMessage</funclink>
+            <funcLink>Log</funcLink>
+            <funcLink>PlayerMessage</funcLink>
+            <funcLink>PlrMessage</funcLink>
+            <funcLink>CustomMessage</funcLink>
+            <funcLink>AddMessage</funcLink>
         </related>
     </func>
     <author>PeterW</author>

@@ -14,17 +14,17 @@
 				<param><type>any</type><name>...</name><desc>Zusätzliche Parameter, mit denen der Text formatiert wird</desc><optional /></param>
 			</params>
 		</syntax>
-		<desc>Gibt einen Text im Messageboard am unteren Bildschirmrand aus. Der Text wird nur bei aktiviertem Debug-Modus ausgegeben. Die Parameter können über den C-Formatierungsstil in den Text eingebunden werden. Siehe dazu auch <funclink>Format</funclink>.</desc>
+		<desc>Gibt einen Text im Messageboard am unteren Bildschirmrand aus. Der Text wird nur bei aktiviertem Debug-Modus ausgegeben. Die Parameter können über den C-Formatierungsstil in den Text eingebunden werden. Siehe dazu auch <funcLink>Format</funcLink>.</desc>
 		<examples>
 			<example>
-				<code>DebugLog("PlayerName: %s.", <funclink>GetPlayerName</funclink>(0));</code>
+				<code>DebugLog("PlayerName: %s.", <funcLink>GetPlayerName</funcLink>(0));</code>
 				<text>Gibt den Namen des ersten Spielers aus.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>Format</funclink>
-			<funclink>Message</funclink>
-			<funclink>Log</funclink>
+			<funcLink>Format</funcLink>
+			<funcLink>Message</funcLink>
+			<funcLink>Log</funcLink>
 		</related>
 	</func>
 	<author>Fulgen / Clonk Wiki</author><date>2016-07</date>

@@ -14,11 +14,11 @@
 				<param><type>bool</type><name>fTestIfInUse</name><desc>Gibt an, ob auch wirklich getestet werden soll.</desc></param>
 			</params>
 		</syntax>
-		<desc>Testet ob eine Eingabezeile (aufgerufen mit <funclink>CallMessageBoard</funclink>) existiert. Es gibt auch true zurück, wenn CallMessageBoard aufgerufen wurde, aber es noch nicht angezeigt wird.</desc> 
+		<desc>Testet ob eine Eingabezeile (aufgerufen mit <funcLink>CallMessageBoard</funcLink>) existiert. Es gibt auch true zurück, wenn CallMessageBoard aufgerufen wurde, aber es noch nicht angezeigt wird.</desc>
 		 <related>
-			<funclink>InputCallback</funclink>
-			<funclink>AbortMessageBoard</funclink>
-			<funclink>CallMessageBoard</funclink>
+			<funcLink>InputCallback</funcLink>
+			<funcLink>AbortMessageBoard</funcLink>
+			<funcLink>CallMessageBoard</funcLink>
 		 </related>
 	</func>
 	<author>Fulgen, Clonk Wiki</author><date>2016-07</date>

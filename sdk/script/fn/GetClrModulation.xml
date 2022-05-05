@@ -11,28 +11,28 @@
 			<rtype>int</rtype>
 			<params>
 				<param><type>object</type><name>pObj</name><desc>Objekt, dessen Färbung abgefragt werden soll. 0 bei lokalen Aufruf.</desc></param>
-				<param><type>int</type><name>iOverlayID</name><desc>Wenn angegeben, wird stattdessen die Farbmodulation dieses Grafikoverlays abgefragt. Das Overlay muss vorher mit <funclink>SetGraphics</funclink> erstellt worden sein. Ab CR.</desc><optional /></param>
+				<param><type>int</type><name>iOverlayID</name><desc>Wenn angegeben, wird stattdessen die Farbmodulation dieses Grafikoverlays abgefragt. Das Overlay muss vorher mit <funcLink>SetGraphics</funcLink> erstellt worden sein. Ab CR.</desc><optional /></param>
 			</params>
 		</syntax>
-		<desc>Fragt die Farbmodulation eines Objekts ab. Diese ist ein Farbwert, der multiplikativ (oder auch additiv, bei entsprechend aktiviertem  BlitMode in der DefCore) aufgerechnet wird. Für weitere Hinweise siehe auch <funclink>SetClrModulation</funclink>().</desc>
-		<remark>Ist der Rückgabewert dieser Funktion 0, so wurde keine Farbmodulation durchgeführt (analog zu <funclink>RGBa</funclink>(255,255,255,0)).</remark>
+		<desc>Fragt die Farbmodulation eines Objekts ab. Diese ist ein Farbwert, der multiplikativ (oder auch additiv, bei entsprechend aktiviertem  BlitMode in der DefCore) aufgerechnet wird. Für weitere Hinweise siehe auch <funcLink>SetClrModulation</funcLink>().</desc>
+		<remark>Ist der Rückgabewert dieser Funktion 0, so wurde keine Farbmodulation durchgeführt (analog zu <funcLink>RGBa</funcLink>(255,255,255,0)).</remark>
 		<examples>
 			<example>
 <code>global func SetObjAlpha(var byAlpha, pObj)
   {
   var dwClrMod=GetClrModulation(pObj);
-  <funclink>if</funclink> (!dwClrMod) dwClrMod = byAlpha&lt;&lt;24; else dwClrMod = dwClrMod &amp; 16777215 | byAlpha&lt;&lt;24;
-  <funclink>return</funclink>(<funclink>SetClrModulation</funclink>(dwClrMod, pObj));
+  <funcLink>if</funcLink> (!dwClrMod) dwClrMod = byAlpha&lt;&lt;24; else dwClrMod = dwClrMod &amp; 16777215 | byAlpha&lt;&lt;24;
+  <funcLink>return</funcLink>(<funcLink>SetClrModulation</funcLink>(dwClrMod, pObj));
   }</code>
 				<text>Globale Funktion: Setzt nur den Alphawert der Farbmodulation eines Objekts.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>RGB</funclink>
-			<funclink>RGBa</funclink>
-			<funclink>SetGamma</funclink>
-			<funclink>SetClrModulation</funclink>
-			<funclink>GetColorDw</funclink>
+			<funcLink>RGB</funcLink>
+			<funcLink>RGBa</funcLink>
+			<funcLink>SetGamma</funcLink>
+			<funcLink>SetClrModulation</funcLink>
+			<funcLink>GetColorDw</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2004-02</date>

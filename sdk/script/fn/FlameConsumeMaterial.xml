@@ -17,12 +17,12 @@
 		<desc>Gibt true zurück, wenn das Material an angegebener Position brennbar ist. </desc>
 		<examples>
 			<example>
-				<code><funclink>if</funclink>(FlameConsumeMaterial(<funclink>GetCursor</funclink>(0)-><funclink>GetX</funclink>(),<funclink>GetCursor</funclink>(0)-><funclink>GetY</funclink>())) <funclink>IncinerateLandscape</funclink>(<funclink>GetCursor</funclink>(0)-><funclink>GetX</funclink>(),<funclink>GetCursor</funclink>(0)-><funclink>GetY</funclink>())</code>
+				<code><funcLink>if</funcLink>(FlameConsumeMaterial(<funcLink>GetCursor</funcLink>(0)-><funcLink>GetX</funcLink>(),<funcLink>GetCursor</funcLink>(0)-><funcLink>GetY</funcLink>())) <funcLink>IncinerateLandscape</funcLink>(<funcLink>GetCursor</funcLink>(0)-><funcLink>GetX</funcLink>(),<funcLink>GetCursor</funcLink>(0)-><funcLink>GetY</funcLink>())</code>
 				<text>Zündet die Landschaft an der Position des gerade ausgewählten Clonks des ersten Spielers an, wenn sie brennbar ist.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>IncinerateLandscape</funclink>
+			<funcLink>IncinerateLandscape</funcLink>
 		</related>
 	</func>
 	<author>Fulgen / Clonk Wiki</author><date>2016-07</date>

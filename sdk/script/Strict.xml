@@ -18,10 +18,10 @@ werden.</text>
 <h>Auswirkungen</h>
 <text><ul>
 <li>Ein Funktionsaufruf auf denselben Funktionsnamen bedeutet immer einen rekursiven Aufruf</li>
-<li><funclink>inherited</funclink>() und <funclink>_inherited</funclink>() werden verfügbar</li>
-<li><funclink>goto</funclink>() impliziert kein <funclink>return</funclink>()</li>
-<li><emlink href="script/Typechecks.html">Strengere Datentyp-Prüfung</emlink></li>
-<li><funclink>CreateObject</funclink>() und <funclink>CreateConstruction</funclink>() überschreiben bei objektlokalem Aufruf nicht mehr den Besitzer</li>
+<li><funcLink>inherited</funcLink>() und <funcLink>_inherited</funcLink>() werden verfügbar</li>
+<li><funcLink>goto</funcLink>() impliziert kein <funcLink>return</funcLink>()</li>
+<li><emLink href="script/Typechecks.html">Strengere Datentyp-Prüfung</emLink></li>
+<li><funcLink>CreateObject</funcLink>() und <funcLink>CreateConstruction</funcLink>() überschreiben bei objektlokalem Aufruf nicht mehr den Besitzer</li>
 </ul></text>
 </part>
 <h>#strict 2</h>
@@ -79,7 +79,7 @@ werden.</text>
 		<h>Weitere Auswirkungen</h>
 		<text><ul>
 			<li>Maps und die .-Zugriffssyntax werden verfügbar.</li>
-			<li><emlink href="script/Funcs.html#Aufrufb">Aufrufberechtigungen</emlink> werden auch bei Verwendung der <code>-></code> Syntax überprüft, vorausgesetzt das Ziel-Script ist ebenfalls <code>#strict 3</code> oder höher.</li>
+			<li><emLink href="script/Funcs.html#Aufrufb">Aufrufberechtigungen</emLink> werden auch bei Verwendung der <code>-></code> Syntax überprüft, vorausgesetzt das Ziel-Script ist ebenfalls <code>#strict 3</code> oder höher.</li>
 			<li><code>global-></code> und <code>global->~</code> werden verfügbar.</li>
 			<li><code>false != 0</code> und <code>true != 1</code></li>
 		</ul></text>

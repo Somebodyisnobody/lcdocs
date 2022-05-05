@@ -14,19 +14,19 @@
         <param><type>object</type><name>pObj</name><desc>Zielobjekt. 0 bei lokalem Aufruf.</desc><optional /></param>
       </params>
     </syntax>
-    <desc>Setzt die ColorByOwner-F‰rbung eines Objekts. Dieser Aufruf entspricht dem Setzen eines neuen Besitzers mit <funclink>SetOwner</funclink> bei einem Spieler mit der Spielerfarbe dwNewColor.</desc>
+    <desc>Setzt die ColorByOwner-F‰rbung eines Objekts. Dieser Aufruf entspricht dem Setzen eines neuen Besitzers mit <funcLink>SetOwner</funcLink> bei einem Spieler mit der Spielerfarbe dwNewColor.</desc>
     <examples>
       <example>
 
-<code>SetColorDw(<funclink>RGBa</funclink>(255, 255, 255, 127), <funclink>GetCursor</funclink>(0));</code>
+<code>SetColorDw(<funcLink>RGBa</funcLink>(255, 255, 255, 127), <funcLink>GetCursor</funcLink>(0));</code>
 
         <text>F‰rbt die nach dem Besitzer gef‰rbten Fl‰chen des ausgew‰hlten Clonk des ersten Spielers weiﬂ und halbdurchsichtig.</text>
       </example>
     </examples>
     <related>
-      <funclink>SetColor</funclink>
-      <funclink>GetColorDw</funclink>
-      <funclink>SetClrModulation</funclink>
+      <funcLink>SetColor</funcLink>
+      <funcLink>GetColorDw</funcLink>
+      <funcLink>SetClrModulation</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2002-05</date>

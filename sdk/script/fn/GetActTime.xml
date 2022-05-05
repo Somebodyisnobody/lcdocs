@@ -19,32 +19,32 @@
         <code>private func Burning()
 {
   // Rauch
-  <funclink>Smoke</funclink>(+23, <funclink>Random</funclink>(3) - 24, <funclink>Random</funclink>(5) + 8);
+  <funcLink>Smoke</funcLink>(+23, <funcLink>Random</funcLink>(3) - 24, <funcLink>Random</funcLink>(5) + 8);
   // Noch nicht fertig
-  if (GetActTime() &lt; 150) <funclink>return</funclink>(1);
+  if (GetActTime() &lt; 150) <funcLink>return</funcLink>(1);
   // Fertig
-  <funclink>SetAction</funclink>("Idle");
+  <funcLink>SetAction</funcLink>("Idle");
   // Erz suchen
   var pOre;
-  <funclink>if</funclink> (!(pOre = <funclink>FindContents</funclink>(ORE1))) <funclink>return</funclink>(1);
+  <funcLink>if</funcLink> (!(pOre = <funcLink>FindContents</funcLink>(ORE1))) <funcLink>return</funcLink>(1);
   // Erz verbrauchen
-  <funclink>RemoveObject</funclink>(pOre);
+  <funcLink>RemoveObject</funcLink>(pOre);
   // Metall auswerfen
-  <funclink>Exit</funclink>(<funclink>CreateContents</funclink>(METL), -27, +13, 0, -1);
+  <funcLink>Exit</funcLink>(<funcLink>CreateContents</funcLink>(METL), -27, +13, 0, -1);
   // Sound
-  <funclink>Sound</funclink>("Pshshsh");
+  <funcLink>Sound</funcLink>("Pshshsh");
 }
 </code>
         <text>Auszug aus dem Hochofen-Script. Nach 150 Frames ist das Metall fertiggebacken.</text>
       </example>
     </examples>
     <related>
-      <funclink>GetAction</funclink>
-      <funclink>GetActionTarget</funclink>
-      <funclink>GetPhase</funclink>
-      <funclink>ObjectSetAction</funclink>
-      <funclink>SetAction</funclink>
-      <funclink>SetPhase</funclink>
+      <funcLink>GetAction</funcLink>
+      <funcLink>GetActionTarget</funcLink>
+      <funcLink>GetPhase</funcLink>
+      <funcLink>ObjectSetAction</funcLink>
+      <funcLink>SetAction</funcLink>
+      <funcLink>SetPhase</funcLink>
     </related>
   </func>
   <author>Günther</author><date>2002-04</date>

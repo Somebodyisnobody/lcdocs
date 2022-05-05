@@ -18,9 +18,9 @@
   </syntax>
   <desc>Spielt ein Musikstück ab. Die entsprechende Datei muss in einer der aktiven Musikdateien vorhanden sein. Sind im ausgewählten Szenario Musikdateien vorhanden, gilt die Szenariodatei als aktive Musikdatei, andernfalls wird die globale Musikdatei Music.c4g genutzt. Bei erfolgreichem Aufruf dieser Funktion wird die Musikwiedergabe aktiviert, auch wenn sie in den Optionen des Menüsystems deaktiviert wurde.</desc>
   <related>
-   <funclink>MusicLevel</funclink>
-   <funclink>SetPlayList</funclink>
-   <funclink>Sound</funclink>
+   <funcLink>MusicLevel</funcLink>
+   <funcLink>SetPlayList</funcLink>
+   <funcLink>Sound</funcLink>
   </related>
  </func>
  <author>jwk</author><date>2002-08</date>

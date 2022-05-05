@@ -19,14 +19,14 @@
 		<desc>Setzt einen 32Bit-Farbwert aus den drei Grundfarben und einem Durchsichtigkeitswert zusammen. 0-255 für alle Parameter.</desc>
 		<examples>
 			<example>
-				<code><funclink>SetSkyAdjust</funclink>(RGBa(255,127,127,127),<funclink>RGB</funclink>(255,0,0));</code>
+				<code><funcLink>SetSkyAdjust</funcLink>(RGBa(255,127,127,127),<funcLink>RGB</funcLink>(255,0,0));</code>
 				<text>Färbt den Himmel so richtig rot.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>RGB</funclink>
-			<funclink>HSL</funclink>
-			<funclink>HSLa</funclink>
+			<funcLink>RGB</funcLink>
+			<funcLink>HSL</funcLink>
+			<funcLink>HSLa</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-04</date>

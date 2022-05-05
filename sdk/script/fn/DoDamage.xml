@@ -17,12 +17,12 @@
 		<desc>Ver‰ndert den Schadenswert eines Objekts. Bei iChange ungleich Null wird im Zielobjekt auﬂerdem die Funktion Damage aufgerufen. Bei lokalem Aufruf gilt der Besitzer des aufrufenden Objekts als Verursacher des Schadens.</desc>
 		<examples>
 			<example>
-				<code>DoDamage(500, <funclink>FindObject</funclink>(TREE));</code>
+				<code>DoDamage(500, <funcLink>FindObject</funcLink>(TREE));</code>
 				<text>F‰llt einen Baum, wenn er noch nicht gef‰llt ist.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>GetDamage</funclink>
+			<funcLink>GetDamage</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

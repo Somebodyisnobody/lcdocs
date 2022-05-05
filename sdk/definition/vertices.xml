@@ -14,7 +14,7 @@ Vertex gegen festes Material, so wird es entsprechend anhalten, seine Richtung ä
 drehen (die Vertices drehen sich hierbei natürlich mit). Wird ein Eckpunkt eines Objekts durch
 ein festes Material verschüttet, so hängt das Objekt fest. Die Reibung eines Vertex
 bestimmt, wie leicht das Objekt an diesem Punkt abrutscht. Ist einem Vertex eine Ausrichtung
-zugeordnet (siehe <emlink href="definition/cnat.html">CNAT - ContactAttachment</emlink>), so
+zugeordnet (siehe <emLink href="definition/cnat.html">CNAT - ContactAttachment</emLink>), so
 wird bei aktivierten ContactCalls die entsprechende Funktion im Script des Objekts aufgerufen,
 sobald der Vertex mit der Landschaft kollidiert, so dass das Objekt merkt, dass es z.B. links gegen
 eine Wand gefahren ist und entsprechend reagieren kann. Bei Objekten mit SolidMask ist zu beachten,

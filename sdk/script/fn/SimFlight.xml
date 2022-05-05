@@ -20,15 +20,15 @@
 				<param><type>int</type><name>iPrecision</name><desc>Genauigkeit. Keine Angabe oder Null entspricht 10.</desc><optional/></param>
 			</params>
 		</syntax>
-		<desc>Simuliert die Bewegung eines freien Falles mit Anfangsgeschwindigkeit in die angegebene Richtung. Wenn die simulierte Bewegung ein Material mit der gewünschten Dichte durchläuft, gibt diese Funktion true zurück, ansonsten false.<br/> Bei true wird die X- und Y-Position des Aufpralls in den angegebenen Variablen für iX und iY gespeichert, die Aufprallgeschwindigkeit in den angegebenen Variablen fü iXDir und iYDir. Siehe dazu <emlink href="script/Funcs.html#referenzen">Referenzen</emlink>.</desc>
+		<desc>Simuliert die Bewegung eines freien Falles mit Anfangsgeschwindigkeit in die angegebene Richtung. Wenn die simulierte Bewegung ein Material mit der gewünschten Dichte durchläuft, gibt diese Funktion true zurück, ansonsten false.<br/> Bei true wird die X- und Y-Position des Aufpralls in den angegebenen Variablen für iX und iY gespeichert, die Aufprallgeschwindigkeit in den angegebenen Variablen fü iXDir und iYDir. Siehe dazu <emLink href="script/Funcs.html#referenzen">Referenzen</emLink>.</desc>
 		<examples>
 			<example>
-<code>var iX = <funclink>GetX</funclink>(), iY = <funclink>GetY</funclink>(), iXDir = <funclink>GetXDir</funclink>(), iYDir = <funclink>GetYDir</funclink>();
-if (<funclink>GetAction</funclink>()eq"Jump")
+<code>var iX = <funcLink>GetX</funcLink>(), iY = <funcLink>GetY</funcLink>(), iXDir = <funcLink>GetXDir</funcLink>(), iYDir = <funcLink>GetYDir</funcLink>();
+if (<funcLink>GetAction</funcLink>()eq"Jump")
   if (SimFlight(iX, iY, iXDir, iYDir))
     if (iYDir >= 80)
-      <funclink>Message</funclink>("Oh oh, das wird ein harter Aufprall!", <funclink>this</funclink>());</code>
-				<text>Wenn sich der aufrufende Clonk in der Luft befindet und vorauszusehen ist, dass er mit hoher Geschwindigkeit auf den Boden aufprallen wird, ruft dies der Clonk aus. Bei einer Aufprallgeschwindigkeit von mindestens 8 Pixeln pro Frame landet der Clonk nicht mehr auf seinen Füßen und muss sich erst wieder aufrichten.<br/>Die ersten vier Parameter von SimFlight sind <emlink href="script/Funcs.html#referenzen">Referenzen</emlink>.</text>
+      <funcLink>Message</funcLink>("Oh oh, das wird ein harter Aufprall!", <funcLink>this</funcLink>());</code>
+				<text>Wenn sich der aufrufende Clonk in der Luft befindet und vorauszusehen ist, dass er mit hoher Geschwindigkeit auf den Boden aufprallen wird, ruft dies der Clonk aus. Bei einer Aufprallgeschwindigkeit von mindestens 8 Pixeln pro Frame landet der Clonk nicht mehr auf seinen Füßen und muss sich erst wieder aufrichten.<br/>Die ersten vier Parameter von SimFlight sind <emLink href="script/Funcs.html#referenzen">Referenzen</emLink>.</text>
 			</example>
 		</examples>
 	</func>

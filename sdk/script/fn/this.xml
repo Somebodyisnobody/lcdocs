@@ -15,7 +15,7 @@
     <examples>
       <example>
         <code>var myid;
-myid = <funclink>GetID</funclink>(this());</code>
+myid = <funcLink>GetID</funcLink>(this());</code>
         <text>Speichert die ID des aufrufenden Objekts in der threadlokalen Variable myid.</text>
       </example>
     </examples>

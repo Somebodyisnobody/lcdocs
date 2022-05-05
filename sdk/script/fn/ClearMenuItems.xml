@@ -17,21 +17,21 @@
 		<examples>
 			<example>
 
-<code>var pClonk=<funclink>GetCursor</funclink>();
-<funclink>CreateMenu</funclink>(CLNK, pClonk, pClonk, 0, "", 0, 2);
-<funclink>AddMenuItem</funclink>("", "", TIM1, pClonk,0,0,"Alter Text");
+<code>var pClonk=<funcLink>GetCursor</funcLink>();
+<funcLink>CreateMenu</funcLink>(CLNK, pClonk, pClonk, 0, "", 0, 2);
+<funcLink>AddMenuItem</funcLink>("", "", TIM1, pClonk,0,0,"Alter Text");
 
 [...]
 
 ClearMenuItems(pClonk);
-<funclink>AddMenuItem</funclink>(0, "", TIM1, pClonk,0,0,"Neuer Text");</code>
+<funcLink>AddMenuItem</funcLink>(0, "", TIM1, pClonk,0,0,"Neuer Text");</code>
 				<text>Öffnet zunächst ein Textfenster mit dem Inhalt "Alter Text" für den ausgewählten Clonk des ersten Spielers, und ändert die Beschriftung dann später auf "Neuer Text".</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>CreateMenu</funclink>
-			<funclink>AddMenuItem</funclink>
-			<funclink>CloseMenu</funclink>
+			<funcLink>CreateMenu</funcLink>
+			<funcLink>AddMenuItem</funcLink>
+			<funcLink>CloseMenu</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2003-06</date>

@@ -17,11 +17,11 @@
     Liefert den Namen eines Teams.
     </desc>
 	<related>
-		<emlink href="scenario/Teams.html">Teams</emlink>
-		<funclink>GetTeamColor</funclink>
-		<funclink>GetTeamCount</funclink>
-		<funclink>GetPlayerTeam</funclink>
-		<funclink>GetTeamByIndex</funclink>
+		<emLink href="scenario/Teams.html">Teams</emLink>
+		<funcLink>GetTeamColor</funcLink>
+		<funcLink>GetTeamCount</funcLink>
+		<funcLink>GetPlayerTeam</funcLink>
+		<funcLink>GetTeamByIndex</funcLink>
 	</related>
   </func>
   <author>Clonkonaut</author><date>2008-04</date>

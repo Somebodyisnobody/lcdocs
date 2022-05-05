@@ -14,10 +14,10 @@
 				<param><type>int</type><name>iPos</name><desc>Positionsnummer. 0 für Oben Mitte (Standard), 1 für Unten Rechts.</desc></param>
 			</params>
 		</syntax>
-		<desc>Setzt die Position der grafischen Darstellung des Steuerungsblocks eines Spielers (siehe <funclink>SetPlrShowControl</funclink>).</desc>
+		<desc>Setzt die Position der grafischen Darstellung des Steuerungsblocks eines Spielers (siehe <funcLink>SetPlrShowControl</funcLink>).</desc>
 	    <related>
-	      <funclink>SetPlrShowControl</funclink>
-	      <funclink>SetPlrShowCommand</funclink>
+	      <funcLink>SetPlrShowControl</funcLink>
+	      <funcLink>SetPlrShowCommand</funcLink>
 	    </related>
 	</func>
 	<author>PeterW</author><date>2003-06</date>

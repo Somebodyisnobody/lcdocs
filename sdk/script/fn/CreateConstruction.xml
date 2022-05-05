@@ -30,7 +30,7 @@
                 <param>
                     <type>int</type>
                     <name>iOwner</name>
-                    <desc>Besitzer des zu erstellenden Objekts (Index eines Spielers oder <constlink constGroup="OWNER">NO_OWNER</constlink> für
+                    <desc>Besitzer des zu erstellenden Objekts (Index eines Spielers oder <constLink constGroup="OWNER">NO_OWNER</constLink> für
                         keinen Besitzer)
                     </desc>
                 </param>
@@ -51,7 +51,7 @@
                 </param>
             </params>
         </syntax>
-        <desc>Sollte statt <funclink>CreateObject</funclink> benutzt werden, wenn ein Gebäude oder eine Baustelle
+        <desc>Sollte statt <funcLink>CreateObject</funcLink> benutzt werden, wenn ein Gebäude oder eine Baustelle
             erzeugt werden soll. Bei lokalen Aufrufen dieser Funktion wird die angegebene Position zu Offset-Koordinaten
             zum aufrufenden Objekt.
             Wenn fCheckSite 1 ist, wird die Baustelle vorher auf ihre Eignung überprüft. Ist die Position ungeeignet
@@ -66,7 +66,7 @@
                 </text>
             </example>
             <example>
-                <code>CreateConstruction( HUT3, 200,100, <constlink constGroup="OWNER">NO_OWNER</constlink>, 30,1 );
+                <code>CreateConstruction( HUT3, 200,100, <constLink constGroup="OWNER">NO_OWNER</constLink>, 30,1 );
                 </code>
                 <text>Errichtet eine zu 30% fertiggestellte Holzhütte bei den Koordinaten 200/100 ohne Besitzer wobei
                     hier die Landschaft ebenfalls angepasst wird.
@@ -74,9 +74,9 @@
             </example>
         </examples>
         <related>
-            <funclink>CreateObject</funclink>
-            <funclink>CreateContents</funclink>
-            <funclink>RemoveObject</funclink>
+            <funcLink>CreateObject</funcLink>
+            <funcLink>CreateContents</funcLink>
+            <funcLink>RemoveObject</funcLink>
         </related>
     </func>
     <author>springer</author>

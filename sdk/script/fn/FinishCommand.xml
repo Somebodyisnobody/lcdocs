@@ -36,11 +36,11 @@
         <code>public func Production(object clonk)
 {
   // Baum suchen
-  <emlink href="script/NamedVar.html">var</emlink> pTree;
+  <emLink href="script/NamedVar.html">var</emLink> pTree;
   if (!(pTree = FindWorkTree(clonk)))
   // Kein geeigneter Baum (fertig)
   {
-	<funclink>Message</funclink>("$TxtNomoresuitabletrees$",this());
+	<funcLink>Message</funcLink>("$TxtNomoresuitabletrees$",this());
 	FinishCommand(clonk, 0, 1);
 	return(0);
   }
@@ -56,11 +56,11 @@ verwendet werden.
       </example>
     </examples>
     <related>
-      <funclink>SetCommand</funclink>
-      <funclink>GetCommand</funclink>
-      <funclink>AppendCommand</funclink>
-	  <funclink>AddCommand</funclink>
-	  <funclink>PlayerObjectCommand</funclink>
+      <funcLink>SetCommand</funcLink>
+      <funcLink>GetCommand</funcLink>
+      <funcLink>AppendCommand</funcLink>
+	  <funcLink>AddCommand</funcLink>
+	  <funcLink>PlayerObjectCommand</funcLink>
     </related>
   </func>
   <author>Günther</author><date>2004-04</date>

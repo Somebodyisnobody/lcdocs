@@ -18,20 +18,20 @@
 		<desc>Erzeugt ein Objekt des gewünschten Typs irgendwo in der Landscape im gewünschten Material und liefert es zurück.</desc>
 		<examples>
 			<example>
-				<code>PlaceInMaterial(FLNT, <funclink>Material</funclink>("Earth"));</code>
+				<code>PlaceInMaterial(FLNT, <funcLink>Material</funcLink>("Earth"));</code>
 				<text>Versucht einen Feuerstein in Erde zu erzeugen</text>
 			</example>
 			<example>
-				<code>var obj = PlaceInMaterial(FLAG, <funclink>Material</funclink>("Gold"));
-<funclink>if</funclink> (obj)  <funclink>SetOwner</funclink>(0, obj);
-<funclink>if</funclink> (!obj) <funclink>Log</funclink>("Konnte keine Flagge in Gold erzeugen!");
+				<code>var obj = PlaceInMaterial(FLAG, <funcLink>Material</funcLink>("Gold"));
+<funcLink>if</funcLink> (obj)  <funcLink>SetOwner</funcLink>(0, obj);
+<funcLink>if</funcLink> (!obj) <funcLink>Log</funcLink>("Konnte keine Flagge in Gold erzeugen!");
 				</code>
 				<text>Versucht eine Flagge in Gold zu erzeugen und sie in den Besitz von Spieler 0 zu übergeben. Gelingt es nicht die Flagge zu erzeugen, wird eine Fehlermeldung geloggt</text>
 			</example>
 		</examples>
 		<related>
-		  <funclink>PlaceObjects</funclink>
-			<funclink>CreateObject</funclink>
+		  <funcLink>PlaceObjects</funcLink>
+			<funcLink>CreateObject</funcLink>
 		</related>
 	</func>
 	<author>flgr</author><date>2002-01</date>

@@ -23,15 +23,15 @@
 		<examples>
 			<example>
 				<code>var red, green, blue;
-SplitRGBaValue(<funclink>GetColorDw</funclink>(<funclink>GetCursor</funclink>()),red,green,blue);
-<funclink>Message</funclink>("Rot: %d|Grün %d|Blau %d",GetCursor(),red, green, blue);
+SplitRGBaValue(<funcLink>GetColorDw</funcLink>(<funcLink>GetCursor</funcLink>()),red,green,blue);
+<funcLink>Message</funcLink>("Rot: %d|Grün %d|Blau %d",GetCursor(),red, green, blue);
 				</code>
 				<text>Schreibt die 3 Farbwerte des aktuell ausgewählten Clonks als Text über den Clonk</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>GetRGBaValue</funclink>
-			<funclink>SetRGBaValue</funclink>
+			<funcLink>GetRGBaValue</funcLink>
+			<funcLink>SetRGBaValue</funcLink>
 		</related>
 	</func>
 	<author>Tyron</author><date>2004-09</date>

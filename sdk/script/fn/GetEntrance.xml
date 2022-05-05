@@ -20,19 +20,19 @@
 protected func ControlSpecial()
 {
 	// ist man irgendwo drinnen?
-	if(<funclink>Contained</funclink>())
+	if(<funcLink>Contained</funcLink>())
 		// Tür zu?
-		if(!GetEntrance(<funclink>Contained</funclink>()))
+		if(!GetEntrance(<funcLink>Contained</funcLink>()))
 			// Selbstmord begehen!
-			<funclink>Kill</funclink>();
-<funclink>return</funclink>(1);
+			<funcLink>Kill</funcLink>();
+<funcLink>return</funcLink>(1);
 }		
 				</code>
 				<text>Extreme Klaustrophobie: Bei geschlossener Tür Selbstmord begehen.</text>
 			</example>
 		</examples>
 								<related>
-												<funclink>SetEntrance</funclink>
+												<funcLink>SetEntrance</funcLink>
 								</related>
 	</func>
 	<author>wipfmetz</author><date>2002-08</date>

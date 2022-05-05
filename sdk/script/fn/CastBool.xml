@@ -15,9 +15,9 @@
 		</syntax>
 		<desc>Wandelt einen Wert in einen boolischen Wert (true, false) um. Diese Funktion liefert für alle Werte außer 0 true.</desc>
 		<related>
-			<funclink>CastAny</funclink>
-			<funclink>CastInt</funclink>
-			<funclink>CastC4ID</funclink>
+			<funcLink>CastAny</funcLink>
+			<funcLink>CastInt</funcLink>
+			<funcLink>CastC4ID</funcLink>
 		</related>
 	</func>
 	<author>Fulgen</author><date>2016-08</date>

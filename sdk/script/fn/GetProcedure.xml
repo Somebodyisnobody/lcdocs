@@ -15,7 +15,7 @@
     </syntax>
     <desc>Gibt die Prozedur der gegenwärtigen Aktivität eines Objekts zurück (z.B. FLOAT, ATTACH, etc.). Bei einer NONE-Prozedur oder keiner Aktivität wird 0 zurückgegeben.</desc>
     <related>
-      <funclink>GetAction</funclink>
+      <funcLink>GetAction</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2001-11</date>

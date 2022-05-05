@@ -118,12 +118,12 @@
         <row><col>Wait</col><col>Null</col><col>0,0</col><col>Null</col><col>Frames</col><col>Anzahl Frames/Ticks warten.</col></row>
       </table><br />
 	  Um das Holen-Menü für ein Objekt zu öffnen, muss der Data-Parameter auf true gesetzt sein. Beispiel: 
-	  <code>func ControlLeft(object byObj) { SetCommand(byObj, "Get", <funclink>this</funclink>, 0, 0, 0, true); }</code>
+	  <code>func ControlLeft(object byObj) { SetCommand(byObj, "Get", <funcLink>this</funcLink>, 0, 0, 0, true); }</code>
     </remark>
 
     <examples>
       <example>
-        <code>SetCommand(<funclink>this</funclink>, "Attack", <funclink>FindObjectOwner</funclink>(CLNK, 1, 0, 0, -1, -1), 0, 0, 0, 0, 10);</code>
+        <code>SetCommand(<funcLink>this</funcLink>, "Attack", <funcLink>FindObjectOwner</funcLink>(CLNK, 1, 0, 0, -1, -1), 0, 0, 0, 0, 10);</code>
         <text>
 Dieser Script gibt dem ausführenden Clonk den Befehl, den nächstgelegenen Clonk von Spieler 1 zu attackieren. Dabei soll er nicht so schnell aufgeben und (wenn er z.B.
 daran scheitert, den Weg zum Feind zu finden) es 10 Mal zu versuchen, bis er sein Ziel erreicht hat oder abbricht.
@@ -131,11 +131,11 @@ daran scheitert, den Weg zum Feind zu finden) es 10 Mal zu versuchen, bis er sei
       </example>
     </examples>
     <related>
-      <funclink>GetCommand</funclink>
-      <funclink>AddCommand</funclink>
-      <funclink>AppendCommand</funclink>
-      <funclink>FinishCommand</funclink>
-	  <funclink>PlayerObjectCommand</funclink>
+      <funcLink>GetCommand</funcLink>
+      <funcLink>AddCommand</funcLink>
+      <funcLink>AppendCommand</funcLink>
+      <funcLink>FinishCommand</funcLink>
+	  <funcLink>PlayerObjectCommand</funcLink>
     </related>
   </func>
   <author>PeterW</author><date>2001-11</date>

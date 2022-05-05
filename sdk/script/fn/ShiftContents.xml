@@ -18,7 +18,7 @@
       </params>
     </syntax>
     <desc>Sortiert die Inhaltsobjekte so um, dass das nächste Objekt mit anderer ID vorne liegt. Die häufigste Anwendung für diesen Befehl ist ein Inventarwechsel.</desc>
-    <remark>Der Befehl ruft im Behälter ControlContents auf, womit die Umsortierung überladen werden kann. Gibt diese Funktion 0 zurück oder existiert nicht, wird für das neue selektierte Objekt "Selection" aufgerufen. Existiert diese Funktion nicht oder gibt 0 zurück, wird der Sound "Grab" beim Containerobjekt abgespielt. Siehe dazu auch <emlink href="definition/script.html">Objektscripte</emlink>.</remark>
+    <remark>Der Befehl ruft im Behälter ControlContents auf, womit die Umsortierung überladen werden kann. Gibt diese Funktion 0 zurück oder existiert nicht, wird für das neue selektierte Objekt "Selection" aufgerufen. Existiert diese Funktion nicht oder gibt 0 zurück, wird der Sound "Grab" beim Containerobjekt abgespielt. Siehe dazu auch <emLink href="definition/script.html">Objektscripte</emLink>.</remark>
     <remark>Achtung: Durch das neue ControlContents-System, das ein variableres Interface für die Inventarauswahl bilden soll, ruft wie beschrieben auch ShiftContents den Auswahlsound hervor. Um Dopplungen zu vermeiden, sollten Objektscripte entsprechend angepasst werden, und beim Inventarwechsel keinen eigenen Sound mehr abspielen, bzw. diesen wie im Beispiel weiter unten nach ControlContents verlagern.</remark>
     <examples>
       <example>
@@ -26,22 +26,22 @@
   {
   [Inventarwechsel]
   ShiftContents();
-  <funclink>return</funclink>(1);
+  <funcLink>return</funcLink>(1);
   }</code>
         <text>Teil eines Objektscripts. Verschiebt die Inhaltsobjekte eines Objekts auf Spezialtaste 1.</text>
       </example>
       <example>
 <code>protected func ControlContents(idTarget)
   {
-  if (!ShiftContents(0, 0, idTarget)) <funclink>return</funclink>(1);
-  <funclink>return</funclink>(1, <funclink>Sound</funclink>("Ding"));
+  if (!ShiftContents(0, 0, idTarget)) <funcLink>return</funcLink>(1);
+  <funcLink>return</funcLink>(1, <funcLink>Sound</funcLink>("Ding"));
   }</code>
         <text>Durch dieses Objektscript verursacht das Auswählen eines anderen Gegenstandes im Inventar einen Ding-Sound.</text>
       </example>
     </examples>
     <related>
-      <funclink>ScrollContents</funclink>
-      <funclink>ResortObjects</funclink>
+      <funcLink>ScrollContents</funcLink>
+      <funcLink>ResortObjects</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2002-04</date>

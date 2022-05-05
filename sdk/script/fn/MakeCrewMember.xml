@@ -28,14 +28,14 @@
 
   <examples>
    <example>
-    <code>var nclnk = <funclink>CreateObject</funclink>(CLNK, 0, 0, <funclink>GetOwner</funclink>());
-MakeCrewMember(nclnk, <funclink>GetOwner</funclink>());
+    <code>var nclnk = <funcLink>CreateObject</funcLink>(CLNK, 0, 0, <funcLink>GetOwner</funcLink>());
+MakeCrewMember(nclnk, <funcLink>GetOwner</funcLink>());
     </code>
     <text>Dieser kurze Objektscript erstellt einen neuen Clonk und fügt ihn der Crew seines Besitzers hinzu.</text>
    </example>
   </examples>
   <related>
-   <funclink>GetCrew</funclink><funclink>CrewMember</funclink><constlink constGroup="OCF">OCF_CrewMember</constlink><funclink>GrabObjectInfo</funclink><funclink>SetCrewStatus</funclink>
+   <funcLink>GetCrew</funcLink><funcLink>CrewMember</funcLink><constLink constGroup="OCF">OCF_CrewMember</constLink><funcLink>GrabObjectInfo</funcLink><funcLink>SetCrewStatus</funcLink>
   </related>
  </func>
  <author>PeterW</author><date>2001-12</date>

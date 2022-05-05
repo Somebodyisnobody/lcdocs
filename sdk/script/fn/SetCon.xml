@@ -18,16 +18,16 @@
     <examples>
       <example>
 
-<code>SetCon(50, <funclink>GetCrew</funclink>(0,0));</code>
+<code>SetCon(50, <funcLink>GetCrew</funcLink>(0,0));</code>
 
         <text>Schrumpft den ersten Clonk des ersten Spielers auf halbe Größe.</text>
       </example>
     </examples>
     <related>
-      <funclink>DoCon</funclink>
-      <funclink>GetCon</funclink>
-      <constlink constGroup="OCF">OCF_FullCon</constlink>
-      <constlink constGroup="OCF">OCF_Construct</constlink>
+      <funcLink>DoCon</funcLink>
+      <funcLink>GetCon</funcLink>
+      <constLink constGroup="OCF">OCF_FullCon</constLink>
+      <constLink constGroup="OCF">OCF_Construct</constLink>
     </related>
   </func>
   <author>flgr</author><date>2002-01</date>

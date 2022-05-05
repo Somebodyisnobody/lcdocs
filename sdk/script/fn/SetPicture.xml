@@ -17,23 +17,23 @@
         <param><type>object</type><name>pObj</name><desc>Objekt, dessen Bildgrafik geändert werden soll. 0 bei lokalem Aufruf.</desc><optional /></param>
       </params>
     </syntax>
-    <desc>Ändert die Repräsentativgrafik eines Objekts auf ein neues Zielrechteck der aktuell benutzten Grafik. Die Repräsentativgrafik wird beispielsweise im Menü oder der Inventarliste des ausgewählten Clonks verwendet. Siehe auch Eintrag Picture in der <emlink href="definition/defcore.html">DefCore.txt</emlink>.</desc>
+    <desc>Ändert die Repräsentativgrafik eines Objekts auf ein neues Zielrechteck der aktuell benutzten Grafik. Die Repräsentativgrafik wird beispielsweise im Menü oder der Inventarliste des ausgewählten Clonks verwendet. Siehe auch Eintrag Picture in der <emLink href="definition/defcore.html">DefCore.txt</emLink>.</desc>
     <examples>
       <example>
 <code>global func SetObjectPicture(idSrcDef, pObj)
   {
-  SetPicture(<funclink>GetDefCoreVal</funclink>("Picture", "DefCore", idSrcDef, 0),
-             <funclink>GetDefCoreVal</funclink>("Picture", "DefCore", idSrcDef, 1),
-             <funclink>GetDefCoreVal</funclink>("Picture", "DefCore", idSrcDef, 2),
-             <funclink>GetDefCoreVal</funclink>("Picture", "DefCore", idSrcDef, 3), pObj);
-  <funclink>SetGraphics</funclink>(0, pObj, idSrcDef);
-  <funclink>return</funclink>(1);
+  SetPicture(<funcLink>GetDefCoreVal</funcLink>("Picture", "DefCore", idSrcDef, 0),
+             <funcLink>GetDefCoreVal</funcLink>("Picture", "DefCore", idSrcDef, 1),
+             <funcLink>GetDefCoreVal</funcLink>("Picture", "DefCore", idSrcDef, 2),
+             <funcLink>GetDefCoreVal</funcLink>("Picture", "DefCore", idSrcDef, 3), pObj);
+  <funcLink>SetGraphics</funcLink>(0, pObj, idSrcDef);
+  <funcLink>return</funcLink>(1);
   }</code>
         <text>Globale Funktion: Ändert die Repräsentativgrafik von pObj auf die eines anderen Objekts (Achtung: Macht die Spielgrafik und eventuelle SolidMasks durch SetGraphics möglicherweise ungültig!)</text>
       </example>
     </examples>
     <related>
-      <funclink>SetGraphics</funclink>
+      <funcLink>SetGraphics</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2003-06</date>

@@ -16,12 +16,12 @@
 		<desc>Schließt das Menü eines Objekts.</desc>
 		<examples>
 			<example>
-				<code>CloseMenu(<funclink>Contained</funclink>());</code>
+				<code>CloseMenu(<funcLink>Contained</funcLink>());</code>
 				<text>Schließt das Menü des eigenen Behälters.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>CreateMenu</funclink>
+			<funcLink>CreateMenu</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

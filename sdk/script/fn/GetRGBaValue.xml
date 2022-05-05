@@ -28,13 +28,13 @@
 		</desc>
 		<examples>
 			<example>
-				<code>GetRGBaValue(<funclink>GetColorDw</funclink>(<funclink>GetCursor</funclink>()),2);</code>
+				<code>GetRGBaValue(<funcLink>GetColorDw</funcLink>(<funcLink>GetCursor</funcLink>()),2);</code>
 				<text>Liefert den Grünanteil des aktuell ausgewählten Clonks</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>RGBa</funclink>
-			<funclink>SetRGBaValue</funclink>
+			<funcLink>RGBa</funcLink>
+			<funcLink>SetRGBaValue</funcLink>
 		</related>
 	</func>
 	<author>Tyron</author><date>2004-08</date>

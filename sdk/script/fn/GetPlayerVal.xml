@@ -45,7 +45,7 @@
 
     <examples>
       <example>
-        <code><funclink>Log</funclink>("Spieler %d hat %d Objekte!", iPlr, GetPlrObjectsOwned(iPlr));</code>
+        <code><funcLink>Log</funcLink>("Spieler %d hat %d Objekte!", iPlr, GetPlrObjectsOwned(iPlr));</code>
 
         <text>Schreibt die Anzahl der Objekte, die der Spieler mit der Nummer iPlr besitzt ins Log.</text>
 
@@ -54,12 +54,12 @@
 
 
     <related>
-      <funclink>GetDefCoreVal</funclink>
-      <funclink>GetObjectVal</funclink>
-      <funclink>GetObjectInfoCoreVal</funclink>
-      <funclink>GetActMapVal</funclink>
-      <funclink>GetScenarioVal</funclink>
-      <funclink>GetPlayerInfoCoreVal</funclink>
+      <funcLink>GetDefCoreVal</funcLink>
+      <funcLink>GetObjectVal</funcLink>
+      <funcLink>GetObjectInfoCoreVal</funcLink>
+      <funcLink>GetActMapVal</funcLink>
+      <funcLink>GetScenarioVal</funcLink>
+      <funcLink>GetPlayerInfoCoreVal</funcLink>
     </related>
 
   </func>

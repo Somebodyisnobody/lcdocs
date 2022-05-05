@@ -24,15 +24,15 @@
     <examples>
       <example>
 <code>var v0,v1,v2,v3,v4,v5,v6;
-VarN(<funclink>Format</funclink>("V%d", <funclink>Random</funclink>(7))) = <funclink>Random</funclink>(100);</code>
+VarN(<funcLink>Format</funcLink>("V%d", <funcLink>Random</funcLink>(7))) = <funcLink>Random</funcLink>(100);</code>
         <text>Setzt eine zufällige, threadlokale Variable auf einen zufälligen Wert.</text>
       </example>
     </examples>
 
     <related>
-      <funclink>IsRef</funclink>
-      <funclink>LocalN</funclink>
-      <funclink>GlobalN</funclink>
+      <funcLink>IsRef</funcLink>
+      <funcLink>LocalN</funcLink>
+      <funcLink>GlobalN</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2002-04</date>

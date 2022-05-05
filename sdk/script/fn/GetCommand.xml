@@ -40,8 +40,8 @@
       <example>
         <code>func Timer()
 {
-  if(GetCommand() eq "Enter" &amp;&amp; GetCommand(0, 1) == <funclink>FindBase</funclink>(<funclink>GetOwner</funclink>()))
-    <funclink>Enter</funclink>(<funclink>FindBase</funclink>(<funclink>GetOwner</funclink>()));
+  if(GetCommand() eq "Enter" &amp;&amp; GetCommand(0, 1) == <funcLink>FindBase</funcLink>(<funcLink>GetOwner</funcLink>()))
+    <funcLink>Enter</funcLink>(<funcLink>FindBase</funcLink>(<funcLink>GetOwner</funcLink>()));
 }</code>
         <text>
 Dieser Script beamt das Objekt, falls sein Kommando ist, in seine Basis zu gehen (Kommando "Enter"), sofort dorthin. Dies würde z.B. dazu führen, dass man mit der Maussteuerung den Clonk direkt in seine Heimatbasis beamen könnte, indem man den Eingang anklickt.
@@ -49,11 +49,11 @@ Dieser Script beamt das Objekt, falls sein Kommando ist, in seine Basis zu gehen
       </example>
     </examples>
     <related>
-      <funclink>SetCommand</funclink>
-      <funclink>AddCommand</funclink>
-      <funclink>AppendCommand</funclink>
-	  <funclink>FinishCommand</funclink>
-	  <funclink>PlayerObjectCommand</funclink>
+      <funcLink>SetCommand</funcLink>
+      <funcLink>AddCommand</funcLink>
+      <funcLink>AppendCommand</funcLink>
+	  <funcLink>FinishCommand</funcLink>
+	  <funcLink>PlayerObjectCommand</funcLink>
     </related>
   </func>
   <author>PeterW</author><date>2001-11</date>

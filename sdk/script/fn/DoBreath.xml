@@ -17,12 +17,12 @@
 		<desc>Verändert den Atemwert eines Objekts.</desc>
 		<examples>
 			<example>
-				<code>DoBreath(<funclink>GetPhysical</funclink>("Breath", 0, <funclink>GetCursor</funclink>(0))*50/100000, <funclink>GetCursor</funclink>(0));</code>
+				<code>DoBreath(<funcLink>GetPhysical</funcLink>("Breath", 0, <funcLink>GetCursor</funcLink>(0))*50/100000, <funcLink>GetCursor</funcLink>(0));</code>
 				<text>Gibt den ausgewählten Clonk des ersten Spielers 50% mehr Atemluft.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>GetBreath</funclink>
+			<funcLink>GetBreath</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

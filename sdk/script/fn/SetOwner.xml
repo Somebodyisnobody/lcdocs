@@ -18,14 +18,14 @@
 		<remark>Dieser Aufruf ändert auch den Controller des Objektes auf den neuen Besitzer</remark>
 		<examples>
 			<example>
-				<code>protected func Entrance(pContainer) { SetOwner(<funclink>GetOwner</funclink>(pContainer)); <funclink>return</funclink>(); }</code>
+				<code>protected func Entrance(pContainer) { SetOwner(<funcLink>GetOwner</funcLink>(pContainer)); <funcLink>return</funcLink>(); }</code>
 				<text>Das Objekt ändert seinen Besitzer, wenn es eingesammelt wird.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>SetController</funclink>
-			<funclink>GetOwner</funclink>
-			<funclink>MakeCrewMember</funclink>
+			<funcLink>SetController</funcLink>
+			<funcLink>GetOwner</funcLink>
+			<funcLink>MakeCrewMember</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

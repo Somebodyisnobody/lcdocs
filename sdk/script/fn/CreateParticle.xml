@@ -25,13 +25,13 @@
 		<remark>Diese Funktion gibt im 8Bit-Modus immer 1 zurück. Ansonsten wird nur 0 zurückgegeben, wenn die Partikeldefinition unter dem Namen nicht geladen wurde. Es gibt also keine Möglichkeit, herauszufinden, ob ein Partikel wirklich erzeugt wurde. Dies muss aus Gründen der Netzwerksynchronisation so sein, und Partikel sollten darum nur für kurzzeitige Effekte verwendet werden. Wer mehr Kontolle benötigt, sollte stattdessen auf Objekte zurückgreifen.</remark>
 		<examples>
 			<example>
-				<code>CreateParticle("Blast", 0,0, 0,0, 100, <funclink>RGBa</funclink>(128,128,255,0));</code>
+				<code>CreateParticle("Blast", 0,0, 0,0, 100, <funcLink>RGBa</funcLink>(128,128,255,0));</code>
 				<text>Erzeugt eine bläuliche Explosionsgrafik an der Position des aufrufenden Objekts.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>PushParticles</funclink>
-			<funclink>ClearParticles</funclink>
+			<funcLink>PushParticles</funcLink>
+			<funcLink>ClearParticles</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-04</date>

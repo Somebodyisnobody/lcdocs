@@ -42,18 +42,18 @@
 
     <examples>
       <example>
-        <text>siehe <funclink>GetDefCoreVal</funclink></text>
+        <text>siehe <funcLink>GetDefCoreVal</funcLink></text>
       </example>
     </examples>
 
 
     <related>
-      <funclink>GetDefCoreVal</funclink>
-      <funclink>GetObjectInfoCoreVal</funclink>
-      <funclink>GetActMapVal</funclink>
-      <funclink>GetScenarioVal</funclink>
-      <funclink>GetPlayerVal</funclink>
-      <funclink>GetPlayerInfoCoreVal</funclink>
+      <funcLink>GetDefCoreVal</funcLink>
+      <funcLink>GetObjectInfoCoreVal</funcLink>
+      <funcLink>GetActMapVal</funcLink>
+      <funcLink>GetScenarioVal</funcLink>
+      <funcLink>GetPlayerVal</funcLink>
+      <funcLink>GetPlayerInfoCoreVal</funcLink>
     </related>
 
   </func>

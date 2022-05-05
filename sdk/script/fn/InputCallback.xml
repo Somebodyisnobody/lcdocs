@@ -10,15 +10,15 @@
 		<syntax>
 			<rtype>any</rtype>
 			<params>
-				<param><type>string</type><name>szInput</name><desc>Eingabe des Benutzers in der Eingabezeile, die mit <emlink href="script/fn/CallMessageBoard.html">CallMessageBoard</emlink> erzeugt wurde.</desc></param>
+				<param><type>string</type><name>szInput</name><desc>Eingabe des Benutzers in der Eingabezeile, die mit <emLink href="script/fn/CallMessageBoard.html">CallMessageBoard</emLink> erzeugt wurde.</desc></param>
 			</params>
 		</syntax>
-		<desc>Schlieﬂt eine von <emlink href="script/fn/CallMessageBoard.html">CallMessageBoard</emlink> aufgerufene Eingabezeile.</desc>
+		<desc>Schlieﬂt eine von <emLink href="script/fn/CallMessageBoard.html">CallMessageBoard</emLink> aufgerufene Eingabezeile.</desc>
 		 
 		 <related>
-			<funclink>AbortMessageBoard</funclink>
-			<funclink>CallMessageBoard</funclink>
-			<funclink>TestMessageBoard</funclink>
+			<funcLink>AbortMessageBoard</funcLink>
+			<funcLink>CallMessageBoard</funcLink>
+			<funcLink>TestMessageBoard</funcLink>
 		 </related>
 	</func>
 	<author>Fulgen, Clonk Wiki</author><date>2016-07</date>

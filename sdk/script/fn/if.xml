@@ -16,16 +16,16 @@
     <desc>Wenn fCondition ungleich Null, wird der unmittelbar folgende Block bzw. die unmittelbar folgende Anweisung einmal ausgeführt.</desc>
     <examples>
       <example>
-        <code>if(!<funclink>FindObject</funclink>()) <funclink>CreateObject</funclink>(ROCK);</code>
+        <code>if(!<funcLink>FindObject</funcLink>()) <funcLink>CreateObject</funcLink>(ROCK);</code>
         <text>Erstellt einen Stein, wenn sonst keine Objekte vorhanden sind.</text>
-        <code>if(!<funclink>FindObject</funclink>()) { <funclink>CreateObject</funclink>(ROCK); <funclink>CreateObject</funclink>(GOLD); }</code>
+        <code>if(!<funcLink>FindObject</funcLink>()) { <funcLink>CreateObject</funcLink>(ROCK); <funcLink>CreateObject</funcLink>(GOLD); }</code>
         <text>Erstellt einen Stein und einen Goldklumpen, wenn sonst keine Objekte vorhanden sind.</text>
       </example>
     </examples>
     <related>
-      <funclink>while</funclink>
-	  <emlink href="script/operatoren.html">Operatoren</emlink>
-	  <emlink href="script">C4Script</emlink>
+      <funcLink>while</funcLink>
+	  <emLink href="script/operatoren.html">Operatoren</emLink>
+	  <emLink href="script">C4Script</emLink>
     </related>
   </func>
   <author>jwk</author><date>2002-04</date>

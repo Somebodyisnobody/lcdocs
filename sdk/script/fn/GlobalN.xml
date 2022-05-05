@@ -16,7 +16,7 @@
                 </syntax>
                 <desc>Liefert den Inhalt der globalen Variable mit dem Namen szText. Per GlobalN("Name")=Wert; kann der Wert einer benannten globalen Variable gesetzt werden.</desc>
                 <related>
-                        <funclink>Global</funclink>
+                        <funcLink>Global</funcLink>
                 </related>
         </func>
         <author>Cucaracha</author><date>2002-05</date>

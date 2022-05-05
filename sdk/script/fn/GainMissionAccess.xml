@@ -22,7 +22,7 @@
 			</example>
 		</examples>
 		<related>
-			<funclink>GetMissionAccess</funclink>
+			<funcLink>GetMissionAccess</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

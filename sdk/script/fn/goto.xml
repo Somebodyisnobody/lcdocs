@@ -14,7 +14,7 @@
       </params>
     </syntax>
     <desc>Setzt den Skriptzähler in Szenarioskripten auf den gewünschten Wert. Der Scriptzähler sorgt dafür, dass die ScriptXXX-Funktionen im Szenrienscript aufgerufen werden. Dies funktioniert nicht in Objektscripten, stattdessen sollten TimerCalls oder ActMaps mit StartCall/PhaseCall/EndCall verwendet werden.</desc>
-    <remark>In älteren Versionen implizierte goto() ein <funclink>return</funclink>(). Dieses Verhalten wird bei Nicht-Angabe von <emlink href="script/Strict.html">#strict</emlink> emuliert.</remark>
+    <remark>In älteren Versionen implizierte goto() ein <funcLink>return</funcLink>(). Dieses Verhalten wird bei Nicht-Angabe von <emLink href="script/Strict.html">#strict</emLink> emuliert.</remark>
     <examples>
       <example>
 <code>#strict
@@ -22,23 +22,23 @@
 protected func Initialize()
   {
   // Scriptcounter starten
-  <funclink>ScriptGo</funclink>(1);
+  <funcLink>ScriptGo</funcLink>(1);
   // Fertig
-  <funclink>return</funclink>(1);
+  <funcLink>return</funcLink>(1);
   }
 
 protected func Script100()
   {
   // Flints erzeugen
-  <funclink>CastObjects</funclink>(FLNT,10,200, <funclink>Random</funclink>(<funclink>LandscapeWidth</funclink>()), 20);
-  <funclink>return</funclink>(goto(90));
+  <funcLink>CastObjects</funcLink>(FLNT,10,200, <funcLink>Random</funcLink>(<funcLink>LandscapeWidth</funcLink>()), 20);
+  <funcLink>return</funcLink>(goto(90));
   }</code>
         <text>Script eines Szenarios: Ein Flintregen. Es werden alle 100 Frames 10 Flints erzeugt.</text>
       </example>
     </examples>
     <related>
-      <funclink>ScriptGo</funclink>
-      <funclink>ScriptCounter</funclink>
+      <funcLink>ScriptGo</funcLink>
+      <funcLink>ScriptCounter</funcLink>
     </related>
   </func>
   <author>jwk</author><date>2002-04</date>

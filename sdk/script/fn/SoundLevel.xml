@@ -24,13 +24,13 @@ SoundLevel("Wind", 50);</code>
         <text>Erzeugt ein statisches Wind-Hintergrundgeräusch.</text>
       </example>
       <example>
-        <code>SoundLevel("Blast1", 100, <funclink>GetCursor</funclink>(0));</code>
+        <code>SoundLevel("Blast1", 100, <funcLink>GetCursor</funcLink>(0));</code>
         <text>Nervige Geheimwaffe: der ausgewählte Clonk des ersten Spielers spielt dauerhaft Explosionsgeräusche ab.</text>
       </example>
     </examples>
     <related>
-      <funclink>Sound</funclink>
-      <funclink>Music</funclink>
+      <funcLink>Sound</funcLink>
+      <funcLink>Music</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2003-06</date>

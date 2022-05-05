@@ -13,14 +13,14 @@
 				<param><type>string</type><name>strMessage</name><desc>Text, hinzugefügt werden soll.</desc></param>
 			</params>
 		</syntax>
-		<desc>Fügt strMessage zu einer mit <funclink>Message</funclink> ausgegebenen Nachricht hinzu. Die Anzeigezeit der Nachricht wird 
+		<desc>Fügt strMessage zu einer mit <funcLink>Message</funcLink> ausgegebenen Nachricht hinzu. Die Anzeigezeit der Nachricht wird
 		um die de angehängten Nachricht verlängert. Zwischen die originale und die hinzugefügte Nachricht wird ein Zeilenumbruch eingefügt.</desc>
 		 
 		 <related>
-			<funclink>Message</funclink>
-			<funclink>CustomMessage</funclink>
-			<funclink>PlayerMessage</funclink>
-			<funclink>PlrMessage</funclink>
+			<funcLink>Message</funcLink>
+			<funcLink>CustomMessage</funcLink>
+			<funcLink>PlayerMessage</funcLink>
+			<funcLink>PlrMessage</funcLink>
 		 </related>
 	</func>
 	<author>Fulgen, Clonk Wiki</author><date>2016-07</date>

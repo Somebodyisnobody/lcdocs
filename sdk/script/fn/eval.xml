@@ -24,9 +24,9 @@
       <example>
 
         <code>var v1, v2, v3, v4, v5;
-for(var i = 1; i &lt;= 5; i++) eval( <funclink>Format</funclink>("v%d = %d", i, i * i) );</code>
+for(var i = 1; i &lt;= 5; i++) eval( <funcLink>Format</funcLink>("v%d = %d", i, i * i) );</code>
 
-        <text>Füllt die Variablen v1 bis v5 mit den Quadratzahlen der Zahlen 1 bis 5 (Es werden die Scripte "v1 = 1", "v2 = 4" ... "v5 = 25" mit <funclink>Format</funclink> erzeugt und mit "eval" ausgeführt)</text>
+        <text>Füllt die Variablen v1 bis v5 mit den Quadratzahlen der Zahlen 1 bis 5 (Es werden die Scripte "v1 = 1", "v2 = 4" ... "v5 = 25" mit <funcLink>Format</funcLink> erzeugt und mit "eval" ausgeführt)</text>
 
       </example>
     </examples>

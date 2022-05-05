@@ -22,8 +22,8 @@
       </example>
     </examples>
     <related>
-      <funclink>GetWealth</funclink>
-	  <funclink>SetWealth</funclink>
+      <funcLink>GetWealth</funcLink>
+	  <funcLink>SetWealth</funcLink>
     </related>
   </func>
   <author>Fulgen / Clonk Wiki</author><date>2016-07</date>

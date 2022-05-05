@@ -19,9 +19,9 @@
     </syntax>
     <desc>Zündet das übergebene Objekt an. In dem jeweiligen Objekt wird ggf. Incineration() aufgerufen</desc>
     <related>
-      <funclink>OnFire</funclink>
-      <constlink constGroup="OCF">OCF_OnFire</constlink>
-      <funclink>Extinguish</funclink>
+      <funcLink>OnFire</funcLink>
+      <constLink constGroup="OCF">OCF_OnFire</constLink>
+      <funcLink>Extinguish</funcLink>
     </related>
   </func>
   <author>PeterW</author><date>2001-11</date>

@@ -16,12 +16,12 @@
 		<desc>Fragt die Unterkante eines Objekts ab. Diese entspricht Y-Position + DefCore-OffsetY + DefCore-Height. Eine eventuelle Drehung wird hier nicht mit eingerechnet.</desc>
 		<examples>
 			<example>
-				<code><funclink>Exit</funclink>(<funclink>Contents</funclink>(), 0, GetDefBottom()-<funclink>GetY</funclink>());</code>
+				<code><funcLink>Exit</funcLink>(<funcLink>Contents</funcLink>(), 0, GetDefBottom()-<funcLink>GetY</funcLink>());</code>
 				<text>Befördert das erste Inhaltsobjekt aus dem ausrufenden Objekt heraus an seine mittlere Unterkante.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>GetY</funclink>
+			<funcLink>GetY</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-04</date>

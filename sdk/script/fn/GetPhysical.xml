@@ -19,14 +19,14 @@
                 <desc>Liefert die physischen Eigenschaften eines Objekts.</desc>
 		<examples>
 			<example>
-				<code><funclink>if</funclink> (GetPhysical("Magic", 0, <funclink>GetCursor</funclink>())) <funclink>Message</funclink>("Ich kann zaubern!", <funclink>GetCursor</funclink>());</code>
+				<code><funcLink>if</funcLink> (GetPhysical("Magic", 0, <funcLink>GetCursor</funcLink>())) <funcLink>Message</funcLink>("Ich kann zaubern!", <funcLink>GetCursor</funcLink>());</code>
 				<text>Der ausgewählte Clonk des ersten Spielers freut sich, wenn er gerade Zauberenergie aufnehmen kann.</text>
 			</example>
 		</examples>
                 <related>
-                        <funclink>SetPhysical</funclink>
-                        <funclink>TrainPhysical</funclink>
-      <funclink>ResetPhysical</funclink>
+                        <funcLink>SetPhysical</funcLink>
+                        <funcLink>TrainPhysical</funcLink>
+      <funcLink>ResetPhysical</funcLink>
                 </related>
         </func>
         <author>jwk</author><date>2002-06</date>

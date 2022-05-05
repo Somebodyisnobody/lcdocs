@@ -12,7 +12,7 @@
 			<params>
 				<param><type>id</type><name>idSymbol</name><desc>Objektdefinition, deren Bild als Symbol verwendet wird</desc></param>
 				<param><type>object</type><name>pMenuObject</name><desc>Objekt, in welchem das Menü geöffnet wird; kann bei lokalen Aufrufen Null sein</desc></param>
-				<param><type>object</type><name>pCommandObject</name><desc>Erhält das Menükommando (siehe <funclink>AddMenuItem</funclink>); kann bei lokalen Aufrufen Null sein</desc></param>
+				<param><type>object</type><name>pCommandObject</name><desc>Erhält das Menükommando (siehe <funcLink>AddMenuItem</funcLink>); kann bei lokalen Aufrufen Null sein</desc></param>
 				<param><type>int</type><name>iExtra</name><desc>Zusätzliche Information im Menü über das jeweils markierte Objekt. Die angegebenen C4MN_*-Konstanten sind seit 4.9.5.0 CE ebenfalls definiert und sollten statt der numerischen Werte verwendet werden:
 				      <table activateBitmask="false" bitmaskName="">
 				        <rowh><col>Konstante</col><col>Wert</col><col>Effekt</col></rowh>
@@ -37,22 +37,22 @@
 				        <row><col>C4MN_Style_EqualItemHeight</col><col>128</col><col>Kann mit C4MN_Style_Dialog kombiniert werden: Alle Einträge mit Icon im Dialogmenü bekommen die gleiche Höhe.</col></row>
 				      </table></desc></param>
 				<param><type>bool</type><name>fPermanent</name><desc>Das Menü bleibt geöffnet, wenn eine Auswahl getroffen wird.</desc></param>
-				<param><type>id</type><name>idMenuID</name><desc>Wenn angegeben, wird diese ID als Menü-ID gesetzt. Die aktuelle Menü-ID wird zum Beispiel von <funclink>GetMenu</funclink> zurückgegeben.</desc><optional /></param>
+				<param><type>id</type><name>idMenuID</name><desc>Wenn angegeben, wird diese ID als Menü-ID gesetzt. Die aktuelle Menü-ID wird zum Beispiel von <funcLink>GetMenu</funcLink> zurückgegeben.</desc><optional /></param>
 			</params>
 		</syntax>
-		<desc>Erzeugt ein benutzerdefiniertes Menü in pMenuObject. Menüeinträge müssen mit <funclink>AddMenuItem</funclink> hinzugefügt werden.</desc>
+		<desc>Erzeugt ein benutzerdefiniertes Menü in pMenuObject. Menüeinträge müssen mit <funcLink>AddMenuItem</funcLink> hinzugefügt werden.</desc>
 		<examples>
 			<example>
-				<text>siehe <funclink>AddMenuItem</funclink></text>
+				<text>siehe <funcLink>AddMenuItem</funcLink></text>
 			</example>
 		</examples>
 		<related>
-			<funclink>AddMenuItem</funclink>
-			<funclink>SelectMenuItem</funclink>
-			<funclink>GetMenu</funclink>
-			<funclink>CloseMenu</funclink>
-			<funclink>SetMenuDecoration</funclink>
-			<funclink>SetMenuTextProgress</funclink>
+			<funcLink>AddMenuItem</funcLink>
+			<funcLink>SelectMenuItem</funcLink>
+			<funcLink>GetMenu</funcLink>
+			<funcLink>CloseMenu</funcLink>
+			<funcLink>SetMenuDecoration</funcLink>
+			<funcLink>SetMenuTextProgress</funcLink>
 		</related>
 	</func>
 	<author>springer</author><date>2002-04</date>

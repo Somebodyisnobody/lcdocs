@@ -20,10 +20,10 @@
 protected func Damage()
 {
 	// Brennt?
-	if(GetOCF() &amp; <constlink constGroup="OCF">OCF_OnFire</constlink>)
+	if(GetOCF() &amp; <constLink constGroup="OCF">OCF_OnFire</constLink>)
 		// Freuen
-		<funclink>Message</funclink>("Juhu! Ich brenne!", <funclink>this</funclink>());
-<funclink>return</funclink>(1);
+		<funcLink>Message</funcLink>("Juhu! Ich brenne!", <funcLink>this</funcLink>());
+<funcLink>return</funcLink>(1);
 }		
 				</code>
 				<text>Masochist</text>

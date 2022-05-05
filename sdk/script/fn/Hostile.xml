@@ -18,12 +18,12 @@
 		<desc>Prüft, ob zwei Spieler verfeindet sind. Dazu reicht es, wenn nur einer von beiden mit dem anderen Spieler verfeindet ist.</desc>
 		<examples>
 			<example>
-				<code>protected RejectEntrance: <funclink>return</funclink>(!<funclink>Hostile</funclink>(<funclink>GetOwner</funclink>(), <funclink>GetOwner</funclink>(<funclink>Par</funclink>())));</code>
+				<code>protected RejectEntrance: <funcLink>return</funcLink>(!<funcLink>Hostile</funcLink>(<funcLink>GetOwner</funcLink>(), <funcLink>GetOwner</funcLink>(<funcLink>Par</funcLink>())));</code>
 				<text>Das Objekt lässt sich nur vom Besitzer oder verbündeten Spielern einsammeln.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>SetHostility</funclink>
+			<funcLink>SetHostility</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

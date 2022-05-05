@@ -16,7 +16,7 @@
     </syntax>
     <desc>Setzt die Sicht eines Spielers auf pTargetView.</desc>
     <related>
-      <funclink>SetPlrView</funclink>
+      <funcLink>SetPlrView</funcLink>
     </related>
   </func>
   <author>Fulgen / Clonk Wiki</author><date>2016-07</date>

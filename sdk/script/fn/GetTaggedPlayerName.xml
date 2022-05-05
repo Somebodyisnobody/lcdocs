@@ -19,14 +19,14 @@
                         <example>
 <code>protected func Activate(pClonk)
   {
-  <funclink>Message</funclink>("%s hat das Objekt aktiviert!", 0, GetTaggedPlayerName(<funclink>GetController</funclink>(pClonk)));
-  <funclink>return</funclink>(1);
+  <funcLink>Message</funcLink>("%s hat das Objekt aktiviert!", 0, GetTaggedPlayerName(<funcLink>GetController</funcLink>(pClonk)));
+  <funcLink>return</funcLink>(1);
   }</code>
                                 <text>Objektscript: Beim Aktivieren wird eine globale Nachricht ausgegeben, die den Spieler verpetzt.</text>
                         </example>
                 </examples>
                 <related>
-                        <funclink>GetPlayerName</funclink>
+                        <funcLink>GetPlayerName</funcLink>
                 </related>
         </func>
         <author>Sven2</author><date>2006-03</date>

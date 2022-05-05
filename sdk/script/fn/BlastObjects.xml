@@ -20,14 +20,14 @@
 		<desc>Fügt allen Objekten an angegebener Position Explosionsschaden zu. iX und iY sind immer globale Koordinaten. Wenn ein pContainer angegeben ist, wird der Schaden nur den Objekten zugefügt, die in pContainer enthalten sind. Explosionsschaden kann zur Entzündung führen oder auch Lebewesen wegschleudern. Bei lokalen Aufrufen gilt der Schaden als vom Controller des aufrufenden Objekts verursacht.</desc>
 		<examples>
 			<example>
-				<code>BlastObjects(<funclink>GetX</funclink>(), <funclink>GetY</funclink>(), 60, <funclink>this</funclink>());</code>
+				<code>BlastObjects(<funcLink>GetX</funcLink>(), <funcLink>GetY</funcLink>(), 60, <funcLink>this</funcLink>());</code>
 				<text>Das aufrufende Objekt fügt enthaltenen Objekten Explosionsschaden der Stärke 60 zu.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>Explode</funclink>
-			<funclink>NoContainer</funclink>
-			<funclink>AnyContainer</funclink>
+			<funcLink>Explode</funcLink>
+			<funcLink>NoContainer</funcLink>
+			<funcLink>AnyContainer</funcLink>
 		</related>
 	</func>
 	<author>jwk</author><date>2002-04</date>

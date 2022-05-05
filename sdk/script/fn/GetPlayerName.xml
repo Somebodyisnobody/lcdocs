@@ -19,18 +19,18 @@
 <code>protected func Activate(pClonk)
   {
   // Begrüßen
-  <funclink>Message</funclink>("Moin, %s. Was macht %s?", <funclink>this</funclink>(), <funclink>GetName</funclink>(pClonk), GetPlayerName(<funclink>GetOwner</funclink>(pClonk)));
+  <funcLink>Message</funcLink>("Moin, %s. Was macht %s?", <funcLink>this</funcLink>(), <funcLink>GetName</funcLink>(pClonk), GetPlayerName(<funcLink>GetOwner</funcLink>(pClonk)));
   // Fertig
-  <funclink>return</funclink>(1);
+  <funcLink>return</funcLink>(1);
   }</code>
                                 <text>Objektscript: Beim Aktivieren wird der Clonk gefragt, was der Spieler so macht.</text>
                         </example>
                 </examples>
                 <related>
-			<funclink>GetTaggedPlayerName</funclink>
-                        <funclink>GetPlayerCount</funclink>
-                        <funclink>GetName</funclink>
-                        <funclink>GetOwner</funclink>
+			<funcLink>GetTaggedPlayerName</funcLink>
+                        <funcLink>GetPlayerCount</funcLink>
+                        <funcLink>GetName</funcLink>
+                        <funcLink>GetOwner</funcLink>
                 </related>
         </func>
         <author>Sven2</author><date>2002-08</date>

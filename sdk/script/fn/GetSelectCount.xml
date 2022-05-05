@@ -15,7 +15,7 @@
                 </syntax>
                 <desc>Liefert die Anzahl der ausgewählten Clonks von Spieler iPlayer.</desc>
                 <related>
-                        <funclink>SelectCrew</funclink>
+                        <funcLink>SelectCrew</funcLink>
                 </related>
         </func>
         <author>Cucaracha</author><date>2002-05</date>

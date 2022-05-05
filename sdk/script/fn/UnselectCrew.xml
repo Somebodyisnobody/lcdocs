@@ -13,19 +13,19 @@
 				<param><type>int</type><name>iPlr</name><desc>Spieler, dessen Mannschaft abgewählt werden soll.</desc></param>
 			</params>
 		</syntax>
-		<desc>Wählt die gesamte Mannschaft eines Spieler ab. Nach dem Aufruf dieses Befehls sollte mit <funclink>SelectCrew</funclink> wieder ein Clonk angewählt werden.</desc>
+		<desc>Wählt die gesamte Mannschaft eines Spieler ab. Nach dem Aufruf dieses Befehls sollte mit <funcLink>SelectCrew</funcLink> wieder ein Clonk angewählt werden.</desc>
 		<examples>
 			<example>
 <code>UnselectCrew();
 SelectCrew(0, GetHiRank(), 1);</code>
-				<text>Wählt nur den höchstrangigen Clonk des ersten Spielers an. Siehe dazu auch <funclink>SetCursor</funclink>.</text>
+				<text>Wählt nur den höchstrangigen Clonk des ersten Spielers an. Siehe dazu auch <funcLink>SetCursor</funcLink>.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>SelectCrew</funclink>
-			<funclink>SetCursor</funclink>
-			<funclink>GetCrewEnabled</funclink>
-			<funclink>SetCrewEnabled</funclink>
+			<funcLink>SelectCrew</funcLink>
+			<funcLink>SetCursor</funcLink>
+			<funcLink>GetCrewEnabled</funcLink>
+			<funcLink>SetCrewEnabled</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-04</date>

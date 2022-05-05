@@ -15,7 +15,7 @@
                 </syntax>
                 <desc>Liefert die Punkte die iPlayer hat.</desc>
                 <related>
-                        <funclink>GetWealth</funclink>
+                        <funcLink>GetWealth</funcLink>
                 </related>
         </func>
         <author>Cucaracha</author><date>2002-05</date>

@@ -69,14 +69,14 @@
                 <param>
                     <type>int</type>
                     <name>iBaseMode</name>
-                    <desc>Befehlsstapelmodus. Werte siehe <funclink>AddCommand</funclink>.
+                    <desc>Befehlsstapelmodus. Werte siehe <funcLink>AddCommand</funcLink>.
                     </desc>
                     <optional/>
                 </param>
             </params>
         </syntax>
 
-        <desc>Führt das Kommando szCommand für den gerade ausgewählten Clonk von Spieler iPlr aus. Siehe <funclink>SetCommand</funclink> für mögliche Befehle.
+        <desc>Führt das Kommando szCommand für den gerade ausgewählten Clonk von Spieler iPlr aus. Siehe <funcLink>SetCommand</funcLink> für mögliche Befehle.
         </desc>
 
         <examples>
@@ -88,10 +88,10 @@
             </example>
         </examples>
         <related>
-            <funclink>SetCommand</funclink>
-            <funclink>GetCommand</funclink>
-            <funclink>AddCommand</funclink>
-            <funclink>FinishCommand</funclink>
+            <funcLink>SetCommand</funcLink>
+            <funcLink>GetCommand</funcLink>
+            <funcLink>AddCommand</funcLink>
+            <funcLink>FinishCommand</funcLink>
         </related>
     </func>
     <author>Fulgen</author>

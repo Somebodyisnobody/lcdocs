@@ -45,17 +45,17 @@
 
     <desc>Löscht einen Effekt</desc>
 
-    <remark>Beispiel siehe <funclink>GetEffect</funclink>. Achtung: Wenn sich ein Effekt mit dieser Funktion selbst löschen soll, wird nur pTarget und iIndex angegeben, nicht szEffectName!</remark>
+    <remark>Beispiel siehe <funcLink>GetEffect</funcLink>. Achtung: Wenn sich ein Effekt mit dieser Funktion selbst löschen soll, wird nur pTarget und iIndex angegeben, nicht szEffectName!</remark>
 
     <related>
-      <emlink href="script/Effects.html">Effekte-Dokumentation</emlink>
-      <funclink>AddEffect</funclink>
-      <funclink>ChangeEffect</funclink>
-      <funclink>CheckEffect</funclink>
-      <funclink>GetEffectCount</funclink>
-      <funclink>EffectCall</funclink>
-      <funclink>EffectVar</funclink>
-      <funclink>GetEffect</funclink>
+      <emLink href="script/Effects.html">Effekte-Dokumentation</emLink>
+      <funcLink>AddEffect</funcLink>
+      <funcLink>ChangeEffect</funcLink>
+      <funcLink>CheckEffect</funcLink>
+      <funcLink>GetEffectCount</funcLink>
+      <funcLink>EffectCall</funcLink>
+      <funcLink>EffectVar</funcLink>
+      <funcLink>GetEffect</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2004-03</date>

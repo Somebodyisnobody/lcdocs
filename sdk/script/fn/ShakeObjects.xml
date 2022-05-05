@@ -15,16 +15,16 @@
         <param><type>int</type><name>iRadius</name><desc>Radius des durchgeschüttelten Kreises</desc></param>
       </params>
     </syntax>
-    <desc>Schüttelt innerhalb eines kreisförmigen Bereiches alle Lebewesen durch. Dieses Verhalten ist vergleichbar mit <funclink>Fling</funclink>()-Aufrufen mit kleinen Zufallswerten auf alle Objekte im Zielbereich.</desc>
+    <desc>Schüttelt innerhalb eines kreisförmigen Bereiches alle Lebewesen durch. Dieses Verhalten ist vergleichbar mit <funcLink>Fling</funcLink>()-Aufrufen mit kleinen Zufallswerten auf alle Objekte im Zielbereich.</desc>
     <examples>
       <example>
-        <code>ShakeObjects(<funclink>LandscapeWidth</funclink>()/2, <funclink>LandscapeHeight</funclink>()/2, <funclink>Distance</funclink>(<funclink>LandscapeWidth</funclink>(), <funclink>LandscapeHeight</funclink>())/2);</code>
+        <code>ShakeObjects(<funcLink>LandscapeWidth</funcLink>()/2, <funcLink>LandscapeHeight</funcLink>()/2, <funcLink>Distance</funcLink>(<funcLink>LandscapeWidth</funcLink>(), <funcLink>LandscapeHeight</funcLink>())/2);</code>
         <text>Schüttelt alle Lebewesen durch.</text>
       </example>
     </examples>
     <related>
-      <funclink>ShakeFree</funclink>
-      <funclink>BlastObjects</funclink>
+      <funcLink>ShakeFree</funcLink>
+      <funcLink>BlastObjects</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2003-06</date>

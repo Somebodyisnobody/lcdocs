@@ -11,7 +11,7 @@
 			<author>Clonkonaut</author>
 			<date>2006-07</date>
 			<version>4.9.6.0 CR</version>
-			<description>Mit <funclink>Find_NoContainer</funclink> ist basierend auf <funclink>FindObjects</funclink> eine bessere Implementation verfügbar.</description>
+			<description>Mit <funcLink>Find_NoContainer</funcLink> ist basierend auf <funcLink>FindObjects</funcLink> eine bessere Implementation verfügbar.</description>
 		</deprecated>
 		<syntax>
 			<rtype>int</rtype>
@@ -19,15 +19,15 @@
 		<desc>Konstante für FindObject: Suche außerhalb aller Objekte.</desc>
 		<examples>
 			<example>
-				<code>var obj; <funclink>while</funclink> (obj=<funclink>FindObject</funclink>(0, 0,0,0,0, <constlink constGroup="OCF">OCF_Inflammable</constlink>, 0,0, NoContainer(), obj)) <funclink>Incinerate</funclink>(obj);</code>
+				<code>var obj; <funcLink>while</funcLink> (obj=<funcLink>FindObject</funcLink>(0, 0,0,0,0, <constLink constGroup="OCF">OCF_Inflammable</constLink>, 0,0, NoContainer(), obj)) <funcLink>Incinerate</funcLink>(obj);</code>
 				<text>Zündet alle brennbaren Objekte an, die nirgends enthalten sind.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>Find_NoContainer</funclink>
-			<funclink>FindObject</funclink>
-			<funclink>ObjectCount</funclink>
-			<constlink constGroup="OCF">OCF_NotContained</constlink>
+			<funcLink>Find_NoContainer</funcLink>
+			<funcLink>FindObject</funcLink>
+			<funcLink>ObjectCount</funcLink>
+			<constLink constGroup="OCF">OCF_NotContained</constLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-08</date>

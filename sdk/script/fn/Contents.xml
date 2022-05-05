@@ -16,8 +16,8 @@
 		</syntax>
 		<desc>Liefert das indizierte Objekt, das in pObj enthalten ist.</desc>
 		<related>
-			<funclink>Contained</funclink>
-			<funclink>FindContents</funclink>
+			<funcLink>Contained</funcLink>
+			<funcLink>FindContents</funcLink>
 		</related>
 	</func>
 	<author>springer</author><date>2002-04</date>

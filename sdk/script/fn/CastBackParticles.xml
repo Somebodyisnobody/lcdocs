@@ -26,15 +26,15 @@
     <remark>Diese Funktion gibt im 8Bit-Modus immer 1 zurück. Ansonsten wird nur 0 zurückgegeben, wenn die Partikeldefinition unter dem Namen nicht geladen wurde. Es gibt also keine Möglichkeit, herauszufinden, ob ein Partikel wirklich erzeugt wurde. Dies muss aus Gründen der Netzwerksynchronisation so sein, und Partikel sollten darum nur für kurzzeitige Effekte verwendet werden. Wer mehr Kontolle benötigt, sollte stattdessen auf Objekte zurückgreifen.</remark>
     <examples>
       <example>
-        <code>CastBackParticles("FSpark", 10,100, 0,0, 100, 200, <funclink>RGBa</funclink>(128,128,255,0), <funclink>RGBa</funclink>(255,255,255,127));</code>
+        <code>CastBackParticles("FSpark", 10,100, 0,0, 100, 200, <funcLink>RGBa</funcLink>(128,128,255,0), <funcLink>RGBa</funcLink>(255,255,255,127));</code>
         <text>Verschleudert einige Funken hinter dem angegebenen Objekt.</text>
       </example>
     </examples>
     <related>
-      <funclink>CreateParticle</funclink>
-      <funclink>CastObjects</funclink>
-	  <funclink>CastObjectsX</funclink>
-      <funclink>CastPXS</funclink><funclink>CastPXSX</funclink>
+      <funcLink>CreateParticle</funcLink>
+      <funcLink>CastObjects</funcLink>
+	  <funcLink>CastObjectsX</funcLink>
+      <funcLink>CastPXS</funcLink><funcLink>CastPXSX</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2002-05</date>

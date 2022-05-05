@@ -16,7 +16,7 @@
 		<desc>Gibt den internen Status eines Objekts zurück.</desc>
 
 		 <related>
-			<funclink>SetObjectStatus</funclink>
+			<funcLink>SetObjectStatus</funcLink>
 		 </related>
 	</func>
 	<author>Fulgen</author><date>2016-07</date>

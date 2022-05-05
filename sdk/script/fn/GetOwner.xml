@@ -16,12 +16,12 @@
 		<desc>Ermittelt den Besitzer eines Objekts.</desc>
 		<examples>
 			<example>
-				<code><funclink>Message</funclink>("Ich gehöre %s!", <funclink>this</funclink>(), <funclink>GetPlayerName</funclink>(GetOwner()))</code>
+				<code><funcLink>Message</funcLink>("Ich gehöre %s!", <funcLink>this</funcLink>(), <funcLink>GetPlayerName</funcLink>(GetOwner()))</code>
 				<text>Gibt einen Text mit dem Namen des besitzenden Spielers über dem aufrufenden Objekt aus.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>SetOwner</funclink>
+			<funcLink>SetOwner</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

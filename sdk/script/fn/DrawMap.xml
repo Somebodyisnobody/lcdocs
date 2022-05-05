@@ -18,15 +18,15 @@
 			</params>
 		</syntax>
 		<desc>Zeichnet eine dynamische Zufallskarte innerhalb eines Bereichs. Dazu wird derselbe Generator benutzt, der auch die Karten der Landscape.txt zeichnet.</desc>
-		<remark>Da die Maximallänge von Strings in C4Script durch interne Puffer begrenzt ist, wird empfohlen, für aufwändigere Karten <funclink>DrawDefMap</funclink> zu benutzen.</remark>
+		<remark>Da die Maximallänge von Strings in C4Script durch interne Puffer begrenzt ist, wird empfohlen, für aufwändigere Karten <funcLink>DrawDefMap</funcLink> zu benutzen.</remark>
 		<examples>
 			<example>
-				<code>DrawMap(0,0,<funclink>LandscapeWidth</funclink>(), <funclink>LandscapeHeight</funclink>()/2, "map Empty{}");</code>
+				<code>DrawMap(0,0,<funcLink>LandscapeWidth</funcLink>(), <funcLink>LandscapeHeight</funcLink>()/2, "map Empty{}");</code>
 				<text>Leert die obere Hälfte der Karte aus.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>DrawDefMap</funclink>
+			<funcLink>DrawDefMap</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-04</date>

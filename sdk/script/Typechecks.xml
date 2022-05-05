@@ -27,38 +27,38 @@
 		<row>
 		  <col><code>bool</code></col>
 		  <col>Boolean</col>
-		  <col>"wahr" (Wert <code>true</code>) oder "falsch" (Wert <code>false</code>). Wird von vielen Kontrollstrukturen wie <funclink>if</funclink> und <funclink>while</funclink> als Parameter erwartet.</col>
+		  <col>"wahr" (Wert <code>true</code>) oder "falsch" (Wert <code>false</code>). Wird von vielen Kontrollstrukturen wie <funcLink>if</funcLink> und <funcLink>while</funcLink> als Parameter erwartet.</col>
 		  <col><code>true </code></col>
 		</row>
 		<row>
 		  <col><code>id</code></col>
 		  <col>Definitions-ID</col>
-		  <col>ID einer Objektdefinition (siehe <emlink href="definition/index.html#ObjektundEntwicklerIdentifikation">Objektdefinitionen</emlink>)</col>
+		  <col>ID einer Objektdefinition (siehe <emLink href="definition/index.html#ObjektundEntwicklerIdentifikation">Objektdefinitionen</emLink>)</col>
 		  <col><code>CLNK </code></col>
 		</row>
 		<row>
 		  <col><code>string</code></col>
 		  <col>Zeichenkette</col>
-			<col>Ein beliebiger Text. Ein einzelnes Zeichen des Strings als int lässt sich mit <funclink>GetChar</funclink> extrahieren. Einzelne Zeichen eines Strings können als Ein-Zeichen-Strings mit <code>"string"[index]</code> extrahiert werden. Ändern von Strings ist damit nicht möglich. Ein negativer Index wird als Index vom String-Ende aus angesehen.</col>
+			<col>Ein beliebiger Text. Ein einzelnes Zeichen des Strings als int lässt sich mit <funcLink>GetChar</funcLink> extrahieren. Einzelne Zeichen eines Strings können als Ein-Zeichen-Strings mit <code>"string"[index]</code> extrahiert werden. Ändern von Strings ist damit nicht möglich. Ein negativer Index wird als Index vom String-Ende aus angesehen.</col>
 		  <col><code>"Dies ist ein Text!" </code></col>
 		</row>
 		<row>
 		  <col><code>object</code></col>
 		  <col>Objektzeiger</col>
-		  <col>Verweis auf ein im Spiel existierendes Objekt. Hat keine direkte Darstellung. Siehe z.B. <funclink>FindObject</funclink>().
+		  <col>Verweis auf ein im Spiel existierendes Objekt. Hat keine direkte Darstellung. Siehe z.B. <funcLink>FindObject</funcLink>().
 				Zugriff auf lokale Variablen ist mit <code>obj["name"]</code> oder <code>obj.name</code>, letzteres bei aktiviertem <code>#strict 3</code>, möglich.</col>
 		  <col>-</col>
 		</row>
 		<row>
 		  <col><code>array</code></col>
 		  <col>Feld</col>
-		  <col>Ein Typ, der eine Reihe weiterer durchnummerierter Variablen enthält, deren Anzahl mit <funclink>GetLength</funclink> abgefragt werden kann, und die mit <code><em>array</em>[<em>index</em>]</code> abgerufen werden können. Ab CR.</col>
+		  <col>Ein Typ, der eine Reihe weiterer durchnummerierter Variablen enthält, deren Anzahl mit <funcLink>GetLength</funcLink> abgefragt werden kann, und die mit <code><em>array</em>[<em>index</em>]</code> abgerufen werden können. Ab CR.</col>
 		  <col><code>[0,42,CLNK] </code></col>
 		</row>
     <row>
       <col><code>map</code></col>
       <col>Map</col>
-      <col>Ein Typ, der zu mehreren Schlüssel beliebigen Typs je eine Variable abspeichern kann. Mithilfe von <funclink>GetKeys</funclink> und <funclink>GetValues</funclink> können die gesetzten Schlüssel bzw. Werte als Array ermittelt werden. Zugriff auf den Wert mit bestimmten Schlüssel erfolgt mit <code><em>map</em>[<em>key</em>]</code>. Zugriff auf Werte mit einem fest bestimmten String-Schlüssel der nur Identifier-Zeichen beinhaltet kann auch mit <code><em>map</em>.<em>key</em></code> erfolgen. Ab LC [334], nur mit <emlink href="script/Strict.html">#strict 3</emlink> oder höher.</col>
+      <col>Ein Typ, der zu mehreren Schlüssel beliebigen Typs je eine Variable abspeichern kann. Mithilfe von <funcLink>GetKeys</funcLink> und <funcLink>GetValues</funcLink> können die gesetzten Schlüssel bzw. Werte als Array ermittelt werden. Zugriff auf den Wert mit bestimmten Schlüssel erfolgt mit <code><em>map</em>[<em>key</em>]</code>. Zugriff auf Werte mit einem fest bestimmten String-Schlüssel der nur Identifier-Zeichen beinhaltet kann auch mit <code><em>map</em>.<em>key</em></code> erfolgen. Ab LC [334], nur mit <emLink href="script/Strict.html">#strict 3</emLink> oder höher.</col>
       <col><code>{ X: 10, Y: 50 }</code></col>
     </row>
 	</table></text>
@@ -67,12 +67,12 @@
 
 	<text><ul>
 	<li><code>any</code>: Der Typ ist nicht bekannt oder egal. "nil" hat immer diesen Typ.</li>
-	<li><code>&amp;</code>: Der Wert ist eine Referenz - z.B. auf eine Variable. Er verhält sich genau wie der Zielwert, kann aber gesetzt werden (z.B. mit dem Operator "<code>=</code>"). Siehe auch <emlink href="script/Funcs.html#referenzen">Referenzparameter</emlink>.</li>
+	<li><code>&amp;</code>: Der Wert ist eine Referenz - z.B. auf eine Variable. Er verhält sich genau wie der Zielwert, kann aber gesetzt werden (z.B. mit dem Operator "<code>=</code>"). Siehe auch <emLink href="script/Funcs.html#referenzen">Referenzparameter</emLink>.</li>
 	</ul></text>
 
 	<h>Arrays</h>
 	<part>
-		<text>Arrays können entweder direkt durch <code>[<em>Ausdruck 1</em>, <em>Ausdruck 2</em>, ...]</code> oder <funclink>CreateArray</funclink>() erstellt werden. Sie werden bei Zugriff auf ein Element gegebenenfalls automatisch verlängert, jedoch ist es schneller, das Array gleich mit der benötigten Länge zu erstellen. Wird ein Array einer Variablen zugewiesen oder einer Funktion übergeben, bekommt diese Variable eine eigene Kopie des Arrays. Das eigentliche Kopieren wird aber erst ausgeführt, wenn es nötig ist. Wenn das Array einer Funktion zum Ändern übergeben werden soll, muss ein Referenzparameter verwendet werden.
+		<text>Arrays können entweder direkt durch <code>[<em>Ausdruck 1</em>, <em>Ausdruck 2</em>, ...]</code> oder <funcLink>CreateArray</funcLink>() erstellt werden. Sie werden bei Zugriff auf ein Element gegebenenfalls automatisch verlängert, jedoch ist es schneller, das Array gleich mit der benötigten Länge zu erstellen. Wird ein Array einer Variablen zugewiesen oder einer Funktion übergeben, bekommt diese Variable eine eigene Kopie des Arrays. Das eigentliche Kopieren wird aber erst ausgeführt, wenn es nötig ist. Wenn das Array einer Funktion zum Ändern übergeben werden soll, muss ein Referenzparameter verwendet werden.
 		</text>
 		<text>Zugriff auf ein Element <code>i</code> eines Arrays <code>a</code> erfolgt über <code>a[i]</code>. Dabei entspricht <code>i=0</code> dem ersten Element.</text>
 		<text>Elemente am Ende eines Arrays können mit <code>a[] = wert;</code> am Ende angehängt werden.</text>
@@ -101,7 +101,7 @@
   <part>
     <text>
       Maps heißen in anderen Programmiersprachen auch Hashes oder assoziative Arrays.
-      Maps sind nur verfügbar, wenn das Script <emlink href="script/Strict.html">#strict 3</emlink> oder höher ist.
+      Maps sind nur verfügbar, wenn das Script <emLink href="script/Strict.html">#strict 3</emLink> oder höher ist.
       Maps können direkt mit <code>{ <em>Schlüssel 1</em> = <em>Ausdruck 1</em>, <em>Schlüssel 2</em> = <em>Ausdruck 2</em>, "<em>Schlüssel 3</em>" = <em>Ausdruck 3</em>, [<em>Schlüsselausdruck</em>] = <em>Ausdruck 4</em>, ... }</code> erstellt werden.
       Zur einfacheren zukünftigen Weiterbearbeitung ist es erlaubt, auch nach dem letzten Schlüssel-Wert-Paar ein Komma stehen zu lassen.
       Eine leere Map wird mit <code>{}</code> erstellt.
@@ -116,8 +116,8 @@
       Wird eine Map einer Variablen zugewiesen oder einer Funktion übergeben, bekommt diese Variable eine eigene Kopie der Map. Das eigentliche Kopieren wird aber erst ausgeführt, wenn es nötig ist. Wenn die Map einer Funktion zum Ändern übergeben werden soll, muss ein Referenzparameter verwendet werden.
     </text>
     <text>
-      Mithilfe einer speziellen Form von <emlink href="script/for.html#Mapschleife">for</emlink>-Schleife können die Schlüssel-Wert-Paare einer Map durchiteriert werden.
-      Mit <funclink>GetKeys</funclink> und <funclink>GetValues</funclink> können die gesetzten Schlüssel bzw. Werte einer Map als Array ermittelt werden.
+      Mithilfe einer speziellen Form von <emLink href="script/for.html#Mapschleife">for</emLink>-Schleife können die Schlüssel-Wert-Paare einer Map durchiteriert werden.
+      Mit <funcLink>GetKeys</funcLink> und <funcLink>GetValues</funcLink> können die gesetzten Schlüssel bzw. Werte einer Map als Array ermittelt werden.
 
       Maps sind intern mithilfe eines Hashes implementiert. Um aber die Synchronisation im Netzwerkmodus sicherzustellen, wird zusätzlich die Einfügereihenfolge der Schlüssel gespeichert.
       Die Reihenfolge der Werte in den zurückgegebenen Arrays von GetValues und GetKeys und die Iterierreihenfolge entsprechen deshalb der Einfügereihenfolge.
@@ -132,18 +132,18 @@
     <h>Beispiel 1</h>
 <code>func MapPlayground(int plr)
 {
-  var clonk = <funclink>GetCursor</funclink>(plr);
+  var clonk = <funcLink>GetCursor</funcLink>(plr);
   var m = {
-    Position = { X = <funclink>GetX</funclink>(clonk), Y = <funclink>GetY</funclink>(clonk) },
-    Name = <funclink>GetName</funclink>(clonk),
+    Position = { X = <funcLink>GetX</funcLink>(clonk), Y = <funcLink>GetY</funcLink>(clonk) },
+    Name = <funcLink>GetName</funcLink>(clonk),
     Contents = {},
-    "Player's Name" = <funclink>GetPlayerName</funclink>(plr),
+    "Player's Name" = <funcLink>GetPlayerName</funcLink>(plr),
   };
 
-  <funclink>Log</funclink>("Der Clonk von %s heißt %s und befindet sich bei Position %v.", m["Player's Name"], m.Name, m.Position);
+  <funcLink>Log</funcLink>("Der Clonk von %s heißt %s und befindet sich bei Position %v.", m["Player's Name"], m.Name, m.Position);
 
-  var flint = clonk-><funclink>CreateContents</funclink>(FLNT);
-  var rock = clonk-><funclink>CreateContents</funclink>(ROCK);
+  var flint = clonk-><funcLink>CreateContents</funcLink>(FLNT);
+  var rock = clonk-><funcLink>CreateContents</funcLink>(ROCK);
 
   m.Contents[0] = flint;
   m.Contents[1] = rock;
@@ -151,11 +151,11 @@
   m.Contents[FLNT] = flint;
   m.Contents[ROCK] = rock;
 
-  <funclink>Log</funclink>("%v", m);
+  <funcLink>Log</funcLink>("%v", m);
 
   m.Contents[FLNT] = nil;
 
-  <funclink>Log</funclink>("Contents: %v", m.Contents);
+  <funcLink>Log</funcLink>("Contents: %v", m.Contents);
 }</code>
     <text>Diese Funktion demonstriert den Umgang mit Maps.</text>
     <h>Beispiel 2</h>
@@ -171,7 +171,7 @@ func Initialize()
     [CLNK] = [10, 3],
     [EFLN] = [25, 4],
     [WOOD] = [50, 50],
-    [<funclink>GetID</funclink>(<funclink>GetCursor</funclink>(0))] = [5, 1],
+    [<funcLink>GetID</funcLink>(<funcLink>GetCursor</funcLink>(0))] = [5, 1],
     // ...
   };
 }
@@ -283,7 +283,7 @@ func SoldItem(id ID)
 
 	<h>Erklärung der Tabelle:</h>
 	<text><ul>
-		<li>Wo #strict steht, wird nur ein Fehler ausgelöst wenn der Script <emlink href="script/Strict.html">#strict</emlink> ist. Hierbei handelt es sich um "ungefährliche" aber sinnlose Konvertierungen, die nur in einigen "trickreichen" Scripts zur Anwendung kamen.</li>
+		<li>Wo #strict steht, wird nur ein Fehler ausgelöst wenn der Script <emLink href="script/Strict.html">#strict</emLink> ist. Hierbei handelt es sich um "ungefährliche" aber sinnlose Konvertierungen, die nur in einigen "trickreichen" Scripts zur Anwendung kamen.</li>
 		<li>Die Konvertierung int zu id ist nur erlaubt, wenn die Zahl größer gleich 0 und kleiner gleich 9999 ist. Auf diese Weise werden auch IDs, die nur aus Zahlen bestehen, unterstützt (z.B. 0001)</li>
 		<li>Konvertierung nach bool ist generell erlaubt. Sie ergibt für jeden Wert außer 0 <code>true</code>.</li>
 	</ul></text>

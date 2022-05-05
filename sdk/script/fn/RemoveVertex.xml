@@ -18,15 +18,15 @@
 		<remark>Achtung: Bei jeder Vertexaktualisierung (also beispielsweise dann, wenn sich Fertigstellungswert oder Rotation eines Objekts ändern) werden alle Vertices wieder auf die Definitionswerte zurückgesetzt.</remark>
 		<examples>
 			<example>
-				<code><funclink>while</funclink>(RemoveVertex()) ;</code>
+				<code><funcLink>while</funcLink>(RemoveVertex()) ;</code>
 				<text>Entfernt alle Vertices vom aufrufenden Objekt.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>AddVertex</funclink>
-			<funclink>GetVertex</funclink>
-			<funclink>SetVertex</funclink>
-			<funclink>GetVertexNum</funclink>
+			<funcLink>AddVertex</funcLink>
+			<funcLink>GetVertex</funcLink>
+			<funcLink>SetVertex</funcLink>
+			<funcLink>GetVertexNum</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2003-05</date>

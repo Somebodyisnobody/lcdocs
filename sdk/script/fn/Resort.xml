@@ -19,14 +19,14 @@
 			<example>
 
 <code>var obj;
-<funclink>while</funclink> (obj = <funclink>FindObject</funclink>(ELEC, 0,0,0,0, 0, 0,0, 0, obj))
+<funcLink>while</funcLink> (obj = <funcLink>FindObject</funcLink>(ELEC, 0,0,0,0, 0, 0,0, 0, obj))
   Resort(obj);</code>
 				<text>Sorgt dafür, dass sich alle Fahrstuhlkörbe vor allen anderen Gebäuden befinden.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>ResortObjects</funclink>
-			<funclink>SetObjectOrder</funclink>
+			<funcLink>ResortObjects</funcLink>
+			<funcLink>SetObjectOrder</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2003-05</date>

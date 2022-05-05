@@ -16,12 +16,12 @@
 		<desc>Gibt zurück, ob das Objekt noch am Leben ist.</desc>
 		<examples>
 			<example>
-				<code><funclink>if</funclink>(!GetAlive(<funclink>FindObject</funclink>(MCLK))) <funclink>EliminatePlayer</funclink>(0);</code>
+				<code><funcLink>if</funcLink>(!GetAlive(<funcLink>FindObject</funcLink>(MCLK))) <funcLink>EliminatePlayer</funcLink>(0);</code>
 				<text>Eliminiert den ersten Spieler, wenn der erste Zauberclonk getötet wurde. Achtung: In einem echten Skript würde zuvor die Existenz des ersten Spielers geprüft.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>Kill</funclink>
+			<funcLink>Kill</funcLink>
 		</related>
 	</func>
 	<author>jwk</author><date>2002-05</date>

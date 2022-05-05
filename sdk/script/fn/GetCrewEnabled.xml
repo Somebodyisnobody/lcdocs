@@ -16,14 +16,14 @@
 		<desc>Fragt ab, ob ein Mannschaftsmitglied gegenwärtig angewählt werden kann.</desc>
 		<examples>
 			<example>
-				<code><funclink>if</funclink> (!GetCrewEnabled(<funclink>GetHiRank</funclink>())) <funclink>SetCrewEnabled</funclink>(1, <funclink>GetCursor</funclink>());</code>
+				<code><funcLink>if</funcLink> (!GetCrewEnabled(<funcLink>GetHiRank</funcLink>())) <funcLink>SetCrewEnabled</funcLink>(1, <funcLink>GetCursor</funcLink>());</code>
 				<text>Aktiviert den höchstrangigen Clonk des ersten Spielers, falls er noch nicht aktiviert ist.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>SetCrewEnabled</funclink>
-			<funclink>MakeCrewMember</funclink>
-			<funclink>SelectCrew</funclink>
+			<funcLink>SetCrewEnabled</funcLink>
+			<funcLink>MakeCrewMember</funcLink>
+			<funcLink>SelectCrew</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-04</date>

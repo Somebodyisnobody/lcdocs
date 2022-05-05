@@ -43,23 +43,23 @@
             </params>
         </syntax>
         <desc>Ruft eine Funktion nach einer angegebenen Verzögerung auf.</desc>
-        <remark>Diese Funktion wird in der System.c4g durch einen <emlink href="script/Effects.html">Effekt</emlink> "IntScheduleCall"
+        <remark>Diese Funktion wird in der System.c4g durch einen <emLink href="script/Effects.html">Effekt</emLink> "IntScheduleCall"
             und
-            die Funktion <funclink>Call</funclink> realisiert.
+            die Funktion <funcLink>Call</funcLink> realisiert.
         </remark>
         <examples>
             <example>
-                <code>ScheduleCall(<funclink>FindObject</funclink>(CLNK), "Redefine", 500, 0, MCLK);
+                <code>ScheduleCall(<funcLink>FindObject</funcLink>(CLNK), "Redefine", 500, 0, MCLK);
                 </code>
                 <text>Ruft in einem Clonk die Funktion "Redefine" mit 500 Ticks Verzögerung auf und übergibt als
                     Parameter "MCLK". Dadurch wird der Clonk nach 500 Ticks zu einem Magier, sofern der Aufruf nicht
-                    durch <funclink>ClearScheduleCall</funclink> vorher abgebrochen wird.
+                    durch <funcLink>ClearScheduleCall</funcLink> vorher abgebrochen wird.
                 </text>
             </example>
         </examples>
         <related>
-            <funclink>Schedule</funclink>
-            <funclink>ClearScheduleCall</funclink>
+            <funcLink>Schedule</funcLink>
+            <funcLink>ClearScheduleCall</funcLink>
         </related>
     </func>
     <author>PeterW</author>

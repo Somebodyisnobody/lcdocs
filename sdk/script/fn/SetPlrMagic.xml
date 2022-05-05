@@ -18,10 +18,10 @@
 		<desc>Fügt einen Zauber der Liste der verfügbaren Zauber eines Spielers hinzu oder entfernt einen Zauber aus der Liste.</desc>
 		<examples>
 			<example>
-<code><emlink href="Script/NamedVar.html">var</emlink> i <emlink href="script/operatoren.html">=</emlink> 0;
-<funclink>for</funclink> (<emlink href="Script/NamedVar.html">var</emlink> plrnum <emlink href="script/operatoren.html">=</emlink> <funclink>GetPlayerCount</funclink> (); plrnum; i<emlink href="script/operatoren.html">++</emlink>)
-  if (<funclink>GetPlayerName</funclink> (i)) {
-    plrnum<emlink href="script/operatoren.html">--</emlink>;
+<code><emLink href="Script/NamedVar.html">var</emLink> i <emLink href="script/operatoren.html">=</emLink> 0;
+<funcLink>for</funcLink> (<emLink href="Script/NamedVar.html">var</emLink> plrnum <emLink href="script/operatoren.html">=</emLink> <funcLink>GetPlayerCount</funcLink> (); plrnum; i<emLink href="script/operatoren.html">++</emLink>)
+  if (<funcLink>GetPlayerName</funcLink> (i)) {
+    plrnum<emLink href="script/operatoren.html">--</emLink>;
     SetPlrMagic (i, MGHL);
   }
 </code>
@@ -29,7 +29,7 @@
 			</example>
 		</examples>
 		<related>
-			<funclink>GetPlrMagic</funclink>
+			<funcLink>GetPlrMagic</funcLink>
 		</related>
 	</func>
 	<author>Günther</author><date>2005-02</date>

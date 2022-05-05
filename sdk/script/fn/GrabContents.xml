@@ -15,7 +15,7 @@
                 </syntax>
                 <desc>Entfernt sämtlichen Inhalt von *pObj, und gibt diesen dem aufrufenden Objekt.</desc>
                 <related>
-                        <funclink>Contents</funclink>
+                        <funcLink>Contents</funcLink>
                 </related>
         </func>
         <author>Cucaracha</author><date>2002-05</date>

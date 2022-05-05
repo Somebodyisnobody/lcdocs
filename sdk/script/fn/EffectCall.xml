@@ -19,7 +19,7 @@
         <param>
           <type>int</type>
           <name>iNumber</name>
-          <desc>Effektnummer. Effektnummern werden an Effekt-Callbackfunktionen übergeben, sind Rückgabewert von <funclink>AddEffect</funclink> und lassen sich über <funclink>GetEffect</funclink> aus dem Effektnamen herausfinden.</desc>
+          <desc>Effektnummer. Effektnummern werden an Effekt-Callbackfunktionen übergeben, sind Rückgabewert von <funcLink>AddEffect</funcLink> und lassen sich über <funcLink>GetEffect</funcLink> aus dem Effektnamen herausfinden.</desc>
         </param>
         <param>
           <type>string</type>
@@ -36,17 +36,17 @@
 
     <desc>Führt einen Funktionsaufruf im angegebenen Effekt durch. Der Aufruf erhält den Befehlskontext des Effektes, und die ersten beiden Aufrufparameter sind immer Zielobjekt und Effektindex. Die weiteren Parameter können frei gewählt werden.</desc>
 
-    <remark>Für Beispiele und weitere Hinweise siehe <emlink href="script/Effects.html">Effekte-Dokumentation</emlink>.</remark>
+    <remark>Für Beispiele und weitere Hinweise siehe <emLink href="script/Effects.html">Effekte-Dokumentation</emLink>.</remark>
 
     <related>
-      <emlink href="script/Effects.html">Effekte-Dokumentation</emlink>
-      <funclink>AddEffect</funclink>
-      <funclink>ChangeEffect</funclink>
-      <funclink>CheckEffect</funclink>
-      <funclink>GetEffectCount</funclink>
-      <funclink>EffectVar</funclink>
-      <funclink>GetEffect</funclink>
-      <funclink>RemoveEffect</funclink>
+      <emLink href="script/Effects.html">Effekte-Dokumentation</emLink>
+      <funcLink>AddEffect</funcLink>
+      <funcLink>ChangeEffect</funcLink>
+      <funcLink>CheckEffect</funcLink>
+      <funcLink>GetEffectCount</funcLink>
+      <funcLink>EffectVar</funcLink>
+      <funcLink>GetEffect</funcLink>
+      <funcLink>RemoveEffect</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2004-03</date>

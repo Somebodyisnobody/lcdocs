@@ -19,9 +19,9 @@
 		Wird das Layerobjekt gelöscht, werden alle Objekte, die diesen Layer hatten, dem globalen Layer zugeordnet.</desc>
 
 		 <related>
-			<funclink>GetObjectLayer</funclink>
-			<funclink>Find_Layer</funclink>
-			<constlink constGroup="VIS">VIS_LayerToggle</constlink>
+			<funcLink>GetObjectLayer</funcLink>
+			<funcLink>Find_Layer</funcLink>
+			<constLink constGroup="VIS">VIS_LayerToggle</constLink>
 		 </related>
 	</func>
 	<author>Fulgen, Clonk Wiki</author><date>2016-07</date>

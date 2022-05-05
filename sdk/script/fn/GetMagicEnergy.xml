@@ -15,7 +15,7 @@
 		</syntax>
 		<desc>Liefert den aktuellen Zauberenergiewert eines Objekts. pObj Null bei lokalem Aufruf.</desc>
 		<related>
-			<funclink>GetPhysical</funclink>
+			<funcLink>GetPhysical</funcLink>
 		</related>
 	</func>
 	<author>jwk</author><date>2002-06</date>

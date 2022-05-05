@@ -50,7 +50,7 @@
 		<row>
 			<col>MinHeightCount</col>
 			<col>Integer</col>
-			<col><emlink href="script/fn/GetMaterialCount.html">GetMaterialCount</emlink> zählt die Materialpixel erst ab der angegebenen Höhe.</col>
+			<col><emLink href="script/fn/GetMaterialCount.html">GetMaterialCount</emLink> zählt die Materialpixel erst ab der angegebenen Höhe.</col>
 		</row>
 		<row>
 			<col>SplashRate</col>
@@ -245,12 +245,12 @@
 		<row>
 			<col>Type</col>
 			<col>Zeichenfolge</col>
-			<col>Art der Reaktion, die stattfinden soll. Siehe <emlink href="material/c4m.html#ReactTypes">Tabelle</emlink>.</col>
+			<col>Art der Reaktion, die stattfinden soll. Siehe <emLink href="material/c4m.html#ReactTypes">Tabelle</emLink>.</col>
 		</row>
 		<row>
 			<col>TargetSpec</col>
 			<col>Zeichenfolge</col>
-			<col>Zielmaterial, mit dem das lose Material reagiert. Siehe <emlink href="material/c4m.html#TargetSpecs">Materialspezifikationen</emlink>.</col>
+			<col>Zielmaterial, mit dem das lose Material reagiert. Siehe <emLink href="material/c4m.html#TargetSpecs">Materialspezifikationen</emLink>.</col>
 		</row>
 		<row>
 			<col>ScriptFunc</col>
@@ -260,7 +260,7 @@
 		<row>
 			<col>ExecMask</col>
 			<col>Integer</col>
-			<col>Bitmaske, die angibt, in welcher Situation die Reaktion stattfindet. Bitindizes sind die <emlink href="material/c4m.html#ReactEvents">Reaktionsereignisse</emlink>. Standardwert -1 für alle Ereignisse.</col>
+			<col>Bitmaske, die angibt, in welcher Situation die Reaktion stattfindet. Bitindizes sind die <emLink href="material/c4m.html#ReactEvents">Reaktionsereignisse</emLink>. Standardwert -1 für alle Ereignisse.</col>
 		</row>
 		<row>
 			<col>Reverse</col>
@@ -334,7 +334,7 @@
 				<row><col>5,6</col><col>iXDir, iYDir</col><col>Integer</col><col>Geschwindigkeit (in 1/100px) der Bewegung des Materials. Kann geändert werden, um die Geschwindigkeit des Materialpixels zu beeinflussen. Nicht für MassMover.</col></row>
 				<row><col>7</col><col>iPxsMat</col><col>Integer</col><col>Materialnummer des losen Materials. Nützlich, wenn die gleiche Funktion für Reaktionen mehrerer Materialen verwendet wird</col></row>
 				<row><col>8</col><col>iLsMat</col><col>Integer</col><col>Materialnummer des festen Materials.</col></row>
-				<row><col>9</col><col>iEvent</col><col>Integer</col><col>Siehe <emlink href="material/c4m.html#ReactEvents">Reaktionsereignisse</emlink>.</col></row>
+				<row><col>9</col><col>iEvent</col><col>Integer</col><col>Siehe <emLink href="material/c4m.html#ReactEvents">Reaktionsereignisse</emLink>.</col></row>
 	</table>
 	Der Rückgabewert der Funktion sollte entweder 1 für Entfernen oder 0 für Erhalten des losen Materials sein.
 	</text>

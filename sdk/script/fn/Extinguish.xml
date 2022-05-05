@@ -16,14 +16,14 @@
 		<desc>Löscht das Feuer eines brennenden Objekts.</desc>
 		<examples>
 			<example>
-				<code>Extinguish(<funclink>FindObject</funclink>(0, 0,0,0,0, <constlink constGroup="OCF">OCF_OnFire</constlink>));</code>
+				<code>Extinguish(<funcLink>FindObject</funcLink>(0, 0,0,0,0, <constLink constGroup="OCF">OCF_OnFire</constLink>));</code>
 				<text>Löscht irgendein brennendes Objekt.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>Incinerate</funclink>
-			<constlink constGroup="OCF">OCF_OnFire</constlink>
-			<funclink>OnFire</funclink>
+			<funcLink>Incinerate</funcLink>
+			<constLink constGroup="OCF">OCF_OnFire</constLink>
+			<funcLink>OnFire</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

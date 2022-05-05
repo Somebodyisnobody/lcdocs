@@ -14,14 +14,14 @@
 Szenarioscripten gelten als globale Aufrufe. Funktionsaufrufe aus Objektscripten gelten als lokale
 Aufrufe.</text>
 <text>Für weitere Informationen zu den spezifischen Scriptarten siehe 
-<emlink href="definition/script.html">Objektscripte</emlink> und 
-<emlink href="scenario/script.html">Szenarioscripte</emlink>.</text>
+<emLink href="definition/script.html">Objektscripte</emLink> und
+<emLink href="scenario/script.html">Szenarioscripte</emLink>.</text>
 
 <text>C4Script verwendet C-ähnliche Syntax. Es gibt
-<emlink href="script/operatoren.html">Operatoren</emlink>, 
-<emlink href="script/NamedVar.html">Variablendeklaration</emlink>, Compound Statements (Blöcke), 
-Bedingungen (<funclink>if</funclink>) und Wiederholungsschleifen (<funclink>for</funclink> und
-<funclink>while</funclink>).</text>
+<emLink href="script/operatoren.html">Operatoren</emLink>,
+<emLink href="script/NamedVar.html">Variablendeklaration</emLink>, Compound Statements (Blöcke),
+Bedingungen (<funcLink>if</funcLink>) und Wiederholungsschleifen (<funcLink>for</funcLink> und
+<funcLink>while</funcLink>).</text>
 
 <h id="Debugging">Debugging</h>
 <text>Fehlermeldungen lassen sich durch Aktivieren des Debugmodus in den Optionen des Menüsystems
@@ -29,12 +29,12 @@ anzeigen. Jeder Script-Programmierer sollte den Debugmodus aktivieren.</text>
 
 <h id="Funktionen">Funktionen</h>
 <text>Ähnlich wie in anderen Sprachen können in C4Script 
-<emlink href="script/Funcs.html">Funktionen</emlink> deklariert werden:</text>
+<emLink href="script/Funcs.html">Funktionen</emLink> deklariert werden:</text>
 <code>func CreateRock()
 {
   [Erzeugt einen Stein|Image=ROCK]
-  <funclink>CreateObject</funclink>(ROCK,50,50);
-  <funclink>return</funclink>(1);
+  <funcLink>CreateObject</funcLink>(ROCK,50,50);
+  <funcLink>return</funcLink>(1);
 }
 </code>
 <text>Unmittelbar nach dem Funktionsnamen kann in eckigen Klammern eine Beschreibung der Funktion
@@ -50,22 +50,22 @@ akzeptieren maximal zehn Parameter.</text>
 herausgefiltert und komplett ignoriert.</text>
 <code>func MeineFunktion() // Ein Kommentar bis zum Ende der Zeile
 {
-  <funclink>Message</funclink>(&quot;Dieser Code wird ausgeführt&quot;); /* Ein Kommentar in einem Block */ <funclink>Message</funclink>(&quot;Dieser auch&quot;);
-  <funclink>return</funclink>(1);
+  <funcLink>Message</funcLink>(&quot;Dieser Code wird ausgeführt&quot;); /* Ein Kommentar in einem Block */ <funcLink>Message</funcLink>(&quot;Dieser auch&quot;);
+  <funcLink>return</funcLink>(1);
 }
 </code>
 
 <h id="Infos">Weitere Informationen</h>
-<text><emlink href="script/AppendTo.html">#appendto: Zum nachträglichen Erweitern fremder Scripte</emlink></text>
-<text><emlink href="script/Strict.html">#strict: Der neue Standard</emlink></text>
-<text><emlink href="script/BreakContinue.html">Befehle zur Schleifenkontrolle</emlink></text>
-<text><emlink href="script/FuncCall.html">Aufruf von Scriptfunktionen</emlink></text>
-<text><emlink href="script/Effects.html">Effekte</emlink></text>
-<text><emlink href="script/GetXXVal.html">Abfrage von Spieldaten</emlink></text>
-<text><emlink href="script/NamedVar.html">Benannte Variablen und ihre Geltungsbereiche</emlink></text>
-<text><emlink href="script/operatoren.html">Operatoren: +, -, = etc. in C4Script</emlink></text>
-<text><emlink href="script/Typechecks.html">Überprüfung von Datentypen zur Laufzeit</emlink></text>
-<text><emlink href="script/ScriptPlayers.html">Scriptspieler (z.B. KI-Spieler)</emlink></text>
+<text><emLink href="script/AppendTo.html">#appendto: Zum nachträglichen Erweitern fremder Scripte</emLink></text>
+<text><emLink href="script/Strict.html">#strict: Der neue Standard</emLink></text>
+<text><emLink href="script/BreakContinue.html">Befehle zur Schleifenkontrolle</emLink></text>
+<text><emLink href="script/FuncCall.html">Aufruf von Scriptfunktionen</emLink></text>
+<text><emLink href="script/Effects.html">Effekte</emLink></text>
+<text><emLink href="script/GetXXVal.html">Abfrage von Spieldaten</emLink></text>
+<text><emLink href="script/NamedVar.html">Benannte Variablen und ihre Geltungsbereiche</emLink></text>
+<text><emLink href="script/operatoren.html">Operatoren: +, -, = etc. in C4Script</emLink></text>
+<text><emLink href="script/Typechecks.html">Überprüfung von Datentypen zur Laufzeit</emLink></text>
+<text><emLink href="script/ScriptPlayers.html">Scriptspieler (z.B. KI-Spieler)</emLink></text>
 </part>
 </doc>
 <author>Sven2</author><date>2002-04</date>

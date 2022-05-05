@@ -17,7 +17,7 @@
 	<h>Beispiel:</h>
 	<code>for(var i = 0; i &lt; 10; i++) 
 {
-  <funclink>Log</funclink>("Zahl: %d", i);
+  <funcLink>Log</funcLink>("Zahl: %d", i);
   if(i > 6) break;
   if(i > 2) continue;
   Log("Zahl: %d (2. Ausgabe)", i);

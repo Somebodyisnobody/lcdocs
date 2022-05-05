@@ -18,18 +18,18 @@
     <examples>
       <example>
 
-<code><funclink>SetXDir</funclink>(RandomX(-20,+20));</code>
+<code><funcLink>SetXDir</funcLink>(RandomX(-20,+20));</code>
 
         <text>Setzt die horizontale Geschwindigkeit des Objekts auf einen Zufallswert zwischen -20 und +20.</text>
       </example>
       <example>
-<code><funclink>Message</funclink>("Daniel hat %d Brötchen!", 0, RandomX(42,23));</code>
+<code><funcLink>Message</funcLink>("Daniel hat %d Brötchen!", 0, RandomX(42,23));</code>
 
         <text>Gibt die Anzahl von Daniels zufälligen Brötchen aus. Das können Werte zwischen 23 und 42 sein.</text>
       </example>
     </examples>
     <related>
-      <funclink>Random</funclink>
+      <funcLink>Random</funcLink>
     </related>
   </func>
   <author>flgr</author><date>2002-01</date>

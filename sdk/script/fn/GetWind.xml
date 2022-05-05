@@ -17,7 +17,7 @@
                 </syntax>
                 <desc>Liefert die Windstärke und Richtung an der Position X, Y. Wird die Funktion aus einem Objekt heraus aufgerufen, so ist die Position relativ zur Objektposition. Wenn fGlobal=true, wird der globale Wind zurückgegeben.</desc>
                 <related>
-                        <funclink>SetWind</funclink>
+                        <funcLink>SetWind</funcLink>
                 </related>
         </func>
         <author>Cucaracha</author><date>2002-05</date>

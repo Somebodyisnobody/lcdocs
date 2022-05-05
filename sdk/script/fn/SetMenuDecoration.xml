@@ -15,7 +15,7 @@
       </params>
     </syntax>
     <desc>Ändert die Dekoration eines Menüobjektes.</desc>
-    <related><funclink>GetMenuSelection</funclink><funclink>GetMenu</funclink><funclink>CreateMenu</funclink><funclink>AddMenuItem</funclink><funclink>SetMenuTextProgress</funclink></related>
+    <related><funcLink>GetMenuSelection</funcLink><funcLink>GetMenu</funcLink><funcLink>CreateMenu</funcLink><funcLink>AddMenuItem</funcLink><funcLink>SetMenuTextProgress</funcLink></related>
   </func>
   <author>Fulgen</author><date>2016-08</date>
 </clonkDoc>

@@ -16,16 +16,16 @@
     <desc>Setzt die Materialmodulation. Die Materialfarben werden mit der angegebenen Farbe so verrechnet wie auch ColorByOwner-Grafiken.</desc>
     <examples>
       <example>
-        <code>SetMatAdjust(<funclink>RGBa</funclink>(255,127,127,127));</code>
+        <code>SetMatAdjust(<funcLink>RGBa</funcLink>(255,127,127,127));</code>
         <text>Macht die Materialien rötlich und halbdurchsichtig.</text>
       </example>
     </examples>
     <related>
-      <funclink>SetMaterialColor</funclink>
-      <funclink>SetSkyAdjust</funclink>
-      <funclink>SetGamma</funclink>
-      <funclink>RGB</funclink>
-      <funclink>RGBa</funclink>
+      <funcLink>SetMaterialColor</funcLink>
+      <funcLink>SetSkyAdjust</funcLink>
+      <funcLink>SetGamma</funcLink>
+      <funcLink>RGB</funcLink>
+      <funcLink>RGBa</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2002-05</date>

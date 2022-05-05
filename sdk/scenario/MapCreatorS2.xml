@@ -160,7 +160,7 @@
 		<dd><text>Der gesamten Bereich gilt als erfüllt oder nicht erfüllt, je nach Zufallswert. Der Parameter a gibt die Erfüllungschance in Prozent an. Mit diesem algo können beispielsweise mehrere Karten untergeordnet von einem mask=1-Layer angegeben werden, zwischen denen dann gewählt wird.</text></dd>
 		
 		<dt id="Algo_script">script</dt>
-		<dd><text>Das Verhalten des Algorithmus wird durch eine Script-Funktion im <emlink href="scenario/script.html">Szenarioscript</emlink> festgelegt. Diese sollte folgende Form haben:</text>
+		<dd><text>Das Verhalten des Algorithmus wird durch eine Script-Funktion im <emLink href="scenario/script.html">Szenarioscript</emLink> festgelegt. Diese sollte folgende Form haben:</text>
 		<code>func ScriptAlgo[Overlay-Name](iX, iY, iAlpha, iBeta)</code>
 		<text>Als Rückgabewert wird 0 (= kein Material) oder 1 (= Material) erwartet. iX und iY sind die Koordinaten (in Pixeln), für den der Algorithmuswert zurückgegeben werden soll. iAlpha und iBeta entsprechen den Algo-Parametern a und b.</text>
 		<text>Hat die Ebene keinen Namen, wird die Funktion "ScriptAlgo" benutzt.</text></dd>

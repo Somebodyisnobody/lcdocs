@@ -18,8 +18,8 @@
 		<desc>Stellt das Magiewissen eines bestimmten Spielers fest.</desc>
 		<examples>
 			<example>
-				<code><funclink>if</funclink> (GetPlrMagic(0,MLGT))
-	<funclink>Message</funclink>("Spieler %s kann Blitze zaubern",0,<funclink>GetPlayerName</funclink>(0));
+				<code><funcLink>if</funcLink> (GetPlrMagic(0,MLGT))
+	<funcLink>Message</funcLink>("Spieler %s kann Blitze zaubern",0,<funcLink>GetPlayerName</funcLink>(0));
 				</code>
 				<text>Wenn Spieler 0 Blitze zaubern (MLGT) kann, wird eine entsprechende Botschaft ausgegeben.</text>
 			</example>
@@ -27,7 +27,7 @@
 				<code>var spell;
 
 spell = GetPlrMagic(0,0,4);
-<funclink>Message</funclink>("Der fünfte Zauberspruch des Spielers ist %i",0,spell);
+<funcLink>Message</funcLink>("Der fünfte Zauberspruch des Spielers ist %i",0,spell);
 				</code>
 				<text>Gibt die ID des 5. Zauberspruchs des ersten Spielers aus.</text>
 			</example>

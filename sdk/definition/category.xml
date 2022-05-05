@@ -98,7 +98,7 @@ von den Bits 0-4 darf und muss immer genau eines zur Zeit gesetzt sein.</text>
 </row>
 <row>
   <col>21</col> <col>2097152</col> <col>C4D_Parallax</col>
-  <col>Objekt bewegt sich parallax nach Local 0 und 1. Für mehr Informationen siehe <constlink constGroup="C4D">C4D_Parallax</constlink>.</col>
+  <col>Objekt bewegt sich parallax nach Local 0 und 1. Für mehr Informationen siehe <constLink constGroup="C4D">C4D_Parallax</constLink>.</col>
 </row>
 <row>
   <col>22</col> <col>4194304</col> <col>C4D_MouseSelect</col>

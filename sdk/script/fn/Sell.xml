@@ -20,13 +20,13 @@
 			<example>
 
 <code>var obj;
-<funclink>if</funclink> (obj=<funclink>FindObject</funclink>()) Sell(obj, 0);</code>
+<funcLink>if</funcLink> (obj=<funcLink>FindObject</funcLink>()) Sell(obj, 0);</code>
 
 				<text>Verkauft irgendein Objekt an den ersten Spieler.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>Buy</funclink>
+			<funcLink>Buy</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

@@ -10,9 +10,9 @@
 		<syntax>
 			<rtype>void</rtype>
 			<params>
-				<param><type>int</type><name>dwClr1</name><desc>Veränderung für dunkle Farben. Standard ist <funclink>RGB</funclink>(0,0,0) für keine Veränderung.</desc></param>
-				<param><type>int</type><name>dwClr2</name><desc>Veränderung für mittlere Farben. Standard ist <funclink>RGB</funclink>(128,128,128) für keine Veränderung.</desc></param>
-				<param><type>int</type><name>dwClr3</name><desc>Veränderung für helle Farben. Standard ist <funclink>RGB</funclink>(255,255,255) für keine Veränderung.</desc></param>
+				<param><type>int</type><name>dwClr1</name><desc>Veränderung für dunkle Farben. Standard ist <funcLink>RGB</funcLink>(0,0,0) für keine Veränderung.</desc></param>
+				<param><type>int</type><name>dwClr2</name><desc>Veränderung für mittlere Farben. Standard ist <funcLink>RGB</funcLink>(128,128,128) für keine Veränderung.</desc></param>
+				<param><type>int</type><name>dwClr3</name><desc>Veränderung für helle Farben. Standard ist <funcLink>RGB</funcLink>(255,255,255) für keine Veränderung.</desc></param>
 				<param><type>int</type><name>iRampIndex</name><desc>0-7: Index der zu verändernden Rampe. Es stehen acht Gammarampen zur Verfügung, die aufeinander gerechnet werden. So können zum Beispiel Tag/Nacht-Objekte die globale Helligkeit verändern, ohne dabei andere Effekte wie Blitze zu behindern.</desc></param>
 			</params>
 		</syntax>
@@ -35,13 +35,13 @@
 
 		<examples>
 			<example>
-				<code>SetGamma(<funclink>RGB</funclink>(50,0,0), <funclink>RGB</funclink>(140,100,100), <funclink>RGB</funclink>(255,220,220));</code>
+				<code>SetGamma(<funcLink>RGB</funcLink>(50,0,0), <funcLink>RGB</funcLink>(140,100,100), <funcLink>RGB</funcLink>(255,220,220));</code>
 				<text>Gibt dem Spiel einen leichten Blauschimmer</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>ResetGamma</funclink>
-			<funclink>RGB</funclink>
+			<funcLink>ResetGamma</funcLink>
+			<funcLink>RGB</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-04</date>

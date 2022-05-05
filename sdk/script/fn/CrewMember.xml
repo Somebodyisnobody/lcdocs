@@ -15,7 +15,7 @@
 		</syntax>
 		<desc>Liefert den Wert von "CrewMember" aus der DefCore von id.</desc>
 		<related>
-			<funclink>GetDefCoreVal</funclink>
+			<funcLink>GetDefCoreVal</funcLink>
 		</related>
 	</func>
 	<author>jwk</author><date>2002-04</date>

@@ -18,13 +18,13 @@
 		<desc>Fügt einen Bauplan zum Wissen des Spielers hinzu (oder entfernt ihn bei angegebenem fRemove).</desc>
 		<examples>
 			<example>
-				<code>var i, id; <funclink>while</funclink> (id = <funclink>GetDefinition</funclink>(i++)) SetPlrKnowledge(0, id);</code>
+				<code>var i, id; <funcLink>while</funcLink> (id = <funcLink>GetDefinition</funcLink>(i++)) SetPlrKnowledge(0, id);</code>
 				<text>Gibt dem ersten Spieler Baupläne für alle geladenen Objekte.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>GetPlrKnowledge</funclink>
-			<funclink>SetPlrMagic</funclink>
+			<funcLink>GetPlrKnowledge</funcLink>
+			<funcLink>SetPlrMagic</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2003-06</date>

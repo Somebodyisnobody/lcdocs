@@ -15,12 +15,12 @@
                 </syntax>
                 <desc>Liefert die Y-Position von *pObj.</desc>
                 <related>
-                        <funclink>GetXDir</funclink>
-                        <funclink>GetYDir</funclink>
-                        <funclink>SetXDir</funclink>
-                        <funclink>SetYDir</funclink>
-                        <funclink>GetX</funclink>
-                        <funclink>SetPosition</funclink>
+                        <funcLink>GetXDir</funcLink>
+                        <funcLink>GetYDir</funcLink>
+                        <funcLink>SetXDir</funcLink>
+                        <funcLink>SetYDir</funcLink>
+                        <funcLink>GetX</funcLink>
+                        <funcLink>SetPosition</funcLink>
                 </related>
         </func>
         <author>Cucaracha</author><date>2002-05</date>

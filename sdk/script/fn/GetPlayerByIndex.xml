@@ -11,27 +11,27 @@
                         <rtype>int</rtype>
 			<params>
 				<param><type>int</type><name>iIndex</name><desc>Index in der Spielerliste</desc></param>
-				<param><type>int</type><name>ePlayerType</name><desc>Wenn angegeben, wird der indizierte Spieler des angegebenen Typs zurückgegeben. So lassen sich zum Beispiel nur alle menschlichen oder nur alle Scriptspieler durchgehen. Für eine Liste gültiger Werte, siehe <funclink>GetPlayerType</funclink>.</desc><optional /></param>
+				<param><type>int</type><name>ePlayerType</name><desc>Wenn angegeben, wird der indizierte Spieler des angegebenen Typs zurückgegeben. So lassen sich zum Beispiel nur alle menschlichen oder nur alle Scriptspieler durchgehen. Für eine Liste gültiger Werte, siehe <funcLink>GetPlayerType</funcLink>.</desc><optional /></param>
 			</params>
                 </syntax>
                 <desc>Gibt die indizierte Spielernummer zurück. Die Funktion garantiert für Werte zwischen 0 und GetPlayerCount()-1, dass eine gültige Spielernummer zurückgegeben wird (denn durch eliminierte Spieler und Neubeitritte kann es vorkommen, dass "Löcher" unbelegter Spielernummern in der Liste entstehen!). Damit ist es einfacher, eine Schleife zu schreiben, die alle Spielernummern durchgeht. Ab 4.9.6.0 CR.</desc>
                 <examples>
                         <example>
-<code><funclink>for</funclink>(var i = 0; i &lt; <funclink>GetPlayerCount</funclink>(); i++)
-  <funclink>Log</funclink>("Moin, %s", <funclink>GetPlayerName</funclink>(GetPlayerByIndex(i)));</code>
+<code><funcLink>for</funcLink>(var i = 0; i &lt; <funcLink>GetPlayerCount</funcLink>(); i++)
+  <funcLink>Log</funcLink>("Moin, %s", <funcLink>GetPlayerName</funcLink>(GetPlayerByIndex(i)));</code>
                                 <text>Begrüßt alle Spieler im Log.</text>
                         </example>
                         <example>
-<code><funclink>for</funclink>(var i = 0; i &lt; <funclink>GetPlayerCount</funclink>(C4PT_User); i++)
-  <funclink>EliminatePlayer</funclink>(GetPlayerByIndex(i, C4PT_User));</code>
+<code><funcLink>for</funcLink>(var i = 0; i &lt; <funcLink>GetPlayerCount</funcLink>(C4PT_User); i++)
+  <funcLink>EliminatePlayer</funcLink>(GetPlayerByIndex(i, C4PT_User));</code>
                                 <text>Eliminiert alle regulären Spieler, aber lässt Scriptspieler am Leben.</text>
                         </example>
 
                 </examples>
                 <related>
-                        <funclink>GetPlayerName</funclink>
-                        <funclink>GetPlayerCount</funclink>
-                        <funclink>GetPlayerType</funclink>
+                        <funcLink>GetPlayerName</funcLink>
+                        <funcLink>GetPlayerCount</funcLink>
+                        <funcLink>GetPlayerType</funcLink>
                 </related>
         </func>
         <author>Sven2</author><date>2007-12</date>

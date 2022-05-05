@@ -35,7 +35,7 @@
   <examples>
     <example>
       <code>private Multiply3:
-  <funclink>return</funclink>(Par() * Par(1) * Par(2));</code>
+  <funcLink>return</funcLink>(Par() * Par(1) * Par(2));</code>
       <text>Definiert eine Funktion Multiply3, die ihre drei Parameter miteinander multipliziert.</text>
     </example>
     <example>

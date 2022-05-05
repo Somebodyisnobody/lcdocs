@@ -16,7 +16,7 @@
 		<desc>Liefert den aktuellen Energiewert eines Objekts in Prozent. 100% stellen hierbei den maximalen Physical-Wert von 100000 dar. Siehe auch DefCore.txt Sektion [Physical]. pObj Null bei lokalem Aufruf.</desc>
 		<remark>"Energy" ist bei Lebewesen deren Lebensenergie und bei Gebäuden die im Objekt vorhandene elektrische Energie.</remark>
 		<related>
-			<funclink>GetPhysical</funclink>
+			<funcLink>GetPhysical</funcLink>
 		</related>
 	</func>
 	<author>jwk</author><date>2002-06</date>

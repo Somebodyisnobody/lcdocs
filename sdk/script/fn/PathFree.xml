@@ -39,9 +39,9 @@
   </examples>
 
   <related>
-    <funclink>GetMaterial</funclink>
-    <funclink>GBackSolid</funclink>
-    <funclink>GetPathLength</funclink>
+    <funcLink>GetMaterial</funcLink>
+    <funcLink>GBackSolid</funcLink>
+    <funcLink>GetPathLength</funcLink>
   </related>
 
  </func>

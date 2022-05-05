@@ -19,14 +19,14 @@
       <example>
 
 <code>var mat=ExtractLiquid();
-if (mat!=-1) <funclink>InsertMaterial</funclink>(mat,0,-100)</code>
+if (mat!=-1) <funcLink>InsertMaterial</funcLink>(mat,0,-100)</code>
         <text>Saugt ein Flüssigkeitspixel ab, und fügt es 100 Pixel oberhalb wieder ein.</text>
       </example>
     </examples>
     <related>
-      <funclink>ExtractMaterialAmount</funclink>
-      <funclink>InsertMaterial</funclink>
-      <funclink>GBackLiquid</funclink>
+      <funcLink>ExtractMaterialAmount</funcLink>
+      <funcLink>InsertMaterial</funcLink>
+      <funcLink>GBackLiquid</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2001-11</date>

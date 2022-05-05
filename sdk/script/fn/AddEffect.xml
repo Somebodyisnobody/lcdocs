@@ -35,7 +35,7 @@
         <param>
           <type>object</type>
           <name>pCmdTarget</name>
-          <desc>Befehlsziel. Wenn angegeben, werden alle Callbacks in diesem Objekt ausgeführt. Ansonsten finden diese Callbacks grundsätzlich ohne Objektkontext statt. Wenn das Befehlszielobjekt gelöscht wird, werden alle verbundenen Effekte ohne weitere Callbacks ebenfalls gelöscht. Falls das Befehlsziel seine Definition ändert, sollten verbundene Effekte mit <funclink>ChangeEffect</funclink> ihre Funktionen neu zuweisen lassen.</desc>
+          <desc>Befehlsziel. Wenn angegeben, werden alle Callbacks in diesem Objekt ausgeführt. Ansonsten finden diese Callbacks grundsätzlich ohne Objektkontext statt. Wenn das Befehlszielobjekt gelöscht wird, werden alle verbundenen Effekte ohne weitere Callbacks ebenfalls gelöscht. Falls das Befehlsziel seine Definition ändert, sollten verbundene Effekte mit <funcLink>ChangeEffect</funcLink> ihre Funktionen neu zuweisen lassen.</desc>
           <optional />
         </param>
         <param>
@@ -73,17 +73,17 @@
 
     <desc>Erzeugt einen Effekt. Rückgabewert ist der Effektindex bei Erfolg, oder 0 bei Fehlschlag (weil der Effekt beispielsweise abgelehnt wurde). Wenn der Effekt von einem anderen Effekt aufgenommen wurde, der sich in demselben Aufruf entfernt, wird -2 zurückgegeben.</desc>
 
-    <remark>Für Beispiele und weitere Hinweise siehe <emlink href="script/Effects.html">Effekte-Dokumentation</emlink>.</remark>
+    <remark>Für Beispiele und weitere Hinweise siehe <emLink href="script/Effects.html">Effekte-Dokumentation</emLink>.</remark>
 
     <related>
-      <emlink href="script/Effects.html">Effekte-Dokumentation</emlink>
-      <funclink>ChangeEffect</funclink>
-      <funclink>CheckEffect</funclink>
-      <funclink>GetEffectCount</funclink>
-      <funclink>EffectCall</funclink>
-      <funclink>EffectVar</funclink>
-      <funclink>GetEffect</funclink>
-      <funclink>RemoveEffect</funclink>
+      <emLink href="script/Effects.html">Effekte-Dokumentation</emLink>
+      <funcLink>ChangeEffect</funcLink>
+      <funcLink>CheckEffect</funcLink>
+      <funcLink>GetEffectCount</funcLink>
+      <funcLink>EffectCall</funcLink>
+      <funcLink>EffectVar</funcLink>
+      <funcLink>GetEffect</funcLink>
+      <funcLink>RemoveEffect</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2004-03</date>

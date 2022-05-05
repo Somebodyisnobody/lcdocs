@@ -17,11 +17,11 @@
     <desc>Setzt die Auswahl in einem Menu.</desc>
     <examples>
       <example>
-        <text>SelectMenuItem kann zusammen mit <funclink>GetMenuSelection</funclink> dazu verwendet werden, ein Menu zu aktualisieren, ohne dabei die Selektion zu verändern:</text>
+        <text>SelectMenuItem kann zusammen mit <funcLink>GetMenuSelection</funcLink> dazu verwendet werden, ein Menu zu aktualisieren, ohne dabei die Selektion zu verändern:</text>
         <code>var iSelection = -1;
 // Menu bereits geöffnet?
-if(<funclink>GetMenu</funclink>())
-  iSelection = <funclink>GetMenuSelection</funclink>();
+if(<funcLink>GetMenu</funcLink>())
+  iSelection = <funcLink>GetMenuSelection</funcLink>();
 
 // [ Hier Menu (neu) erstellen... ]
 
@@ -30,7 +30,7 @@ if(iSelection &gt;= 0)
   SelectMenuItem(iSelection);</code>
       </example>
     </examples>
-    <related><funclink>GetMenuSelection</funclink><funclink>GetMenu</funclink><funclink>CreateMenu</funclink><funclink>AddMenuItem</funclink></related>
+    <related><funcLink>GetMenuSelection</funcLink><funcLink>GetMenu</funcLink><funcLink>CreateMenu</funcLink><funcLink>AddMenuItem</funcLink></related>
   </func>
   <author>PeterW</author><date>2002-10</date>
 </clonkDoc>

@@ -11,7 +11,7 @@
 			<author>Funni</author>
 			<date>2003-01</date>
 			<version>4.9.1.0 GWE</version>
-			<description>Mit Erweiterung von <funclink>GetValue</funclink> ist diese Funktion veraltet.</description>
+			<description>Mit Erweiterung von <funcLink>GetValue</funcLink> ist diese Funktion veraltet.</description>
 		</deprecated>
 		<syntax>
 			<rtype>int</rtype>
@@ -20,9 +20,9 @@
 			</params>
 		</syntax>
 		<desc>Gibt einen Definitionswert zurück.</desc>
-		<remark>Der Aufruf von Value() verursacht keine CalcDefValue-Aufrufe, sondern gibt direkt den DefCore-Wert (eventuell überladen in der Scenario.txt) zurück. Statt dieser Funktion sollte <funclink>GetValue</funclink> mit entsprechenden Parametern verwendet werden.</remark>
+		<remark>Der Aufruf von Value() verursacht keine CalcDefValue-Aufrufe, sondern gibt direkt den DefCore-Wert (eventuell überladen in der Scenario.txt) zurück. Statt dieser Funktion sollte <funcLink>GetValue</funcLink> mit entsprechenden Parametern verwendet werden.</remark>
 		<related>
-			<funclink>GetValue</funclink>
+			<funcLink>GetValue</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2003-06</date>

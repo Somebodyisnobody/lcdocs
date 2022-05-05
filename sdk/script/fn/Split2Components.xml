@@ -14,13 +14,13 @@
 			</params>
 		</syntax>
 		<desc>Zerlegt ein Objekt in seine Bestandteile. Die Bestandteile werden in zuf‰lliger Drehung und mit geringer Geschwindigkeit in zuf‰lliger Richtung an der Stelle erzeugt, an der sich das Objekt befand. Das Objekt wird anschlieﬂend vernichtet. Wenn sich das Objekt in einem Beh‰lter befand, werden auch die Komponenten nach der Erschaffung in den Beh‰lter versetzt.</desc>
-		<remark>Siehe Hinweis zu <funclink>RemoveObject</funclink>.</remark>
+		<remark>Siehe Hinweis zu <funcLink>RemoveObject</funcLink>.</remark>
 		<examples>
 			<example>
 <code>protected func ControlDigDouble()
   {
-  var pTarget=<funclink>Contents</funclink>();
-  <funclink>if</funclink> (!pTarget) <funclink>return</funclink>();
+  var pTarget=<funcLink>Contents</funcLink>();
+  <funcLink>if</funcLink> (!pTarget) <funcLink>return</funcLink>();
   Split2Components(pTarget);
   return(1);
   }</code>
@@ -28,8 +28,8 @@
 			</example>
 		</examples>
 		<related>
-			<funclink>RemoveObject</funclink>
-			<funclink>GetComponent</funclink>
+			<funcLink>RemoveObject</funcLink>
+			<funcLink>GetComponent</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-08</date>

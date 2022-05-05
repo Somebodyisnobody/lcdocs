@@ -20,7 +20,7 @@
   </syntax>
   <desc>Platziert Vegetation im angegebenen Zielrechteck. Bei lokalen Aufrufen gelten die Koordinaten als Offset zur Mitte des aufrufenden Objekts. Rückgabewert ist ein Zeiger auf das neu erzeugte Objekt.</desc>
   <related>
-  	<funclink>PlaceAnimal</funclink>
+  	<funcLink>PlaceAnimal</funcLink>
   </related>
  </func>
  <author>jwk</author><date>2002-08</date>

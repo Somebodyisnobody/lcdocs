@@ -13,16 +13,16 @@
     <desc>Beendet die Runde. Die Runde wird für alle überlebenden Spieler als gewonnen gewertet.</desc>
     <examples>
       <example>
-        <code><funclink>if</funclink>(!<funclink>ObjectCount</funclink>(ROCK))
+        <code><funcLink>if</funcLink>(!<funcLink>ObjectCount</funcLink>(ROCK))
 {
-  <funclink>Log</funclink>("Prima, keine Steine stören mehr.");
+  <funcLink>Log</funcLink>("Prima, keine Steine stören mehr.");
   GameOver();
 }</code>
         <text>Beendet die Runde, falls keine Steine da sind.</text>
       </example>
     </examples>
     <related>
-      <funclink>EliminatePlayer</funclink>
+      <funcLink>EliminatePlayer</funcLink>
     </related>
   </func>
   <author>Günther</author><date>2002-04</date>

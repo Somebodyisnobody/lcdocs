@@ -15,9 +15,9 @@
 			</params>
 		</syntax>
 		<desc>Ändert die Kategorie eines Objekts.</desc>
-		<remark>Siehe auch <emlink href="definition/category.html">Objektkategorien</emlink></remark>
+		<remark>Siehe auch <emLink href="definition/category.html">Objektkategorien</emLink></remark>
 		<related>
-			<funclink>GetCategory</funclink>
+			<funcLink>GetCategory</funcLink>
 		</related>
 	</func>
 	<author>jwk</author><date>2002-08</date>

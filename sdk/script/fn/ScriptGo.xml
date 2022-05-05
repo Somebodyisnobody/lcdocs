@@ -14,12 +14,12 @@
     <desc>Startet den Scriptzähler, bzw. hält ihn wieder an.</desc>
     <examples>
       <example>
-        <text>Siehe <funclink>goto</funclink>().</text>
+        <text>Siehe <funcLink>goto</funcLink>().</text>
       </example>
     </examples>
     <related>
-      <funclink>goto</funclink>
-      <funclink>ScriptCounter</funclink>
+      <funcLink>goto</funcLink>
+      <funcLink>ScriptCounter</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2002-08</date>

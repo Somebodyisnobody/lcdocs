@@ -14,7 +14,7 @@ Dazu können jeweils bestimmte Elemente sprachabhängig überladen werden.</text>
 <dl>
 <dt id="Titletxt"><img src="../images/icon_text.gif" width="16" height="16" />Title.txt</dt>
 <dd><text>
- Die Komponente <emlink href="scenario/index.html#Titletxt">Title.txt</emlink> kann in Szenarien und Objektordnern verwendet 
+ Die Komponente <emLink href="scenario/index.html#Titletxt">Title.txt</emLink> kann in Szenarien und Objektordnern verwendet
  werden, um den Titel für verschiedene Sprachen zu definieren.
 </text>
 <text>
@@ -27,25 +27,25 @@ US:Attack of the Killer Wipfs
  In externen Sprachpaketen sollte an der entsprechenden Verzeichnis-Position eine Komponente Title*.txt stehen (wobei * durch das entsprechende Sprachkürzel ersetzt wird), die dann den Titel für die jeweilige zusätzliche Sprache enthalten kann. Beispiel für den Inhalt einer TitleFR.txt:
 </text>
 <code>FR:Les wipfes moerderesque attaquent</code>
-<text>Ist ein Eintrag für die gewählte Sprache vorhanden, so wird der Title-Eintrag aus der <emlink href="scenario/scenario.html#SektionHead">Scenario.txt</emlink> durch den entsprechenden Namen überschrieben.</text>
+<text>Ist ein Eintrag für die gewählte Sprache vorhanden, so wird der Title-Eintrag aus der <emLink href="scenario/scenario.html#SektionHead">Scenario.txt</emLink> durch den entsprechenden Namen überschrieben.</text>
 <text>Wichtig: es sollten keine Anführungszeichen oder Sonderzeichen verwendet werden.</text>
 </dd>
 
 <dt id="Namestxt"><img src="../images/icon_text.gif" width="16" height="16" />Names.txt</dt>
 <dd><text>
- Mit der Komponente <emlink href="definition/index.html#Namestxt">Names.txt</emlink> kann der Name eines Objekts für verschiedene
+ Mit der Komponente <emLink href="definition/index.html#Namestxt">Names.txt</emLink> kann der Name eines Objekts für verschiedene
  Sprachen definiert werden. Die Funktionsweise der Names.txt gleicht Funktionsweise der der Title.txt.
 </text>
 <text>
  Existiert ein Eintrag für die gewählte Sprache, so wird die Name-Angabe aus der
- <emlink href="definition/defcore.html#SektionDefCore">DefCore.txt</emlink> überschrieben.
+ <emLink href="definition/defcore.html#SektionDefCore">DefCore.txt</emLink> überschrieben.
 </text>
 </dd>
 
 <dt id="Desctxt"><img src="../images/icon_text.gif" width="16" height="16" />Desc*.txt / Desc*.rtf</dt>
 <dd><text>
- Um die Beschreibung einer <emlink href="definition/index.html#Desc__txt">Objektdefinition</emlink> oder eines 
- <emlink href="scenario/index.html#Desc__rtf">Szenarios</emlink>
+ Um die Beschreibung einer <emLink href="definition/index.html#Desc__txt">Objektdefinition</emLink> oder eines
+ <emLink href="scenario/index.html#Desc__rtf">Szenarios</emLink>
  sprachabhängig anzupassen, muss eine Datei Desc*.txt/.rtf im Definitions- bzw. Szenarioverzeichnis vorhanden sein
  (* steht dabei wieder für das entsprechende Sprachkürzel, die Komponenten sollte also z.B. DescUS.rtf heißen).
 </text>
@@ -66,7 +66,7 @@ US:Attack of the Killer Wipfs
 <code>protected func Activate(pCaller)
 {
   [$DescActivate$]
-  <emlink href="script/fn/Message.html">Message</emlink>("$MsgYourPosition$ %d / %d", <emlink href="script/fn/GetX.html">GetX</emlink>(pCaller), <emlink href="script/fn/GetX.html">GetY</emlink>(pCaller));
+  <emLink href="script/fn/Message.html">Message</emLink>("$MsgYourPosition$ %d / %d", <emLink href="script/fn/GetX.html">GetX</emLink>(pCaller), <emLink href="script/fn/GetX.html">GetY</emLink>(pCaller));
 }</code>
 <text>
  Hier werden zwei Strings mit den Namen "DescActivate" und "MsgYourPosition" eingebunden.

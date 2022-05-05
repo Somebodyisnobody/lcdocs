@@ -12,7 +12,7 @@
     </syntax>
     <desc>Gibt eine Botschaft a la "[name] ist von uns gegangen"  über dem aufrufenden Objekt aus.</desc>
     <related>
-      <funclink>Message</funclink>
+      <funcLink>Message</funcLink>
     </related>
   </func>
   <author>jwk</author><date>2002-04</date>

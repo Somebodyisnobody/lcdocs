@@ -16,7 +16,7 @@
 		<desc>Solange fCondition ungleich Null ist, wird der unmittelbar folgende Block bzw. die unmittelbar folgende Anweisung ausgeführt.</desc>
 		<examples>
 			<example>
-				<code>while(<funclink>FindObject</funclink>()) <funclink>RemoveObject</funclink>(<funclink>FindObject</funclink>());</code>
+				<code>while(<funcLink>FindObject</funcLink>()) <funcLink>RemoveObject</funcLink>(<funcLink>FindObject</funcLink>());</code>
 				<text>Entfernt alle Objekte.</text>
 			</example>
 		</examples>

@@ -19,15 +19,15 @@
 		<examples>
 			<example>
 
-<code>protected func Collection2() { <funclink>return</funclink>(ResortObject("ResortProc"); };
-protected func ResortProc(pObj1, pObj2) { return(<funclink>GetMass</funclink>(pObj1)-<funclink>GetMass</funclink>(pObj2));</code>
+<code>protected func Collection2() { <funcLink>return</funcLink>(ResortObject("ResortProc"); };
+protected func ResortProc(pObj1, pObj2) { return(<funcLink>GetMass</funcLink>(pObj1)-<funcLink>GetMass</funcLink>(pObj2));</code>
 				<text>Objektscript: Das Objekt sortiert sich selbst bei Objektaufnahme nach seiner Masse in die Objektliste ein (leichte Objekte nach vorne).</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>SetObjectOrder</funclink>
-			<funclink>ResortObjects</funclink>
-			<funclink>Resort</funclink>
+			<funcLink>SetObjectOrder</funcLink>
+			<funcLink>ResortObjects</funcLink>
+			<funcLink>Resort</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2003-06</date>

@@ -54,12 +54,12 @@
 
 
     <related>
-      <funclink>GetDefCoreVal</funclink>
-      <funclink>GetObjectVal</funclink>
-      <funclink>GetActMapVal</funclink>
-      <funclink>GetScenarioVal</funclink>
-      <funclink>GetPlayerVal</funclink>
-      <funclink>GetPlayerInfoCoreVal</funclink>
+      <funcLink>GetDefCoreVal</funcLink>
+      <funcLink>GetObjectVal</funcLink>
+      <funcLink>GetActMapVal</funcLink>
+      <funcLink>GetScenarioVal</funcLink>
+      <funcLink>GetPlayerVal</funcLink>
+      <funcLink>GetPlayerInfoCoreVal</funcLink>
     </related>
 
   </func>

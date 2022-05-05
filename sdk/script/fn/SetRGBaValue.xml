@@ -29,13 +29,13 @@
 		</desc>
 		<examples>
 			<example>
-				<code>SetColorDw(SetRGBaValue(<funclink>GetColorDw</funclink>(<funclink>GetCursor</funclink>()),255,1),<funclink>GetCursor</funclink>());</code>
+				<code>SetColorDw(SetRGBaValue(<funcLink>GetColorDw</funcLink>(<funcLink>GetCursor</funcLink>()),255,1),<funcLink>GetCursor</funcLink>());</code>
 				<text>Setzt den Rotanteil des aktuell ausgewählten Clonks auf maximum.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>GetRGBaValue</funclink>
-			<funclink>DoRGBaValue</funclink>
+			<funcLink>GetRGBaValue</funcLink>
+			<funcLink>DoRGBaValue</funcLink>
 		</related>
 	</func>
 	<author>Tyron</author><date>2004-08</date>

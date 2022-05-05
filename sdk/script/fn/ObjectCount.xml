@@ -13,7 +13,7 @@
 			<author>Clonkonaut</author>
 			<date>2006-07</date>
 			<version>4.9.6.0 CR</version>
-			<description>Die Funktion ist durch Einführung von <funclink>ObjectCount2</funclink> und <funclink>FindObjects</funclink> veraltet.</description>
+			<description>Die Funktion ist durch Einführung von <funcLink>ObjectCount2</funcLink> und <funcLink>FindObjects</funcLink> veraltet.</description>
 		</deprecated>
 		<syntax>
 			<rtype>int</rtype>
@@ -25,18 +25,18 @@
 				<param><type>int</type><name>iHgt</name><desc>Suchrechteck Höhe</desc><optional /></param>
 				<param><type>int</type><name>dwOCF</name><desc>Objektattribute. Es werden nur Objekte gefunden, die alle angegebenen Objektattribute besitzen. 0 findet alle Objekte.</desc><optional /></param>
 				<param><type>string</type><name>szAction</name><desc>Aktivität des zu findenden Objekts</desc><optional /></param>
-				<param><type>object</type><name>pActionTarget</name><desc>Aktivitätsziel, das das Objekt besitzen muss. Siehe dazu auch <funclink>SetAction</funclink>, <funclink>GetActionTarget</funclink></desc><optional /></param>
-				<param><type>any</type><name>pContainer</name><desc>Containerobjekt. Wenn angegeben, wird nur dieser Behälter durchsucht. Möglich sind auch <funclink>NoContainer</funclink> (Objekt befindet sich im Freien), und <funclink>AnyContainer</funclink> (Objekt ist in einem beliebigen Behälter enthalten).</desc><optional /></param>
+				<param><type>object</type><name>pActionTarget</name><desc>Aktivitätsziel, das das Objekt besitzen muss. Siehe dazu auch <funcLink>SetAction</funcLink>, <funcLink>GetActionTarget</funcLink></desc><optional /></param>
+				<param><type>any</type><name>pContainer</name><desc>Containerobjekt. Wenn angegeben, wird nur dieser Behälter durchsucht. Möglich sind auch <funcLink>NoContainer</funcLink> (Objekt befindet sich im Freien), und <funcLink>AnyContainer</funcLink> (Objekt ist in einem beliebigen Behälter enthalten).</desc><optional /></param>
 				<param><type>int</type><name>iOwner</name><desc>Besitzer, den die gefundenen Objekte haben sollen.</desc><optional /></param>
 			</params>
 		</syntax>
 		<desc>Sucht Objekte, und gibt deren Anzahl zurück. Sind iWdt und iHgt beide -1, so wird das nächstliegende Objekt gefunden. Sind sie beide 0, wird nur am Punkt iX/iY gesucht. Sind iX, iY, iWdt und iHgt alle 0, gilt als Suchrechteck die gesamte Karte (auch bei lokalen Aufrufen). Es müssen stets die Bedingungen aller Parameter erfüllt sein, die angegeben und nicht 0 sind.</desc>
 		<related>
-			<funclink>FindObject</funclink>
-			<funclink>NoContainer</funclink>
-			<funclink>AnyContainer</funclink>
-			<funclink>FindObjectOwner</funclink>
-			<funclink>ObjectCount2</funclink>
+			<funcLink>FindObject</funcLink>
+			<funcLink>NoContainer</funcLink>
+			<funcLink>AnyContainer</funcLink>
+			<funcLink>FindObjectOwner</funcLink>
+			<funcLink>ObjectCount2</funcLink>
 		</related>
 	</func>
 	<author>jwk</author><date>2002-08</date>

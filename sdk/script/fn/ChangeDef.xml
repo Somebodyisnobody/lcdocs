@@ -20,17 +20,17 @@
 
     <remark>Achtung! Wendet der Script eines Objekts ChangeDef auf sich selbst an, passt der Script
             nach der Definitionsänderung nicht mehr zum Objekt. Deshalb sollte in diesem Fall
-            nach ChangeDef weder eine lokale Funktion aufgerufen (stattdessen <funclink>this</funclink>()->Funktion(...)
+            nach ChangeDef weder eine lokale Funktion aufgerufen (stattdessen <funcLink>this</funcLink>()->Funktion(...)
             benutzen) noch auf eine lokale benannte Variable zugegriffen werden (selbst wenn
             eine gleichnamige in der Zieldefinition existiert).</remark>
     <examples>
       <example>
-        <code>ChangeDef(MONS, <funclink>GetCursor</funclink>(0));</code>
+        <code>ChangeDef(MONS, <funcLink>GetCursor</funcLink>(0));</code>
         <text>Verwandelt den ausgewählten Clonk des ersten Spielers in ein Monster.</text>
       </example>
     </examples>
     <related>
-      <funclink>GetID</funclink>
+      <funcLink>GetID</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2001-11</date>

@@ -17,14 +17,14 @@
 		<desc>Aktiviert oder deaktiviert Mannschaftsmitglieder. Deaktivierte Mannschaftsmitglieder können nicht mehr vom Spieler angewählt werden. So kann es auch passieren, dass ein Spieler zwar 0 Mannschaftsmitglieder zur Auswahl hat, aber trotzdem nicht eliminiert ist. Nur für Objekte, die auch wirklich zu einer Mannschaft gehören. Deaktivierte Mannschaftsmitglieder sind automatisch nicht mehr ausgewählt.</desc>
 		<examples>
 			<example>
-				<code>SetCrewEnabled(0, <funclink>GetCursor</funclink>());</code>
+				<code>SetCrewEnabled(0, <funcLink>GetCursor</funcLink>());</code>
 				<text>Deaktiviert den ausgewählten Clonk des ersten Spielers.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>GetCrewEnabled</funclink>
-			<funclink>MakeCrewMember</funclink>
-			<funclink>SelectCrew</funclink>
+			<funcLink>GetCrewEnabled</funcLink>
+			<funcLink>MakeCrewMember</funcLink>
+			<funcLink>SelectCrew</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-04</date>

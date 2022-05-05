@@ -16,7 +16,7 @@
 		</syntax>
 		<desc>Prüft, ob ein Objekt nur aus einem Objekttyp besteht.</desc>
 		<related>
-			<funclink>GetComponent</funclink>
+			<funcLink>GetComponent</funcLink>
 		</related>
 	</func>
 	<author>jwk</author><date>2002-04</date>

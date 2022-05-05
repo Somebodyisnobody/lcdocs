@@ -17,17 +17,17 @@
 		<desc>Setzt die Himmelsmodulation. Die Himmelsfarben werden mit der angegebenen Farbe so verrechnet wie auch ColorByOwner-Grafiken.</desc>
 		<examples>
 			<example>
-				<code>SetSkyAdjust(<funclink>RGBa</funclink>(255,255,255,127), <funclink>RGB</funclink>(127,127,127));</code>
+				<code>SetSkyAdjust(<funcLink>RGBa</funcLink>(255,255,255,127), <funcLink>RGB</funcLink>(127,127,127));</code>
 				<text>Graut den Himmel aus.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>GetSkyAdjust</funclink>
-			<funclink>SetMatAdjust</funclink>
-			<funclink>SetSkyFade</funclink>
-			<funclink>SetGamma</funclink>
-			<funclink>RGB</funclink>
-			<funclink>RGBa</funclink>
+			<funcLink>GetSkyAdjust</funcLink>
+			<funcLink>SetMatAdjust</funcLink>
+			<funcLink>SetSkyFade</funcLink>
+			<funcLink>SetGamma</funcLink>
+			<funcLink>RGB</funcLink>
+			<funcLink>RGBa</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-05</date>

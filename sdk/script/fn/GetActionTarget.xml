@@ -17,18 +17,18 @@
 		<desc>Liefert die aktuellen Aktivitätszielobjekte eines Objekts.</desc>
 		<examples>
 			<example>
-				<code><funclink>ObjectCall</funclink>( GetActionTarget( ), "ChopDown");</code>
+				<code><funcLink>ObjectCall</funcLink>( GetActionTarget( ), "ChopDown");</code>
 				<text>Im StartCall der Fällen-Aktivität eines Clonks ausgeführt, fällt es die meisten Bäume sofort.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>GetAction</funclink>
-			<funclink>GetActTime</funclink>
-			<funclink>GetPhase</funclink>
-			<funclink>ObjectSetAction</funclink>
-			<funclink>SetAction</funclink>
-			<funclink>SetActionTargets</funclink>
-			<funclink>SetPhase</funclink>
+			<funcLink>GetAction</funcLink>
+			<funcLink>GetActTime</funcLink>
+			<funcLink>GetPhase</funcLink>
+			<funcLink>ObjectSetAction</funcLink>
+			<funcLink>SetAction</funcLink>
+			<funcLink>SetActionTargets</funcLink>
+			<funcLink>SetPhase</funcLink>
 		</related>
 	</func>
 	<author>Günther</author><date>2002-04</date>

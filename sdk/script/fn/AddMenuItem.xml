@@ -11,7 +11,7 @@
 			<rtype>int</rtype>
 			<params>
 				<param><type>string</type><name>szCaption</name><desc>Text des neuen Menüeintrags</desc></param>
-				<param><type>string</type><name>szCommand</name><desc>Kommando, das bei Auswahl des Menüeintrags ausgeführt werden soll. Kann entweder ein Funktionsname oder ein Statement sein. Wenn ein Funktionsname angegeben wird, dann wird die Funktion in dem Objekt aufgerufen, welches bei <funclink>CreateMenu</funclink> als pCommandObject übergeben wurde.</desc></param>
+				<param><type>string</type><name>szCommand</name><desc>Kommando, das bei Auswahl des Menüeintrags ausgeführt werden soll. Kann entweder ein Funktionsname oder ein Statement sein. Wenn ein Funktionsname angegeben wird, dann wird die Funktion in dem Objekt aufgerufen, welches bei <funcLink>CreateMenu</funcLink> als pCommandObject übergeben wurde.</desc></param>
 				<param><type>id</type><name>idItem</name><desc>Die ID wird als Bild für den Menüeintrag verwendet. Der Name der Definition kann mit %s in szCaption verwendet werden. Außerdem wird die ID als erster Parameter an den Aufruf von szCommand übergeben, sofern dieser nur ein Funktionsname ist.</desc></param>
 				<param><type>object</type><name>pMenuObject</name><desc>Objekt, dessen Menü der Eintrag hinzugefügt werden soll. Kann bei lokalen Aufrufen 0 sein.</desc></param>
 				<param><type>int</type><name>iCount</name><desc>Gewünschte Zahl, die neben dem Menüeintrag angezeigt werden soll (ähnlich der Mengenanzeige im Aktivieren-Menü)</desc></param>
@@ -37,7 +37,7 @@
 					</table><br />
 					C4MN_Add_ImgColor = 6: Die Besitzerfarbflächen im Symbol werden mit der in XPar1 angegebenen Farbe eingefärbt. <br /><br />
 					Zusätzliche Flags (können mit obrigen Bits kombiniert werden):<br />
-					C4MN_Add_PassValue = 128: XPar2 wird als Wertangabe benutzt, und überschreibt die Standardangabe (Wert der Definition idItem). Siehe auch iExtra von <funclink>CreateMenu</funclink>.<br />
+					C4MN_Add_PassValue = 128: XPar2 wird als Wertangabe benutzt, und überschreibt die Standardangabe (Wert der Definition idItem). Siehe auch iExtra von <funcLink>CreateMenu</funcLink>.<br />
 					C4MN_Add_ForceCount = 256: Wenn dieses Flag angegeben wird, wird auch ein iCount von 0 im Menü als Anzahl angezeigt (wie es zB. auch im Kaufmenü der Fall ist).<br />
 					Bei dieser Gelegenheit sei auch erwähnt, dass intern der Wert C4MN_Item_NoCount = 12345678 verwendet wird, wenn dieses Flag nicht angegeben ist, aber iCount 0 ist. D.h. auch, dass in dem seltenen Fall, dass iCount mit 12345678 angegeben wird, keine Anzahl angezeigt wird. <br />
 					C4MN_Add_ForceNoDesc = 512: Wenn dieses Flag angegeben wird, wird auf keinen Fall eine Beschreibung für den Menüeintrag angezeigt. Beschreibung (setzbar mit szInfoCaption) in dem Sinn, dass ein Tooltip angezeigt wird, wenn der Menüeintrag lange genug ausgewählt ist.</desc><optional/></param>
@@ -97,11 +97,11 @@ func CreateItem(id item)
 			</example>
 		</examples>
 								<related>
-												<funclink>CreateMenu</funclink>
-												<funclink>SelectMenuItem</funclink>
-												<funclink>SetMenuDecoration</funclink>
-												<funclink>SetMenuTextProgress</funclink>
-			<funclink>CloseMenu</funclink>
+												<funcLink>CreateMenu</funcLink>
+												<funcLink>SelectMenuItem</funcLink>
+												<funcLink>SetMenuDecoration</funcLink>
+												<funcLink>SetMenuTextProgress</funcLink>
+			<funcLink>CloseMenu</funcLink>
 								</related>
 	</func>
 	<author>jwk</author><date>2002-04</date>

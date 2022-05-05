@@ -13,23 +13,23 @@
         <param><type>object</type><name>pObj</name><desc>Objektpointer, von dem die Nummer abgefragt wird.</desc></param>
       </params>
     </syntax>
-    <desc>Bestimmt die Nummer eines Objekts. Diese Nummer ist eindeutig und kann mittels der Funktion <funclink>Object</funclink> in einen Objektpointer zurückverwandelt werden.</desc>
+    <desc>Bestimmt die Nummer eines Objekts. Diese Nummer ist eindeutig und kann mittels der Funktion <funcLink>Object</funcLink> in einen Objektpointer zurückverwandelt werden.</desc>
     <examples>
       <example>
         <code>func Activate(pCaller)
 {
-  <funclink>CreateMenu</funclink>(<funclink>GetID</funclink>(), pCaller, pCaller, 0, "Kein geeignetes Objekte in Reichweite!");
+  <funcLink>CreateMenu</funcLink>(<funcLink>GetID</funcLink>(), pCaller, pCaller, 0, "Kein geeignetes Objekte in Reichweite!");
   var obj;
-  <funclink>while</funclink>(obj = <funclink>FindObject</funclink>(0, -50, -50, 100, 100, <constlink constGroup="OCF">OCF_Chop</constlink>, 0, 0, <funclink>NoContainer</funclink>(), obj))
-    <funclink>AddMenuItem</funclink>("%s fällen", <funclink>Format</funclink>("SetCommand(this(), \"Chop\", Object(%d))", ObjectNumber(obj)), <funclink>GetID</funclink>(obj), pCaller);
+  <funcLink>while</funcLink>(obj = <funcLink>FindObject</funcLink>(0, -50, -50, 100, 100, <constLink constGroup="OCF">OCF_Chop</constLink>, 0, 0, <funcLink>NoContainer</funcLink>(), obj))
+    <funcLink>AddMenuItem</funcLink>("%s fällen", <funcLink>Format</funcLink>("SetCommand(this(), \"Chop\", Object(%d))", ObjectNumber(obj)), <funcLink>GetID</funcLink>(obj), pCaller);
 }</code>
-        <text>Wird die Funktion aufgerufen, so wird im aufrufenden Objekt (pCaller) ein Menu erzeugt, das alle fällbaren (<constlink constGroup="OCF">OCF_Chop</constlink>) Objekte in einem bestimmten Bereich um das Objekt enthält.
-              Das Auswählen eines der Menüeinträge bewirkt dann, dass über <funclink>SetCommand</funclink> das Kommando "Chop" gesetzt wird. Da dabei der Objektpointer des Objekts zwischengespeichert werden muss,
+        <text>Wird die Funktion aufgerufen, so wird im aufrufenden Objekt (pCaller) ein Menu erzeugt, das alle fällbaren (<constLink constGroup="OCF">OCF_Chop</constLink>) Objekte in einem bestimmten Bereich um das Objekt enthält.
+              Das Auswählen eines der Menüeinträge bewirkt dann, dass über <funcLink>SetCommand</funcLink> das Kommando "Chop" gesetzt wird. Da dabei der Objektpointer des Objekts zwischengespeichert werden muss,
               wird der Pointer zuerst in die Objektnummer umgewandelt.</text>
       </example>
     </examples>
     <related>
-      <funclink>Object</funclink>
+      <funcLink>Object</funcLink>
     </related>
   </func>
   <author>PeterW</author><date>2003-02</date>

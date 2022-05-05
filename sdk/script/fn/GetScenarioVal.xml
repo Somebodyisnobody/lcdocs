@@ -30,7 +30,7 @@
       </params>
     </syntax>
 
-    <desc>Fragt Eigenschaftswerte des Szenarios anhand dessen Namen/Sekion in der <emlink href="scenario/scenario.html">Scenario.txt</emlink> ab</desc>
+    <desc>Fragt Eigenschaftswerte des Szenarios anhand dessen Namen/Sekion in der <emLink href="scenario/scenario.html">Scenario.txt</emLink> ab</desc>
 
     <remark>Achtung! Die abgefragten Werte können teilweise nicht sync-sicher sein (also z.B. bei
             verschiedenen Rechnern in einem Netzwerkspiel verschiedene Werte zurückliefern)</remark>
@@ -39,7 +39,7 @@
 
     <examples>
       <example>
-        <code><funclink>Log</funclink>("You are playing \"%s\"!", GetScenTitle());</code>
+        <code><funcLink>Log</funcLink>("You are playing \"%s\"!", GetScenTitle());</code>
 
         <text>Gibt eine Meldung mit dem Szenariotitel aus.</text>
 
@@ -48,12 +48,12 @@
 
 
     <related>
-      <funclink>GetDefCoreVal</funclink>
-      <funclink>GetObjectVal</funclink>
-      <funclink>GetObjectInfoCoreVal</funclink>
-      <funclink>GetActMapVal</funclink>
-      <funclink>GetPlayerVal</funclink>
-      <funclink>GetPlayerInfoCoreVal</funclink>
+      <funcLink>GetDefCoreVal</funcLink>
+      <funcLink>GetObjectVal</funcLink>
+      <funcLink>GetObjectInfoCoreVal</funcLink>
+      <funcLink>GetActMapVal</funcLink>
+      <funcLink>GetPlayerVal</funcLink>
+      <funcLink>GetPlayerInfoCoreVal</funcLink>
     </related>
 
   </func>

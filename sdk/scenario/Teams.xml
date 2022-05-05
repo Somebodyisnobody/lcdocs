@@ -84,13 +84,13 @@
 	<row>
 		<col>Name</col>
 		<col>Zeichenfole (max 30)</col>
-		<col>Name für das Team. Es können wie in Scripten auch lokalisierte Zeichenketten wie $TeamRight$ benutzt werden. Siehe <emlink href="lang.html#Teamstxt">Sprachanpassung</emlink>.</col>
+		<col>Name für das Team. Es können wie in Scripten auch lokalisierte Zeichenketten wie $TeamRight$ benutzt werden. Siehe <emLink href="lang.html#Teamstxt">Sprachanpassung</emLink>.</col>
 		<col></col>
 	</row>
 	<row>
 		<col>PlrStartIndex</col>
 		<col>Integer</col>
-		<col>Wenn ungleich 0, wird für alle Mitglieder dieses Teams die entsprechende [PlayerX]-Sektion der <emlink href="scenario/scenario.html#SektionenPlayer1Player2Player3Player4">Scenario.txt</emlink> für die Startparameter verwendet. 0 für automatische Vergabe unabhängig von den Teams.</col>
+		<col>Wenn ungleich 0, wird für alle Mitglieder dieses Teams die entsprechende [PlayerX]-Sektion der <emLink href="scenario/scenario.html#SektionenPlayer1Player2Player3Player4">Scenario.txt</emLink> für die Startparameter verwendet. 0 für automatische Vergabe unabhängig von den Teams.</col>
 		<col>0</col>
 	</row>
 	<row>

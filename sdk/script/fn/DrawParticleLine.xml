@@ -25,15 +25,15 @@
 		<desc>Erzeugt ein Linie zwischen zwei Punkten aus Partikeln. Rückgabewert ist die Anzahl der erzeugten Partikel.</desc>
 		<examples>
 			<example>
-				<code>DrawParticleLine("MSpark", 0, 0, <funclink>GetX</funclink>(<funclink>GetCursor</funclink>())-<funclink>GetX</funclink>(), <funclink>GetY</funclink>(<funclink>GetCursor</funclink>())-<funclink>GetY</funclink>(), 20, 100, <funclink>RGBa</funclink>(255,50,50,50), <funclink>RGBa</funclink>(50,255,50,100), -10);</code>
+				<code>DrawParticleLine("MSpark", 0, 0, <funcLink>GetX</funcLink>(<funcLink>GetCursor</funcLink>())-<funcLink>GetX</funcLink>(), <funcLink>GetY</funcLink>(<funcLink>GetCursor</funcLink>())-<funcLink>GetY</funcLink>(), 20, 100, <funcLink>RGBa</funcLink>(255,50,50,50), <funcLink>RGBa</funcLink>(50,255,50,100), -10);</code>
 				<text>Erzeugt eine von rot nach blau verlaufende Linie vom aufrufenden Objekt zum ausgewählten Clonk des erste Spielers.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>CreateParticle</funclink>
-			<funclink>CastParticles</funclink>
-			<funclink>RGB</funclink>
-			<funclink>RGBa</funclink>
+			<funcLink>CreateParticle</funcLink>
+			<funcLink>CastParticles</funcLink>
+			<funcLink>RGB</funcLink>
+			<funcLink>RGBa</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-05</date>

@@ -18,8 +18,8 @@
 		</syntax>
 		<desc>Setzt die Auswahlmarkierung eines Spielers auf ein Zielobjekt und aktiviert dieses für die Steuerung.</desc>
 		<related>
-			<funclink>GetCursor</funclink>
-			<funclink>SelectCrew</funclink>
+			<funcLink>GetCursor</funcLink>
+			<funcLink>SelectCrew</funcLink>
 		</related>
 	</func>
 	<author>jwk</author><date>2002-08</date>

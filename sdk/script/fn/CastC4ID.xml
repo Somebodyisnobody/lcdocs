@@ -15,9 +15,9 @@
 		</syntax>
 		<desc>Wandelt einen Wert in eine ID um.</desc>
 		<related>
-			<funclink>CastAny</funclink>
-			<funclink>CastBool</funclink>
-			<funclink>CastInt</funclink>
+			<funcLink>CastAny</funcLink>
+			<funcLink>CastBool</funcLink>
+			<funcLink>CastInt</funcLink>
 		</related>
 	</func>
 	<author>Fulgen</author><date>2016-08</date>

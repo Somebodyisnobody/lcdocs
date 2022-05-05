@@ -14,10 +14,10 @@
 				<param><type>int</type><name>iAmount</name><desc>Menge der zu erzeugenden Objekte</desc></param>
 				<param><type>string</type><name>Mat</name><desc>Material in die Objekte erzeugt werden soll. Hier kann entweder der Materialname angegeben werden oder folgende Zeichenketten:
 <table activateBitmask="false" bitmaskName=""><rowh><col>iMat</col><col>Erzeugung in</col></rowh>
-<row><col>"GBackSolid"</col><col>Objekte werden in festem Material erzeugt. Siehe auch <funclink>GBackSolid</funclink>()</col></row>
-<row><col>"GBackSemiSolid"</col><col>Objekte werden in festem oder flüssigem Material erzeugt. Siehe auch <funclink>GBackSemiSolid</funclink>()</col></row>
-<row><col>"GBackLiquid"</col><col>Objekte werden in flüssigem Material erzeugt. Siehe auch <funclink>GBackLiquid</funclink>()</col></row>
-<row><col>"GBackSky"</col><col>Objekte werden im freien Himmel erzeugt. Siehe auch <funclink>GBackSky</funclink>()</col></row>
+<row><col>"GBackSolid"</col><col>Objekte werden in festem Material erzeugt. Siehe auch <funcLink>GBackSolid</funcLink>()</col></row>
+<row><col>"GBackSemiSolid"</col><col>Objekte werden in festem oder flüssigem Material erzeugt. Siehe auch <funcLink>GBackSemiSolid</funcLink>()</col></row>
+<row><col>"GBackLiquid"</col><col>Objekte werden in flüssigem Material erzeugt. Siehe auch <funcLink>GBackLiquid</funcLink>()</col></row>
+<row><col>"GBackSky"</col><col>Objekte werden im freien Himmel erzeugt. Siehe auch <funcLink>GBackSky</funcLink>()</col></row>
 </table>
 </desc></param>
 				<param><type>int</type><name>iX</name><desc>Linke Kante der Position. Bei lokalem Aufruf Offset zum aufrufenden Objekt.</desc><optional /></param>
@@ -38,17 +38,17 @@ Es wird sichergestellt, dass keine Endlosschleife entsteht.
 		</remark>
 		<examples>
 			<example>
-				<code>PlaceObjects(LOAM,20,<funclink>Material</funclink>("Earth"),100,0,200)</code>
+				<code>PlaceObjects(LOAM,20,<funcLink>Material</funcLink>("Earth"),100,0,200)</code>
 				<text>Erzeugt 20 Lehmklumpen in Erde innherhalb der Koordinaten 100,0 und 200,LandscapeHeight()</text>
 			</example>
 			<example>
-				<code>PlaceObjects(FISH,10,"GBackLiquid",0,0,0,<funclink>LandscapeHeight</funclink>()/2,0,1);</code>
+				<code>PlaceObjects(FISH,10,"GBackLiquid",0,0,0,<funcLink>LandscapeHeight</funcLink>()/2,0,1);</code>
 				<text>Erzeugt insgesamt 10 Fische in allen Flüssigkeiten die sich in der oberen Landschaftshälfte befinden</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>CreateObject</funclink>
-			<funclink>PlaceInMaterial</funclink>
+			<funcLink>CreateObject</funcLink>
+			<funcLink>PlaceInMaterial</funcLink>
 		</related>
 	</func>
 	<author>Tyron</author><date>2004-08</date>

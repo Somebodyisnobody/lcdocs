@@ -12,8 +12,8 @@
                 </syntax>
                 <desc>Liefert die aktuelle Jahreszeit. 0 ist Winter, 50 Sommer.</desc>
                 <related>
-                        <funclink>GetClimate</funclink>
-                        <funclink>GetTemperature</funclink>
+                        <funcLink>GetClimate</funcLink>
+                        <funcLink>GetTemperature</funcLink>
                 </related>
         </func>
         <author>Cucaracha</author><date>2002-05</date>

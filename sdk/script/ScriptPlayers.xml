@@ -14,7 +14,7 @@
 	<text>Scriptspieler sind nützlich, um zum Beispiel KI-Gegner zu realisieren.</text>
 
 	<h id="Runtime">Beitritt zur Laufzeit</h>
-<text>Fürs Erstellen einer KI zur Laufzeit - zum Beispiel als Gegner im Deathmatch - dient <funclink>CreateScriptPlayer</funclink>. Daraufhin erfolgt (unter Umständen verzögert, weil es sich um einen Spielerbeitritt handelt!) ein InitializePlayer-Aufruf für diesen Scriptspieler. Da der Aufruf verzögert ist, sollte die eigentliche KI-Initialisierung in diesem Aufruf passieren.</text>
+<text>Fürs Erstellen einer KI zur Laufzeit - zum Beispiel als Gegner im Deathmatch - dient <funcLink>CreateScriptPlayer</funcLink>. Daraufhin erfolgt (unter Umständen verzögert, weil es sich um einen Spielerbeitritt handelt!) ein InitializePlayer-Aufruf für diesen Scriptspieler. Da der Aufruf verzögert ist, sollte die eigentliche KI-Initialisierung in diesem Aufruf passieren.</text>
 
 <text>Dazu ein Beispiel:</text>
 
@@ -25,7 +25,7 @@
 public func Activate(int iPlr)
   {
   // Der Spieler iPlr hat die Spielregel ausgewählt. Erzeuge einen KI-Gegner!
-  <funclink>return</funclink>(<funclink>CreateScriptPlayer</funclink>("Computer", 0x7f7f7f));
+  <funcLink>return</funcLink>(<funcLink>CreateScriptPlayer</funcLink>("Computer", 0x7f7f7f));
   }
   
 protected func InitializePlayer(int iPlr)
@@ -33,27 +33,27 @@ protected func InitializePlayer(int iPlr)
   // Ein Spieler ist beigetreten. Dieser Aufruf erfolgt an das Szenarienscript, sowie an alle Spielregeln,
   // Spielziele und Umweltobjekte
   // Ist es ein Scriptspieler?
-  <funclink>if</funclink> (<funclink>GetPlayerType</funclink>(iPlr) == C4PT_Script)
+  <funcLink>if</funcLink> (<funcLink>GetPlayerType</funcLink>(iPlr) == C4PT_Script)
     {
     // Dann übernimm die Steuerung für alle Clonks!
     var iCrew, pCrew;
-    <funclink>while</funclink> (pCrew = <funclink>GetCrew</funclink>(iPlr, iCrew++))
-      <funclink>AddEffect</funclink>("Int_EAI", pCrew, 1, 100, <funclink>this</funclink>());
+    <funcLink>while</funcLink> (pCrew = <funcLink>GetCrew</funcLink>(iPlr, iCrew++))
+      <funcLink>AddEffect</funcLink>("Int_EAI", pCrew, 1, 100, <funcLink>this</funcLink>());
     }
   }
   
 protected func FxInt_EAITimer(object pCrew, int iEffNum, int iEffTime)
   {
   // Nächsten Gegner angreifen
-  var pEnemy = <funclink>FindObject2</funclink>(<funclink>Find_Hostile</funclink>(<funclink>GetOwner</funclink>(pCrew)), <funclink>Find_OCF</funclink>(<constlink constGroup="OCF">OCF_Alive</constlink>), <funclink>Sort_Distance</funclink>());
-  <funclink>if</funclink> (pEnemy) <funclink>SetCommand</funclink>(pCrew, "Attack", pEnemy);
-  <funclink>return</funclink> FX_OK;
+  var pEnemy = <funcLink>FindObject2</funcLink>(<funcLink>Find_Hostile</funcLink>(<funcLink>GetOwner</funcLink>(pCrew)), <funcLink>Find_OCF</funcLink>(<constLink constGroup="OCF">OCF_Alive</constLink>), <funcLink>Sort_Distance</funcLink>());
+  <funcLink>if</funcLink> (pEnemy) <funcLink>SetCommand</funcLink>(pCrew, "Attack", pEnemy);
+  <funcLink>return</funcLink> FX_OK;
   }
 </code>
 
 <text>Dieses Beispielscript für ein Regelobjekt erlaubt dem Spieler, zur Laufzeit KI-Gegner zu erstellen. Außerdem sorgt es dafür, dass alle Clonks dieses KI-Gegners angreifen. Achtung: Das Beispiel übernimmt die Kontrolle nur für alle Clonks, die der Spieler zu Spielbeginn nach Szenarienvorgaben erhalten hat. Wenn ein Szenarienscript zum Beispiel noch andere Clonks erstellen würde, würden diese nicht gesteuert.</text>
 
-<text>Für Internetspiele kann man auch MaxScriptPlayers in der <emlink href="scenario/Teams.html">Teams.txt</emlink> auf einen Wert >0 setzen. Dann bekommt man in der Lobby die Option, Scriptspieler zu aktivieren. Diese Spieler treten auch wie gewöhnliche Spieler bei, und man sollte auch hier in InitializePlayer entsprechend das KI-Kontrollobjekt erstellen. Das obige Beispiel würde also auch sofort mit in der Lobby aktivierten KI-Spielern funktionieren.</text>
+<text>Für Internetspiele kann man auch MaxScriptPlayers in der <emLink href="scenario/Teams.html">Teams.txt</emLink> auf einen Wert >0 setzen. Dann bekommt man in der Lobby die Option, Scriptspieler zu aktivieren. Diese Spieler treten auch wie gewöhnliche Spieler bei, und man sollte auch hier in InitializePlayer entsprechend das KI-Kontrollobjekt erstellen. Das obige Beispiel würde also auch sofort mit in der Lobby aktivierten KI-Spielern funktionieren.</text>
 
 <h id="Preset">Beitritt als Vorgabe</h>
 
@@ -79,11 +79,11 @@ LastPlayerID=1
 
 <text>Dies führt eine Spieler-Wiederherstellung durch, analog zur Wiederherstellung nach einem Savegame. Es wird also kein InitializePlayer für diesen Spieler aufgerufen. Das Szenarienscript sollte in der Initialisierung die Crew für diesen Spieler erstellen, oder es sollte eine entsprechende Crew in der Objects.txt vorhanden sein. Ansonsten wird der Scriptspieler sofort zum Spielbeginn eliminiert.</text>
 
-<text>Scriptspieler werden im Gegensatz zu regulären Spielern ebenfalls gespeichert, wenn man in der Konsole "Speichern als Szenario" wählt. Auf diese Weise kann man sich die richtige SavePlayerInfos.txt automatisch anlegen lassen. Dazu sollte einfach im Entwicklermodus manuell <funclink>CreateScriptPlayer</funclink> aufgerufen und dann Clonks für diesen Scriptspieler verteilt werden. Speichert man dann als Szenario, wird der Scriptspieler mitgespeichert und steht beim Starten wieder zur Verfügung.</text>
+<text>Scriptspieler werden im Gegensatz zu regulären Spielern ebenfalls gespeichert, wenn man in der Konsole "Speichern als Szenario" wählt. Auf diese Weise kann man sich die richtige SavePlayerInfos.txt automatisch anlegen lassen. Dazu sollte einfach im Entwicklermodus manuell <funcLink>CreateScriptPlayer</funcLink> aufgerufen und dann Clonks für diesen Scriptspieler verteilt werden. Speichert man dann als Szenario, wird der Scriptspieler mitgespeichert und steht beim Starten wieder zur Verfügung.</text>
 
 <h id="Specialized">Spezialisierte Spieler</h>
 <text>Manchmal kann es sinnvoll sein, einen Scriptspieler erst zur Laufzeit zu erstellen aber trotzdem eine spezielle Initialisierung durchzuführen. Zum Beispiel sollte ein spezieller Alien-Gegner in einem Hazard-Deathmatch keine Hazardclonks erhalten.</text>
-<text>Mit einem Parameter an <funclink>CreateScriptPlayer</funclink> lassen sich die szenarienspezifische Initialisierung, das heißt das Erzeugen des Startmaterials, das Setzen der Startparameter nach Vorgaben und auch alle InitializePlayer-Aufrufe unterbinden. Stattdessen erfolgt nur ein InitializeScriptPlayer-Definitionsaufruf in der angegebenen Definition. Dazu ein Beispiel:</text>
+<text>Mit einem Parameter an <funcLink>CreateScriptPlayer</funcLink> lassen sich die szenarienspezifische Initialisierung, das heißt das Erzeugen des Startmaterials, das Setzen der Startparameter nach Vorgaben und auch alle InitializePlayer-Aufrufe unterbinden. Stattdessen erfolgt nur ein InitializeScriptPlayer-Definitionsaufruf in der angegebenen Definition. Dazu ein Beispiel:</text>
 
 <code>/* Script einer aktivierten Spielregel namens "Aliens erzeugen" */
 
@@ -92,7 +92,7 @@ LastPlayerID=1
 public func Activate(int iPlr)
   {
   // Der Spieler iPlr hat die Spielregel ausgewählt. Erzeuge einen Alien-Gegner!
-  <funclink>return</funclink>(<funclink>CreateScriptPlayer</funclink>("Aliens", 0x00ff00, 0, CSPF_FixedAttributes | CSPF_NoScenarioInit, GetID()));
+  <funcLink>return</funcLink>(<funcLink>CreateScriptPlayer</funcLink>("Aliens", 0x00ff00, 0, CSPF_FixedAttributes | CSPF_NoScenarioInit, GetID()));
   }
   
 protected func InitializeScriptPlayer(int iPlr, int idTeam)
@@ -104,15 +104,15 @@ protected func InitializeScriptPlayer(int iPlr, int idTeam)
   MakeCrewMember(pAlien, iPlr);
   SetClrModulation(0x7fff7f, pAlien);
   // Und angreifen lassen
-  <funclink>AddEffect</funclink>("Int_EAI", pAlien, 1, 100, 0, GetID());
+  <funcLink>AddEffect</funcLink>("Int_EAI", pAlien, 1, 100, 0, GetID());
   }
   
 protected func FxInt_EAITimer(object pCrew, int iEffNum, int iEffTime)
   {
   // Nächsten Gegner angreifen
-  var pEnemy = <funclink>FindObject2</funclink>(<funclink>Find_Hostile</funclink>(<funclink>GetOwner</funclink>(pCrew)), <funclink>Find_OCF</funclink>(<constlink constGroup="OCF">OCF_Alive</constlink>), <funclink>Sort_Distance</funclink>());
-  <funclink>if</funclink> (pEnemy) <funclink>SetCommand</funclink>(pCrew, "Attack", pEnemy);
-  <funclink>return</funclink> FX_OK;
+  var pEnemy = <funcLink>FindObject2</funcLink>(<funcLink>Find_Hostile</funcLink>(<funcLink>GetOwner</funcLink>(pCrew)), <funcLink>Find_OCF</funcLink>(<constLink constGroup="OCF">OCF_Alive</constLink>), <funcLink>Sort_Distance</funcLink>());
+  <funcLink>if</funcLink> (pEnemy) <funcLink>SetCommand</funcLink>(pCrew, "Attack", pEnemy);
+  <funcLink>return</funcLink> FX_OK;
   }
 </code>
 

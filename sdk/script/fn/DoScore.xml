@@ -22,8 +22,8 @@
 			</example>
 		</examples>
 		<related>
-			<funclink>GetScore</funclink>
-			<funclink>GetPlrValue</funclink>
+			<funcLink>GetScore</funcLink>
+			<funcLink>GetPlrValue</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

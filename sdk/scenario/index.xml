@@ -12,10 +12,10 @@
 	
 	<h id="SzenarioKomponentenC4S">Szenario-Komponenten (C4S)</h>
 	<dl>
-		<dt id="Szenariotxt"><img src="../../images/icon_text.gif" width="16" height="16"/><emlink href="scenario/scenario.html">Scenario.txt</emlink></dt>
+		<dt id="Szenariotxt"><img src="../../images/icon_text.gif" width="16" height="16"/><emLink href="scenario/scenario.html">Scenario.txt</emLink></dt>
 		<dd><text>Enthält die meisten Szenarioeinstellungen.</text></dd>
 		
-		<dt id="Teamstxt"><img src="../../images/icon_text.gif" width="16" height="16"/><emlink href="scenario/Teams.html">Teams.txt</emlink></dt>
+		<dt id="Teamstxt"><img src="../../images/icon_text.gif" width="16" height="16"/><emLink href="scenario/Teams.html">Teams.txt</emLink></dt>
 		<dd><text>Enthält Teameinstellungen für Mehrspielerszenarien. Ab 4.9.6.0 CR.</text></dd>
 		
 		<dt id="Title"><img src="../../images/icon_image.gif" width="16" height="16"/>Title.png/Title.bmp</dt>
@@ -41,17 +41,17 @@
 US:Attack of the Killer Wipfs</code>
 		<text>Wichtig: es sollten keine Anführungszeichen oder Sonderzeichen verwendet werden.</text></dd>
 		
-		<dt id="Scriptc"><img src="../../images/icon_text.gif" width="16" height="16"/><emlink href="scenario/script.html">Script.c</emlink></dt>
+		<dt id="Scriptc"><img src="../../images/icon_text.gif" width="16" height="16"/><emLink href="scenario/script.html">Script.c</emLink></dt>
 		<dd><text>Das Szenarioscript.</text></dd>
 		
 		<dt id="Landscapebmp"><img src="../../images/icon_image.gif" width="16" height="16"/>Landscape.bmp</dt>
-		<dd><text>Statische Landkarten werden um den in Scenario.txt enthaltenen Faktor MapZoom auf die tatsächliche Spiellandschaft vergrößert. Die in Landscape.bmp enthaltenen Farbindizes entsprechen den in <emlink href="material/index.html#TexMaptxt">TexMap.txt</emlink> zugeordneten Materialien und Texturen.</text>
+		<dd><text>Statische Landkarten werden um den in Scenario.txt enthaltenen Faktor MapZoom auf die tatsächliche Spiellandschaft vergrößert. Die in Landscape.bmp enthaltenen Farbindizes entsprechen den in <emLink href="material/index.html#TexMaptxt">TexMap.txt</emLink> zugeordneten Materialien und Texturen.</text>
 		<text>Exakte Landkarten (ExactLandscape) geben die tatsächliche Spiellandschaft wieder. Die Farbindizes in Landscape.bmp (128-191 und 192-255, jeweils 3 Farben pro Material) repräsentieren direkt die für das Szenario festgelegten Materialien. Die aktuelle Materialanordnung wird in MatMap.txt festgehalten.</text></dd>
 		
 		<dt id="Landscapepng"><img src="../../images/icon_image.gif" width="16" height="16"/>Landscape.png</dt>
 		<dd><text>Die Karte in Originalgröße für exakte Landschaften. Hier wird für Spielstände das aktuelle Erscheinungsbild der Landkarte mit Halbtransparenz und texturierten Materialien abgelegt. Exakte Landschaften beanspruchen sehr viel Speicherplatz und sollten daher in regulären Szenarien nicht verwendet werden.</text></dd>
 		
-		<dt id="Landscapetxt"><img src="../../images/icon_text.gif" width="16" height="16"/><emlink href="scenario/MapCreatorS2.html">Landscape.txt</emlink></dt>
+		<dt id="Landscapetxt"><img src="../../images/icon_text.gif" width="16" height="16"/><emLink href="scenario/MapCreatorS2.html">Landscape.txt</emLink></dt>
 		<dd><text>Besonders fortgeschrittene Spieler können über diese Datei komplexe Zufallslandschaften definieren. Dafür sind allerdings mathematisches und logisches Verständnis sowie viel Geduld unumgänglich.</text></dd>
 		
 		<dt id="MatMaptxt"><img src="../../images/icon_text.gif" width="16" height="16"/>MatMap.txt</dt>
@@ -60,7 +60,7 @@ US:Attack of the Killer Wipfs</code>
 		<dt id="Objectstxt"><img src="../../images/icon_text.gif" width="16" height="16"/>Objects.txt</dt>
 		<dd><text>Diese Komponente wird von der Engine erzeugt und enthält die Laufzeitobjektdaten eines abgespeicherten Szenarios.</text></dd>
 		
-		<dt id="Materialc4g"><img src="../../images/icon_system.gif" width="16" height="16"/><emlink href="material/index.html">Material.c4g</emlink></dt>
+		<dt id="Materialc4g"><img src="../../images/icon_system.gif" width="16" height="16"/><emLink href="material/index.html">Material.c4g</emLink></dt>
 		<dd><text>Szenarien können lokale Materialdefinitionen enthalten. Es gelten die <a href="#UeberladungenC4S">Überladungsregeln</a>.</text></dd>
 		
 		<dt id="Graphicsc4g"><img src="../../images/icon_system.gif" width="16" height="16"/>Graphics.c4g</dt>
@@ -70,12 +70,12 @@ US:Attack of the Killer Wipfs</code>
 		<dd><text>Szenarien können beliebig lokale Sounds enthalten. Diese können per Script während des Spiels abgespielt werden. Szenariolokale Sounds werden dynamisch und erst bei Bedarf geladen, was bei großen Szenariodateien zu Verzögerungen führen kann.</text></dd>
 		
 		<dt id="mid"><img src="../../images/icon_music.gif" width="16" height="16"/>*.mid/*.ogg</dt>
-		<dd><text>Wenn das Szenario lokale Musikdateien enthält, werden diese während der Runde in zufälliger Reihenfolge abgespielt. Siehe auch Script-Funktion <emlink href="script/fn/Music.html">Music</emlink>().</text></dd>
+		<dd><text>Wenn das Szenario lokale Musikdateien enthält, werden diese während der Runde in zufälliger Reihenfolge abgespielt. Siehe auch Script-Funktion <emLink href="script/fn/Music.html">Music</emLink>().</text></dd>
 		
 		<dt id="Musicc4g"><img src="../../images/icon_system.gif" width="16" height="16"/>Music.c4g</dt>
 		<dd><text>Lokale Musikstücke können auch in dieser lokalen Gruppendatei abgelegt werden.</text></dd>
 		
-		<dt id="c4d"><img src="../../images/icon_object_definition.gif" width="16" height="16"/><emlink href="definition/index.html">*.c4d</emlink></dt>
+		<dt id="c4d"><img src="../../images/icon_object_definition.gif" width="16" height="16"/><emLink href="definition/index.html">*.c4d</emLink></dt>
 		<dd><text>Szenarien können lokale Objektdefinitionen enthalten, die dann nur im entsprechenden Szenario verfügbar sind.</text>
 		<text>Die Engine durchsucht auch alle übergeordneten Rundenordner (c4f) des Szenarios nach Objektdefinitionen. Dadurch kann ein Rundenordner Objektdefinitionen enthalten, die dann in allen untergeordneten Szenarien verfügbar sind.</text></dd>
 		

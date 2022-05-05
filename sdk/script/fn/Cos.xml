@@ -17,8 +17,8 @@
 		</syntax>
 		<desc>Liefert cos(iAngle) * iRadius.</desc>
 		<related>
-			<funclink>Sin</funclink>
-			<funclink>Angle</funclink>
+			<funcLink>Sin</funcLink>
+			<funcLink>Angle</funcLink>
 		</related>
 	</func>
 	<author>springer</author><date>2002-04</date>

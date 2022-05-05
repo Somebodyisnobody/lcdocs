@@ -22,7 +22,7 @@
     </remark>
     <examples>
       <example>
-        <code>public func IsRiding() { return WildcardMatch(<funclink>GetAction</funclink>(), "Ride*"); }</code>
+        <code>public func IsRiding() { return WildcardMatch(<funcLink>GetAction</funcLink>(), "Ride*"); }</code>
         <text>Liefert <code>true</code> für alle Aktionen, die mit "Ride" anfangen ("Ride" selbst, "RideStill", "RideThrow", usw.).</text>
       </example>
       <example>

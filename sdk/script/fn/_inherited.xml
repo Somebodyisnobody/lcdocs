@@ -13,7 +13,7 @@
         <param><type>any</type><name>...</name><desc>Aufrufparameter</desc></param>
       </params>
     </syntax>
-    <desc>Ruft die überladene Funktion auf. Funktionen überladen sich, wenn sie beide den gleichen Namen haben. Die Funktion ist im Gegensatz zu <funclink>inherited</funclink> außerdem failsafe. Das heißt, dass es zu keinem Fehler führt, wenn die Ursprungsfunktion gar nicht existiert.</desc>
+    <desc>Ruft die überladene Funktion auf. Funktionen überladen sich, wenn sie beide den gleichen Namen haben. Die Funktion ist im Gegensatz zu <funcLink>inherited</funcLink> außerdem failsafe. Das heißt, dass es zu keinem Fehler führt, wenn die Ursprungsfunktion gar nicht existiert.</desc>
     <examples>
       <example>
 
@@ -22,14 +22,14 @@
 #appendto CLNK
 
 Initialize:
-  <funclink>CreateContents</funclink>(FLNT);
-  <funclink>return</funclink>(_inherited(<funclink>Par</funclink>(), <funclink>Par</funclink>(1)));</code>
+  <funcLink>CreateContents</funcLink>(FLNT);
+  <funcLink>return</funcLink>(_inherited(<funcLink>Par</funcLink>(), <funcLink>Par</funcLink>(1)));</code>
 
         <text>Gibt jedem Clonk zu Beginn einen Feuerstein.</text>
       </example>
     </examples>
     <related>
-      <funclink>inherited</funclink>
+      <funcLink>inherited</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2001-11</date>

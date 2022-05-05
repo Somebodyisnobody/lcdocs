@@ -18,13 +18,13 @@
     <desc>Löst innerhalb eines kreisförmigen Bereiches halbfestes Material in der Landschaft. Für gelöstes Material wird neu geprüft, ob es in darunterliegendes Material fallen kann. Dadurch kann man zum Beispiel Höhlendecken einstürzen lassen.</desc>
     <examples>
       <example>
-        <code>ShakeFree(<funclink>LandscapeWidth</funclink>()/2, <funclink>LandscapeHeight</funclink>()/2, <funclink>Distance</funclink>(<funclink>LandscapeWidth</funclink>(), <funclink>LandscapeHeight</funclink>())/2);</code>
+        <code>ShakeFree(<funcLink>LandscapeWidth</funcLink>()/2, <funcLink>LandscapeHeight</funcLink>()/2, <funcLink>Distance</funcLink>(<funcLink>LandscapeWidth</funcLink>(), <funcLink>LandscapeHeight</funcLink>())/2);</code>
         <text>Schüttelt die gesamte Landschaft frei. Achtung: Extrem rechenintensiv :)</text>
       </example>
     </examples>
     <related>
-      <funclink>ShakeObjects</funclink>
-      <funclink>CastPXS</funclink><funclink>CastPXSX</funclink>
+      <funcLink>ShakeObjects</funcLink>
+      <funcLink>CastPXS</funcLink><funcLink>CastPXSX</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2003-06</date>

@@ -16,14 +16,14 @@
 		<desc>Ermittelt den gerade ausgewählten Menüeintrag des geöffneten Menüs eines Objekts.</desc>
 		<examples>
 			<example>
-				<code><funclink>Log</funclink>("Aktuelle Auswahl: Punkt %d...", GetMenuSelection(<funclink>GetCursor</funclink>(0));</code>
+				<code><funcLink>Log</funcLink>("Aktuelle Auswahl: Punkt %d...", GetMenuSelection(<funcLink>GetCursor</funcLink>(0));</code>
 				<text>Gibt ins Log aus, welchen Menüpunkt der Spieler gerade gewählt hat.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>CreateMenu</funclink>
-			<funclink>SetMenuDecoration</funclink>
-			<funclink>SetMenuTextProgress</funclink>
+			<funcLink>CreateMenu</funcLink>
+			<funcLink>SetMenuDecoration</funcLink>
+			<funcLink>SetMenuTextProgress</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

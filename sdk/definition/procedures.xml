@@ -20,14 +20,14 @@ automatisch nach Jump, sobald der Boden unter den Füßen verloren wurde.</text>
 </rowh><row>
   <col>NONE</col>
   <col>Keine Prozedur</col>
-  <col>Nur Schwerkraft oder in der <emlink href="definition/actmap.html">Aktivität</emlink>
+  <col>Nur Schwerkraft oder in der <emLink href="definition/actmap.html">Aktivität</emLink>
 festgelegtes Attach.</col>
   <col>[Action] Attach</col>
 </row><row>
   <col>WALK</col>
   <col>Laufen</col>
-  <col>Nach <emlink href="definition/defcore.html#SektionPhysical">Physical</emlink> Walk und aktueller
-<constlink constGroup="COMD"></constlink>.</col>
+  <col>Nach <emLink href="definition/defcore.html#SektionPhysical">Physical</emLink> Walk und aktueller
+<constLink constGroup="COMD"></constLink>.</col>
   <col>CNAT_Bottom</col>
 </row><row>
   <col>FLIGHT</col>
@@ -37,101 +37,101 @@ festgelegtes Attach.</col>
 </row><row>
   <col>KNEEL</col>
   <col>Aufstehen</col>
-  <col>Verhalten nach <emlink href="definition/actmap.html">Aktivität</emlink>.</col>
+  <col>Verhalten nach <emLink href="definition/actmap.html">Aktivität</emLink>.</col>
   <col>CNAT_Bottom</col>
 </row><row>
   <col>SCALE</col>
   <col>Klettern</col>
-  <col>Nach <emlink href="definition/defcore.html#SektionPhysical">Physical</emlink> Scale und aktueller
-<constlink constGroup="COMD"></constlink>.</col>
+  <col>Nach <emLink href="definition/defcore.html#SektionPhysical">Physical</emLink> Scale und aktueller
+<constLink constGroup="COMD"></constLink>.</col>
   <col>CNAT_Left/Right</col>
 </row><row>
   <col>HANGLE</col>
   <col>Hangeln</col>
-  <col>Nach <emlink href="definition/defcore.html#SektionPhysical">Physical</emlink> Hangle und aktueller
-<constlink constGroup="COMD"></constlink>.</col>
+  <col>Nach <emLink href="definition/defcore.html#SektionPhysical">Physical</emLink> Hangle und aktueller
+<constLink constGroup="COMD"></constLink>.</col>
   <col>CNAT_Top</col>
 </row><row>
   <col>DIG</col>
   <col>Graben</col>
-  <col>Nach <emlink href="definition/defcore.html#SektionPhysical">Physical</emlink> Dig und aktueller
-<constlink constGroup="COMD"></constlink>. Bei
-<emlink href="script/fn/SetActionData.html">Data</emlink>=1 wird Material freigegraben.</col>
+  <col>Nach <emLink href="definition/defcore.html#SektionPhysical">Physical</emLink> Dig und aktueller
+<constLink constGroup="COMD"></constLink>. Bei
+<emLink href="script/fn/SetActionData.html">Data</emLink>=1 wird Material freigegraben.</col>
   <col>CNAT_None</col>
 </row><row>
   <col>SWIM</col>
   <col>Schwimmen</col>
-  <col>Nach <emlink href="definition/defcore.html#SektionPhysical">Physical</emlink> Swim und aktueller
-<constlink constGroup="COMD"></constlink>.</col>
+  <col>Nach <emLink href="definition/defcore.html#SektionPhysical">Physical</emLink> Swim und aktueller
+<constLink constGroup="COMD"></constLink>.</col>
   <col>CNAT_None</col>
 </row><row>
   <col>THROW</col>
   <col>Werfen</col>
-  <col>Verhalten nach <emlink href="definition/actmap.html">Aktivität</emlink>.</col>
+  <col>Verhalten nach <emLink href="definition/actmap.html">Aktivität</emLink>.</col>
   <col>CNAT_Bottom</col>
 </row><row>
   <col>BRIDGE</col>
   <col>Brückenbau</col>
-  <col>Nach <constlink constGroup="COMD"></constlink>. Brückenmaterial als Index in
-<emlink href="script/fn/SetActionData.html">Data</emlink>.</col>
+  <col>Nach <constLink constGroup="COMD"></constLink>. Brückenmaterial als Index in
+<emLink href="script/fn/SetActionData.html">Data</emLink>.</col>
   <col>CNAT_Bottom</col>
 </row><row>
   <col>BUILD</col>
   <col>Bauen</col>
-  <col>Baut das <emlink href="script/fn/SetAction.html">Zielobjekt</emlink>.</col>
+  <col>Baut das <emLink href="script/fn/SetAction.html">Zielobjekt</emLink>.</col>
   <col>CNAT_Bottom</col>
 </row><row>
   <col>PUSH</col>
   <col>Schieben</col>
-  <col>Schiebt das <emlink href="script/fn/SetAction.html">Zielobjekt</emlink> nach 
-<emlink href="definition/defcore.html#SektionPhysical">Physical</emlink> Push und 
-<constlink constGroup="COMD"></constlink>.</col>
+  <col>Schiebt das <emLink href="script/fn/SetAction.html">Zielobjekt</emLink> nach
+<emLink href="definition/defcore.html#SektionPhysical">Physical</emLink> Push und
+<constLink constGroup="COMD"></constLink>.</col>
   <col>CNAT_Bottom</col>
 </row><row>
   <col>CHOP</col>
   <col>Fällen</col>
-  <col>Fällt das <emlink href="script/fn/SetAction.html">Zielobjekt</emlink> nach 
-<emlink href="definition/defcore.html#SektionPhysical">Physical</emlink> Chop.</col>
+  <col>Fällt das <emLink href="script/fn/SetAction.html">Zielobjekt</emLink> nach
+<emLink href="definition/defcore.html#SektionPhysical">Physical</emLink> Chop.</col>
   <col>CNAT_Bottom</col>
 </row><row>
   <col>LIFT</col>
   <col>Heben</col>
-  <col>Hebt das <emlink href="script/fn/SetAction.html">Zielobjekt</emlink> nach 
-<constlink constGroup="COMD"></constlink>.</col>
+  <col>Hebt das <emLink href="script/fn/SetAction.html">Zielobjekt</emLink> nach
+<constLink constGroup="COMD"></constLink>.</col>
   <col>CNAT_None</col>
 </row><row>
   <col>FLOAT</col>
   <col>Schweben</col>
-  <col>Nach <emlink href="definition/defcore.html#SektionPhysical">Physical</emlink> Float und aktueller
-<constlink constGroup="COMD"></constlink>.</col>
+  <col>Nach <emLink href="definition/defcore.html#SektionPhysical">Physical</emLink> Float und aktueller
+<constLink constGroup="COMD"></constLink>.</col>
   <col>CNAT_None</col>
 </row><row>
   <col>ATTACH</col>
   <col>Festhalten</col>
   <col>Richtet Objektposition Vertex a an Vertex b des 
-<emlink href="script/fn/SetAction.html">Zielobjekts</emlink> aus. a und b sind die beiden niederwertigen Bytes
-von <emlink href="script/fn/SetActionData.html">ActionData</emlink> (Siehe 
-<emlink href="script/fn/SetActionData.html">SetActionData</emlink> für Beispiel). Erweitert ab CE.</col>
+<emLink href="script/fn/SetAction.html">Zielobjekts</emLink> aus. a und b sind die beiden niederwertigen Bytes
+von <emLink href="script/fn/SetActionData.html">ActionData</emLink> (Siehe
+<emLink href="script/fn/SetActionData.html">SetActionData</emLink> für Beispiel). Erweitert ab CE.</col>
   <col>CNAT_None</col>
 </row><row>
   <col>FIGHT</col>
   <col>Kämpfen</col>
-  <col>Nach <emlink href="definition/defcore.html#SektionPhysical">Physical</emlink> Fight gegen 
-<emlink href="script/fn/SetAction.html">Zielobjekt</emlink>.</col>
+  <col>Nach <emLink href="definition/defcore.html#SektionPhysical">Physical</emLink> Fight gegen
+<emLink href="script/fn/SetAction.html">Zielobjekt</emLink>.</col>
   <col>CNAT_Bottom</col>
 </row><row>
   <col>CONNECT</col>
   <col>Verbinden</col>
-  <col>Nur <emlink href="definition/lineconnect.html">Leitungsobjekte</emlink>. Verbindet 
-<emlink href="script/fn/SetAction.html">Zielobjekt 1</emlink> und 
-<emlink href="script/fn/SetAction.html">Zielobjekt 2</emlink>.</col>
+  <col>Nur <emLink href="definition/lineconnect.html">Leitungsobjekte</emLink>. Verbindet
+<emLink href="script/fn/SetAction.html">Zielobjekt 1</emLink> und
+<emLink href="script/fn/SetAction.html">Zielobjekt 2</emLink>.</col>
   <col>CNAT_None</col>
 </row><row>
   <col>PULL</col>
   <col>Ziehen</col>
-  <col>Zieht das <emlink href="script/fn/SetAction.html">Zielobjekt</emlink> nach 
-<emlink href="definition/defcore.html#SektionPhysical">Physical</emlink> Push und 
-<constlink constGroup="COMD"></constlink>.</col>
+  <col>Zieht das <emLink href="script/fn/SetAction.html">Zielobjekt</emLink> nach
+<emLink href="definition/defcore.html#SektionPhysical">Physical</emLink> Push und
+<constLink constGroup="COMD"></constLink>.</col>
   <col>CNAT_Bottom</col>
 </row></table>
 </text>

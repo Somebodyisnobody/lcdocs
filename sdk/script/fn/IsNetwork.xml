@@ -13,7 +13,7 @@
 		<desc>Prüft, ob das aktuelle Spiel ein Netzwerkspiel ist.</desc>
 		<examples>
 			<example>
-				<code>if(IsNetwork()) <funclink>Message</funclink>("Dieses Szenario benutzt netzwerkfeindliche Funktionen. Es kann zu Synchronisationsproblemen kommen; der Autor übernimmt keine Garantie für die Spielbarkeit.");</code>
+				<code>if(IsNetwork()) <funcLink>Message</funcLink>("Dieses Szenario benutzt netzwerkfeindliche Funktionen. Es kann zu Synchronisationsproblemen kommen; der Autor übernimmt keine Garantie für die Spielbarkeit.");</code>
 				<text>Gibt einen Text aus, wenn im Netzwerk gespielt wird.</text>
 			</example>
 		</examples>

@@ -19,13 +19,13 @@
     </desc>
     <examples>
       <example>
-        <text>Für ein ausführliches Beispiel siehe <funclink>SetScoreboardData</funclink>.</text>
+        <text>Für ein ausführliches Beispiel siehe <funcLink>SetScoreboardData</funcLink>.</text>
       </example>
     </examples>
     <related>
-      <funclink>SetScoreboardData</funclink>
-      <funclink>DoScoreboardShow</funclink>
-      <funclink>ScoreboardCol</funclink>
+      <funcLink>SetScoreboardData</funcLink>
+      <funcLink>DoScoreboardShow</funcLink>
+      <funcLink>ScoreboardCol</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2006-02</date>

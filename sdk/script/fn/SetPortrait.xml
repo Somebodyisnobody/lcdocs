@@ -29,16 +29,16 @@
     <desc>Ändert das Portrait eines Crew-Mitglieds während des Spiels.</desc>
     <examples>
       <example>
-        <code>SetPortrait("random", <funclink>FindObject</funclink>(0, 0,0,0,0, <constlink constGroup="OCF">OCF_CrewMember</constlink>) );</code>
+        <code>SetPortrait("random", <funcLink>FindObject</funcLink>(0, 0,0,0,0, <constLink constGroup="OCF">OCF_CrewMember</constLink>) );</code>
         <text>Weißt einem Clonk ein zufälliges Portrait zu.</text>
       </example>
       <example>
-        <code>SetPortrait(<funclink>GetPortrait</funclink>(0, 0, 1), 0, <funclink>GetPortrait</funclink>(0, 1, 1) );</code>
+        <code>SetPortrait(<funcLink>GetPortrait</funcLink>(0, 0, 1), 0, <funcLink>GetPortrait</funcLink>(0, 1, 1) );</code>
         <text>Stellt das Standardportrait eines Clonkes wieder her, falls es zwischenzeitlich durch andere SetPortrait-Aufrufe geändert wurde.</text>
       </example>
     </examples>
     <related>
-      <funclink>GetPortrait</funclink>
+      <funcLink>GetPortrait</funcLink>
     </related>
   </func>
   <author>Clonk-Karl</author><date>2005-12</date>

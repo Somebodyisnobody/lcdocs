@@ -15,16 +15,16 @@ einzelne Komponenten oder weitere Gruppendateien enthalten:</text>
 erspielten Punkte, Informationen zu seiner Stammcrew und gegebenenfalls sein Portrait
 gespeichert.</text></dd>
 <dt id="Szenarienc4s"><img src="../images/icon_scenario.gif" width="16"
-height="16"/><emlink href="scenario/index.html">Szenarien (c4s)</emlink></dt>
+height="16"/><emLink href="scenario/index.html">Szenarien (c4s)</emLink></dt>
 <dd><text>Szenariodateien setzen sich aus einem Informationskern und weiteren Komponenten, wie einer
 Landkarte, Titelbild und Beschreibungstexten, einer Himmelsgrafik, einem Script und lokalen
 Objektdefinitionen zusammen.</text></dd>
 <dt id="Objektdefinitionenc4d"><img src="../images/icon_object_definition.gif" width="16"
-height="16"/><emlink href="definition/index.html">Objektdefinitionen (c4d)</emlink></dt>
+height="16"/><emLink href="definition/index.html">Objektdefinitionen (c4d)</emLink></dt>
 <dd><text>Objektdefinitionen enthalten einen Informationskern, Grafikelemente, eine
-Aktivitätstabelle, Scripte und Beschreibungstexte. Auch <emlink
-href="particle/index.html">Partikel</emlink> werden in Objektordnern angelegt.</text></dd>
-<dt id="Rundenordnerc4f"><img src="../images/icon_scenario_folder.gif" width="16" height="16"/><emlink href="folder/index.html">Rundenordner (c4f)</emlink></dt>
+Aktivitätstabelle, Scripte und Beschreibungstexte. Auch <emLink
+href="particle/index.html">Partikel</emLink> werden in Objektordnern angelegt.</text></dd>
+<dt id="Rundenordnerc4f"><img src="../images/icon_scenario_folder.gif" width="16" height="16"/><emLink href="folder/index.html">Rundenordner (c4f)</emLink></dt>
 <dd><text>Szenarien können in Rundenordnern zusammen gefasst werden.</text></dd>
 <dt id="Systemdatenc4g"><img src="../images/icon_system.gif" width="16" height="16"/>Systemdaten (c4g)</dt>
 <dd><text>Grafiken, Sounds und Musik des Spiels sind in eigenen Gruppen zusammen gefasst und sollten

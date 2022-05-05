@@ -17,8 +17,8 @@
     Liefert das Team eines Spielers. Hat der Spieler kein Team, wird 0 zurückgegeben.
     </desc>
 	<related>
-		<emlink href="scenario/Teams.html">Teams</emlink>
-		<funclink>SetPlayerTeam</funclink>
+		<emLink href="scenario/Teams.html">Teams</emLink>
+		<funcLink>SetPlayerTeam</funcLink>
 	</related>
   </func>
   <author>Sven2</author><date>2006-03</date>

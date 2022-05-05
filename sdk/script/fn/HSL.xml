@@ -12,24 +12,24 @@
 			<params>
 				<param><type>int</type><name>byH</name><desc>Farbton der Farbe. 0 ist Rot, 85 ist Grün, 170 Blau und 255 wieder Rot.</desc></param>
 				<param><type>int</type><name>byS</name><desc>Sättigung der Farbe. Dies ist der Farbkontrast.</desc></param>
-				<param><type>int</type><name>byL</name><desc>Helligkeit der Farbe. Helligkeit gleich null entspräche <funclink>RGB</funclink>(0,0,0)</desc></param>
+				<param><type>int</type><name>byL</name><desc>Helligkeit der Farbe. Helligkeit gleich null entspräche <funcLink>RGB</funcLink>(0,0,0)</desc></param>
 			</params>
 		</syntax>
 		<desc>Setzt einen 32Bit-Farbwert aus den drei Parametern zusammen. 0-255 für alle Parameter.</desc>
 		<examples>
 			<example>
-				<code><funclink>SetSkyAdjust</funclink>(HSL(0,255,127));</code>
+				<code><funcLink>SetSkyAdjust</funcLink>(HSL(0,255,127));</code>
 				<text>Färbt den Himmel rot.</text>
 			</example>
 			<example>
-				<code><funclink>SetColorDw</funclink>(HSL(<funclink>Random</funclink>(256),255,127),<funclink>GetHiRank</funclink>(0));</code>
+				<code><funcLink>SetColorDw</funcLink>(HSL(<funcLink>Random</funcLink>(256),255,127),<funcLink>GetHiRank</funcLink>(0));</code>
 				<text>Färbt den höchstrangigsten Clonk des ersten Spielers in einem zufälligen kräftigem Farbton.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>RGB</funclink>
-			<funclink>RGBa</funclink>
-			<funclink>HSLa</funclink>
+			<funcLink>RGB</funcLink>
+			<funcLink>RGBa</funcLink>
+			<funcLink>HSLa</funcLink>
 		</related>
 	</func>
 	<author>Newton</author><date>2005-06</date>

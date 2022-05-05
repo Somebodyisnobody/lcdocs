@@ -21,12 +21,12 @@
 		<remark>Normalerweise wird die Landscape.txt nach der Landscahftsgenerierung entladen, um unnötig belegten Speicher freizugeben. Darum sollte in Szenarien, in denen dieser Befehl verwendet wird, in der Scenario.txt Sektion [Landscape] die Option KeepMapCreator=1 gesetzt werden.</remark>
 		<examples>
 			<example>
-				<code>DrawDefMap(0,0,<funclink>LandscapeWidth</funclink>(), <funclink>LandscapeHeight</funclink>(), "TheMap");</code>
+				<code>DrawDefMap(0,0,<funcLink>LandscapeWidth</funcLink>(), <funcLink>LandscapeHeight</funcLink>(), "TheMap");</code>
 				<text>Zeichnet TheMap über die gesamte Karte. TheMap muss in der geladenen Landscape.txt vorhanden sein.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>DrawMap</funclink>
+			<funcLink>DrawMap</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2002-04</date>

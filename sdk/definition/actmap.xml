@@ -12,9 +12,9 @@ jeden Aktivität werden dabei in der Graphics.png (oder veraltet
 Graphics.bmp) als nebeneinanderliegende Bilder abgelegt und in der
 ActMap.txt über Bildkoordinaten referenziert. Aktivitäten können im
 Spiel von der Engine oder per Script gestartet oder beendet werden
-(siehe <emlink href="script/fn/SetAction.html">SetAction</emlink>). Einige
+(siehe <emLink href="script/fn/SetAction.html">SetAction</emLink>). Einige
 Aktivitäten, speziell solche von Lebewesen, nutzen dabei Engine-interne
-<emlink href="definition/procedures.html">Prozeduren</emlink>, die das Bewegungsverhalten
+<emLink href="definition/procedures.html">Prozeduren</emLink>, die das Bewegungsverhalten
 des Objekts während der Ausführung dieser Aktivität steuert.</text>
 <text>
 <table activateBitmask="false" bitmaskName="">
@@ -27,12 +27,12 @@ des Objekts während der Ausführung dieser Aktivität steuert.</text>
   <row>
     <col>Name</col>
     <col>Zeichenfolge (max. 30)</col>
-    <col>Name der Aktivität. Siehe <emlink href="script/fn/SetAction.html">SetAction</emlink>().</col>
+    <col>Name der Aktivität. Siehe <emLink href="script/fn/SetAction.html">SetAction</emLink>().</col>
   </row>
   <row>
     <col>Procedure</col>
     <col>Zeichenfolge (max. 30)</col>
-    <col>Interne Standardprozedur. Siehe <emlink href="definition/procedures.html">Prozeduren</emlink>.</col>
+    <col>Interne Standardprozedur. Siehe <emLink href="definition/procedures.html">Prozeduren</emLink>.</col>
   </row>
   <row>
     <col>Directions</col>
@@ -72,7 +72,7 @@ oben gezählt (siehe Banner im Ritterpack).</col>
   <row>
     <col>Attach</col>
     <col>Integer</col>
-    <col>Festhalten an Oberflächen: <emlink href="definition/cnat.html">CNAT-Wert</emlink>,
+    <col>Festhalten an Oberflächen: <emLink href="definition/cnat.html">CNAT-Wert</emLink>,
     also z.B. Wert 8 für Boden. Wird nur ausgewertet, wenn Procedure NONE ist.</col>
   </row>
   <row>
@@ -88,7 +88,7 @@ oben gezählt (siehe Banner im Ritterpack).</col>
   <row>
     <col>FacetTopFace</col>
     <col>Integer</col>
-    <col>0 oder 1. Bei 1 wird das TopFace (siehe <emlink href="definition/defcore.html">DefCore.txt</emlink>)
+    <col>0 oder 1. Bei 1 wird das TopFace (siehe <emLink href="definition/defcore.html">DefCore.txt</emLink>)
     aus der animierten Facet verwendet.</col>
   </row>
   <row>

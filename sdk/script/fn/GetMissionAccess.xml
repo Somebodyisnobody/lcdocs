@@ -17,16 +17,16 @@
 		<remark>Bei aktiviertem Netzwerk gibt diese Funktion grundsätzlich den Wert false zurück, da ansonsten lokale Unterschiede zur Desynchronisation führen könnten.</remark>
 		<examples>
 			<example>
-				<code><funclink>if</funclink> (!GetMissionAccess("DasWarHarteArbeit"))
+				<code><funcLink>if</funcLink> (!GetMissionAccess("DasWarHarteArbeit"))
 {
-  <funclink>GainMissionAccess</funclink>("DasWarHarteArbeit");
-  <funclink>Message</funclink>("Glückwunsch, du bist hier zum ersten Mal!");
+  <funcLink>GainMissionAccess</funcLink>("DasWarHarteArbeit");
+  <funcLink>Message</funcLink>("Glückwunsch, du bist hier zum ersten Mal!");
 }</code>
 				<text>Gibt eine Nachricht nur aus, wenn der Missionszugang "DasWarHarteArbeit" noch nie erreicht wurde, und gibt dann den Zugang.</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>GainMissionAccess</funclink>
+			<funcLink>GainMissionAccess</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2001-11</date>

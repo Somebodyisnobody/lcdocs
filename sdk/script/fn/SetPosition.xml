@@ -18,8 +18,8 @@
                 </syntax>
                 <desc>Verschiebt ein Objekt an die angegebene Position. Dabei wird das Objekt an die exakte Pixelposition gesetzt, und eventuelle, interne Verschiebungen um Pixelbruchteile werden verworfen.</desc>
                 <related>
-                        <funclink>GetX</funclink>
-                        <funclink>GetY</funclink>
+                        <funcLink>GetX</funcLink>
+                        <funcLink>GetY</funcLink>
                 </related>
         </func>
         <author>Sven2</author><date>2002-08</date>

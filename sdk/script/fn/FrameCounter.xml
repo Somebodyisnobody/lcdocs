@@ -13,12 +13,12 @@
     <desc>Gibt die Nummer des Frames zurück, in dem sich das Spiel befindet. Dieser Zähler beginnt beim Szenarienstart mit 0, und zählt dann mit ca. 37 Frames pro Sekunde hoch (abhängig von der Spielgeschwindigkeit)</desc>
     <examples>
       <example>
-        <code><funclink>if</funclink> (FrameCounter()>11100) <funclink>GameOver</funclink>();</code>
+        <code><funcLink>if</funcLink> (FrameCounter()>11100) <funcLink>GameOver</funcLink>();</code>
         <text>Beendet das Spiel, wenn es schon mehr als 5 Minuten läuft.</text>
       </example>
     </examples>
     <related>
-      <funclink>ScriptCounter</funclink>
+      <funcLink>ScriptCounter</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2002-04</date>

@@ -23,13 +23,13 @@
    </params>
   </syntax>
 
-  <desc>Dieser Befehl fragt im Clonk in der Spielerdatei gespeicherten Extra-Daten ab, die per <funclink>SetCrewExtraData</funclink> gesetzt wurden.</desc>
+  <desc>Dieser Befehl fragt im Clonk in der Spielerdatei gespeicherten Extra-Daten ab, die per <funcLink>SetCrewExtraData</funcLink> gesetzt wurden.</desc>
 
-  <remark>Für Details siehe <funclink>SetCrewExtraData</funclink>.</remark>
+  <remark>Für Details siehe <funcLink>SetCrewExtraData</funcLink>.</remark>
 
   <related>
-   <funclink>GetPlrExtraData</funclink>
-   <funclink>SetCrewExtraData</funclink>
+   <funcLink>GetPlrExtraData</funcLink>
+   <funcLink>SetCrewExtraData</funcLink>
   </related>
  </func>
  <author>Sven2</author><date>2006-02</date>

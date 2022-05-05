@@ -16,8 +16,8 @@
 		</syntax>
 		<desc>Verändert die Länge eines Arrays auf den angegebenen Wert. Überzählige Elemente werden dabei gegebenenfalls gelöscht.</desc>
 		<related>
-			<funclink>GetLength</funclink>
-			<funclink>CreateArray</funclink>
+			<funcLink>GetLength</funcLink>
+			<funcLink>CreateArray</funcLink>
 		</related>
 	</func>
 	<author>Clonkonaut</author><date>2006-07</date>

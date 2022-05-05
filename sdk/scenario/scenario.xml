@@ -11,7 +11,7 @@
 Dazu gehören einfache, dynamische Karten, Spielervorgaben, Spielziele, Wetter, usw.
 Die meisten dieser Einstellungen lassen sich allerdings bequemer über den Editor in den Rundenoptionen konfigurieren.
 Für komplexere Startbedingungen wie zum Beispiel Teamschlachten mit automatischen Rejoins,
-sowie für vorgegebene Handlungsabläufe im Spiel benötigt man ein <emlink href="scenario/script.html">Script</emlink>.</text>
+sowie für vorgegebene Handlungsabläufe im Spiel benötigt man ein <emLink href="scenario/script.html">Script</emLink>.</text>
 <text>Einige der Werte werden mit vier Zahlen angegeben, die Mittelwert, Abweichung, Minimum und Maximum festlegen.
 Der tatsächliche Wert wird dann durch
 <code>BoundBy(Mittelwert+Random(2*Abweichung+1)-Abweichung,Minimum,Maximum);</code>
@@ -77,7 +77,7 @@ bestimmt.</text>
 	<row>
 		<col>MissionAccess</col>
 		<col>Zeichenfolge</col>
-		<col>Szenario kann nur gestartet werden, wenn ein Spieler zuvor dieses Zugangspasswort in einem anderen Szenario erspielt hat. Siehe Scriptfunktion <funclink>GainMissionAccess</funclink>().</col>
+		<col>Szenario kann nur gestartet werden, wenn ein Spieler zuvor dieses Zugangspasswort in einem anderen Szenario erspielt hat. Siehe Scriptfunktion <funcLink>GainMissionAccess</funcLink>().</col>
 	</row>
 	<row>
 		<col>Replay</col>
@@ -196,7 +196,7 @@ bestimmt.</text>
 	<row>
 		<col>BaseFunctionality</col>
 		<col>Integer</col>
-		<col>Bitmaske, die angibt, welche Funktionen eine Basis erfüllt. Siehe <emlink href="scenario/basefunc.html">Basisfunktionalitäten</emlink>. Ab CR.</col>
+		<col>Bitmaske, die angibt, welche Funktionen eine Basis erfüllt. Siehe <emLink href="scenario/basefunc.html">Basisfunktionalitäten</emLink>. Ab CR.</col>
 	</row>
 	<row>
 		<col>BaseRegenerateEnergyPrice</col>
@@ -414,7 +414,7 @@ bestimmt.</text>
 	<row>
 		<col>KeepMapCreator</col>
 		<col>Integer</col>
-		<col>0 oder 1. Bei 1 wird der interne MapCreator nicht nach dem Start entladen, so dass Befehle wie <funclink>DrawDefMap</funclink> zur Verfügung stehen.</col>
+		<col>0 oder 1. Bei 1 wird der interne MapCreator nicht nach dem Start entladen, so dass Befehle wie <funcLink>DrawDefMap</funcLink> zur Verfügung stehen.</col>
 	</row>
 	<row>
 		<col>SkyScrollMode</col>

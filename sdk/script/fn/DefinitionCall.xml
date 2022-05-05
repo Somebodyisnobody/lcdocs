@@ -22,7 +22,7 @@
         <param><type>any</type><name>...</name><desc>Zusätzliche Parameter, die an die Funktion übergeben werden</desc><optional /></param>
       </params>
     </syntax>
-    <desc>Ruft eine Funktion in einem Script ohne zugehöriges Objekt auf. Der <funclink>this</funclink>()-Zeiger gibt in einem solchen Aufruf 0 zurück (Vergleichbar mit dem Szenarioscript).</desc>
+    <desc>Ruft eine Funktion in einem Script ohne zugehöriges Objekt auf. Der <funcLink>this</funcLink>()-Zeiger gibt in einem solchen Aufruf 0 zurück (Vergleichbar mit dem Szenarioscript).</desc>
     <examples>
       <example>
         <code>DefinitionCall(CPPL, "SetKnowledge", 0);</code>
@@ -30,8 +30,8 @@
       </example>
     </examples>
     <related>
-      <funclink>ObjectCall</funclink>
-      <funclink>GameCall</funclink>
+      <funcLink>ObjectCall</funcLink>
+      <funcLink>GameCall</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2001-11</date>

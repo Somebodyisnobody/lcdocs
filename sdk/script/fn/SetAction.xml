@@ -16,9 +16,9 @@
 				<param><type>bool</type><name>fDirect</name><desc>Wenn true, werden Start-/AbortCalls umgangen, und die Aktivität wird trotz NoOtherAction gesetzt.</desc><optional /></param>
 			</params>
 		</syntax>
-		<desc>Setzt die Aktivität des aufrufenden Objekts. Siehe auch <emlink href="definition/actmap.html">ActMap.txt</emlink>.</desc>
-		<remark>Wird pTarget1 bzw. pTarget2 nicht angegeben bzw. 0 übergeben, so bleibt das jeweiligen Action Target der vorigen Aktion erhalten. Um die Action Targets zu löschen sollte <funclink>SetActionTargets</funclink> benutzt werden.</remark>
-		<remark>Um die Aktivität eines Fremdobjektes zu setzen, sollte <funclink>ObjectSetAction</funclink> oder fremdobjekt-&gt;SetAction() benutzt werden.</remark>
+		<desc>Setzt die Aktivität des aufrufenden Objekts. Siehe auch <emLink href="definition/actmap.html">ActMap.txt</emLink>.</desc>
+		<remark>Wird pTarget1 bzw. pTarget2 nicht angegeben bzw. 0 übergeben, so bleibt das jeweiligen Action Target der vorigen Aktion erhalten. Um die Action Targets zu löschen sollte <funcLink>SetActionTargets</funcLink> benutzt werden.</remark>
+		<remark>Um die Aktivität eines Fremdobjektes zu setzen, sollte <funcLink>ObjectSetAction</funcLink> oder fremdobjekt-&gt;SetAction() benutzt werden.</remark>
 		<remark>Wenn fDirect false ist, wird der StartCall der Aktivität während der Ausführung von SetAction aufgerufen. Wenn dieser also zum Beispiel das Objekt löscht, darf die aufrufende Funktion danach nichts mehr mit dem Objekt machen!</remark>
 		<examples>
 			<example>
@@ -27,11 +27,11 @@
 			</example>
 		</examples>
 		<related>
-			<funclink>ObjectSetAction</funclink>
-			<funclink>GetAction</funclink>
-			<funclink>GetActionTarget</funclink>
-			<funclink>SetPhase</funclink>
-			<funclink>SetDir</funclink>
+			<funcLink>ObjectSetAction</funcLink>
+			<funcLink>GetAction</funcLink>
+			<funcLink>GetActionTarget</funcLink>
+			<funcLink>SetPhase</funcLink>
+			<funcLink>SetDir</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2003-06</date>

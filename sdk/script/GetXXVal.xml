@@ -9,13 +9,13 @@
 <h>GetDefCoreVal, GetActMapVal, GetObjectVal, GetScenarioVal</h>
 <part>
 	<text><ul>
-		<li><funclink>GetDefCoreVal</funclink>(string strEntry, string strSection, id idDef); </li>
-		<li><funclink>GetActMapVal</funclink>(string strEntry, string strAction, id idDef); </li>
-		<li><funclink>GetObjectVal</funclink>(string strEntry, string strSection, object pObj); </li>
-		<li><funclink>GetObjectInfoCoreVal</funclink>(string strEntry, string strSection, object pObj); </li>
-		<li><funclink>GetScenarioVal</funclink>(string strEntry, string strSection);</li>
-		<li><funclink>GetPlayerVal</funclink>(string strEntry, string strSection, int iPlr); </li>
-		<li><funclink>GetPlayerInfoCoreVal</funclink>(string strEntry, string strSection, int iPlr); </li>
+		<li><funcLink>GetDefCoreVal</funcLink>(string strEntry, string strSection, id idDef); </li>
+		<li><funcLink>GetActMapVal</funcLink>(string strEntry, string strAction, id idDef); </li>
+		<li><funcLink>GetObjectVal</funcLink>(string strEntry, string strSection, object pObj); </li>
+		<li><funcLink>GetObjectInfoCoreVal</funcLink>(string strEntry, string strSection, object pObj); </li>
+		<li><funcLink>GetScenarioVal</funcLink>(string strEntry, string strSection);</li>
+		<li><funcLink>GetPlayerVal</funcLink>(string strEntry, string strSection, int iPlr); </li>
+		<li><funcLink>GetPlayerInfoCoreVal</funcLink>(string strEntry, string strSection, int iPlr); </li>
 	</ul></text>
 
 	<text>Diese Funktionsfamilie gewährt direkten Zugriff auf sämtliche Eigenschaften der entsprechenden Objekte, wie sie auch abgespeichert werden.</text>
@@ -27,38 +27,38 @@
 			<col>Datei</col>
 		</rowh>
 		<row>
-			<col><funclink>GetDefCoreVal</funclink></col>
-			<col><emlink href="definition/defcore.html">*.c4d/DefCore.txt</emlink></col>
+			<col><funcLink>GetDefCoreVal</funcLink></col>
+			<col><emLink href="definition/defcore.html">*.c4d/DefCore.txt</emLink></col>
 		</row>
 		<row>
-			<col><funclink>GetActMapVal</funclink></col>
-			<col><emlink href="definition/actmap.html">*.c4d/ActMap.txt</emlink></col>
+			<col><funcLink>GetActMapVal</funcLink></col>
+			<col><emLink href="definition/actmap.html">*.c4d/ActMap.txt</emLink></col>
 		</row>
 		<row>
-			<col><funclink>GetObjectVal</funclink></col>
-			<col><emlink href="scenario/index.html#Objectstxt">*.c4s/Objects.txt</emlink></col>
+			<col><funcLink>GetObjectVal</funcLink></col>
+			<col><emLink href="scenario/index.html#Objectstxt">*.c4s/Objects.txt</emLink></col>
 		</row>
 		<row>
-			<col><funclink>GetScenarioVal</funclink></col>
-			<col><emlink href="scenario/scenario.html">*.c4s/Scenario.txt</emlink></col>
+			<col><funcLink>GetScenarioVal</funcLink></col>
+			<col><emLink href="scenario/scenario.html">*.c4s/Scenario.txt</emLink></col>
 		</row>
 		<row>
-			<col><funclink>GetPlayerVal</funclink></col>
-			<col><emlink href="scenario/index.html">*.c4s</emlink>/Game.txt (in Spielständen)</col>
+			<col><funcLink>GetPlayerVal</funcLink></col>
+			<col><emLink href="scenario/index.html">*.c4s</emLink>/Game.txt (in Spielständen)</col>
 		</row>
 		<row>
-			<col><funclink>GetObjectInfoCoreVal</funclink></col>
-			<col><emlink href="files.html#Spielerdateienc4p">*.c4p</emlink>/*.c4i</col>
+			<col><funcLink>GetObjectInfoCoreVal</funcLink></col>
+			<col><emLink href="files.html#Spielerdateienc4p">*.c4p</emLink>/*.c4i</col>
 		</row>
 		<row>
-			<col><funclink>GetPlayerInfoCoreVal</funclink></col>
-			<col><emlink href="files.html#Spielerdateienc4p">*.c4p</emlink>/Player.txt</col>
+			<col><funcLink>GetPlayerInfoCoreVal</funcLink></col>
+			<col><emLink href="files.html#Spielerdateienc4p">*.c4p</emLink>/Player.txt</col>
 		</row>
 	</table></text>
 
 	<text>Die Eigenschaft wird jeweils anhand ihres Namen und ggf. der Sektion übergeben (wird 0 übergeben, so werden alle Sektionen nach einem gleichnamigen Wert durchsucht). Wurde eine entsprechende Eigenschaft nicht gefunden oder entsprcht der Typ der Eigenschaft keinem gültigen Script-Datenformat (z.B. ID-Liste), so wird 0 zurückgegeben.</text>
-	<text>Wird <funclink>GetObjectVal</funclink> für pObj/idDef jeweils 0 zurückgegeben, so wird das Objekt (bzw. dessen Definition), aus dem der Aufruf erfolgte angenommen.</text>
-	<text>Die Zusatzfunktionen in GetXVal.c (in System.c4g) ermöglichen Aufrufe verschiedener Get*Val-Funktionen durch globale Scriptfunktionen (z.B. <code>GetObjWidth()</code>, entspricht <code><funclink>GetObjectVal</funclink>("Width", 0, -obj-)</code>).</text>
+	<text>Wird <funcLink>GetObjectVal</funcLink> für pObj/idDef jeweils 0 zurückgegeben, so wird das Objekt (bzw. dessen Definition), aus dem der Aufruf erfolgte angenommen.</text>
+	<text>Die Zusatzfunktionen in GetXVal.c (in System.c4g) ermöglichen Aufrufe verschiedener Get*Val-Funktionen durch globale Scriptfunktionen (z.B. <code>GetObjWidth()</code>, entspricht <code><funcLink>GetObjectVal</funcLink>("Width", 0, -obj-)</code>).</text>
 </part>
 
 </doc><author>Peter</author><date>2001-11</date>

@@ -16,9 +16,9 @@
 		<desc>Wandelt einen Wert in einen Wert vom Typ any um.</desc>
 		<remark>Diese Funktion gibt den übergebenen Wert zurück; es ist daher zu vermuten, dass sie in früheren Clonk-Version eine andere Bedeutung gehabt hatte.</remark>
 		<related>
-			<funclink>CastBool</funclink>
-			<funclink>CastInt</funclink>
-			<funclink>CastC4ID</funclink>
+			<funcLink>CastBool</funcLink>
+			<funcLink>CastInt</funcLink>
+			<funcLink>CastC4ID</funcLink>
 		</related>
 	</func>
 	<author>Fulgen</author><date>2016-08</date>

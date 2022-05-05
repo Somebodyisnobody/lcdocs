@@ -44,25 +44,25 @@ local fInvisible;
     
 protected func Recruitment(a,b,c,d,e,f,g,h,i,j)
   {
-  var rVal = <funclink>_inherited</funclink>(a,b,c,d,e,f,g,h,i,j);
-  if (<funclink>GetCrewExtraData</funclink>(0, "C4ID_Invisible")) <funclink>SetVisibility</funclink>(<constlink constGroup="VIS">VIS_Owner</constlink>);
-  <funclink>return</funclink>(rVal);
+  var rVal = <funcLink>_inherited</funcLink>(a,b,c,d,e,f,g,h,i,j);
+  if (<funcLink>GetCrewExtraData</funcLink>(0, "C4ID_Invisible")) <funcLink>SetVisibility</funcLink>(<constLink constGroup="VIS">VIS_Owner</constLink>);
+  <funcLink>return</funcLink>(rVal);
   }
     
 protected func ControlSpecial()
   {
   if (fInvisible = !fInvisible)
-    <funclink>SetVisibility</funclink>();
+    <funcLink>SetVisibility</funcLink>();
   else
-    <funclink>SetVisibility</funclink>(<constlink constGroup="VIS">VIS_Owner</constlink>);
+    <funcLink>SetVisibility</funcLink>(<constLink constGroup="VIS">VIS_Owner</constLink>);
   SetCrewExtraData(0, "C4ID_Invisible", fInvisible);
   }</code>
     <text>Script für einen Spezialclonk: Der Clonk kann sich auf Taste Spezial unsichtbar und wieder sichtbar machen. Diese Unsichtbarkeit bleibt auch erhalten, wenn man das Szenario beendet und ein anderes Szenario mit diesem Clonk startet.</text>
    </example>
   </examples>
   <related>
-   <funclink>GetCrewExtraData</funclink>
-   <funclink>SetPlrExtraData</funclink>
+   <funcLink>GetCrewExtraData</funcLink>
+   <funcLink>SetPlrExtraData</funcLink>
   </related>
  </func>
  <author>Sven2</author><date>2006-02</date>

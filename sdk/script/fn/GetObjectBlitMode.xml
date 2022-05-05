@@ -11,15 +11,15 @@
 			<rtype>int</rtype>
 			<params>
 				<param><type>object</type><name>pObj</name><desc>Objekt, dessen Zeichenstil abgefragt werden soll. 0 bei lokalem Aufruf.</desc><optional /></param>
-				<param><type>int</type><name>iOverlayID</name><desc>Wenn angegeben, wird stattdessen der Blitmodus dieses Grafikoverlays abgefragt. Das Overlay muss vorher mit <funclink>SetGraphics</funclink> erstellt worden sein. Ab CR.</desc><optional /></param>
+				<param><type>int</type><name>iOverlayID</name><desc>Wenn angegeben, wird stattdessen der Blitmodus dieses Grafikoverlays abgefragt. Das Overlay muss vorher mit <funcLink>SetGraphics</funcLink> erstellt worden sein. Ab CR.</desc><optional /></param>
 			</params>
 		</syntax>
 		<desc>Liefert den aktuellen Zeichenmodus eines Objekts.</desc>
-		<remark>Für eine Übersicht über die Zeichenmodi, siehe <funclink>SetObjectBlitMode</funclink>().</remark>
-		<remark>Für ein Beispiel siehe <funclink>SetObjectBlitMode</funclink>().</remark>
+		<remark>Für eine Übersicht über die Zeichenmodi, siehe <funcLink>SetObjectBlitMode</funcLink>().</remark>
+		<remark>Für ein Beispiel siehe <funcLink>SetObjectBlitMode</funcLink>().</remark>
 		<related>
-			<funclink>GetClrModulation</funclink>
-			<funclink>SetObjectBlitMode</funclink>
+			<funcLink>GetClrModulation</funcLink>
+			<funcLink>SetObjectBlitMode</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2004-03</date>

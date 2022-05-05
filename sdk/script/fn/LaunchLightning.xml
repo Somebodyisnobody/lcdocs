@@ -51,7 +51,7 @@
           Die Position muss auch bei lokalem Aufruf in globalen Koordinaten angegeben werden.</desc>
     <examples>
       <example>
-        <code>LaunchLightning(<funclink>Random</funclink>(<funclink>LandscapeWidth</funclink>()), 0, -20, 41, +5, 15);</code>
+        <code>LaunchLightning(<funcLink>Random</funcLink>(<funcLink>LandscapeWidth</funcLink>()), 0, -20, 41, +5, 15);</code>
         <text>Dieser Aufruf erzeugt einen normalen Wetterblitz</text>
       </example>
       <example>
@@ -61,8 +61,8 @@
       </example>
     </examples>
     <related>
-      <funclink>LaunchEarthquake</funclink>
-      <funclink>LaunchVolcano</funclink>
+      <funcLink>LaunchEarthquake</funcLink>
+      <funcLink>LaunchVolcano</funcLink>
     </related>
   </func>
   <author>PeterW</author><date>2001-11</date>

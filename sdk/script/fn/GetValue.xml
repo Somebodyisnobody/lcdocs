@@ -21,14 +21,14 @@
 		<examples>
 			<example>
 <code>var iValue=GetValue();
-<funclink>while</funclink> (iValue-->0) <funclink>CreateContents</funclink>(ROCK);
-<funclink>RemoveObject</funclink>(0, 1);</code>
+<funcLink>while</funcLink> (iValue-->0) <funcLink>CreateContents</funcLink>(ROCK);
+<funcLink>RemoveObject</funcLink>(0, 1);</code>
 				<text>Objektscript: Das Objekt erzeugt so viele Steine, wie es wert ist, und vernichtet sich dann selber (wobei es die Steine auswirft).</text>
 			</example>
 		</examples>
 		<related>
-			<funclink>GetWealth</funclink>
-			<funclink>SetWealth</funclink>
+			<funcLink>GetWealth</funcLink>
+			<funcLink>SetWealth</funcLink>
 		</related>
 	</func>
 	<author>Sven2</author><date>2003-03</date>

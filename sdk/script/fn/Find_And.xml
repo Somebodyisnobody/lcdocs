@@ -16,9 +16,9 @@
 		</syntax>
 		<desc>Suchkriterium: sucht Objekte, auf die alle angegebenen Suchkriterien zutreffen.</desc>
 		<remark>Diese Funktion kann als Erweiterung benutzt werden, falls mehr als 10 Parameter benötigt werden.</remark>
-		<remark>Für weitere Informationen und Beispiele zur Benutzung dieser Funktion sehe <funclink>FindObjects</funclink>.</remark>
+		<remark>Für weitere Informationen und Beispiele zur Benutzung dieser Funktion sehe <funcLink>FindObjects</funcLink>.</remark>
 		<related>
-			<funclink>FindObjects</funclink>
+			<funcLink>FindObjects</funcLink>
 		</related>
 	</func>
 	<author>Clonkonaut</author><date>2006-07</date>

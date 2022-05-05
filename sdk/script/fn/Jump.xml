@@ -23,7 +23,7 @@
           Die Funktion gibt zurück, ob die Aktion erfolgreich durchgeführt wurde.
           </desc>
     <related>
-      <funclink>SetCommand</funclink>
+      <funcLink>SetCommand</funcLink>
     </related>
   </func>
   <author>PeterW</author><date>2001-11</date>

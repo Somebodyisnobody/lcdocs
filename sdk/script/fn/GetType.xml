@@ -15,7 +15,7 @@
     </syntax>
     <desc>Gibt den Typ des übergebenen Werts zurück.</desc>
     <related>
-      <constlink constGroup="C4V"></constlink>
+      <constLink constGroup="C4V"></constLink>
     </related>
   </func>
   <author>PeterW</author><date>2003-06</date>
