@@ -15,13 +15,7 @@
     </syntax>
     <desc>Gibt den Typ des übergebenen Werts zurück.</desc>
     <related>
-      <funclink>C4V_Any</funclink>
-      <funclink>C4V_Array</funclink>
-      <funclink>C4V_Bool</funclink>
-      <funclink>C4V_C4ID</funclink>
-      <funclink>C4V_C4Object</funclink>
-      <funclink>C4V_Int</funclink>
-      <funclink>C4V_String</funclink>
+      <constlink constGroup="C4V"></constlink>
     </related>
   </func>
   <author>PeterW</author><date>2003-06</date>
