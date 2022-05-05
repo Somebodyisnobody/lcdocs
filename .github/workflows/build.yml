@@ -23,7 +23,16 @@ jobs:
         run: |
           xmllint --schema ./clonk.xsd --noout $(find sdk -name '.*' -prune -o -name \*.xml -print)
 
-  validate:
+      - name: i18n coverage
+        uses: alexkiro/i18n-coverage@v1.0.1
+        with:
+          translations-path: './*.po'
+          min-coverage: 0.1
+      - name: Get the coverage
+        run: echo "The coverage was ${{ steps.i18nCoverage.outputs.coverage }}"
+
+
+  build:
     name: Build
     runs-on: ubuntu-latest
     steps:
