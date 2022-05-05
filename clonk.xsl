@@ -662,8 +662,25 @@
 				</a>
 			</xsl:when>
 			<xsl:otherwise>
-				<!-- TODO set terminate=yes when running in production-->
-				<xsl:message terminate="no">Can't find the constant "<xsl:value-of select="normalize-space(.)"/>"</xsl:message>
+				<xsl:message terminate="yes">Can't find the constant "<xsl:value-of select="normalize-space(.)"/>"</xsl:message>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+
+	<xsl:template match="callbacklink">
+		<xsl:param name="relpath" tunnel="yes"/>
+		<xsl:choose>
+			<xsl:when test="document(concat('sdk/script/fn/callbacks/', normalize-space(.), '.xml'))">
+				<a>
+					<xsl:attribute name="href">
+						<xsl:value-of select="$relpath"/><xsl:text>sdk/script/fn/callbacks/</xsl:text><xsl:value-of select="normalize-space(.)"/><xsl:value-of
+							select="$fileext"/>
+					</xsl:attribute>
+					<xsl:value-of select="normalize-space(.)"/>
+				</a>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:message terminate="yes">Can't find the callback function "<xsl:value-of select="normalize-space(.)"/>"</xsl:message>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>

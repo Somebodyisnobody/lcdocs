@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="../../../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="https://clonkspot.org ../../../../clonk.xsd" xml:lang="de">
+	<func>
+		<title>Construction</title>
+		<category>Callbacks/Objekte</category>
+		<versions><version>4.6.5.0 CP</version><extversion>4.9.6.2 CR</extversion></versions>
+		<syntax>
+			<rtype>void</rtype>
+			<params>
+				<param><type>object</type><name>creator</name><desc>Objekt welches das neu erstellte Objekt erzeugt hat. 0 wenn es global (Szenarioscript,...) erstellt wurde.</desc></param>
+			</params>
+		</syntax>
+		<desc>Wird bei der Erzeugung eines Objekts aufgerufen.</desc>
+	</func>
+	<author>boni</author><date>2007-04</date>
+</clonkDoc>

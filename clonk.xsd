@@ -354,6 +354,7 @@
                     </xs:simpleContent>
                 </xs:complexType>
             </xs:element>
+            <xs:element name="callbacklink" type="entityName"/>
         </xs:choice>
     </xs:group>
     <xs:complexType name="history">
