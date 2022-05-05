@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
+	<constGroup activateBitmask="false">
+		<title>C4Values</title>
+		<description>Konstanten für Datentypen von Variablen. Verwendet werden diese Konstanten mit <funcLink>GetType</funcLink>.
+		</description>
+		<const>
+			<name>C4V_Any</name>
+			<category>Variablen</category>
+			<description>Unbekannter Datentyp.</description>
+			<version>4.9.1.0 GWE</version>
+			<value>0</value>
+		</const>
+		<const>
+			<name>C4V_Int</name>
+			<category>Variablen</category>
+			<description>Ganzzahl.</description>
+			<version>4.9.1.0 GWE</version>
+			<value>1</value>
+		</const>
+		<const>
+			<name>C4V_Bool</name>
+			<category>Variablen</category>
+			<description>Boolscher Wert (1 oder 0).</description>
+			<version>4.9.1.0 GWE</version>
+			<value>2</value>
+		</const>
+		<const>
+			<name>C4V_C4ID</name>
+			<category>Variablen</category>
+			<description>ID.</description>
+			<version>4.9.1.0 GWE</version>
+			<value>3</value>
+		</const>
+		<const>
+			<name>C4V_C4Object</name>
+			<category>Variablen</category>
+			<description>Objektzeiger.</description>
+			<version>4.9.1.0 GWE</version>
+			<value>4</value>
+		</const>
+		<const>
+			<name>C4V_String</name>
+			<category>Variablen</category>
+			<description>Zeichenkette.</description>
+			<version>4.9.1.0 GWE</version>
+			<value>5</value>
+		</const>
+		<const>
+			<name>C4V_Array</name>
+			<category>Variablen</category>
+			<description>Array.</description>
+			<version>4.9.6.0 CR</version>
+			<value>6</value>
+		</const>
+		<const>
+			<name>C4V_Map</name>
+			<category>Variablen</category>
+			<description>Map.</description>
+			<version>4.9.10.7 [334] LC</version>
+			<value>7</value>
+		</const>
+		<examples>
+			<example>
+				<code><funcLink>if</funcLink> (<funcLink>GetType</funcLink>(<funcLink>Par</funcLink>()) == C4V_Any) return();</code>
+				<text>Bricht die Funktion ab, wenn der Datentyp des ersten Parameters unbekannt ist.</text>
+			</example>
+			<example>
+				<code><funcLink>if</funcLink> (<funcLink>GetType</funcLink>(x) == C4V_Int) <funcLink>Log</funcLink>("x=%d", x);</code>
+				<text>Gibt x im Log aus, wenn es eine Ganzzahl ist.</text>
+			</example>
+			<example>
+				<code><funcLink>if</funcLink> (<funcLink>GetType</funcLink>(x) != C4V_Array) x = <funcLink>CreateArray</funcLink>();</code>
+				<text>Speichert ein neues, leeres Array in x wenn es noch kein Array ist.</text>
+			</example>
+		</examples>
+		<history>
+			<change>
+				<author>Sven2</author>
+				<date>2002-04</date>
+				<version>4.9.1.0 GWE</version>
+				<description>Einführung C4V-Gruppe.</description>
+				<affecting>Alle</affecting>
+			</change>
+			<change>
+				<author>Clonk-Karl</author>
+				<date>2008-12</date>
+				<version>4.9.6.0 CR</version>
+				<description>Konstante ergänzt.</description>
+				<affecting>C4V_Array</affecting>
+			</change>
+			<change>
+				<author>Funni</author>
+				<date>2022-05-05</date>
+				<version>4.9.10.7 [334] LC</version>
+				<description>Konstante ergänzt. Siehe Commit <a href="https://github.com/legacyclonk/LegacyClonk/commit/8d041c80920fb744ad756fe94f487f18e4ed8583">8d041c8</a></description>
+				<affecting>C4V_Map</affecting>
+			</change>
+		</history>
+	</constGroup>
+	<author>Sven2</author>
+	<date>2002-04</date>
+	<author>Clonk-Karl</author>
+	<date>2008-12</date>
+	<author>Funni</author>
+	<date>2022-05-05</date>
+</clonkDoc>
