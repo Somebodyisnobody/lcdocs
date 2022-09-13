@@ -132,6 +132,7 @@ padding: 8px;
 border: 1px dashed #667abe;
 color: black;
 background-color: #f4f4f0;
+tab-size: 2em;
 }
 
 span.type, code b, pre.code b {
