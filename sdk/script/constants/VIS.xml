@@ -85,25 +85,25 @@
 		</const>
 		<examples>
 			<example>
-				<code>var obj;
-					while (obj=<funcLink>FindObject</funcLink>(WIPF,0,0,0,0,0,0,0,0,obj)) <funcLink>
-						SetVisibility</funcLink>(VIS_None, obj);
+				<code>
+var obj;
+while (obj=<funcLink>FindObject</funcLink>(WIPF,0,0,0,0,0,0,0,0,obj))
+	<funcLink>SetVisibility</funcLink>(VIS_None, obj);
 				</code>
 				<text>Macht alle Wipfe unsichtbar.</text>
 			</example>
 			<example>
-				<code><funcLink>Local</funcLink>(0)=9; SetVisibility(VIS_Local);
-				</code>
+				<code><funcLink>Local</funcLink>(0)=9; SetVisibility(VIS_Local);</code>
 				<text>Das aufrufende Objekt ist nur noch für Spieler 0 und Spieler 3 sichtbar</text>
 			</example>
 			<example>
-				<code><funcLink>Local</funcLink>(1)=2; SetVisibility(VIS_Local | VIS_God);
-				</code>
+				<code><funcLink>Local</funcLink>(1)=2; SetVisibility(VIS_Local | VIS_God);</code>
 				<text>Das aufrufende Objekt ist nur noch für Spieler 33 sichtbar</text>
 			</example>
 			<example>
-				<code><funcLink>Local</funcLink>(<funcLink>GetOwner</funcLink>()/32)=1&lt;&lt;(<funcLink>
-					GetOwner</funcLink>()%32); SetVisibility(VIS_Local);
+				<code>
+<funcLink>Local</funcLink>(<funcLink>GetOwner</funcLink>()/32)=1&lt;&lt;(<funcLink>GetOwner</funcLink>()%32);
+SetVisibility(VIS_Local);
 				</code>
 				<text>Das aufrufende Objekt ist nur noch von seinem Besitzer sichtbar (entspricht VIS_Owner)</text>
 			</example>

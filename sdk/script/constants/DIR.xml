@@ -25,9 +25,9 @@
 		<examples>
 			<example>
 				<code>
-					<funcLink>SetComDir</funcLink>(<constLink constGroup="COMD">COMD_None</constLink>, <funcLink>
-					GetCursor</funcLink>();
-					<funcLink>SetDir</funcLink>(DIR_Right(), <funcLink>GetCursor</funcLink>());
+<funcLink>SetComDir</funcLink>(<constLink constGroup="COMD">COMD_None</constLink>, <funcLink>
+GetCursor</funcLink>();
+<funcLink>SetDir</funcLink>(DIR_Right(), <funcLink>GetCursor</funcLink>());
 				</code>
 				<text>Der ausgewählte Clonk hält an und schaut nach rechts.</text>
 			</example>
