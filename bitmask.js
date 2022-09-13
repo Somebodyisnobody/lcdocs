@@ -45,7 +45,7 @@ class Bitmask {
             (e) => {
                 e = e || window.event;
                 const clickedElement = e.target || e.srcElement;
-                const clickedRow = clickedElement.closest('tr') === null;
+                const clickedRow = clickedElement.closest('tr');
                 if (clickedRow === null) return;
                 this.calculateBitfieldValue(clickedRow);
             }
