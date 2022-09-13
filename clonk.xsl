@@ -771,7 +771,7 @@
 					<xsl:otherwise><xsl:value-of select="@bitmaskName"/></xsl:otherwise>
 				</xsl:choose>
 				<xsl:text>: </xsl:text>
-				<input type="number" value="0"/>
+				<input type="number" value="0" disabled="true"/>
 				<xsl:call-template name="link">
 					<xsl:with-param name="href" select="'script/operatoren.html#Bitweise'"/>
 					<xsl:with-param name="text">

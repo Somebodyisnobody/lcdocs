@@ -55,6 +55,7 @@ class Bitmask {
                 this.calculateTable();
             }
         );
+        this.bitfield.disabled = false;
     }
 
     lockAndEscape(reason) {
