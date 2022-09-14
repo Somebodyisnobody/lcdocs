@@ -30,9 +30,7 @@
                 <text>Gibt eine Liste aller im Spiel befindlichen Gebäude zurück.</text>
             </example>
             <example>
-                <code><funcLink>FindObjects</funcLink>(Find_Category(<constLink constGroup="C4D">C4D_Rule</constLink> | <funcLink>
-                    C4D_Goal</funcLink>))
-                </code>
+                <code><funcLink>FindObjects</funcLink>(Find_Category(<constLink constGroup="C4D">C4D_Rule</constLink> | <constLink constGroup="C4D">C4D_Goal</constLink>))</code>
                 <text>
                     Liefert alle aktiven Spielregeln und Spielziele zurück. Man beachte, dass sich die Kategorien mit
                     "|" kombinieren lassen.
