@@ -60,6 +60,9 @@ jobs:
           filter: 'sdk/**/*.xml'
       - run: |
           readarray -t removed_files <<<"$(jq -r '.[]' <<<'${{ steps.files.outputs.added_modified }}')"
-          for removed_file in ${removed_files[@]}; do
-          echo "Do something with this ${removed_file}."
+          for file in ${files[@]}; do
+          htmlfile=${echo "${file}" | sed 's/sdk/online\/de\/sdk/; s/.xml/.html/'}
+          echo "Adding ${name}"
+          var=$var$htmlfile
           done
+          echo $var
