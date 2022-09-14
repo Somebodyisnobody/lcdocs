@@ -49,7 +49,8 @@ jobs:
     name: Screenshot
     runs-on: ubuntu-latest
     steps:
-      - uses: Ana06/get-changed-files@v2.1.0
+      - id: files
+        uses: Ana06/get-changed-files@v2.1.0
         with:
           # Format of the steps output context.
           # Can be 'space-delimited', 'csv', or 'json'.

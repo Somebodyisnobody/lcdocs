@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+saf<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
 <?xml-stylesheet type="text/xsl" href="../../clonk.xsl"?>
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -8,11 +8,11 @@
 
 <h>Aufruf von Scriptfunktionen</h>
 <part>
-	<text>Durch den Aufruf einer Scriptfunktion wird der Script der Funktion ausgeführt. Dabei kann die aufrufende Scriptfunktion Parameter an die Funktion übergeben und den Rückgabewert der Funktion verwerten.</text>
+	<text>Durch den Aufruf einer asfScriptfunktion wird der Script der Funktion ausgefÃ¼hrt. Dabei kann die aufrufende Scriptfunktion Parameter an die Funktion Ã¼bergeben und den RÃ¼ckgabewert der Funktion verwerten.</text>
 
 	<h>Aufruf einer lokalen Funktion</h>
 	<part>
-		<text>Befindet sich die Funktion, die aufgerufen werden soll, im selben Script wie die aufrufende Funktion, so ist dies ein "lokaler" Funktionsaufruf. Dabei wird die Funktion direkt über ihren Namen aufgerufen.</text>
+		<text>Befindet sich die Funktion, die aufgerufen werden soll, im selben Script wie die aufrufende Funktion, so ist dies ein "lokaler" Funktionsaufruf. Dabei wird die Funktion direkt Ã¼ber ihren Namen aufgerufen.</text>
 
 		<h>Beispiel:</h>
 		<code>func TestFunktion()
@@ -25,12 +25,12 @@ func Aufruf()
   TestFunktion();
 }</code>
 
-		<text>Wird hier die Funktion Aufruf() ausgeführt, so wird die Funktion TestFunktion() aufgerufen, welche eine entsprechende Nachricht ins Log ausgibt.</text>
+		<text>Wird hier die Funktion Aufruf() ausgefÃ¼hrt, so wird die Funktion TestFunktion() aufgerufen, welche eine entsprechende Nachricht ins Log ausgibt.</text>
 	</part>
 
 	<h>Aufruf einer Funktion in einem anderen Objekt</h>
 	<part>
-		<text>Will man eine Funktion im Script eines anderen Objekts aufrufen, so reicht der Name nicht aus, um einen Aufruf ausführen zu können. Es muss zusätzlich das Objekt angegeben werden, in dem die aufzurufende Funktion steht.</text>
+		<text>Will man eine Funktion im Script eines anderen Objekts aufrufen, so reicht der Name nicht aus, um einen Aufruf ausfÃ¼hren zu kÃ¶nnen. Es muss zusÃ¤tzlich das Objekt angegeben werden, in dem die aufzurufende Funktion steht.</text>
 
 		<h>Beispiel:</h>
 		<text>Script Objekt A (ID AAAA):</text>
@@ -49,8 +49,8 @@ func Aufruf()
   obj->Activate();
 }	</code>
 
-		<text>Der Script der Funktion Activate() in Objekt B sucht sich als erstes das nächstliegende Objekt vom Typ A (also mit der ID AAAA) und speichert es in der Veriable obj. Danach wird die Funktion Activate() im Script von diesem Objekt aufgerufen. Dazu wird zuerst das aufzurufende Objekt angegeben, gefolgt von dem Pfeil-Operator, der einen Objektaufruf markiert. Danach folgt der Funktionsname der aufzurufenden Funktion nebst der Parameterliste (in diesem Fall werden keine Parameter übergeben).</text>
-		<text>Es wird also durch den Aufruf von Activate() in Objekt B bewirkt, dass das nächstliegende Objekt vom Typ A in die Luft gejagt wird. Es handelt sich also im Beispiel um eine Art sehr primitiver Fernsteuerung für Objekt A (Der Aufruf erzeugt z.B. einen Fehler, wenn kein Objekt A existiert).</text>
+		<text>Der Script der Funktion Activate() in Objekt B sucht sich als erstes das nÃ¤chstliegende Objekt vom Typ A (also mit der ID AAAA) und speichert es in der Veriable obj. Danach wird die Funktion Activate() im Script von diesem Objekt aufgerufen. Dazu wird zuerst das aufzurufende Objekt angegeben, gefolgt von dem Pfeil-Operator, der einen Objektaufruf markiert. Danach folgt der Funktionsname der aufzurufenden Funktion nebst der Parameterliste (in diesem Fall werden keine Parameter Ã¼bergeben).</text>
+		<text>Es wird also durch den Aufruf von Activate() in Objekt B bewirkt, dass das nÃ¤chstliegende Objekt vom Typ A in die Luft gejagt wird. Es handelt sich also im Beispiel um eine Art sehr primitiver Fernsteuerung fÃ¼r Objekt A (Der Aufruf erzeugt z.B. einen Fehler, wenn kein Objekt A existiert).</text>
 
 		<h>Anmerkungen</h>
 		<text>Die Speicherung des Objektzeigers in der Variable obj im Beispiel ist nicht erforderlich. Die folgende Schreibweise der Funktion Activate() in B ist gleichwertig:</text>
@@ -60,7 +60,7 @@ func Aufruf()
   <funcLink>FindObject</funcLink>(AAAA, -1, -1, -1, -1)->Activate();
 }</code>
 
-		<text>Es kann zusätzlich zum Namen der aufzurufenden Funktion noch die ID der Definition der Scriptfunktion mit angegeben werden. Das macht den Aufruf zum einen in vielen Fällen leicht schneller, außerdem können so auch überladene Funktionen im Zielscript aufgerufen werden (siehe #include/#appendto).</text>
+		<text>Es kann zusÃ¤tzlich zum Namen der aufzurufenden Funktion noch die ID der Definition der Scriptfunktion mit angegeben werden. Das macht den Aufruf zum einen in vielen FÃ¤llen leicht schneller, auÃŸerdem kÃ¶nnen so auch Ã¼berladene Funktionen im Zielscript aufgerufen werden (siehe #include/#appendto).</text>
 
 		<code>func Activate()
 {
@@ -72,18 +72,18 @@ func Aufruf()
 	<h>Aufruf globaler Funktionen ohne Objekt- oder Definitionskontext</h>
 	<part>
 		<text>
-			Seit LC [336] ist es möglich, <code>#strict 3</code> oder höher vorausgesetzt, global definierte Funktionen mit <code>global->Function()</code> ohne Kontext aufzurufen. <code>global->~</code> ist ebenfalls möglich. Wichtig ist aber, dass zwischen "global" und "->" kein Leerzeichen sein darf.
-			Damit ist es zum Beispiel möglich, bei Funktionen, die objektlokale Koordinaten erwarten, globale Koordinaten anzugeben, ohne die eigenen Koordinaten davon abzuziehen.
+			Seit LC [336] ist es mÃ¶glich, <code>#strict 3</code> oder hÃ¶her vorausgesetzt, global definierte Funktionen mit <code>global->Function()</code> ohne Kontext aufzurufen. <code>global->~</code> ist ebenfalls mÃ¶glich. Wichtig ist aber, dass zwischen "global" und "->" kein Leerzeichen sein darf.
+			Damit ist es zum Beispiel mÃ¶glich, bei Funktionen, die objektlokale Koordinaten erwarten, globale Koordinaten anzugeben, ohne die eigenen Koordinaten davon abzuziehen.
 		</text>
 
-		<text>Das folgende Script erstellt einen Flint an den globalen Koordinaten 10/10, sogar wenn es innerhalb eines Objektes ausgeführt wird:</text>
+		<text>Das folgende Script erstellt einen Flint an den globalen Koordinaten 10/10, sogar wenn es innerhalb eines Objektes ausgefÃ¼hrt wird:</text>
 		<code>global-><funcLink>CreateObject</funcLink>(FLNT, 10, 10, <constLink constGroup="OWNER">NO_OWNER</constLink>);</code>
 	</part>
 
 
 	<h>Indirekter Aufruf von Skriptfunktionen</h>
 	<part>
-		<text>In manchen Situationen kann allerdings auch ein "indirekter" Aufruf durch die Engine-Funktionen <funcLink>Call</funcLink> und Verwandte sinnvoll sein. Hier wird der Funktionsname als String übergeben, was den Aufruf einer Funktion "nach Namen" ermöglicht.</text>
+		<text>In manchen Situationen kann allerdings auch ein "indirekter" Aufruf durch die Engine-Funktionen <funcLink>Call</funcLink> und Verwandte sinnvoll sein. Hier wird der Funktionsname als String Ã¼bergeben, was den Aufruf einer Funktion "nach Namen" ermÃ¶glicht.</text>
 
 		<h>Beispiel:</h>
 		<code>func TestFunktion()
@@ -98,7 +98,7 @@ func Aufruf()
 
 		<text>Ein solcher indirekter Aufruf ist allerdings in der Regel deutlich langsamer als der direkte Aufruf, da bei Call die entsprechende Funktion erst zur Laufzeit im Script gesucht werden muss. Beim direkten Aufruf steht die aufzurufende Funktion dagegen in der Regel bereits zur Zeit des Parsens (also beim Start der Engine) fest, weshalb dieser Aufruf besser optimiert werden kann und deshalb schneller ist.</text>
 
-		<text>Dieser Nachteil ist aber gleichzeitig in bestimmten Situationen eine Stärke von Call: es ist möglich, zur Laufzeit zu entscheiden, welche Funktion aufgerufen werden soll. Eine Anwendung soll das folgende Beispiel deutlich machen:</text>
+		<text>Dieser Nachteil ist aber gleichzeitig in bestimmten Situationen eine StÃ¤rke von Call: es ist mÃ¶glich, zur Laufzeit zu entscheiden, welche Funktion aufgerufen werden soll. Eine Anwendung soll das folgende Beispiel deutlich machen:</text>
 
 		<code>func TestFunktion()
 {
@@ -109,9 +109,9 @@ func Aufruf0() { <funcLink>Log</funcLink>("Die erste Funktion wurde aufgerufen!"
 func Aufruf1() { <funcLink>Log</funcLink>("Die zweite Funktion wurde aufgerufen!"); }
 func Aufruf2() { <funcLink>Log</funcLink>("Die dritte Funktion wurde aufgerufen!"); }</code>
 
-		<text>Hier wird in TestFunktion() eine <em>zufällige</em> Funktion aufgerufen (mittels <funcLink>Random</funcLink> und <funcLink>Format</funcLink> wird zufällig einer der drei Strings "Aufruf1", "Aufruf2" oder "Aufruf3" an Call übergeben).</text>
-		<text>Call muss hier verwendet werden, da erst zur Laufzeit bestimmt wird, welche Funktion aufgerufen wird. Außerdem wird bei jeder Ausführung von TestFunktion() eine andere Scriptfunktion ausgewählt, die aufgerufen wird. Dies wäre mit einem direkten Aufruf nicht möglich.</text>
-		<text>Außer Call können auch andere Zugriffsarten indirekt erfolgen, siehe dazu <funcLink>ObjectCall</funcLink> und <funcLink>GameCall</funcLink>. Besondere Beachtung verdienen außerdem noch <funcLink>PrivateCall</funcLink> und <funcLink>ProtectedCall</funcLink>. Sie ermöglichen die Umgehung der <emLink href="script/Funcs.html#Aufrufb">Aufrufbeschränkung</emLink> und existieren nur in der "Indirekt-Aufruf-Version".</text>
+		<text>Hier wird in TestFunktion() eine <em>zufÃ¤llige</em> Funktion aufgerufen (mittels <funcLink>Random</funcLink> und <funcLink>Format</funcLink> wird zufÃ¤llig einer der drei Strings "Aufruf1", "Aufruf2" oder "Aufruf3" an Call Ã¼bergeben).</text>
+		<text>Call muss hier verwendet werden, da erst zur Laufzeit bestimmt wird, welche Funktion aufgerufen wird. AuÃŸerdem wird bei jeder AusfÃ¼hrung von TestFunktion() eine andere Scriptfunktion ausgewÃ¤hlt, die aufgerufen wird. Dies wÃ¤re mit einem direkten Aufruf nicht mÃ¶glich.</text>
+		<text>AuÃŸer Call kÃ¶nnen auch andere Zugriffsarten indirekt erfolgen, siehe dazu <funcLink>ObjectCall</funcLink> und <funcLink>GameCall</funcLink>. Besondere Beachtung verdienen auÃŸerdem noch <funcLink>PrivateCall</funcLink> und <funcLink>ProtectedCall</funcLink>. Sie ermÃ¶glichen die Umgehung der <emLink href="script/Funcs.html#Aufrufb">AufrufbeschrÃ¤nkung</emLink> und existieren nur in der "Indirekt-Aufruf-Version".</text>
 	</part>
 </part>
 
