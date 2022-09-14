@@ -1,35 +1,13 @@
 name: Validate and build
 
 on:
-  push
+  pull_request
 
 defaults:
   run:
     shell: bash
 
 jobs:
-  lint:
-    name: Validate
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Install libxml2-utils
-        run: |
-          sudo DEBIAN_FRONTEND=noninteractive apt-get update && \
-          sudo DEBIAN_FRONTEND=noninteractive apt-get -y --no-install-recommends install libxml2-utils
-
-      - name: Lint all XML files
-        run: |
-          xmllint --schema ./clonk.xsd --noout $(find sdk -name '.*' -prune -o -name \*.xml -print)
-
-      - name: i18n Coverage
-        uses: alexkiro/i18n-coverage@v1.0.1
-        with:
-          translations-path: './*.po'
-          min-coverage: 100
-
-
   build:
     name: Build
     runs-on: ubuntu-latest
@@ -66,3 +44,21 @@ jobs:
         with:
           name: generated-docs-nested-zip
           path: generated-docs.zip
+
+  screenshot:
+    name: Screenshot
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Ana06/get-changed-files@v2.1.0
+        with:
+          # Format of the steps output context.
+          # Can be 'space-delimited', 'csv', or 'json'.
+          # Default: 'space-delimited'
+          format: 'json'
+          # Filter files using a glob filter
+          filter: 'sdk/**/*.xml'
+      - run: |
+          readarray -t removed_files <<<"$(jq -r '.[]' <<<'${{ steps.files.outputs.added_modified }}')"
+          for removed_file in ${removed_files[@]}; do
+          echo "Do something with this ${removed_file}."
+          done
