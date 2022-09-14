@@ -1,7 +1,8 @@
 name: PR-Screenshot
 
 on:
-  [push, pull_request]
+  pull_request:
+    types: [opened, synchronize]
 
 defaults:
   run:
@@ -11,6 +12,7 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
 
@@ -58,7 +60,9 @@ jobs:
           format: 'json'
           # Filter files using a glob filter
           filter: 'sdk/**/*.xml'
-      - run: |
+
+      - id: filelist
+        run: |
           readarray -t files <<<"$(jq -r '.[]' <<<'${{ steps.files.outputs.added_modified }}')"
           for file in ${files[@]}; do
           htmlfile=$(echo "${file}" | sed 's/sdk/online\/de\/sdk/; s/.xml/.html/')
@@ -67,3 +71,14 @@ jobs:
           done
           htmlfiles=${htmlfiles::-2}
           echo $htmlfiles
+          echo "::set-output name=htmlfiles::${htmlfiles}"
+
+      # Run Screenshot Comment Action
+      - name: Run Screenshot Comment Action
+        uses: saadmk11/comment-webpage-screenshot@main
+        with:
+          upload_to: imgur
+          # Capture Screenshots of Changed HTML Files
+          capture_changed_html_files: yes
+          # Comma seperated paths to any other HTML File
+          capture_html_file_paths: "${{ steps.filelist.outputs.htmlfiles }}"
