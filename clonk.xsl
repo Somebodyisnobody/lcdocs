@@ -591,7 +591,7 @@
 	<xsl:template match="funcLink">
 		<xsl:param name="relpath" tunnel="yes"/>
 		<xsl:choose>
-			<xsl:when test="document(concat('sdk/script/fn/', normalize-space(.), '.xml'))">
+			<xsl:when test="doc-available(concat('sdk/script/fn/', normalize-space(.), '.xml'))">
 				<a>
 					<xsl:attribute name="href">
 						<xsl:value-of select="$relpath"/><xsl:text>sdk/script/fn/</xsl:text><xsl:value-of select="normalize-space(.)"/><xsl:value-of
