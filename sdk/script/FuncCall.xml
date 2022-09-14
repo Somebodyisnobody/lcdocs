@@ -10,7 +10,7 @@
 <part>
 	<text>Durch den Aufruf einer Scriptfunktion wird der Script der Funktion ausgeführt. Dabei kann die aufrufende Scriptfunktion Parameter an die Funktion übergeben und den Rückgabewert der Funktion verwerten.</text>
 
-	<h>Aufruf einer lokalen Funktion</h>
+	<h id="local-call">Aufruf einer lokalen Funktion</h>
 	<part>
 		<text>Befindet sich die Funktion, die aufgerufen werden soll, im selben Script wie die aufrufende Funktion, so ist dies ein "lokaler" Funktionsaufruf. Dabei wird die Funktion direkt über ihren Namen aufgerufen.</text>
 
@@ -28,7 +28,7 @@ func Aufruf()
 		<text>Wird hier die Funktion Aufruf() ausgeführt, so wird die Funktion TestFunktion() aufgerufen, welche eine entsprechende Nachricht ins Log ausgibt.</text>
 	</part>
 
-	<h>Aufruf einer Funktion in einem anderen Objekt</h>
+	<h id="object-call">Aufruf einer Funktion in einem anderen Objekt</h>
 	<part>
 		<text>Will man eine Funktion im Script eines anderen Objekts aufrufen, so reicht der Name nicht aus, um einen Aufruf ausführen zu können. Es muss zusätzlich das Objekt angegeben werden, in dem die aufzurufende Funktion steht.</text>
 

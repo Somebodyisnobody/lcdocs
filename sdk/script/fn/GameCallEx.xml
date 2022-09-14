@@ -14,10 +14,10 @@
 				<param><type>any</type><name>...</name><desc>Bis zu neun Parameter, die an die Funktion Script übergeben werden</desc><optional /></param>
 			</params>
 		</syntax>
-		<desc>Ruft szFunction im Szenario-Script und in Spielzielen, Spielregeln und Umweltobjekten auf. Sollte die Funktion nicht vorhanden sein, gibt die Funktion Null zurück und verursacht keine Fehlermeldung.</desc>
+		<desc>Ruft szFunction im Szenario-Script und in Spielzielen, Spielregeln und Umweltobjekten auf. Sollte die Funktion nicht vorhanden sein, gibt die Funktion <code>null</code> zurück und verursacht keine Fehlermeldung.</desc>
 		<examples>
 			<example>
-				<code>GameCallEx("InitializePlayer",0);</code>
+				<code>GameCallEx("InitializePlayer", 0);</code>
 				<text>Lässt das Script nochmal die Initialisierung für den ersten Spieler ausführen.</text>
 			</example>
 		</examples>

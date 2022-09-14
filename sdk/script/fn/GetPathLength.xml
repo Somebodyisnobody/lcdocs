@@ -7,13 +7,6 @@
     <title>GetPathLength</title>
     <category>Landschaft</category>
     <versions><version>4.9.1.0 GWE</version></versions>
-    <deprecated>
-      <!-- TODO check if really deprecated @DerTod. -->
-      <author>Fulgen</author>
-      <date>2019-10-11</date>
-      <version>4.9.10.8 [336] LC</version>
-      <description>Diese Funktion dient der Kompatibilität zu älteren Spielinhalten. In neueren Scripts sollte <funcLink>GetPath</funcLink> verwendet werden.</description>
-    </deprecated>
     <syntax>
       <rtype>int</rtype>
       <params>
@@ -44,7 +37,7 @@
           einen Weg zwischen zwei Punkten der Landschaft und gibt dessen Länge
           zurück. Wurde kein Weg gefunden, gibt die Funktion 0 zurück.</desc>
     
-      <remark>Diese Funktion dient der Kompatibilität zu älteren Spielinhalten. In neueren Scripts sollte <funcLink>GetPath</funcLink> verwendet werden.</remark>
+      <remark>Wird der ermittelte Pfad benötigt, so kann die Funktion <funcLink>GetPath</funcLink> verwendet werden.</remark>
     <examples>
       <example>
         <code>var iDist = GetPathLength(<funcLink>GetX</funcLink>(), <funcLink>GetY</funcLink>(), <funcLink>GetX</funcLink>(<funcLink>FindBase</funcLink>(<funcLink>GetOwner</funcLink>())), <funcLink>GetY</funcLink>(<funcLink>FindBase</funcLink>(<funcLink>GetOwner</funcLink>())));</code>

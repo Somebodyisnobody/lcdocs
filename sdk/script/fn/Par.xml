@@ -7,13 +7,11 @@
   <title>Par</title>
   <category>Script</category>
   <versions><version>4.6.5.0 CP</version></versions>
-  <!-- <deprecated /> Ich denke nicht (peter) -->
      <deprecated>
-         <!-- TODO check if really deprecated @DerTod-->
-         <author>Tod</author>
-         <date>2022-03-11</date>
-         <version>1.2.3.4 LC</version>
-         <description>Todo check</description>
+         <author>DerTod</author>
+         <date>2022-09-14</date>
+         <version>4.9.10.14 [355] LC</version>
+         <description>Anstatt Par() sollte die neue Funktionssyntax verwendet werden.</description>
      </deprecated>
   <syntax>
    <rtype>any</rtype>
@@ -29,34 +27,41 @@
   <desc>Gibt einen der an die Funktion übergebenen Parameter zurück.</desc>
 
   <remark>Diese Funktion war in der alten (&lt; gwe4) Funktionssyntax die einzige Möglichkeit, um
-          die Funktionsparameter abzufragen. Mit der neuen Syntax können den Parametern Namen zugewiesen
-          werden, was in den meisten Fällen auch zu empfehlen ist (Ausnahme: siehe Beispiel)</remark>
+      die Funktionsparameter abzufragen. Mit der neuen Syntax können den Parametern Namen zugewiesen
+      werden, was in den meisten Fällen auch zu empfehlen ist. Eine Ausnahme bildet die Verwendung zum Bilden eines
+      Index z. B. für Iterationen (siehe Beispiel)
+  </remark>
 
   <examples>
     <example>
-      <code>private Multiply3:
-  <funcLink>return</funcLink>(Par() * Par(1) * Par(2));</code>
+      <code>
+private Multiply3:
+  <funcLink>return</funcLink>(Par() * Par(1) * Par(2));
+      </code>
       <text>Definiert eine Funktion Multiply3, die ihre drei Parameter miteinander multipliziert.</text>
     </example>
     <example>
-      <code>private func Multiply3(v1, v2, v3)
+      <code>
+private func Multiply3(v1, v2, v3)
 {
   return(v1 * v2 * v3);
-}</code>
+}
+      </code>
       <text>Dieselbe Funktion mit in neuer Funktionssyntax</text>
-      <code>private func MultiplyX(cnt)
+      <code>
+private func MultiplyX(cnt)
 {
   var x = 1;
   for(var i = 0; i &lt; cnt; i++)
     x *= Par(i + 1);
   return(x);
-}</code>
+}
+      </code>
       <text>Ein Beispiel für gemischte Verwendung von benannten und unbenannten Parametern. Diese
             Funktion kann bis zu 9 Zahlen multiplizieren. Dabei wird jeweils die Anzahl der zu
             multiplizierenden Zahlen übergeben (z.B. MultiplyX(4, 10, 3, 4, 7) = 10 * 3 * 4 * 7 = 840)</text>
     </example>
   </examples>
-
  </func>
  <author>Sven2</author><date>2002-08</date>
 </clonkDoc>

@@ -51,7 +51,7 @@
               <row><col>TransferTarget</col><col>object</col><col>Transferzielobjekt. nur gesetzt, falls vorhanden.</col></row>
           </table>
    </desc>
-   <remark>Diese Funktion kann aufgrund der Mapsyntax nur ab #strict 3 verwendet werden. In älteren Versionen kann <funcLink>GetPathLength</funcLink> verwendet werden.</remark>
+   <remark>Diese Funktion kann aufgrund der Syntax für Maps nur ab #strict 3 verwendet werden. In älteren Versionen oder wenn nur die Pfadlänge benötigt wird kann <funcLink>GetPathLength</funcLink> verwendet werden.</remark>
 
     <examples>
       <example>

@@ -7,6 +7,12 @@
 		<title>PrivateCall</title>
 		<category>Script/Funktionsaufruf</category>
 		<versions><version>4.6.5.0 CP</version></versions>
+		<deprecated>
+			<author>DerTod</author>
+			<date>2022-09-14</date>
+			<version>4.9.10.14 [355] LC</version>
+			<description>Statt dieser Funktion sollte die neue Syntax zum Aufrufen von Funktionen verwendet werden. Siehe <emLink href="script/FuncCall.html">Aufruf von Scriptfunktionen</emLink>.</description>
+		</deprecated>
 		<syntax>
 			<rtype>any</rtype>
 			<params>
