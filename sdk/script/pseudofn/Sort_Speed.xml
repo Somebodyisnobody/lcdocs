@@ -13,7 +13,7 @@
 		<syntax>
 			<rtype>array</rtype>
 		</syntax>
-		<desc>Die Sort_Speed Funktion dient dem Sortieren von Suchergebnissen von <funcLink>FindObjects</funcLink>. Sie sortiert nach Geschwindigkeit. Schnellste oder langsamste zuerst?</desc>
+		<desc>Die Sort_Speed Funktion dient dem Sortieren von sSuchergebnissen von <funcLink>FindObjects</funcLink>. Sie sortiert nach Geschwindigkeit. Schnellste oder langsamste zuerst?</desc>
 		<examples>
 			<example>
 				<code>"Hier könnte ein passendes Codebeispiel stehen"</code>

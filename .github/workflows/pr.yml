@@ -54,7 +54,7 @@ jobs:
       - name: Run Screenshot Comment Action
         uses: saadmk11/comment-webpage-screenshot@main
         with:
-          upload_to: imgur
+          upload_to: github_branch
           # Capture Screenshots of Changed HTML Files
           capture_changed_html_files: no
           # Comma seperated paths to any other HTML File
