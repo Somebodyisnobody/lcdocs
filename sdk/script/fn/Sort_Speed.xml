@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
+<!-- TODO: Review -->
+<clonkDoc xmlns="https://clonkspot.org"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
+	<func>
+		<title>Sort_Speed</title>
+		<category>Objekte/Suche</category>
+		<versions>
+			<version>9.9.9.9 LC</version>
+		</versions>
+		<syntax>
+			<rtype>array</rtype>
+		</syntax>
+		<desc>Die Sort_Speed Funktion dient dem Sortieren von Suchergebnissen von <funcLink>FindObjects</funcLink>. Sie sortiert nach Geschwindigkeit. Schnellste oder langsamste zuerst?</desc>
+		<examples>
+			<example>
+				<code>"Hier könnte ein passendes Codebeispiel stehen"</code>
+				<text>Hier könnte Ihre Funktionsbeschreibung stehen</text>
+			</example>
+		</examples>
+		<related>
+			<funcLink>FindObjects</funcLink>
+			<funcLink>FindObject</funcLink>
+			<funcLink>FindObject2</funcLink>
+			<funcLink>Sort_Distance</funcLink>
+			<funcLink>Sort_Func</funcLink>
+			<funcLink>Sort_Mass</funcLink>
+			<funcLink>Sort_Multiple</funcLink>
+			<funcLink>Sort_Random</funcLink>
+			<funcLink>Sort_Reverse</funcLink>
+			<funcLink>Sort_Value</funcLink>
+		</related>
+	</func>
+	<author>Fulgen</author><date>2016-08-13</date>
+</clonkDoc>

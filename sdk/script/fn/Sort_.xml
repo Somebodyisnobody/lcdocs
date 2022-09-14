@@ -19,5 +19,7 @@
 	<row><col>Sort_Value()</col><col>Sortiert nach Objektwert.</col></row>
 	<row><col>Sort_Func(string f, ...)</col><col>Sortiert nach dem Rückgabewert einer Funktion.</col></row>
 </table></text>
-    </doc><author>unbekannt</author><date>2099-01</date>
+    </doc>
+	<author>Fulgen</author><date>2016-08-13</date>
+	<author>DerTod</author><date>2019-10-10</date>
 </clonkDoc>

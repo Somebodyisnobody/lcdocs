@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
+<!-- TODO: Review -->
+<clonkDoc xmlns="https://clonkspot.org"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
+	<func>
+		<title>Sort_Distance</title>
+		<category>Objekte/Suche</category>
+		<versions>
+			<version>9.9.9.9 LC</version>
+		</versions>
+		<syntax>
+			<rtype>array</rtype>
+			<params>
+				<param>
+					<type>int</type>
+					<name>x</name>
+					<desc>Die horizontale Koordinate.</desc>
+				</param>
+				<param>
+					<type>int</type>
+					<name>y</name>
+					<desc>Die vertikale Koordinate.</desc>
+				</param>
+			</params>
+		</syntax>
+		<desc>Die Sort_Distance Funktion dient dem Sortieren von Suchergebnissen von <funcLink>FindObjects</funcLink>. Sie sortiert nach Entfernung zum (objektlokalen) Punkt x/y.</desc>
+		<examples>
+			<example>
+				<code>  // Nach geeigneten Lebewesen suchen
+var pLiving = FindObject2(Sort_Distance(),Find_AtPoint(),Find_Or(Find_OCF(OCF_Alive),Find_Func("IsHorse")),
+Find_NoContainer(),Find_Not(TrapIgnoreTargets()));</code>
+				<text>Hier könnte Ihre Funktionsbeschreibung stehen</text>
+			</example>
+		</examples>
+		<related>
+			<funcLink>FindObjects</funcLink>
+			<funcLink>FindObject</funcLink>
+			<funcLink>FindObject2</funcLink>
+			<funcLink>Sort_Func</funcLink>
+			<funcLink>Sort_Mass</funcLink>
+			<funcLink>Sort_Multiple</funcLink>
+			<funcLink>Sort_Random</funcLink>
+			<funcLink>Sort_Reverse</funcLink>
+			<funcLink>Sort_Speed</funcLink>
+			<funcLink>Sort_Value</funcLink>
+		</related>
+	</func>
+	<author>Fulgen</author><date>2016-08-13</date>
+	<author>DerTod</author><date>2019-10-10</date>
+</clonkDoc>
