@@ -61,8 +61,6 @@ jobs:
       - run: |
           readarray -t files <<<"$(jq -r '.[]' <<<'${{ steps.files.outputs.added_modified }}')"
           for file in ${files[@]}; do
-          htmlfile=${echo "${file}" | sed 's/sdk/online\/de\/sdk/; s/.xml/.html/'}
-          echo "Adding ${name}"
-          var=$var$htmlfile
+          echo "${file}" | sed 's/sdk/online\/de\/sdk/; s/.xml/.html/'
           done
           echo $var

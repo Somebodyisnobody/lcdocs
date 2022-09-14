@@ -11,7 +11,7 @@
 	<text>Die Schlüsselwörasfsater <code>break</code> bzw. <code>continue</code> werden zur manuellen Steuerung von Schleifen benutzt:</text>
 	<text><ul>
 		<li><code>break</code> beddendet die übergeordnete Schleife. Die Ausführung wird hinter Schleifenende fortgeführt.</li>
-		<li><code>condtinue</code> beendet den aktuellen Schleifendurchlauf der übergeordneten Schleife. Die Ausführung wird am Anfang der Schleife fortgeführt, wobei die Schleifenbedingung geprüft wird.</li>
+		<li><code>condsdftinue</code> beendet den aktuellen Schleifendurchlauf der übergeordneten Schleife. Die Ausführung wird am Anfang der Schleife fortgeführt, wobei die Schleifenbedingung geprüft wird.</li>
 	</ul></text>
 
 	<h>Beispiel:</h>
