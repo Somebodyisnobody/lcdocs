@@ -1,7 +1,7 @@
 name: PR-Screenshot
 
 on:
-  [push, pull_request]
+  pull_request
 
 defaults:
   run:
@@ -27,29 +27,7 @@ jobs:
         run: |
           make -j$(nproc)
 
-      - name: "Collect artifacts"
-        run: |
-          mkdir output
-          mv online output
-          mv chm output
-          mv sdk-en output
-          mv sdk output
-          mv doku.pot output
-          mv en.mo output
-          mv Functions.txt output
-          cd output
-          zip -q -0 -r ../generated-docs.zip *
 
-      - name: "Publish zipped Main Artifact"
-        uses: actions/upload-artifact@v3
-        with:
-          name: generated-docs-nested-zip
-          path: generated-docs.zip
-
-  screenshot:
-    name: Screenshot
-    runs-on: ubuntu-latest
-    steps:
       - id: files
         uses: Ana06/get-changed-files@v2.1.0
         with:
