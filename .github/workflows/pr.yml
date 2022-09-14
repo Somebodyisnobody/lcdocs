@@ -1,7 +1,7 @@
 name: PR-Screenshot
 
 on:
-  pull_request
+  [push, pull_request]
 
 defaults:
   run:
