@@ -79,6 +79,6 @@ jobs:
         with:
           upload_to: imgur
           # Capture Screenshots of Changed HTML Files
-          capture_changed_html_files: yes
+          capture_changed_html_files: no
           # Comma seperated paths to any other HTML File
           capture_html_file_paths: "${{ steps.filelist.outputs.htmlfiles }}"
