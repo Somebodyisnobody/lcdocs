@@ -8,7 +8,7 @@
 
 <h>Aufruf von Scriptfunktionen</h>
 <part>
-	<text>Durch den Aufruf einer asfScriptfunktion wird der Script der Funktion ausgeführt. Dabei kann die aufrufende Scriptfunktion Parameter an die Funktion übergeben und den Rückgabewert der Funktion verwerten.</text>
+	<text>Durch den Aufruf einedr asfScriptfunktion wird der Script der Funktion ausgeführt. Dabei kann die aufrufende Scriptfunktion Parameter an die Funktion übergeben und den Rückgabewert der Funktion verwerten.</text>
 
 	<h>Aufruf einer lokalen Funktion</h>
 	<part>
