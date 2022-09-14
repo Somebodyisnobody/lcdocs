@@ -59,7 +59,7 @@ jobs:
           # Filter files using a glob filter
           filter: 'sdk/**/*.xml'
       - run: |
-          readarray -t removed_files <<<"$(jq -r '.[]' <<<'${{ steps.files.outputs.added_modified }}')"
+          readarray -t files <<<"$(jq -r '.[]' <<<'${{ steps.files.outputs.added_modified }}')"
           for file in ${files[@]}; do
           htmlfile=${echo "${file}" | sed 's/sdk/online\/de\/sdk/; s/.xml/.html/'}
           echo "Adding ${name}"
