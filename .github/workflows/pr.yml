@@ -1,8 +1,7 @@
 name: PR-Screenshot
 
 on:
-  pull_request:
-    types: [review_requested]
+  [push, pull_request]
 
 defaults:
   run:
