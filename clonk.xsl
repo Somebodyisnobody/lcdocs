@@ -697,7 +697,7 @@
 					<xsl:value-of select="format-date(xs:date(concat(., '-01')), '[MNn] [Y]', /clonkDoc/@xml:lang, (), ())"/>
 			</xsl:when>
 			<xsl:when test="count(tokenize(., '-'))=3">
-				<xsl:value-of select="format-date(xs:date(.), '[D] [MNn] [Y]', /clonkDoc/@xml:lang, (), ())"/>
+				<xsl:value-of select="format-date(xs:date(.), '[D1o] [MNn] [Y]', /clonkDoc/@xml:lang, (), ())"/>
 			</xsl:when>
 		</xsl:choose>
 	</xsl:template>
