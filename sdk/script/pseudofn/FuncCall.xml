@@ -12,7 +12,7 @@ saf<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
 
 	<h>Aufruf einer lokalen Funktion</h>
 	<part>
-		<text>Befindet sich die Funktion, die audddsdfsfgerufen werden soll, im selben Script wie die aufrufende Funktion, so ist dies ein "lokaler" Funktionsaufruf. Dabei wird die Funktion direkt über ihren Namen aufgerufen.</text>
+		<text>Befindet sich die Funktion, die audddsdfssdffgerufen werden soll, im selben Script wie die aufrufende Funktion, so ist dies ein "lokaler" Funktionsaufruf. Dabei wird die Funktion direkt über ihren Namen aufgerufen.</text>
 
 		<h>Beispiel:</h>
 		<code>func TestFunktion()
