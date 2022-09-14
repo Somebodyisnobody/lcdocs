@@ -1,0 +1,61 @@
+name: PR-Screenshot
+
+on:
+  pull_request
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-java@v2
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+
+      - name: Setup saxonb-xslt, python, gettext
+        run: sudo DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends libsaxonb-java python-libxml2 gettext -y
+
+      - name: Build docs
+        run: |
+          make -j$(nproc)
+
+
+      - id: files
+        uses: Ana06/get-changed-files@v2.1.0
+        with:
+          # Format of the steps output context.
+          # Can be 'space-delimited', 'csv', or 'json'.
+          # Default: 'space-delimited'
+          format: 'json'
+          # Filter files using a glob filter
+          filter: 'sdk/**/*.xml'
+
+      - id: filelist
+        run: |
+          readarray -t files <<<"$(jq -r '.[]' <<<'${{ steps.files.outputs.added_modified }}')"
+          for file in ${files[@]}; do
+          htmlfile=$(echo "${file}" | sed 's/sdk/online\/de\/sdk/; s/.xml/.html/')
+          echo "Adding ${htmlfile}"
+          htmlfiles="${htmlfiles}${htmlfile}, " 
+          done
+          htmlfiles=${htmlfiles::-2}
+          echo $htmlfiles
+          echo "::set-output name=htmlfiles::${htmlfiles}"
+
+      # Run Screenshot Comment Action
+      - name: Run Screenshot Comment Action
+        uses: saadmk11/comment-webpage-screenshot@main
+        with:
+          upload_to: github_branch
+          # Capture Screenshots of Changed HTML Files
+          capture_changed_html_files: no
+          # Comma seperated paths to any other HTML File
+          capture_html_file_paths: "${{ steps.filelist.outputs.htmlfiles }}"

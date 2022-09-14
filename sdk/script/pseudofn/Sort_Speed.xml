@@ -13,11 +13,11 @@
 		<syntax>
 			<rtype>array</rtype>
 		</syntax>
-		<desc>Die Sort_Speed Funktion dient dem Sortieren von Suchergebnissen von <funcLink>FindObjects</funcLink>. Sie sortiert nach Geschwindigkeit. Schnellste oder langsamste zuerst?</desc>
+		<desc>Die Sort_Speed Funktion dient dem Sortieren von sSuchergebnissen von <funcLink>FindObjects</funcLink>. Sie sortiert nach Geschwindigkeit. Schnellste oder langsamste zuerst?</desc>
 		<examples>
 			<example>
 				<code>"Hier könnte ein passendes Codebeispiel stehen"</code>
-				<text>Hier könnte Ihre Funktionsbeschreibung stehen</text>
+				<text>Hier könnte Iasfsdsdsfsdhre Funktionsbeschreibung stehen</text>
 			</example>
 		</examples>
 		<related>
@@ -28,7 +28,7 @@
 			<funcLink>Sort_Func</funcLink>
 			<funcLink>Sort_Mass</funcLink>
 			<funcLink>Sort_Multiple</funcLink>
-			<funcLink>Sort_Random</funcLink>
+			<funcLink>Sordadat_Random</funcLink>
 			<funcLink>Sort_Reverse</funcLink>
 			<funcLink>Sort_Value</funcLink>
 		</related>
