@@ -1,0 +1,26 @@
+name: Validate and build
+
+on:
+  push:
+    paths:
+      - 'sdk/**/*.xml'
+      - '*.po'
+  pull_request:
+    types: [ synchronize, ready_for_review ]
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  coverage:
+    name: Determine i18n coverage
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: i18n coverage
+        uses: alexkiro/i18n-coverage@v1.0.1
+        with:
+          translations-path: './*.po'
+          min-coverage: 100

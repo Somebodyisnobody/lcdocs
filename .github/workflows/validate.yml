@@ -1,0 +1,29 @@
+name: Validate and build
+
+on:
+  push:
+    paths:
+      - 'sdk/**/*.xml'
+      - clonk.xsd
+  pull_request:
+    types: [ synchronize, ready_for_review ]
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  lint:
+    name: Validate XML Schema
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install libxml2-utils
+        run: |
+          sudo DEBIAN_FRONTEND=noninteractive apt-get update && \
+          sudo DEBIAN_FRONTEND=noninteractive apt-get -y --no-install-recommends install libxml2-utils
+
+      - name: Lint all XML files
+        run: |
+          xmllint --schema ./clonk.xsd --noout $(find sdk -name '.*' -prune -o -name \*.xml -print)
