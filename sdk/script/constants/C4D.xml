@@ -4,18 +4,11 @@
 		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
 	<constGroup activateBitmask="true">
-		<!-- TODO @maxmitti: Adding other, undocumented constants and dissolve category.xml-->
-		<title>C4D</title>
+		<title>Objektkategorien (C4D)</title>
 		<description>Konstanten zum Setzen oder Abrufen von Kategorien eines Objektes.
-			Verwendet werden diese Konstanten mit <funcLink>GetCategory</funcLink> und <funcLink>SetCategory</funcLink>.
+			Verwendet werden diese Konstanten mit <funcLink>GetCategory</funcLink> und <funcLink>SetCategory</funcLink>.<br/>
+			Die Kategorie eines Objekts ist eine DWord-Bitmaske, die sich aus den folgenden Werten zusammen setzt. Die ersten 5 Kategorien erlauben keine Kombination, von den Bits 0-4 darf und muss immer genau eines zu jeder Zeit gesetzt sein.
 		</description>
-		<const bitPos="0">
-			<name>C4D_All</name>
-			<category>Objekte/Kategorie</category>
-			<description>Alle Kategorien.</description>
-			<version>4.6.5.0 CP</version>
-			<value>0</value>
-		</const>
 		<const bitPos="1">
 			<name>C4D_StaticBack</name>
 			<category>Objekte/Kategorie</category>
@@ -47,7 +40,7 @@
 		<const bitPos="5">
 			<name>C4D_Object</name>
 			<category>Objekte/Kategorie</category>
-			<description>Kleine Objekte.</description>
+			<description>Kleine Objekte/Gegenstände.</description>
 			<version>4.6.5.0 CP</version>
 			<value>16</value>
 		</const>
@@ -58,12 +51,26 @@
 			<version>4.6.5.0 CP</version>
 			<value>32</value>
 		</const>
+		<const bitPos="7">
+			<name>C4D_Environment</name>
+			<category>Objekte/Kategorie</category>
+			<description>Umweltobjekte.</description>
+			<version>N/A</version>
+			<value>64</value>
+		</const>
 		<const bitPos="11">
 			<name>C4D_Knowledge</name>
 			<category>Objekte/Kategorie</category>
-			<description>Baupläne.</description>
+			<description>Baupläne. Für das Menüsystem Auswahl herstellbare Objekte.</description>
 			<version>4.6.5.0 CP</version>
 			<value>1024</value>
+		</const>
+		<const bitPos="18">
+			<name>C4D_Magic</name>
+			<category>Objekte/Kategorie</category>
+			<description>Zauber.</description>
+			<version>N/A</version>
+			<value>131072</value>
 		</const>
 		<const bitPos="20">
 			<name>C4D_Rule</name>
@@ -91,6 +98,43 @@
 			<version>4.9.1.0 GWE</version>
 			<value>2097152</value>
 		</const>
+		<const bitPos="23">
+			<name>C4D_MouseSelect</name>
+			<category>Objekte/Kategorie</category>
+			<!-- TODO <callbacklink> to callback when documented-->
+			<description>Objekt lässt sich anklicken; Klick löst Callback aus (MouseSelection(int iPlr)-Callback im Objekt).</description>
+			<version>N/A</version>
+			<value>4194304</value>
+		</const>
+		<const bitPos="24">
+			<name>C4D_Foreground</name>
+			<category>Objekte/Kategorie</category>
+			<description>Objekt wird im Vordergrund normaler Objekte gerendert.</description>
+			<version>N/A</version>
+			<value>8388608</value>
+		</const>
+		<const bitPos="25">
+			<name>C4D_MouseIgnore</name>
+			<category>Objekte/Kategorie</category>
+			<description>Objekt ist nicht mit der Maus anwählbar.</description>
+			<version>N/A</version>
+			<value>16777216</value>
+		</const>
+		<const bitPos="26">
+			<name>C4D_IgnoreFoW</name>
+			<category>Objekte/Kategorie</category>
+			<description>Objekt ist auch innerhalb von FoW komplett sichtbar, d.h. es wird auch dann gezeichnet, wenn es eigentlich vom Kriegsnebel bedeckt ist. Nützlich beispielsweise für Statusanzeigen und Kontrollelemente.</description>
+			<!-- Laut Beschreibung aus category.xml ab Version "CR"-->
+			<version>N/A</version>
+			<value>33554432</value>
+		</const>
+		<const bitPos="32">
+			<name>C4D_All</name>
+			<category>Objekte/Kategorie</category>
+			<description>Alle Kategorien.</description>
+			<version>4.6.5.0 CP</version>
+			<value>-2147483648</value>
+		</const>
 		<examples>
 			<example>
 				<code><funcLink>SetCategory</funcLink>(C4D_StaticBack, this());</code>
@@ -105,10 +149,11 @@
 				<text>Liefert die ID des ersten geladenen Objekts zurück. Ein ähnlicher Code wird vom Forschungslabor benutzt, um die erforschbaren Objekte aufzulisten.</text>
 			</example>
 			<example>
-				<code>var obj;
-					while (obj=<funcLink>FindObject</funcLink>(0, 0, 0, 0, 0, 0, 0, 0, 0, obj))
-					if (<funcLink>GetCategory</funcLink>(obj) <emLink href="script/operatoren.html">&amp;</emLink> C4D_Goal)
-					<funcLink>RemoveObject</funcLink>(obj);
+				<code>
+var obj;
+while (obj=<funcLink>FindObject</funcLink>(0, 0, 0, 0, 0, 0, 0, 0, 0, obj))
+if (<funcLink>GetCategory</funcLink>(obj) <emLink href="script/operatoren.html">&amp;</emLink> C4D_Goal)
+<funcLink>RemoveObject</funcLink>(obj);
 				</code>
 				<text>Entfernt alle Spielziele. Mit einem bitweisen AND kann man überprüfen, ob zwei Kategorien in mindestens einer Kategorie übereinstimmen.</text>
 			</example>
@@ -117,8 +162,9 @@
 				<text>Mit einem bitweisen AND kann man überprüfen, ob zwei Kategorien in mindestens einer Kategorie übereinstimmen.</text>
 			</example>
 			<example>
-				<code>for(var obj in <funcLink>FindObjects</funcLink>(<funcLink>Find_Category</funcLink>(C4D_Rule)))
-					<funcLink>RemoveObject</funcLink>(obj);</code>
+				<code>
+for(var obj in <funcLink>FindObjects</funcLink>(<funcLink>Find_Category</funcLink>(C4D_Rule)))
+<funcLink>RemoveObject</funcLink>(obj);</code>
 				<text>Entfernt alle Spielregeln. :-)</text>
 			</example>
 			<example>
@@ -126,9 +172,9 @@
 				<text>Versetzt das aufrufende Objekt in den Hintergrund.</text>
 			</example>
 			<example>
-				<code><funcLink>SetCategory</funcLink>(<funcLink>GetCategory</funcLink>() | C4D_Parallax | C4D_Background);
-					<funcLink>Local</funcLink>()=50; <funcLink>Local</funcLink>(1)=100;
-				</code>
+				<code>
+<funcLink>SetCategory</funcLink>(<funcLink>GetCategory</funcLink>() | C4D_Parallax | C4D_Background);
+<funcLink>Local</funcLink>()=50; <funcLink>Local</funcLink>(1)=100;</code>
 				<text>Versetzt das aufrufende Objekt in den Hintergrund, und gibt ihm horizontale Parallaxität.</text>
 			</example>
 		</examples>

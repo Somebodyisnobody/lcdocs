@@ -15,7 +15,7 @@
 			</params>
 		</syntax>
 		<desc>Ändert die Kategorie eines Objekts.</desc>
-		<remark>Siehe auch <emLink href="definition/category.html">Objektkategorien</emLink></remark>
+		<remark>Siehe auch <constLink constGroup="C4D">Objektkategorien</constLink></remark>
 		<related>
 			<funcLink>GetCategory</funcLink>
 		</related>

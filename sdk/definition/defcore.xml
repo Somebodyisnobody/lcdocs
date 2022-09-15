@@ -27,7 +27,7 @@ Entwickleridentifikation</emLink>.</text>
 <row><col>Name</col><col>Zeichenfolge (max. 30)</col>
   <col>Name des Objekts. Bei Mehrsprachigkeit Names.txt nutzen.</col></row>
 <row><col>Category</col><col>Integer</col>
-  <col>Kategorie des Objekts. Siehe <emLink href="definition/category.html">Objektkategorien</emLink>.</col></row>
+  <col>Kategorie des Objekts. Siehe <constLink constGroup="C4D">Objektkategorien</constLink>.</col></row>
 <row><col>MaxUserSelect</col><col>Integer</col>
   <col>Maximale Anzahl beim Platzieren des Objekts im Menüsystem.</col></row>
 <row><col>RequireDef</col><col>Definitions-ID</col>
