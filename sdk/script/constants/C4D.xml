@@ -6,8 +6,9 @@
 	<constGroup activateBitmask="true">
 		<title>Objektkategorien (C4D)</title>
 		<description>Konstanten zum Setzen oder Abrufen von Kategorien eines Objektes.
-			Verwendet werden diese Konstanten mit <funcLink>GetCategory</funcLink> und <funcLink>SetCategory</funcLink>.<br/>
-			Die Kategorie eines Objekts ist eine DWord-Bitmaske, die sich aus den folgenden Werten zusammen setzt. Die ersten 5 Kategorien erlauben keine Kombination, von den Bits 0-4 darf und muss immer genau eines zu jeder Zeit gesetzt sein.
+			Verwendet werden diese Konstanten mit <funcLink>GetCategory</funcLink> und <funcLink>SetCategory</funcLink>.
+			Die Kategorie eines Objekts ist eine DWord-Bitmaske, die sich aus den folgenden Werten zusammen setzt. Die ersten 5 Kategorien erlauben keine Kombination, von den Bits 0-4 darf und muss immer genau eines zu jeder Zeit gesetzt sein.<br/>
+			Die in 4.6.5.0 CP eingeführte <code>C4D_All</code> Konstante steht für "alle Kategorien" und kann etwa für Filterfunktionen verwendet werden.
 		</description>
 		<const bitPos="1">
 			<name>C4D_StaticBack</name>
@@ -128,13 +129,6 @@
 			<version>N/A</version>
 			<value>33554432</value>
 		</const>
-		<const bitPos="32">
-			<name>C4D_All</name>
-			<category>Objekte/Kategorie</category>
-			<description>Alle Kategorien.</description>
-			<version>4.6.5.0 CP</version>
-			<value>-2147483648</value>
-		</const>
 		<examples>
 			<example>
 				<code><funcLink>SetCategory</funcLink>(C4D_StaticBack, this());</code>
@@ -212,4 +206,6 @@ for(var obj in <funcLink>FindObjects</funcLink>(<funcLink>Find_Category</funcLin
 	<author>Sven2</author><date>2003-06</date>
 	<author>Günther</author><date>2002-02</date>
 	<author>jwk</author><date>2002-04</date>
+	<author>DerTod</author><date>2022-09-15</date>
+	<author>Funni</author><date>2022-09-15</date>
 </clonkDoc>
