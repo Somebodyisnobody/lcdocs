@@ -302,7 +302,6 @@
             <xs:element name="description" type="htmlText"/>
         </xs:sequence>
     </xs:complexType>
-    <!-- TODO remove as no longer needed (also remove in xslt)-->
     <xs:simpleType name="clonkVersionOrUnknown">
         <!-- union needed to allow empty values -->
         <xs:union memberTypes="clonkVersion">
@@ -575,6 +574,7 @@
                             <xs:complexType>
                                 <xs:sequence>
                                     <xs:element maxOccurs="unbounded" name="col" type="col"/>
+                                    <xs:element minOccurs="0" name="deprecated" type="deprecated"/>
                                 </xs:sequence>
                                 <xs:attribute name="id" type="xs:ID"/>
                             </xs:complexType>

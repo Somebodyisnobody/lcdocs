@@ -76,7 +76,7 @@
 	</xsl:template>
 	<!-- The title content is used for the page title-->
 	<xsl:template match="title"/>
-	<xsl:template match="deprecated">
+	<xsl:template match="func/deprecated">
 		<xsl:text> (</xsl:text>
 		<xsl:choose>
 			<xsl:when test='lang("de") and ./version != "unknown"'>
@@ -485,7 +485,6 @@
 										<xsl:when test='./version != "unknown"'>
 											<xsl:value-of select="normalize-space(./version)"/>
 										</xsl:when>
-										<!-- TODO remove as no longer needed -->
 										<xsl:when test='lang("de")'>unbekannt</xsl:when>
 										<xsl:otherwise>unknown</xsl:otherwise>
 									</xsl:choose>
@@ -752,8 +751,38 @@
 						<xsl:if test="position() mod 2=0">
 							<xsl:attribute name="class">dark</xsl:attribute>
 						</xsl:if>
+						<xsl:if test="descendant::deprecated">
+							<xsl:attribute name="class">strikeout</xsl:attribute>
+						</xsl:if>
 						<xsl:for-each select="col">
 							<td>
+								<xsl:if test="following-sibling::deprecated and position()=1">
+									<span>
+										<xsl:attribute name="class">deprecatedComment</xsl:attribute>
+										<xsl:attribute name="style">display:none; position:absolute;</xsl:attribute>
+										<xsl:choose>
+											<xsl:when test="lang('de')">
+												<xsl:text >Als Veraltet markiert ab Version </xsl:text>
+												<xsl:value-of select="normalize-space(following-sibling::deprecated/version)"/>
+												<xsl:text> durch </xsl:text>
+												<xsl:value-of select="normalize-space(following-sibling::deprecated/author)"/>
+												<xsl:text> am </xsl:text>
+												<xsl:apply-templates select="following-sibling::deprecated/date"/>
+												<xsl:text>. Weitere Informationen in Änderungsliste.</xsl:text>
+											</xsl:when>
+											<xsl:otherwise>
+												<xsl:text >Marked as deprecated in Version </xsl:text>
+												<xsl:value-of select="normalize-space(following-sibling::deprecated/version)"/>
+												<xsl:text> by </xsl:text>
+												<xsl:value-of select="normalize-space(following-sibling::deprecated/author)"/>
+												<xsl:text> (</xsl:text>
+												<xsl:apply-templates select="following-sibling::deprecated/date"/>
+												<xsl:text>). For more information see history section.</xsl:text>
+											</xsl:otherwise>
+										</xsl:choose>
+									</span>
+								</xsl:if>
+
 								<xsl:apply-templates select="@colspan|node()"/>
 							</td>
 						</xsl:for-each>
