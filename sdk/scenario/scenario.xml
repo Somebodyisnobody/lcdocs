@@ -176,22 +176,50 @@ bestimmt.</text>
 	<row>
 		<col>CooperativeGoal</col>
 		<col>Integer</col>
-		<col>Veraltet. Wert der Auswahl Spielziel im Menüsystem (0-4).</col>
+		<col>Wert der Auswahl Spielziel im Menüsystem (0-4).</col>
+		<deprecated>
+			<author>Funni</author>
+			<date>2022-09-18</date>
+			<version>4.6.5.0 CP</version>
+			<description>CooperativeGoal: Mit Clonk Planet wurde das System überarbeitet. Selbst definierte Ziele bzw.
+				Ziele mit der Kategorie <emLink href="definition/category.html">C4D_Goal</emLink> werden über "Goals" in der Sektion [Game] eingebunden.</description>
+		</deprecated>
 	</row>
 	<row>
 		<col>CreateObjects</col>
 		<col>ID-Liste</col>
-		<col>Veraltet. Spielziel: Diese Objekte müssen mindestens vorhanden sein.</col>
+		<col>Spielziel: Diese Objekte müssen mindestens vorhanden sein.</col>
+		<deprecated>
+			<author>Funni</author>
+			<date>2022-09-18</date>
+			<version>4.6.5.0 CP</version>
+			<description>CreateObjects: Mit Clonk Planet wurde das System überarbeitet. Selbst definierte Ziele bzw.
+				Ziele mit der Kategorie <emLink href="definition/category.html">C4D_Goal</emLink> werden über "Goals" in der Sektion [Game] eingebunden.</description>
+		</deprecated>
 	</row>
 	<row>
 		<col>ClearObjects</col>
 		<col>ID-Liste</col>
-		<col>Veraltet. Spielziel: Diese Objekte müssen auf x reduziert werden.</col>
+		<col>Spielziel: Diese Objekte müssen auf x reduziert werden.</col>
+		<deprecated>
+			<author>Funni</author>
+			<date>2022-09-18</date>
+			<version>4.6.5.0 CP</version>
+			<description>ClearObjects: Mit Clonk Planet wurde das System überarbeitet. Selbst definierte Ziele bzw.
+				Ziele mit der Kategorie <emLink href="definition/category.html">C4D_Goal</emLink> werden über "Goals" in der Sektion [Game] eingebunden.</description>
+		</deprecated>
 	</row>
 	<row>
 		<col>ClearMaterials</col>
 		<col>Material-Liste</col>
-		<col>Veraltet. Spielziel: Diese Materialien müssen auf x reduziert werden.</col>
+		<col>Spielziel: Diese Materialien müssen auf x reduziert werden.</col>
+		<deprecated>
+			<author>Funni</author>
+			<date>2022-09-18</date>
+			<version>4.6.5.0 CP</version>
+			<description>ClearMaterials: Mit Clonk Planet wurde das System überarbeitet. Selbst definierte Ziele bzw.
+				Ziele mit der Kategorie <emLink href="definition/category.html">C4D_Goal</emLink> werden über "Goals" in der Sektion [Game] eingebunden.</description>
+		</deprecated>
 	</row>
 	<row>
 		<col>BaseFunctionality</col>

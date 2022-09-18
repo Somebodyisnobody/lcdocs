@@ -297,8 +297,12 @@
             <xs:group ref="authorAndDate"/>
             <!-- Enter Clonk version since deprecated here (e.g. 1.2.3.4 [999] LC); "unknown" allowed for compatibility reasons -->
             <xs:element name="version" type="clonkVersionOrUnknown"/>
-            <!-- Describe why the function is deprecated.
-			Refer to a still documented new function if applicable with funclink>NewFunction</funclink> -->
+            <!-- Describe why the entity is deprecated.	If you use the <deprecated> element in an unstructured table, please begin with the entity that is deprecated (e.g. "Entityname: reason"). In structured tables like <constGroup> or <func> this is done automatically while building the docs in XSLT and therefore not needed to be done manually.
+
+			Please refer to a still documented new feature. If applicable refer
+			* to new functions with <funcLink>NewFunction</funcLink>,
+			* to new callback functions with <callbackLink>NewFunction</callbackLink> or
+			* to new constants with <constLink constGroup="FOO">FOO_Const1</constLink> -->
             <xs:element name="description" type="htmlText"/>
         </xs:sequence>
     </xs:complexType>
