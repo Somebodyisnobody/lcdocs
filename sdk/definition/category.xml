@@ -9,34 +9,36 @@
   <text>Die Kategorie eines Objekts ist eine DWord-Bitmaske,
     die sich aus den folgenden Werten zusammen setzt. Die ersten 5 Kategorien erlauben keine Kombination,
     von den Bits 0-4 darf und muss immer genau eines zur Zeit gesetzt sein.</text>
-  <text> Die hier aufgelisteten Kategorien sind nicht für die Verwendung in C4Script, sondern für die DefCore.txt gedacht. Eine Liste der mittels C4Script setzbaren und auslesbaren Kategorien ist <emLink href="script/constants/C4D.html">hier</emLink> zu finden. Dennoch können auch dort nicht gelistete Kategorien gesetzt werden, indem der Zahlenwert in <funcLink>SetCategory</funcLink> übergeben wird. </text>
+  <text> Die hier aufgelisteten Kategorien sind nicht für die Verwendung in C4Script, sondern für die DefCore.txt gedacht.
+    Eine Liste der in C4Script definierten Konstanten ist <emLink href="script/constants/C4D.html">hier</emLink> zu finden. Für dort fehlende Werte müssen entweder selber Konstanten definiert oder direkt die Integerwerte verwendet werden.
+  </text>
 <text>
 <table activateBitmask="true" bitmaskName="Kategorie">
 <rowh><col>Bit</col><col>Wert</col><col>Kategorie</col><col>Beschreibung</col><col>Eingeführt in</col></rowh>
 <row>
   <col>0</col> <col>1</col> <col>C4D_StaticBack</col>
   <col>Unbewegliches Hintergrundobjekt.</col>
-  <col>4.6.5.0 CP</col>
+  <col>4.0.2.0 C4</col>
 </row>
 <row>
   <col>1</col> <col>2</col> <col>C4D_Structure</col>
   <col>Gebäude.</col>
-  <col>4.6.5.0 CP</col>
+  <col>4.0.2.0 C4</col>
 </row>
 <row>
   <col>2</col> <col>4</col> <col>C4D_Vehicle</col>
   <col>Fahrzeug.</col>
-  <col>4.6.5.0 CP</col>
+  <col>4.0.2.0 C4</col>
 </row>
 <row>
   <col>3</col> <col>8</col> <col>C4D_Living</col>
   <col>Lebewesen.</col>
-  <col>4.6.5.0 CP</col>
+  <col>4.0.2.0 C4</col>
 </row>
 <row>
   <col>4</col> <col>16</col> <col>C4D_Object</col>
   <col>Gegenstand.</col>
-  <col>4.6.5.0 CP</col>
+  <col>4.0.2.0 C4</col>
 </row>
 <row>
   <col>5</col> <col>32</col> <col>C4D_Goal</col>
@@ -51,61 +53,61 @@
 <row>
   <col>7</col> <col>128</col> <col>C4D_SelectBuilding</col>
   <col>Menüsystem Auswahl Gebäude.</col>
-  <col>4.6.5.0 CP</col>
+  <col>4.0.2.0 C4</col>
 </row>
 <row>
   <col>8</col> <col>256</col> <col>C4D_SelectVehicle</col>
   <col>Menüsystem Auswahl Fahrzeuge.</col>
-  <col>4.6.5.0 CP</col>
+  <col>4.0.2.0 C4</col>
 </row>
 <row>
   <col>9</col> <col>512</col> <col>C4D_SelectMaterial</col>
   <col>Menüsystem Auswahl Material.</col>
-  <col>4.6.5.0 CP</col>
+  <col>4.0.2.0 C4</col>
 </row>
 <row>
   <col>10</col> <col>1024</col> <col>C4D_SelectKnowledge</col>
   <col>Menüsystem Auswahl herstellbare Objekte.</col>
-  <col>4.6.5.0 CP</col>
+  <col>4.0.2.0 C4</col>
 </row>
 <row>
   <col>11</col> <col>2048</col> <col>C4D_SelectHomebase</col>
   <col>Menüsystem Auswahl Heimatbasismaterial.</col>
-  <col>4.6.5.0 CP</col>
+  <col>4.0.2.0 C4</col>
 </row>
 <row>
   <col>12</col> <col>4096</col> <col>C4D_SelectAnimal</col>
   <col>Menüsystem Auswahl Tiere.</col>
-  <col>4.6.5.0 CP</col>
+  <col>4.0.2.0 C4</col>
 </row>
 <row>
   <col>13</col> <col>8192</col> <col>C4D_SelectNest</col>
   <col>Menüsystem Auswahl Nester.</col>
-  <col>4.6.5.0 CP</col>
+  <col>4.0.2.0 C4</col>
 </row>
 <row>
   <col>14</col> <col>16384</col> <col>C4D_SelectInEarth</col>
   <col>Menüsystem Auswahl Erdreich-Objekte.</col>
-  <col>4.6.5.0 CP</col>
+  <col>4.0.2.0 C4</col>
 </row>
 <row>
   <col>15</col> <col>32768</col> <col>C4D_SelectVegetation</col>
   <col>Menüsystem Auswahl Vegetation.</col>
-  <col>4.6.5.0 CP</col>
+  <col>4.0.2.0 C4</col>
 </row>
 <row>
   <col>16</col> <col>65536</col> <col>C4D_TradeLiving</col>
   <col>Verkaufbares Lebewesen.</col>
-  <col>4.6.5.0 CP</col>
+  <col>4.0.2.0 C4</col>
 </row>
 <row>
   <col>17</col> <col>131072</col> <col>C4D_Magic</col>
   <col>Zauber.</col>
-  <col>4.6.5.0 CP</col>
+  <col>4.0.2.0 C4</col>
 </row>
 <row>
-  <col>18</col> <col>262144</col> <col></col>
-  <col>Reserviert; wird intern benutzt.</col>
+  <col>18</col> <col>262144</col><col></col>
+  <col colspan="2">Reserviert; wird intern benutzt.</col>
 </row>
 <row>
   <col>19</col> <col>524288</col> <col>C4D_Rule</col>
@@ -139,7 +141,7 @@
 </row>
 <row>
   <col>25</col> <col>33554432</col> <col>C4D_IgnoreFoW</col>
-  <col>Objekt wird auch dann gezeichnet, wenn es eigentlich vom Kriegsnebel bedeckt ist. Nützlich beispielsweise für Statusanzeigen und Kontrollelemente. Ab CR.</col>
+  <col>Objekt wird auch dann gezeichnet, wenn es eigentlich vom Kriegsnebel bedeckt ist. Nützlich beispielsweise für Statusanzeigen und Kontrollelemente.</col>
   <col>4.9.6.0 CR</col>
 </row>
 </table>
@@ -149,8 +151,14 @@
     <change>
       <author>Funni</author>
       <date>2022-09-18</date>
+      <version>4.0.2.0 C4</version>
+      <description>Versionsangabe für Konstanten C4D_StaticBack, C4D_Structure, C4D_Vehicle, C4D_Living, C4D_Object, C4D_SelectBuilding, C4D_SelectVehicle, C4D_SelectMaterial, C4D_SelectKnowledge, C4D_SelectHomebase, C4D_SelectAnimal, C4D_SelectNest, C4D_SelectInEarth, C4D_SelectVegetation, C4D_TradeLiving und C4D_Magic hinzugefügt. Die Werte wurden durch Beschauung der Clonk4 Objects.c4d ermittelt. Eventuell waren die Konstanten in DefCore schon früher verwendbar.</description>
+    </change>
+    <change>
+      <author>Funni</author>
+      <date>2022-09-18</date>
       <version>4.6.5.0 CP</version>
-      <description>Versionsangabe für Konstanten C4D_StaticBack, C4D_Structure, C4D_Vehicle, C4D_Living, C4D_Object, C4D_Goal, C4D_Environment, C4D_SelectBuilding, C4D_SelectVehicle, C4D_SelectMaterial, C4D_SelectKnowledge, C4D_SelectHomebase, C4D_SelectAnimal, C4D_SelectNest, C4D_SelectInEarth, C4D_SelectVegetation, C4D_TradeLiving, C4D_Magic, C4D_Rule hinzugefügt. Die Werte wurden aus der <emLink href="script/constants/C4D.html">C4D-Skriptkonstantengruppe</emLink> und dem Source Code genommen. Eventuell waren die Konstanten in DefCore schon früher verwendbar. Einige Konstanten sind laut damaliger CP-Doku erst mit 4.6.2.0 CP verwendbar.</description>
+      <description>Versionsangabe für Konstanten C4D_Goal, C4D_Environment und C4D_Rule hinzugefügt. Die Werte wurden aus der <emLink href="script/constants/C4D.html">C4D-Skriptkonstantengruppe</emLink> und dem Source Code genommen. Eventuell waren die Konstanten in DefCore schon früher verwendbar. Einige Konstanten sind laut damaliger CP-Doku erst mit 4.6.2.0 CP verwendbar.</description>
     </change>
     <change>
       <author>Funni</author>
@@ -175,4 +183,6 @@
 <author>Sven2</author><date>2006-05</date>
 <author>Newton</author><date>2005-01</date>
 <author>Günther</author><date>2005-01</date>
+  <author>DerTod</author><date>2022-09-18</date>
+  <author>Funni</author><date>2022-09-18</date>
 </clonkDoc>
