@@ -114,7 +114,8 @@
 	</xsl:template>
 
 	<xsl:template match="doc">
-		<xsl:apply-templates/>
+		<xsl:apply-templates select="title"/>
+		<xsl:apply-templates select="h|part|text|code|dl|img"/>
 		<xsl:call-template name="history"/>
 	</xsl:template>
 
@@ -484,6 +485,7 @@
 										<xsl:when test='./version != "unknown"'>
 											<xsl:value-of select="normalize-space(./version)"/>
 										</xsl:when>
+										<!-- TODO remove as no longer needed -->
 										<xsl:when test='lang("de")'>unbekannt</xsl:when>
 										<xsl:otherwise>unknown</xsl:otherwise>
 									</xsl:choose>
@@ -617,10 +619,14 @@
 			<xsl:attribute name="href">
 				<xsl:value-of select="$relpath"/><xsl:text>sdk/</xsl:text>
 				<xsl:choose>
-					<!-- replace the .html extension with .xml (or whatever) -->
+					<!-- replace the .html extension with .xml (or whatever) depending on $fileext param (.chm, .html etc.) -->
 					<xsl:when test="substring-before($href,'.html')">
 						<xsl:value-of
 								select="concat(substring-before($href,'.html'), $fileext, substring-after($href,'.html'))"/>
+						<xsl:if test="not(doc-available(concat('sdk/', substring-before($href,'.html'), '.xml')))">
+							<!-- TODO set terminate=yes when running in production-->
+							<xsl:message terminate="no">Can't find the resource <xsl:value-of select="concat('sdk/', substring-before($href,'.html'), '.xml')"/></xsl:message>
+						</xsl:if>
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:value-of select="$href"/>
@@ -640,7 +646,7 @@
 		<xsl:param name="relpath" tunnel="yes"/>
 		<xsl:param name="constGroup" select="@constGroup"/>
 		<xsl:choose>
-			<xsl:when test="document(concat('sdk/script/constants/', $constGroup, '.xml'))">
+			<xsl:when test="doc-available(concat('sdk/script/constants/', $constGroup, '.xml'))">
 				<a>
 					<xsl:attribute name="href">
 						<xsl:value-of select="$relpath"/><xsl:text>sdk/script/constants/</xsl:text><xsl:value-of select="$constGroup"/><xsl:value-of
@@ -670,7 +676,7 @@
 	<xsl:template match="callbackLink">
 		<xsl:param name="relpath" tunnel="yes"/>
 		<xsl:choose>
-			<xsl:when test="document(concat('sdk/script/fn/callbacks/', normalize-space(.), '.xml'))">
+			<xsl:when test="doc-available(concat('sdk/script/fn/callbacks/', normalize-space(.), '.xml'))">
 				<a>
 					<xsl:attribute name="href">
 						<xsl:value-of select="$relpath"/><xsl:text>sdk/script/fn/callbacks/</xsl:text><xsl:value-of select="normalize-space(.)"/><xsl:value-of

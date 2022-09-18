@@ -302,6 +302,7 @@
             <xs:element name="description" type="htmlText"/>
         </xs:sequence>
     </xs:complexType>
+    <!-- TODO remove as no longer needed (also remove in xslt)-->
     <xs:simpleType name="clonkVersionOrUnknown">
         <!-- union needed to allow empty values -->
         <xs:union memberTypes="clonkVersion">
