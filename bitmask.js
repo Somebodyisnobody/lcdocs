@@ -91,7 +91,7 @@ class Bitmask {
                 return;
             }
         }
-        // Calculate new bitmask value. Move 0001 {bitPosition - 1} digits to the left. If bitPosition = 1 => 0010.
+        // Calculate new bitmask value. Move 0001 {bitPosition - 1} digits to the left. If bitPosition = 2 => 0010.
         this.bitfieldValue = this.bitfieldValue ^ (1 << bitPosition - 1);
         // Update numeric input below the table
         this.bitfield.value = this.bitfieldValue;

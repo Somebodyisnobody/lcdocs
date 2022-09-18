@@ -8,7 +8,8 @@
 		<description>Konstanten zum Setzen oder Abrufen von Kategorien eines Objektes.
 			Verwendet werden diese Konstanten mit <funcLink>GetCategory</funcLink> und <funcLink>SetCategory</funcLink>.
 			Die Kategorie eines Objekts ist eine DWord-Bitmaske, die sich aus den folgenden Werten zusammen setzt. Die ersten 5 Kategorien erlauben keine Kombination, von den Bits 0-4 darf und muss immer genau eines zu jeder Zeit gesetzt sein.<br/>
-			Die in 4.6.5.0 CP eingeführte <code>C4D_All</code> Konstante steht für "alle Kategorien" und kann etwa für Filterfunktionen verwendet werden.
+			Die in 4.6.5.0 CP eingeführte <code>C4D_All</code> Konstante steht für "alle Kategorien" und kann etwa für Filterfunktionen verwendet werden. Nicht gelistete Konstanten, die jedoch in <emLink
+					href="definition/category.html">DefCore.txt Kategorien</emLink> stehen, können über <funcLink>SetCategory</funcLink> entsprechenden Zahlenwert gesetzt werden.
 		</description>
 		<const bitPos="1">
 			<name>C4D_StaticBack</name>
@@ -55,8 +56,8 @@
 		<const bitPos="7">
 			<name>C4D_Environment</name>
 			<category>Objekte/Kategorie</category>
-			<description>Umweltobjekte.</description>
-			<version>N/A</version>
+			<description>Umweltsteuerungsobjekte.</description>
+			<version>4.9.5.0 CE</version>
 			<value>64</value>
 		</const>
 		<const bitPos="11">
@@ -69,8 +70,8 @@
 		<const bitPos="18">
 			<name>C4D_Magic</name>
 			<category>Objekte/Kategorie</category>
-			<description>Zauber.</description>
-			<version>N/A</version>
+			<description>Zauber. Als Zahlenwert durch die Engine schon ab 4.9.1.0 GWE interpretierbar</description>
+			<version>4.9.5.0 CE</version>
 			<value>131072</value>
 		</const>
 		<const bitPos="20">
@@ -104,29 +105,28 @@
 			<category>Objekte/Kategorie</category>
 			<!-- TODO <callbacklink> to callback when documented-->
 			<description>Objekt lässt sich anklicken; Klick löst Callback aus (MouseSelection(int iPlr)-Callback im Objekt).</description>
-			<version>N/A</version>
+			<version>4.9.5.0 CE</version>
 			<value>4194304</value>
 		</const>
 		<const bitPos="24">
 			<name>C4D_Foreground</name>
 			<category>Objekte/Kategorie</category>
 			<description>Objekt wird im Vordergrund normaler Objekte gerendert.</description>
-			<version>N/A</version>
+			<version>4.9.5.0 CE</version>
 			<value>8388608</value>
 		</const>
 		<const bitPos="25">
 			<name>C4D_MouseIgnore</name>
 			<category>Objekte/Kategorie</category>
 			<description>Objekt ist nicht mit der Maus anwählbar.</description>
-			<version>N/A</version>
+			<version>4.9.5.0 CE</version>
 			<value>16777216</value>
 		</const>
 		<const bitPos="26">
 			<name>C4D_IgnoreFoW</name>
 			<category>Objekte/Kategorie</category>
 			<description>Objekt ist auch innerhalb von FoW komplett sichtbar, d.h. es wird auch dann gezeichnet, wenn es eigentlich vom Kriegsnebel bedeckt ist. Nützlich beispielsweise für Statusanzeigen und Kontrollelemente.</description>
-			<!-- Laut Beschreibung aus category.xml ab Version "CR"-->
-			<version>N/A</version>
+			<version>4.9.6.0 CR</version>
 			<value>33554432</value>
 		</const>
 		<examples>
@@ -200,6 +200,20 @@ for(var obj in <funcLink>FindObjects</funcLink>(<funcLink>Find_Category</funcLin
 				<version>4.9.1.0 GWE</version>
 				<description>Konstanten ergänzt.</description>
 				<affecting>C4D_Background, C4D_Parallax</affecting>
+			</change>
+			<change>
+				<author>Funni</author>
+				<date>2022-09-15</date>
+				<version>4.9.5.0 CE</version>
+				<description>Konstanten ergänzt und anhand der Releaselogs und z.B. Clonk Endeavour Doku einer Version zugeordnet. Eventuell wurden die Konstanten schon vorher implementiert. Hinweis: Die genaue Releaseversion von CE ist unklar, da die Informationen, die aus den Releaselogs stammen, lediglich die Einführung der Konstanten als Gamekonstanten, nicht als Scriptkonstanten beschreiben.</description>
+				<affecting>C4D_MouseSelect, C4D_Foreground, C4D_MouseIgnore, C4D_Magic, C4D_Environment</affecting>
+			</change>
+			<change>
+				<author>Funni</author>
+				<date>2022-09-15</date>
+				<version>4.9.6.0 CR</version>
+				<description>Wurde zumindest als Gamekonstante in der NET2-Engine, welche später zu Clonk Rage umbenannt wurde, hinzugefügt.</description>
+				<affecting>C4D_IgnoreFoW</affecting>
 			</change>
 		</history>
 	</constGroup>
