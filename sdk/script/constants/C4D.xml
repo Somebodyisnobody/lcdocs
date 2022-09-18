@@ -9,7 +9,7 @@
 			Verwendet werden diese Konstanten mit <funcLink>GetCategory</funcLink> und <funcLink>SetCategory</funcLink>.
 			Die Kategorie eines Objekts ist eine DWord-Bitmaske, die sich aus den folgenden Werten zusammen setzt. Die ersten 5 Kategorien erlauben keine Kombination, von den Bits 0-4 darf und muss immer genau eines zu jeder Zeit gesetzt sein.<br/>
 			Die in 4.6.5.0 CP eingeführte <code>C4D_All</code> Konstante steht für "alle Kategorien" und kann etwa für Filterfunktionen verwendet werden. Nicht gelistete Konstanten, die jedoch in <emLink
-					href="definition/category.html">DefCore.txt Kategorien</emLink> stehen, können über <funcLink>SetCategory</funcLink> entsprechenden Zahlenwert gesetzt werden.
+					href="definition/category.html">DefCore.txt Kategorien</emLink> stehen, können über <funcLink>SetCategory</funcLink> mit dem entsprechenden Zahlenwert gesetzt werden.
 		</description>
 		<const bitPos="1">
 			<name>C4D_StaticBack</name>
