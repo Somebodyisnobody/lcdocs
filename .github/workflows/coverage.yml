@@ -1,4 +1,4 @@
-name: Validate and build
+name: Coverage
 
 on:
   push:
