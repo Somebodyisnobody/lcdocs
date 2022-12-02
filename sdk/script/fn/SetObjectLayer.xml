@@ -6,7 +6,7 @@
 	<func>
 		<title>SetObjectLayer</title>
 		<category>Objekte/Status</category>
-		<versions><version>N/A</version></versions>
+		<versions><version>4.9.1.4 GWE</version></versions>
 		<syntax>
 			<rtype>bool</rtype>
 			<params>

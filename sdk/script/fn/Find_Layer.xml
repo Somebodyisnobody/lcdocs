@@ -6,7 +6,7 @@
 	<func>
 		<title>Find_Layer</title>
 		<category>Objekte/Suche</category>
-		<versions><version>N/A</version></versions>
+		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
 			<rtype>array</rtype>
 			<params>

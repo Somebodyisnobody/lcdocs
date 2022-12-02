@@ -288,8 +288,6 @@
     <xs:simpleType name="clonkVersion">
         <xs:restriction base="xs:token">
             <xs:pattern value="\d{1,2}\.\d{1,2}\.\d{1,2}\.\d{1,2}\s(\[\d{3}\]\s)?(CP|GWE|CE|CR|LC|C4)"/>
-            <!-- TODO: remove before merging -->
-            <xs:pattern value="N/A"/>
         </xs:restriction>
     </xs:simpleType>
     <xs:complexType name="deprecated">
