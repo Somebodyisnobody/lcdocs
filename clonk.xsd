@@ -215,7 +215,7 @@
                 </xs:choice>
                 <xs:group ref="authorAndDate" maxOccurs="unbounded"/>
             </xs:sequence>
-            <xs:attribute ref="xml:lang" use="required" default="de"/>
+            <xs:attribute ref="xml:lang" use="required"/>
         </xs:complexType>
     </xs:element>
 
