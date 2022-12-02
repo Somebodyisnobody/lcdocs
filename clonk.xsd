@@ -23,13 +23,17 @@
         </xs:documentation>
     </xs:annotation>
 
+    <!-- Clonk documentation element.
+    The default language of the xml:lang attribute is "de". This is used in the transformation process to choose the right HTML-template. In transformation this value is automatically replaced. -->
     <xs:element name="clonkDoc">
         <xs:complexType>
             <xs:sequence>
                 <xs:choice>
+                    <!-- General documentation with HTML elements for formatting. -->
                     <xs:element name="doc">
                         <xs:complexType>
                             <xs:sequence>
+                                <!-- Title of the page, used in browser, not on the page itself. Must have between 5 and 70 characters. -->
                                 <xs:element name="title">
                                     <xs:simpleType>
                                         <xs:restriction base="xs:string">
@@ -39,25 +43,32 @@
                                     </xs:simpleType>
                                 </xs:element>
                                 <xs:sequence maxOccurs="unbounded">
+                                    <!-- Title used on the page. Can be formatted with HTML inline elements. -->
                                     <xs:element name="h" type="htmlMixedContainsStandardTextFormatElements"/>
                                     <xs:group ref="docPart" maxOccurs="unbounded"/>
                                 </xs:sequence>
+                                <!-- Enter information here about changes. This helps C4Scripters track what changes were made and when, and they can adjust their code accordingly for each version. -->
                                 <xs:element name="history" type="history" minOccurs="0"/>
                             </xs:sequence>
                         </xs:complexType>
                     </xs:element>
+                    <!-- Clonk C4Script functions. -->
                     <xs:element name="func">
                         <xs:complexType>
                             <xs:sequence>
-                                <!-- Title must have the function name without whitespaces or "()" -->
+                                <!-- Title must have the function name without whitespaces or "()". -->
                                 <xs:element name="title" type="entityName"/>
+                                <!-- A category the function does fit into. If no category matches don't hesitate to change the XML schema and add a new category. -->
                                 <xs:element name="category" type="functionCategory"/>
+                                <!-- Clonk versions in which the function was introduced or changed. Please also use the <history> element at the end to describe the changes! Contains at lease a <version> and unbounded <extversion> elements. -->
                                 <xs:element name="versions" type="entityVersions"/>
+                                <!-- If set the function will be marked as deprecated. This will be added automatically to the history-table at the end of the page. -->
                                 <xs:element minOccurs="0" name="deprecated" type="deprecated"/>
+                                <!-- Description of the syntax of the function. -->
                                 <xs:element name="syntax">
                                     <xs:complexType>
                                         <xs:sequence>
-                                            <!-- The returned data type for this function -->
+                                            <!-- The returned data type for this function. -->
                                             <xs:element name="rtype">
                                                 <xs:simpleType>
                                                     <xs:union memberTypes="functionParamDataTypes">
@@ -69,26 +80,26 @@
                                                     </xs:union>
                                                 </xs:simpleType>
                                             </xs:element>
-                                            <!-- Marks the return value as reference -->
+                                            <!-- Marks the return value as reference. -->
                                             <xs:element minOccurs="0" name="isReference">
                                                 <xs:complexType/>
                                             </xs:element>
-                                            <!-- Contains at least one <param> -->
+                                            <!-- Contains at least one <param>. -->
                                             <xs:element minOccurs="0" name="params">
                                                 <xs:complexType>
                                                     <xs:sequence>
                                                         <!--
-                                                        Contains <type>, <name>, <desc>, <isReference /> and <optional />
+                                                        Contains <type>, <name>, <desc>, <isReference /> and <optional />.
                                                         <isReference /> is used when the argument requires a reference
                                                         <optional /> is used when the argument is optional.
                                                         -->
                                                         <xs:element maxOccurs="unbounded" name="param">
                                                             <xs:complexType>
                                                                 <xs:sequence>
-                                                                    <!-- The input data type -->
+                                                                    <!-- The input data type. -->
                                                                     <xs:element name="type"
                                                                                 type="functionParamDataTypes"/>
-                                                                    <!-- The name of the argument -->
+                                                                    <!-- The name of the argument. -->
                                                                     <xs:element name="name">
                                                                         <xs:simpleType>
                                                                             <xs:restriction base="xs:token">
@@ -96,13 +107,13 @@
                                                                             </xs:restriction>
                                                                         </xs:simpleType>
                                                                     </xs:element>
-                                                                    <!-- A description for better understanding -->
+                                                                    <!-- A description for better understanding. HTML formatting elements can be used. -->
                                                                     <xs:element name="desc" type="htmlText"/>
-                                                                    <!-- Marks the argument as reference -->
+                                                                    <!-- Marks the argument as reference. -->
                                                                     <xs:element minOccurs="0" name="isReference">
                                                                         <xs:complexType/>
                                                                     </xs:element>
-                                                                    <!-- Marks the argument as optional -->
+                                                                    <!-- Marks the argument as optional. -->
                                                                     <xs:element minOccurs="0" name="optional">
                                                                         <xs:complexType/>
                                                                     </xs:element>
@@ -115,26 +126,38 @@
                                         </xs:sequence>
                                     </xs:complexType>
                                 </xs:element>
+                                <!-- Description what the function does. -->
                                 <xs:element name="desc" type="htmlText"/>
+                                <!-- Additional important information about limitations, differences to other, similar functions etc. You can use multiple <remark> elements. -->
                                 <xs:element minOccurs="0" maxOccurs="unbounded" name="remark" type="htmlText"/>
+                                <!-- Provide examples for a better understanding of the function. Please start with simple examples. -->
                                 <xs:element minOccurs="0" name="examples" type="examples"/>
+                                <!-- Links to other similar and related functions or documentation. You can use <funcLink>, <emLink>, <constLink> and <callbackLink> to link to other documentation. -->
                                 <xs:element minOccurs="0" name="related">
                                     <xs:complexType>
                                         <xs:group ref="htmlDocsLinks" maxOccurs="unbounded"/>
                                     </xs:complexType>
                                 </xs:element>
+                                <!-- Enter information here about changes. This helps C4Scripters track what changes were made and when, and they can adjust their code accordingly for each version. -->
                                 <xs:element name="history" type="history" minOccurs="0"/>
                             </xs:sequence>
                         </xs:complexType>
                     </xs:element>
+                    <!-- Clonk C4Script constants as set of constants. This will be formed to an HTML table.
+                    The attribute "activateBitmask" is a boolean which can make the table clickable and show a bit mask -->
                     <xs:element name="constGroup">
                         <xs:complexType>
                             <xs:sequence>
+                                <!-- Spelling title for the constant group. -->
                                 <xs:element name="title" type="xs:string"/>
+                                <!-- Description of the group. "What is it for?" -->
                                 <xs:element name="description" type="htmlText"/>
+                                <!-- This element declares a single constant. Use this element for each constant.
+                                The attribute "bitPos" is used for a custom bit position. If one custom bit position is set then all others also have to be set. -->
                                 <xs:element name="const" maxOccurs="unbounded">
                                     <xs:complexType>
                                         <xs:sequence maxOccurs="unbounded">
+                                            <!-- Name of the constant. This must be the same as used in C4Script. -->
                                             <xs:element name="name">
                                                 <xs:simpleType>
                                                     <xs:restriction base="xs:token">
@@ -142,12 +165,19 @@
                                                     </xs:restriction>
                                                 </xs:simpleType>
                                             </xs:element>
+                                            <!-- A category the constant does fit into. If no category matches don't hesitate to change the XML schema and add a new category. -->
                                             <xs:element name="category" type="functionCategory"/>
+                                            <!-- Description what this constant stands for. -->
                                             <xs:element name="description" type="htmlText"/>
+                                            <!-- Clonk versions in which the constant was introduced. Please also use the <history> element at the end to describe any changes! -->
                                             <xs:element name="version" type="clonkVersionOrUnknown"/>
+                                            <!-- The value the constant has in C4Script. -->
                                             <xs:element name="value" type="xs:integer"/>
+                                            <!-- If set the function will be marked as deprecated. This will be added automatically to the history-table at the end of the page. -->
                                             <xs:element minOccurs="0" name="deprecated" type="deprecated"/>
                                         </xs:sequence>
+                                        <!-- Is used for a custom bit position between 0 and 32. Choose 0 for a "none" value where all bits are 0.
+                                If not set the bit positions are calculated automatically. If one custom bit position is set then all others also have to be set manually. -->
                                         <xs:attribute name="bitPos">
                                             <xs:simpleType>
                                                 <xs:restriction base="xs:nonNegativeInteger">
@@ -158,14 +188,18 @@
                                         </xs:attribute>
                                     </xs:complexType>
                                 </xs:element>
+                                <!-- Provide examples for a better understanding of the constants in functions. Please start with simple examples. -->
                                 <xs:element minOccurs="0" name="examples" type="examples"/>
+                                <!-- Enter information here about changes. This helps C4Scripters track what changes were made and when, and they can adjust their code accordingly for each version. -->
                                 <xs:element name="history" minOccurs="0">
                                     <xs:complexType>
                                         <xs:sequence>
+                                            <!-- A single change in the change list. Use this for each change that has been done.-->
                                             <xs:element name="change" maxOccurs="unbounded">
                                                 <xs:complexType>
                                                     <xs:sequence>
                                                         <xs:group ref="generalChangeInformation"/>
+                                                        <!-- Name(s) of the constant(s) that is/are affected by the change. -->
                                                         <xs:element name="affecting" type="xs:string"/>
                                                     </xs:sequence>
                                                 </xs:complexType>
@@ -174,26 +208,31 @@
                                     </xs:complexType>
                                 </xs:element>
                             </xs:sequence>
+                            <!-- Set to true activates a JavaScript which makes the table clickable and show a bit mask. See also https://en.wikipedia.org/wiki/Mask_(computing) -->
                             <xs:attribute name="activateBitmask" type="xs:boolean" use="required"/>
                         </xs:complexType>
                     </xs:element>
                 </xs:choice>
                 <xs:group ref="authorAndDate" maxOccurs="unbounded"/>
             </xs:sequence>
-            <xs:attribute ref="xml:lang" use="required"/>
+            <xs:attribute ref="xml:lang" use="required" default="de"/>
         </xs:complexType>
     </xs:element>
 
     <!-- Object models -->
     <xs:group name="docPart">
         <xs:choice>
+            <!-- A section which can contain itself or other HTML elements. Use a <part> for every subtopic on the page.-->
             <xs:element name="part">
                 <xs:complexType>
                     <xs:group ref="docPart" maxOccurs="unbounded"/>
                 </xs:complexType>
             </xs:element>
+            <!-- Section title used on the page. Can be formatted with HTML inline elements. -->
             <xs:element name="h" type="htmlMixedContainsStandardTextFormatElements"/>
+            <!-- Multiline text. Can be formatted with HTML elements. -->
             <xs:element name="text" type="htmlText"/>
+            <!-- For code examples in C4Script. -->
             <xs:element name="code" type="code"/>
             <xs:element name="dl">
                 <xs:complexType mixed="true">
@@ -279,9 +318,9 @@
     </xs:simpleType>
     <xs:complexType name="entityVersions">
         <xs:sequence>
-            <!-- Version where the subject was introduced -->
+            <!-- Version where the subject was introduced (e.g. 1.2.3.4 [999] LC). Format: "1.2.3.4 [987]" followed by one of the following: CP, GWE, CE, CR, LC, C4. -->
             <xs:element name="version" type="clonkVersion"/>
-            <!-- Version where the subject was changed or extended -->
+            <!-- Version where the subject was changed or extended (e.g. 1.2.3.4 [999] LC). Format: "1.2.3.4 [987]" followed by one of the following: CP, GWE, CE, CR, LC, C4. -->
             <xs:element minOccurs="0" maxOccurs="unbounded" name="extversion" type="clonkVersion"/>
         </xs:sequence>
     </xs:complexType>
@@ -293,7 +332,7 @@
     <xs:complexType name="deprecated">
         <xs:sequence>
             <xs:group ref="authorAndDate"/>
-            <!-- Enter Clonk version since deprecated here (e.g. 1.2.3.4 [999] LC); "unknown" allowed for compatibility reasons -->
+            <!-- Enter Clonk version since deprecated here (e.g. 1.2.3.4 [999] LC). Format: "1.2.3.4 [987]" followed by one of the following: CP, GWE, CE, CR, LC, C4. "unknown" allowed for compatibility reasons -->
             <xs:element name="version" type="clonkVersionOrUnknown"/>
             <!-- Describe why the entity is deprecated.	If you use the <deprecated> element in an unstructured table, please begin with the entity that is deprecated (e.g. "Entityname: reason"). In structured tables like <constGroup> or <func> this is done automatically while building the docs in XSLT and therefore not needed to be done manually.
 
@@ -329,10 +368,13 @@
     </xs:simpleType>
     <xs:complexType name="examples">
         <xs:sequence>
+            <!-- A single example. Use a separate <example> for each example that is provided. In it, you can first use a <code> and then describe the example with a <text>. -->
             <xs:element maxOccurs="unbounded" name="example">
                 <xs:complexType>
                     <xs:choice maxOccurs="unbounded">
+                        <!-- C4Script codeblock. -->
                         <xs:element name="code" type="code"/>
+                        <!-- Multiline text. Can be formatted with HTML elements. -->
                         <xs:element name="text" type="htmlText"/>
                     </xs:choice>
                 </xs:complexType>
@@ -341,26 +383,33 @@
     </xs:complexType>
     <xs:group name="htmlDocsLinks">
         <xs:choice>
+            <!-- To refer to functions. Please use the name of the function file as the filename is used to link to the corresponding HTML file. -->
             <xs:element name="funcLink" type="entityName"/>
+            <!-- To refer to doc pages in general. -->
             <xs:element name="emLink">
                 <xs:complexType mixed="true">
+                    <!-- Relative path from sdk/ with .html extension. Id refs (bar.html#foo) can be used. -->
                     <xs:attribute name="href" use="required"/>
                 </xs:complexType>
             </xs:element>
+            <!-- To refer to constants. -->
             <xs:element name="constLink">
                 <xs:complexType>
                     <xs:simpleContent>
                         <xs:extension base="xs:string">
+                            <!-- Group where the constant is located in. Please use the name of the constant group file as the filename is used to link to the corresponding HTML file. -->
                             <xs:attribute name='constGroup' type="xs:string" use="required"></xs:attribute>
                         </xs:extension>
                     </xs:simpleContent>
                 </xs:complexType>
             </xs:element>
+            <!-- To refer to callback functions. Please use the name of the function file as the filename is used to link to the corresponding HTML file. -->
             <xs:element name="callbackLink" type="entityName"/>
         </xs:choice>
     </xs:group>
     <xs:complexType name="history">
         <xs:sequence>
+            <!-- A single change in the change list. Use this for each change that has been done. -->
             <xs:element name="change" maxOccurs="unbounded">
                 <xs:complexType>
                     <xs:group ref="generalChangeInformation"/>
@@ -371,12 +420,15 @@
     <xs:group name="generalChangeInformation">
         <xs:sequence>
             <xs:group ref="authorAndDate"/>
+            <!-- Clonk version where the subject was changed or extended (e.g. 1.2.3.4 [999] LC). Format: "1.2.3.4 [987]" followed by one of the following: CP, GWE, CE, CR, LC, C4. -->
             <xs:element name="version" type="clonkVersion"/>
+            <!-- A description what exactly changed. -->
             <xs:element name="description" type="htmlText"/>
         </xs:sequence>
     </xs:group>
     <xs:group name="authorAndDate">
         <xs:sequence>
+            <!-- Name of the author. For multiple authors please use separate <author>-elements. -->
             <xs:element name="author">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
@@ -384,7 +436,7 @@
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
-            <!-- Enter date in format YYYY-MM-DD for example 2022-31-12 -->
+            <!-- Date when the changes of the author were finished. Enter date in format YYYY-MM-DD for example 2022-31-12. -->
             <xs:element name="date">
                 <xs:simpleType>
                     <xs:restriction base="xs:token">
