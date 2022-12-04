@@ -22,7 +22,8 @@ defaults:
 jobs:
   build:
     name: Build docs
-    runs-on: ubuntu-latest
+    # 2022-04-12 libxml2 is not available for ubuntu 22 which is the ubuntu-latest option: https://packages.ubuntu.com/search?keywords=python-libxml2
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
 
