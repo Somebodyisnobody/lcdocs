@@ -3,42 +3,26 @@ class clonkXmlMode:
     """Clonks propietary xml format"""
     def getIgnoredTags(self):
         "Returns array of tags to be ignored."
-        return ['emlink', 'em', 'strong', 'code']
+        return ['emLink', 'em', 'strong', 'code']
+    # These tags will create new separate message entries in the .pot/.po files when they appear. If they appear in another tag's message a placeholder is being created.
     def getFinalTags(self):
         "Returns array of tags to be considered 'final'."
-        return ['table', 'text', 'desc', 'remark', 'col', 'li', 'funclink', 'ul', 'h', 'dt']
+        return ['table', 'text', 'desc', 'description', 'remark', 'col', 'li', 'ul', 'h', 'dt', 'funcLink', 'constLink', 'callbackLink']
+    # Swallow tags are not included in the whole translation process. They don't appear as separate messages in the .pot and .po files but can appear as part in a message that was caused by another not-swallowed tag.
     def getSwallowTags(self):
         "Return array of tags which content is not translated."
-        return self._stuff
+        return ['funcLink', 'constLink', 'callbackLink', 'version', 'extversion', 'rtype', 'param/type', 'param/name', 'author', 'date',
+                       'type', 'code', 'code/i', 'code/b', 'name', 'func/title',
+                       'const/name', 'const/value']
     def getSpacePreserveTags(self):
         "Returns array of tags in which spaces are to be preserved."
         return ['code']
-
-    _stuff = ['funclink', 'version', 'extversion', 'rtype', 'author', 'date',
-        'type', 'code', 'code/i', 'code/b', 'name', 'func/title']
-    def _delete_stuff(self, node, msg):
-        #print "looking at " + str(node.name)
-        if node and node.children:
-            child = node.children
-            while child:
-                n = child
-                child = child.next
-                if n.type=='element' and n.name in self._stuff:
-                    #print "!"
-                    if n.name == 'name' and node.name != 'param':
-                        print node + "!" + n
-                    #n.unlinkNode()
-                    #n.freeNode()
-                    n.setContent('')
-                else:
-                    self._delete_stuff(n, msg)
 
 
     def preProcessXml(self, doc, msg):
         """Add additional messages of interest here."""
         return
         #root = doc.getRootElement()
-        #self._delete_stuff(root,msg)
 
     def postProcessXmlTranslation(self, doc, language, translators):
         """Sets a language and translators in "doc" tree.
