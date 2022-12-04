@@ -93,6 +93,12 @@ bestimmt.</text>
 		<col>ForcedGfxMode</col>
 		<col>Integer</col>
 		<col>0-2. 0: Jede Engine möglich; 1: Nur NewGfx (OpenGL/D3D); 2: Nur OldGfx (8Bit-DDraw).</col>
+		<deprecated>
+			<author>Funni</author>
+			<date>2022-07-12</date>
+			<version>unknown</version>
+			<description>8Bit-DDraw wurde mit einer unbekannten Version entfernt. Schon in den letzten Versionen von Clonk Rage war es nicht mehr vorhanden. Damit ist ForcedGfxMode nicht länger in Funktion.</description>
+		</deprecated>
 	</row>
 	<row>
 		<col>DisableMouse</col>
