@@ -176,7 +176,7 @@
       <author>Funni</author>
       <date>2022-09-18</date>
       <version>4.9.6.0 CR</version>
-      <description>Versionsangabe für Konstanten C4D_IgnoreFoW hinzugefügt. Die Werte wurden aus der <emLink href="script/constants/C4D.html">C4D-Skriptkonstantengruppe</emLink> genommen. Eventuell waren die Konstanten in DefCore schon früher verwendbar. 4.9.6.0 CR war die NET2-Engine.</description>
+      <description>Versionsangabe für Konstante C4D_IgnoreFoW hinzugefügt. Der Wert wurde aus der <emLink href="script/constants/C4D.html">C4D-Skriptkonstantengruppe</emLink> genommen. Eventuell war die Konstante in DefCore schon früher verwendbar. 4.9.6.0 CR war die NET2-Engine.</description>
     </change>
   </history>
 </doc>

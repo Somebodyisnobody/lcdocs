@@ -17,7 +17,7 @@
 <dt id="fullscreen">/fullscreen</dt>
 <dd><text>Startet im Vollbildmodus (auch Spielermodus genannt). Wenn kein Szenario und keine Direktbeitritt-Adresse angegeben ist, wird das Startmenü angezeigt.</text></dd>
 <dt id="config">/config:Filename</dt>
-<dd><text>Lädt die als Filename angegebene Konfiguirationsdatei (wenn vorhanden) und schreibt beim Beenden in diese.</text></dd>
+<dd><text>Lädt die als Filename angegebene Konfigurationsdatei (wenn vorhanden) und schreibt beim Beenden in diese.</text></dd>
 <dt id="record">/record</dt>
 <dd><text>Die Runde wird aufgenommen.</text></dd>
 <dt id="network">/network bzw. /nonetwork</dt>
@@ -31,7 +31,7 @@
 <dt id="runtimejoin">/runtimejoin bzw. /noruntimejoin</dt>
 <dd><text>Aktiviert bzw. deaktiviert den Laufzeitbeitritt. Dieser Wert wird in der Konfiguration gespeichert.</text></dd>
 <dt id="regjoinonly">/regjoinonly</dt>
-<dd><text>Bewirkt, dass nur Clients mit registrierter Version in Netzwerkspielen beitreten können (in Dedicated-Server-Engine <em>immer</em> aktiv).</text></dd>
+<dd><text>Bewirkt, dass nur Clients mit registrierter Version in Netzwerkspielen beitreten können (in Dedicated-Server-Engine <em>immer</em> aktiv). Mit der ersten LegacyClonk Version (4.9.10.7 [330] LC) entfernt.</text></dd>
 <dt id="ncrw">/faircrew bzw. /trainedcrew</dt>
 <dd><text>Aktiviert bzw. deaktiviert faire Crew. Bei fairer Crew starten alle Clonks mit gleichen physischen Eigenschaften. Bei trainierter Crew starten Clonks mit ihren individuell trainierten physischen Eigenschaften. Dieser Wert wird in der Konfiguration gespeichert.</text></dd>
 <dt id="lobby">/lobby[:time]</dt>

@@ -27,7 +27,7 @@
 <dd><text>Das BMP-Format für Grafikelemente ist veraltet, wird aber weiterhin unterstützt. In einem 256 Farb-Bitmap (8 Bit) dürfen nur die Farben 16 bis 103 der festen Clonk-Palette verwendet werden (siehe Originalobjekte).</text></dd>
 
 <dt id="Graphicsex"><img src="../../images/icon_image.gif" width="16" height="16" />Graphics*.png/Overlay*.png/Graphics*.bmp</dt>
-<dd><text>Objekte können auch alternative Grafiksätze bereitstellen, die während des Spiels mit Hilfe des Scriptbefehls <emLink href="script/fn/SetGraphics.html">SetGraphics</emLink>() zugewiesen werden können. Der Name der Grafik entspricht dabei dem Dateinamensteil zwischen "Graphics" und der Dateiendung; das entsprechende Overlay wird automatisch mit verwendet. Für Beispiele siehe <emLink href="script/fn/SetGraphics.html">SetGraphics</emLink>().</text></dd>
+<dd><text>Objekte können auch alternative Grafiksätze bereitstellen, die während des Spiels mit Hilfe des Scriptbefehls <funcLink>SetGraphics</funcLink>() zugewiesen werden können. Der Name der Grafik entspricht dabei dem Dateinamensteil zwischen "Graphics" und der Dateiendung; das entsprechende Overlay wird automatisch mit verwendet. Für Beispiele siehe <funcLink>SetGraphics</funcLink>().</text></dd>
 
 <dt id="Titlepng"><img src="../../images/icon_image.gif" width="16" height="16" />Title.png/Title.bmp</dt>
 <dd><text>Objektdefinitionen können ein zusätzliches Titelbild enthalten (ähnlich Szenarien). Dieses wird im Menüsystem anstelle des Pictures der Objektdefinition angezeigt. Empfohlene Größe: 150x150 Pixel, sofern die vorhandene Titelgrafik dies hergibt. Für Titelbilder wird ebenfalls das veraltete BMP-Format mit 256 Farben weiterhin unterstützt.</text></dd>

@@ -50,7 +50,7 @@
 		<row>
 			<col>MinHeightCount</col>
 			<col>Integer</col>
-			<col><emLink href="script/fn/GetMaterialCount.html">GetMaterialCount</emLink> zählt die Materialpixel erst ab der angegebenen Höhe.</col>
+			<col><funcLink>GetMaterialCount</funcLink> zählt die Materialpixel erst ab der angegebenen Höhe.</col>
 		</row>
 		<row>
 			<col>SplashRate</col>

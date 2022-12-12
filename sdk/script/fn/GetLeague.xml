@@ -13,7 +13,7 @@
 				<param><type>int</type><name>iIndex</name><desc>Index der Liga</desc></param>
 			</params>
 		</syntax>
-		<desc>Ist die Liga aktiviert, gibt GetLeague zurück, um welche Liga es sich handelt (z.B. "Melee"). Ist die Liga deaktiviert, gibt GetLeague 0 zurück. Da ein Szenario in mehreren Ligen gleichzeitig sein kann, können mit iIndex zusätzliche Ligen abgefragt werden (<emLink href="https://board.ccan.de/cgi-bin/topic_show.pl?pid=151678#pid151678">https://board.ccan.de/cgi-bin/topic_show.pl?pid=151678#pid151678</emLink>).</desc>
+		<desc>Ist die Liga aktiviert, gibt GetLeague zurück, um welche Liga es sich handelt (z.B. "Melee"). Ist die Liga deaktiviert, gibt GetLeague 0 zurück. Da ein Szenario in mehreren Ligen gleichzeitig sein kann, können mit iIndex zusätzliche Ligen abgefragt werden (<emLink href="https://board.ccan.de/cgi-bin/topic_show.pl?pid=151678#pid151678">Siehe Post von Isilkor auf CCAN</emLink>).</desc>
 	</func>
 	<author>Fulgen / Clonk Wiki</author><date>2016-07</date>
 </clonkDoc>

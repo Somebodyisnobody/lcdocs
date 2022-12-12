@@ -21,9 +21,9 @@
 		</desc></param>
       </params>
     </syntax>
-    <desc>Ladet eine im Szenario vorhandene Sektion. Für weitere Informationen siehe <emLink href="https://board.ccan.de/cgi-bin/topic_show.pl?pid=124760">Sven2s Erklärung</emLink>,
-	<emLink href="http://cndg.forumieren.de/t308-sections-ein-schritt-fur-schritt-tutorial">ein Tutorial im CNDG-Forum</emLink> sowie
-	<emLink href="http://cndg.forumieren.de/tutorials-f5/sections-tutorial-2-t334.htm">ein weiteres Tutorial im CNDG-Forum</emLink>.</desc>
+    <desc>Lädt eine im Szenario vorhandene Sektion. Für weitere Informationen siehe <emLink href="https://board.ccan.de/cgi-bin/topic_show.pl?pid=124760">Sven2s Erklärung</emLink>,
+	<emLink href="https://cndg.forumieren.de/t308-sections-ein-schritt-fur-schritt-tutorial">ein Tutorial im CNDG-Forum</emLink> sowie
+	<emLink href="https://cndg.forumieren.de/tutorials-f5/sections-tutorial-2-t334.htm">ein weiteres Tutorial im CNDG-Forum</emLink>.</desc>
 	<remark>Objekte sollten vor dem Wechsel mit <funcLink>SetObjectStatus</funcLink> deaktiviert und nach dem Wechsel wieder reaktiviert werden.<br />
 	Wichtig zu beachten ist, dass die Objekte nach dem Laden der neuen Sektion immer noch die Koordinaten haben, die sie in der alten Sektion hatten. Deshalb kann es vorkommen, dass Objekte nach dem Laden gelöscht werden, weil sie nun außerhalb der Landschaft liegen. Man musst also möglicherweise die Position der Objekte vor dem Sektionswechsel neu setzen, um dies zu verhindern.</remark>
     <related>

@@ -43,7 +43,7 @@
 		<desc>Erzeugt ein benutzerdefiniertes Menü in pMenuObject. Menüeinträge müssen mit <funcLink>AddMenuItem</funcLink> hinzugefügt werden.</desc>
 		<examples>
 			<example>
-				<text>siehe <funcLink>AddMenuItem</funcLink></text>
+				<text>Siehe <funcLink>AddMenuItem</funcLink>.</text>
 			</example>
 		</examples>
 		<related>

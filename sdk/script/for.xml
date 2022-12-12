@@ -4,7 +4,7 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../clonk.xsd" xml:lang="de">
 <doc>
-<title>Die For-Schleife</title>
+<title>Die for-Schleife</title>
 <h>Die for-Schleife</h>
 <part>
 <text>Die <code>for</code>-Schleife stellt eine recht komfortable Schleife mit Anfangsbedingung dar. Am

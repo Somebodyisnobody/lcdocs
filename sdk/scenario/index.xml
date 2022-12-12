@@ -70,7 +70,7 @@ US:Attack of the Killer Wipfs</code>
 		<dd><text>Szenarien können beliebig lokale Sounds enthalten. Diese können per Script während des Spiels abgespielt werden. Szenariolokale Sounds werden dynamisch und erst bei Bedarf geladen, was bei großen Szenariodateien zu Verzögerungen führen kann.</text></dd>
 		
 		<dt id="mid"><img src="../../images/icon_music.gif" width="16" height="16"/>*.mid/*.ogg</dt>
-		<dd><text>Wenn das Szenario lokale Musikdateien enthält, werden diese während der Runde in zufälliger Reihenfolge abgespielt. Siehe auch Script-Funktion <emLink href="script/fn/Music.html">Music</emLink>().</text></dd>
+		<dd><text>Wenn das Szenario lokale Musikdateien enthält, werden diese während der Runde in zufälliger Reihenfolge abgespielt. Siehe auch Script-Funktion <funcLink>Music</funcLink>().</text></dd>
 		
 		<dt id="Musicc4g"><img src="../../images/icon_system.gif" width="16" height="16"/>Music.c4g</dt>
 		<dd><text>Lokale Musikstücke können auch in dieser lokalen Gruppendatei abgelegt werden.</text></dd>

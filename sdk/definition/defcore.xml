@@ -102,7 +102,7 @@ Entwickleridentifikation</emLink>.</text>
   <col>0 oder 1. Legt fest, ob das Objekt essbar ist (noch nicht unterstützt).</col></row>
 <row><col>CrewMember</col><col>Integer</col>
   <col>0 oder 1. Wenn 1, wird das Objekt beim Kauf der Mannschaft hinzugefügt.
-  Mit CreateObject erzeugte CrewMember-Objekte müssen mit <emLink href="script/fn/MakeCrewMember">MakeCrewMember</emLink>
+  Mit CreateObject erzeugte CrewMember-Objekte müssen mit <funcLink>MakeCrewMember</funcLink>
   der Mannschaft eines Spielers hinzugefügt werden.</col></row>
 <row><col>Growth</col><col>Integer</col>
   <col>Wachstum des Objekts. Baum 1-4, Lebewesen 15.</col></row>
@@ -138,7 +138,7 @@ Entwickleridentifikation</emLink>.</text>
   <col>Wenn ungleich 0 (8-10) sitzt das Objekt aufgerichtet auf Massivbereichen auf.</col></row>
 <row><col>StretchGrowth</col><col>Integer</col>
   <col>0 oder 1. Bei Wert 1 wird das Objekt wie ein Lebewesen vergrößert (abhängig von der Fertigstellung.
-  Siehe <emLink href="script/fn/GetCon.html">GetCon</emLink>)</col></row>
+  Siehe <funcLink>GetCon</funcLink>)</col></row>
 <row><col>Basement</col><col>Integer</col>
   <col>0 kein Fundament, 1 Fundament, andere Werte speziell</col></row>
 <row><col>NoBurnDecay</col><col>Integer</col>

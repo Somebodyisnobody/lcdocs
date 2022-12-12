@@ -12,7 +12,7 @@ jeden Aktivität werden dabei in der Graphics.png (oder veraltet
 Graphics.bmp) als nebeneinanderliegende Bilder abgelegt und in der
 ActMap.txt über Bildkoordinaten referenziert. Aktivitäten können im
 Spiel von der Engine oder per Script gestartet oder beendet werden
-(siehe <emLink href="script/fn/SetAction.html">SetAction</emLink>). Einige
+(siehe <funcLink>SetAction</funcLink>). Einige
 Aktivitäten, speziell solche von Lebewesen, nutzen dabei Engine-interne
 <emLink href="definition/procedures.html">Prozeduren</emLink>, die das Bewegungsverhalten
 des Objekts während der Ausführung dieser Aktivität steuert.</text>
@@ -27,7 +27,7 @@ des Objekts während der Ausführung dieser Aktivität steuert.</text>
   <row>
     <col>Name</col>
     <col>Zeichenfolge (max. 30)</col>
-    <col>Name der Aktivität. Siehe <emLink href="script/fn/SetAction.html">SetAction</emLink>().</col>
+    <col>Name der Aktivität. Siehe <funcLink>SetAction</funcLink>().</col>
   </row>
   <row>
     <col>Procedure</col>

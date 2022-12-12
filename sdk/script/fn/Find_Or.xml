@@ -11,7 +11,7 @@
 			<rtype>array</rtype>
 			<params>
 				<param><type>array</type><name>Criteria</name><desc>Suchkriterium in Form einer Find_*-Funktion</desc></param>
-				<param><type>any</type><name>...</name><desc>Weitere Suchkriterium in Form einer Find_*-Funktion</desc><optional /></param>
+				<param><type>any</type><name>...</name><desc>Weitere Suchkriterien in Form einer Find_*-Funktion</desc><optional /></param>
 			</params>
 		</syntax>
 		<desc>Suchkriterium: sucht alle Objekte, auf die mindestens eines der angegebenen Suchkriterien zutrifft.</desc>

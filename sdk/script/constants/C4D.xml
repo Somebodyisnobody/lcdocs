@@ -70,7 +70,7 @@
 		<const bitPos="18">
 			<name>C4D_Magic</name>
 			<category>Objekte/Kategorie</category>
-			<description>Zauber. Als Zahlenwert durch die Engine schon ab 4.9.1.0 GWE interpretierbar</description>
+			<description>Zauber. Als Zahlenwert durch die Engine schon ab 4.9.1.0 GWE interpretierbar.</description>
 			<version>4.9.5.0 CE</version>
 			<value>131072</value>
 		</const>

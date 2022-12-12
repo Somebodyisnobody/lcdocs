@@ -66,7 +66,7 @@ US:Attack of the Killer Wipfs
 <code>protected func Activate(pCaller)
 {
   [$DescActivate$]
-  <emLink href="script/fn/Message.html">Message</emLink>("$MsgYourPosition$ %d / %d", <emLink href="script/fn/GetX.html">GetX</emLink>(pCaller), <emLink href="script/fn/GetX.html">GetY</emLink>(pCaller));
+  <funcLink>Message</funcLink>("$MsgYourPosition$ %d / %d", <funcLink>GetX</funcLink>(pCaller), <funcLink>GetX</funcLink>(pCaller));
 }</code>
 <text>
  Hier werden zwei Strings mit den Namen "DescActivate" und "MsgYourPosition" eingebunden.

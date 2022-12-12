@@ -13,9 +13,8 @@
 <code>#appendto [id] [nowarn]</code>
 <text>Jedes Script kann sich mit <code>#appendto</code> an ein oder mehrere Objektscripte anhängen.
 Dabei werden alle Funktionen ans Ende des Zielscripts angehängt und haben damit bei
-Namensgleichheit eine höhere Priorität. Die überladenen Funktionen sind dabei durch <emLink
-href="script/fn/inherited.html">inherited</emLink> verfügbar. Eigene #include-Scripte werden nicht
-angehängt, angehängte Scripte aber mit inkludiert. nowarn ist optional und unterdrückt, falls vorhanden, eine Warnung wenn die angegebene Definition nicht gefunden wurde. nowarn kann in appendto-Scripten verwendet werden die für korrekte Funktionalität nicht essenziell sind. Zum Beispiel wenn ein Pack Unterstützung für Knights.c4d bieten will, aber auch ohne geladenem Ritterpack funktioniert.</text>
+Namensgleichheit eine höhere Priorität. Die überladenen Funktionen sind dabei durch <funcLink>inherited</funcLink> verfügbar. Eigene #include-Scripte werden nicht
+angehängt, angehängte Scripte aber mit inkludiert. nowarn ist optional und unterdrückt - falls vorhanden - eine Warnung, wenn die angegebene Definition nicht gefunden wurde. nowarn kann in appendto-Scripten verwendet werden die für korrekte Funktionalität nicht essenziell sind. Zum Beispiel wenn ein Pack Unterstützung für Knights.c4d bieten will, aber auch ohne geladenem Ritterpack funktioniert.</text>
 <code>#appendto *</code>
 <text>Durch Angabe von <code>*</code> anstelle eine id wird das Script an alle geladenen
 Definitionen angehängt.</text>

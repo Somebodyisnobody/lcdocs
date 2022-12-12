@@ -24,7 +24,7 @@
 		<const>
 			<name>C4V_Bool</name>
 			<category>Variablen</category>
-			<description>Boolscher Wert (1 oder 0).</description>
+			<description>Boolscher Wert (true oder false).</description>
 			<version>4.9.1.0 GWE</version>
 			<value>2</value>
 		</const>

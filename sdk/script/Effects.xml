@@ -373,7 +373,7 @@ public func Activate(object pCaster, object pCaster2)
   return(RemoveObject());
 }</code>
 	
-	<text>Der Rückgabewert von <funcLink>CheckEffect</funcLink>() ist -1 wenn der Effekt abgelehnt, und positiv oder -2 wenn er aufgenommen wurde. In beiden Fällen sollte der Effekt selber nicht ausgeführt werden; aber in letzterem Fall kann die Activate-Funktion Erfolg signalisieren und 1 zurückgeben.</text>
+	<text>Der Rückgabewert von <funcLink>CheckEffect</funcLink>() ist -1, wenn der Effekt abgelehnt, und positiv oder -2 wenn er aufgenommen wurde. In beiden Fällen sollte der Effekt selber nicht ausgeführt werden; aber in letzterem Fall kann die Activate-Funktion Erfolg signalisieren und 1 zurückgeben.</text>
 	
 	<h id="Ext">Erweiterte Möglichkeiten</h>
 	<text>Da jeder Effekt seinen eigenen Datenspeicher hat, ist dies eine Möglichkeit, extern Daten an Objekte zu binden, ohne dabei die Definitionen verändern zu müssen. Außerdem können so einfache Aufrufe verzögert durchgeführt werden - beispielsweise erst ein Frame nach der Zerstörung eines Objekts, wie an einer Stelle im Ritterpack:</text>

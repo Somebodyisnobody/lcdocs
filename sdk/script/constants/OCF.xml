@@ -190,7 +190,7 @@
 				Das heißt, es hat die entsprechende <emLink href="definition/defcore.html">DefCore</emLink>-Eigenschaft
 				gesetzt, und lebt.
 				<br/>
-				Objekte, die das OCF_CrewMember()-Flag gesetzt haben, bekommen von der Engine außerdem einige
+				Objekte, die das OCF_CrewMember-Flag gesetzt haben, bekommen von der Engine außerdem einige
 				Sonderbehandlungen:
 				<br/>
 				<ul>

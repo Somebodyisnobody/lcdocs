@@ -22,7 +22,7 @@
 				<code><funcLink>Message</funcLink>("Spieler %s kann %d Flintstones kaufen",0,<funcLink>GetPlayerName</funcLink>(0), GetHomebaseMaterial(0,FLNT));</code>
 				<text>Meldet die Anzahl Feuersteine, die sich der Erste Spieler kaufen kann (sofern er das benötigte Geld hat)</text>
 				<code>var def=GetHomebaseMaterial(0,0,3,<constLink constGroup="C4D">C4D_Vehicle</constLink>);
-<funcLink>Message</funcLink>("Der dritte kaufbare Fahrzeugtyp des Spielers ist %i",0,def);</code>
+<funcLink>Message</funcLink>("Das dritte kaufbare Fahrzeug des Spielers ist %i",0,def);</code>
 				<text>Meldet z.B. "Das dritte kaufbare Fahrzeug des Spielers ist XBOW"</text>
 			</example>
 		</examples>

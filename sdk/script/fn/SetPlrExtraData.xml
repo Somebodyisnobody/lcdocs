@@ -29,7 +29,7 @@
   </syntax>
 
   <desc>Mithilfe dieses Befehls können beliebige, scriptdefinierte Werte unter einem gegebenen Namen in der Spielerdatei gespeichert werden.
-        Auf diese Weise kann man Daten über einen Spieler über Szenariogrenzen hinweg erhalten (z.B. für RPGs)
+        Auf diese Weise kann man Daten über einen Spieler über Szenariogrenzen hinweg erhalten (z.B. für RPGs).
         Zurückgegeben wird (wenn erfolgreich) der gesetzte Wert.</desc>
 
   <remark>Es dürfen keine Objektpointer oder Zeichenfolgen (Strings) gespeichert werden.</remark>
