@@ -11,7 +11,16 @@
 			<rtype>bool</rtype>
 			<params><param><type>any</type><name>Value</name><desc>Wert, dessen Typ geprüft werden soll</desc></param></params>
 		</syntax>
-		<desc>Prüft, ob Value eine Referenz ist.</desc>
+		<desc><b>Diese Funktion ist derzeit defekt, siehe Änderungstabelle.</b> Prüft, ob Value eine Referenz ist.</desc>
+		<history>
+			<change>
+				<author>Funni</author>
+				<date>2022-12-23</date>
+				<version>4.9.10.14 [355] LC</version>
+				<description>Die Funktion ist laut DerTod seit 2017 oder 2018 kaputt. Beschreibung entsprechend angepasst.</description>
+			</change>
+		</history>
 	</func>
 	<author>jwk</author><date>2002-04</date>
+	<author>Funni</author><date>2022-12-23</date>
 </clonkDoc>

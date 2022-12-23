@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
+	<func>
+		<title>Local</title>
+		<category>Variablen</category>
+		<versions><version>4.6.5.0 CP</version><extversion>4.9.1.0 GWE</extversion></versions>
+		<syntax>
+			<rtype>void</rtype>
+			<isReference />
+			<params>
+				<param><type>int</type><name>iVarIndex</name><desc>Nummer der Variable, die abgefragt werden soll. Jede nicht negative Zahl ist erlaubt.</desc></param>
+				<param><type>object</type><name>pObj</name><desc>Objekt, in der sich die Variable befindet.</desc><optional /></param>
+			</params>
+		</syntax>
+		<desc>Gibt den Wert einer lokalen Variable (als Referenz) zurück. Jedes Objekt kann eine beliebige Anzahl lokaler Variablen besitzen. Diese werden für jedes Objekt dauerhaft gespeichert und gehen erst verloren, wenn das Objekt gelöscht wird. Eine lokale Variable hat bei Erstellung des Objekts immer den Wert 0.</desc>
+		<remark>Da Local eine Referenz zurückgibt, kann der Wert einer Variable über Operatoren verändert werden (<code>Local(0) = 20</code>; <code>Local(1)++</code>; u.ä.)<br/>
+			Wo möglich, sollte statt einer Local-Variable eine lokale <emLink href="script/NamedVar.html">benannte Variable</emLink> eingesetzt werden.</remark>
+		<examples>
+			<example>
+				<code>
+/* Objektscript */
+Hit:
+	Local(0) = 1;
+	Local(1) = 10;
+	return(1);
+Timer:
+	if(Local(0) == 0) return();
+	// Geräusch machen
+	<funcLink>Sound</funcLink>("Fuse");
+	// Variable herunterzählen
+	Local(1)--;
+	// Anzeigen
+	<funcLink>Message</funcLink>(" %d ", Local(1));
+	// Zeit um?
+	if(Local(1) == 0)
+		// Explosion!
+		<funcLink>Explode</funcLink>(50);
+	return();
+				</code>
+				<text>
+					Dieses Script hat eine Ereignisfunktion (Hit), welche aufgerufen wird, wenn das Objekt auf den Boden aufschlägt. Hier wird die lokale Variable Nr. 0 auf 1 und die lokale Variable Nr. 1 auf 10 gesetzt.<br/>
+					Die zweite Scriptfunktion, die definiert wird, heißt "Timer". Hierbei sollte es sich um eine Funktion handeln, die periodisch aufgerufen wird (Einstellung "Timer" in der DefCore.txt). Hier wird erst geprüft, ob das Objekt aktiviert ist [Local(0)]. Wenn nicht, wird die Funktion sofort beendet, es passiert also nichts. Wurde das Objekt aber aktiviert (dann ist Local(0) = 1), so wird ein Sound ausgegeben. Darauf wird die lokale Variable 1 eins heruntergezählt und der neue Wert über dem Objekt angezeigt.<br/>
+					D.h. die Aktivierung in Hit startet einen Countdown von 10 aus. Ist der Zähler bei 0 angekommen, so explodiert das Objekt.
+				</text>
+			</example>
+		</examples>
+		<related>
+			<funcLink>Global</funcLink>
+			<funcLink>GlobalN</funcLink>
+			<funcLink>LocalN</funcLink>
+			<funcLink>SetGlobal</funcLink>
+			<funcLink>SetLocal</funcLink>
+			<funcLink>SetVar</funcLink>
+			<funcLink>Var</funcLink>
+			<funcLink>VarN</funcLink>
+		</related>
+	</func>
+	<author>PeterW</author><date>2001-11</date>
+</clonkDoc>

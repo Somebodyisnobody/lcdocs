@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
+	<func>
+		<title>SetVar</title>
+		<category>Variablen</category>
+		<versions>
+			<version>4.6.5.0 CP</version>
+		</versions>
+		<deprecated>
+			<author>Funni</author>
+			<date>2022-12-23</date>
+			<version>unknown</version>
+			<description>Bereits in der Entwicklerdokumentation von clonk.de als veraltet markiert. Damit spätestens seit 4.9.10.7 [330] CR veraltet.</description>
+		</deprecated>
+		<syntax>
+			<rtype>any</rtype>
+			<params>
+				<param>
+					<type>int</type>
+					<name>iVarIndex</name>
+					<desc>Die threadlokale Variable, die gesetzt werden soll.</desc>
+				</param>
+				<param>
+					<type>any</type>
+					<name>Value</name>
+					<desc>Zu setzender Wert.</desc>
+				</param>
+			</params>
+		</syntax>
+		<desc>Weist den Wert iValue einer beliebigen Thread-lokalen Variablen (ab 0) zu und gibt diesen wieder aus. Der Datentyp ist variabel. Thread-lokale Variablen gelten nur für die Dauer des aktuellen Funktionsaufrufs. Nummerierte Variablen wurden durch <emLink href="script/NamedVar.html">Variablen mit Namen</emLink> abgelöst, sind aber für Arrays nützlich.</desc>
+		<related>
+			<funcLink>Global</funcLink>
+			<funcLink>Local</funcLink>
+			<funcLink>SetGlobal</funcLink>
+			<funcLink>SetLocal</funcLink>
+			<funcLink>Var</funcLink>
+		</related>
+	</func>
+	<author>jwk</author><date>2002-04</date>
+	<author>Funni</author><date>2022-12-23</date>
+</clonkDoc>

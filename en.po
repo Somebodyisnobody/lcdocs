@@ -3,15 +3,16 @@
 # Günther <gbrammer@gmx.de>
 # PeterW <Peter.Wortmann@gmx.de>
 # Sven2 <sven2@goldwipf.de>
-#
-#
+# 
+# 
 # Markus Mittendrein <maxmitti@gmx.at>, 2021.
+# Funni <funni.clonk@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-23 18:48+0100\n"
-"PO-Revision-Date: 2022-12-12 19:00+0100\n"
+"POT-Creation-Date: 2022-12-23 22:30+0100\n"
+"PO-Revision-Date: 2022-12-23 22:15+0100\n"
 "Last-Translator: Funni <funni.clonk@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
 "Language: en\n"
@@ -20,7 +21,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.2.2\n"
-"X-Poedit-Bookmarks: 4572,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 #. Zum markieren von veralteten Funktionen im Inhaltsverzeichnis
 #: extra-strings.xml:5(text)
@@ -1630,9 +1630,13 @@ msgid "Entfernt obj wenn einer seiner Vertices feststeckt"
 msgstr "Removes obj if one if its vertices is stuck"
 
 #: sdk/script/fn/VarN.xml:8(category)
+#: sdk/script/fn/Var.xml:8(category)
+#: sdk/script/fn/SetVar.xml:8(category)
 #: sdk/script/fn/LocalN.xml:8(category)
+#: sdk/script/fn/Local.xml:8(category)
 #: sdk/script/fn/IsRef.xml:8(category)
 #: sdk/script/fn/GlobalN.xml:8(category)
+#: sdk/script/fn/Global.xml:8(category)
 #: sdk/script/fn/GetValues.xml:8(category)
 #: sdk/script/fn/GetType.xml:8(category)
 #: sdk/script/fn/GetKeys.xml:8(category)
@@ -1658,12 +1662,40 @@ msgid "Name der Variablen, zu der eine Referenz zurückgegeben werden soll"
 msgstr "Name of the variable to which a reference is to be returned"
 
 #: sdk/script/fn/VarN.xml:22(desc)
+#: sdk/script/fn/Var.xml:29(desc)
 msgid "Gibt eine Referenz auf eine funktionslokale Variable zurück. Diese Referenz kann zum Lesen und Schreiben benutzt werden."
 msgstr "Returns a reference to a function local variable. This reference can be used for reading or writing."
 
 #: sdk/script/fn/VarN.xml:28(text)
 msgid "Setzt eine zufällige, threadlokale Variable auf einen zufälligen Wert."
 msgstr "Sets a randomly chosen thread local variable to a random value."
+
+#: sdk/script/fn/VarN.xml:33(emLink)
+#: sdk/script/fn/LocalN.xml:45(emLink)
+#: sdk/script/fn/GlobalN.xml:19(emLink)
+#: sdk/script/NamedVar.xml:7(title)
+#: sdk/script/NamedVar.xml:9(h)
+msgid "Benannte Variablen"
+msgstr "Named Variables"
+
+#: sdk/script/fn/Var.xml:16(description)
+#: sdk/script/fn/SetVar.xml:16(description)
+#: sdk/script/fn/LessThan.xml:14(description)
+#: sdk/script/fn/GreaterThan.xml:14(description)
+msgid "Bereits in der Entwicklerdokumentation von clonk.de als veraltet markiert. Damit spätestens seit 4.9.10.7 [330] CR veraltet."
+msgstr "Already marked as deprecated in the developer documentation of clonk.de. Thus deprecated at least since 4.9.10.7 [330] CR."
+
+#: sdk/script/fn/Var.xml:25(desc)
+msgid "Index der Variable, zu der eine Referenz zurückgegeben werden soll."
+msgstr "Index of the variable to which a reference is to be returned."
+
+#: sdk/script/fn/Var.xml:30(remark)
+msgid "Normalerweise sollten statt dieser Funktion <emLink href=\"script/NamedVar.html\">benannte</emLink>, Thread-lokale Variablen (var) benutzt werden. Manchmal ist die Funktion jedoch praktisch, um lokale Arrays zu emulieren."
+msgstr "Normally, instead of this function <emLink href=\"script/NamedVar.html\">named</emLink>, thread-local variables (var) should be used. However, sometimes the function is handy to emulate local arrays."
+
+#: sdk/script/fn/Var.xml:69(text)
+msgid "Berechnet pi auf 800 Stellen genau und gibt den Wert in zwei Logzeilen aus."
+msgstr "Calculates pi exact to 800 decimals and returns the value in two log entries."
 
 #: sdk/script/fn/Value.xml:8(category)
 #: sdk/script/fn/TrainPhysical.xml:8(category)
@@ -1869,14 +1901,18 @@ msgstr "Starts the script profiler."
 #: sdk/script/fn/RGB2HSL.xml:8(category)
 #: sdk/script/fn/RGB.xml:8(category)
 #: sdk/script/fn/Pow.xml:8(category)
+#: sdk/script/fn/Mul.xml:8(category)
 #: sdk/script/fn/Min.xml:8(category)
 #: sdk/script/fn/Max.xml:8(category)
+#: sdk/script/fn/LessThan.xml:8(category)
 #: sdk/script/fn/Inside.xml:8(category)
 #: sdk/script/fn/HSLa.xml:8(category)
 #: sdk/script/fn/HSL2RGB.xml:8(category)
 #: sdk/script/fn/HSL.xml:8(category)
+#: sdk/script/fn/GreaterThan.xml:8(category)
 #: sdk/script/fn/GetRGBaValue.xml:8(category)
 #: sdk/script/fn/DoRGBaValue.xml:8(category)
+#: sdk/script/fn/Div.xml:8(category)
 #: sdk/script/fn/Distance.xml:8(category)
 #: sdk/script/fn/Cos.xml:8(category)
 #: sdk/script/fn/BoundBy.xml:8(category)
@@ -1908,20 +1944,20 @@ msgid "32Bit-Farbwert"
 msgstr "32 bit color value"
 
 #: sdk/script/fn/SplitRGBaValue.xml:14(desc)
-msgid "[opt] Variable, in der der Rotanteil gespeichert werden soll"
-msgstr "[opt] variable in which the red value is to be stored"
+msgid "Variable, in der der Rotanteil gespeichert werden soll"
+msgstr "Variable in which the red value is to be stored"
 
 #: sdk/script/fn/SplitRGBaValue.xml:15(desc)
-msgid "[opt] Variable, in der der Grünanteil gespeichert werden soll"
-msgstr "[opt] variable in which the green value is to be stored"
+msgid "Variable, in der der Grünanteil gespeichert werden soll"
+msgstr "Variable in which the green value is to be stored"
 
 #: sdk/script/fn/SplitRGBaValue.xml:16(desc)
-msgid "[opt] Variable, in der der Blauanteil gespeichert werden soll"
-msgstr "[opt] variable in which the blue value is to be stored"
+msgid "Variable, in der der Blauanteil gespeichert werden soll"
+msgstr "Variable in which the blue value is to be stored"
 
 #: sdk/script/fn/SplitRGBaValue.xml:17(desc)
-msgid "[opt] Variable, in der der Alpha-Wert gespeichert werden soll"
-msgstr "[opt] variable in which the alpha value is to be stored"
+msgid "Variable, in der der Alpha-Wert gespeichert werden soll"
+msgstr "Variable in which the alpha value is to be stored"
 
 #: sdk/script/fn/SplitRGBaValue.xml:20(desc)
 msgid "Zerstückelt den 32Bit-Farbwert und schreibt die einzelnen Farbwerte in die jeweiligen angegeben Variablen."
@@ -2756,6 +2792,18 @@ msgstr "Sets the offset coordinates of a given object vertex (see<emLink href=\"
 #: sdk/script/fn/SetVertex.xml:21(remark)
 msgid "Achtung: Bei jeder Vertexaktualisierung (also beispielsweise dann, wenn sich Fertigstellungswert oder Rotation eines Objekts ändern) werden normalerweise alle Vertices wieder auf die Definitionswerte zurückgesetzt. Um dies zu umgehen, kann der iSetCustomPermanent-Parameter verwendet werden (Beispiel siehe CE-Drache)."
 msgstr "Notice: with any vertex updated caused by stretching or rotation of the object (e.g. building or growth) the vertices will be reset to their original defined position unless a special vertex mode is selected using the iSetCustomPermanent parameter (e.g. see CE dragon)."
+
+#: sdk/script/fn/SetVar.xml:24(desc)
+msgid "Die threadlokale Variable, die gesetzt werden soll."
+msgstr "Thread local variable to be set."
+
+#: sdk/script/fn/SetVar.xml:29(desc)
+msgid "Zu setzender Wert."
+msgstr "Value to be set."
+
+#: sdk/script/fn/SetVar.xml:33(desc)
+msgid "Weist den Wert iValue einer beliebigen Thread-lokalen Variablen (ab 0) zu und gibt diesen wieder aus. Der Datentyp ist variabel. Thread-lokale Variablen gelten nur für die Dauer des aktuellen Funktionsaufrufs. Nummerierte Variablen wurden durch <emLink href=\"script/NamedVar.html\">Variablen mit Namen</emLink> abgelöst, sind aber für Arrays nützlich."
+msgstr "Assigns the value iValue to any thread-local variable (from 0) and outputs it again. The data type is variable. Thread-local variables are valid only for the duration of the current function call. Numbered variables have been deprecated by <emLink href=\"script/NamedVar.html\">variables with names</emLink>, but are useful for arrays."
 
 #: sdk/script/fn/SetTransferZone.xml:13(desc)
 msgid "X-Position der oberen linken Ecke der neuen Transferzone; relativ zum Objektmittelpunkt"
@@ -4641,7 +4689,7 @@ msgid "Legt fest, welche Dichte ein Material haben muss, damit das Objekt mit di
 msgstr "Determines the minimum density of a material to cause an object to collide with the material. By default, objects collide with material that have a density of 50 (solid) or more."
 
 #: sdk/script/fn/SetContactDensity.xml:21(text)
-msgid "Ändert die Kontaktdichte des ausgewähten Clonks des ersten Spielers so, dass dieser auch auf Flüssigkeiten laufen kann."
+msgid "Ändert die Kontaktdichte des ausgewählten Clonks des ersten Spielers so, dass dieser auch auf Flüssigkeiten laufen kann."
 msgstr "Modifies the collision density of the selected clonk of the first player so that the selected clonk can now walk on liquids."
 
 #: sdk/script/fn/SetContactDensity.xml:25(emLink)
@@ -6466,6 +6514,26 @@ msgstr "If 1, the specified track will be looped forever."
 msgid "Spielt ein Musikstück ab. Die entsprechende Datei muss in einer der aktiven Musikdateien vorhanden sein. Sind im ausgewählten Szenario Musikdateien vorhanden, gilt die Szenariodatei als aktive Musikdatei, andernfalls wird die globale Musikdatei Music.c4g genutzt. Bei erfolgreichem Aufruf dieser Funktion wird die Musikwiedergabe aktiviert, auch wenn sie in den Optionen des Menüsystems deaktiviert wurde."
 msgstr "Plays a music track. The corresponding music file must be available in the active music group. If the loaded scenario contains music files, the scenario file will be the music group. Otherwise, the global file Music.c4g will be used. A successful call to this function will activate music playback, even if it was turned off in the options."
 
+#: sdk/script/fn/Mul.xml:16(description)
+msgid "Bereits in der Entwicklerdokumentation von clonk.de als veraltet markiert. Damit spätestens seit 4.9.10.7 [330] CR veraltet. <placeholder-1/>() ist bereits seit 4.9.1.4 GWE veraltet, möglicherweise diese Funktion ebenfalls. Statt Mul() sollte der <emLink href=\"script/operatoren.html\">Operator</emLink> \"*\" verwendet werden: <code>iVal1 * iVal2</code>"
+msgstr "Already marked as deprecated in the developer documentation of clonk.de. Thus deprecated at least since 4.9.10.7 [330] CR. <placeholder-1/>() is already deprecated since 4.9.1.4 GWE, possibly this function as well. Instead of Mul() the <emLink href=\"script/operatoren.html\">operator</emLink>\"*\" should be used: <code>iVal1 * iVal2</code>"
+
+#: sdk/script/fn/Mul.xml:26(desc)
+msgid "Faktor 1"
+msgstr "Factor 1"
+
+#: sdk/script/fn/Mul.xml:31(desc)
+msgid "Faktor 2"
+msgstr "Factor 2"
+
+#: sdk/script/fn/Mul.xml:35(desc)
+msgid "Multipliziert iVal1 mit iVal2 und gibt das Ergebnis zurück."
+msgstr "Multiplies iVal1 by iVal2 and returns the result."
+
+#: sdk/script/fn/Mul.xml:36(remark)
+msgid "Statt Mul() sollte der <emLink href=\"script/operatoren.html\">Operator</emLink> \"*\" verwendet werden: <code>iVal1 * iVal2</code>"
+msgstr "Instead of Mul() you should use the <emLink href=\"script/operatoren.html\">operator</emLink> \"*\": <code>iVal1 * iVal2</code>"
+
 #: sdk/script/fn/Min.xml:16(desc)
 #: sdk/script/fn/Max.xml:16(desc)
 msgid "erster Wert"
@@ -6604,7 +6672,7 @@ msgid "Objekt, dessen Variable abgefragt werden soll. 0 bei lokalem Aufruf."
 msgstr "Object of which you want to retrieve a variable. Can be 0 in local calls."
 
 #: sdk/script/fn/LocalN.xml:24(desc)
-msgid "Gibt eine Referenz auf eine Objektlokale Variable zurück. Diese Referenz kann zum Lesen und Schreiben benutzt werden."
+msgid "Gibt eine Referenz auf eine objektlokale Variable zurück. Diese Referenz kann zum Lesen und Schreiben benutzt werden."
 msgstr "Returns a reference to an object local variable. This reference can be used for reading or writing this variable."
 
 #: sdk/script/fn/LocalN.xml:30(text)
@@ -6634,9 +6702,25 @@ msgstr "DefCore.txt"
 msgid "Das Objekt trägt einen Baum mit sich herum."
 msgstr "The object carries a tree around with it."
 
-#: sdk/script/fn/LocalN.xml:45(emLink)
-msgid "benannte Variablen"
-msgstr "named variables"
+#: sdk/script/fn/Local.xml:14(desc)
+msgid "Nummer der Variable, die abgefragt werden soll. Jede nicht negative Zahl ist erlaubt."
+msgstr "Index of the variable to be accessed. Any non-negative number is allowed."
+
+#: sdk/script/fn/Local.xml:15(desc)
+msgid "Objekt, in der sich die Variable befindet."
+msgstr "Object holding the variable."
+
+#: sdk/script/fn/Local.xml:18(desc)
+msgid "Gibt den Wert einer lokalen Variable (als Referenz) zurück. Jedes Objekt kann eine beliebige Anzahl lokaler Variablen besitzen. Diese werden für jedes Objekt dauerhaft gespeichert und gehen erst verloren, wenn das Objekt gelöscht wird. Eine lokale Variable hat bei Erstellung des Objekts immer den Wert 0."
+msgstr "Returns the value of an object local variable (as reference). Each object can hold any number of local variables. This are stored in the object until the object is deleted. A newly created local variable always has the value 0."
+
+#: sdk/script/fn/Local.xml:19(remark)
+msgid "Da Local eine Referenz zurückgibt, kann der Wert einer Variable über Operatoren verändert werden (<code>Local(0) = 20</code>; <code>Local(1)++</code>; u.ä.)<br/> Wo möglich, sollte statt einer Local-Variable eine lokale <emLink href=\"script/NamedVar.html\">benannte Variable</emLink> eingesetzt werden."
+msgstr "Since Local() returns a reference, the variable can be modified using operators such as Local(0) = 20 or Local(1)++<br/>Where possible, a local <emLink href=\"script/NamedVar.html\">named variable</emLink> should be used instead of a local variable."
+
+#: sdk/script/fn/Local.xml:43(text)
+msgid "Dieses Script hat eine Ereignisfunktion (Hit), welche aufgerufen wird, wenn das Objekt auf den Boden aufschlägt. Hier wird die lokale Variable Nr. 0 auf 1 und die lokale Variable Nr. 1 auf 10 gesetzt.<br/> Die zweite Scriptfunktion, die definiert wird, heißt \"Timer\". Hierbei sollte es sich um eine Funktion handeln, die periodisch aufgerufen wird (Einstellung \"Timer\" in der DefCore.txt). Hier wird erst geprüft, ob das Objekt aktiviert ist [Local(0)]. Wenn nicht, wird die Funktion sofort beendet, es passiert also nichts. Wurde das Objekt aber aktiviert (dann ist Local(0) = 1), so wird ein Sound ausgegeben. Darauf wird die lokale Variable 1 eins heruntergezählt und der neue Wert über dem Objekt angezeigt.<br/> D.h. die Aktivierung in Hit startet einen Countdown von 10 aus. Ist der Zähler bei 0 angekommen, so explodiert das Objekt."
+msgstr "This script is invoked through the engine callback 'Hit' which occurs when the object hits the ground.<br/>The script sets the local variable 0 to value 1 and the variable 1 to value 10.<br/>The second script function is called 'Timer' and should be called periodically (see Timer entry in DefCore). This function will check whether the object has already hit the ground (Local(0) ist set). If this is the case, a sound is played and the counter variable 1 is decreased. When the counter reaches zero, the object explodes. For example this could be a timed grenade activated by impact."
 
 #: sdk/script/fn/LoadScenarioSection.xml:13(desc)
 msgid "Name der Sektion ohne Sect. Beispiel: Der Name der Sektion SectTunnel.c4g wäre \"Tunnel\". Der Name der Hauptsektion ist \"main\"."
@@ -6677,6 +6761,24 @@ msgstr "Loads a section from the scenario. For further information, take a look 
 #: sdk/script/fn/LoadScenarioSection.xml:27(remark)
 msgid "Objekte sollten vor dem Wechsel mit <placeholder-1/> deaktiviert und nach dem Wechsel wieder reaktiviert werden.<br/> Wichtig zu beachten ist, dass die Objekte nach dem Laden der neuen Sektion immer noch die Koordinaten haben, die sie in der alten Sektion hatten. Deshalb kann es vorkommen, dass Objekte nach dem Laden gelöscht werden, weil sie nun außerhalb der Landschaft liegen. Man musst also möglicherweise die Position der Objekte vor dem Sektionswechsel neu setzen, um dies zu verhindern."
 msgstr "Objects should be deactivated before changing the section via <placeholder-1/> and reactivated afterwards.<br/>It's important to keep in mind that the object position will stay the same after changing the section. Thus, it is possible that objects are being removed after changing the section because they are then positioned outside of the landscape borders. To mitigate this, it may be required to change the object positions before changing the section."
+
+#: sdk/script/fn/LessThan.xml:22(desc)
+#: sdk/script/fn/GreaterThan.xml:22(desc)
+msgid "Erster Wert"
+msgstr "first Value"
+
+#: sdk/script/fn/LessThan.xml:27(desc)
+#: sdk/script/fn/GreaterThan.xml:27(desc)
+msgid "Zweiter Wert"
+msgstr "second Value"
+
+#: sdk/script/fn/LessThan.xml:31(desc)
+msgid "Gibt TRUE zurück, wenn der erste übergebene Wert kleiner ist als der zweite (iVal1 &lt; iVal2)"
+msgstr "Returns true if the first passed value is less than the second (iValue1 &lt; iValue2)."
+
+#: sdk/script/fn/LessThan.xml:32(remark)
+msgid "Statt LessThan() sollte der <emLink href=\"script/operatoren.html\">Operator</emLink> \"&lt;\" verwendet werden: <code>iVal1 &lt; iVal2</code>"
+msgstr "Instead of LessThan() you should use the <emLink href=\"script/operatoren.html\">operator</emLink> \"&lt;\": <code>iVal1 &lt; iVal2</code>"
 
 #: sdk/script/fn/LaunchVolcano.xml:16(desc)
 #: sdk/script/fn/LaunchLightning.xml:16(desc)
@@ -6766,8 +6868,12 @@ msgid "Wert, dessen Typ geprüft werden soll"
 msgstr "Value of which to determine the type"
 
 #: sdk/script/fn/IsRef.xml:14(desc)
-msgid "Prüft, ob Value eine Referenz ist."
-msgstr "Checks wether Value is a reference."
+msgid "<b>Diese Funktion ist derzeit defekt, siehe Änderungstabelle.</b> Prüft, ob Value eine Referenz ist."
+msgstr "<b>This function is currently broken, see history table.</b> Checks if Value is a reference."
+
+#: sdk/script/fn/IsRef.xml:20(description)
+msgid "Die Funktion ist laut DerTod seit 2017 oder 2018 kaputt. Beschreibung entsprechend angepasst."
+msgstr "The function has been broken since 2017 or 2018 according to DerTod. Description adapted accordingly."
 
 #: sdk/script/fn/IsNetwork.xml:13(desc)
 msgid "Prüft, ob das aktuelle Spiel ein Netzwerkspiel ist."
@@ -6937,6 +7043,14 @@ msgstr "Creates a 32 bit color value from three parameters. Range is 0-255 for a
 msgid "Färbt den höchstrangigsten Clonk des ersten Spielers in einem zufälligen kräftigem Farbton."
 msgstr "Colors the highest ranking clonk of the first player in a strong, random color."
 
+#: sdk/script/fn/GreaterThan.xml:31(desc)
+msgid "Gibt TRUE zurück, wenn der erste übergebene Wert größer ist als der zweite (iVal1 &gt; iVal2)"
+msgstr "Returns true if the first passed value is greater than the second (iValue1 &gt; iValue2)."
+
+#: sdk/script/fn/GreaterThan.xml:32(remark)
+msgid "Statt GreaterThan() sollte der <emLink href=\"script/operatoren.html\">Operator</emLink> \"&gt;\" verwendet werden: <code>iVal1 &gt; iVal2</code>"
+msgstr "Instead of GreaterThan() you should use the <emLink href=\"script/operatoren.html\">operator</emLink> \"&gt;\": <code>iVal1 &gt; iVal2</code>"
+
 #: sdk/script/fn/GrabObjectInfo.xml:16(desc)
 msgid "Objekt (Clonk), von dem die Infosektion genommen werden soll."
 msgstr "Object (clonk) of which to retrieve the info section."
@@ -6972,6 +7086,14 @@ msgstr "Name of a global variable."
 #: sdk/script/fn/GlobalN.xml:17(desc)
 msgid "Liefert den Inhalt der globalen Variable mit dem Namen szText. Per GlobalN(\"Name\")=Wert; kann der Wert einer benannten globalen Variable gesetzt werden."
 msgstr "Returns the value of the global variable of name szText. Through GlobalN(\"Name\")=Value you can also set the value of a global variable."
+
+#: sdk/script/fn/Global.xml:14(desc)
+msgid "Nummer der globalen Variable."
+msgstr "Number of the global variable."
+
+#: sdk/script/fn/Global.xml:17(desc)
+msgid "Liefert den Inhalt der globalen Variable iVarIndex."
+msgstr "Returns the value of the global variable iVarIndex."
 
 #: sdk/script/fn/GetYDir.xml:13(desc)
 #: sdk/script/fn/GetXDir.xml:13(desc)
@@ -10290,6 +10412,26 @@ msgstr "Changes the breath value of an object."
 msgid "Gibt den ausgewählten Clonk des ersten Spielers 50% mehr Atemluft."
 msgstr "Gives 50% more breath to the selected clonk of the first player."
 
+#: sdk/script/fn/Div.xml:16(description)
+msgid "Bereits in der Entwicklerdokumentation von clonk.de als veraltet markiert. Damit spätestens seit 4.9.10.7 [330] CR veraltet. <placeholder-1/>() ist bereits seit 4.9.1.4 GWE veraltet, möglicherweise diese Funktion ebenfalls. Statt Div() sollte der <emLink href=\"script/operatoren.html\">Operator</emLink> \"/\" verwendet werden: <code>iVal1 / iVal2</code>"
+msgstr "Already marked as deprecated in the developer documentation of clonk.de. Thus deprecated at least since 4.9.10.7 [330] CR. <placeholder-1/>() is already deprecated since 4.9.1.4 GWE, possibly this function as well. Instead of Div() the <emLink href=\"script/operatoren.html\">operator</emLink>\"/\" should be used: <code>iVal1 / iVal2</code>"
+
+#: sdk/script/fn/Div.xml:26(desc)
+msgid "Dividend"
+msgstr "Dividend"
+
+#: sdk/script/fn/Div.xml:31(desc)
+msgid "Divisor"
+msgstr "Divisor"
+
+#: sdk/script/fn/Div.xml:35(desc)
+msgid "Führt eine Division durch, wobei eine Division durch 0 einfach 0 zurückgibt."
+msgstr "Performs a division. A division by 0 will return 0 (and not cause an error)."
+
+#: sdk/script/fn/Div.xml:36(remark)
+msgid "Statt Div() sollte der <emLink href=\"script/operatoren.html\">Operator</emLink> \"/\" verwendet werden: <code>iVal1 / iVal2</code>"
+msgstr "Instead of Div() you should use the <emLink href=\"script/operatoren.html\">operator</emLink> \"/\": <code>iVal1 / iVal2</code>"
+
 #: sdk/script/fn/Distance.xml:13(desc)
 msgid "X-Position des ersten Punktes"
 msgstr "X coordinate of the first point"
@@ -10972,9 +11114,8 @@ msgid "Objekt, das pItem aufsammeln soll. 0 bei lokalem Aufruf."
 msgstr "Object which is to collect. Can be 0 in local calls."
 
 #: sdk/script/fn/Collect.xml:17(desc)
-#, fuzzy
-msgid "Sammelt ein Objekt auf. Der Befehl führt dieselben Funktionen aus, als wäre das Objekt durch den normalen Collection-Bereich des Objekts eingesammelt worden (z.B. RejectCollect, Prüfung auf Flagge/Flagge abnehmbar, Hit-Aufruf bei <placeholder-1/>, usw.). Die einzigen Unterschiede sind, dass keine Prüfung der Position von pItem auf den Entrance-Bereich von pTarget/this() gemacht wird, und dass pItem nicht auf OCF_Carryable geprüft wird.<br/>Mit diesem Befehl lässt sich beispielsweise das Aufnehmen von Objekten aus Containern heraus realisieren. Wenn die Aufnahme fehlschlug (Beispielsweise durch den RejectCollect-Aufruf oder weil der Container voll war), gibt die Funktion 0 zurück. Ansonsten 1."
-msgstr "Collects an object. This function performs the same events as they occur if the object is collected in the game through the Collection area (there will be a RejectCollect call, flag collection checks, hit calls, etc.) The only difference is that there will be no comparison of collection position and the collected item is not checked for the OCF_Carryable flag.<br/>Using this function you can for example collect objects directly from a container. If the function fails (e.g. through a RejectCollect or a full target container) the function returns 0, otherwise 1."
+msgid "Sammelt ein Objekt auf. Der Befehl führt dieselben Funktionen aus, als wäre das Objekt durch den normalen Collection-Bereich des Objekts eingesammelt worden (z.B. RejectCollect, Prüfung auf Flagge/Flagge abnehmbar, Hit-Aufruf bei <placeholder-1/>, usw.). Die einzigen Unterschiede sind, dass keine Prüfung der Position von pItem auf den Entrance-Bereich von pTarget/this() gemacht wird, und dass pItem nicht auf <placeholder-2/> geprüft wird.<br/>Mit diesem Befehl lässt sich beispielsweise das Aufnehmen von Objekten aus Containern heraus realisieren. Wenn die Aufnahme fehlschlug (Beispielsweise durch den RejectCollect-Aufruf oder weil der Container voll war), gibt die Funktion 0 zurück. Ansonsten 1."
+msgstr "Collects an object. This function performs the same events as they occur if the object is collected in the game through the Collection area (there will be a RejectCollect call, flag collection checks, hit calls e.g. <placeholder-1/>, etc.). The only difference is that there will be no comparison of collection position and the collected item is not checked for the <placeholder-2/> flag.<br/>Using this function you can for example collect objects directly from a container. If the function fails (e.g. through a RejectCollect or a full target container) the function returns 0, otherwise 1."
 
 #: sdk/script/fn/Collect.xml:27(text)
 msgid "Auf Graben wird das erste Inhaltsobjekt an den ausgewählten Clonk übergeben."
@@ -13143,11 +13284,6 @@ msgstr "Sometimes it can be desirable to create a script player at runtime, but 
 msgid "Mit einem Parameter an <placeholder-1/> lassen sich die szenarienspezifische Initialisierung, das heißt das Erzeugen des Startmaterials, das Setzen der Startparameter nach Vorgaben und auch alle InitializePlayer-Aufrufe unterbinden. Stattdessen erfolgt nur ein InitializeScriptPlayer-Definitionsaufruf in der angegebenen Definition. Dazu ein Beispiel:"
 msgstr "By passing a parameter to <placeholder-1/>, scenario initialization can be prevented, i.e. no creation of start materials, no setting of player parameters such as homebase material by the according presets and no InitializePlayer-calls are done. Instead, a single CreateScriptPlayer-callback is done to the definition passed as idExtraData. Example:"
 
-#: sdk/script/NamedVar.xml:7(title)
-#: sdk/script/NamedVar.xml:9(h)
-msgid "Benannte Variablen"
-msgstr "Named Variables"
-
 #: sdk/script/NamedVar.xml:11(text)
 msgid "Variablen dienen innerhalb von Scripts zur Speicherung von Daten. Es gibt bestimmte <emLink href=\"script/Typechecks.html\">Datentypen</emLink>, die Variablen annehmen können."
 msgstr "Variables are placeholders for values stored in a script. A variable stores a value in one of several <emLink href=\"script/Typechecks.html\">data types</emLink>."
@@ -13365,7 +13501,7 @@ msgid "Parametertypen"
 msgstr "Parameter Types"
 
 #: sdk/script/Funcs.xml:53(text)
-msgid "Es ist möglich, den Typ der ürgebenen Parameter zu erzwingen. Dazu einfach den Namen des entsprechenden Typs (siehe dazu <emLink href=\"script/Typechecks.html\">Typechecks</emLink>) vor den Parameternamen setzen:"
+msgid "Es ist möglich, den Typ der übergebenen Parameter zu erzwingen. Dazu einfach den Namen des entsprechenden Typs (siehe dazu <emLink href=\"script/Typechecks.html\">Typechecks</emLink>) vor den Parameternamen setzen:"
 msgstr "You can specify the data type that is to be accepted for a given parameter. To do this, simply write the desired <emLink href=\"script/Typechecks.html\">type name</emLink> before the parameter name:"
 
 #: sdk/script/Funcs.xml:57(emLink)
@@ -20872,6 +21008,16 @@ msgstr "c4group.exe (Windows) c4group (Linux) c4group (Mac)"
 msgid "Dieses Kommandozeilen-Programm dient zum Bearbeiten von Gruppendateien. Es kann nicht per Doppelklick, sondern nur per Kommandozeile (Eingabeaufforderung) gestartet werden. Auskunft über alle verfügbaren Kommandozeilenparameter erhält man, indem man das Programm ohne weitere Parameter über die Kommandozeile startet."
 msgstr "This command line program is used for processing group files. A list of command line options is available by starting the program without parameters via command line (<i>not</i> by double clicking)."
 
+#~ msgid "benannte Variablen"
+#~ msgstr "named variables"
+
+#~ msgid "Prüft, ob Value eine Referenz ist."
+#~ msgstr "Checks wether Value is a reference."
+
+#, fuzzy
+#~ msgid "Multipliziert iVal1 mit iVal2 und gibt das Ergebnis zurück. Statt Mul(x, y) sollte die Operatorenschreibweise x ? y benutzt werden."
+#~ msgstr "Multiplies iVal1 with iVal2 and returns the result."
+
 #~ msgid "Ermittelt den Wert eines (noch nicht gekauften) Objekttyps. Siehe auch <emLink href=\"script/fn/GetValue.html\">GetValue</emLink>()."
 #~ msgstr "Calculates the value of an object type available to buy. Also see <emLink href=\"script/fn/GetValue.html\">GetValue</emLink>()."
 
@@ -21290,15 +21436,6 @@ msgstr "This command line program is used for processing group files. A list of 
 #~ msgid "Or"
 #~ msgstr "Or"
 
-#~ msgid "Index der Variable, zu der eine Referenz zurückgegeben werden soll"
-#~ msgstr "Index of the variable to which a reference is to be returned."
-
-#~ msgid "Normalerweise sollten statt dieser Funktion benannte, threadlokale Variablen (var) benutzt werden. Manchmal ist die Funktion jedoch praktisch, um lokale Arrays zu emulieren."
-#~ msgstr "Usually, you should use named local variables instead of using this function. Sometimes, however, it is convenient to used indexed variables to emulate a local array."
-
-#~ msgid "Berechnet pi auf 800 Stellen genau und gibt den Wert in zwei Logzeilen aus."
-#~ msgstr "Calculates pi exact to 800 decimals and returns the value in two log entries."
-
 #~ msgid "1. Summand"
 #~ msgstr "first operand"
 
@@ -21334,15 +21471,6 @@ msgstr "This command line program is used for processing group files. A list of 
 
 #~ msgid "Gibt das Ergebnis von 10 - 5 im Log aus."
 #~ msgstr "Prints the result of 10 - 5 to the log."
-
-#~ msgid "Die threadlokale Variable, die gesetzt werden soll."
-#~ msgstr "Thread local variable to be set."
-
-#~ msgid "Zu setzender Wert."
-#~ msgstr "Value to be set."
-
-#~ msgid "Weist den Wert iValue einer beliebigen Thread-lokalen Variablen (ab 0) zu. Der Datentyp ist variabel. Thread-lokale Variablen gelten nur für die Dauer des aktuellen Funktionsaufrufes. Numerierte Variablen wurden durch Variablen mit Namen abgelöst, sind aber für Arrays nützlich."
-#~ msgstr "Assigns a value to an indexed thread local variable. The data type is variant. Thread local variables are valid for the duration of a function execution only. Indexed variables are more old-fashioned than named variables but are still good for emulating local arrays."
 
 #~ msgid "Rot-Wert der Anfangsfarbe"
 #~ msgstr "Red value of the initial color."
@@ -21503,23 +21631,11 @@ msgstr "This command line program is used for processing group files. A list of 
 #~ msgid "Ruft FooBarFunc() auf, wenn x falsch ist. Neue Schreibweise."
 #~ msgstr "Calls FooBarFunc() if x is false. New syntax."
 
-#~ msgid "Faktor 1"
-#~ msgstr "Factor 1"
-
-#~ msgid "Faktor 2"
-#~ msgstr "Factor 2"
-
-#~ msgid "Multipliziert iVal1 mit iVal2 und gibt das Ergebnis zurück."
-#~ msgstr "Multiplies iVal1 with iVal2 and returns the result."
-
 #~ msgid "Statt <code>Mul(x, y)</code> sollte die Operatorenschreibweise <code>x * y</code> benutzt werden."
 #~ msgstr "Instead of <code>Mul(x, y)</code> you should use the operator <code>x * y</code>."
 
 #~ msgid "Divident"
 #~ msgstr "Dividend"
-
-#~ msgid "Divisor"
-#~ msgstr "Divisor"
 
 #~ msgid "Statt <code>Mod(x, y)</code> sollte die Operatorenschreibweise <code>x % y</code> benutzt werden."
 #~ msgstr "Instead of <code>Mod(x, y)</code> you should use the operator <code>x % y</code>."
@@ -21527,26 +21643,8 @@ msgstr "This command line program is used for processing group files. A list of 
 #~ msgid "Durch Verwendung des Zeichens \"|\" kann ein Zeilenvorschub erreicht werden."
 #~ msgstr "Using the character \"|\" you can insert a line break."
 
-#~ msgid "Nummer der Variable, die abgefragt werden soll. Jede positive Zahl (einschließlich 0) erlaubt"
-#~ msgstr "Index of the variable to be accessed. Can be any positive number including 0."
-
-#~ msgid "Objekt, in der sich die Variable befindet"
-#~ msgstr "Object holding the variable."
-
-#~ msgid "Gibt den Wert einer lokalen Variable (als Referenz) zurück. Jedes Objekt kann eine beliebige Anzahl lokaler Variablen besitzen. Diese werden für jedes Objekt dauerhaft gespeichert und gehen erst verloren, wenn das Objekt gelöscht wird. Eine lokale Variable hat bei Erstellung des Objekts immer den Wert 0."
-#~ msgstr "Returns the value of an object local variable (as reference). Each object can hold any number of local variables. This are stored in the object until the object is deleted. A newly created local variable always has the value 0."
-
-#~ msgid "Da Local eine Referenz zurückgibt, kann der Wert einer Variable über Operatoren verändert werden ( Local(0) = 20; Local(1)++; u.ä.)"
-#~ msgstr "Since Local() returns a reference, the variable can be modified using operators such as Local(0) = 20 or Local(1)++"
-
 #~ msgid "Wo möglich, sollte statt einer Local-Variable eine lokale benannte Variable eingesetzt werden."
 #~ msgstr "Whenever possible, you should use named variables instead of indexed ones."
-
-#~ msgid "Dieser Script hat eine Ereignisfunktion (Hit), welche aufgerufen wird, wenn das Objekt auf den Boden aufschlägt. <br/> Hier wird die lokale Variable Nr. 0 auf 1 und die lokale Variable Nr. 1 auf 10 gesetzt. <br/> Die zweite Scriptfunktion, die definiert wird, heißt \"Timer\". Hierbei sollte es sich um eine Funktion handeln, die periodisch aufgerufen wird (Einstellung \"Timer\" in der DefCore.txt). Hier wird erst geprüft, ob das Objekt aktiviert ist [Local(0)]. Wenn nicht, wird die Funktion sofort beendet, es passiert also nichts. Wurde das Objekt aber aktiviert (dann ist Local(0) = 1), so wird ein Sound ausgegeben. Darauf wird die lokale Variable 1 eins heruntergezählt und der neue Wert über dem Objekt angezeigt. <br/> D.h. die Aktivierung in Hit startet einen Countdown von 10 aus. Ist der Zähler bei 0 angekommen, so explodiert das Objekt."
-#~ msgstr "This script is invoked through the engine callback 'Hit' which occurs when the object hits the ground.<br/>The script sets the local variable 0 to value 1 and the variable 1 to value 10.<br/>The second script function is called 'Timer' and should be called periodically (see Timer entry in DefCore). This function will check whether the object has already hit the ground (Local(0) ist set). If this is the case, a sound is played and the counter variable 1 is decreased. When the counter reaches zero, the object explodes. Ergo: a timed grenade activated by impact."
-
-#~ msgid "Gibt TRUE zurück, wenn der erste übergebene Wert kleiner ist als der zweite (iValue1 &lt; iValue2)"
-#~ msgstr "Returns true if the first passed value is less than the second (iValue1 &lt; iValue2)."
 
 #~ msgid "Gibt zurück, ob das 32 Bit/16 Bit-Grafiksystem aktiviert ist. Bei Rückgabewert FALSE befindet sich die Engine im 8 Bit-Modus. Diese Funktion ist veraltet. Ab 4.9.5.0 CE läuft die Engine ausschließlich im 32 Bit/16 Bit-Modus."
 #~ msgstr "Returns whether the graphics system operates in 8 Bit or 32/16 Bit mode. This function is obsolete. From 4.9.5.0 CE the engine will run in 32/16 Bit mode only."
@@ -21575,12 +21673,6 @@ msgstr "This command line program is used for processing group files. A list of 
 #~ msgid "Gibt True zurück wenn iVal1 größer als iVal2 ist."
 #~ msgstr "Returns true if iVal is greater than iVal2."
 
-#~ msgid "Nummer der globalen Variable."
-#~ msgstr "Number of the global variable."
-
-#~ msgid "Liefert den Inhalt der globalen Variable iVarIndex."
-#~ msgstr "Returns the value of the global variable iVarIndex."
-
 #~ msgid "Bei fY 0 wird die X-Koordinate, bei fY 1 die Y-Koordinate zurückgegeben."
 #~ msgstr "With fY = 0 the x coordinate is returned, with fY = 1 the y coordinate is returned."
 
@@ -21598,12 +21690,6 @@ msgstr "This command line program is used for processing group files. A list of 
 
 #~ msgid "Ruft FooBarFunc() auf, wenn x == y. Neue Schreibweise."
 #~ msgstr "Calls FooBarFunc() if x == y. New syntax."
-
-#~ msgid "Dividend"
-#~ msgstr "Dividend"
-
-#~ msgid "Führt eine Division durch, wobei eine Division durch 0 einfach 0 zurückgibt. Statt dieser Funktion sollte der Operator \"/\" verwendet werden."
-#~ msgstr "Performs a division. A division by 0 will return 0 (and not cause an error). You should use the operator \"/\" instead."
 
 #~ msgid "Index der lokalen Variable, die verringert werden soll"
 #~ msgstr "Index of the variable to be decreased."

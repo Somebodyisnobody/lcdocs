@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
+	<func>
+		<title>LessThan</title>
+		<category>Arithmetik</category>
+		<versions><version>4.6.5.0 CP</version></versions>
+		<deprecated>
+			<author>Funni</author>
+			<date>2022-12-23</date>
+			<version>unknown</version>
+			<description>Bereits in der Entwicklerdokumentation von clonk.de als veraltet markiert. Damit spätestens seit 4.9.10.7 [330] CR veraltet.</description>
+		</deprecated>
+		<syntax>
+			<rtype>bool</rtype>
+			<params>
+				<param>
+					<type>int</type>
+					<name>iVal1</name>
+					<desc>Erster Wert</desc>
+				</param>
+				<param>
+					<type>int</type>
+					<name>iVal2</name>
+					<desc>Zweiter Wert</desc>
+				</param>
+			</params>
+		</syntax>
+		<desc>Gibt TRUE zurück, wenn der erste übergebene Wert kleiner ist als der zweite (iVal1 &lt; iVal2)</desc>
+		<remark>Statt LessThan() sollte der <emLink href="script/operatoren.html">Operator</emLink> "&lt;" verwendet werden:
+			<code>iVal1 &lt; iVal2</code></remark>
+		<related>
+			<funcLink>GreaterThan</funcLink>
+		</related>
+	</func>
+	<author>PeterW</author><date>2001-11</date>
+	<author>Funni</author><date>2022-12-23</date>
+</clonkDoc>

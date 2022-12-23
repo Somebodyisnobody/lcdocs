@@ -30,6 +30,7 @@ VarN(<funcLink>Format</funcLink>("V%d", <funcLink>Random</funcLink>(7))) = <func
     </examples>
 
     <related>
+      <emLink href="script/NamedVar.html">Benannte Variablen</emLink>
       <funcLink>IsRef</funcLink>
       <funcLink>LocalN</funcLink>
       <funcLink>GlobalN</funcLink>

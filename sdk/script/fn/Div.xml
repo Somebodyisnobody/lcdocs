@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
+	<func>
+		<title>Div</title>
+		<category>Arithmetik</category>
+		<versions>
+			<version>4.6.5.0 CP</version>
+		</versions>
+		<deprecated>
+			<author>Funni</author>
+			<date>2022-12-23</date>
+			<version>unknown</version>
+			<description>Bereits in der Entwicklerdokumentation von clonk.de als veraltet markiert. Damit spätestens seit 4.9.10.7 [330] CR veraltet. <funcLink>Pow</funcLink>() ist bereits seit 4.9.1.4 GWE veraltet, möglicherweise diese Funktion ebenfalls.
+				Statt Div() sollte der <emLink href="script/operatoren.html">Operator</emLink> "/" verwendet werden:
+				<code>iVal1 / iVal2</code></description>
+		</deprecated>
+		<syntax>
+			<rtype>int</rtype>
+			<params>
+				<param>
+					<type>int</type>
+					<name>iVal1</name>
+					<desc>Dividend</desc>
+				</param>
+				<param>
+					<type>int</type>
+					<name>iVal2</name>
+					<desc>Divisor</desc>
+				</param>
+			</params>
+		</syntax>
+		<desc>Führt eine Division durch, wobei eine Division durch 0 einfach 0 zurückgibt.</desc>
+		<remark>Statt Div() sollte der <emLink href="script/operatoren.html">Operator</emLink> "/" verwendet werden:
+			<code>iVal1 / iVal2</code>
+		</remark>
+		<related>
+			<funcLink>Mul</funcLink>
+			<funcLink>Pow</funcLink>
+		</related>
+	</func>
+	<author>Sven2</author><date>2001-11</date>
+	<author>Funni</author><date>2022-12-23</date>
+</clonkDoc>

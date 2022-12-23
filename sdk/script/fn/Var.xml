@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
+	<func>
+		<title>Var</title>
+		<category>Variablen</category>
+		<versions>
+			<version>4.6.5.0 CP</version>
+		</versions>
+		<deprecated>
+			<author>Funni</author>
+			<date>2022-12-23</date>
+			<version>unknown</version>
+			<description>Bereits in der Entwicklerdokumentation von clonk.de als veraltet markiert. Damit spätestens seit 4.9.10.7 [330] CR veraltet.</description>
+		</deprecated>
+		<syntax>
+			<rtype>any</rtype>
+			<isReference/>
+			<params>
+				<param>
+					<type>int</type>
+					<name>iIndex</name>
+					<desc>Index der Variable, zu der eine Referenz zurückgegeben werden soll.</desc>
+				</param>
+			</params>
+		</syntax>
+		<desc>Gibt eine Referenz auf eine funktionslokale Variable zurück. Diese Referenz kann zum Lesen und Schreiben benutzt werden.</desc>
+		<remark>Normalerweise sollten statt dieser Funktion <emLink href="script/NamedVar.html">benannte</emLink>, Thread-lokale Variablen (var) benutzt werden. Manchmal ist die Funktion jedoch praktisch, um lokale Arrays zu emulieren.</remark>
+		<examples>
+			<example>
+				<code>
+public func show_me_pi()
+{
+	// Variablendeklarationen
+	var b,d,e,g,out,bufLen = 2800,res=10000;
+	// Puffer initialisieren
+	Var(bufLen-1)=0;
+	<funcLink>while</funcLink> (b!=bufLen) Var(b++)=res/5;
+	// Für den gesamten Puffer...
+	<funcLink>while</funcLink> (g=bufLen*2)
+		{
+		// Die nächsten vier Stellen berechnen; nachfolgenden Puffer nachberechnen
+		d=0;
+		<funcLink>for</funcLink> (b=bufLen; b; --b)
+			{
+			d+=Var(b)*res;
+			Var(b)=d%--g;
+			d=d/g--*b;
+			}
+		// Anfangswert hardcoded, fürs Komma
+		<funcLink>if</funcLink> (bufLen==2800)
+			out = "3.141";
+		else
+			// Ansonsten vier Stellen des letzten, berechneten Wertes ausgeben
+			out = <funcLink>Format</funcLink>("%s%.4d", out, e+d/res);
+		// Weiter im Puffer
+		bufLen-=14;
+		// An der Hälfte umbrechen
+		<funcLink>if</funcLink> (bufLen == 1400) { <funcLink>Log</funcLink>(out); out="	"; }
+		// Restwert der letzten Berechnung für die nächsten vier Stellen nehmen
+		e=d%res;
+		}
+	// Zweiten Teil des Puffers ausgeben
+	<funcLink>Log</funcLink>(out);
+}
+				</code>
+				<text>Berechnet pi auf 800 Stellen genau und gibt den Wert in zwei Logzeilen aus.</text>
+			</example>
+		</examples>
+		<related>
+			<funcLink>Global</funcLink>
+			<funcLink>Local</funcLink>
+			<funcLink>VarN</funcLink>
+		</related>
+	</func>
+	<author>Sven2</author><date>2002-08</date>
+	<author>Funni</author><date>2022-12-23</date>
+</clonkDoc>

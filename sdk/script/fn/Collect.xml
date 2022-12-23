@@ -14,7 +14,7 @@
 				<param><type>object</type><name>pTarget</name><desc>Objekt, das pItem aufsammeln soll. 0 bei lokalem Aufruf.</desc><optional /></param>
 			</params>
 		</syntax>
-		<desc>Sammelt ein Objekt auf. Der Befehl führt dieselben Funktionen aus, als wäre das Objekt durch den normalen Collection-Bereich des Objekts eingesammelt worden (z.B. RejectCollect, Prüfung auf Flagge/Flagge abnehmbar, Hit-Aufruf bei OCF_HitSpeed2, usw.). Die einzigen Unterschiede sind, dass keine Prüfung der Position von pItem auf den Entrance-Bereich von pTarget/this() gemacht wird, und dass pItem nicht auf OCF_Carryable geprüft wird.<br />Mit diesem Befehl lässt sich beispielsweise das Aufnehmen von Objekten aus Containern heraus realisieren. Wenn die Aufnahme fehlschlug (Beispielsweise durch den RejectCollect-Aufruf oder weil der Container voll war), gibt die Funktion 0 zurück. Ansonsten 1.</desc>
+		<desc>Sammelt ein Objekt auf. Der Befehl führt dieselben Funktionen aus, als wäre das Objekt durch den normalen Collection-Bereich des Objekts eingesammelt worden (z.B. RejectCollect, Prüfung auf Flagge/Flagge abnehmbar, Hit-Aufruf bei <constLink constGroup="OCF">OCF_HitSpeed2</constLink>, usw.). Die einzigen Unterschiede sind, dass keine Prüfung der Position von pItem auf den Entrance-Bereich von pTarget/this() gemacht wird, und dass pItem nicht auf <constLink constGroup="OCF">OCF_Collectible</constLink> geprüft wird.<br />Mit diesem Befehl lässt sich beispielsweise das Aufnehmen von Objekten aus Containern heraus realisieren. Wenn die Aufnahme fehlschlug (Beispielsweise durch den RejectCollect-Aufruf oder weil der Container voll war), gibt die Funktion 0 zurück. Ansonsten 1.</desc>
 		<examples>
 			<example>
 <code>protected func ControlDig (pClonk)

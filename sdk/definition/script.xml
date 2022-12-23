@@ -108,7 +108,7 @@
                     <col>object pByObj</col>
                     <col>Wenn das Objekt erzeugt wird. Als Parameter wird das Objekt übergeben, in dem das erzeugende
                         Script steht. Siehe auch
-                        <funcLink>Construction</funcLink>
+                        <callbackLink>Construction</callbackLink>
                     </col>
                 </row>
                 <row id="Destruction">
@@ -120,7 +120,7 @@
                     <col>Hit</col>
                     <col>int xdir, int ydir</col>
                     <col>Wenn das Objekt bei hoher Geschwindigkeit (>= 15; siehe
-                        <funcLink>OCF_HitSpeed1</funcLink>) mit der Landschaft
+                        <constLink constGroup="OCF">OCF_HitSpeed1</constLink>) mit der Landschaft
                         kollidiert oder
                         aufgenommen wird (Collection).
                         <br/>
@@ -132,14 +132,14 @@
                     <col>Hit2</col>
                     <col>int xdir, int ydir</col>
                     <col>Wie Hit, bei Geschwindigkeiten >= 20 (siehe
-                        <funcLink>OCF_HitSpeed2</funcLink>).
+                        <constLink constGroup="OCF">OCF_HitSpeed2</constLink>).
                     </col>
                 </row>
                 <row id="Hit3">
                     <col>Hit3</col>
                     <col>int xdir, int ydir</col>
                     <col>Wie Hit, bei Geschwindigkeiten >= 60 (siehe
-                        <funcLink>OCF_HitSpeed3</funcLink>).
+                        <constLink constGroup="OCF">OCF_HitSpeed3</constLink>).
                     </col>
                 </row>
                 <row id="Grab">

@@ -357,7 +357,6 @@
         <xs:restriction base="xs:string">
             <xs:enumeration value="bool"/>
             <xs:enumeration value="int"/>
-            <xs:enumeration value="void"/>
             <xs:enumeration value="any"/>
             <xs:enumeration value="array"/>
             <xs:enumeration value="object"/>

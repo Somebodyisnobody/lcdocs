@@ -4,20 +4,20 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
         <func>
-                <title>GlobalN</title>
+                <title>Global</title>
                 <category>Variablen</category>
-                <versions><version>4.9.1.0 GWE</version></versions>
+                <versions><version>4.6.5.0 CP</version></versions>
                 <syntax>
                         <rtype>any</rtype>
                         <isReference />
                         <params>
-                                <param><type>string</type><name>szText</name><desc>Name einer globalen Variable.</desc></param>
+                                <param><type>int</type><name>iVarIndex</name><desc>Nummer der globalen Variable.</desc></param>
                         </params>
                 </syntax>
-                <desc>Liefert den Inhalt der globalen Variable mit dem Namen szText. Per GlobalN("Name")=Wert; kann der Wert einer benannten globalen Variable gesetzt werden.</desc>
+                <desc>Liefert den Inhalt der globalen Variable iVarIndex.</desc>
                 <related>
-                        <emLink href="script/NamedVar.html">Benannte Variablen</emLink>
-                        <funcLink>Global</funcLink>
+                        <funcLink>GlobalN</funcLink>
+                        <funcLink>SetGlobal</funcLink>
                 </related>
         </func>
         <author>Cucaracha</author><date>2002-05</date>

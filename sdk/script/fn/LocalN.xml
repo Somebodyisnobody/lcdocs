@@ -14,14 +14,14 @@
 			<description>Diese Funktion dient der Kompatibilität zu älteren Spielinhalten. In neueren Scripts sollte <code>obj["name"]</code> oder <code>obj.name</code>, letzteres bei aktiviertem <code>#strict 3</code>, verwendet werden.</description>
 		</deprecated>
 		<syntax>
-			<rtype>object</rtype>
+			<rtype>any</rtype>
 			<isReference />
 			<params>
 				<param><type>string</type><name>szName</name><desc>Name der Variablen, zu der eine Referenz zurückgegeben werden soll</desc></param>
 				<param><type>object</type><name>pObj</name><desc>Objekt, dessen Variable abgefragt werden soll. 0 bei lokalem Aufruf.</desc><optional /></param>
 			</params>
 		</syntax>
-		<desc>Gibt eine Referenz auf eine Objektlokale Variable zurück. Diese Referenz kann zum Lesen und Schreiben benutzt werden.</desc>
+		<desc>Gibt eine Referenz auf eine objektlokale Variable zurück. Diese Referenz kann zum Lesen und Schreiben benutzt werden.</desc>
 		<remark>Diese Funktion dient der Kompatibilität zu älteren Spielinhalten. In neueren Scripts sollte <code>obj["name"]</code> oder <code>obj.name</code>, letzteres bei aktiviertem <code>#strict 3</code>, verwendet werden.</remark>
 		<examples>
 			<example>
@@ -42,7 +42,7 @@ func TimerCall () {
 			</example>
 		</examples>
 		<related>
-			<emLink href="script/NamedVar.html">benannte Variablen</emLink>
+			<emLink href="script/NamedVar.html">Benannte Variablen</emLink>
 			<funcLink>Local</funcLink>
 			<funcLink>IsRef</funcLink>
 			<funcLink>VarN</funcLink>

@@ -18,11 +18,11 @@
     <examples>
       <example>
 <code>SetContactDensity(25, GetCursor());</code>
-        <text>Ändert die Kontaktdichte des ausgewähten Clonks des ersten Spielers so, dass dieser auch auf Flüssigkeiten laufen kann.</text>
+        <text>Ändert die Kontaktdichte des ausgewählten Clonks des ersten Spielers so, dass dieser auch auf Flüssigkeiten laufen kann.</text>
       </example>
     </examples>
     <related>
-      <emLink href="material\index.html">Materialdefinitionen</emLink>
+      <emLink href="material/index.html">Materialdefinitionen</emLink>
     </related>
   </func>
   <author>Clonkonaut</author><date>2008-05</date>

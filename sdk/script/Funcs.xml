@@ -50,11 +50,11 @@
 	<text>führt also zu der Nachricht "Die Summe der ersten 4 Parameter ist 10.".</text>
 	
 	<h id="parametertypen">Parametertypen</h>
-	<text>Es ist möglich, den Typ der ürgebenen Parameter zu erzwingen. Dazu einfach den Namen des entsprechenden Typs (siehe dazu <emLink href="script/Typechecks.html">Typechecks</emLink>) vor den Parameternamen setzen:</text>
+	<text>Es ist möglich, den Typ der übergebenen Parameter zu erzwingen. Dazu einfach den Namen des entsprechenden Typs (siehe dazu <emLink href="script/Typechecks.html">Typechecks</emLink>) vor den Parameternamen setzen:</text>
 	
 	<code>func TypParameterFunktion(object clnk, id def, int anzahl, string msg)
 {
-  <emLink href="for.html">for</emLink>(var i = 0; i &lt; anzahl; i++)
+  <emLink href="script/for.html">for</emLink>(var i = 0; i &lt; anzahl; i++)
     <funcLink>CreateContents</funcLink>(def, clnk);
   <funcLink>Message</funcLink>(msg, clnk);
 }</code>
@@ -136,7 +136,7 @@ ZeigeSumme(1, 2, 3, 4, 5, 6);</code>
 <code>global func CreateContents(id, pObj, iCnt)
 {
   var pObj;
-  <emLink href="for.html">for</emLink>(var i = 0; i &lt; iCnt; i++)
+  <emLink href="script/for.html">for</emLink>(var i = 0; i &lt; iCnt; i++)
     pObj = <funcLink>inherited</funcLink>(id, pObj);
   return(pObj);
 }</code>
