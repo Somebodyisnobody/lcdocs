@@ -120,6 +120,7 @@
 	</xsl:template>
 
 	<xsl:template match="func">
+		<xsl:param name="relpath" tunnel="yes"/>
 		<h1>
 			<xsl:value-of select="title"/>
 			<xsl:apply-templates select="deprecated"/>
@@ -137,10 +138,21 @@
 		</h2>
 		<div class="text">
 			<xsl:if test="@isAsync = true()">
-					<div class="alertBoxPreDescription">
-					<b>Asynchrone Funktion</b><br/>
-					Diese Funktion kann asynchrones Verhalten auslösen oder asynchrone Ergebnisse liefern und muss daher mit Bedacht verwendet werden. Siehe <a href="https://example.com">Beschreibungsseite "Asynchrone Funktionen"</a> für weitere Informationen.
-					</div>
+				<xsl:variable as="xs:string" name="path-to-async-page" select="'fillme.html'"/> <!-- TODO -->
+				<div class="alertBoxPreDescription">
+					<xsl:choose>
+						<xsl:when test='lang("en")'>
+							<b>Asynchronous function</b><br/>
+							This function may trigger asynchronous behavior or return asynchronous results and must therefore be used with caution. See <a><xsl:attribute
+								name="href" select="concat($relpath, 'sdk/', $path-to-async-page)"/>"Asynchronous functions" description page</a> for more information.
+						</xsl:when>
+						<xsl:otherwise>
+							<b>Asynchrone Funktion</b><br/>
+							Diese Funktion kann asynchrones Verhalten auslösen oder asynchrone Ergebnisse liefern und muss daher mit Bedacht verwendet werden. Siehe <a><xsl:attribute
+								name="href" select="concat($relpath, 'sdk/', $path-to-async-page)"/>Beschreibungsseite "Asynchrone Funktionen"</a> für weitere Informationen.
+						</xsl:otherwise>
+					</xsl:choose>
+				</div>
 			</xsl:if>
 			<xsl:apply-templates select="desc"/>
 		</div>

@@ -3,16 +3,16 @@
 # Günther <gbrammer@gmx.de>
 # PeterW <Peter.Wortmann@gmx.de>
 # Sven2 <sven2@goldwipf.de>
-# 
-# 
+#
+#
 # Markus Mittendrein <maxmitti@gmx.at>, 2021.
 # Funni <funni.clonk@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-24 17:09+0100\n"
-"PO-Revision-Date: 2022-12-24 13:46+0100\n"
+"POT-Creation-Date: 2022-12-24 17:31+0100\n"
+"PO-Revision-Date: 2022-12-24 17:31+0100\n"
 "Last-Translator: Funni <funni.clonk@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
 "Language: en\n"
@@ -1632,7 +1632,7 @@ msgstr "Removes obj if one if its vertices is stuck"
 #: sdk/script/fn/VarN.xml:8(category)
 #: sdk/script/fn/Var.xml:8(category)
 #: sdk/script/fn/SetVar.xml:8(category)
-#: sdk/script/fn/SetLocal.xml:9(category)
+#: sdk/script/fn/SetLocal.xml:8(category)
 #: sdk/script/fn/SetGlobal.xml:8(category)
 #: sdk/script/fn/LocalN.xml:8(category)
 #: sdk/script/fn/Local.xml:8(category)
@@ -3908,9 +3908,8 @@ msgid "Wie PHYS_Temporary, jedoch wird zusätzlich der vorherige Physical-Wert g
 msgstr "Like PHYS_Temporary, but the previous physical-value will be backed up and can be restored by calling <placeholder-1/>. Since CR."
 
 #: sdk/script/fn/SetPhysical.xml:16(desc)
-#, fuzzy
 msgid "Änderungsmodus (symbolische Konstanten ab CR):<br/><placeholder-1/>"
-msgstr "Physical attribute change mode (symbolical constants since CR):<br/><placeholder-1/><br/>"
+msgstr "Physical attribute change mode (symbolical constants since CR):<br/><placeholder-1/>"
 
 #: sdk/script/fn/SetPhysical.xml:26(desc)
 msgid "Objekt, dessen Physical gesetzt werden soll. 0 bei lokalen Aufrufen."
@@ -4399,27 +4398,27 @@ msgstr "Changes the mass of an object. The mass is initialised with <emLink href
 msgid "Script für einen Keks: Beim Essen nimmt die Masse des Clonks zu."
 msgstr "Script for a cookie: when eating this cookie the mass of the clonk will increase."
 
-#: sdk/script/fn/SetLocal.xml:18(description)
-#: sdk/script/fn/SetLocal.xml:44(remark)
+#: sdk/script/fn/SetLocal.xml:17(description)
+#: sdk/script/fn/SetLocal.xml:43(remark)
 msgid "Statt SetLocal sollte zum Zugriff auf Local-Variablen die Schreibweise <code><placeholder-1/>(x) = y</code> verwendet werden."
 msgstr "Instead of SetLocal the notation <code><placeholder-1/>(x) = y</code> should be used to access local variables."
 
-#: sdk/script/fn/SetLocal.xml:26(desc)
+#: sdk/script/fn/SetLocal.xml:25(desc)
 #: sdk/script/fn/SetGlobal.xml:25(desc)
 #: sdk/script/fn/Local.xml:13(desc)
 msgid "Nummer der Variable, die abgefragt werden soll. Jede nicht negative Zahl ist erlaubt."
 msgstr "Index of the variable to be accessed. Any non-negative number is allowed."
 
-#: sdk/script/fn/SetLocal.xml:31(desc)
+#: sdk/script/fn/SetLocal.xml:30(desc)
 #: sdk/script/fn/SetGlobal.xml:30(desc)
 msgid "Neuer Wert der Variable."
 msgstr "New value of the variable."
 
-#: sdk/script/fn/SetLocal.xml:36(desc)
+#: sdk/script/fn/SetLocal.xml:35(desc)
 msgid "Objekt, in der die Variable gesetzt werden soll"
 msgstr "Object in which the variable is to be set"
 
-#: sdk/script/fn/SetLocal.xml:40(desc)
+#: sdk/script/fn/SetLocal.xml:39(desc)
 msgid "Setzt eine <placeholder-1/>-Variable in einem Objekt (wenn nicht angegeben, wird die Variable in dem aufrufenden Objekt gesetzt) und gibt, wenn erfolgreich, den gesetzten Wert zurück (ansonsten 0)."
 msgstr "Sets a <placeholder-1/> variable in an object (if no object is specified the variable is set in the calling object) and returns the set value on success (otherwise 0)."
 
