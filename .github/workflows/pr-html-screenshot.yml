@@ -14,9 +14,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
-      - uses: actions/setup-java@v2
+      - uses: actions/setup-java@v3.9.0
         with:
           distribution: 'temurin'
           java-version: '11'
@@ -51,7 +51,9 @@ jobs:
           done
           htmlfiles=${htmlfiles::-2}
           echo $htmlfiles
-          echo "::set-output name=htmlfiles::${htmlfiles}"
+          # https://github.blog/changelog/2022-10-11-github-actions-deprecating-save-state-and-set-output-commands/
+          # echo "::set-output name=htmlfiles::${htmlfiles}"
+          echo "htmlfiles=${htmlfiles}" >> $GITHUB_OUTPUT
 
       # Run Screenshot Comment Action
       - name: Take screenshots of changed html files and add to pull request
