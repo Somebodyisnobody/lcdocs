@@ -3,12 +3,12 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>this</title>
     <category>Objekte</category>
     <versions><version>4.6.5.0 CP</version></versions>
     <syntax>
-      <rtype>object</rtype>
+      <rtype isReference="false">object</rtype>
     </syntax>
     <desc>Liefert einen Zeiger auf das Objekt, in dem der Script ausgeführt gerade wird.</desc>
     <remark>Die Funktionsklammern können optional weggelassen werden.</remark>

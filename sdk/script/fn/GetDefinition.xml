@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>GetDefinition</title>
 		<category>Objekte</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>id</rtype>
+			<rtype isReference="false">id</rtype>
 			<params>
-				<param><type>int</type><name>iIndex</name><desc>Index der gesuchten Definition.</desc></param>
-				<param><type>int</type><name>dwCategory</name><desc>Die Kategory, in der die gesuchte Definition ist.</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iIndex</name><desc>Index der gesuchten Definition.</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>dwCategory</name><desc>Die Kategory, in der die gesuchte Definition ist.</desc></param>
 			</params>
 		</syntax>
 		<desc>Liefert das ID der indizierten von der Engine in dieser Runde geladenen Objektdefinition der angegebenen Kategorie (dwCategory 0 für alle Objektkategorien).</desc>

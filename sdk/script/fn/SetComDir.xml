@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>SetComDir</title>
     <category>Objekte/Bewegung</category>
     <versions><version>4.6.5.0 CP</version></versions>
     <syntax>
-      <rtype>int</rtype>
+      <rtype isReference="false">int</rtype>
       <params>
-        <param><type>int</type><name>iComDir</name><desc>Befehlsrichtung. Muss <constLink constGroup="COMD">COMD_None</constLink>, <constLink constGroup="COMD">COMD_Down</constLink>, <constLink constGroup="COMD">COMD_DownLeft</constLink>, <constLink constGroup="COMD">COMD_DownRight</constLink>, <constLink constGroup="COMD">COMD_Left</constLink>, <constLink constGroup="COMD">COMD_Right</constLink>, <constLink constGroup="COMD">COMD_Up</constLink>, <constLink constGroup="COMD">COMD_UpLeft</constLink> oder <constLink constGroup="COMD">COMD_UpRight</constLink> sein.</desc></param>
-        <param><type>object</type><name>pObj</name><desc>Objekt, dessen Befehlsrichtung gesetzt werden soll. 0 bei lokalem Aufruf.</desc><optional/></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iComDir</name><desc>Befehlsrichtung. Muss <constLink constGroup="COMD">COMD_None</constLink>, <constLink constGroup="COMD">COMD_Down</constLink>, <constLink constGroup="COMD">COMD_DownLeft</constLink>, <constLink constGroup="COMD">COMD_DownRight</constLink>, <constLink constGroup="COMD">COMD_Left</constLink>, <constLink constGroup="COMD">COMD_Right</constLink>, <constLink constGroup="COMD">COMD_Up</constLink>, <constLink constGroup="COMD">COMD_UpLeft</constLink> oder <constLink constGroup="COMD">COMD_UpRight</constLink> sein.</desc></param>
+        <param isReference="false" isOptional="true"><type>object</type><name>pObj</name><desc>Objekt, dessen Befehlsrichtung gesetzt werden soll. 0 bei lokalem Aufruf.</desc></param>
       </params>
     </syntax>
     <desc>Setzt die Befehlsrichtung eines Objekts (siehe <funcLink>GetComDir</funcLink>)</desc>

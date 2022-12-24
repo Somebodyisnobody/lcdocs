@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>Find_ID</title>
 		<category>Objekte/Suche</category>
 		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
-			<rtype>array</rtype>
+			<rtype isReference="false">array</rtype>
 			<params>
-				<param><type>id</type><name>idDef</name><desc>ID der zu findenden Objekte</desc></param>
+				<param isReference="false" isOptional="false"><type>id</type><name>idDef</name><desc>ID der zu findenden Objekte</desc></param>
 			</params>
 		</syntax>
 		<desc>Suchkriterium: sucht alle Objekte mit der angegeben ID.</desc>

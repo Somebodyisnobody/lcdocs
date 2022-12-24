@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-        <func>
+        <func isAsync="false">
                 <title>GetWind</title>
                 <category>Umwelt/Wetter</category>
                 <versions><version>4.6.5.0 CP</version><extversion>4.9.5.0 CE</extversion></versions>
                 <syntax>
-                        <rtype>int</rtype>
+                        <rtype isReference="false">int</rtype>
                         <params>
-                                <param><type>int</type><name>iX</name><desc>X-Position</desc></param>
-                                <param><type>int</type><name>iY</name><desc>Y-Position</desc></param>
-                                <param><type>bool</type><name>fGlobal</name><desc>Ob der globale Wind abgefragt werden soll. Ab CE.</desc><optional /></param>
+                                <param isReference="false" isOptional="false"><type>int</type><name>iX</name><desc>X-Position</desc></param>
+                                <param isReference="false" isOptional="false"><type>int</type><name>iY</name><desc>Y-Position</desc></param>
+                                <param isReference="false" isOptional="true"><type>bool</type><name>fGlobal</name><desc>Ob der globale Wind abgefragt werden soll. Ab CE.</desc></param>
                         </params>
                 </syntax>
                 <desc>Liefert die Windstärke und Richtung an der Position X, Y. Wird die Funktion aus einem Objekt heraus aufgerufen, so ist die Position relativ zur Objektposition. Wenn fGlobal=true, wird der globale Wind zurückgegeben.</desc>

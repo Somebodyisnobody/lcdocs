@@ -3,7 +3,7 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>Value</title>
 		<category>Objekte/Status</category>
 		<versions><version>4.6.5.0 CP</version></versions>
@@ -14,9 +14,9 @@
 			<description>Mit Erweiterung von <funcLink>GetValue</funcLink> ist diese Funktion veraltet.</description>
 		</deprecated>
 		<syntax>
-			<rtype>int</rtype>
+			<rtype isReference="false">int</rtype>
 			<params>
-				<param><type>id</type><name>idDef</name><desc>ID der Definition, dessen Wert ermittelt werden soll.</desc></param>
+				<param isReference="false" isOptional="false"><type>id</type><name>idDef</name><desc>ID der Definition, dessen Wert ermittelt werden soll.</desc></param>
 			</params>
 		</syntax>
 		<desc>Gibt einen Definitionswert zurück.</desc>

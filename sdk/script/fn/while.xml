@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>while</title>
 		<category>Script</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>void</rtype>
+			<rtype isReference="false">void</rtype>
 			<params>
-				<param><type>bool</type><name>fCondition</name><desc>Bedingung</desc></param>
+				<param isReference="false" isOptional="false"><type>bool</type><name>fCondition</name><desc>Bedingung</desc></param>
 			</params>
 		</syntax>
 		<desc>Solange fCondition ungleich Null ist, wird der unmittelbar folgende Block bzw. die unmittelbar folgende Anweisung ausgeführt.</desc>

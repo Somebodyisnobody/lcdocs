@@ -3,70 +3,62 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>AddEffect</title>
     <category>Effekte</category>
     <versions><version>4.9.5.0 CE</version></versions>
     <syntax>
-      <rtype>int</rtype>
+      <rtype isReference="false">int</rtype>
       <params>
-        <param>
+        <param isReference="false" isOptional="false">
           <type>string</type>
           <name>szEffectName</name>
           <desc>Name des Effektes ohne vorangestelltes Fx.</desc>
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>object</type>
           <name>pTarget</name>
           <desc>Zielobjekt für den Effekt. Bei 0 wird der Effekt global erzeugt.</desc>
-          <optional />
         </param>
-        <param>
+        <param isReference="false" isOptional="false">
           <type>int</type>
           <name>iPrio</name>
           <desc>Priorität für den Effekt. Achtung: Die Priorität darf nicht 0 sein; ansonsten wird der Effekt nicht erzeugt!</desc>
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>int</type>
           <name>iTimerIntervall</name>
           <desc>Intervall, in dem Timer-Aufrufe getätigt werden. Bei 0 werden keine Timer-Aufrufe durchgeführt, und der Effekt bleibt permanent bis er durch anderweitige Aufrufe entfernt wird.</desc>
-          <optional />
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>object</type>
           <name>pCmdTarget</name>
           <desc>Befehlsziel. Wenn angegeben, werden alle Callbacks in diesem Objekt ausgeführt. Ansonsten finden diese Callbacks grundsätzlich ohne Objektkontext statt. Wenn das Befehlszielobjekt gelöscht wird, werden alle verbundenen Effekte ohne weitere Callbacks ebenfalls gelöscht. Falls das Befehlsziel seine Definition ändert, sollten verbundene Effekte mit <funcLink>ChangeEffect</funcLink> ihre Funktionen neu zuweisen lassen.</desc>
-          <optional />
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>id</type>
           <name>idCmdTarget</name>
           <desc>Definition, in der bei nicht angegebenem Befehlsziel-Objekt Callbacks ausgeführt werden. Sind sowohl pCmdTarget als auch idCmdTarget 0, werden die Aufrufe global durchgeführt. Das heißt, die Fx*-Funktionen müssen als global deklariert sein, oder Enginefunktionen sein.</desc>
-          <optional />
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>any</type>
           <name>var1</name>
           <desc>Erster Zusatzparameter, der an Fx*Start- und Fx*Effect-Callbacks übergeben wird</desc>
-          <optional />
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>any</type>
           <name>var2</name>
           <desc>Zweiter Zusatzparameter, der an Fx*Start- und Fx*Effect-Callbacks übergeben wird</desc>
-          <optional />
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>any</type>
           <name>var3</name>
           <desc>Dritter Zusatzparameter, der an Fx*Start- und Fx*Effect-Callbacks übergeben wird</desc>
-          <optional />
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>any</type>
           <name>var4</name>
           <desc>Vierter Zusatzparameter, der an Fx*Start- und Fx*Effect-Callbacks übergeben wird</desc>
-          <optional />
         </param>
       </params>
     </syntax>

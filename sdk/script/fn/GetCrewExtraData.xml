@@ -3,19 +3,19 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
- <func>
+ <func isAsync="false">
   <title>GetCrewExtraData</title>
   <category>Spieler</category>
   <versions><version>4.9.6.0 CR</version></versions>
   <syntax>
-   <rtype>any</rtype>
+   <rtype isReference="false">any</rtype>
    <params>
-    <param>
+    <param isReference="false" isOptional="false">
      <type>object</type>
      <name>pCrew</name>
      <desc>Crewobjekt, aus dessen Infosektion zusätzliche Daten abgefragt werden. 0 für lokalen Aufruf.</desc>
     </param>
-    <param>
+    <param isReference="false" isOptional="false">
      <type>string</type>
      <name>strDataName</name>
      <desc>Name, dessen zugeordnete Daten abgefragt werden.</desc>

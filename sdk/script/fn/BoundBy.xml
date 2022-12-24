@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>BoundBy</title>
     <category>Arithmetik</category>
     <versions><version>4.6.5.0 CP</version></versions>
     <syntax>
-      <rtype>int</rtype>
+      <rtype isReference="false">int</rtype>
       <params>
-        <param><type>int</type><name>iVal</name><desc>Zu vergleichende Zahl</desc></param>
-        <param><type>int</type><name>iRange1</name><desc>Untere Grenze</desc></param>
-        <param><type>int</type><name>iRange2</name><desc>Obere Grenze</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iVal</name><desc>Zu vergleichende Zahl</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iRange1</name><desc>Untere Grenze</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iRange2</name><desc>Obere Grenze</desc></param>
       </params>
     </syntax>
     <desc>Gibt iVal zurück, wenn der Wert innerhalb der Grenzen liegt (iVal &gt;= iRange1 und iVal &lt;= iRange2). Andernfalls wird die jeweils nächstliegende Grenze zurückgegeben.</desc>

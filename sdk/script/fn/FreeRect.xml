@@ -3,18 +3,18 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>FreeRect</title>
     <category>Landschaft</category>
     <versions><version>4.6.5.0 CP</version><extversion>4.9.5.0 CE</extversion></versions>
     <syntax>
-      <rtype>void</rtype>
+      <rtype isReference="false">void</rtype>
       <params>
-        <param><type>int</type><name>iX</name><desc>Linke Kante des Rechtecks</desc></param>
-        <param><type>int</type><name>iY</name><desc>Obere Kante des Rechtecks</desc></param>
-        <param><type>int</type><name>iWdt</name><desc>Breite des Rechtecks</desc></param>
-        <param><type>int</type><name>iHgt</name><desc>Höhe des Rechtecks</desc></param>
-        <param><type>int</type><name>iFreeDensity</name><desc>Wenn angegeben, wird Material mit der entsprechenden Dichte entfernt</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iX</name><desc>Linke Kante des Rechtecks</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iY</name><desc>Obere Kante des Rechtecks</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iWdt</name><desc>Breite des Rechtecks</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iHgt</name><desc>Höhe des Rechtecks</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iFreeDensity</name><desc>Wenn angegeben, wird Material mit der entsprechenden Dichte entfernt</desc></param>
       </params>
     </syntax>
     <desc>Entfernt alle Materialien innerhalb des angegebenen Rechtecks. Die Koordinaten sind immer global, und der untere und rechte Rand des Rechtecks zählen nicht mit dazu.</desc>

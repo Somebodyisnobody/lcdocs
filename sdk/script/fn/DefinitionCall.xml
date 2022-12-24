@@ -3,7 +3,7 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>DefinitionCall</title>
     <category>Script/Funktionsaufruf</category>
     <versions><version>4.6.5.0 CP</version></versions>
@@ -14,11 +14,11 @@
       <description>Statt dieser Funktion sollte die neue Syntax zum Aufrufen von Funktionen verwendet werden. Siehe <emLink href="script/FuncCall.html#object-call">Aufruf einer Funktion in einem anderen Objekt</emLink>.</description>
     </deprecated>
     <syntax>
-      <rtype>any</rtype>
+      <rtype isReference="false">any</rtype>
       <params>
-        <param><type>id</type><name>idDef</name><desc>ID der Definition, in dessen Script die Funktion aufgerufen wird</desc></param>
-        <param><type>string</type><name>szFunction</name><desc>Aufzurufende Funktion</desc></param>
-        <param><type>any</type><name>...</name><desc>Zusätzliche Parameter, die an die Funktion übergeben werden</desc><optional /></param>
+        <param isReference="false" isOptional="false"><type>id</type><name>idDef</name><desc>ID der Definition, in dessen Script die Funktion aufgerufen wird</desc></param>
+        <param isReference="false" isOptional="false"><type>string</type><name>szFunction</name><desc>Aufzurufende Funktion</desc></param>
+        <param isReference="false" isOptional="true"><type>any</type><name>...</name><desc>Zusätzliche Parameter, die an die Funktion übergeben werden</desc></param>
       </params>
     </syntax>
     <desc>Ruft eine Funktion in einem Script ohne zugehöriges Objekt auf. Der <funcLink>this</funcLink>()-Zeiger gibt in einem solchen Aufruf 0 zurück (Vergleichbar mit dem Szenarioscript).</desc>

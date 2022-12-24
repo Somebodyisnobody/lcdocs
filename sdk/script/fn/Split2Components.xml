@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>Split2Components</title>
 		<category>Objekte/Existenz</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>object</type><name>pObj</name><desc>Objekt, das zerlegt werden soll. 0 bei lokalem Aufruf.</desc><optional /></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pObj</name><desc>Objekt, das zerlegt werden soll. 0 bei lokalem Aufruf.</desc></param>
 			</params>
 		</syntax>
 		<desc>Zerlegt ein Objekt in seine Bestandteile. Die Bestandteile werden in zuf‰lliger Drehung und mit geringer Geschwindigkeit in zuf‰lliger Richtung an der Stelle erzeugt, an der sich das Objekt befand. Das Objekt wird anschlieﬂend vernichtet. Wenn sich das Objekt in einem Beh‰lter befand, werden auch die Komponenten nach der Erschaffung in den Beh‰lter versetzt.</desc>

@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>Find_Or</title>
 		<category>Objekte/Suche</category>
 		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
-			<rtype>array</rtype>
+			<rtype isReference="false">array</rtype>
 			<params>
-				<param><type>array</type><name>Criteria</name><desc>Suchkriterium in Form einer Find_*-Funktion</desc></param>
-				<param><type>any</type><name>...</name><desc>Weitere Suchkriterien in Form einer Find_*-Funktion</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>array</type><name>Criteria</name><desc>Suchkriterium in Form einer Find_*-Funktion</desc></param>
+				<param isReference="false" isOptional="true"><type>any</type><name>...</name><desc>Weitere Suchkriterien in Form einer Find_*-Funktion</desc></param>
 			</params>
 		</syntax>
 		<desc>Suchkriterium: sucht alle Objekte, auf die mindestens eines der angegebenen Suchkriterien zutrifft.</desc>

@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-        <func>
+        <func isAsync="false">
                 <title>GetPlayerCount</title>
                 <category>Spieler</category>
                 <versions><version>4.6.5.0 CP</version><extversion>4.9.6.0 CR</extversion></versions>
                 <syntax>
-                        <rtype>int</rtype>
+                        <rtype isReference="false">int</rtype>
                         <params>
-                        <param><type>int</type><name>ePlayerType</name><desc>Wenn angegeben, wird nur die Anzahl des Spielers vom angegebenen Typ zurückgegeben. Für eine Liste gültiger Spielertypen siehe <funcLink>GetPlayerType</funcLink>.</desc><optional /></param>
+                        <param isReference="false" isOptional="true"><type>int</type><name>ePlayerType</name><desc>Wenn angegeben, wird nur die Anzahl des Spielers vom angegebenen Typ zurückgegeben. Für eine Liste gültiger Spielertypen siehe <funcLink>GetPlayerType</funcLink>.</desc></param>
                         </params>
                 </syntax>
                 <desc>Liefert die Anzahl der Spieler, die momentan im Spiel sind.</desc>

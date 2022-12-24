@@ -3,7 +3,7 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>LocalN</title>
 		<category>Variablen</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
@@ -14,11 +14,10 @@
 			<description>Diese Funktion dient der Kompatibilität zu älteren Spielinhalten. In neueren Scripts sollte <code>obj["name"]</code> oder <code>obj.name</code>, letzteres bei aktiviertem <code>#strict 3</code>, verwendet werden.</description>
 		</deprecated>
 		<syntax>
-			<rtype>any</rtype>
-			<isReference />
+			<rtype isReference="true">any</rtype>
 			<params>
-				<param><type>string</type><name>szName</name><desc>Name der Variablen, zu der eine Referenz zurückgegeben werden soll</desc></param>
-				<param><type>object</type><name>pObj</name><desc>Objekt, dessen Variable abgefragt werden soll. 0 bei lokalem Aufruf.</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>string</type><name>szName</name><desc>Name der Variablen, zu der eine Referenz zurückgegeben werden soll</desc></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pObj</name><desc>Objekt, dessen Variable abgefragt werden soll. 0 bei lokalem Aufruf.</desc></param>
 			</params>
 		</syntax>
 		<desc>Gibt eine Referenz auf eine objektlokale Variable zurück. Diese Referenz kann zum Lesen und Schreiben benutzt werden.</desc>

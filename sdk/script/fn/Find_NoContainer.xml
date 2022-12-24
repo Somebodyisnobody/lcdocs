@@ -3,12 +3,12 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>Find_NoContainer</title>
 		<category>Objekte/Suche</category>
 		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
-			<rtype>array</rtype>
+			<rtype isReference="false">array</rtype>
 		</syntax>
 		<desc>Suchkriterium: sucht alle Objekte die im Freien sind.</desc>
 		<remark>Für weitere Informationen und Beispiele zur Benutzung dieser Funktion sehe <funcLink>FindObjects</funcLink>.</remark>

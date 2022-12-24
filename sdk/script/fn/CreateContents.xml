@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>CreateContents</title>
 		<category>Objekte/Erzeugung</category>
 		<versions><version>4.6.5.0 CP</version><extversion>4.9.6.0 CR</extversion></versions>
 		<syntax>
-			<rtype>object</rtype>
+			<rtype isReference="false">object</rtype>
 			<params>
-				<param><type>id</type><name>id</name><desc>Typ des zu erstellenden Objekts</desc></param>
-				<param><type>object</type><name>pObj</name><desc>Hierin wird das Objekt erstellt</desc></param>
-				<param><type>int</type><name>iCount</name><desc>Anzahl zu erstellender Objekte. Ab 4.9.6.0 CR</desc></param>
+				<param isReference="false" isOptional="false"><type>id</type><name>id</name><desc>Typ des zu erstellenden Objekts</desc></param>
+				<param isReference="false" isOptional="false"><type>object</type><name>pObj</name><desc>Hierin wird das Objekt erstellt</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iCount</name><desc>Anzahl zu erstellender Objekte. Ab 4.9.6.0 CR</desc></param>
 			</params>
 		</syntax>
 		<desc>Erzeugt ein Objekt vom Typ id als Inhalt von pObj.</desc>

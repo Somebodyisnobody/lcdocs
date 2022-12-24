@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>ExtractLiquid</title>
     <category>Landschaft/Material</category>
     <versions><version>4.6.5.0 CP</version></versions>
     <syntax>
-      <rtype>int</rtype>
+      <rtype isReference="false">int</rtype>
       <params>
-        <param><type>int</type><name>iX</name><desc>X-Position, an der abgesogen wird. Bei lokalem Aufruf Offset zum aufrufenden Objekt.</desc><optional /></param>
-        <param><type>int</type><name>iY</name><desc>Y-Position, an der abgesogen wird. Bei lokalem Aufruf Offset zum aufrufenden Objekt.</desc><optional /></param>
+        <param isReference="false" isOptional="true"><type>int</type><name>iX</name><desc>X-Position, an der abgesogen wird. Bei lokalem Aufruf Offset zum aufrufenden Objekt.</desc></param>
+        <param isReference="false" isOptional="true"><type>int</type><name>iY</name><desc>Y-Position, an der abgesogen wird. Bei lokalem Aufruf Offset zum aufrufenden Objekt.</desc></param>
       </params>
     </syntax>
     <desc>Saugt ein Pixel Flüssigkeit an der angegebenen Position ab. Zurückgegeben wird die Materialnummer des abgesogenen Materials; bei Misserfolg -1.</desc>

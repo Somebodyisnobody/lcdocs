@@ -3,37 +3,36 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>SetVertexXY</title>
     <category>Objekte/Vertices</category>
     <versions><version>4.9.1.0 GWE</version></versions>
 
     <syntax>
-      <rtype>bool</rtype>
+      <rtype isReference="false">bool</rtype>
         <params>
-          <param>
+          <param isReference="false" isOptional="false">
             <type>int</type>
             <name>iIndex</name>
             <desc>Vertexnummer</desc>
           </param>
 
-    <param>
+    <param isReference="false" isOptional="false">
             <type>int</type>
             <name>iXPos</name>
             <desc>Gewünschte X-Position des Vertices</desc>
           </param>
 
-          <param>
+          <param isReference="false" isOptional="false">
             <type>int</type>
             <name>iYPos</name>
             <desc>Gewünschte Y-Position des Vertices</desc>
           </param>
 
-          <param>
+          <param isReference="false" isOptional="true">
             <type>object</type>
             <name>pObj</name>
             <desc>Zielobjekt</desc>
-            <optional />
           </param>
         </params>
       </syntax>

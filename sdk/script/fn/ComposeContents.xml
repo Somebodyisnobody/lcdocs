@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>ComposeContents</title>
 		<category>Objekte/Erzeugung</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>object</rtype>
+			<rtype isReference="false">object</rtype>
 			<params>
-				<param><type>id</type><name>id</name><desc>Typ des zu erstellenden Objekts</desc></param>
-				<param><type>object</type><name>pObj</name><desc>Objekt, welches die benötigten Komponenten enthält</desc></param>
+				<param isReference="false" isOptional="false"><type>id</type><name>id</name><desc>Typ des zu erstellenden Objekts</desc></param>
+				<param isReference="false" isOptional="false"><type>object</type><name>pObj</name><desc>Objekt, welches die benötigten Komponenten enthält</desc></param>
 			</params>
 		</syntax>
 		<desc>Erzeugt ein Objekt vom Typ id als Inhalt von pObj. Das Objekt wird aus seinen Komponenten zusammen gesetzt, die in pObj enthalten sein müssen. Andernfalls wird eine Meldung ausgegeben, welche Objekte noch benötigt werden. Auch ComposeContents produziert den Engine Objekt-Call BuildNeedsMaterial, durch den die Meldung über noch benötigtes Material ausgewertet und abgefangen werden kann.</desc>

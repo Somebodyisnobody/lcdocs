@@ -3,12 +3,12 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-        <func>
+        <func isAsync="false">
                 <title>GetTemperature</title>
                 <category>Umwelt/Wetter</category>
                 <versions><version>4.6.5.0 CP</version></versions>
                 <syntax>
-                        <rtype>int</rtype>
+                        <rtype isReference="false">int</rtype>
                 </syntax>
                 <desc>Liefert die globale Temperatur. Werte abhängig von Klima und Jahreszeit zwischen +80 und -80.</desc>
                 <related>

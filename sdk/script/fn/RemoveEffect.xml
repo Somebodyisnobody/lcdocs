@@ -3,42 +3,37 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>RemoveEffect</title>
     <category>Effekte</category>
     <versions><version>4.9.5.0 CE</version></versions>
     <syntax>
-      <rtype>bool</rtype>
+      <rtype isReference="false">bool</rtype>
       <params>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>string</type>
           <name>szEffectName</name>
           <desc>Name des Effektes ohne vorangestelltes Fx. Es können '*' und '?' als Suchmaske verwendet werden.</desc>
-          <optional />
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>object</type>
           <name>pTarget</name>
           <desc>Zielobjekt, in dem ein Effekt gelöscht werden sollen. Bei 0 wird die globale Effektliste durchsucht.</desc>
-          <optional />
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>int</type>
           <name>iIndex</name>
           <desc>Effektindex. Bei angegebenem szEffectName gibt dies bei mehreren, der Suchmaske entsprechenden Effekten den indizierten Effekt in der Liste der passenden Effekte an. Ist szEffectName nicht angegeben, wird dagegen der Effekt mit der entsprechenden Effektnummer geändert. Im Gegensatz zu Effektnummern ist bei Indizes stets sichergestellt, dass beim Hochzählen von 0 bis zur Effektzahl alle Effekte erfasst werden.</desc>
-          <optional />
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>bool</type>
           <name>fDoNoCalls</name>
           <desc>Wenn ungleich 0, werden keine Stop-Aufrufe durchgeführt.</desc>
-          <optional />
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>int</type>
           <name>iNewTimer</name>
           <desc>Neues Timer-Intervall. Bei -1 wird der alte Wert beibehalten; ansonsten wird bei diesem Aufruf auch die Effektzeit zurückgesetzt.</desc>
-          <optional />
         </param>
       </params>
     </syntax>

@@ -3,7 +3,7 @@
 <clonkDoc xmlns="https://clonkspot.org"
 		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetSkyFade</title>
 		<category>Himmel</category>
 		<versions>
@@ -16,34 +16,34 @@
 			<description>8Bit-DDraw wurde mit der ersten Version von Clonk Endeavour entfernt.</description>
 		</deprecated>
 		<syntax>
-			<rtype>void</rtype>
+			<rtype isReference="false">void</rtype>
 			<params>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>fromRed</name>
 					<desc>Rotwert (0-255) der Anfangsfarbe.</desc>
 				</param>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>fromGreen</name>
 					<desc>Grünwert (0-255) der Anfangsfarbe.</desc>
 				</param>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>fromBlue</name>
 					<desc>Blauwert (0-255) der Anfangsfarbe.</desc>
 				</param>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>toRed</name>
 					<desc>Rotwert (0-255) der Endfarbe.</desc>
 				</param>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>toGreen</name>
 					<desc>Grünwert (0-255) der Endfarbe.</desc>
 				</param>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>toBlue</name>
 					<desc>Blauwert (0-255) der Endfarbe.</desc>

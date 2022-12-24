@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>EnergyCheck</title>
 		<category>Objekte/Status</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>int</type><name>iEnergy</name><desc>Abgefragter Energiewert</desc></param>
-				<param><type>object</type><name>pObj</name><desc>Objekt, dessen Energiezustand abgefragt wird. 0 bei lokalem Aufruf.</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iEnergy</name><desc>Abgefragter Energiewert</desc></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pObj</name><desc>Objekt, dessen Energiezustand abgefragt wird. 0 bei lokalem Aufruf.</desc></param>
 			</params>
 		</syntax>
 		<desc>Gibt zurück, ob der Energiewert eines Objekts größer oder gleich iEnergy ist. Wenn die Spielregel "Energiebedarf" nicht aktiviert ist, gibt diese Funktion immer TRUE zurück. Außerdem werden Leitungen dazu motiviert, Energie hierhin zu transferieren.</desc>

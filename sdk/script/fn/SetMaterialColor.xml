@@ -3,7 +3,7 @@
 <clonkDoc xmlns="https://clonkspot.org"
 		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetMatAdjust</title>
 		<category>Landschaft/Material</category>
 		<versions>
@@ -16,54 +16,54 @@
 			<description>8Bit-DDraw wurde mit der ersten Version von Clonk Endeavour entfernt.</description>
 		</deprecated>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>iMat</name>
 					<desc>Index des Materials, dessen Farben gesetzt werden.</desc>
 				</param>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>iR1</name>
 					<desc>Rotwert (0-255) der ersten Materialfarbe.</desc>
 				</param>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>iG1</name>
 					<desc>Grünwert (0-255) der ersten Materialfarbe.</desc>
 				</param>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>iB1</name>
 					<desc>Blauwert (0-255) der ersten Materialfarbe.</desc>
 				</param>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>iR2</name>
 					<desc>Rotwert (0-255) der zweiten Materialfarbe.</desc>
 				</param>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>iG2</name>
 					<desc>Grünwert (0-255) der zweiten Materialfarbe.</desc>
 				</param>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>iB2</name>
 					<desc>Blauwert (0-255) der zweiten Materialfarbe.</desc>
 				</param>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>iR3</name>
 					<desc>Rotwert (0-255) der dritten Materialfarbe.</desc>
 				</param>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>iG3</name>
 					<desc>Grünwert (0-255) der dritten Materialfarbe.</desc>
 				</param>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>iB3</name>
 					<desc>Blauwert (0-255) der dritten Materialfarbe.</desc>

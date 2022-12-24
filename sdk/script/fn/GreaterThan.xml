@@ -3,7 +3,7 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>GreaterThan</title>
 		<category>Arithmetik</category>
 		<versions><version>4.6.5.0 CP</version></versions>
@@ -14,14 +14,14 @@
 			<description>Bereits in der Entwicklerdokumentation von clonk.de als veraltet markiert. Damit spätestens seit 4.9.10.7 [330] CR veraltet.</description>
 		</deprecated>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>iVal1</name>
 					<desc>Erster Wert</desc>
 				</param>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>iVal2</name>
 					<desc>Zweiter Wert</desc>

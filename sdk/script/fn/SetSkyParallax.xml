@@ -3,20 +3,20 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetSkyParallax</title>
 		<category>Himmel</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>void</rtype>
+			<rtype isReference="false">void</rtype>
 			<params>
-				<param><type>int</type><name>iMode</name><desc>Scrollmodus. 0 ist Standard; bei 1 bewegt sich der Himmel mit dem Wind.</desc></param>
-				<param><type>int</type><name>iParX</name><desc>Parallaxität in X-Richtung. Bei 10 ist der Himmel fest mit der Landschaft, mit größeren Werten beginnt die Parallaxität. Bei 0 wird der vorherige Wert beibehalten.</desc></param>
-				<param><type>int</type><name>iParY</name><desc>Parallaxität in Y-Richtung</desc></param>
-				<param><type>int</type><name>iXDir</name><desc>Feste, horizontale Bewegungsgeschwindigkeit des Himmels</desc></param>
-				<param><type>int</type><name>iYDir</name><desc>Feste, vertikale Bewegungsgeschwindigkeit des Himmels</desc></param>
-				<param><type>int</type><name>iX</name><desc>X-Scrollposition des Himmels</desc></param>
-				<param><type>int</type><name>iY</name><desc>Y-Scrollposition des Himmels</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iMode</name><desc>Scrollmodus. 0 ist Standard; bei 1 bewegt sich der Himmel mit dem Wind.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iParX</name><desc>Parallaxität in X-Richtung. Bei 10 ist der Himmel fest mit der Landschaft, mit größeren Werten beginnt die Parallaxität. Bei 0 wird der vorherige Wert beibehalten.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iParY</name><desc>Parallaxität in Y-Richtung</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iXDir</name><desc>Feste, horizontale Bewegungsgeschwindigkeit des Himmels</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iYDir</name><desc>Feste, vertikale Bewegungsgeschwindigkeit des Himmels</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iX</name><desc>X-Scrollposition des Himmels</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iY</name><desc>Y-Scrollposition des Himmels</desc></param>
 			</params>
 		</syntax>
 		<desc>Verändert Parallaxität und Scrollgeschwindigkeit des Himmels.</desc>

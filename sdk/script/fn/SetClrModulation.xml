@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetClrModulation</title>
 		<category>Objekte/Darstellung</category>
 		<versions><version>4.9.1.0 GWE</version><extversion>4.9.6.0 CR</extversion></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>int</type><name>dwClr</name><desc>Neue Farbe, mit der moduliert wird. Wenn 0 angegeben wird, wird die Modulation deaktiviert. Für eine völlige Schwarzfärbung sollte also ein knapp darüber liegender Wert wie <funcLink>RGB</funcLink>(0,0,1); verwendet werden.</desc></param>
-				<param><type>object</type><name>pObj</name><desc>Objekt, dessen Färbung verändert werden soll. 0 bei lokalem Aufruf.</desc></param>
-				<param><type>int</type><name>iOverlayID</name><desc>Wenn angegeben, wird stattdessen die Farbmodulation dieses Grafikoverlays gesetzt. Das Overlay muss vorher mit <funcLink>SetGraphics</funcLink> erstellt worden sein. Ab CR.</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>dwClr</name><desc>Neue Farbe, mit der moduliert wird. Wenn 0 angegeben wird, wird die Modulation deaktiviert. Für eine völlige Schwarzfärbung sollte also ein knapp darüber liegender Wert wie <funcLink>RGB</funcLink>(0,0,1); verwendet werden.</desc></param>
+				<param isReference="false" isOptional="false"><type>object</type><name>pObj</name><desc>Objekt, dessen Färbung verändert werden soll. 0 bei lokalem Aufruf.</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iOverlayID</name><desc>Wenn angegeben, wird stattdessen die Farbmodulation dieses Grafikoverlays gesetzt. Das Overlay muss vorher mit <funcLink>SetGraphics</funcLink> erstellt worden sein. Ab CR.</desc></param>
 			</params>
 		</syntax>
 		<desc>Ändert die Farbmodulation eines Objekts. Diese ist ein Farbwert, der multiplikativ aufgerechnet wird. Bei <funcLink>RGB</funcLink>(255,0,0) würden also nur die Rotanteile der Grafik gezeichnet werden. <funcLink>RGBa</funcLink>(255,255,255,128) würde die Grafik halbtransparent machen (sofern Alphaaddition nicht in den Grafikoptionen deaktiviert ist).</desc>

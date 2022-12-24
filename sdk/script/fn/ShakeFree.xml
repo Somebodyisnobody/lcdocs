@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>ShakeFree</title>
     <category>Landschaft</category>
     <versions><version>4.6.5.0 CP</version></versions>
     <syntax>
-      <rtype>void</rtype>
+      <rtype isReference="false">void</rtype>
       <params>
-        <param><type>int</type><name>iX</name><desc>X-Mittelposition des freigeschüttelten Kreises. Immer global.</desc></param>
-        <param><type>int</type><name>iY</name><desc>Y-Mittelposition des freigeschüttelten Kreises. Immer global.</desc></param>
-        <param><type>int</type><name>iRadius</name><desc>Radius des freigeschüttelten Kreises</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iX</name><desc>X-Mittelposition des freigeschüttelten Kreises. Immer global.</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iY</name><desc>Y-Mittelposition des freigeschüttelten Kreises. Immer global.</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iRadius</name><desc>Radius des freigeschüttelten Kreises</desc></param>
       </params>
     </syntax>
     <desc>Löst innerhalb eines kreisförmigen Bereiches halbfestes Material in der Landschaft. Für gelöstes Material wird neu geprüft, ob es in darunterliegendes Material fallen kann. Dadurch kann man zum Beispiel Höhlendecken einstürzen lassen.</desc>

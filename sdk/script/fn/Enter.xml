@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>Enter</title>
 		<category>Objekte/Position</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>object</type><name>pTarget</name><desc>Objekt, in das hineinversetzt wird</desc></param>
-				<param><type>object</type><name>pObj</name><desc>Objekt, das in pTarget hineinversetzt wird. 0 bei lokalem Aufruf.</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>object</type><name>pTarget</name><desc>Objekt, in das hineinversetzt wird</desc></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pObj</name><desc>Objekt, das in pTarget hineinversetzt wird. 0 bei lokalem Aufruf.</desc></param>
 			</params>
 		</syntax>
 		<desc>Versetzt ein Objekt in ein anderes hinein. Bei diesem Vorgang wird weder RejectCollect, noch Collection oder ActivateEntrance im Zielobjekt aufgerufen. Dafür aber RejectEntrance und Entrance im Objekt, das hineinversetzt werden soll.</desc>

@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetPlrShowCommand</title>
 		<category>Spieler</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>int</type><name>iPlr</name><desc>Spieler</desc></param>
-				<param><type>int</type><name>iCom</name><desc>Zu markierendes Spielerkommando.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iPlr</name><desc>Spieler</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iCom</name><desc>Zu markierendes Spielerkommando.</desc></param>
 			</params>
 		</syntax>
 		<desc>Markiert für einen Spieler ein bestimmtes Kommando. Ist die Darstellung deaktiviert, so wird sie aktiviert.

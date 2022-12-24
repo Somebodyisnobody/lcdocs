@@ -3,17 +3,17 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>SetScoreboardData</title>
     <category>Interface</category>
     <versions><version>4.9.6.0 CR</version></versions>
     <syntax>
-      <rtype>void</rtype>
+      <rtype isReference="false">void</rtype>
       <params>
-        <param><type>int</type><name>iRowID</name><desc>Wert größer oder gleich 0, oder SBRD_Caption. Index der Zeile, dessen Daten gesetzt werden sollen. Die Konstante SBRD_Caption steht dabei für die erste Spalte, die als Spaltenbeschriftung verwendet werden sollte.</desc></param>
-        <param><type>int</type><name>iColID</name><desc>Wert größer oder gleich 0, oder SBRD_Caption. Index der Spalte, dessen Daten gesetzt werden sollen. Die Konstante SBRD_Caption steht dabei für die erste Zeile, die als Zeilenüberschrift verwendet werden sollte.</desc></param>
-        <param><type>string</type><name>sText</name><desc>Zu setzender Zellentext. Wenn 0 oder nicht angegeben, wird die Zelle ausgeleert. Sind in einer Zeile alle Zellen bis auf die Überschrift (Index SBRD_Caption) leer, wird diese Zeile komplett entfernt. Selbiges gilt für Spalten. Die Überprüfung auf leere Zeilen und Spalten wird immer nur dann durchgeführt, wenn eine Zelle ausgeleert wird.<br />Um Text in anderen Farben darzustellen oder Symbole im Scoreboard einzufügen, sollte entsprechendes Markup verwendet werden.</desc><optional /></param>
-        <param><type>int</type><name>iData</name><desc>Zusatzdaten für diese Zellen. Nach diesen Daten wird das Scoreboard mit <funcLink>SortScoreboard</funcLink> sortiert.</desc><optional /></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iRowID</name><desc>Wert größer oder gleich 0, oder SBRD_Caption. Index der Zeile, dessen Daten gesetzt werden sollen. Die Konstante SBRD_Caption steht dabei für die erste Spalte, die als Spaltenbeschriftung verwendet werden sollte.</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iColID</name><desc>Wert größer oder gleich 0, oder SBRD_Caption. Index der Spalte, dessen Daten gesetzt werden sollen. Die Konstante SBRD_Caption steht dabei für die erste Zeile, die als Zeilenüberschrift verwendet werden sollte.</desc></param>
+        <param isReference="false" isOptional="true"><type>string</type><name>sText</name><desc>Zu setzender Zellentext. Wenn 0 oder nicht angegeben, wird die Zelle ausgeleert. Sind in einer Zeile alle Zellen bis auf die Überschrift (Index SBRD_Caption) leer, wird diese Zeile komplett entfernt. Selbiges gilt für Spalten. Die Überprüfung auf leere Zeilen und Spalten wird immer nur dann durchgeführt, wenn eine Zelle ausgeleert wird.<br />Um Text in anderen Farben darzustellen oder Symbole im Scoreboard einzufügen, sollte entsprechendes Markup verwendet werden.</desc></param>
+        <param isReference="false" isOptional="true"><type>int</type><name>iData</name><desc>Zusatzdaten für diese Zellen. Nach diesen Daten wird das Scoreboard mit <funcLink>SortScoreboard</funcLink> sortiert.</desc></param>
       </params>
     </syntax>
     <desc>

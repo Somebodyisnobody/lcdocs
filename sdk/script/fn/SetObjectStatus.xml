@@ -3,22 +3,22 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetObjectStatus</title>
 		<category>Objekte/Status</category>
 		<versions><version>4.9.7.0 CR</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>int</type><name>iNewStatus</name><desc>Neuer Status des Objektes. Folgende Werte sind möglich:<br />
+				<param isReference="false" isOptional="false"><type>int</type><name>iNewStatus</name><desc>Neuer Status des Objektes. Folgende Werte sind möglich:<br />
 				<table activateBitmask="false" bitmaskName="">
 					<rowh><col>Name</col><col>Wert</col><col>Beschreibung</col></rowh>
 					<row><col>C4OS_DELETED</col><col>0</col><col>Objekt ist gelöscht. Kann nicht über SetObjectStatus gesetzt werden.</col></row>
 					<row><col>C4OS_NORMAL</col><col>1</col><col>Objekt ist aktiviert.</col></row>
 					<row><col>C4OS_INACTIVE</col><col>2</col><col>Objekt ist deaktiviert</col></row>
 				</table></desc></param>
-				<param><type>object</type><name>pObj</name><desc>Objekt, dessen Status geändert werden soll.</desc></param>
-				<param><type>bool</type><name>fClearPointers</name><desc>Wenn true, werden alle engine-internen Verbindungen zum Objekt aufgelöst. Das Objekt wird aus seinem Container genommen, Inhalte werden herausgenommen, Effekte mit dem Objekt als Ziel werden gelöscht usw.</desc></param>
+				<param isReference="false" isOptional="false"><type>object</type><name>pObj</name><desc>Objekt, dessen Status geändert werden soll.</desc></param>
+				<param isReference="false" isOptional="false"><type>bool</type><name>fClearPointers</name><desc>Wenn true, werden alle engine-internen Verbindungen zum Objekt aufgelöst. Das Objekt wird aus seinem Container genommen, Inhalte werden herausgenommen, Effekte mit dem Objekt als Ziel werden gelöscht usw.</desc></param>
 			</params>
 		</syntax>
 		<desc>Ändert den internen Status eines Objektes. Wird vor allem bei <funcLink>LoadScenarioSection</funcLink> benötigt.</desc>

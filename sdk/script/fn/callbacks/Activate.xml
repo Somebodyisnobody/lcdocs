@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
 		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		  xsi:schemaLocation="https://clonkspot.org ../../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>Activate</title>
 		<category>Callbacks/Objekte</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>object</type><name>obj</name><desc>Mannschaftsmitglied, welches das Objekt aktiviert hat.</desc></param>
+				<param isReference="false" isOptional="false"><type>object</type><name>obj</name><desc>Mannschaftsmitglied, welches das Objekt aktiviert hat.</desc></param>
 			</params>
 		</syntax>
 		<desc>Wenn ein Spieler Doppelgraben drückt, wird zunächst "ControlDigDouble" im Clonk aufgerufen. Gibt dieses false zurück oder existiert nicht, und der Clonk läuft, schwimmt oder gräbt, wird im ersten Inhaltsobjekt Activate aufgerufen. Wenn dieses nicht existiert oder false zurückgibt, wird zuerst versucht, einen Baum zu fällen oder eine Leitung abzunehmen. Danach wird Activate im Clonk selbst aufgerufen.</desc>

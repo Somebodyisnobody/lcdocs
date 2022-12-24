@@ -3,12 +3,12 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>for</title>
 		<category>Script</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>void</rtype>
+			<rtype isReference="false">void</rtype>
 		</syntax>
 		<desc>Siehe <emLink href="script/for.html">Die for-Schleife</emLink></desc>
 	</func>

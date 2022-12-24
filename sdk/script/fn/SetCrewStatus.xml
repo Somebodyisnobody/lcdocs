@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
- <func>
+ <func isAsync="false">
   <title>SetCrewStatus</title>
   <category>Objekte/Mannschaft</category>
   <versions><version>4.9.5.0 CE</version></versions>
   <syntax>
-   <rtype>bool</rtype>
+   <rtype isReference="false">bool</rtype>
    <params>
-    <param><type>int</type><name>iPlr</name><desc>Spielernummer des Spielers, dessen Crew verändert werden soll.</desc></param>
-     <param><type>bool</type><name>fInCrew</name><desc><code>true</code> wenn der Clonk der Crew hinzugefügt und <code>false</code> wenn er aus dieser entfernt werden soll.</desc></param>
-     <param><type>object</type><name>pCrew</name><desc>CrewMember-Objekt welches hinzugefügt oder entfernt werden soll.</desc></param>
+    <param isReference="false" isOptional="false"><type>int</type><name>iPlr</name><desc>Spielernummer des Spielers, dessen Crew verändert werden soll.</desc></param>
+     <param isReference="false" isOptional="false"><type>bool</type><name>fInCrew</name><desc><code>true</code> wenn der Clonk der Crew hinzugefügt und <code>false</code> wenn er aus dieser entfernt werden soll.</desc></param>
+     <param isReference="false" isOptional="false"><type>object</type><name>pCrew</name><desc>CrewMember-Objekt welches hinzugefügt oder entfernt werden soll.</desc></param>
    </params>
   </syntax>
 

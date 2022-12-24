@@ -3,17 +3,17 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetAction</title>
 		<category>Objekte/Aktivität</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>string</type><name>szAction</name><desc>Neue Aktivität. "ActIdle" oder "Idle" löscht die Aktivität.</desc></param>
-				<param><type>object</type><name>pTarget1</name><desc>Erstes Zielobjekt für die Aktivität</desc><optional /></param>
-				<param><type>object</type><name>pTarget2</name><desc>Zweites Zielobjekt für die Aktivität</desc><optional /></param>
-				<param><type>bool</type><name>fDirect</name><desc>Wenn true, werden Start-/AbortCalls umgangen, und die Aktivität wird trotz NoOtherAction gesetzt.</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>string</type><name>szAction</name><desc>Neue Aktivität. "ActIdle" oder "Idle" löscht die Aktivität.</desc></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pTarget1</name><desc>Erstes Zielobjekt für die Aktivität</desc></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pTarget2</name><desc>Zweites Zielobjekt für die Aktivität</desc></param>
+				<param isReference="false" isOptional="true"><type>bool</type><name>fDirect</name><desc>Wenn true, werden Start-/AbortCalls umgangen, und die Aktivität wird trotz NoOtherAction gesetzt.</desc></param>
 			</params>
 		</syntax>
 		<desc>Setzt die Aktivität des aufrufenden Objekts. Siehe auch <emLink href="definition/actmap.html">ActMap.txt</emLink>.</desc>

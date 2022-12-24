@@ -20,6 +20,14 @@ margin-left: 18px;
 margin-right: 2%;
 }
 
+.alertBoxPreDescription {
+    border: solid rgb(227, 30, 30);
+    border-radius: 1em;
+    background: rgba(215, 13, 13, 0.44);
+    padding: 0.5em;
+    margin-bottom: 18px;
+}
+
 div.example {
 margin-bottom: 36px;
 }

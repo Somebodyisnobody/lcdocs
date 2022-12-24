@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>StartScriptProfiler</title>
 		<category>Entwickler</category>
 		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>id</type><name>idDefScript</name><desc>Wenn angegeben, werden nur Scriptfunktionen einer bestimmten Objektdefinition gemessen.</desc><optional /></param>
+				<param isReference="false" isOptional="true"><type>id</type><name>idDefScript</name><desc>Wenn angegeben, werden nur Scriptfunktionen einer bestimmten Objektdefinition gemessen.</desc></param>
 			</params>
 		</syntax>
 		<desc>Startet den Scriptprofiler.</desc>

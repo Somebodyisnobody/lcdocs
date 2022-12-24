@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>GetPortrait</title>
     <category>Objekte/Darstellung</category>
     <versions><version>4.9.5.0 CE</version></versions>
     <syntax>
-      <rtype>any</rtype>
+      <rtype isReference="false">any</rtype>
       <params>
-        <param><type>object</type><name>pObj</name><desc>Objekt, über dessen Portrait Informationen abgefragt werden sollen. 0 bei lokalem Aufruf.</desc><optional /></param>
-        <param><type>bool</type><name>fGetID</name><desc>Wenn TRUE gibt die Funktion die ID der Definition zurück, aus der das Portrait stammt. Andernfalls wird der Name des Portraits zurückgegeben.</desc><optional /></param>
-        <param><type>bool</type><name>fGetPermanent</name><desc>Wenn TRUE gibt die Funktion die Portraitwerte des permanenten Portraits zurück, sonst die des momentan verwendeten.</desc><optional /></param>
+        <param isReference="false" isOptional="true"><type>object</type><name>pObj</name><desc>Objekt, über dessen Portrait Informationen abgefragt werden sollen. 0 bei lokalem Aufruf.</desc></param>
+        <param isReference="false" isOptional="true"><type>bool</type><name>fGetID</name><desc>Wenn TRUE gibt die Funktion die ID der Definition zurück, aus der das Portrait stammt. Andernfalls wird der Name des Portraits zurückgegeben.</desc></param>
+        <param isReference="false" isOptional="true"><type>bool</type><name>fGetPermanent</name><desc>Wenn TRUE gibt die Funktion die Portraitwerte des permanenten Portraits zurück, sonst die des momentan verwendeten.</desc></param>
       </params>
     </syntax>
     <desc>Fragt Name oder ID des Portraits eines Crew-Mitglieds ab.</desc>

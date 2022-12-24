@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>GetMenu</title>
     <category>Objekte/Menü</category>
     <versions><version>4.9.1.0 GWE</version></versions>
     <syntax>
-      <rtype>id</rtype>
+      <rtype isReference="false">id</rtype>
       <params>
-        <param><type>object</type><name>pObj</name><desc>Menüobjekt</desc></param>
+        <param isReference="false" isOptional="false"><type>object</type><name>pObj</name><desc>Menüobjekt</desc></param>
       </params>
     </syntax>
     <desc>Liefert die ID des Menüs, falls das Objekt ein Menü geöffnet hat. Normalerweise ist das die ID des Menüsymbols (idSymbol), wenn nicht bei <funcLink>CreateMenu</funcLink> explizit eine andere Menü-ID als idMenuID angegeben wurde. 0 bei keinem Menü oder bei keinem Symbol.</desc>

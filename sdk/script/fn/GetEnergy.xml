@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>GetEnergy</title>
 		<category>Objekte</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>int</rtype>
+			<rtype isReference="false">int</rtype>
 			<params>
-				<param><type>object</type><name>pObj</name><desc>Das Objekt, dessen Energiewert gesucht wird. 0 bei lokalem Aufruf.</desc><optional /></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pObj</name><desc>Das Objekt, dessen Energiewert gesucht wird. 0 bei lokalem Aufruf.</desc></param>
 			</params>
 		</syntax>
 		<desc>Liefert den aktuellen Energiewert eines Objekts in Prozent. 100% stellen hierbei den maximalen Physical-Wert von 100000 dar. Siehe auch DefCore.txt Sektion [Physical]. pObj Null bei lokalem Aufruf.</desc>

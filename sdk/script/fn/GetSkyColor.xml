@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-        <func>
+        <func isAsync="false">
                 <title>GetSkyColor</title>
                 <category>Himmel</category>
                 <versions><version>4.6.5.0 CP</version></versions>
                 <syntax>
-                        <rtype>int</rtype>
+                        <rtype isReference="false">int</rtype>
                         <params>
-                                <param><type>int</type><name>iIndex</name><desc>Farb-Index in der Clonk-Palette.</desc></param>
-                                <param><type>int</type><name>iRGB</name><desc>Rückgabetyp bestimmen.</desc></param>
+                                <param isReference="false" isOptional="false"><type>int</type><name>iIndex</name><desc>Farb-Index in der Clonk-Palette.</desc></param>
+                                <param isReference="false" isOptional="false"><type>int</type><name>iRGB</name><desc>Rückgabetyp bestimmen.</desc></param>
                         </params>
                 </syntax>
                 <desc>Liefert den Farbwert des Himmels. Mit iRGB kann angegeben werden ob entweder Rot (iRGB ist 0), Grün (iRGB ist 1) oder Blau (iRGB ist 2) zurück gegeben werden soll. Mit iIndex wird festgelegt von welchem Palettenindex (0 - 19) der Wert zurück gegeben werden soll.</desc>

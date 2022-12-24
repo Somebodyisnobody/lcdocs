@@ -3,18 +3,18 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>Buy</title>
 		<category>Objekte/Erzeugung</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>object</rtype>
+			<rtype isReference="false">object</rtype>
 			<params>
-				<param><type>id</type><name>idBuyObj</name><desc>ID des Objekttyps, der gekauft wird</desc></param>
-				<param><type>int</type><name>iForPlr</name><desc>Nummer des Spielers, dem das Objekt hinterher gehört</desc></param>
-				<param><type>int</type><name>iPayPlr</name><desc>Nummer des Spielers, der den Kauf bezahlt</desc></param>
-				<param><type>object</type><name>pToBase</name><desc>Zielobjekt, in das das neu gekaufte Objekt hineinversetzt wird</desc><optional /></param>
-				<param><type>bool</type><name>fShowErrors</name><desc>Wenn ungleich Null, werden Fehlermeldugnen wie "Kaufen nicht möglich" aufgrund von Geldmangel angezeigt.</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>id</type><name>idBuyObj</name><desc>ID des Objekttyps, der gekauft wird</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iForPlr</name><desc>Nummer des Spielers, dem das Objekt hinterher gehört</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iPayPlr</name><desc>Nummer des Spielers, der den Kauf bezahlt</desc></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pToBase</name><desc>Zielobjekt, in das das neu gekaufte Objekt hineinversetzt wird</desc></param>
+				<param isReference="false" isOptional="true"><type>bool</type><name>fShowErrors</name><desc>Wenn ungleich Null, werden Fehlermeldugnen wie "Kaufen nicht möglich" aufgrund von Geldmangel angezeigt.</desc></param>
 			</params>
 		</syntax>
 		<desc>Kauft ein Objekt für iForPlr, und zieht iPayPlr Geld ab. Wenn dieser nicht genug Geld oder das Objekt nicht im Heimatbasismaterial hat, wird der Vorgang nicht ausgeführt.</desc>

@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetObjectOrder</title>
 		<category>Objekte/Position</category>
 		<versions><version>4.9.1.0 GWE</version><extversion>4.9.5.0 CE</extversion></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>object</type><name>pObjBeforeOrAfter</name><desc>Objekt, vor oder nach dem pSortObj einsortiert werden soll</desc></param>
-				<param><type>object</type><name>pSortObj</name><desc>Objekt, das vor oder nach pObjBefore eingeordnet wird. 0 bei lokalem Aufruf.</desc><optional /></param>
-				<param><type>bool</type><name>fAfter</name><desc>Wenn ungleich 0, wird sichergestellt, dass das pSortObj hinter statt vor pObjBeforeOrAfter einsortiert wird.</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>object</type><name>pObjBeforeOrAfter</name><desc>Objekt, vor oder nach dem pSortObj einsortiert werden soll</desc></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pSortObj</name><desc>Objekt, das vor oder nach pObjBefore eingeordnet wird. 0 bei lokalem Aufruf.</desc></param>
+				<param isReference="false" isOptional="true"><type>bool</type><name>fAfter</name><desc>Wenn ungleich 0, wird sichergestellt, dass das pSortObj hinter statt vor pObjBeforeOrAfter einsortiert wird.</desc></param>
 			</params>
 		</syntax>
 		<desc>Sorgt dafür, dass ein Objekt mit Sicherheit vor oder hinter einem anderen Objekt angeordnet ist. Dadurch lässt sich beispielsweise sicherstellen, dass sich ein Fahrstuhlkorb immer vor dem zugehörigen Fahrstuhl befindet.</desc>

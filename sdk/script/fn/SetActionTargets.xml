@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetActionTargets</title>
 		<category>Objekte/Aktivität</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>object</type><name>pTarget1</name><desc>Erstes Zielobjekt</desc></param>
-				<param><type>object</type><name>pTarget2</name><desc>Zweites Zielobjekt</desc><optional /></param>
-				<param><type>object</type><name>pObj</name><desc>Objekt, dessen Zielobjekte gesetzt werden sollen. 0 bei lokalem Aufruf.</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>object</type><name>pTarget1</name><desc>Erstes Zielobjekt</desc></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pTarget2</name><desc>Zweites Zielobjekt</desc></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pObj</name><desc>Objekt, dessen Zielobjekte gesetzt werden sollen. 0 bei lokalem Aufruf.</desc></param>
 			</params>
 		</syntax>
 		<desc>Setzt die aktuellen Aktivitätszielobjekte eines Objekts. Die Auswirkung der Zielobjekte richtet sich nach der <emLink href="definition/procedures.html">Prozedur</emLink> der aktuell gesetzten Aktivität.</desc>

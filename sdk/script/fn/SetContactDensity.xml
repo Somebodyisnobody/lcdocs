@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>SetContactDensity</title>
     <category>Objekte/Status</category>
     <versions><version>4.9.6.0 CR</version></versions>
     <syntax>
-      <rtype>bool</rtype>
+      <rtype isReference="false">bool</rtype>
       <params>
-        <param><type>int</type><name>iDensity</name><desc>Dichte des Materials, mit dem das Objekt kollidieren soll.</desc></param>
-        <param><type>object</type><name>pObj</name><desc>Zielobjekt. 0 bei lokalem Aufruf.</desc><optional /></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iDensity</name><desc>Dichte des Materials, mit dem das Objekt kollidieren soll.</desc></param>
+        <param isReference="false" isOptional="true"><type>object</type><name>pObj</name><desc>Zielobjekt. 0 bei lokalem Aufruf.</desc></param>
       </params>
     </syntax>
     <desc>Legt fest, welche Dichte ein Material haben muss, damit das Objekt mit diesem kollidiert. Standardm‰ﬂig liegt dieser Wert bei 50 (dichtes Material).</desc>

@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>SetNextMission</title>
     <category>Global</category>
     <versions><version>4.9.7.0 CR</version></versions>
     <syntax>
-      <rtype>void</rtype>
+      <rtype isReference="false">void</rtype>
       <params>
-        <param><type>string</type><name>szNextMissionFile</name><desc>Name der Datei, welche gestartet werden soll.</desc></param>
-        <param><type>string</type><name>szButtonText</name><desc>Text des Buttons</desc></param>
-        <param><type>string</type><name>szTooltip</name><desc>Tooltip, welcher beim Überfahren des Buttons mit der Maus angezeigt werden soll.</desc></param>
+        <param isReference="false" isOptional="false"><type>string</type><name>szNextMissionFile</name><desc>Name der Datei, welche gestartet werden soll.</desc></param>
+        <param isReference="false" isOptional="false"><type>string</type><name>szButtonText</name><desc>Text des Buttons</desc></param>
+        <param isReference="false" isOptional="false"><type>string</type><name>szTooltip</name><desc>Tooltip, welcher beim Überfahren des Buttons mit der Maus angezeigt werden soll.</desc></param>
       </params>
     </syntax>
     <desc>Verändert den "Diese Runde weiterspielen"-Button beim Endbildschirm so, dass das angegebene Szenario beim Draufklicken gestartet wird. Wird szNextMissionFile auf das Szenario selbst gesetzt, kann so ein Neustart-Button erreicht werden.</desc>

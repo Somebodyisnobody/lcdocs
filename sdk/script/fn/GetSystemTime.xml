@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>GetSystemTime</title>
 		<category>System</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>int</rtype>
+			<rtype isReference="false">int</rtype>
 			<params>
-				<param><type>int</type><name>iWhat</name><desc>Was genau zurückgegeben werden soll (siehe Anmerkung)</desc>
+				<param isReference="false" isOptional="false"><type>int</type><name>iWhat</name><desc>Was genau zurückgegeben werden soll (siehe Anmerkung)</desc>
 				</param>
 			</params>
 		</syntax>

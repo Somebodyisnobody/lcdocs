@@ -3,7 +3,7 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
- <func>
+ <func isAsync="false">
   <title>SetName</title>
   <category>Objekte/Status</category>
   <versions>
@@ -11,36 +11,32 @@
    <extversion>4.9.6.0 CR</extversion>
   </versions>
   <syntax>
-   <rtype>bool</rtype>
+   <rtype isReference="false">bool</rtype>
    <params>
-    <param>
+    <param isReference="false" isOptional="false">
      <type>string</type>
      <name>szNewName</name>
      <desc>Neuer Name. Wenn 0 (nicht ""!), wird der Name des Objekts auf den Namen seiner Definition beziehungsweise den Namen in der Spielerdatei zurückgesetzt.</desc>
     </param>
-    <param>
+    <param isReference="false" isOptional="true">
      <type>object</type>
      <name>pObj</name>
      <desc>Objekt, dessen Name geändert werden soll. 0 bei lokalem Aufruf.</desc>
-     <optional />
     </param>
-    <param>
+    <param isReference="false" isOptional="true">
      <type>id</type>
      <name>idDef</name>
      <desc>Wenn angegeben, wird pObj ignoriert, und stattdessen der Name der Definition geändert.</desc>
-     <optional />
     </param>
-    <param>
+    <param isReference="false" isOptional="true">
      <type>bool</type>
      <name>fSetInInfo</name>
      <desc>Nur für Crewobjekte: Wenn wahr, wird der Name permanent in der Infosektion des Spielers geändert. Namen dürfen jeweils nur einmal pro Spielerdatei vorkommen. Ab CR.</desc>
-     <optional />
     </param>
-    <param>
+    <param isReference="false" isOptional="true">
      <type>bool</type>
      <name>fMakeValidIfExists</name>
      <desc>Steuert das Verhalten, falls ein Clonk mit dem angegebenen Namen schon in der Stammcrew des Spielers existiert: Wenn unwahr, schlägt die Funktion in diesem Fall fehl. Wenn wahr, wird ein neuer Name durch Anhängen einer Zahl erzeugt. Ab CR.</desc>
-     <optional />
     </param>
    </params>
   </syntax>

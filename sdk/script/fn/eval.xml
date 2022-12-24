@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>eval</title>
     <category>Script</category>
     <versions><version>4.9.1.0 GWE</version></versions>
     <syntax>
-      <rtype>any</rtype>
+      <rtype isReference="false">any</rtype>
       <params>
-        <param>
+        <param isReference="false" isOptional="false">
           <type>string</type>
           <name>strScript</name>
           <desc>Auszuführender Script</desc>

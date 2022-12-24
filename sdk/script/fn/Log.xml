@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>Log</title>
 		<category>Nachrichten</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>void</rtype>
+			<rtype isReference="false">void</rtype>
 			<params>
-				<param><type>string</type><name>szMessage</name><desc>Auszugebender Text</desc></param>
-				<param><type>any</type><name>...</name><desc>Zusätzliche Parameter, mit denen der Text formatiert wird</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>string</type><name>szMessage</name><desc>Auszugebender Text</desc></param>
+				<param isReference="false" isOptional="true"><type>any</type><name>...</name><desc>Zusätzliche Parameter, mit denen der Text formatiert wird</desc></param>
 			</params>
 		</syntax>
 		<desc>Gibt einen Text im Messageboard am unteren Bildschirmrand aus. Die Parameter können über den C-Formatierungsstil in den Text eingebunden werden. Siehe dazu auch <funcLink>Format</funcLink>.</desc>

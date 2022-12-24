@@ -3,7 +3,7 @@
 <clonkDoc xmlns="https://clonkspot.org"
 		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetSkyColor</title>
 		<category>Himmel</category>
 		<versions>
@@ -16,24 +16,24 @@
 			<description>8Bit-DDraw wurde mit der ersten Version von Clonk Endeavour entfernt.</description>
 		</deprecated>
 		<syntax>
-			<rtype>void</rtype>
+			<rtype isReference="false">void</rtype>
 			<params>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>index</name>
 					<desc>0-19: Himmelsfarbenindex.</desc>
 				</param>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>red</name>
 					<desc>Rotwert 0-255.</desc>
 				</param>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>green</name>
 					<desc>Grünwert 0-255.</desc>
 				</param>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>blue</name>
 					<desc>Blauwert 0-255.</desc>

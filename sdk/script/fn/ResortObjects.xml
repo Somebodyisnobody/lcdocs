@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>ResortObjects</title>
 		<category>Objekte/Position</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>string</type><name>szResortFunc</name><desc>Name der Funktion, die für die Umsortierung aufgerufen wird.</desc></param>
-				<param><type>int</type><name>iCategory</name><desc>Umzusortierende Objektkategorie (z.B. <constLink constGroup="C4D">C4D_StaticBack</constLink>). 0 sortiert alle Objekte neu.</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>string</type><name>szResortFunc</name><desc>Name der Funktion, die für die Umsortierung aufgerufen wird.</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iCategory</name><desc>Umzusortierende Objektkategorie (z.B. <constLink constGroup="C4D">C4D_StaticBack</constLink>). 0 sortiert alle Objekte neu.</desc></param>
 			</params>
 		</syntax>
 		<desc>Sortiert die Objektliste teilweise oder komplett neu. Dafür wird ein einfacher Sortierungsalgorithmus angewandt, der immer wieder die angegebene Funktion aufruft, welche dann die Relation zweier Objekte zueinander zurückgeben muss. Die beiden Objekte werden als <funcLink>Par</funcLink>(0) und <funcLink>Par</funcLink>(1) übergeben. Wenn das erste Objekt vor dem zweiten stehen sollte, muss die Funktion einen Wert kleiner Null zurückgeben. Ansonsten einen Wert größer oder gleich Null.</desc>

@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>GetPlrDownDouble</title>
 		<category>Spieler</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>int</type><name>iPlr</name><desc>Nummer des Spielers, von dem die zuletzt gedrückten Tasten überprüft werden sollen.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iPlr</name><desc>Nummer des Spielers, von dem die zuletzt gedrückten Tasten überprüft werden sollen.</desc></param>
 			</params>
 		</syntax>
 		<desc>Gibt zurück, ob der angegebene Spieler als letzte Aktion Doppel-Stopp

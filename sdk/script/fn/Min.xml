@@ -3,19 +3,19 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
- <func>
+ <func isAsync="false">
   <title>Min</title>
   <category>Arithmetik</category>
   <versions><version>4.6.5.0 CP</version></versions>
   <syntax>
-   <rtype>int</rtype>
+   <rtype isReference="false">int</rtype>
    <params>
-    <param>
+    <param isReference="false" isOptional="false">
      <type>int</type>
      <name>iVal1</name>
      <desc>erster Wert</desc>
     </param>
-    <param>
+    <param isReference="false" isOptional="false">
      <type>int</type>
      <name>iVal2</name>
      <desc>zweiter Wert</desc>

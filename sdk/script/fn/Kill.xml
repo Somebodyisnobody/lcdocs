@@ -3,7 +3,7 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-    <func>
+    <func isAsync="false">
         <title>Kill</title>
         <category>Objekte/Lebewesen</category>
         <versions>
@@ -11,21 +11,19 @@
             <extversion>4.9.5.0 CE</extversion>
         </versions>
         <syntax>
-            <rtype>bool</rtype>
+            <rtype isReference="false">bool</rtype>
             <params>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>object</type>
                     <name>pObj</name>
                     <desc>Objekt, das getötet wird. 0 bei lokalem Aufruf.</desc>
-                    <optional/>
                 </param>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>bool</type>
                     <name>fForced</name>
                     <desc>Wenn gesetzt, wird das Objekt auch dann getötet, wenn ein Effekt das zu unterbrechen versucht.
                         Ab CE.
                     </desc>
-                    <optional/>
                 </param>
             </params>
         </syntax>

@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>GetCursor</title>
 		<category>Objekte/Mannschaft</category>
 		<versions><version>4.6.5.0 CP</version><extversion>4.9.1.0 GWE</extversion></versions>
 		<syntax>
-			<rtype>object</rtype>
+			<rtype isReference="false">object</rtype>
 			<params>
-				<param><type>int</type><name>iPlayer</name><desc>Spielernummer des Spielers, dessen kontrollierter Clonk zurückgegeben werden soll.</desc></param>
-				<param><type>int</type><name>iIndex</name><desc>Index, mit dem durch die ausgewählte Crew durchgeschaltet werden kann. 0 gibt immer den aktiv gelenkten Clonk zurück.</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iPlayer</name><desc>Spielernummer des Spielers, dessen kontrollierter Clonk zurückgegeben werden soll.</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iIndex</name><desc>Index, mit dem durch die ausgewählte Crew durchgeschaltet werden kann. 0 gibt immer den aktiv gelenkten Clonk zurück.</desc></param>
 			</params>
 		</syntax>
 		<desc>Gibt den momentan kontrollierten Clonk eines Spielers zurück. Werden mehrere Clonks gelenkt, ist es bei iIndex=0 (oder weggelassen) immer das primär ausgewählte Mannschaftsmitglied. Also das, dem beispielsweise auch die Sicht folgt.</desc>

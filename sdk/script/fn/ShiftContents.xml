@@ -4,17 +4,17 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>ShiftContents</title>
     <category>Objekte/Inhalt</category>
     <versions><version>4.6.5.0 CP</version><extversion>4.9.1.0 GWE</extversion></versions>
     <syntax>
-      <rtype>bool</rtype>
+      <rtype isReference="false">bool</rtype>
       <params>
-        <param><type>object</type><name>pObj</name><desc>Objekt, dessen Inhaltsobjekte rotiert werden sollen. 0 bei lokalem Aufruf.</desc><optional /></param>
-        <param><type>bool</type><name>fShiftBack</name><desc>Wenn wahr, wird rückwärts durchsortiert.</desc><optional /></param>
-        <param><type>id</type><name>idTarget</name><desc>ID des Objekttyps, der als nächstes ausgewählt sein soll. Wenn dieser Parameter angegeben ist, wird kein ControlContents-Aufruf mehr getätigt, sondern es wird direkt und ohne das Abspielen eines Sounds durchgeschaltet. Damit lässt sich beispielsweise das Durchschalten des Inventars in ControlConents überladen, und mit eigenen Sounds oder Zusatzaktivitäten versehen.</desc><optional /></param>
-        <param><type>bool</type><name>fDoCalls</name><desc>Wenn wahr, werden ControlContents- und Selection-Aufrufe getätigt.</desc><optional /></param>
+        <param isReference="false" isOptional="true"><type>object</type><name>pObj</name><desc>Objekt, dessen Inhaltsobjekte rotiert werden sollen. 0 bei lokalem Aufruf.</desc></param>
+        <param isReference="false" isOptional="true"><type>bool</type><name>fShiftBack</name><desc>Wenn wahr, wird rückwärts durchsortiert.</desc></param>
+        <param isReference="false" isOptional="true"><type>id</type><name>idTarget</name><desc>ID des Objekttyps, der als nächstes ausgewählt sein soll. Wenn dieser Parameter angegeben ist, wird kein ControlContents-Aufruf mehr getätigt, sondern es wird direkt und ohne das Abspielen eines Sounds durchgeschaltet. Damit lässt sich beispielsweise das Durchschalten des Inventars in ControlConents überladen, und mit eigenen Sounds oder Zusatzaktivitäten versehen.</desc></param>
+        <param isReference="false" isOptional="true"><type>bool</type><name>fDoCalls</name><desc>Wenn wahr, werden ControlContents- und Selection-Aufrufe getätigt.</desc></param>
       </params>
     </syntax>
     <desc>Sortiert die Inhaltsobjekte so um, dass das nächste Objekt mit anderer ID vorne liegt. Die häufigste Anwendung für diesen Befehl ist ein Inventarwechsel.</desc>

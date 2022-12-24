@@ -3,24 +3,24 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
- <func>
+ <func isAsync="false">
   <title>SetPlrExtraData</title>
   <category>Spieler</category>
   <versions><version>4.9.1.0 GWE</version></versions>
   <syntax>
-   <rtype>any</rtype>
+   <rtype isReference="false">any</rtype>
    <params>
-    <param>
+    <param isReference="false" isOptional="false">
      <type>int</type>
      <name>iPlr</name>
      <desc>Nummer des Spielers, für den zusätzliche Daten gespeichert werden sollen</desc>
     </param>
-    <param>
+    <param isReference="false" isOptional="false">
      <type>string</type>
      <name>strDataName</name>
      <desc>Name, der den Daten zugeordnet werden soll</desc>
     </param>
-    <param>
+    <param isReference="false" isOptional="false">
      <type>any</type>
      <name>Data</name>
      <desc>Daten, die gesetzt werden sollen.</desc>

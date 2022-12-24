@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>SetViewOffset</title>
     <category>Spieler/Sicht</category>
     <versions><version>4.9.5.0 CE</version></versions>
     <syntax>
-      <rtype>bool</rtype>
+      <rtype isReference="false">bool</rtype>
       <params>
-        <param><type>int</type><name>iPlayer</name><desc>Spieler, für den der Sicht-Offset gesetzt werden soll.</desc></param>
-        <param><type>int</type><name>iX</name><desc>X-Komponente des Offsets (in Pixel).</desc></param>
-        <param><type>int</type><name>iX</name><desc>Y-Komponente des Offsets (in Pixel).</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iPlayer</name><desc>Spieler, für den der Sicht-Offset gesetzt werden soll.</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iX</name><desc>X-Komponente des Offsets (in Pixel).</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iX</name><desc>Y-Komponente des Offsets (in Pixel).</desc></param>
       </params>
     </syntax>
     <desc>Verschiebt die Sicht eines Spielers permanent um einen bestimmten Betrag. Ein erneuter Aufruf überschreibt die Verschiebung wieder, ein Aufruf mit 0-Koordinaten setzt die Sicht wieder in den Normalzustand zurück.</desc>

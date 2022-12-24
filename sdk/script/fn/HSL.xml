@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>HSL</title>
 		<category>Arithmetik</category>
 		<versions><version>4.9.5.0 CE</version></versions>
 		<syntax>
-			<rtype>int</rtype>
+			<rtype isReference="false">int</rtype>
 			<params>
-				<param><type>int</type><name>byH</name><desc>Farbton der Farbe. 0 ist Rot, 85 ist Grün, 170 Blau und 255 wieder Rot.</desc></param>
-				<param><type>int</type><name>byS</name><desc>Sättigung der Farbe. Dies ist der Farbkontrast.</desc></param>
-				<param><type>int</type><name>byL</name><desc>Helligkeit der Farbe. Helligkeit gleich null entspräche <funcLink>RGB</funcLink>(0,0,0)</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>byH</name><desc>Farbton der Farbe. 0 ist Rot, 85 ist Grün, 170 Blau und 255 wieder Rot.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>byS</name><desc>Sättigung der Farbe. Dies ist der Farbkontrast.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>byL</name><desc>Helligkeit der Farbe. Helligkeit gleich null entspräche <funcLink>RGB</funcLink>(0,0,0)</desc></param>
 			</params>
 		</syntax>
 		<desc>Setzt einen 32Bit-Farbwert aus den drei Parametern zusammen. 0-255 für alle Parameter.</desc>

@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>GetMissionAccess</title>
 		<category>System</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>string</type><name>strMissionAccess</name><desc>Missionszugang, der überprüft wird</desc></param>
+				<param isReference="false" isOptional="false"><type>string</type><name>strMissionAccess</name><desc>Missionszugang, der überprüft wird</desc></param>
 			</params>
 		</syntax>
 		<desc>Stellt fest und gibt zurück, ob der Spieler bereits das angegebene Missionszugangspasswort besitzt</desc>

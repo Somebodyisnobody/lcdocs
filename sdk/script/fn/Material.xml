@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>Material</title>
     <category>Landschaft/Material</category>
     <versions><version>4.6.5.0 CP</version></versions>
     <syntax>
-      <rtype>int</rtype>
+      <rtype isReference="false">int</rtype>
       <params>
-        <param><type>string</type><name>szMaterialName</name><desc>Name des Materials</desc></param>
+        <param isReference="false" isOptional="false"><type>string</type><name>szMaterialName</name><desc>Name des Materials</desc></param>
       </params>
     </syntax>
     <desc>Gibt den Index eines Materials anhand seines Namens zurück. Dieser Index wird in den meisten materialbezogenen Funktionen verwendet.</desc>

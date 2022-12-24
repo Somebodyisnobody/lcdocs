@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>InitScenarioPlayer</title>
     <category>Spieler</category>
     <versions><version>4.9.7.0 CR</version></versions>
     <syntax>
-      <rtype>bool</rtype>
+      <rtype isReference="false">bool</rtype>
       <params>
-        <param><type>int</type><name>iPlr</name><desc>Nummer des Spielers, der neustarten soll.</desc></param>
-		<param><type>int</type><name>idTeam</name><desc>Nummer des Teams, dem der Spieler angehören soll.</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iPlr</name><desc>Nummer des Spielers, der neustarten soll.</desc></param>
+		<param isReference="false" isOptional="false"><type>int</type><name>idTeam</name><desc>Nummer des Teams, dem der Spieler angehören soll.</desc></param>
       </params>
     </syntax>
     <desc>Startet einen Spieler so gut wie neu, inklusive Angaben in der Scenario.txt</desc>

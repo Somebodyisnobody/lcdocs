@@ -3,20 +3,20 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetVisibility</title>
 		<category>Objekte/Sichtbarkeit</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>int</type><name>dwVisibility</name>
+				<param isReference="false" isOptional="false"><type>int</type><name>dwVisibility</name>
 					<desc>
 						Bitmaske, die die neue Sichtbarkeit angibt.<br />
 						Entweder <constLink constGroup="VIS">VIS_All</constLink>, <constLink constGroup="VIS">VIS_OverlayOnly</constLink> oder <constLink constGroup="VIS">VIS_None</constLink>, oder eine Bitmaske aus <constLink constGroup="VIS">VIS_Owner</constLink>, <constLink constGroup="VIS">VIS_Allies</constLink>, <constLink constGroup="VIS">VIS_Enemies</constLink>, <constLink constGroup="VIS">VIS_God</constLink> und <constLink constGroup="VIS">VIS_Local</constLink>.
 					</desc>
 				</param>
-				<param><type>object</type><name>pObj</name><desc>Objekt, dessen Sichtbarkeit geändert werden soll. 0 bei lokalem Aufruf.</desc><optional /></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pObj</name><desc>Objekt, dessen Sichtbarkeit geändert werden soll. 0 bei lokalem Aufruf.</desc></param>
 			</params>
 		</syntax>
 		<desc>

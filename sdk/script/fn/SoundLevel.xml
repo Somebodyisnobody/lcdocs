@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>SoundLevel</title>
     <category>Effekte</category>
     <versions><version>4.6.5.0 CP</version><extversion>4.9.6.0 CR</extversion></versions>
     <syntax>
-      <rtype>void</rtype>
+      <rtype isReference="false">void</rtype>
       <params>
-        <param><type>string</type><name>szSound</name><desc>Name des Soundeffekts (ohne .wav-Endung)</desc></param>
-        <param><type>int</type><name>iVolume</name><desc>0-100: Lautstärke, in der der Sound abgespielt wird. Bei 0 wird die Abspielung dieses Soundeffektes gestoppt.</desc></param>
-        <param><type>object</type><name>pObj</name><desc>Wenn angegeben wird der Sound für dieses Objekt abgespielt. Ab 4.9.6.0 CR</desc><optional /></param>
+        <param isReference="false" isOptional="false"><type>string</type><name>szSound</name><desc>Name des Soundeffekts (ohne .wav-Endung)</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iVolume</name><desc>0-100: Lautstärke, in der der Sound abgespielt wird. Bei 0 wird die Abspielung dieses Soundeffektes gestoppt.</desc></param>
+        <param isReference="false" isOptional="true"><type>object</type><name>pObj</name><desc>Wenn angegeben wird der Sound für dieses Objekt abgespielt. Ab 4.9.6.0 CR</desc></param>
       </params>
     </syntax>
     <desc>Spielt einen Soundeffekt permanent in einer Schleife ab, bis er wieder gestopp wird. Die Position ist global, solange pObj nicht angegeben ist; der Sound wird also überall auf der Karte gleichmäßig gehört.</desc>

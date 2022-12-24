@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>GetPlrView</title>
 		<category>Spieler/Sicht</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>object</rtype>
+			<rtype isReference="false">object</rtype>
 			<params>
-				<param><type>int</type><name>iPlr</name><desc>Nummer des Spielers, dessen Sicht abgefragt werden soll.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iPlr</name><desc>Nummer des Spielers, dessen Sicht abgefragt werden soll.</desc></param>
 			</params>
 		</syntax>
 		<desc>Gibt das Objekt zurück, dem die Sicht eines Spielers folgt. Gibt 0 zurück, wenn kein

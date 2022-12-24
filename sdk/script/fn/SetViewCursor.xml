@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>SetViewCursor</title>
     <category>Spieler/Sicht</category>
     <versions><version>4.9.7.0 CR</version></versions>
     <syntax>
-      <rtype>bool</rtype>
+      <rtype isReference="false">bool</rtype>
       <params>
-        <param><type>int</type><name>iPlr</name><desc>Spieler, für den die Sicht gesetzt werden soll.</desc></param>
-        <param><type>object</type><name>pTargetView</name><desc>Objekt, auf den die Sicht gesetzt werden soll.</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iPlr</name><desc>Spieler, für den die Sicht gesetzt werden soll.</desc></param>
+        <param isReference="false" isOptional="false"><type>object</type><name>pTargetView</name><desc>Objekt, auf den die Sicht gesetzt werden soll.</desc></param>
       </params>
     </syntax>
     <desc>Setzt die Sicht eines Spielers auf pTargetView.</desc>

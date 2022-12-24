@@ -3,20 +3,20 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>CastObjectsX</title>
 		<category>Objekte/Erzeugung</category>
 		<versions><version>4.9.7.0 CR</version></versions>
 		<syntax>
-			<rtype>int</rtype>
+			<rtype isReference="false">int</rtype>
 			<params>
-				<param><type>id</type><name>id</name><desc>ID des Objekttyps, der verschleudert wird</desc></param>
-				<param><type>int</type><name>iNumber</name><desc>Anzahl verschleuderter Objekte.</desc></param>
-				<param><type>int</type><name>iLevel</name><desc>Geschwindigkeit der verschleuderten Objekte</desc></param>
-				<param><type>int</type><name>iX</name><desc>X-Ausgangsposition. Offset zum aufrufenden Objekt bei lokalem Aufruf.</desc><optional /></param>
-				<param><type>int</type><name>iY</name><desc>Y-Ausgangsposition. Offset zum aufrufenden Objekt bei lokalem Aufruf.</desc><optional /></param>
-				<param><type>int</type><name>angs</name><desc>Abschusswinkel</desc></param>
-				<param><type>int</type><name>angw</name><desc></desc></param>
+				<param isReference="false" isOptional="false"><type>id</type><name>id</name><desc>ID des Objekttyps, der verschleudert wird</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iNumber</name><desc>Anzahl verschleuderter Objekte.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iLevel</name><desc>Geschwindigkeit der verschleuderten Objekte</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iX</name><desc>X-Ausgangsposition. Offset zum aufrufenden Objekt bei lokalem Aufruf.</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iY</name><desc>Y-Ausgangsposition. Offset zum aufrufenden Objekt bei lokalem Aufruf.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>angs</name><desc>Abschusswinkel</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>angw</name><desc></desc></param>
 			</params>
 		</syntax>
 		<desc>Verschleudert iNumber Objekte an angegebener Position mit einer Geschwindigkeit von iLevel mit dem Winkel angw. Bei einem lokalen Aufruf haben die erzeugten Objekte den selben Besitzer wie das aufrufende Objekt.</desc>

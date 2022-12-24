@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetPlrViewRange</title>
 		<category>Spieler/Sicht</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>int</type><name>iRange</name><desc>Sichtweite in Pixel.</desc></param>
-				<param><type>object</type><name>pObj</name><desc>Objekt, dessen Sichtweite gesetzt wird. 0 bei lokalem Aufruf.</desc></param>
-				<param><type>bool</type><name>fExact</name><desc>Muss true sein, um Werte kleiner 128 wählen zu können.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iRange</name><desc>Sichtweite in Pixel.</desc></param>
+				<param isReference="false" isOptional="false"><type>object</type><name>pObj</name><desc>Objekt, dessen Sichtweite gesetzt wird. 0 bei lokalem Aufruf.</desc></param>
+				<param isReference="false" isOptional="false"><type>bool</type><name>fExact</name><desc>Muss true sein, um Werte kleiner 128 wählen zu können.</desc></param>
 			</params>
 		</syntax>
 		<desc>Setzt die Sichtweite eines Objekts.</desc>

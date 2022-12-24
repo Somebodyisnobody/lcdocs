@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetFoW</title>
 		<category>Spieler/Sicht</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>bool</type><name>fEnabled</name><desc>Wenn TRUE, wird der Kriegsnebel aktiviert, bei FALSE deaktiviert.</desc></param>
-				<param><type>int</type><name>iPlayer</name><desc>Nummer des Spielers.</desc></param>
+				<param isReference="false" isOptional="false"><type>bool</type><name>fEnabled</name><desc>Wenn TRUE, wird der Kriegsnebel aktiviert, bei FALSE deaktiviert.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iPlayer</name><desc>Nummer des Spielers.</desc></param>
 			</params>
 		</syntax>
 		<desc>Schaltet den Nebel des Krieges für einen Spieler ein oder aus.</desc>

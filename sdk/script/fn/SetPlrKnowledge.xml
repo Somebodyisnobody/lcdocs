@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetPlrKnowledge</title>
 		<category>Spieler</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>int</rtype>
+			<rtype isReference="false">int</rtype>
 			<params>
-				<param><type>int</type><name>iPlr</name><desc>Spieler, dem ein Bauplan gegeben werden soll</desc></param>
-				<param><type>id</type><name>idDef</name><desc>ID der Objektdefinition, für die der Bauplan gegeben werden soll</desc></param>
-				<param><type>bool</type><name>fRemove</name><desc>Wenn ungleich 0, wird der Bauplan vom Wissen des Spielers entfernt</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iPlr</name><desc>Spieler, dem ein Bauplan gegeben werden soll</desc></param>
+				<param isReference="false" isOptional="false"><type>id</type><name>idDef</name><desc>ID der Objektdefinition, für die der Bauplan gegeben werden soll</desc></param>
+				<param isReference="false" isOptional="true"><type>bool</type><name>fRemove</name><desc>Wenn ungleich 0, wird der Bauplan vom Wissen des Spielers entfernt</desc></param>
 			</params>
 		</syntax>
 		<desc>Fügt einen Bauplan zum Wissen des Spielers hinzu (oder entfernt ihn bei angegebenem fRemove).</desc>

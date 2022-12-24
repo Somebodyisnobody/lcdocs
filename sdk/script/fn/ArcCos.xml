@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>ArcCos</title>
     <category>Arithmetik</category>
     <versions><version>4.9.1.0 GWE</version></versions>
     <syntax>
-      <rtype>int</rtype>
+      <rtype isReference="false">int</rtype>
       <params>
-        <param><type>int</type><name>iVal</name><desc>Länge der Ankathete</desc></param>
-        <param><type>int</type><name>iRadius</name><desc>Länge der Hypotenuse</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iVal</name><desc>Länge der Ankathete</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iRadius</name><desc>Länge der Hypotenuse</desc></param>
       </params>
     </syntax>
     <desc>Berechnet den Arcuscosinus von iVal/iRadius, also Result=arccos(iVal/iRadius). Dies entspricht cos(Result)=iVal/iRadius. Die Funktion wird benötigt, um Seitenverhältnisse zu einem Winkel umzurechnen. Für die meisten Fälle ist <funcLink>Angle</funcLink>() aber ausreichend und praktischer.</desc>

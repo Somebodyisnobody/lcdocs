@@ -3,17 +3,17 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>GetValue</title>
 		<category>Objekte/Status</category>
 		<versions><version>4.6.5.0 CP</version><extversion>4.9.1.0 GWE</extversion></versions>
 		<syntax>
-			<rtype>int</rtype>
+			<rtype isReference="false">int</rtype>
 			<params>
-				<param><type>object</type><name>pObj</name><desc>Objekt, von dem der aktuelle Wert abgefragt werden soll. 0 bei lokalem Aufruf oder angegebenem idDef.</desc><optional /></param>
-				<param><type>id</type><name>idDef</name><desc>Wenn angegeben: Definition, von der der Standardwert abgefragt werden soll. Ansonsten wird pObj ausgewertet.</desc><optional /></param>
-				<param><type>object</type><name>pBase</name><desc>Basis, in der gekauft wird. Falls pObj einen CalcValue-Aufruf zur Verfügung stellt, wird dieser Parameter an den Aufruf weitergegeben.</desc><optional /></param>
-				<param><type>int</type><name>iForPlayer</name><desc>Spieler, für den der Wert gilt. Falls pObj einen CalcValue-Aufruf zur Verfügung stellt, wird auch dieser Parameter an den Aufruf weitergegeben.</desc><optional /></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pObj</name><desc>Objekt, von dem der aktuelle Wert abgefragt werden soll. 0 bei lokalem Aufruf oder angegebenem idDef.</desc></param>
+				<param isReference="false" isOptional="true"><type>id</type><name>idDef</name><desc>Wenn angegeben: Definition, von der der Standardwert abgefragt werden soll. Ansonsten wird pObj ausgewertet.</desc></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pBase</name><desc>Basis, in der gekauft wird. Falls pObj einen CalcValue-Aufruf zur Verfügung stellt, wird dieser Parameter an den Aufruf weitergegeben.</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iForPlayer</name><desc>Spieler, für den der Wert gilt. Falls pObj einen CalcValue-Aufruf zur Verfügung stellt, wird auch dieser Parameter an den Aufruf weitergegeben.</desc></param>
 			</params>
 		</syntax>
 		<desc>Gibt einen Objekt- oder Definitionswert zurück. Bei angegebenem idDef wird der Definitionswert zurückgegeben, ansonsten der Objektwert von pObj oder dem aufrufenden Objekt bei pObj=0.<br />Ein Objektwert berechnet sich folgendermaßen: Bei angegebenem pObj wird zunächst geprüft, ob eine CalcValue-Funktion im Script des Objekttyps von pObj vorhanden ist, und gegebenenfalls ausgewertet. Ansonsten wird der Definitionswert (siehe nächster Absatz) verwendet. Unabhängig davon wird der Wert des Objekts immer der Fertigstellung (GetCon()/100) multipliziert. Tote Lebewesen (GetCategory()&amp;OCF_Living() &amp;&amp; !GetAlive()) haben immer den Wert 0.<br />Der Definitionswert wird folgendermaßen ermittelt: Ist eine CalcDefValue-Funktion im Script vorhanden, wird diese ausgewertet. Ansonsten wird eine Wertüberladung aus der Scenario.txt verwendet. Ist diese ebenfalls nicht vorhanden, wird der in der DefCore angegebene Wert benutzt.<br /></desc>

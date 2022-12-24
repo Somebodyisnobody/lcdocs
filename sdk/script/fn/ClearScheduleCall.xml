@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>ClearScheduleCall</title>
     <category>Script</category>
     <versions><version>4.9.5.0 CE</version></versions>
     <syntax>
-      <rtype>bool</rtype>
+      <rtype isReference="false">bool</rtype>
       <params>
-				<param><type>object</type><name>pObj</name><desc>Objekt, für das verzögerte Funktionsaufrufe abgebrochen werden sollen. 0 für aufrufendes Objekt.</desc></param>
-        <param><type>string</type><name>szFunction</name><desc>Name der Funktion, die durch die abzubrechenden Aufrufe aufgerufen würde.</desc></param>
+				<param isReference="false" isOptional="false"><type>object</type><name>pObj</name><desc>Objekt, für das verzögerte Funktionsaufrufe abgebrochen werden sollen. 0 für aufrufendes Objekt.</desc></param>
+        <param isReference="false" isOptional="false"><type>string</type><name>szFunction</name><desc>Name der Funktion, die durch die abzubrechenden Aufrufe aufgerufen würde.</desc></param>
       </params>
     </syntax>
     <desc>Bricht durch <funcLink>ScheduleCall</funcLink> erzeugte verzögerte Funktionsaufrufe ab. Alle momentan wartenden Funktionsaufrufe an

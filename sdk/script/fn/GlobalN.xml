@@ -3,15 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-        <func>
+        <func isAsync="false">
                 <title>GlobalN</title>
                 <category>Variablen</category>
                 <versions><version>4.9.1.0 GWE</version></versions>
                 <syntax>
-                        <rtype>any</rtype>
-                        <isReference />
+                        <rtype isReference="true">any</rtype>
                         <params>
-                                <param><type>string</type><name>szText</name><desc>Name einer globalen Variable.</desc></param>
+                                <param isReference="false" isOptional="false"><type>string</type><name>szText</name><desc>Name einer globalen Variable.</desc></param>
                         </params>
                 </syntax>
                 <desc>Liefert den Inhalt der globalen Variable mit dem Namen szText. Per GlobalN("Name")=Wert; kann der Wert einer benannten globalen Variable gesetzt werden.</desc>

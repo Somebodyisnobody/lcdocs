@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>ClearParticles</title>
 		<category>Partikel</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>string</type><name>szName</name><desc>Name der Partikeldefinition, dessen Instanzen gelöscht werden sollen. Bei 0 werden alle Partikel entfernt.</desc></param>
-				<param><type>object</type><name>pObj</name><desc>Zielobjekt der Partikel, die gelöscht werden sollen. Siehe dazu pObj bei <funcLink>CreateParticle</funcLink></desc></param>
+				<param isReference="false" isOptional="false"><type>string</type><name>szName</name><desc>Name der Partikeldefinition, dessen Instanzen gelöscht werden sollen. Bei 0 werden alle Partikel entfernt.</desc></param>
+				<param isReference="false" isOptional="false"><type>object</type><name>pObj</name><desc>Zielobjekt der Partikel, die gelöscht werden sollen. Siehe dazu pObj bei <funcLink>CreateParticle</funcLink></desc></param>
 			</params>
 		</syntax>
 		<desc>Entfernt alle Partikel eines angegebenen Typs vom Zielobjekt pObj.</desc>

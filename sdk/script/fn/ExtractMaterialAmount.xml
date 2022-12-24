@@ -3,17 +3,17 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>ExtractMaterialAmount</title>
     <category>Landschaft/Material</category>
     <versions><version>4.6.5.0 CP</version></versions>
     <syntax>
-      <rtype>int</rtype>
+      <rtype isReference="false">int</rtype>
       <params>
-        <param><type>int</type><name>iX</name><desc>X-Position, an der Material extrahiert wird. Offset bei lokalem Aufruf.</desc></param>
-        <param><type>int</type><name>iY</name><desc>Y-Position, an der Material extrahiert wird. Offset bei lokalem Aufruf.</desc></param>
-        <param><type>int</type><name>iMat</name><desc>Index des Materials, das extrahiert wird. Siehe dazu auch <funcLink>Material</funcLink>.</desc></param>
-        <param><type>int</type><name>iAmount</name><desc>Maximale Menge, die extrahiert wird</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iX</name><desc>X-Position, an der Material extrahiert wird. Offset bei lokalem Aufruf.</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iY</name><desc>Y-Position, an der Material extrahiert wird. Offset bei lokalem Aufruf.</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iMat</name><desc>Index des Materials, das extrahiert wird. Siehe dazu auch <funcLink>Material</funcLink>.</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iAmount</name><desc>Maximale Menge, die extrahiert wird</desc></param>
       </params>
     </syntax>
     <desc>Extrahiert eine bestimmte Menge des gleichen Materials an einer Stelle. Zurückgegeben wird die tatsächlich erfolgreich extrahierte Materialmenge.</desc>

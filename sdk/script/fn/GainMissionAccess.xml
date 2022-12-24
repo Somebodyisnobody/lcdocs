@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>GainMissionAccess</title>
 		<category>System</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>string</type><name>szPassword</name><desc>Passwort, das der Liste hinzugefügt wird.</desc></param>
+				<param isReference="false" isOptional="false"><type>string</type><name>szPassword</name><desc>Passwort, das der Liste hinzugefügt wird.</desc></param>
 			</params>
 		</syntax>
 		<desc>Fügt ein Passwort in die Liste der Missionszugänge ein. Alle Spieler auf dem selben Computer können dann ein Szenario starten, welches in der Scenario.txt dieses Passwort als Voraussetzung enthält. Sinnvollerweise sollte jedes Szenario in einer Reihe von Missionen bei erfolgreichem Beenden der Runde das für die jeweils nächste Mission benötigte Passwort freigeben.</desc>

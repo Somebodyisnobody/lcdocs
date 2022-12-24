@@ -3,17 +3,17 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>Explode</title>
 		<category>Objekte/Existenz</category>
 		<versions><version>4.6.5.0 CP</version><extversion>4.9.6.0 CR</extversion></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>int</type><name>iLevel</name><desc>Explosionsstärke. Die Explosionsstärke bestimmt das Ausmaß des Explosionsschadens sowie die akustische Gestaltung. Bis Stärke 29 einschließlich wird Blast1 abgespielt, von Stärke 30 bis stärke 39 einschließlich Blast2, und bei Werten darüber Blast3.</desc></param>
-				<param><type>object</type><name>pObj</name><desc>Objekt, das explodiert. 0 bei lokalem Aufruf.</desc><optional /></param>
-				<param><type>id</type><name>idEffect</name><desc>Wenn angegeben, wird ein Objekt dieser Art und keine Partikel erzeugt. Es wird angenommen, dass das neu erstellte Objekt den Explosionseffekt übernimmt. Ab 4.9.6.0 CR</desc><optional /></param>
-				<param><type>string</type><name>szParticle</name><desc>Name eines Partikels, der statt der normalen Explosionspartikel erzeugt wird.</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iLevel</name><desc>Explosionsstärke. Die Explosionsstärke bestimmt das Ausmaß des Explosionsschadens sowie die akustische Gestaltung. Bis Stärke 29 einschließlich wird Blast1 abgespielt, von Stärke 30 bis stärke 39 einschließlich Blast2, und bei Werten darüber Blast3.</desc></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pObj</name><desc>Objekt, das explodiert. 0 bei lokalem Aufruf.</desc></param>
+				<param isReference="false" isOptional="true"><type>id</type><name>idEffect</name><desc>Wenn angegeben, wird ein Objekt dieser Art und keine Partikel erzeugt. Es wird angenommen, dass das neu erstellte Objekt den Explosionseffekt übernimmt. Ab 4.9.6.0 CR</desc></param>
+				<param isReference="false" isOptional="true"><type>string</type><name>szParticle</name><desc>Name eines Partikels, der statt der normalen Explosionspartikel erzeugt wird.</desc></param>
 			</params>
 		</syntax>
 		<desc>Lässt ein Objekt explodieren. Die Explosion beschädigt Landschaft und Objekte, und das Objekt wird mitsamt Inhalt vor der Explosion entfernt. Wenn sich das Objekt in einen anderen Objekt befindet, werden alle anderen Inhaltsobjekte und das enthaltende Objekt beschädigt. Als Verursacher des Schadens gilt der Besitzer des explodierenden Objekts.</desc>

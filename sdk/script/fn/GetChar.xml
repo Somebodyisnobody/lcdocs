@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>GetChar</title>
 		<category>Script/Strings</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>int</rtype>
+			<rtype isReference="false">int</rtype>
 			<params>
-				<param><type>string</type><name>szText</name><desc>Zeichenkette, von der ein Zeichen abgefragt wird</desc></param>
-				<param><type>int</type><name>iIndex</name><desc>Position des abgefragten Zeichens. 0 entspricht dabei dem ersten Zeichen. Ist dieser Wert größer oder gleich der Länge der Zeichenkette, wird 0 zurückgegeben.</desc></param>
+				<param isReference="false" isOptional="false"><type>string</type><name>szText</name><desc>Zeichenkette, von der ein Zeichen abgefragt wird</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iIndex</name><desc>Position des abgefragten Zeichens. 0 entspricht dabei dem ersten Zeichen. Ist dieser Wert größer oder gleich der Länge der Zeichenkette, wird 0 zurückgegeben.</desc></param>
 			</params>
 		</syntax>
 		<desc>Ermittelt den Zeichencode eines indizierten Zeichens einer Zeichenkette.</desc>

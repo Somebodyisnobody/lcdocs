@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>GetRGBaValue</title>
 		<category>Arithmetik</category>
 		<versions><version>4.9.5.0 CE</version></versions>
 		<syntax>
-			<rtype>int</rtype>
+			<rtype isReference="false">int</rtype>
 			<params>
-				<param><type>int</type><name>Val</name><desc>32Bit-Farbwert</desc></param>
-				<param><type>int</type><name>iSelect</name><desc>0-3: Auswahl des gewünschten Rückgabewerts</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>Val</name><desc>32Bit-Farbwert</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iSelect</name><desc>0-3: Auswahl des gewünschten Rückgabewerts</desc></param>
 			</params>
 		</syntax>
 		<desc>

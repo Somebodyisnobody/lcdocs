@@ -3,17 +3,17 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetGamma</title>
 		<category>Global</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>void</rtype>
+			<rtype isReference="false">void</rtype>
 			<params>
-				<param><type>int</type><name>dwClr1</name><desc>Veränderung für dunkle Farben. Standard ist <funcLink>RGB</funcLink>(0,0,0) für keine Veränderung.</desc></param>
-				<param><type>int</type><name>dwClr2</name><desc>Veränderung für mittlere Farben. Standard ist <funcLink>RGB</funcLink>(128,128,128) für keine Veränderung.</desc></param>
-				<param><type>int</type><name>dwClr3</name><desc>Veränderung für helle Farben. Standard ist <funcLink>RGB</funcLink>(255,255,255) für keine Veränderung.</desc></param>
-				<param><type>int</type><name>iRampIndex</name><desc>0-7: Index der zu verändernden Rampe. Es stehen acht Gammarampen zur Verfügung, die aufeinander gerechnet werden. So können zum Beispiel Tag/Nacht-Objekte die globale Helligkeit verändern, ohne dabei andere Effekte wie Blitze zu behindern.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>dwClr1</name><desc>Veränderung für dunkle Farben. Standard ist <funcLink>RGB</funcLink>(0,0,0) für keine Veränderung.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>dwClr2</name><desc>Veränderung für mittlere Farben. Standard ist <funcLink>RGB</funcLink>(128,128,128) für keine Veränderung.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>dwClr3</name><desc>Veränderung für helle Farben. Standard ist <funcLink>RGB</funcLink>(255,255,255) für keine Veränderung.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iRampIndex</name><desc>0-7: Index der zu verändernden Rampe. Es stehen acht Gammarampen zur Verfügung, die aufeinander gerechnet werden. So können zum Beispiel Tag/Nacht-Objekte die globale Helligkeit verändern, ohne dabei andere Effekte wie Blitze zu behindern.</desc></param>
 			</params>
 		</syntax>
 		<desc>Setzt eine Gammarampe. Mit Gammarampen kann global das Aussehen des gesamten Spieles gesteuert werden, indem jedem Farbkanal eine eigene Tabelle zugewiesen wird, aus der die neue Helligkeit abgelesen wird. Damit kann man zum Beispiel bestimmte Farben speziell hervorheben, alles abdunkeln oder erhellen oder sogar das Bild komplett invertieren.</desc>

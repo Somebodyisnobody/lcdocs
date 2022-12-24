@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>PushParticles</title>
 		<category>Partikel</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>string</type><name>szName</name><desc>Name der Partikeldefinition, dessen Instanzen beschleunigt werden sollen. Bei 0 werden alle Partikeltypen beschleunigt.</desc></param>
-				<param><type>int</type><name>iAX</name><desc>Horizontalbeschleunigung</desc></param>
-				<param><type>int</type><name>iAY</name><desc>Vertikalbeschleunigung</desc></param>
+				<param isReference="false" isOptional="false"><type>string</type><name>szName</name><desc>Name der Partikeldefinition, dessen Instanzen beschleunigt werden sollen. Bei 0 werden alle Partikeltypen beschleunigt.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iAX</name><desc>Horizontalbeschleunigung</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iAY</name><desc>Vertikalbeschleunigung</desc></param>
 
 			</params>
 		</syntax>

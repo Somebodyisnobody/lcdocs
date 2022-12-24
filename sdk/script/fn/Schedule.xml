@@ -3,17 +3,17 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>Schedule</title>
     <category>Script</category>
     <versions><version>4.9.5.0 CE</version></versions>
     <syntax>
-      <rtype>bool</rtype>
+      <rtype isReference="false">bool</rtype>
       <params>
-        <param><type>string</type><name>szScript</name><desc>Auszuführendes Script</desc></param>
-        <param><type>int</type><name>iInterval</name><desc>Zeit, bis das Script zum ersten Mal ausgeführt werden soll. Wenn iRepeat &gt; 1, ist es außerdem der Zeitabstand zwischen erneuten Ausführungen.</desc></param>
-				<param><type>int</type><name>iRepeat</name><desc>Anzahl der Ausführungen. Wenn 0 oder nicht angegeben wird das Script genau ein mal ausgeführt.</desc></param>
-				<param><type>object</type><name>pObj</name><desc>Objekt, in dem das Script ausgeführt werden soll. 0 für lokalen Aufruf.</desc></param>
+        <param isReference="false" isOptional="false"><type>string</type><name>szScript</name><desc>Auszuführendes Script</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iInterval</name><desc>Zeit, bis das Script zum ersten Mal ausgeführt werden soll. Wenn iRepeat &gt; 1, ist es außerdem der Zeitabstand zwischen erneuten Ausführungen.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iRepeat</name><desc>Anzahl der Ausführungen. Wenn 0 oder nicht angegeben wird das Script genau ein mal ausgeführt.</desc></param>
+				<param isReference="false" isOptional="false"><type>object</type><name>pObj</name><desc>Objekt, in dem das Script ausgeführt werden soll. 0 für lokalen Aufruf.</desc></param>
       </params>
     </syntax>
     <desc>Führt einen bestimmes Script mit Verzögerung aus.</desc>

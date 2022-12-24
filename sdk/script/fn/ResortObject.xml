@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>ResortObject</title>
 		<category>Objekte/Position</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>string</type><name>szResortFunc</name><desc>Name der Funktion, die für die Einsortierung aufgerufen wird.</desc></param>
-				<param><type>object</type><name>pResortObj</name><desc>Neu einzusortierendes Objekt. 0 bei lokalem Aufruf.</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>string</type><name>szResortFunc</name><desc>Name der Funktion, die für die Einsortierung aufgerufen wird.</desc></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pResortObj</name><desc>Neu einzusortierendes Objekt. 0 bei lokalem Aufruf.</desc></param>
 			</params>
 		</syntax>
 		<desc>Sortiert ein Objekt neu in die Objektliste ein. Die Platzierung ergibt sich nach einer Platzierungsfunktion, die die Objektposition relativ zu jedem anderen Objekt in der Objektliste definieren sollte. Wenn das erste Objekt vor dem zweiten stehen sollte, muss die Funktion einen Wert kleiner Null zurückgeben. Ansonsten einen Wert größer oder gleich Null.</desc>

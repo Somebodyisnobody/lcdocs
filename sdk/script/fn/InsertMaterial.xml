@@ -3,18 +3,18 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>InsertMaterial</title>
     <category>Landschaft/Material</category>
     <versions><version>4.6.5.0 CP</version><extversion>4.9.1.0 GWE</extversion></versions>
     <syntax>
-      <rtype>bool</rtype>
+      <rtype isReference="false">bool</rtype>
       <params>
-        <param><type>int</type><name>iMat</name><desc>Einzufügendes Material (siehe <funcLink>Material</funcLink>())</desc></param>
-        <param><type>int</type><name>iX</name><desc>X-Einfügeposition/-offset</desc><optional /></param>
-        <param><type>int</type><name>iY</name><desc>Y-Einfügeposition/-offset</desc><optional /></param>
-        <param><type>int</type><name>iXDir</name><desc>X-Geschwindigkeit des eingefügten Mateiralpixels</desc><optional /></param>
-        <param><type>int</type><name>iYDir</name><desc>Y-Geschwindigkeit des eingefügten Mateiralpixels</desc><optional /></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iMat</name><desc>Einzufügendes Material (siehe <funcLink>Material</funcLink>())</desc></param>
+        <param isReference="false" isOptional="true"><type>int</type><name>iX</name><desc>X-Einfügeposition/-offset</desc></param>
+        <param isReference="false" isOptional="true"><type>int</type><name>iY</name><desc>Y-Einfügeposition/-offset</desc></param>
+        <param isReference="false" isOptional="true"><type>int</type><name>iXDir</name><desc>X-Geschwindigkeit des eingefügten Mateiralpixels</desc></param>
+        <param isReference="false" isOptional="true"><type>int</type><name>iYDir</name><desc>Y-Geschwindigkeit des eingefügten Mateiralpixels</desc></param>
       </params>
     </syntax>
     <desc>Fügt ein Materialpixel an der angegebenen Position in der angegebenen Geschwindigkeit ein.</desc>

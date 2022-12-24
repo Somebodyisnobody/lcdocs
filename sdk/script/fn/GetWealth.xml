@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-        <func>
+        <func isAsync="false">
                 <title>GetWealth</title>
                 <category>Spieler</category>
                 <versions><version>4.6.5.0 CP</version></versions>
                 <syntax>
-                        <rtype>int</rtype>
+                        <rtype isReference="false">int</rtype>
                         <params>
-                                <param><type>int</type><name>iOwner</name><desc>Spielernummer</desc></param>
+                                <param isReference="false" isOptional="false"><type>int</type><name>iOwner</name><desc>Spielernummer</desc></param>
                         </params>
                 </syntax>
                 <desc>Liefert das Vermögen von iOwner.</desc>

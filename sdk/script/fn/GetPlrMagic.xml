@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>GetPlrMagic</title>
 		<category>Spieler</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>any</rtype>
+			<rtype isReference="false">any</rtype>
 			<params>
-				<param><type>int</type><name>iPlr</name><desc>Spieler, dessen Magiewissen abgefragt wird.</desc></param>
-				<param><type>id</type><name>id</name><desc>Bei angegebenen id gibt die Funktion TRUE zurück, wenn der iPlr betreffenden Zauber zur Verfügung hat. iIndex wird hierbei ignoriert.</desc></param>
-				<param><type>int</type><name>iIndex</name><desc>Bei angegebenem iIndex liefert die Funktion den indizierten Zauberspruch, der dem Spieler zur Verfügung steht.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iPlr</name><desc>Spieler, dessen Magiewissen abgefragt wird.</desc></param>
+				<param isReference="false" isOptional="false"><type>id</type><name>id</name><desc>Bei angegebenen id gibt die Funktion TRUE zurück, wenn der iPlr betreffenden Zauber zur Verfügung hat. iIndex wird hierbei ignoriert.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iIndex</name><desc>Bei angegebenem iIndex liefert die Funktion den indizierten Zauberspruch, der dem Spieler zur Verfügung steht.</desc></param>
 			</params>
 		</syntax>
 		<desc>Stellt das Magiewissen eines bestimmten Spielers fest.</desc>

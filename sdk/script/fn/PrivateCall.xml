@@ -3,7 +3,7 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>PrivateCall</title>
 		<category>Script/Funktionsaufruf</category>
 		<versions><version>4.6.5.0 CP</version></versions>
@@ -14,11 +14,11 @@
 			<description>Statt dieser Funktion sollte die neue Syntax zum Aufrufen von Funktionen verwendet werden. Siehe <emLink href="script/FuncCall.html">Aufruf von Scriptfunktionen</emLink>.</description>
 		</deprecated>
 		<syntax>
-			<rtype>any</rtype>
+			<rtype isReference="false">any</rtype>
 			<params>
-				<param><type>object</type><name>pObj</name><desc>Objekt, in dem die Funktion aufgerufen werden soll.</desc></param>
-				<param><type>string</type><name>szFunction</name><desc>Funktion, die aufgerufen werden soll.</desc></param>
-				<param><type>any</type><name>...</name><desc>Parameter der Funktion.</desc></param>
+				<param isReference="false" isOptional="false"><type>object</type><name>pObj</name><desc>Objekt, in dem die Funktion aufgerufen werden soll.</desc></param>
+				<param isReference="false" isOptional="false"><type>string</type><name>szFunction</name><desc>Funktion, die aufgerufen werden soll.</desc></param>
+				<param isReference="false" isOptional="false"><type>any</type><name>...</name><desc>Parameter der Funktion.</desc></param>
 			</params>
 		</syntax>
 		<desc>Ruft die private, geschützte oder öffentliche Funktion szFunction in pObj auf. Es sollte überlegt werden, ob der Aufruf wirklich nötig ist.</desc>

@@ -70,28 +70,23 @@
                                         <xs:sequence>
                                             <!-- The returned data type for this function. -->
                                             <xs:element name="rtype">
-                                                <xs:simpleType>
-                                                    <xs:union memberTypes="functionParamDataTypes">
-                                                        <xs:simpleType>
-                                                            <xs:restriction base="xs:string">
-                                                                <xs:enumeration value="void"/>
-                                                            </xs:restriction>
-                                                        </xs:simpleType>
-                                                    </xs:union>
-                                                </xs:simpleType>
-                                            </xs:element>
-                                            <!-- Marks the return value as reference. -->
-                                            <xs:element minOccurs="0" name="isReference">
-                                                <xs:complexType/>
+                                                <xs:complexType>
+                                                    <xs:simpleContent>
+                                                        <xs:extension base="functionReturnDataTypes">
+                                                            <!-- Marks the return value as reference. -->
+                                                            <xs:attribute name="isReference" use="required" type="xs:boolean"/>
+                                                        </xs:extension>
+                                                    </xs:simpleContent>
+                                                </xs:complexType>
                                             </xs:element>
                                             <!-- Contains at least one <param>. -->
                                             <xs:element minOccurs="0" name="params">
                                                 <xs:complexType>
                                                     <xs:sequence>
                                                         <!--
-                                                        Contains <type>, <name>, <desc>, <isReference /> and <optional />.
-                                                        <isReference /> is used when the argument requires a reference
-                                                        <optional /> is used when the argument is optional.
+                                                        Contains <type>, <name> and <desc>.
+                                                        Parameter "isReference" is used when the argument requires a reference
+                                                        Parameter "isOptional" is used when the argument is optional.
                                                         -->
                                                         <xs:element maxOccurs="unbounded" name="param">
                                                             <xs:complexType>
@@ -109,15 +104,11 @@
                                                                     </xs:element>
                                                                     <!-- A description for better understanding. HTML formatting elements can be used. -->
                                                                     <xs:element name="desc" type="htmlText"/>
-                                                                    <!-- Marks the argument as reference. -->
-                                                                    <xs:element minOccurs="0" name="isReference">
-                                                                        <xs:complexType/>
-                                                                    </xs:element>
-                                                                    <!-- Marks the argument as optional. -->
-                                                                    <xs:element minOccurs="0" name="optional">
-                                                                        <xs:complexType/>
-                                                                    </xs:element>
                                                                 </xs:sequence>
+                                                                <!-- Marks the argument as reference type. -->
+                                                                <xs:attribute name="isReference" use="required" type="xs:boolean"/>
+                                                                <!-- Marks the argument as optional. -->
+                                                                <xs:attribute name="isOptional" use="required" type="xs:boolean"/>
                                                             </xs:complexType>
                                                         </xs:element>
                                                     </xs:sequence>
@@ -141,6 +132,8 @@
                                 <!-- Enter information here about changes. This helps C4Scripters track what changes were made and when, and they can adjust their code accordingly for each version. -->
                                 <xs:element name="history" type="history" minOccurs="0"/>
                             </xs:sequence>
+                            <!-- Marks the function as asynchronous. This will create a warning message when being rendered. -->
+                            <xs:attribute name="isAsync" use="required" type="xs:boolean"/>
                         </xs:complexType>
                     </xs:element>
                     <!-- Clonk C4Script constants as set of constants. This will be formed to an HTML table.
@@ -365,6 +358,15 @@
             <xs:enumeration value="id"/>
         </xs:restriction>
     </xs:simpleType>
+    <xs:simpleType name="functionReturnDataTypes">
+        <xs:union memberTypes="functionParamDataTypes">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="void"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:union>
+    </xs:simpleType>
     <xs:complexType name="examples">
         <xs:sequence>
             <!-- A single example. Use a separate <example> for each example that is provided. In it, you can first use a <code> and then describe the example with a <text>. -->
@@ -435,7 +437,7 @@
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
-            <!-- Date when the changes of the author were finished. Enter date in format YYYY-MM-DD for example 2022-31-12. -->
+            <!-- Date when the changes of the author were finished, otherwise when it was changed in documentation. Enter date in format YYYY-MM-DD for example 2022-31-12. -->
             <xs:element name="date">
                 <xs:simpleType>
                     <xs:restriction base="xs:token">

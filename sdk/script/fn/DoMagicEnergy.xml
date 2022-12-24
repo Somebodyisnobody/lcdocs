@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>DoMagicEnergy</title>
 		<category>Objekte/Status</category>
 		<versions><version>4.6.5.0 CP</version><extversion>4.9.6.0 CR</extversion></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>int</type><name>iChange</name><desc>Veränderung des Magiewertes; positiv oder negativ</desc></param>
-				<param><type>object</type><name>pObj</name><desc>Objekt, dessen Magiewert verändert wird. 0 bei lokalem Aufruf.</desc><optional /></param>
-				<param><type>bool</type><name>fAllowPartial</name><desc>Wenn wahr, überträgt der Befehl auch teilweise Zauberenergie bis auf 0 oder das Maximum. Der Befehl schlägt nur fehl, wenn die Zauberenergie gar nicht verändert wurde. Ab CR.</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iChange</name><desc>Veränderung des Magiewertes; positiv oder negativ</desc></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pObj</name><desc>Objekt, dessen Magiewert verändert wird. 0 bei lokalem Aufruf.</desc></param>
+				<param isReference="false" isOptional="true"><type>bool</type><name>fAllowPartial</name><desc>Wenn wahr, überträgt der Befehl auch teilweise Zauberenergie bis auf 0 oder das Maximum. Der Befehl schlägt nur fehl, wenn die Zauberenergie gar nicht verändert wurde. Ab CR.</desc></param>
 			</params>
 		</syntax>
 		<desc>Verändert den Magiewert eines Objekts. Jedoch wird die gewünschte Veränderung vorgabemäßig nur als ganze ausgeführt und daher auch nur, wenn dadurch nicht die Ober- bzw. Untergrenze (physische Fähigkeit des Clonks bzw. 0) überschritten wird. Wenn die Veränderung iChange nicht als ganze ausgeführt werden kann, gibt die Funktion FALSE zurück. Hierdurch kann mit einem einzelnen Funktionsaufruf gleichzeitig überprüft werden, ob eine Transaktion überhaupt möglich ist.</desc>

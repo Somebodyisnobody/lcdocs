@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>Find_Distance</title>
 		<category>Objekte/Suche</category>
 		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
-			<rtype>array</rtype>
+			<rtype isReference="false">array</rtype>
 			<params>
-				<param><type>int</type><name>iRadius</name><desc>Maximaler Abstand des Objektes.</desc></param>
-				<param><type>int</type><name>iX</name><desc>Bezugspunkt für den Abstand. Bei lokalem Aufruf Offset zum aufrufenden Objekt.</desc><optional /></param>
-				<param><type>int</type><name>iY</name><desc>Bezugspunkt für den Abstand. Bei lokalem Aufruf Offset zum aufrufenden Objekt.</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iRadius</name><desc>Maximaler Abstand des Objektes.</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iX</name><desc>Bezugspunkt für den Abstand. Bei lokalem Aufruf Offset zum aufrufenden Objekt.</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iY</name><desc>Bezugspunkt für den Abstand. Bei lokalem Aufruf Offset zum aufrufenden Objekt.</desc></param>
 			</params>
 		</syntax>
 		<desc>Suchkriterium: Sucht alle Objekte, die höchstens den angegebenen Radius vom Bezugspunkt entfernt sind. Wird kein Bezugspunkt angegeben, gilt der Mittelpunkt des aufrufenden Objektes.</desc>

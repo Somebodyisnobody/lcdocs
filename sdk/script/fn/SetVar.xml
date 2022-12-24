@@ -3,7 +3,7 @@
 <clonkDoc xmlns="https://clonkspot.org"
 		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetVar</title>
 		<category>Variablen</category>
 		<versions>
@@ -16,14 +16,14 @@
 			<description>Bereits in der Entwicklerdokumentation von clonk.de als veraltet markiert. Damit spätestens seit 4.9.10.7 [330] CR veraltet.</description>
 		</deprecated>
 		<syntax>
-			<rtype>any</rtype>
+			<rtype isReference="false">any</rtype>
 			<params>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>iVarIndex</name>
 					<desc>Die threadlokale Variable, die gesetzt werden soll.</desc>
 				</param>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>any</type>
 					<name>Value</name>
 					<desc>Zu setzender Wert.</desc>

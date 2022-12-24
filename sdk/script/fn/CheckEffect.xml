@@ -3,59 +3,52 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>CheckEffect</title>
     <category>Effekte</category>
     <versions><version>4.9.5.0 CE</version></versions>
     <syntax>
-      <rtype>int</rtype>
+      <rtype isReference="false">int</rtype>
       <params>
-        <param>
+        <param isReference="false" isOptional="false">
           <type>string</type>
           <name>szEffectName</name>
           <desc>Name des Effektes ohne vorangestelltes Fx.</desc>
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>object</type>
           <name>pTarget</name>
           <desc>Zielobjekt, dessen Effekte benachrichtigt werden. Bei 0 wird die globale Effektliste benachrichtigt.</desc>
-          <optional />
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>int</type>
           <name>iPrio</name>
           <desc>Priorität für den Effekt. Es werden Fx*Effect-Callbacks bei allen Effekten mit gleicher und höherer Priorität durchgeführt. Bei 0 werden alle Effekte benachrichtigt.</desc>
-          <optional />
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>int</type>
           <name>iTimerIntervall</name>
           <desc>Intervall, in dem Timer-Aufrufe getätigt würden. Bei 0 würden keine Timer-Aufrufe durchgeführt, und der Effekt bliebe permanent bis er durch anderwertige Aufrufe entfernt würde.</desc>
-          <optional />
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>any</type>
           <name>var1</name>
           <desc>Erster Zusatzparameter, der an Fx*Effect-Callbacks übergeben wird</desc>
-          <optional />
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>any</type>
           <name>var2</name>
           <desc>Zweiter Zusatzparameter, der an Fx*Effect-Callbacks übergeben wird</desc>
-          <optional />
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>any</type>
           <name>var3</name>
           <desc>Dritter Zusatzparameter, der an Fx*Effect-Callbacks übergeben wird</desc>
-          <optional />
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>any</type>
           <name>var4</name>
           <desc>Vierter Zusatzparameter, der an Fx*Effect-Callbacks übergeben wird</desc>
-          <optional />
         </param>
       </params>
     </syntax>

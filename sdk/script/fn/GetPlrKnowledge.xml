@@ -3,17 +3,17 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>GetPlrKnowledge</title>
 		<category>Spieler</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>int</rtype>
+			<rtype isReference="false">int</rtype>
 			<params>
-				<param><type>int</type><name>iPlr</name><desc>Spieler, über dessen Baupläne Informationen abgerufen werden sollen.</desc></param>
-				<param><type>id</type><name>id</name><desc>Wenn angegebenen, dann gibt die Funktion TRUE zurück, wenn der Spieler den Bauplan des betreffenden herstellbaren Objekts besitzt, ansonsten FALSE.</desc><optional /></param>
-				<param><type>int</type><name>iIndex</name><desc>Nur angeben, wenn keine id=0.</desc><optional /></param>
-				<param><type>int</type><name>dwCategory</name><desc>Nur angeben, wenn keine id=0.</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iPlr</name><desc>Spieler, über dessen Baupläne Informationen abgerufen werden sollen.</desc></param>
+				<param isReference="false" isOptional="true"><type>id</type><name>id</name><desc>Wenn angegebenen, dann gibt die Funktion TRUE zurück, wenn der Spieler den Bauplan des betreffenden herstellbaren Objekts besitzt, ansonsten FALSE.</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iIndex</name><desc>Nur angeben, wenn keine id=0.</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>dwCategory</name><desc>Nur angeben, wenn keine id=0.</desc></param>
 			</params>
 		</syntax>
 		<desc>Bei angegebenen id gibt die Funktion TRUE zurück, wenn der Spieler den Bauplan des betreffenden herstellbaren Objekts besitzt. iIndex und dwCategory werden hierbei ignoriert. Wird als id Null übergeben, liefert die Funktion den indizierten Bauplan der entsprechenden Kategorie des Spielers.</desc>

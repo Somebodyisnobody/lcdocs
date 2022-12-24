@@ -3,7 +3,7 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>GetCommand</title>
     <category>Objekte/Commands</category>
     <versions><version>4.6.5.0 CP
@@ -11,25 +11,22 @@
       <extversion>4.9.5.0 CE</extversion>
     </versions>
     <syntax>
-      <rtype>any</rtype>
+      <rtype isReference="false">any</rtype>
       <params>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>object</type>
           <name>pObj</name>
           <desc>Objekt, von dem ein Kommando abgefragt wird.</desc>
-          <optional />
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>int</type>
           <name>iElement</name>
           <desc>Information, die zurückgegeben werden soll. 0 oder kA: Name, 1: Target, 2: TargetX, 3: TargetY, 4: Target2, 5: Data</desc>
-          <optional />
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>int</type>
           <name>iCommandNum</name>
           <desc>Nummer des Kommandos. 0 steht für das momentan aktive, 1 für das danach auszuführende usw.</desc>
-          <optional />
         </param>
       </params>
     </syntax>

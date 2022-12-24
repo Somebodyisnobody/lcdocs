@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>DoCrewExp</title>
 		<category>Objekte/Mannschaft</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>int</type><name>iChange</name><desc>Veränderung des Erfahrungswertes</desc></param>
-				<param><type>object</type><name>pObj</name><desc>Crewobjekt, dem Erfahrung gegeben werden soll</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iChange</name><desc>Veränderung des Erfahrungswertes</desc></param>
+				<param isReference="false" isOptional="false"><type>object</type><name>pObj</name><desc>Crewobjekt, dem Erfahrung gegeben werden soll</desc></param>
 			</params>
 		</syntax>
 		<desc>Gibt einem Clonk Erfahrungspunkte.</desc>

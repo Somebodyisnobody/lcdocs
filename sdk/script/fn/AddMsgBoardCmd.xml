@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>AddMsgBoardCmd</title>
 		<category>Interface</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>int</rtype>
+			<rtype isReference="false">int</rtype>
 			<params>
-				<param><type>string</type><name>strCommand</name><desc>Name des MessageBoard-Kommandos</desc></param>
-				<param><type>string</type><name>strScript</name><desc>Auszuführender Script</desc></param>
-				<param><type>int</type><name>iRestriction</name><desc>Bestimmt, wie die Eingabe formatiert wird:<br />
+				<param isReference="false" isOptional="false"><type>string</type><name>strCommand</name><desc>Name des MessageBoard-Kommandos</desc></param>
+				<param isReference="false" isOptional="false"><type>string</type><name>strScript</name><desc>Auszuführender Script</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iRestriction</name><desc>Bestimmt, wie die Eingabe formatiert wird:<br />
 				<table activateBitmask="false" bitmaskName="">
 					<rowh><col>Name</col><col>Nummer</col><col>Beschreibung</col></rowh>
 					<row><col>C4MSGCMDR_Escaped</col><col>0</col><col>Eingabe wird in %s escaped eingesetzt.</col></row>

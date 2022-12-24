@@ -3,17 +3,17 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
- <func>
+ <func isAsync="false">
   <title>Music</title>
   <category>Musik</category>
   <versions><version>4.6.5.0 CP
    </version><extversion>4.9.1.0 GWE</extversion>
   </versions>
   <syntax>
-   <rtype>void</rtype>
+   <rtype isReference="false">void</rtype>
    <params>
-    <param><type>string</type><name>szSongName</name><desc>Dateiame des Musikstückes. Die Endung muss mit angegeben werden. Wird der Parameter weggelassen oder 0 übergeben, so wird die Musikwiedergabe deaktiviert (auch wenn sie in den Optionen aktiviert wurde)</desc><optional/></param>
-    <param><type>bool</type><name>fLoop</name><desc>Wenn 1, wird das angegebene Musikstück andauernd abgespielt.</desc><optional/></param>
+    <param isReference="false" isOptional="true"><type>string</type><name>szSongName</name><desc>Dateiame des Musikstückes. Die Endung muss mit angegeben werden. Wird der Parameter weggelassen oder 0 übergeben, so wird die Musikwiedergabe deaktiviert (auch wenn sie in den Optionen aktiviert wurde)</desc></param>
+    <param isReference="false" isOptional="true"><type>bool</type><name>fLoop</name><desc>Wenn 1, wird das angegebene Musikstück andauernd abgespielt.</desc></param>
    </params>
   </syntax>
   <desc>Spielt ein Musikstück ab. Die entsprechende Datei muss in einer der aktiven Musikdateien vorhanden sein. Sind im ausgewählten Szenario Musikdateien vorhanden, gilt die Szenariodatei als aktive Musikdatei, andernfalls wird die globale Musikdatei Music.c4g genutzt. Bei erfolgreichem Aufruf dieser Funktion wird die Musikwiedergabe aktiviert, auch wenn sie in den Optionen des Menüsystems deaktiviert wurde.</desc>

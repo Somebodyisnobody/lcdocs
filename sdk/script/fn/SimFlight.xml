@@ -3,21 +3,21 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SimFlight</title>
 		<category>Objekte/Bewegung</category>
 		<versions><version>4.9.5.0 CE</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>int</type><name>iX</name><desc>X-Koordinate der Startposition. Immer global.</desc><isReference /></param>
-				<param><type>int</type><name>iY</name><desc>Y-Koordinate der Startposition. Immer global.</desc><isReference /></param>
-				<param><type>int</type><name>iXDir</name><desc>X-Anfangsgeschwindigkeit.</desc><isReference /></param>
-				<param><type>int</type><name>iYDir</name><desc>Y-Anfangsgeschwindigkeit.</desc><isReference /></param>
-				<param><type>int</type><name>iMinDensity</name><desc>Minimale Dichte des Materials nach dem auf der Wurfbahn gesucht wird. Keine Angabe oder Null entspricht 50 (festes Material).</desc><optional/></param>
-				<param><type>int</type><name>iMaxDensity</name><desc>Maximale Dichte des Materials nach dem auf der Wurfbahn gesucht wird. Keine Angabe oder Null entspricht 100 (Vehicle).</desc><optional/></param>
-				<param><type>int</type><name>iIteration</name><desc>Anzahl der simulierten Frames bis zum Abbruch der Simulation. Keine Angabe oder Null entspricht -1 (Kein Abbruch).</desc><optional/></param>
-				<param><type>int</type><name>iPrecision</name><desc>Genauigkeit. Keine Angabe oder Null entspricht 10.</desc><optional/></param>
+				<param isReference="true" isOptional="false"><type>int</type><name>iX</name><desc>X-Koordinate der Startposition. Immer global.</desc></param>
+				<param isReference="true" isOptional="false"><type>int</type><name>iY</name><desc>Y-Koordinate der Startposition. Immer global.</desc></param>
+				<param isReference="true" isOptional="false"><type>int</type><name>iXDir</name><desc>X-Anfangsgeschwindigkeit.</desc></param>
+				<param isReference="true" isOptional="false"><type>int</type><name>iYDir</name><desc>Y-Anfangsgeschwindigkeit.</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iMinDensity</name><desc>Minimale Dichte des Materials nach dem auf der Wurfbahn gesucht wird. Keine Angabe oder Null entspricht 50 (festes Material).</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iMaxDensity</name><desc>Maximale Dichte des Materials nach dem auf der Wurfbahn gesucht wird. Keine Angabe oder Null entspricht 100 (Vehicle).</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iIteration</name><desc>Anzahl der simulierten Frames bis zum Abbruch der Simulation. Keine Angabe oder Null entspricht -1 (Kein Abbruch).</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iPrecision</name><desc>Genauigkeit. Keine Angabe oder Null entspricht 10.</desc></param>
 			</params>
 		</syntax>
 		<desc>Simuliert die Bewegung eines freien Falles mit Anfangsgeschwindigkeit in die angegebene Richtung. Wenn die simulierte Bewegung ein Material mit der gewünschten Dichte durchläuft, gibt diese Funktion true zurück, ansonsten false.<br/> Bei true wird die X- und Y-Position des Aufpralls in den angegebenen Variablen für iX und iY gespeichert, die Aufprallgeschwindigkeit in den angegebenen Variablen fü iXDir und iYDir. Siehe dazu <emLink href="script/Funcs.html#referenzen">Referenzen</emLink>.</desc>

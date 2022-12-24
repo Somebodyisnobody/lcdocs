@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>RandomX</title>
     <category>Arithmetik</category>
     <versions><version>4.9.1.0 GWE</version><extversion>4.9.5.0 CE</extversion></versions>
     <syntax>
-      <rtype>int</rtype>
+      <rtype isReference="false">int</rtype>
       <params>
-        <param><type>int</type><name>iVal1</name><desc>Anfang des Bereichs</desc><optional /></param>
-        <param><type>int</type><name>iVal2</name><desc>Ende des Bereichs</desc><optional /></param>
+        <param isReference="false" isOptional="true"><type>int</type><name>iVal1</name><desc>Anfang des Bereichs</desc></param>
+        <param isReference="false" isOptional="true"><type>int</type><name>iVal2</name><desc>Ende des Bereichs</desc></param>
       </params>
     </syntax>
     <desc>Liefert einen Zufallswert zwischen iVal1 und iVal2. Dabei ist egal, welcher Wert der größere ist.</desc>

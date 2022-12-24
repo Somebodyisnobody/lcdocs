@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>Cos</title>
 		<category>Arithmetik</category>
 		<versions><version>4.6.5.0 CP</version><extversion>4.9.5.0 CE</extversion></versions>
 		<syntax>
-			<rtype>int</rtype>
+			<rtype isReference="false">int</rtype>
 			<params>
-				<param><type>int</type><name>iAngle</name><desc>Winkel in Grad</desc></param>
-				<param><type>int</type><name>iRadius</name><desc>Radius</desc></param>
-				<param><type>int</type><name>iPrec</name><desc>Der angegebene Winkel wird, wenn angegeben, vor der Berechnung durch diesen Wert dividiert. Bei einem Winkel von 455 und einer Präzision von 10 würde intern also mit einem Winkel von 45,5° gerechnet werden.</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iAngle</name><desc>Winkel in Grad</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iRadius</name><desc>Radius</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iPrec</name><desc>Der angegebene Winkel wird, wenn angegeben, vor der Berechnung durch diesen Wert dividiert. Bei einem Winkel von 455 und einer Präzision von 10 würde intern also mit einem Winkel von 45,5° gerechnet werden.</desc></param>
 			</params>
 		</syntax>
 		<desc>Liefert cos(iAngle) * iRadius.</desc>

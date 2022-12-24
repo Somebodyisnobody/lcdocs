@@ -3,7 +3,7 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>AnyContainer</title>
 		<category>Objekte/Suche</category>
 		<versions><version>4.6.5.0 CP</version></versions>
@@ -14,7 +14,7 @@
 			<description>Mit <funcLink>Find_AnyContainer</funcLink> ist basierend auf <funcLink>FindObjects</funcLink> eine bessere Implementation verfügbar.</description>
 		</deprecated>
 		<syntax>
-			<rtype>int</rtype>
+			<rtype isReference="false">int</rtype>
 		</syntax>
 		<desc>Wird an <funcLink>FindObject</funcLink>/<funcLink>FindObjectOwner</funcLink> übergeben, damit nur Objekte gefunden werden, die in einem anderen Objekt enthalten sind</desc>
 		<examples>

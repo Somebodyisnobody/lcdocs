@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetLength</title>
 		<category>Script/Strings</category>
 		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
-			<rtype>void</rtype>
+			<rtype isReference="false">void</rtype>
 			<params>
-				<param><type>array</type><name>aResize</name><desc>Array, dessen Länge verändert werden soll</desc></param>
-				<param><type>int</type><name>iSize</name><desc>Neue Länge des Feldes</desc></param>
+				<param isReference="false" isOptional="false"><type>array</type><name>aResize</name><desc>Array, dessen Länge verändert werden soll</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iSize</name><desc>Neue Länge des Feldes</desc></param>
 			</params>
 		</syntax>
 		<desc>Verändert die Länge eines Arrays auf den angegebenen Wert. Überzählige Elemente werden dabei gegebenenfalls gelöscht.</desc>

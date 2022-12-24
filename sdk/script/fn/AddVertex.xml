@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>AddVertex</title>
 		<category>Objekte/Vertices</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>int</rtype>
+			<rtype isReference="false">int</rtype>
 			<params>
-				<param><type>int</type><name>iX</name><desc>X-Koordinate, von der Objektmitte aus gesehen.</desc></param>
-				<param><type>int</type><name>iY</name><desc>Y-Koordinate, von der Objektmitte aus gesehen.</desc></param>
-				<param><type>object</type><name>pObj</name><desc>Objekt, dem der Vertex hinzugefügt werden soll.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iX</name><desc>X-Koordinate, von der Objektmitte aus gesehen.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iY</name><desc>Y-Koordinate, von der Objektmitte aus gesehen.</desc></param>
+				<param isReference="false" isOptional="false"><type>object</type><name>pObj</name><desc>Objekt, dem der Vertex hinzugefügt werden soll.</desc></param>
 			</params>
 		</syntax>
 		<desc>Fügt dem Objekt pObj einen neuen Vertex hinzu.</desc>

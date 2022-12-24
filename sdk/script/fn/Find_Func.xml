@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>Find_Func</title>
 		<category>Objekte/Suche</category>
 		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
-			<rtype>array</rtype>
+			<rtype isReference="false">array</rtype>
 			<params>
-				<param><type>string</type><name>strFunction</name><desc>Aufzurufende Funktion</desc></param>
-				<param><type>any</type><name>...</name><desc>Parameter für die Funktion</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>string</type><name>strFunction</name><desc>Aufzurufende Funktion</desc></param>
+				<param isReference="false" isOptional="true"><type>any</type><name>...</name><desc>Parameter für die Funktion</desc></param>
 			</params>
 		</syntax>
 		<desc>Suchkriterium: sucht alle Objekte bei denen der Aufruf der angegebenen Funktion <code>true</code> liefert. Wenn es eine lokale Funktion gibt, wird diese aufgerufen, sonst wenn vorhanden eine globale.</desc>

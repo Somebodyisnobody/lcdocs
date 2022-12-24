@@ -3,17 +3,17 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>Smoke</title>
     <category>Umwelt/Effekte</category>
     <versions><version>4.6.5.0 CP</version></versions>
     <syntax>
-      <rtype>void</rtype>
+      <rtype isReference="false">void</rtype>
       <params>
-        <param><type>int</type><name>iX</name><desc>X-Position der Rauchwolke. Offset bei lokalem Aufruf.</desc></param>
-        <param><type>int</type><name>iY</name><desc>Y-Position der Rauchwolke. Offset bei lokalem Aufruf.</desc></param>
-        <param><type>int</type><name>iLevel</name><desc>Größe des Rauchs</desc></param>
-		<param><type>int</type><name>dwClr</name><desc>Farbe des Rauchs</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iX</name><desc>X-Position der Rauchwolke. Offset bei lokalem Aufruf.</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iY</name><desc>Y-Position der Rauchwolke. Offset bei lokalem Aufruf.</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iLevel</name><desc>Größe des Rauchs</desc></param>
+		<param isReference="false" isOptional="false"><type>int</type><name>dwClr</name><desc>Farbe des Rauchs</desc></param>
       </params>
     </syntax>
     <desc>Erzeugt eine Rauchwolke an der angegebenen Position mit angegebener Farbe.</desc>

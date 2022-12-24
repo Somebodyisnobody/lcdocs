@@ -3,17 +3,17 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>CallMessageBoard</title>
 		<category>Interface</category>
 		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>object</type><name>pCallbackObject</name><desc>Objekt, in dem <funcLink>InputCallback</funcLink> aufgerufen wird.</desc></param>
-				<param><type>bool</type><name>bCapitalize</name><desc>Wenn true, wird die Eingabe in Großbuchstaben zurückgegeben.</desc></param>
-				<param><type>string</type><name>szTitle</name><desc>Text, der links neben / über dem Eingabefeld steht.</desc></param>
-				<param><type>int</type><name>iPlayer</name><desc>Spieler, für den die Eingabezeile erzeugt werden soll.</desc></param>
+				<param isReference="false" isOptional="false"><type>object</type><name>pCallbackObject</name><desc>Objekt, in dem <funcLink>InputCallback</funcLink> aufgerufen wird.</desc></param>
+				<param isReference="false" isOptional="false"><type>bool</type><name>bCapitalize</name><desc>Wenn true, wird die Eingabe in Großbuchstaben zurückgegeben.</desc></param>
+				<param isReference="false" isOptional="false"><type>string</type><name>szTitle</name><desc>Text, der links neben / über dem Eingabefeld steht.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iPlayer</name><desc>Spieler, für den die Eingabezeile erzeugt werden soll.</desc></param>
 			</params>
 		</syntax>
 		<desc>Zeigt eine Eingabezeile (ähnlich der Chat-Eingabe) für den Spieler iPlayer (ggf. mit Verzögerung). Wenn die Eingabe abgeschlossen wird, wird in pCallbackObject <code><funcLink>InputCallback</funcLink>(string szInput)</code>

@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
- <func>
+ <func isAsync="false">
   <title>PlaceAnimal</title>
   <category>Umwelt</category>
   <versions><version>4.6.5.0 CP</version></versions>
   <syntax>
-   <rtype>object</rtype>
+   <rtype isReference="false">object</rtype>
    <params>
-    <param><type>id</type><name>id</name><desc>ID des zu erstellenden Tieres.</desc></param>
+    <param isReference="false" isOptional="false"><type>id</type><name>id</name><desc>ID des zu erstellenden Tieres.</desc></param>
    </params>
   </syntax>
   <desc>Erzeugt ein Lebewesen vom angegebenen Typ in der Landschaft. Die Startposition bestimmt sich dabei aus dem Wert Placement im <emLink href="definition/defcore.html">DefCore</emLink> des Lebewesens. Rückgabewert ist ein Zeiger auf das neu erzeugte Objekt.</desc>

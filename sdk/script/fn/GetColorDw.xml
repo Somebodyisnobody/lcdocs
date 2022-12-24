@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>GetColorDw</title>
     <category>Objekte/Darstellung</category>
     <versions><version>4.9.1.0 GWE</version></versions>
     <syntax>
-      <rtype>int</rtype>
+      <rtype isReference="false">int</rtype>
       <params>
-        <param><type>object</type><name>pObj</name><desc>Abgefragtes Objekt. 0 bei lokalem Aufruf.</desc><optional /></param>
+        <param isReference="false" isOptional="true"><type>object</type><name>pObj</name><desc>Abgefragtes Objekt. 0 bei lokalem Aufruf.</desc></param>
       </params>
     </syntax>
     <desc>Fragt den RGB-Farbwert der Färbung der ColorByOwner-Flächen eines Objekts ab. Diese werden beispielsweise durch <funcLink>SetOwner</funcLink>, <funcLink>SetColor</funcLink> oder <funcLink>SetColorDw</funcLink> gesetzt.</desc>

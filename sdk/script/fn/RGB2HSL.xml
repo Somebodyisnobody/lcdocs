@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>RGB2HSL</title>
 		<category>Arithmetik</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>int</rtype>
+			<rtype isReference="false">int</rtype>
 			<params>
-				<param><type>int</type><name>Val</name><desc>32Bit-Farbwert</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>Val</name><desc>32Bit-Farbwert</desc></param>
 			</params>
 		</syntax>
 		<desc>

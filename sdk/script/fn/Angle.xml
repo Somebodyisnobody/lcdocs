@@ -3,18 +3,18 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>Angle</title>
     <category>Arithmetik</category>
     <versions><version>4.6.5.0 CP</version><extversion>4.9.5.0 CE</extversion></versions>
     <syntax>
-      <rtype>int</rtype>
+      <rtype isReference="false">int</rtype>
       <params>
-        <param><type>int</type><name>iX1</name><desc>X-Koordinate des ersten Punktes</desc></param>
-        <param><type>int</type><name>iY1</name><desc>Y-Koordinate des ersten Punktes</desc></param>
-        <param><type>int</type><name>iX2</name><desc>X-Koordinate des zweiten Punktes</desc></param>
-        <param><type>int</type><name>iY2</name><desc>Y-Koordinate des zweiten Punktes</desc></param>
-        <param><type>int</type><name>iPrec</name><desc>Gibt, wenn angegeben, den Winkel multipliziert mit iPrec zurück, um so genauere Winkel zu erhalten. Eine Präzision von 10 gibt also Werte zwischen 0 und 3600 zurück.</desc><optional/></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iX1</name><desc>X-Koordinate des ersten Punktes</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iY1</name><desc>Y-Koordinate des ersten Punktes</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iX2</name><desc>X-Koordinate des zweiten Punktes</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iY2</name><desc>Y-Koordinate des zweiten Punktes</desc></param>
+        <param isReference="false" isOptional="true"><type>int</type><name>iPrec</name><desc>Gibt, wenn angegeben, den Winkel multipliziert mit iPrec zurück, um so genauere Winkel zu erhalten. Eine Präzision von 10 gibt also Werte zwischen 0 und 3600 zurück.</desc></param>
       </params>
     </syntax>
     <desc>Liefert den Winkel, in dem sich der zweite Punkt vom ersten Punkt aus gesehen befindet. Der Winkel wird in Grad zurückgeliefert, 0° ist senkrecht oben. Alle Koordinaten sind global.</desc>

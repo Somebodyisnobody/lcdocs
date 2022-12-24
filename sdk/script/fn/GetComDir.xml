@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-        <func>
+        <func isAsync="false">
                 <title>GetComDir</title>
                 <category>Objekte/Bewegung</category>
                 <versions><version>4.6.5.0 CP</version></versions>
                 <syntax>
-                        <rtype>int</rtype>
+                        <rtype isReference="false">int</rtype>
                         <params>
-                                <param><type>object</type><name>pObj</name><desc>Objekt dessen ComDir abgefragt werden soll. 0 bei lokalem Aufruf.</desc><optional /></param>
+                                <param isReference="false" isOptional="true"><type>object</type><name>pObj</name><desc>Objekt dessen ComDir abgefragt werden soll. 0 bei lokalem Aufruf.</desc></param>
                         </params>
                 </syntax>
                 <desc>Liefert die aktuelle Befehlsrichtung eines Objekts. Diese gibt die momentane, beabsichtigte Bewegungsrichtung an. Die Auswirkung dieser Richtung hängt von der <emLink href="definition/procedures.html">Prozedur</emLink> der aktuellen <emLink href="definition/actmap.html">Aktivität</emLink> ab.</desc>

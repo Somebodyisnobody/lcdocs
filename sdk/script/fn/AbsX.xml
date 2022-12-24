@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
- <func>
+ <func isAsync="false">
   <title>AbsX</title>
   <category>Objekte/Position</category>
   <versions><version>4.9.1.0 GWE</version></versions>
   <syntax>
-   <rtype>int</rtype>
+   <rtype isReference="false">int</rtype>
    <params>
-    <param><type>int</type><name>iX</name><desc>X</desc></param>
+    <param isReference="false" isOptional="false"><type>int</type><name>iX</name><desc>X</desc></param>
    </params>
   </syntax>
   <desc>Liefert das relative X in Bezug auf Objektmitte wenn von einem Objekt aufgerufen. Sonst liefert diese Funktion das übergebene X zurück</desc>

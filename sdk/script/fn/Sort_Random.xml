@@ -4,14 +4,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
 		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>Sort_Random</title>
 		<category>Objekte/Suche</category>
 		<versions>
 			<version>9.9.9.9 LC</version>
 		</versions>
 		<syntax>
-			<rtype>array</rtype>
+			<rtype isReference="false">array</rtype>
 		</syntax>
 		<desc>Die Sort_Random Funktion dient dem Sortieren von Suchergebnissen von <funcLink>FindObjects</funcLink>. Sie sortiert zufällig.</desc>
 		<examples>

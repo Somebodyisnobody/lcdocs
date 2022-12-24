@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>PlaceInMaterial</title>
 		<category>Objekte/Erzeugung</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>object</rtype>
+			<rtype isReference="false">object</rtype>
 			<params>
-				<param><type>id</type><name>idDef</name><desc>Objekttyp</desc></param>
-				<param><type>int</type><name>iMaterial</name><desc>Material</desc></param>
-				<param><type>int</type><name>iRetries</name><desc>Anzahl Wiederholungen</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>id</type><name>idDef</name><desc>Objekttyp</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iMaterial</name><desc>Material</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iRetries</name><desc>Anzahl Wiederholungen</desc></param>
 			</params>
 		</syntax>
 		<desc>Erzeugt ein Objekt des gewünschten Typs irgendwo in der Landscape im gewünschten Material und liefert es zurück.</desc>

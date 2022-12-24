@@ -3,17 +3,17 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-        <func>
+        <func isAsync="false">
                 <title>TrainPhysical</title>
                 <category>Objekte/Status</category>
                 <versions><version>4.9.6.0 CR</version></versions>
                 <syntax>
-                        <rtype>bool</rtype>
+                        <rtype isReference="false">bool</rtype>
                         <params>
-                                <param><type>string</type><name>szPhysical</name><desc>Name der Eigenschaft, die geändert werden soll</desc></param>
-                                <param><type>int</type><name>iTrainBy</name><desc>0-100000: Wert, um den trainiert wird</desc></param>
-                                <param><type>int</type><name>iMaxTrain</name><desc>Wert, der durch das Training nie überschritten wird. Es wird allerdings in keinem Fall die Physical reduziert, auch wenn der Zielwert unter dem hier angegebenen Wert läge.<br /></desc></param>
-				<param><type>object</type><name>pObj</name><desc>Objekt, dessen Physical trainiert werden soll. 0 bei lokalen Aufrufen.</desc><optional /></param>
+                                <param isReference="false" isOptional="false"><type>string</type><name>szPhysical</name><desc>Name der Eigenschaft, die geändert werden soll</desc></param>
+                                <param isReference="false" isOptional="false"><type>int</type><name>iTrainBy</name><desc>0-100000: Wert, um den trainiert wird</desc></param>
+                                <param isReference="false" isOptional="false"><type>int</type><name>iMaxTrain</name><desc>Wert, der durch das Training nie überschritten wird. Es wird allerdings in keinem Fall die Physical reduziert, auch wenn der Zielwert unter dem hier angegebenen Wert läge.<br /></desc></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pObj</name><desc>Objekt, dessen Physical trainiert werden soll. 0 bei lokalen Aufrufen.</desc></param>
 			</params>
 		</syntax>
                 <desc>Erhöht den Wert der physischen Eigenschaft eines Objekts um den in iTrainBy angegebenen Wert. Mit diesem Aufruf werden sowohl die permanenten, als auch temporäre und temporär gestapelte Physicals trainiert. Dieser Befehl kann beispielsweise genutzt werden, um nach einem Zauber die Magiephysical zu trainieren.</desc>

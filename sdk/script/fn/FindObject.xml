@@ -3,7 +3,7 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>FindObject</title>
 		<category>Objekte/Suche</category>
 		<versions><version>4.6.5.0 CP</version><extversion>4.9.1.0 GWE</extversion></versions>
@@ -14,18 +14,18 @@
 			<description>Die Funktion ist durch Einführung von <funcLink>FindObject2</funcLink> und <funcLink>FindObjects</funcLink> veraltet.</description>
 		</deprecated>
 		<syntax>
-			<rtype>object</rtype>
+			<rtype isReference="false">object</rtype>
 			<params>
-				<param><type>id</type><name>idDef</name><desc>Objekttyp</desc><optional /></param>
-				<param><type>int</type><name>iX</name><desc>Suchposition bzw. linker Rand des Suchrechtecks. Bei lokalem Aufruf Offset zum aufrufenden Objekt.</desc><optional /></param>
-				<param><type>int</type><name>iY</name><desc>Suchposition bzw. oberer Rand des Suchrechtecks. Bei lokalem Aufruf Offset zum aufrufenden Objekt.</desc><optional /></param>
-				<param><type>int</type><name>iWdt</name><desc>Breite des Suchrechtecks. Siehe auch Hinweis unten.</desc><optional /></param>
-				<param><type>int</type><name>iHgt</name><desc>Höhe des Suchrechtecks. Siehe auch Hinweis unten.</desc><optional /></param>
-				<param><type>int</type><name>dwOCF</name><desc>Bitmaske von Objektattributen. Es werden alle Objekte gefunden, die mindestens eines der übergebenen Objektattribute besitzen. 0 findet alle Objekte.</desc><optional /></param>
-				<param><type>string</type><name>szAction</name><desc>Aktivität des zu findenden Objekts.</desc><optional /></param>
-				<param><type>object</type><name>pActionTarget</name><desc>Aktivitätsziel des zu findenden Objekts. Siehe dazu auch <funcLink>SetAction</funcLink>, <funcLink>GetActionTarget</funcLink></desc><optional /></param>
-				<param><type>any</type><name>pContainer</name><desc>Behälter des zu findenden Objekts. Wenn angegeben, wird nur dieser Behälter durchsucht. Möglich sind auch <funcLink>NoContainer</funcLink> für Objekte, die sich im Freien befinden und <funcLink>AnyContainer</funcLink> für alle Objekte.</desc><optional /></param>
-				<param><type>object</type><name>pFindNext</name><desc>Objekt, nach dem die Suche begonnen wird. Über diesen Parameter können in einer Schleife nacheinander alle Objekte gefunden werden, die den Suchkriterien entsprechen.</desc><optional /></param>
+				<param isReference="false" isOptional="true"><type>id</type><name>idDef</name><desc>Objekttyp</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iX</name><desc>Suchposition bzw. linker Rand des Suchrechtecks. Bei lokalem Aufruf Offset zum aufrufenden Objekt.</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iY</name><desc>Suchposition bzw. oberer Rand des Suchrechtecks. Bei lokalem Aufruf Offset zum aufrufenden Objekt.</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iWdt</name><desc>Breite des Suchrechtecks. Siehe auch Hinweis unten.</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iHgt</name><desc>Höhe des Suchrechtecks. Siehe auch Hinweis unten.</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>dwOCF</name><desc>Bitmaske von Objektattributen. Es werden alle Objekte gefunden, die mindestens eines der übergebenen Objektattribute besitzen. 0 findet alle Objekte.</desc></param>
+				<param isReference="false" isOptional="true"><type>string</type><name>szAction</name><desc>Aktivität des zu findenden Objekts.</desc></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pActionTarget</name><desc>Aktivitätsziel des zu findenden Objekts. Siehe dazu auch <funcLink>SetAction</funcLink>, <funcLink>GetActionTarget</funcLink></desc></param>
+				<param isReference="false" isOptional="true"><type>any</type><name>pContainer</name><desc>Behälter des zu findenden Objekts. Wenn angegeben, wird nur dieser Behälter durchsucht. Möglich sind auch <funcLink>NoContainer</funcLink> für Objekte, die sich im Freien befinden und <funcLink>AnyContainer</funcLink> für alle Objekte.</desc></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pFindNext</name><desc>Objekt, nach dem die Suche begonnen wird. Über diesen Parameter können in einer Schleife nacheinander alle Objekte gefunden werden, die den Suchkriterien entsprechen.</desc></param>
 			</params>
 		</syntax>
 		<desc>Liefert das erste gefundene Objekt, das den angegebenen Suchkriterien entspricht. Sind iWdt und iHgt beide -1, so wird das nächstliegende Objekt gefunden. Sind sie beide 0, wird nur am Punkt iX/iY gesucht. Sind iX, iY, iWdt und iHgt alle 0, gilt als Suchrechteck die gesamte Karte (auch bei lokalen Aufrufen). Es müssen stets die Bedingungen aller Parameter erfüllt sein, die angegeben und nicht 0 sind.</desc>

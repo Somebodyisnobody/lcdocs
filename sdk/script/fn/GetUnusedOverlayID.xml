@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>GetUnusedOverlayID</title>
     <category>Objekte/Darstellung</category>
     <versions><version>4.9.8.5 CR</version></versions>
     <syntax>
-      <rtype>int</rtype>
+      <rtype isReference="false">int</rtype>
       <params>
-        <param><type>int</type><name>iBaseIndex</name><desc>ID des Overlays hinter dem die Suche beginnen soll.</desc></param>
-        <param><type>object</type><name>pObj</name><desc>Objekt, dessen Overlays durchsucht werden sollen. Kann bei lokalen Aufrufen 0 sein.</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iBaseIndex</name><desc>ID des Overlays hinter dem die Suche beginnen soll.</desc></param>
+        <param isReference="false" isOptional="false"><type>object</type><name>pObj</name><desc>Objekt, dessen Overlays durchsucht werden sollen. Kann bei lokalen Aufrufen 0 sein.</desc></param>
         </params>
     </syntax>
     <desc>Gibt eine ungenutzte Overlay-ID zurück. Es wird der erste freie Overlay nach iBaseIndex zurückgegeben.</desc>

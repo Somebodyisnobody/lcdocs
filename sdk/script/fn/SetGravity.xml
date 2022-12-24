@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetGravity</title>
 		<category>Global</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>void</rtype>
+			<rtype isReference="false">void</rtype>
 			<params>
-				<param><type>int</type><name>iGravity</name><desc>Neue Schwerkraft: Werte -300 bis 300 (in Prozent)</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iGravity</name><desc>Neue Schwerkraft: Werte -300 bis 300 (in Prozent)</desc></param>
 			</params>
 		</syntax>
 		<desc>Setzt die Schwerkraft. Dabei entspricht die Standardgravitation (100%) einer Beschleunigung von 0.2 Pixeln pro Tick² (Zunahme der YDir um 2 pro Tick bei iPrecision=10)</desc>

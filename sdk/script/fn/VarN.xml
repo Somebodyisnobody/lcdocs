@@ -3,15 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>VarN</title>
     <category>Variablen</category>
     <versions><version>4.9.1.0 GWE</version></versions>
     <syntax>
-      <rtype>any</rtype>
-      <isReference />
+      <rtype isReference="true">any</rtype>
       <params>
-        <param>
+        <param isReference="false" isOptional="false">
           <type>string</type>
           <name>szName</name>
           <desc>Name der Variablen, zu der eine Referenz zurückgegeben werden soll</desc>

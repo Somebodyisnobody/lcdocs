@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>Hostile</title>
 		<category>Spieler</category>
 		<versions><version>4.6.5.0 CP</version><extversion>4.9.5.0 CE</extversion></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>int</type><name>iPlr1</name><desc>Erster Spieler</desc></param>
-				<param><type>int</type><name>iPlr2</name><desc>Zweiter Spieler</desc></param>
-				<param><type>bool</type><name>fCheckOneWayOnly</name><desc>Wenn WAHR, wird nur geprüft, ob iPlr1 mit iPlr2 verfeindet ist und nicht umgekehrt.</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iPlr1</name><desc>Erster Spieler</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iPlr2</name><desc>Zweiter Spieler</desc></param>
+				<param isReference="false" isOptional="true"><type>bool</type><name>fCheckOneWayOnly</name><desc>Wenn WAHR, wird nur geprüft, ob iPlr1 mit iPlr2 verfeindet ist und nicht umgekehrt.</desc></param>
 			</params>
 		</syntax>
 		<desc>Prüft, ob zwei Spieler verfeindet sind. Dazu reicht es, wenn nur einer von beiden mit dem anderen Spieler verfeindet ist.</desc>

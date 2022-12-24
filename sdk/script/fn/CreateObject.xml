@@ -3,17 +3,17 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>CreateObject</title>
     <category>Objekte/Erzeugung</category>
     <versions><version>4.6.5.0 CP</version></versions>
     <syntax>
-      <rtype>object</rtype>
+      <rtype isReference="false">object</rtype>
       <params>
-        <param><type>id</type><name>id</name><desc>Typ des zu erstellenden Objekts</desc></param>
-        <param><type>int</type><name>iXOffset</name><desc>X-Koordinate</desc></param>
-        <param><type>int</type><name>iYOffset</name><desc>Y-Koordinate</desc></param>
-        <param><type>int</type><name>iOwner</name><desc>Besitzer des zu erstellenden Objekts (Index eines Spielers oder <constLink constGroup="OWNER">NO_OWNER</constLink> für keinen Besitzer)</desc></param>
+        <param isReference="false" isOptional="false"><type>id</type><name>id</name><desc>Typ des zu erstellenden Objekts</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iXOffset</name><desc>X-Koordinate</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iYOffset</name><desc>Y-Koordinate</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iOwner</name><desc>Besitzer des zu erstellenden Objekts (Index eines Spielers oder <constLink constGroup="OWNER">NO_OWNER</constLink> für keinen Besitzer)</desc></param>
       </params>
     </syntax>
     <desc>Erzeugt ein Objekt des angegebenen Typs an der angegebenen Position. iXOffset und iYOffset bestimmen die Position in absoluten Pixel-Koordinaten der Landschaft (Mitte Unterkante des Objekts). Bei lokalen Aufrufen dieser Funktion wird die angegebene Position zu Offset-Koordinaten zum aufrufenden Objekt.</desc>

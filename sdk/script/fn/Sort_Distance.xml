@@ -4,21 +4,21 @@
 <clonkDoc xmlns="https://clonkspot.org"
 		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>Sort_Distance</title>
 		<category>Objekte/Suche</category>
 		<versions>
 			<version>9.9.9.9 LC</version>
 		</versions>
 		<syntax>
-			<rtype>array</rtype>
+			<rtype isReference="false">array</rtype>
 			<params>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>x</name>
 					<desc>Die horizontale Koordinate.</desc>
 				</param>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>y</name>
 					<desc>Die vertikale Koordinate.</desc>

@@ -3,12 +3,12 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>DeathAnnounce</title>
     <category>Objekte/Lebewesen</category>
     <versions><version>4.6.5.0 CP</version></versions>
     <syntax>
-      <rtype>bool</rtype>
+      <rtype isReference="false">bool</rtype>
     </syntax>
     <desc>Gibt eine Botschaft a la "[name] ist von uns gegangen"  über dem aufrufenden Objekt aus.</desc>
     <related>

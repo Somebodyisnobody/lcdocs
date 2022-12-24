@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>GetIndexOf</title>
     <category>Variablen</category>
     <versions><version>4.9.7.0 CR</version></versions>
     <syntax> 
-       <rtype>int</rtype>
+       <rtype isReference="false">int</rtype>
        <params>
-         <param><type>any</type><name>value</name><desc>Wert dessen Typ abgefragt werden soll.</desc></param>
-		 <param><type>array</type><name>aArray</name><desc>Array, welches durchsucht werden soll.</desc></param>
+         <param isReference="false" isOptional="false"><type>any</type><name>value</name><desc>Wert dessen Typ abgefragt werden soll.</desc></param>
+		 <param isReference="false" isOptional="false"><type>array</type><name>aArray</name><desc>Array, welches durchsucht werden soll.</desc></param>
        </params>
     </syntax>
     <desc>Gibt den Index von value im Array aArray zurück. Es wird -1 zurückgegeben, wenn value nicht in aArray enthalten ist.</desc>

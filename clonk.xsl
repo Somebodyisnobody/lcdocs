@@ -136,6 +136,12 @@
 			</xsl:choose>
 		</h2>
 		<div class="text">
+			<xsl:if test="@isAsync = true()">
+					<div class="alertBoxPreDescription">
+					<b>Asynchrone Funktion</b><br/>
+					Diese Funktion kann asynchrones Verhalten auslösen oder asynchrone Ergebnisse liefern und muss daher mit Bedacht verwendet werden. Siehe <a href="https://example.com">Beschreibungsseite "Asynchrone Funktionen"</a> für weitere Informationen.
+					</div>
+			</xsl:if>
 			<xsl:apply-templates select="desc"/>
 		</div>
 		<xsl:apply-templates select="syntax"/>
@@ -150,7 +156,9 @@
 						</dt>
 						<dd>
 							<div class="text">
-								<xsl:apply-templates select="optional"/>
+								<xsl:if test="@isOptional = true()">
+									<xsl:text>[optional] </xsl:text>
+								</xsl:if>
 								<xsl:apply-templates select="desc"/>
 							</div>
 						</dd>
@@ -308,7 +316,7 @@
 		<div class="text fnsyntax">
 			<span class="type">
 				<xsl:value-of select="rtype"/>
-				<xsl:if test="isReference">
+				<xsl:if test="rtype/@isReference = true()">
 					<xsl:text>&#38;</xsl:text>
 				</xsl:if>
 			</span>
@@ -328,16 +336,12 @@
 	<xsl:template match="param">
 		<span class="type">
 			<xsl:value-of select="type"/>
-			<xsl:if test="isReference">
+			<xsl:if test="@isReference = true()">
 				<xsl:text>&#38;</xsl:text>
 			</xsl:if>
 		</span>
 			<xsl:text>&#160;</xsl:text>
 		<xsl:value-of select="name"/>
-	</xsl:template>
-
-	<xsl:template match="optional">
-		<xsl:text>[optional] </xsl:text>
 	</xsl:template>
 
 	<xsl:template match="category">

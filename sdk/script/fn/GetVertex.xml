@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-				<func>
+				<func isAsync="false">
 								<title>GetVertex</title>
 								<category>Objekte/Vertices</category>
 								<versions><version>4.6.5.0 CP</version></versions>
 								<syntax>
-												<rtype>int</rtype>
+												<rtype isReference="false">int</rtype>
 												<params>
-																<param><type>int</type><name>iIndex</name><desc>Index des Vertex.</desc></param>
-				<param><type>int</type><name>iValueToGet</name><desc>Gibt an, welcher Wert zurückgegeben werden soll. Es sind folgende Werte möglich:
+																<param isReference="false" isOptional="false"><type>int</type><name>iIndex</name><desc>Index des Vertex.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iValueToGet</name><desc>Gibt an, welcher Wert zurückgegeben werden soll. Es sind folgende Werte möglich:
 						<table activateBitmask="false" bitmaskName="">
 							<rowh><col>Name</col><col>Wert</col><col>Beschreibung</col></rowh>
 							<row><col>VTX_X</col><col>0</col><col>X-Koordinate des Vertex'</col></row>
@@ -19,7 +19,7 @@
 							<row><col>VTX_CNAT</col><col>2</col><col>Ausrichtung des Vertex'</col></row>
 							<row><col>VTX_Friction</col><col>3</col><col>Reibung des Vertex'</col></row>
 						</table></desc></param>
-				<param><type>object</type><name>pObj</name><desc>Objekt, dessen Vertices ausgelesen werden. 0 bei lokalem Aufruf.</desc><optional/></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pObj</name><desc>Objekt, dessen Vertices ausgelesen werden. 0 bei lokalem Aufruf.</desc></param>
 												</params>
 								</syntax>
 								<desc>Liefert eine Koordinate des indizierten Vertex (siehe <emLink href="definition/defcore.html">DefCore.txt</emLink>) eines Objekts. Koordinaten in Relation zur Objektmitte.</desc>

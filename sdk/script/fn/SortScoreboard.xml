@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>SortScoreboard</title>
     <category>Interface</category>
     <versions><version>4.9.6.0 CR</version></versions>
     <syntax>
-      <rtype>bool</rtype>
+      <rtype isReference="false">bool</rtype>
       <params>
-        <param><type>int</type><name>iColID</name><desc>ID der Spalte, nach der sortiert werden soll.</desc></param>
-        <param><type>bool</type><name>fReverse</name><desc>Wenn wahr, wird in absteigender Reihenfolge sortiert. Ansonsten in aufsteigender Reihenfolge.</desc><optional /></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iColID</name><desc>ID der Spalte, nach der sortiert werden soll.</desc></param>
+        <param isReference="false" isOptional="true"><type>bool</type><name>fReverse</name><desc>Wenn wahr, wird in absteigender Reihenfolge sortiert. Ansonsten in aufsteigender Reihenfolge.</desc></param>
       </params>
     </syntax>
     <desc>

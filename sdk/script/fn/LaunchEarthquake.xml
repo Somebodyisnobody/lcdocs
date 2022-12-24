@@ -3,19 +3,19 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>LaunchEarthquake</title>
     <category>Umwelt</category>
     <versions><version>4.6.5.0 CP</version></versions>
     <syntax>
-      <rtype>void</rtype>
+      <rtype isReference="false">void</rtype>
       <params>
-        <param>
+        <param isReference="false" isOptional="false">
           <type>int</type>
           <name>iX</name>
           <desc>X-Zielposition</desc>
         </param>
-        <param>
+        <param isReference="false" isOptional="false">
           <type>int</type>
           <name>iY</name>
           <desc>Y-Zielposition</desc>

@@ -3,7 +3,7 @@
 <clonkDoc xmlns="https://clonkspot.org"
 		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>Mul</title>
 		<category>Arithmetik</category>
 		<versions>
@@ -18,14 +18,14 @@
 				<code>iVal1 * iVal2</code></description>
 		</deprecated>
 		<syntax>
-			<rtype>int</rtype>
+			<rtype isReference="false">int</rtype>
 			<params>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>iVal1</name>
 					<desc>Faktor 1</desc>
 				</param>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>iVal2</name>
 					<desc>Faktor 2</desc>

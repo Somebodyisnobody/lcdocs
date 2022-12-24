@@ -3,18 +3,18 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SplitRGBaValue</title>
 		<category>Arithmetik</category>
 		<versions><version>4.9.5.0 CE</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>int</type><name>Val</name><desc>32Bit-Farbwert</desc></param>
-				<param><type>int</type><name>iRed</name><desc>Variable, in der der Rotanteil gespeichert werden soll</desc><optional/></param>
-				<param><type>int</type><name>iGreen</name><desc>Variable, in der der Grünanteil gespeichert werden soll</desc><optional/></param>
-				<param><type>int</type><name>iBlue</name><desc>Variable, in der der Blauanteil gespeichert werden soll</desc><optional/></param>
-				<param><type>int</type><name>iAlpha</name><desc>Variable, in der der Alpha-Wert gespeichert werden soll</desc><optional/></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>Val</name><desc>32Bit-Farbwert</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iRed</name><desc>Variable, in der der Rotanteil gespeichert werden soll</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iGreen</name><desc>Variable, in der der Grünanteil gespeichert werden soll</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iBlue</name><desc>Variable, in der der Blauanteil gespeichert werden soll</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iAlpha</name><desc>Variable, in der der Alpha-Wert gespeichert werden soll</desc></param>
 			</params>
 		</syntax>
 		<desc>

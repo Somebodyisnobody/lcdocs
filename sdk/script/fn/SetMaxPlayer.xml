@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-        <func>
+        <func isAsync="false">
                 <title>SetMaxPlayer</title>
                 <category>Spieler</category>
                 <versions><version>4.9.1.0 GWE</version></versions>
                 <syntax>
-                        <rtype>bool</rtype>
+                        <rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>int</type><name>iNewCount</name><desc>Neue, maximale Spielerzahl</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iNewCount</name><desc>Neue, maximale Spielerzahl</desc></param>
 			</params>
                 </syntax>
                 <desc>Ändert die Maximalzahl der Spieler, die an der Runde teilnehmen können. Dieser Wert wirkt sich nur auf Neubeitritte aus; es werden keine vorhandenen Spieler eliminiert, um das Limit zu erfüllen.</desc>

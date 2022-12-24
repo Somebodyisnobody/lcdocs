@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetPlrShowControl</title>
 		<category>Spieler</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>int</type><name>iPlr</name><desc>Spieler, dessen Tasten darzustellen sind.</desc></param>
-				<param><type>string</type><name>szDefString</name><desc>Spezifikation der darzustellenden Tasten.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iPlr</name><desc>Spieler, dessen Tasten darzustellen sind.</desc></param>
+				<param isReference="false" isOptional="false"><type>string</type><name>szDefString</name><desc>Spezifikation der darzustellenden Tasten.</desc></param>
 			</params>
 		</syntax>
 		<desc>Steuert die grafische Darstellung der Clonk-Steuerungstasten eines Spielers in seinem Sichtfenster.<br/><br/>

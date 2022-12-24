@@ -3,18 +3,18 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>DigFreeRect</title>
 		<category>Landschaft</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>void</rtype>
+			<rtype isReference="false">void</rtype>
 			<params>
-				<param><type>int</type><name>iX</name><desc>X-Koordinate</desc></param>
-				<param><type>int</type><name>iY</name><desc>Y-Koordinate</desc></param>
-				<param><type>int</type><name>iWdt</name><desc>Breite</desc></param>
-				<param><type>int</type><name>iHgt</name><desc>Höhe</desc></param>
-				<param><type>bool</type><name>fRequest</name><desc>Gibt an, ob Erdklumpen (nochmaliges Drücken von [Graben] beim Clonk) ausgegraben werden sollen.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iX</name><desc>X-Koordinate</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iY</name><desc>Y-Koordinate</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iWdt</name><desc>Breite</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iHgt</name><desc>Höhe</desc></param>
+				<param isReference="false" isOptional="false"><type>bool</type><name>fRequest</name><desc>Gibt an, ob Erdklumpen (nochmaliges Drücken von [Graben] beim Clonk) ausgegraben werden sollen.</desc></param>
 			</params>
 		</syntax>
 		<desc>Gräbt ein rechteckiges Loch in halbfesten Materialien.</desc>

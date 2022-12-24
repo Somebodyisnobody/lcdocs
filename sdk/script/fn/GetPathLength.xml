@@ -3,29 +3,29 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>GetPathLength</title>
     <category>Landschaft</category>
     <versions><version>4.9.1.0 GWE</version></versions>
     <syntax>
-      <rtype>int</rtype>
+      <rtype isReference="false">int</rtype>
       <params>
-        <param>
+        <param isReference="false" isOptional="false">
           <type>int</type>
           <name>iFromX</name>
           <desc>X-Koordinate der Startposition</desc>
         </param>
-        <param>
+        <param isReference="false" isOptional="false">
           <type>int</type>
           <name>iFromY</name>
           <desc>Y-Koordinate der Startposition</desc>
         </param>
-        <param>
+        <param isReference="false" isOptional="false">
           <type>int</type>
           <name>iToX</name>
           <desc>X-Koordinate der Zielposition</desc>
         </param>
-        <param>
+        <param isReference="false" isOptional="false">
           <type>int</type>
           <name>iToY</name>
           <desc>Y-Koordinate der Zielposition</desc>

@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>CrewMember</title>
 		<category>Objekte/Mannschaft</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>id</type><name>id</name><desc>Zu prüfende Objektdefinition.</desc></param>
+				<param isReference="false" isOptional="false"><type>id</type><name>id</name><desc>Zu prüfende Objektdefinition.</desc></param>
 			</params>
 		</syntax>
 		<desc>Liefert den Wert von "CrewMember" aus der DefCore von id.</desc>

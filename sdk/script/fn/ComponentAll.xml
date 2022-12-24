@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>ComponentAll</title>
 		<category>Objekte/Komponenten</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>object</type><name>pObj</name><desc>Das Objekt, dessen Components geprüft werden sollen.</desc></param>
-				<param><type>id</type><name>idComponents</name><desc>ID der erwarteten Components.</desc></param>
+				<param isReference="false" isOptional="false"><type>object</type><name>pObj</name><desc>Das Objekt, dessen Components geprüft werden sollen.</desc></param>
+				<param isReference="false" isOptional="false"><type>id</type><name>idComponents</name><desc>ID der erwarteten Components.</desc></param>
 			</params>
 		</syntax>
 		<desc>Prüft, ob ein Objekt nur aus einem Objekttyp besteht.</desc>

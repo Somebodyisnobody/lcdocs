@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>GetValues</title>
     <category>Variablen</category>
     <versions><version>4.9.10.7 [334] LC</version></versions>
     <syntax>
-      <rtype>array</rtype>
+      <rtype isReference="false">array</rtype>
       <params>
-        <param><type>map</type><name>map</name><desc>map, von der die Werte abgefragt werden</desc></param>
+        <param isReference="false" isOptional="false"><type>map</type><name>map</name><desc>map, von der die Werte abgefragt werden</desc></param>
       </params>
     </syntax>
     <desc>Gibt ein Array aller zurzeit gesetzten Werte der map zurück.</desc>

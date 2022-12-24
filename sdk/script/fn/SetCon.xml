@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>SetCon</title>
     <category>Objekte/Status</category>
     <versions><version>4.9.1.0 GWE</version></versions>
     <syntax>
-      <rtype>bool</rtype>
+      <rtype isReference="false">bool</rtype>
       <params>
-        <param><type>int</type><name>iCon</name><desc>Fertigstellung/Wachstum in Prozent</desc></param>
-        <param><type>object</type><name>pObj</name><desc>Zielobjekt (bei lokalen Aufrufen Null)</desc><optional /></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iCon</name><desc>Fertigstellung/Wachstum in Prozent</desc></param>
+        <param isReference="false" isOptional="true"><type>object</type><name>pObj</name><desc>Zielobjekt (bei lokalen Aufrufen Null)</desc></param>
       </params>
     </syntax>
     <desc>Setzt die Fertigstellung eines Objekts auf den angegebenen Wert.</desc>

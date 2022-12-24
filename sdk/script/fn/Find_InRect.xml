@@ -3,17 +3,17 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>Find_InRect</title>
 		<category>Objekte/Suche</category>
 		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
-			<rtype>array</rtype>
+			<rtype isReference="false">array</rtype>
 			<params>
-				<param><type>int</type><name>iX</name><desc>X-Position der linken oberen Ecke des Suchbereiches. Bei lokalem Aufruf relativ zur Objektmitte.</desc></param>
-				<param><type>int</type><name>iY</name><desc>Y-Position der linken oberen Ecke des Suchbereiches. Bei lokalem Aufruf relativ zur Objektmitte.</desc></param>
-				<param><type>int</type><name>iWdt</name><desc>Breite des Suchbereiches</desc></param>
-				<param><type>int</type><name>iHgt</name><desc>Höhe des Suchbereiches</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iX</name><desc>X-Position der linken oberen Ecke des Suchbereiches. Bei lokalem Aufruf relativ zur Objektmitte.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iY</name><desc>Y-Position der linken oberen Ecke des Suchbereiches. Bei lokalem Aufruf relativ zur Objektmitte.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iWdt</name><desc>Breite des Suchbereiches</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iHgt</name><desc>Höhe des Suchbereiches</desc></param>
 			</params>
 		</syntax>
 		<desc>Suchkriterium: sucht alle Objekte im angegebenen Suchrechteck.</desc>

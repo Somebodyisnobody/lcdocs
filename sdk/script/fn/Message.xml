@@ -3,33 +3,31 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-    <func>
+    <func isAsync="false">
         <title>Message</title>
         <category>Nachrichten</category>
         <versions>
             <version>4.6.5.0 CP</version>
         </versions>
         <syntax>
-            <rtype>bool</rtype>
+            <rtype isReference="false">bool</rtype>
             <params>
-                <param>
+                <param isReference="false" isOptional="false">
                     <type>string</type>
                     <name>strMessage</name>
                     <desc>Nachricht, die angezeigt werden soll.</desc>
                 </param>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>object</type>
                     <name>pObj</name>
                     <desc>Objekt, über dem die Nachricht angezeigt werden soll. Wenn nicht angegeben oder 0 wird die
                         Nachricht global angezeigt.
                     </desc>
-                    <optional/>
                 </param>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>any</type>
                     <name>...</name>
                     <desc>Zusätzliche Formatierungsparameter</desc>
-                 <optional/>
                 </param>
             </params>
         </syntax>

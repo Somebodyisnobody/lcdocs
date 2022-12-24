@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>Sell</title>
 		<category>Objekte/Existenz</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>int</type><name>iPlr</name><desc>Nummer des Spielers, an den verkauft wird</desc></param>
-				<param><type>object</type><name>pObj</name><desc>Objekt, das verkauft wird. 0 bei lokalem Aufruf.</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iPlr</name><desc>Nummer des Spielers, an den verkauft wird</desc></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pObj</name><desc>Objekt, das verkauft wird. 0 bei lokalem Aufruf.</desc></param>
 			</params>
 		</syntax>
 		<desc>Verkauft ein Objekt mitsamt Inhalt.</desc>

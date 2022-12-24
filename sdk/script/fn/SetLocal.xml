@@ -3,7 +3,7 @@
 <clonkDoc xmlns="https://clonkspot.org"
 		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetLocal</title>
 		<category>Variablen</category>
 		<versions>
@@ -17,24 +17,22 @@
 			<description>Statt SetLocal sollte zum Zugriff auf Local-Variablen die Schreibweise <code><funcLink>Local</funcLink>(x) = y</code> verwendet werden.</description>
 		</deprecated>
 		<syntax>
-			<rtype>any</rtype>
-			<isReference/>
+			<rtype isReference="true">any</rtype>
 			<params>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>int</type>
 					<name>iVarIndex</name>
 					<desc>Nummer der Variable, die abgefragt werden soll. Jede nicht negative Zahl ist erlaubt.</desc>
 				</param>
-				<param>
+				<param isReference="false" isOptional="false">
 					<type>any</type>
 					<name>Value</name>
 					<desc>Neuer Wert der Variable.</desc>
 				</param>
-				<param>
+				<param isReference="false" isOptional="true">
 					<type>object</type>
 					<name>pObj</name>
 					<desc>Objekt, in der die Variable gesetzt werden soll</desc>
-					<optional/>
 				</param>
 			</params>
 		</syntax>

@@ -3,13 +3,13 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>IsRef</title>
 		<category>Variablen</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
-			<params><param><type>any</type><name>Value</name><desc>Wert, dessen Typ geprüft werden soll</desc></param></params>
+			<rtype isReference="false">bool</rtype>
+			<params><param isReference="false" isOptional="false"><type>any</type><name>Value</name><desc>Wert, dessen Typ geprüft werden soll</desc></param></params>
 		</syntax>
 		<desc><b>Diese Funktion ist derzeit defekt, siehe Änderungstabelle.</b> Prüft, ob Value eine Referenz ist.</desc>
 		<history>

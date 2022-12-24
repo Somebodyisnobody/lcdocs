@@ -3,30 +3,29 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>EffectCall</title>
     <category>Effekte</category>
     <versions><version>4.9.5.0 CE</version></versions>
     <syntax>
-      <rtype>any</rtype>
+      <rtype isReference="false">any</rtype>
       <params>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>object</type>
           <name>pTarget</name>
           <desc>Zielobjekt des Effektes, auf dessen Variablenspeicher zugegriffen wird. 0 für globale Effekte.</desc>
-          <optional />
         </param>
-        <param>
+        <param isReference="false" isOptional="false">
           <type>int</type>
           <name>iNumber</name>
           <desc>Effektnummer. Effektnummern werden an Effekt-Callbackfunktionen übergeben, sind Rückgabewert von <funcLink>AddEffect</funcLink> und lassen sich über <funcLink>GetEffect</funcLink> aus dem Effektnamen herausfinden.</desc>
         </param>
-        <param>
+        <param isReference="false" isOptional="false">
           <type>string</type>
           <name>szCommand</name>
           <desc>Aufzurufender Befehl. Es wird automatisch Fx[Effektname] vorangestellt; dies sollte nicht mit angegeben werden.</desc>
         </param>
-        <param>
+        <param isReference="false" isOptional="false">
           <type>any</type>
           <name>...</name>
           <desc>Zusätzliche Aufrufparameter</desc>

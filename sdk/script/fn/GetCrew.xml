@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>GetCrew</title>
 		<category>Objekte/Mannschaft</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>object</rtype>
+			<rtype isReference="false">object</rtype>
 			<params>
-				<param><type>int</type><name>iPlayer</name><desc>Spielernummer des Spielers, dessen Mannschaftsmitglied zurückgegeben werden soll.</desc></param>
-				<param><type>int</type><name>iIndex</name><desc>Index des Clonks in der Crew</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iPlayer</name><desc>Spielernummer des Spielers, dessen Mannschaftsmitglied zurückgegeben werden soll.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iIndex</name><desc>Index des Clonks in der Crew</desc></param>
 			</params>
 		</syntax>
 		<desc>Gibt ein Mannschaftsmitglied eines Spielers zurück.</desc>

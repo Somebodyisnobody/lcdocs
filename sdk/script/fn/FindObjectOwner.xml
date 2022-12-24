@@ -3,23 +3,23 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>FindObjectOwner</title>
 		<category>Objekte/Suche</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>object</rtype>
+			<rtype isReference="false">object</rtype>
 			<params>
-				<param><type>id</type><name>idDef</name><desc>Objekttyp</desc><optional /></param>
-				<param><type>int</type><name>iOwner</name><desc>Besitzer, den das gefundene Objekt haben soll</desc></param>
-				<param><type>int</type><name>iX</name><desc>Linke Kante der Position. Bei lokalem Aufruf Offset zum aufrufenden Objekt.</desc><optional /></param>
-				<param><type>int</type><name>iY</name><desc>Obere Kante der Position. Bei lokalem Aufruf Offset zum aufrufenden Objekt.</desc><optional /></param>
-				<param><type>int</type><name>iWdt</name><desc>Suchrechteck Breite</desc><optional /></param>
-				<param><type>int</type><name>iHgt</name><desc>Suchrechteck Höhe</desc><optional /></param>
-				<param><type>int</type><name>dwOCF</name><desc>Objektattribute. Es werden nur Objekte gefunden, die alle angegebenen Objektattribute besitzen. 0 findet alle Objekte.</desc><optional /></param>
-				<param><type>string</type><name>szAction</name><desc>Aktivität des zu findenden Objekts</desc><optional /></param>
-				<param><type>object</type><name>pActionTarget</name><desc>Aktivitätsziel, das das Objekt besitzen muss. Siehe dazu auch <funcLink>SetAction</funcLink>, <funcLink>GetActionTarget</funcLink></desc><optional /></param>
-				<param><type>object</type><name>pFindNext</name><desc>Objekt, hinter dem die Suche begonnen wird. Über diesen Parameter können in einer Schleife alle Objekte gefunden werden, die den Suchkriterien entsprechen.</desc><optional /></param>
+				<param isReference="false" isOptional="true"><type>id</type><name>idDef</name><desc>Objekttyp</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iOwner</name><desc>Besitzer, den das gefundene Objekt haben soll</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iX</name><desc>Linke Kante der Position. Bei lokalem Aufruf Offset zum aufrufenden Objekt.</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iY</name><desc>Obere Kante der Position. Bei lokalem Aufruf Offset zum aufrufenden Objekt.</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iWdt</name><desc>Suchrechteck Breite</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iHgt</name><desc>Suchrechteck Höhe</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>dwOCF</name><desc>Objektattribute. Es werden nur Objekte gefunden, die alle angegebenen Objektattribute besitzen. 0 findet alle Objekte.</desc></param>
+				<param isReference="false" isOptional="true"><type>string</type><name>szAction</name><desc>Aktivität des zu findenden Objekts</desc></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pActionTarget</name><desc>Aktivitätsziel, das das Objekt besitzen muss. Siehe dazu auch <funcLink>SetAction</funcLink>, <funcLink>GetActionTarget</funcLink></desc></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pFindNext</name><desc>Objekt, hinter dem die Suche begonnen wird. Über diesen Parameter können in einer Schleife alle Objekte gefunden werden, die den Suchkriterien entsprechen.</desc></param>
 			</params>
 		</syntax>
 		<desc>Sucht Objekte nach ihrem Besitzer und anderen Kriterien, analog zu <funcLink>FindObject</funcLink>.</desc>

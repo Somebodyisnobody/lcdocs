@@ -3,69 +3,63 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-    <func>
+    <func isAsync="false">
         <title>CustomMessage</title>
         <category>Nachrichten</category>
         <versions>
             <version>4.9.6.0 CR</version>
         </versions>
         <syntax>
-            <rtype>bool</rtype>
+            <rtype isReference="false">bool</rtype>
             <params>
-                <param>
+                <param isReference="false" isOptional="false">
                     <type>string</type>
                     <name>message</name>
                     <desc>Nachricht, die ausgegeben wird.</desc>
                 </param>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>object</type>
                     <name>obj</name>
                     <desc>Wenn ungleich 0, wird die Nachricht über dem angegebenen Objekt ausgegeben.</desc>
-                    <optional/>
                 </param>
-                <param>
+                <param isReference="false" isOptional="false">
                     <type>int</type>
                     <name>plr</name>
                     <desc>Nummer des Spielers, bei dem die Nachricht ausgegeben wird. Bei Angabe von NO_OWNER wird die
                         Nachricht für alle Spieler angezeigt.
                     </desc>
                 </param>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>int</type>
                     <name>offset_x</name>
                     <desc>x-Offset der Nachrichtenposition. Bei globalen Nachrichten ist dies die Viewportmitte. Bei
                         Objektnachrichten ist dies relativ zur Standard-Nachrichtenposition über dem Objekt. Bei
                         Portrait-Nachrichten (portrait!=0) ist das Offset relativ zur oberen, linken Viewportecke.
                     </desc>
-                    <optional/>
                 </param>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>int</type>
                     <name>offset_y</name>
                     <desc>y-Offset der Nachrichtenposition.</desc>
-                    <optional/>
                 </param>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>int</type>
                     <name>color</name>
                     <desc>Farbe der Nachricht. Bei 0 Default auf 0xffffff (weiß).</desc>
-                    <optional/>
                 </param>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>id</type>
                     <name>deco</name>
                     <desc>ID der Objektdefinition, die für Dekoration der Nachricht verwendet wird. Wenn angegeben, wird
                         die Nachricht von einem Rahmen umgeben. Nur gültig bei angegebenem Portrait.
                     </desc>
-                    <optional/>
                 </param>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>string</type>
                     <name>portrait</name>
                     <desc>Bildspezifikation für ein Bild links neben der Nachricht im Dekorationsrahmen.</desc>
-                    <optional/>
                 </param>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>int</type>
                     <name>flags</name>
                     <desc>Bitmaske zusätzlicher Optionen. Mögliche Werte:
@@ -164,13 +158,11 @@
                             </row>
                         </table>
                     </desc>
-                    <optional/>
                 </param>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>int</type>
                     <name>iHSize</name>
                     <desc>Breite des Textes in Pixeln.</desc>
-                    <optional/>
                 </param>
             </params>
         </syntax>

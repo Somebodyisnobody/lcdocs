@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetRestoreInfos</title>
 		<category>System</category>
 		<versions><version>4.9.10.10 [341] LC</version></versions>
 		<syntax>
-			<rtype>void</rtype>
+			<rtype isReference="false">void</rtype>
 			<params>
-				<param><type>int</type><name>what</name>
+				<param isReference="false" isOptional="false"><type>int</type><name>what</name>
 					<desc>Bit-Maske der wiederherzustellenden Dinge:
 						<table activateBitmask="false" bitmaskName="">
 							<rowh><col>Name</col><col>Beschreibung</col></rowh>

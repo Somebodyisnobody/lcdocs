@@ -3,18 +3,18 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>Fling</title>
 		<category>Objekte/Bewegung</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>object</type><name>pObj</name><desc>Objekt, das weggeschleudert wird. Muss angegeben werden.</desc></param>
-				<param><type>int</type><name>iXDir</name><desc>X-Schleudergeschwindigkeit</desc></param>
-				<param><type>int</type><name>iYDir</name><desc>Y-Schleudergeschwindigkeit</desc></param>
-				<param><type>int</type><name>iPrec</name><desc>Genauigkeit. Keine Angabe oder 0 entspricht 1.</desc><optional /></param>
-				<param><type>bool</type><name>fAddSpeed</name><desc>Wenn true, wird die Geschwindigkeit des Objektes hinzuaddiert.</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>object</type><name>pObj</name><desc>Objekt, das weggeschleudert wird. Muss angegeben werden.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iXDir</name><desc>X-Schleudergeschwindigkeit</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iYDir</name><desc>Y-Schleudergeschwindigkeit</desc></param>
+				<param isReference="false" isOptional="true"><type>int</type><name>iPrec</name><desc>Genauigkeit. Keine Angabe oder 0 entspricht 1.</desc></param>
+				<param isReference="false" isOptional="true"><type>bool</type><name>fAddSpeed</name><desc>Wenn true, wird die Geschwindigkeit des Objektes hinzuaddiert.</desc></param>
 			</params>
 		</syntax>
 		<desc>Verschleudert pObj in die angegebene Richtung. Diese Funktion ist für Lebewesen konzipiert, da sie die entsprechenden Aktivitäten setzt. Sie löscht zusätzlich den Killer des Objektes.</desc>

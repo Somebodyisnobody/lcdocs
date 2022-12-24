@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>GetSkyAdjust</title>
 		<category>Himmel</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>int</rtype>
+			<rtype isReference="false">int</rtype>
 			<params>
-				<param><type>bool</type><name>fBackColor</name><desc>Wenn ungleich 0, wird die in SetSkyAdjust angegebene Zweitfarbe zurückgegeben.</desc></param>
+				<param isReference="false" isOptional="false"><type>bool</type><name>fBackColor</name><desc>Wenn ungleich 0, wird die in SetSkyAdjust angegebene Zweitfarbe zurückgegeben.</desc></param>
 			</params>
 		</syntax>
 		<desc>Gibt die mit <funcLink>SetSkyAdjust</funcLink> gesetzte Himmelsmodulation zurück. Für weitere Informationen siehe <funcLink>SetSkyAdjust</funcLink></desc>

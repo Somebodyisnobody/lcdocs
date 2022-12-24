@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>TestMessageBoard</title>
 		<category>Interface</category>
 		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>int</type><name>iPlr</name><desc>Spieler, für den getestet werden soll.</desc></param>
-				<param><type>bool</type><name>fTestIfInUse</name><desc>Gibt an, ob auch wirklich getestet werden soll.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iPlr</name><desc>Spieler, für den getestet werden soll.</desc></param>
+				<param isReference="false" isOptional="false"><type>bool</type><name>fTestIfInUse</name><desc>Gibt an, ob auch wirklich getestet werden soll.</desc></param>
 			</params>
 		</syntax>
 		<desc>Testet ob eine Eingabezeile (aufgerufen mit <funcLink>CallMessageBoard</funcLink>) existiert. Es gibt auch true zurück, wenn CallMessageBoard aufgerufen wurde, aber es noch nicht angezeigt wird.</desc>

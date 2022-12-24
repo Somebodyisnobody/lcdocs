@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>CastInt</title>
 		<category>Variablen</category>
 		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
-			<rtype>int</rtype>
+			<rtype isReference="false">int</rtype>
 			<params>
-				<param><type>any</type><name>Value</name><desc>Zu konvertierende Daten.</desc></param>
+				<param isReference="false" isOptional="false"><type>any</type><name>Value</name><desc>Zu konvertierende Daten.</desc></param>
 			</params>
 		</syntax>
 		<desc>Wandelt einen Wert in einen Integer um.</desc>

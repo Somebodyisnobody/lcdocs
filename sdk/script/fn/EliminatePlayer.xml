@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>EliminatePlayer</title>
 		<category>Spieler</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>int</type><name>iPlr</name><desc>Spielernummer des zu eliminierenden Spielers</desc></param>
-				<param><type>bool</type><name>fQuiet</name><desc>Wenn true, wird keine Nachricht und kein Sound ausgegeben. Weiterhin wird die Spielerdatei nicht abgespeichert, analog zu einem Verbindungsabbruch bei einem Netzwerkspiel. Außerdem wird die übliche Wartezeit zwischen Aufruf und endgültigem Entfernen übersprungen.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iPlr</name><desc>Spielernummer des zu eliminierenden Spielers</desc></param>
+				<param isReference="false" isOptional="false"><type>bool</type><name>fQuiet</name><desc>Wenn true, wird keine Nachricht und kein Sound ausgegeben. Weiterhin wird die Spielerdatei nicht abgespeichert, analog zu einem Verbindungsabbruch bei einem Netzwerkspiel. Außerdem wird die übliche Wartezeit zwischen Aufruf und endgültigem Entfernen übersprungen.</desc></param>
 			</params>
 		</syntax>
 		<desc>Eliminiert einen Spieler. Die Runde gilt für diesen Spieler als verloren.</desc>

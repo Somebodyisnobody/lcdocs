@@ -3,44 +3,44 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>LaunchLightning</title>
     <category>Umwelt/Wetter</category>
     <versions><version>4.6.5.0 CP</version><extversion>4.9.1.0 GWE</extversion></versions>
     <syntax>
-      <rtype>bool</rtype>
+      <rtype isReference="false">bool</rtype>
       <params>
-        <param>
+        <param isReference="false" isOptional="false">
           <type>int</type>
           <name>iX</name>
           <desc>X-Zielposition</desc>
         </param>
-        <param>
+        <param isReference="false" isOptional="false">
           <type>int</type>
           <name>iY</name>
           <desc>Y-Zielposition</desc>
         </param>
-        <param>
+        <param isReference="false" isOptional="false">
           <type>int</type>
           <name>iXAdvance</name>
           <desc>horizontale mittlere Geschwindigkeit des Blitzes</desc>
         </param>
-        <param>
+        <param isReference="false" isOptional="false">
           <type>int</type>
           <name>iXRange</name>
           <desc>maximale Abweichung von iXAdvance</desc>
         </param>
-        <param>
+        <param isReference="false" isOptional="false">
           <type>int</type>
           <name>iYAdvance</name>
           <desc>vertikale mittlere Geschwindigkeit des Blitzes</desc>
         </param>
-        <param>
+        <param isReference="false" isOptional="false">
           <type>int</type>
           <name>iYRange</name>
           <desc>maximale Abweichung von iYAdvance</desc>
         </param>
-        <param>
+        <param isReference="false" isOptional="false">
           <type>bool</type>
           <name>fDoGamma</name>
           <desc>Wenn gesetzt, bewirkt dieser Blitz ein Aufflackern des Bildschirms bei allen Spielern.</desc>

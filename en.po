@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-24 13:49+0100\n"
+"POT-Creation-Date: 2022-12-24 17:09+0100\n"
 "PO-Revision-Date: 2022-12-24 13:46+0100\n"
 "Last-Translator: Funni <funni.clonk@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -51,7 +51,7 @@ msgid "Folgende Operatoren werden unterstützt:"
 msgstr "The following operators are supported:"
 
 #: sdk/script/operatoren.xml:18(col)
-#: sdk/script/fn/GetEffect.xml:53(col)
+#: sdk/script/fn/GetEffect.xml:48(col)
 #: sdk/script/Effects.xml:175(col)
 msgid "Priorität"
 msgstr "Priority"
@@ -64,17 +64,17 @@ msgstr "Operator"
 #: sdk/script/fn/Sort_.xml:12(col)
 #: sdk/script/fn/SetRestoreInfos.xml:16(col)
 #: sdk/script/fn/SetObjectStatus.xml:15(col)
-#: sdk/script/fn/SetCommand.xml:69(col)
+#: sdk/script/fn/SetCommand.xml:63(col)
 #: sdk/script/fn/LoadScenarioSection.xml:16(col)
 #: sdk/script/fn/GetVertex.xml:16(col)
 #: sdk/script/fn/GetPlayerType.xml:17(col)
 #: sdk/script/fn/GetPath.xml:41(col)
 #: sdk/script/fn/GetPath.xml:48(col)
-#: sdk/script/fn/CustomMessage.xml:76(col)
-#: sdk/script/fn/CreateScriptPlayer.xml:17(col)
+#: sdk/script/fn/CustomMessage.xml:70(col)
+#: sdk/script/fn/CreateScriptPlayer.xml:19(col)
 #: sdk/script/fn/AddMsgBoardCmd.xml:17(col)
-#: sdk/script/fn/AddMenuItem.xml:29(col)
-#: sdk/script/fn/AddCommand.xml:83(col)
+#: sdk/script/fn/AddMenuItem.xml:30(col)
+#: sdk/script/fn/AddCommand.xml:76(col)
 #: sdk/scenario/scenario.xml:25(col)
 #: sdk/scenario/scenario.xml:150(col)
 #: sdk/scenario/scenario.xml:252(col)
@@ -739,8 +739,8 @@ msgstr "reference, reference/any"
 #: sdk/script/operatoren.xml:369(col)
 #: sdk/script/fn/SetPlrMagic.xml:21(emLink)
 #: sdk/script/fn/SetPlrMagic.xml:22(emLink)
-#: sdk/script/fn/LocalN.xml:29(emLink)
-#: sdk/script/fn/LocalN.xml:34(emLink)
+#: sdk/script/fn/LocalN.xml:28(emLink)
+#: sdk/script/fn/LocalN.xml:33(emLink)
 msgid "="
 msgstr "="
 
@@ -993,7 +993,7 @@ msgstr "With the AND operator, the resulting bit will only be 1 if both incoming
 #: sdk/script/operatoren.xml:638(col)
 #: sdk/script/fn/SetRGBaValue.xml:22(col)
 #: sdk/script/fn/SetPlrShowControl.xml:21(col)
-#: sdk/script/fn/SetPhysical.xml:17(col)
+#: sdk/script/fn/SetPhysical.xml:19(col)
 #: sdk/script/fn/SetObjectStatus.xml:16(col)
 #: sdk/script/fn/SetGraphics.xml:21(col)
 #: sdk/script/fn/SetGamma.xml:24(col)
@@ -1001,14 +1001,14 @@ msgstr "With the AND operator, the resulting bit will only be 1 if both incoming
 #: sdk/script/fn/GetSystemTime.xml:21(col)
 #: sdk/script/fn/GetRGBaValue.xml:21(col)
 #: sdk/script/fn/GetPlrControlName.xml:17(col)
-#: sdk/script/fn/GetEffect.xml:51(col)
+#: sdk/script/fn/GetEffect.xml:46(col)
 #: sdk/script/fn/DoRGBaValue.xml:22(col)
-#: sdk/script/fn/CustomMessage.xml:79(col)
-#: sdk/script/fn/CreateScriptPlayer.xml:18(col)
+#: sdk/script/fn/CustomMessage.xml:73(col)
+#: sdk/script/fn/CreateScriptPlayer.xml:20(col)
 #: sdk/script/fn/CreateMenu.xml:19(col)
 #: sdk/script/fn/CreateMenu.xml:33(col)
 #: sdk/script/fn/AddMsgBoardCmd.xml:18(col)
-#: sdk/script/fn/AddCommand.xml:88(col)
+#: sdk/script/fn/AddCommand.xml:81(col)
 #: sdk/script/Effects.xml:494(col)
 #: sdk/script/Effects.xml:535(col)
 #: sdk/scenario/basefunc.xml:14(col)
@@ -1040,7 +1040,7 @@ msgstr "0"
 #: sdk/script/fn/SetRGBaValue.xml:23(col)
 #: sdk/script/fn/SetPlrShowControl.xml:22(col)
 #: sdk/script/fn/SetPlrShowCommand.xml:22(col)
-#: sdk/script/fn/SetPhysical.xml:18(col)
+#: sdk/script/fn/SetPhysical.xml:20(col)
 #: sdk/script/fn/SetObjectStatus.xml:17(col)
 #: sdk/script/fn/SetObjectBlitMode.xml:21(col)
 #: sdk/script/fn/SetGraphics.xml:22(col)
@@ -1052,14 +1052,14 @@ msgstr "0"
 #: sdk/script/fn/GetRGBaValue.xml:22(col)
 #: sdk/script/fn/GetPlrControlName.xml:18(col)
 #: sdk/script/fn/GetPlayerType.xml:18(col)
-#: sdk/script/fn/GetEffect.xml:52(col)
+#: sdk/script/fn/GetEffect.xml:47(col)
 #: sdk/script/fn/DoRGBaValue.xml:23(col)
-#: sdk/script/fn/CustomMessage.xml:86(col)
-#: sdk/script/fn/CreateScriptPlayer.xml:19(col)
+#: sdk/script/fn/CustomMessage.xml:80(col)
+#: sdk/script/fn/CreateScriptPlayer.xml:21(col)
 #: sdk/script/fn/CreateMenu.xml:20(col)
 #: sdk/script/fn/CreateMenu.xml:34(col)
 #: sdk/script/fn/AddMsgBoardCmd.xml:19(col)
-#: sdk/script/fn/AddCommand.xml:111(col)
+#: sdk/script/fn/AddCommand.xml:104(col)
 #: sdk/script/Effects.xml:186(col)
 #: sdk/script/Effects.xml:495(col)
 #: sdk/script/Effects.xml:536(col)
@@ -1594,30 +1594,30 @@ msgstr "Objects/Vertices"
 
 #: sdk/script/fn/VerticesStuck.xml:17(desc)
 #: sdk/script/fn/SetVertexXY.xml:35(desc)
-#: sdk/script/fn/SetCommand.xml:71(col)
-#: sdk/script/fn/SetCommand.xml:72(col)
-#: sdk/script/fn/SetCommand.xml:73(col)
+#: sdk/script/fn/SetCommand.xml:65(col)
+#: sdk/script/fn/SetCommand.xml:66(col)
+#: sdk/script/fn/SetCommand.xml:67(col)
+#: sdk/script/fn/SetCommand.xml:68(col)
+#: sdk/script/fn/SetCommand.xml:69(col)
 #: sdk/script/fn/SetCommand.xml:74(col)
-#: sdk/script/fn/SetCommand.xml:75(col)
-#: sdk/script/fn/SetCommand.xml:80(col)
+#: sdk/script/fn/SetCommand.xml:78(col)
+#: sdk/script/fn/SetCommand.xml:82(col)
+#: sdk/script/fn/SetCommand.xml:83(col)
 #: sdk/script/fn/SetCommand.xml:84(col)
+#: sdk/script/fn/SetCommand.xml:85(col)
+#: sdk/script/fn/SetCommand.xml:87(col)
 #: sdk/script/fn/SetCommand.xml:88(col)
 #: sdk/script/fn/SetCommand.xml:89(col)
 #: sdk/script/fn/SetCommand.xml:90(col)
-#: sdk/script/fn/SetCommand.xml:91(col)
-#: sdk/script/fn/SetCommand.xml:93(col)
 #: sdk/script/fn/SetCommand.xml:94(col)
-#: sdk/script/fn/SetCommand.xml:95(col)
-#: sdk/script/fn/SetCommand.xml:96(col)
+#: sdk/script/fn/SetCommand.xml:98(col)
+#: sdk/script/fn/SetCommand.xml:99(col)
 #: sdk/script/fn/SetCommand.xml:100(col)
+#: sdk/script/fn/SetCommand.xml:101(col)
+#: sdk/script/fn/SetCommand.xml:102(col)
+#: sdk/script/fn/SetCommand.xml:103(col)
 #: sdk/script/fn/SetCommand.xml:104(col)
-#: sdk/script/fn/SetCommand.xml:105(col)
-#: sdk/script/fn/SetCommand.xml:106(col)
-#: sdk/script/fn/SetCommand.xml:107(col)
-#: sdk/script/fn/SetCommand.xml:108(col)
-#: sdk/script/fn/SetCommand.xml:109(col)
 #: sdk/script/fn/SetCommand.xml:110(col)
-#: sdk/script/fn/SetCommand.xml:116(col)
 msgid "Zielobjekt"
 msgstr "Target object"
 
@@ -1632,7 +1632,7 @@ msgstr "Removes obj if one if its vertices is stuck"
 #: sdk/script/fn/VarN.xml:8(category)
 #: sdk/script/fn/Var.xml:8(category)
 #: sdk/script/fn/SetVar.xml:8(category)
-#: sdk/script/fn/SetLocal.xml:8(category)
+#: sdk/script/fn/SetLocal.xml:9(category)
 #: sdk/script/fn/SetGlobal.xml:8(category)
 #: sdk/script/fn/LocalN.xml:8(category)
 #: sdk/script/fn/Local.xml:8(category)
@@ -1658,23 +1658,23 @@ msgstr "Removes obj if one if its vertices is stuck"
 msgid "Variablen"
 msgstr "Variables"
 
-#: sdk/script/fn/VarN.xml:17(desc)
-#: sdk/script/fn/LocalN.xml:20(desc)
+#: sdk/script/fn/VarN.xml:16(desc)
+#: sdk/script/fn/LocalN.xml:19(desc)
 msgid "Name der Variablen, zu der eine Referenz zurückgegeben werden soll"
 msgstr "Name of the variable to which a reference is to be returned"
 
-#: sdk/script/fn/VarN.xml:22(desc)
-#: sdk/script/fn/Var.xml:29(desc)
+#: sdk/script/fn/VarN.xml:21(desc)
+#: sdk/script/fn/Var.xml:28(desc)
 msgid "Gibt eine Referenz auf eine funktionslokale Variable zurück. Diese Referenz kann zum Lesen und Schreiben benutzt werden."
 msgstr "Returns a reference to a function local variable. This reference can be used for reading or writing."
 
-#: sdk/script/fn/VarN.xml:28(text)
+#: sdk/script/fn/VarN.xml:27(text)
 msgid "Setzt eine zufällige, threadlokale Variable auf einen zufälligen Wert."
 msgstr "Sets a randomly chosen thread local variable to a random value."
 
-#: sdk/script/fn/VarN.xml:33(emLink)
-#: sdk/script/fn/LocalN.xml:45(emLink)
-#: sdk/script/fn/GlobalN.xml:19(emLink)
+#: sdk/script/fn/VarN.xml:32(emLink)
+#: sdk/script/fn/LocalN.xml:44(emLink)
+#: sdk/script/fn/GlobalN.xml:18(emLink)
 #: sdk/script/NamedVar.xml:7(title)
 #: sdk/script/NamedVar.xml:9(h)
 msgid "Benannte Variablen"
@@ -1687,15 +1687,15 @@ msgstr "Named Variables"
 msgid "Bereits in der Entwicklerdokumentation von clonk.de als veraltet markiert. Damit spätestens seit 4.9.10.7 [330] CR veraltet."
 msgstr "Already marked as deprecated in the developer documentation of clonk.de. Thus deprecated at least since 4.9.10.7 [330] CR."
 
-#: sdk/script/fn/Var.xml:25(desc)
+#: sdk/script/fn/Var.xml:24(desc)
 msgid "Index der Variable, zu der eine Referenz zurückgegeben werden soll."
 msgstr "Index of the variable to which a reference is to be returned."
 
-#: sdk/script/fn/Var.xml:30(remark)
+#: sdk/script/fn/Var.xml:29(remark)
 msgid "Normalerweise sollten statt dieser Funktion <emLink href=\"script/NamedVar.html\">benannte</emLink>, Thread-lokale Variablen (var) benutzt werden. Manchmal ist die Funktion jedoch praktisch, um lokale Arrays zu emulieren."
 msgstr "Normally, instead of this function <emLink href=\"script/NamedVar.html\">named</emLink>, thread-local variables (var) should be used. However, sometimes the function is handy to emulate local arrays."
 
-#: sdk/script/fn/Var.xml:69(text)
+#: sdk/script/fn/Var.xml:68(text)
 msgid "Berechnet pi auf 800 Stellen genau und gibt den Wert in zwei Logzeilen aus."
 msgstr "Calculates pi exact to 800 decimals and returns the value in two log entries."
 
@@ -1811,7 +1811,7 @@ msgid "Beispiel aus der System.c4g: Trainiert bei einem erfolgreichen Zauber die
 msgstr "Example from System.c4g: improves the sorcerer's magic physical value after each successfull spell. It is ensured that the physical value will not surpass the maximum limit specified in MaxMagicPhysical() of the definition."
 
 #: sdk/script/fn/TrainPhysical.xml:45(emLink)
-#: sdk/script/fn/SetPhysical.xml:52(emLink)
+#: sdk/script/fn/SetPhysical.xml:57(emLink)
 msgid "DefCore.txt, [Physical]"
 msgstr "DefCore.txt, [Physical]"
 
@@ -2107,9 +2107,9 @@ msgstr "The Sort_Value function is used to sort search results from <placeholder
 #: sdk/script/fn/Sort_Value.xml:20(text)
 #: sdk/script/fn/Sort_Speed.xml:20(text)
 #: sdk/script/fn/Sort_Random.xml:20(text)
-#: sdk/script/fn/Sort_Multiple.xml:33(text)
+#: sdk/script/fn/Sort_Multiple.xml:32(text)
 #: sdk/script/fn/Sort_Mass.xml:20(text)
-#: sdk/script/fn/Sort_Func.xml:33(text)
+#: sdk/script/fn/Sort_Func.xml:32(text)
 #: sdk/script/fn/Sort_Distance.xml:34(text)
 msgid "Hier könnte Ihre Funktionsbeschreibung stehen"
 msgstr ""
@@ -2139,7 +2139,7 @@ msgstr "The Sort_Random function is used to sort search results from <placeholde
 msgid "Weitere Sortierspezifikationen."
 msgstr "Further sorting specifications."
 
-#: sdk/script/fn/Sort_Multiple.xml:29(desc)
+#: sdk/script/fn/Sort_Multiple.xml:28(desc)
 msgid "Die Sort_Multiple Funktion dient dem Sortieren von Suchergebnissen von <placeholder-1/>. Sie sortiert nacheinander nach allen angegebenen Sortierspezifikationen, bis die erste keine Gleichheit ergibt."
 msgstr "The Sort_Multiple function is used to sort search results from <placeholder-1/>. It sorts successively according to all specified sort specifications until the first one does not return equality."
 
@@ -2155,7 +2155,7 @@ msgstr "The search function."
 msgid "Weitere Suchfunktionen."
 msgstr "Further search functions."
 
-#: sdk/script/fn/Sort_Func.xml:29(desc)
+#: sdk/script/fn/Sort_Func.xml:28(desc)
 msgid "Die Sort_Func Funktion dient dem Sortieren von Suchergebnissen von <placeholder-1/>. Sie sortiert nach dem Rückgabewert einer Funktion."
 msgstr "The Sort_Func function is used to sort search results from <placeholder-1/>. It sorts according to the return value of a function."
 
@@ -2187,10 +2187,10 @@ msgstr "The Sort_* functions are used to sort the results of <placeholder-1/>."
 #: sdk/script/fn/GetVertex.xml:16(col)
 #: sdk/script/fn/GetTeamConfig.xml:17(col)
 #: sdk/script/fn/GetPlrControlName.xml:16(col)
-#: sdk/script/fn/GetEffect.xml:52(col)
+#: sdk/script/fn/GetEffect.xml:47(col)
 #: sdk/script/fn/AddMsgBoardCmd.xml:17(col)
-#: sdk/script/fn/AddMenuItem.xml:29(col)
-#: sdk/script/fn/AddCommand.xml:82(col)
+#: sdk/script/fn/AddMenuItem.xml:30(col)
+#: sdk/script/fn/AddCommand.xml:75(col)
 #: sdk/scenario/Teams.xml:85(col)
 #: sdk/particle/index.xml:37(col)
 #: sdk/material/c4m.xml:21(col)
@@ -2752,17 +2752,17 @@ msgstr "Desired X offset of the vertex"
 msgid "Gewünschte Y-Position des Vertices"
 msgstr "Desired Y offset of the vertex"
 
-#: sdk/script/fn/SetVertexXY.xml:41(desc)
+#: sdk/script/fn/SetVertexXY.xml:40(desc)
 msgid "Setzt X und Y eines Vertices zugleich"
 msgstr "Sets both X and Y position of a vertex"
 
-#: sdk/script/fn/SetVertexXY.xml:43(remark)
+#: sdk/script/fn/SetVertexXY.xml:42(remark)
 #: sdk/script/fn/RemoveVertex.xml:18(remark)
 #: sdk/script/fn/AddVertex.xml:19(remark)
 msgid "Achtung: Bei jeder Vertexaktualisierung (also beispielsweise dann, wenn sich Fertigstellungswert oder Rotation eines Objekts ändern) werden alle Vertices wieder auf die Definitionswerte zurückgesetzt."
 msgstr "Notice: with any vertex updated caused by stretching or rotation of the object (e.g. building or growth) the vertices will be reset to their original defined position unless a special vertex mode is selected."
 
-#: sdk/script/fn/SetVertexXY.xml:48(text)
+#: sdk/script/fn/SetVertexXY.xml:47(text)
 msgid "Setzt die Position des 3. Vertices des ersten Clonks des ersten Spielers auf -5/-10"
 msgstr "Sets the third vertex of the first clonk of the first player to -5/-10"
 
@@ -3180,7 +3180,7 @@ msgstr "Red value"
 #: sdk/script/fn/SetRGBaValue.xml:24(col)
 #: sdk/script/fn/SetPlrShowControl.xml:23(col)
 #: sdk/script/fn/SetPlrShowCommand.xml:23(col)
-#: sdk/script/fn/SetPhysical.xml:19(col)
+#: sdk/script/fn/SetPhysical.xml:21(col)
 #: sdk/script/fn/SetObjectStatus.xml:18(col)
 #: sdk/script/fn/SetObjectBlitMode.xml:22(col)
 #: sdk/script/fn/SetGraphics.xml:23(col)
@@ -3192,14 +3192,14 @@ msgstr "Red value"
 #: sdk/script/fn/GetRGBaValue.xml:23(col)
 #: sdk/script/fn/GetPlrControlName.xml:19(col)
 #: sdk/script/fn/GetPlayerType.xml:19(col)
-#: sdk/script/fn/GetEffect.xml:53(col)
+#: sdk/script/fn/GetEffect.xml:48(col)
 #: sdk/script/fn/DoRGBaValue.xml:24(col)
-#: sdk/script/fn/CustomMessage.xml:95(col)
-#: sdk/script/fn/CreateScriptPlayer.xml:20(col)
+#: sdk/script/fn/CustomMessage.xml:89(col)
+#: sdk/script/fn/CreateScriptPlayer.xml:22(col)
 #: sdk/script/fn/CreateMenu.xml:21(col)
 #: sdk/script/fn/CreateMenu.xml:35(col)
 #: sdk/script/fn/AddMsgBoardCmd.xml:20(col)
-#: sdk/script/fn/AddCommand.xml:104(col)
+#: sdk/script/fn/AddCommand.xml:97(col)
 #: sdk/script/Effects.xml:496(col)
 #: sdk/script/Effects.xml:537(col)
 #: sdk/scenario/basefunc.xml:16(col)
@@ -3223,7 +3223,7 @@ msgstr "Green value"
 #: sdk/script/fn/SetRGBaValue.xml:25(col)
 #: sdk/script/fn/SetPlrShowControl.xml:24(col)
 #: sdk/script/fn/SetPlrShowCommand.xml:24(col)
-#: sdk/script/fn/SetPhysical.xml:20(col)
+#: sdk/script/fn/SetPhysical.xml:22(col)
 #: sdk/script/fn/SetGraphics.xml:24(col)
 #: sdk/script/fn/SetGamma.xml:27(col)
 #: sdk/script/fn/GetVertex.xml:20(col)
@@ -3231,13 +3231,13 @@ msgstr "Green value"
 #: sdk/script/fn/GetSystemTime.xml:24(col)
 #: sdk/script/fn/GetRGBaValue.xml:24(col)
 #: sdk/script/fn/GetPlrControlName.xml:20(col)
-#: sdk/script/fn/GetEffect.xml:54(col)
+#: sdk/script/fn/GetEffect.xml:49(col)
 #: sdk/script/fn/DoRGBaValue.xml:25(col)
-#: sdk/script/fn/CustomMessage.xml:100(col)
-#: sdk/script/fn/CreateScriptPlayer.xml:21(col)
+#: sdk/script/fn/CustomMessage.xml:94(col)
+#: sdk/script/fn/CreateScriptPlayer.xml:23(col)
 #: sdk/script/fn/CreateMenu.xml:22(col)
 #: sdk/script/fn/CreateMenu.xml:36(col)
-#: sdk/script/fn/AddCommand.xml:95(col)
+#: sdk/script/fn/AddCommand.xml:88(col)
 #: sdk/script/Effects.xml:497(col)
 #: sdk/script/Effects.xml:538(col)
 #: sdk/scenario/basefunc.xml:20(col)
@@ -3325,7 +3325,7 @@ msgid "Objekte/Darstellung"
 msgstr "Objects/Representation"
 
 #: sdk/script/fn/SetPortrait.xml:16(col)
-#: sdk/script/fn/SetPhysical.xml:16(col)
+#: sdk/script/fn/SetPhysical.xml:18(col)
 #: sdk/script/fn/SetObjectStatus.xml:15(col)
 #: sdk/script/fn/SetObjectBlitMode.xml:20(col)
 #: sdk/script/fn/SetGraphics.xml:20(col)
@@ -3333,7 +3333,7 @@ msgstr "Objects/Representation"
 #: sdk/script/fn/GetVertex.xml:16(col)
 #: sdk/script/fn/GetPlrControlName.xml:16(col)
 #: sdk/script/fn/GetPlayerType.xml:17(col)
-#: sdk/script/fn/GetEffect.xml:50(col)
+#: sdk/script/fn/GetEffect.xml:45(col)
 #: sdk/script/fn/CreateMenu.xml:18(col)
 #: sdk/script/fn/CreateMenu.xml:21(col)
 #: sdk/script/fn/CreateMenu.xml:32(col)
@@ -3368,7 +3368,7 @@ msgstr "Value"
 #: sdk/script/fn/SetPortrait.xml:16(col)
 #: sdk/script/fn/SetPlrShowControl.xml:20(col)
 #: sdk/script/fn/SetPlrShowCommand.xml:21(col)
-#: sdk/script/fn/SetPhysical.xml:16(col)
+#: sdk/script/fn/SetPhysical.xml:18(col)
 #: sdk/script/fn/SetObjectBlitMode.xml:20(col)
 #: sdk/script/fn/Format.xml:22(col)
 #: sdk/script/Effects.xml:434(col)
@@ -3528,8 +3528,8 @@ msgstr "Throw"
 #: sdk/script/fn/GetTeamConfig.xml:21(col)
 #: sdk/script/fn/GetSystemTime.xml:25(col)
 #: sdk/script/fn/GetPlrControlName.xml:21(col)
-#: sdk/script/fn/GetEffect.xml:55(col)
-#: sdk/script/fn/CustomMessage.xml:108(col)
+#: sdk/script/fn/GetEffect.xml:50(col)
+#: sdk/script/fn/CustomMessage.xml:102(col)
 #: sdk/script/fn/CreateMenu.xml:23(col)
 #: sdk/script/Effects.xml:498(col)
 #: sdk/scenario/basefunc.xml:18(col)
@@ -3555,8 +3555,8 @@ msgstr "Jump"
 #: sdk/script/fn/GetTeamConfig.xml:22(col)
 #: sdk/script/fn/GetSystemTime.xml:26(col)
 #: sdk/script/fn/GetPlrControlName.xml:22(col)
-#: sdk/script/fn/GetEffect.xml:56(col)
-#: sdk/script/fn/CustomMessage.xml:116(col)
+#: sdk/script/fn/GetEffect.xml:51(col)
+#: sdk/script/fn/CustomMessage.xml:110(col)
 #: sdk/script/fn/CreateMenu.xml:24(col)
 #: sdk/scenario/basefunc.xml:24(col)
 #: sdk/definition/lineconnect.xml:25(col)
@@ -3578,8 +3578,8 @@ msgstr "Dig"
 #: sdk/script/fn/GetTeamConfig.xml:23(col)
 #: sdk/script/fn/GetSystemTime.xml:27(col)
 #: sdk/script/fn/GetPlrControlName.xml:23(col)
-#: sdk/script/fn/GetEffect.xml:57(col)
-#: sdk/script/fn/CustomMessage.xml:124(col)
+#: sdk/script/fn/GetEffect.xml:52(col)
+#: sdk/script/fn/CustomMessage.xml:118(col)
 #: sdk/script/fn/CreateMenu.xml:25(col)
 #: sdk/definition/lineconnect.xml:27(col)
 #: sdk/definition/cnat.xml:32(col)
@@ -3598,7 +3598,7 @@ msgstr "Left"
 #: sdk/script/fn/GetTeamConfig.xml:24(col)
 #: sdk/script/fn/GetSystemTime.xml:28(col)
 #: sdk/script/fn/GetPlrControlName.xml:24(col)
-#: sdk/script/fn/CustomMessage.xml:131(col)
+#: sdk/script/fn/CustomMessage.xml:125(col)
 #: sdk/script/fn/CreateMenu.xml:26(col)
 #: sdk/material/c4m.xml:335(col)
 #: sdk/definition/lineconnect.xml:29(col)
@@ -3615,7 +3615,7 @@ msgstr "Stop"
 #: sdk/script/fn/SetPlrShowCommand.xml:29(col)
 #: sdk/script/fn/SetObjectBlitMode.xml:24(col)
 #: sdk/script/fn/GetPlrControlName.xml:25(col)
-#: sdk/script/fn/CustomMessage.xml:138(col)
+#: sdk/script/fn/CustomMessage.xml:132(col)
 #: sdk/scenario/basefunc.xml:20(col)
 #: sdk/material/c4m.xml:336(col)
 #: sdk/definition/lineconnect.xml:21(col)
@@ -3633,7 +3633,7 @@ msgstr "Right"
 
 #: sdk/script/fn/SetPlrShowControl.xml:30(col)
 #: sdk/script/fn/GetPlrControlName.xml:26(col)
-#: sdk/script/fn/CustomMessage.xml:143(col)
+#: sdk/script/fn/CustomMessage.xml:137(col)
 #: sdk/material/c4m.xml:337(col)
 #: sdk/definition/category.xml:64(col)
 msgid "9"
@@ -3713,8 +3713,8 @@ msgstr "Adds or removes a magic spell to or from the list of available spells of
 
 #: sdk/script/fn/SetPlrMagic.xml:21(emLink)
 #: sdk/script/fn/SetPlrMagic.xml:22(emLink)
-#: sdk/script/fn/LocalN.xml:28(emLink)
-#: sdk/script/fn/FinishCommand.xml:39(emLink)
+#: sdk/script/fn/LocalN.xml:27(emLink)
+#: sdk/script/fn/FinishCommand.xml:38(emLink)
 msgid "var"
 msgstr "var"
 
@@ -3864,66 +3864,67 @@ msgstr "Global function: changes the picture of pObj to that of another object (
 msgid "0-100000: Neuer Wert für diese Eigenschaft"
 msgstr "0-100000: new value for the property"
 
-#: sdk/script/fn/SetPhysical.xml:16(col)
+#: sdk/script/fn/SetPhysical.xml:18(col)
 #: sdk/script/fn/SetObjectBlitMode.xml:20(col)
 #: sdk/script/fn/SetGraphics.xml:20(col)
 #: sdk/script/fn/GetPlayerType.xml:17(col)
-#: sdk/script/fn/CustomMessage.xml:75(col)
-#: sdk/script/fn/CreateScriptPlayer.xml:17(col)
+#: sdk/script/fn/CustomMessage.xml:69(col)
+#: sdk/script/fn/CreateScriptPlayer.xml:19(col)
 #: sdk/script/fn/CreateMenu.xml:18(col)
 #: sdk/script/fn/CreateMenu.xml:32(col)
 msgid "Konstante"
 msgstr "Constant"
 
-#: sdk/script/fn/SetPhysical.xml:17(col)
+#: sdk/script/fn/SetPhysical.xml:19(col)
 msgid "PHYS_Current"
 msgstr "PHYS_Current"
 
-#: sdk/script/fn/SetPhysical.xml:17(col)
+#: sdk/script/fn/SetPhysical.xml:19(col)
 msgid "Die Eigenschaften werden im gerade aktiven Modus (temporär oder permanent) des Objektes geändert."
 msgstr "The physical attributes are changed in the current mode (temporary or permanent) of the object."
 
-#: sdk/script/fn/SetPhysical.xml:18(col)
+#: sdk/script/fn/SetPhysical.xml:20(col)
 msgid "PHYS_Permanent"
 msgstr "PHYS_Permanent"
 
-#: sdk/script/fn/SetPhysical.xml:18(col)
+#: sdk/script/fn/SetPhysical.xml:20(col)
 msgid "Die Eigenschaften werden permanent geändert. Das heißt, dass auch die Infosektion des Objektes modifiziert wird, und die Änderungen somit auch in die Spielerdatei geschrieben werden. Nur Spielercrewobjekte besitzen eine Infosektion."
 msgstr "The physical attributes are changed in permanent mode. This modifies the info section of the associated crew object, which means that the changes will be written to the player file as well. Only player crew objects have a permanent info section."
 
-#: sdk/script/fn/SetPhysical.xml:19(col)
+#: sdk/script/fn/SetPhysical.xml:21(col)
 msgid "PHYS_Temporary"
 msgstr "PHYS_Temporary"
 
-#: sdk/script/fn/SetPhysical.xml:19(col)
+#: sdk/script/fn/SetPhysical.xml:21(col)
 msgid "Für das Objekt wird eine temporäre Infosektion erzeugt, sofern noch nicht vorhanden, und temporären Modus gesetzt. Änderungen im temporären Modus landen nicht in der Spielerdatei. Um temporäre Physicals wieder zu den Originalen zurückzusetzen, sollte <placeholder-1/> verwendet werden."
 msgstr "The object will be set to temporary physical mode, and a temporary info section will be created if none exists already. Use <placeholder-1/> to reset temporary physicals to permanent mode."
 
-#: sdk/script/fn/SetPhysical.xml:20(col)
+#: sdk/script/fn/SetPhysical.xml:22(col)
 msgid "PHYS_StackTemporary"
 msgstr "PHYS_StackTemporary"
 
-#: sdk/script/fn/SetPhysical.xml:20(col)
+#: sdk/script/fn/SetPhysical.xml:22(col)
 msgid "Wie PHYS_Temporary, jedoch wird zusätzlich der vorherige Physical-Wert gesichert und kann einzeln mit einem <placeholder-1/>-Aufruf wiederhergestellt werden. Ab CR."
 msgstr "Like PHYS_Temporary, but the previous physical-value will be backed up and can be restored by calling <placeholder-1/>. Since CR."
 
-#: sdk/script/fn/SetPhysical.xml:15(desc)
-msgid "Änderungsmodus (symbolische Konstanten ab CR):<br/><placeholder-1/><br/>"
+#: sdk/script/fn/SetPhysical.xml:16(desc)
+#, fuzzy
+msgid "Änderungsmodus (symbolische Konstanten ab CR):<br/><placeholder-1/>"
 msgstr "Physical attribute change mode (symbolical constants since CR):<br/><placeholder-1/><br/>"
 
-#: sdk/script/fn/SetPhysical.xml:21(desc)
+#: sdk/script/fn/SetPhysical.xml:26(desc)
 msgid "Objekt, dessen Physical gesetzt werden soll. 0 bei lokalen Aufrufen."
 msgstr "Object the physicals of which you want to change. Can be 0 in local calls."
 
-#: sdk/script/fn/SetPhysical.xml:24(desc)
+#: sdk/script/fn/SetPhysical.xml:29(desc)
 msgid "Ändert die physischen Eigenschaften eines Objekts. Hiermit können die in der Physical-Sektion der <emLink href=\"definition/DefCore.html\">DefCore.txt</emLink> angegebenen Werte temporär oder permanent angepasst werden."
 msgstr "Changes the physical properties of an object. With this, the values from the Physical section of the <emLink href=\"definition/DefCore.html\">DefCore.txt</emLink> can be permanently or temporarily adapted."
 
-#: sdk/script/fn/SetPhysical.xml:34(text)
+#: sdk/script/fn/SetPhysical.xml:39(text)
 msgid "Script für eine Magiepille: Der essende Clonk bekommt temporär Zauberenergie."
 msgstr "Script for a magic pill: the eating clonk will temporarily gain magic energy."
 
-#: sdk/script/fn/SetPhysical.xml:48(text)
+#: sdk/script/fn/SetPhysical.xml:53(text)
 msgid "Script für einen Effekt namens JumpBoost: Wenn auf ein Objekt angewendet, kann es bis zum Löschen des Effektes höher springen. Die Kombination von PHYS_StackTemporary beim Setzen und Angabe der geänderten Physical in <placeholder-1/> sorgt dafür, dass sich mehrere solcher Effekte problemlos kombinieren lassen."
 msgstr "Script of an effect named JumpBoost: If created on a Clonk, it can jump higher until the effect is deleted again. Using PHYS_StackTemporary and <placeholder-1/> in this manner ensures that multiple effects written in this style can be combined without causing unwanted behaviour when one effect wears off while another remains."
 
@@ -4242,27 +4243,27 @@ msgstr "New name. If 0 (not \"\"!) the object's name is reset to the definition 
 msgid "Objekt, dessen Name geändert werden soll. 0 bei lokalem Aufruf."
 msgstr "Object you want to rename. Can be 0 in local calls."
 
-#: sdk/script/fn/SetName.xml:30(desc)
+#: sdk/script/fn/SetName.xml:29(desc)
 msgid "Wenn angegeben, wird pObj ignoriert, und stattdessen der Name der Definition geändert."
 msgstr "If specified, the pObj value is ignored and the name of the definition is changed instead."
 
-#: sdk/script/fn/SetName.xml:36(desc)
+#: sdk/script/fn/SetName.xml:34(desc)
 msgid "Nur für Crewobjekte: Wenn wahr, wird der Name permanent in der Infosektion des Spielers geändert. Namen dürfen jeweils nur einmal pro Spielerdatei vorkommen. Ab CR."
 msgstr "For crew members only: if true, the name is changed permanently in the crew info in the player file. There may be no duplicate names within a player file. From CR."
 
-#: sdk/script/fn/SetName.xml:42(desc)
+#: sdk/script/fn/SetName.xml:39(desc)
 msgid "Steuert das Verhalten, falls ein Clonk mit dem angegebenen Namen schon in der Stammcrew des Spielers existiert: Wenn unwahr, schlägt die Funktion in diesem Fall fehl. Wenn wahr, wird ein neuer Name durch Anhängen einer Zahl erzeugt. Ab CR."
 msgstr "Determines what should happen if a clonk of the same name already exists in the player's crew. If false, the function call will fail. If true, a unique name is created by appending a number. From CR."
 
-#: sdk/script/fn/SetName.xml:48(desc)
+#: sdk/script/fn/SetName.xml:44(desc)
 msgid "Ändert für eine Runde den Namen eines Objekts oder einer Definition."
 msgstr "Changes name of an object or a definition for the duration of the round."
 
-#: sdk/script/fn/SetName.xml:49(remark)
+#: sdk/script/fn/SetName.xml:45(remark)
 msgid "Vor Clonk Endeavour bewirkte ein Aufruf für ein Mannschaftsmitglied noch eine permanente Änderung in der Spielerdatei und ein Aufruf für ein normales Objekt eine Änderung für alle Objekte der gleichen Definition."
 msgstr "Before CE, a call of this function for a crew member would result in a permanent name change in the player file and a call for a normal object would rename all objects of the same type."
 
-#: sdk/script/fn/SetName.xml:60(text)
+#: sdk/script/fn/SetName.xml:56(text)
 msgid "Szenarioscript: Die höchstrangigen Clonks neu beitretender Spieler heißen in dieser Runde anders."
 msgstr "Scenario script: the highest ranking clonks of joining players get different names in this round."
 
@@ -4398,19 +4399,19 @@ msgstr "Changes the mass of an object. The mass is initialised with <emLink href
 msgid "Script für einen Keks: Beim Essen nimmt die Masse des Clonks zu."
 msgstr "Script for a cookie: when eating this cookie the mass of the clonk will increase."
 
-#: sdk/script/fn/SetLocal.xml:17(description)
-#: sdk/script/fn/SetLocal.xml:45(remark)
+#: sdk/script/fn/SetLocal.xml:18(description)
+#: sdk/script/fn/SetLocal.xml:44(remark)
 msgid "Statt SetLocal sollte zum Zugriff auf Local-Variablen die Schreibweise <code><placeholder-1/>(x) = y</code> verwendet werden."
 msgstr "Instead of SetLocal the notation <code><placeholder-1/>(x) = y</code> should be used to access local variables."
 
 #: sdk/script/fn/SetLocal.xml:26(desc)
-#: sdk/script/fn/SetGlobal.xml:26(desc)
-#: sdk/script/fn/Local.xml:14(desc)
+#: sdk/script/fn/SetGlobal.xml:25(desc)
+#: sdk/script/fn/Local.xml:13(desc)
 msgid "Nummer der Variable, die abgefragt werden soll. Jede nicht negative Zahl ist erlaubt."
 msgstr "Index of the variable to be accessed. Any non-negative number is allowed."
 
 #: sdk/script/fn/SetLocal.xml:31(desc)
-#: sdk/script/fn/SetGlobal.xml:31(desc)
+#: sdk/script/fn/SetGlobal.xml:30(desc)
 msgid "Neuer Wert der Variable."
 msgstr "New value of the variable."
 
@@ -4418,7 +4419,7 @@ msgstr "New value of the variable."
 msgid "Objekt, in der die Variable gesetzt werden soll"
 msgstr "Object in which the variable is to be set"
 
-#: sdk/script/fn/SetLocal.xml:41(desc)
+#: sdk/script/fn/SetLocal.xml:40(desc)
 msgid "Setzt eine <placeholder-1/>-Variable in einem Objekt (wenn nicht angegeben, wird die Variable in dem aufrufenden Objekt gesetzt) und gibt, wenn erfolgreich, den gesetzten Wert zurück (ansonsten 0)."
 msgstr "Sets a <placeholder-1/> variable in an object (if no object is specified the variable is set in the calling object) and returns the set value on success (otherwise 0)."
 
@@ -4633,11 +4634,11 @@ msgid "Objektdefinitionen (C4D)"
 msgstr "Object definitions (c4d)"
 
 #: sdk/script/fn/SetGlobal.xml:17(description)
-#: sdk/script/fn/SetGlobal.xml:38(remark)
+#: sdk/script/fn/SetGlobal.xml:37(remark)
 msgid "Statt SetGlobal sollte zum Zugriff auf Global-Variablen die Schreibweise <code><placeholder-1/>(x) = y</code> verwendet werden."
 msgstr "Instead of SetGlobal the notation <code><placeholder-1/>(x) = y</code> should be used to access global variables."
 
-#: sdk/script/fn/SetGlobal.xml:35(desc)
+#: sdk/script/fn/SetGlobal.xml:34(desc)
 msgid "Setzt eine <placeholder-1/>-Variable und gibt, wenn erfolgreich, den gesetzten Wert zurück (ansonsten 0)."
 msgstr "Sets a <placeholder-1/> variable and returns the set value if successful (0 otherwise)."
 
@@ -4945,527 +4946,527 @@ msgstr "Command name (as string). See the table below"
 msgid "Zielobjekt für Aktion"
 msgstr "target object for the command"
 
-#: sdk/script/fn/SetCommand.xml:32(desc)
-#: sdk/script/fn/PlayerObjectCommand.xml:34(desc)
-#: sdk/script/fn/AppendCommand.xml:32(desc)
-#: sdk/script/fn/AddCommand.xml:36(desc)
+#: sdk/script/fn/SetCommand.xml:31(desc)
+#: sdk/script/fn/PlayerObjectCommand.xml:33(desc)
+#: sdk/script/fn/AppendCommand.xml:31(desc)
+#: sdk/script/fn/AddCommand.xml:35(desc)
 msgid "X-Zielkoordinate"
 msgstr "X target coordinate"
 
-#: sdk/script/fn/SetCommand.xml:38(desc)
-#: sdk/script/fn/PlayerObjectCommand.xml:40(desc)
-#: sdk/script/fn/AppendCommand.xml:38(desc)
-#: sdk/script/fn/AddCommand.xml:42(desc)
+#: sdk/script/fn/SetCommand.xml:36(desc)
+#: sdk/script/fn/PlayerObjectCommand.xml:38(desc)
+#: sdk/script/fn/AppendCommand.xml:36(desc)
+#: sdk/script/fn/AddCommand.xml:40(desc)
 msgid "Y-Zielkoordinate"
 msgstr "Y target coordinate"
 
-#: sdk/script/fn/SetCommand.xml:44(desc)
-#: sdk/script/fn/PlayerObjectCommand.xml:46(desc)
-#: sdk/script/fn/AppendCommand.xml:44(desc)
-#: sdk/script/fn/AddCommand.xml:48(desc)
+#: sdk/script/fn/SetCommand.xml:41(desc)
+#: sdk/script/fn/PlayerObjectCommand.xml:43(desc)
+#: sdk/script/fn/AppendCommand.xml:41(desc)
+#: sdk/script/fn/AddCommand.xml:45(desc)
 msgid "zweites Zielobjekt"
 msgstr "secondary target object"
 
-#: sdk/script/fn/SetCommand.xml:50(desc)
-#: sdk/script/fn/PlayerObjectCommand.xml:58(desc)
-#: sdk/script/fn/AppendCommand.xml:56(desc)
-#: sdk/script/fn/AddCommand.xml:62(desc)
+#: sdk/script/fn/SetCommand.xml:46(desc)
+#: sdk/script/fn/PlayerObjectCommand.xml:53(desc)
+#: sdk/script/fn/AppendCommand.xml:51(desc)
+#: sdk/script/fn/AddCommand.xml:57(desc)
 msgid "zusätzliche Daten zur Aktion"
 msgstr "additional data for the command"
 
-#: sdk/script/fn/SetCommand.xml:56(desc)
-#: sdk/script/fn/PlayerObjectCommand.xml:64(desc)
-#: sdk/script/fn/AppendCommand.xml:62(desc)
-#: sdk/script/fn/AddCommand.xml:68(desc)
+#: sdk/script/fn/SetCommand.xml:51(desc)
+#: sdk/script/fn/PlayerObjectCommand.xml:58(desc)
+#: sdk/script/fn/AppendCommand.xml:56(desc)
+#: sdk/script/fn/AddCommand.xml:62(desc)
 msgid "Anzahl der Wiederholungen (wenn das Kommando fehlschlägt), bis das Kommando abgebrochen wird."
 msgstr "Number of retries if the command fails, until the command fails completely."
 
-#: sdk/script/fn/SetCommand.xml:62(desc)
+#: sdk/script/fn/SetCommand.xml:56(desc)
 msgid "Gibt einem Objekt ein Kommando, welches dieses selbstständig (ggf. durch automatische Wegfindung) auszuführen versucht."
 msgstr "Gives a command to an object. The object will try to complete the command using the internal artificial intelligence (including pathfinding)."
 
-#: sdk/script/fn/SetCommand.xml:69(col)
+#: sdk/script/fn/SetCommand.xml:63(col)
 msgid "szCommand"
 msgstr "szCommand"
 
-#: sdk/script/fn/SetCommand.xml:69(col)
+#: sdk/script/fn/SetCommand.xml:63(col)
 msgid "pTarget"
 msgstr "pTarget"
 
-#: sdk/script/fn/SetCommand.xml:69(col)
+#: sdk/script/fn/SetCommand.xml:63(col)
 msgid "iX,iY"
 msgstr "iX,iY"
 
-#: sdk/script/fn/SetCommand.xml:69(col)
+#: sdk/script/fn/SetCommand.xml:63(col)
 msgid "pTarget2"
 msgstr "pTarget2"
 
-#: sdk/script/fn/SetCommand.xml:69(col)
+#: sdk/script/fn/SetCommand.xml:63(col)
 msgid "iData"
 msgstr "iData"
 
-#: sdk/script/fn/SetCommand.xml:70(col)
+#: sdk/script/fn/SetCommand.xml:64(col)
 msgid "Acquire"
 msgstr "Acquire"
 
+#: sdk/script/fn/SetCommand.xml:64(col)
+#: sdk/script/fn/SetCommand.xml:66(col)
+#: sdk/script/fn/SetCommand.xml:67(col)
 #: sdk/script/fn/SetCommand.xml:70(col)
-#: sdk/script/fn/SetCommand.xml:72(col)
-#: sdk/script/fn/SetCommand.xml:73(col)
+#: sdk/script/fn/SetCommand.xml:71(col)
 #: sdk/script/fn/SetCommand.xml:76(col)
 #: sdk/script/fn/SetCommand.xml:77(col)
-#: sdk/script/fn/SetCommand.xml:82(col)
-#: sdk/script/fn/SetCommand.xml:83(col)
-#: sdk/script/fn/SetCommand.xml:84(col)
-#: sdk/script/fn/SetCommand.xml:85(col)
-#: sdk/script/fn/SetCommand.xml:87(col)
+#: sdk/script/fn/SetCommand.xml:78(col)
+#: sdk/script/fn/SetCommand.xml:79(col)
+#: sdk/script/fn/SetCommand.xml:81(col)
+#: sdk/script/fn/SetCommand.xml:89(col)
+#: sdk/script/fn/SetCommand.xml:93(col)
+#: sdk/script/fn/SetCommand.xml:94(col)
 #: sdk/script/fn/SetCommand.xml:95(col)
-#: sdk/script/fn/SetCommand.xml:99(col)
-#: sdk/script/fn/SetCommand.xml:100(col)
-#: sdk/script/fn/SetCommand.xml:101(col)
+#: sdk/script/fn/SetCommand.xml:103(col)
+#: sdk/script/fn/SetCommand.xml:104(col)
+#: sdk/script/fn/SetCommand.xml:105(col)
 #: sdk/script/fn/SetCommand.xml:109(col)
-#: sdk/script/fn/SetCommand.xml:110(col)
-#: sdk/script/fn/SetCommand.xml:111(col)
-#: sdk/script/fn/SetCommand.xml:115(col)
-#: sdk/script/fn/SetCommand.xml:118(col)
+#: sdk/script/fn/SetCommand.xml:112(col)
 msgid "Null"
 msgstr "Null"
 
+#: sdk/script/fn/SetCommand.xml:64(col)
+#: sdk/script/fn/SetCommand.xml:66(col)
 #: sdk/script/fn/SetCommand.xml:70(col)
-#: sdk/script/fn/SetCommand.xml:72(col)
 #: sdk/script/fn/SetCommand.xml:76(col)
-#: sdk/script/fn/SetCommand.xml:82(col)
-#: sdk/script/fn/SetCommand.xml:90(col)
-#: sdk/script/fn/SetCommand.xml:100(col)
+#: sdk/script/fn/SetCommand.xml:84(col)
+#: sdk/script/fn/SetCommand.xml:94(col)
+#: sdk/script/fn/SetCommand.xml:99(col)
+#: sdk/script/fn/SetCommand.xml:102(col)
+#: sdk/script/fn/SetCommand.xml:103(col)
 #: sdk/script/fn/SetCommand.xml:105(col)
-#: sdk/script/fn/SetCommand.xml:108(col)
-#: sdk/script/fn/SetCommand.xml:109(col)
-#: sdk/script/fn/SetCommand.xml:111(col)
-#: sdk/script/fn/SetCommand.xml:118(col)
+#: sdk/script/fn/SetCommand.xml:112(col)
 msgid "0,0"
 msgstr "0,0"
 
-#: sdk/script/fn/SetCommand.xml:70(col)
+#: sdk/script/fn/SetCommand.xml:64(col)
 msgid "Behälter ignorieren"
 msgstr "Ignore container"
 
+#: sdk/script/fn/SetCommand.xml:64(col)
+#: sdk/script/fn/SetCommand.xml:67(col)
 #: sdk/script/fn/SetCommand.xml:70(col)
-#: sdk/script/fn/SetCommand.xml:73(col)
+#: sdk/script/fn/SetCommand.xml:71(col)
 #: sdk/script/fn/SetCommand.xml:76(col)
 #: sdk/script/fn/SetCommand.xml:77(col)
-#: sdk/script/fn/SetCommand.xml:82(col)
-#: sdk/script/fn/SetCommand.xml:83(col)
-#: sdk/script/fn/SetCommand.xml:84(col)
-#: sdk/script/fn/SetCommand.xml:95(col)
-#: sdk/script/fn/SetCommand.xml:109(col)
-#: sdk/script/fn/SetCommand.xml:110(col)
-#: sdk/script/fn/SetCommand.xml:111(col)
-#: sdk/script/fn/SetCommand.xml:112(col)
+#: sdk/script/fn/SetCommand.xml:78(col)
+#: sdk/script/fn/SetCommand.xml:89(col)
+#: sdk/script/fn/SetCommand.xml:103(col)
+#: sdk/script/fn/SetCommand.xml:104(col)
+#: sdk/script/fn/SetCommand.xml:105(col)
+#: sdk/script/fn/SetCommand.xml:106(col)
 msgid "Objekttyp (id)"
 msgstr "Object type (id)"
 
-#: sdk/script/fn/SetCommand.xml:70(col)
+#: sdk/script/fn/SetCommand.xml:64(col)
 msgid "Objekt von Objekttyp beschaffen, wenn nötig kaufen. Material im angegebenen Behälter (Target2) wird bei der Suche ignoriert."
 msgstr "Type of object to be acquired. May be bought at the home base if necessary. Material contained in the specified container (Target2) is to be ignored in the search."
 
-#: sdk/script/fn/SetCommand.xml:71(col)
-#: sdk/script/fn/SetCommand.xml:72(col)
-#: sdk/script/fn/SetCommand.xml:73(col)
+#: sdk/script/fn/SetCommand.xml:65(col)
+#: sdk/script/fn/SetCommand.xml:66(col)
+#: sdk/script/fn/SetCommand.xml:67(col)
 #: sdk/definition/script.xml:197(col)
 msgid "Activate"
 msgstr "Activate"
 
-#: sdk/script/fn/SetCommand.xml:71(col)
+#: sdk/script/fn/SetCommand.xml:65(col)
 msgid "Zielobjekt aktivieren (aus Gebäude herausholen)."
 msgstr "Activate the target object (exit from its container)."
 
-#: sdk/script/fn/SetCommand.xml:72(col)
+#: sdk/script/fn/SetCommand.xml:66(col)
 msgid "Holen-Menü für Inhalt des Zielobjekts öffnen."
 msgstr "Open the Get menu for the contents of the target object."
 
-#: sdk/script/fn/SetCommand.xml:73(col)
-#: sdk/script/fn/SetCommand.xml:77(col)
-#: sdk/script/fn/SetCommand.xml:95(col)
-#: sdk/script/fn/SetCommand.xml:107(col)
-#: sdk/script/fn/SetCommand.xml:110(col)
-#: sdk/script/fn/SetCommand.xml:112(col)
+#: sdk/script/fn/SetCommand.xml:67(col)
+#: sdk/script/fn/SetCommand.xml:71(col)
+#: sdk/script/fn/SetCommand.xml:89(col)
+#: sdk/script/fn/SetCommand.xml:101(col)
+#: sdk/script/fn/SetCommand.xml:104(col)
+#: sdk/script/fn/SetCommand.xml:106(col)
 msgid "Anzahl,0"
 msgstr "Number,0"
 
-#: sdk/script/fn/SetCommand.xml:73(col)
+#: sdk/script/fn/SetCommand.xml:67(col)
 msgid "Anzahl Objekte von Objekttyp in Zielobjekt aktivieren."
 msgstr "Activate n objects of the specified type in the target object."
 
-#: sdk/script/fn/SetCommand.xml:74(col)
+#: sdk/script/fn/SetCommand.xml:68(col)
 msgid "Attack"
 msgstr "Attack"
 
-#: sdk/script/fn/SetCommand.xml:74(col)
+#: sdk/script/fn/SetCommand.xml:68(col)
 msgid "Zielobjekt angreifen."
 msgstr "Attack the target object."
 
-#: sdk/script/fn/SetCommand.xml:75(col)
+#: sdk/script/fn/SetCommand.xml:69(col)
 msgid "Build"
 msgstr "Build"
 
-#: sdk/script/fn/SetCommand.xml:75(col)
+#: sdk/script/fn/SetCommand.xml:69(col)
 msgid "Zielobjekt bauen und anschließend mit Energie versorgen."
 msgstr "Build the target object and supply it with energy when done."
 
-#: sdk/script/fn/SetCommand.xml:76(col)
-#: sdk/script/fn/SetCommand.xml:77(col)
-#: sdk/script/fn/SetCommand.xml:78(col)
+#: sdk/script/fn/SetCommand.xml:70(col)
+#: sdk/script/fn/SetCommand.xml:71(col)
+#: sdk/script/fn/SetCommand.xml:72(col)
 msgid "Buy"
 msgstr "Buy"
 
-#: sdk/script/fn/SetCommand.xml:76(col)
+#: sdk/script/fn/SetCommand.xml:70(col)
 msgid "Objekt von Objekttyp in nächstgelegener Basis kaufen."
 msgstr "Buy an object of the specified type at the closest friendly home base."
 
-#: sdk/script/fn/SetCommand.xml:77(col)
-#: sdk/script/fn/SetCommand.xml:78(col)
-#: sdk/script/fn/SetCommand.xml:112(col)
-#: sdk/script/fn/SetCommand.xml:113(col)
+#: sdk/script/fn/SetCommand.xml:71(col)
+#: sdk/script/fn/SetCommand.xml:72(col)
+#: sdk/script/fn/SetCommand.xml:106(col)
+#: sdk/script/fn/SetCommand.xml:107(col)
 #: sdk/script/fn/Pow.xml:24(desc)
 msgid "Basis"
 msgstr "Basis"
 
-#: sdk/script/fn/SetCommand.xml:77(col)
+#: sdk/script/fn/SetCommand.xml:71(col)
 msgid "Anzahl Objekte von Objekttyp in Basis kaufen."
 msgstr "Buy n objects of the specified type at the home base."
 
-#: sdk/script/fn/SetCommand.xml:78(col)
+#: sdk/script/fn/SetCommand.xml:72(col)
 msgid "Kaufen-Menü für angegebene Basis öffnen."
 msgstr "Open the Buy menu for the specified home base."
 
-#: sdk/script/fn/SetCommand.xml:79(col)
+#: sdk/script/fn/SetCommand.xml:73(col)
 msgid "Call"
 msgstr "Call"
 
-#: sdk/script/fn/SetCommand.xml:79(col)
-#: sdk/script/fn/SetCommand.xml:105(col)
-#: sdk/script/fn/SetCommand.xml:108(col)
+#: sdk/script/fn/SetCommand.xml:73(col)
+#: sdk/script/fn/SetCommand.xml:99(col)
+#: sdk/script/fn/SetCommand.xml:102(col)
 msgid "Objekt"
 msgstr "Object"
 
-#: sdk/script/fn/SetCommand.xml:79(col)
+#: sdk/script/fn/SetCommand.xml:73(col)
 msgid "Par(1),Par(2)"
 msgstr "Par(1),Par(2)"
 
-#: sdk/script/fn/SetCommand.xml:79(col)
+#: sdk/script/fn/SetCommand.xml:73(col)
 msgid "Par(3)"
 msgstr "Par(3)"
 
-#: sdk/script/fn/SetCommand.xml:79(col)
+#: sdk/script/fn/SetCommand.xml:73(col)
 msgid "<em>Funktion</em> (string)"
 msgstr "<em>Function</em> (string)"
 
-#: sdk/script/fn/SetCommand.xml:79(col)
+#: sdk/script/fn/SetCommand.xml:73(col)
 msgid "<em>Funktion</em> im Objekt-Script von Objekt aufrufen, Par(0) ist dabei das aufrufende Objekt. Schlägt das Kommando fehl, weil untergeordnete Befehle nicht ausgeführt werden konnten, wird stattdessen <em>Funktion</em>Failed aufgerufen."
 msgstr "Call <em>Function</em> in the object script. Par(0) will be the calling object. If the command fails because underlaying commands have failed, the function <em>Function</em>Failed is called instead."
 
-#: sdk/script/fn/SetCommand.xml:80(col)
+#: sdk/script/fn/SetCommand.xml:74(col)
 #: sdk/definition/defcore.xml:123(col)
 msgid "Chop"
 msgstr "Chop"
 
-#: sdk/script/fn/SetCommand.xml:80(col)
+#: sdk/script/fn/SetCommand.xml:74(col)
 msgid "Zielobjekt fällen."
 msgstr "Fell the target object object (tree)."
 
-#: sdk/script/fn/SetCommand.xml:81(col)
-#: sdk/script/fn/SetCommand.xml:82(col)
-#: sdk/script/fn/SetCommand.xml:83(col)
-#: sdk/script/fn/SetCommand.xml:84(col)
+#: sdk/script/fn/SetCommand.xml:75(col)
+#: sdk/script/fn/SetCommand.xml:76(col)
+#: sdk/script/fn/SetCommand.xml:77(col)
+#: sdk/script/fn/SetCommand.xml:78(col)
 msgid "Construct"
 msgstr "Construct"
 
-#: sdk/script/fn/SetCommand.xml:81(col)
+#: sdk/script/fn/SetCommand.xml:75(col)
 msgid "Bauauftragsmenü öffnen."
 msgstr "Open the Construction menu."
 
-#: sdk/script/fn/SetCommand.xml:82(col)
+#: sdk/script/fn/SetCommand.xml:76(col)
 msgid "An der nächstmöglichen Zielposition Baustelle errichten."
 msgstr "Create a construction site at the closest possible position."
 
-#: sdk/script/fn/SetCommand.xml:83(col)
-#: sdk/script/fn/SetCommand.xml:85(col)
-#: sdk/script/fn/SetCommand.xml:87(col)
-#: sdk/script/fn/SetCommand.xml:88(col)
-#: sdk/script/fn/SetCommand.xml:99(col)
-#: sdk/script/fn/SetCommand.xml:101(col)
-#: sdk/script/fn/SetCommand.xml:104(col)
-#: sdk/script/fn/SetCommand.xml:115(col)
-#: sdk/script/fn/SetCommand.xml:116(col)
+#: sdk/script/fn/SetCommand.xml:77(col)
+#: sdk/script/fn/SetCommand.xml:79(col)
+#: sdk/script/fn/SetCommand.xml:81(col)
+#: sdk/script/fn/SetCommand.xml:82(col)
+#: sdk/script/fn/SetCommand.xml:93(col)
+#: sdk/script/fn/SetCommand.xml:95(col)
+#: sdk/script/fn/SetCommand.xml:98(col)
+#: sdk/script/fn/SetCommand.xml:109(col)
+#: sdk/script/fn/SetCommand.xml:110(col)
 msgid "Zielposition"
 msgstr "Target position"
 
-#: sdk/script/fn/SetCommand.xml:83(col)
+#: sdk/script/fn/SetCommand.xml:77(col)
 msgid "An der Zielposition Baustelle errichten und anschließend bauen."
 msgstr "Create a construction site at the target position and start building."
 
-#: sdk/script/fn/SetCommand.xml:84(col)
+#: sdk/script/fn/SetCommand.xml:78(col)
 msgid "Zielposition [opt]"
 msgstr "Target position [opt]"
 
-#: sdk/script/fn/SetCommand.xml:84(col)
+#: sdk/script/fn/SetCommand.xml:78(col)
 msgid "Zielobjekt helfen, die Baustelle zu errichten (der Clonk baut mit, sobald die Baustelle errichtet wurde)"
 msgstr "Help the target object with the construction (help building as soon as the site is created)."
 
-#: sdk/script/fn/SetCommand.xml:85(col)
+#: sdk/script/fn/SetCommand.xml:79(col)
 #: sdk/definition/defcore.xml:227(col)
 msgid "Dig"
 msgstr "Dig"
 
-#: sdk/script/fn/SetCommand.xml:85(col)
+#: sdk/script/fn/SetCommand.xml:79(col)
 msgid "Zur Zielposition graben."
 msgstr "Dig towards the target position."
 
-#: sdk/script/fn/SetCommand.xml:86(col)
-#: sdk/script/fn/SetCommand.xml:87(col)
-#: sdk/script/fn/SetCommand.xml:88(col)
+#: sdk/script/fn/SetCommand.xml:80(col)
+#: sdk/script/fn/SetCommand.xml:81(col)
+#: sdk/script/fn/SetCommand.xml:82(col)
 msgid "Drop"
 msgstr "Drop"
 
-#: sdk/script/fn/SetCommand.xml:86(col)
+#: sdk/script/fn/SetCommand.xml:80(col)
 msgid "Erstes getragenes Objekt sofort ablegen."
 msgstr "Immediately drop the first object in the inventory."
 
-#: sdk/script/fn/SetCommand.xml:87(col)
+#: sdk/script/fn/SetCommand.xml:81(col)
 msgid "Erstes getragenes Objekt an Zielposition ablegen."
 msgstr "Drop the first object in the inventory at the target position."
 
-#: sdk/script/fn/SetCommand.xml:88(col)
+#: sdk/script/fn/SetCommand.xml:82(col)
 msgid "Zielobjekt einsammeln und an Zielposition ablegen."
 msgstr "Collect the target object and drop it at the target position."
 
-#: sdk/script/fn/SetCommand.xml:89(col)
-#: sdk/script/fn/SetCommand.xml:90(col)
+#: sdk/script/fn/SetCommand.xml:83(col)
+#: sdk/script/fn/SetCommand.xml:84(col)
 #: sdk/definition/defcore.xml:215(col)
 msgid "Energy"
 msgstr "Energy"
 
-#: sdk/script/fn/SetCommand.xml:89(col)
+#: sdk/script/fn/SetCommand.xml:83(col)
 msgid "Zielobjekt vom nächsten Versorger mit Energie versorgen."
 msgstr "Supply the target object with energy from the closest supplier."
 
-#: sdk/script/fn/SetCommand.xml:90(col)
+#: sdk/script/fn/SetCommand.xml:84(col)
 msgid "Versorger"
 msgstr "Supplier"
 
-#: sdk/script/fn/SetCommand.xml:90(col)
+#: sdk/script/fn/SetCommand.xml:84(col)
 msgid "Zielobjekt vom Versorger mit Energie versorgen."
 msgstr "Supply the target object with energy from this supplier."
 
-#: sdk/script/fn/SetCommand.xml:91(col)
+#: sdk/script/fn/SetCommand.xml:85(col)
 msgid "Enter"
 msgstr "Enter"
 
-#: sdk/script/fn/SetCommand.xml:91(col)
+#: sdk/script/fn/SetCommand.xml:85(col)
 msgid "Das Zielobjekt betreten."
 msgstr "Enter the target object."
 
-#: sdk/script/fn/SetCommand.xml:92(col)
+#: sdk/script/fn/SetCommand.xml:86(col)
 msgid "Exit"
 msgstr "Exit"
 
-#: sdk/script/fn/SetCommand.xml:92(col)
+#: sdk/script/fn/SetCommand.xml:86(col)
 msgid "Den aktuellen Behälter verlassen."
 msgstr "Exit the current container."
 
-#: sdk/script/fn/SetCommand.xml:93(col)
+#: sdk/script/fn/SetCommand.xml:87(col)
 msgid "Follow"
 msgstr "Follow"
 
-#: sdk/script/fn/SetCommand.xml:93(col)
+#: sdk/script/fn/SetCommand.xml:87(col)
 msgid "Dem Zielobjekt folgen (dauerhaft)."
 msgstr "Follow the target object (permanently)."
 
-#: sdk/script/fn/SetCommand.xml:94(col)
-#: sdk/script/fn/SetCommand.xml:95(col)
+#: sdk/script/fn/SetCommand.xml:88(col)
+#: sdk/script/fn/SetCommand.xml:89(col)
 #: sdk/definition/script.xml:156(col)
 msgid "Get"
 msgstr "Get"
 
-#: sdk/script/fn/SetCommand.xml:94(col)
+#: sdk/script/fn/SetCommand.xml:88(col)
 msgid "Zielobjekt einsammeln (ggf. ausgraben)."
 msgstr "Collect the target object, dig it out if necessary."
 
-#: sdk/script/fn/SetCommand.xml:95(col)
+#: sdk/script/fn/SetCommand.xml:89(col)
 msgid "Anzahl Objekte von Objekttyp aus Zielobjekt holen. Ab 4.9.8.3."
 msgstr "Get the specified number of objects from the target object. From 4.9.8.3."
 
-#: sdk/script/fn/SetCommand.xml:96(col)
+#: sdk/script/fn/SetCommand.xml:90(col)
 #: sdk/definition/script.xml:146(col)
 #: sdk/definition/defcore.xml:115(col)
 msgid "Grab"
 msgstr "Grab"
 
-#: sdk/script/fn/SetCommand.xml:96(col)
+#: sdk/script/fn/SetCommand.xml:90(col)
 #: sdk/definition/defcore.xml:46(col)
 msgid "Offset"
 msgstr "Offset"
 
-#: sdk/script/fn/SetCommand.xml:96(col)
+#: sdk/script/fn/SetCommand.xml:90(col)
 msgid "Das Zielobjekt am Offset zur Objektmitte anfassen."
 msgstr "Grab the target object at the specified offset to the object center."
 
-#: sdk/script/fn/SetCommand.xml:97(col)
+#: sdk/script/fn/SetCommand.xml:91(col)
 msgid "Home"
 msgstr "Home"
 
-#: sdk/script/fn/SetCommand.xml:97(col)
+#: sdk/script/fn/SetCommand.xml:91(col)
 msgid "Zurück zur nächstgelegenen Heimatbasis."
 msgstr "Return to the closest friendly home base."
 
-#: sdk/script/fn/SetCommand.xml:98(col)
-#: sdk/script/fn/SetCommand.xml:99(col)
+#: sdk/script/fn/SetCommand.xml:92(col)
+#: sdk/script/fn/SetCommand.xml:93(col)
 #: sdk/definition/defcore.xml:221(col)
 msgid "Jump"
 msgstr "Jump"
 
-#: sdk/script/fn/SetCommand.xml:98(col)
+#: sdk/script/fn/SetCommand.xml:92(col)
 msgid "In aktuelle Richtung springen."
 msgstr "Jump into the current direction."
 
-#: sdk/script/fn/SetCommand.xml:99(col)
+#: sdk/script/fn/SetCommand.xml:93(col)
 msgid "In Richtung der Zielposition springen."
 msgstr "Jump into the direction of the target position."
 
-#: sdk/script/fn/SetCommand.xml:100(col)
-#: sdk/script/fn/SetCommand.xml:101(col)
+#: sdk/script/fn/SetCommand.xml:94(col)
+#: sdk/script/fn/SetCommand.xml:95(col)
 msgid "MoveTo"
 msgstr "MoveTo"
 
-#: sdk/script/fn/SetCommand.xml:100(col)
-#: sdk/script/fn/SetCommand.xml:101(col)
+#: sdk/script/fn/SetCommand.xml:94(col)
+#: sdk/script/fn/SetCommand.xml:95(col)
 msgid "Keine Anpassung? (bool)"
 msgstr "No automatic adjustment? (bool)"
 
-#: sdk/script/fn/SetCommand.xml:100(col)
+#: sdk/script/fn/SetCommand.xml:94(col)
 msgid "Zur Position des Zielobjekts bewegen. iData true um die Koordinaten nicht an die Landschaftsform anzupassen."
 msgstr "Move to the position of the target object. Set iData to true to avoid automatic adjustment of the target coordinates to landscape surface."
 
-#: sdk/script/fn/SetCommand.xml:101(col)
+#: sdk/script/fn/SetCommand.xml:95(col)
 msgid "Zur Zielposition bewegen. iData true um die Koordinaten nicht an die Landschaftsform anzupassen."
 msgstr "Move to the target position. Set iData to true to avoid automatic adjustment of the target coordinates to landscape surface."
 
-#: sdk/script/fn/SetCommand.xml:103(col)
+#: sdk/script/fn/SetCommand.xml:97(col)
 msgid "None"
 msgstr "None"
 
-#: sdk/script/fn/SetCommand.xml:103(col)
+#: sdk/script/fn/SetCommand.xml:97(col)
 msgid "Aktuelle Befehle löschen."
 msgstr "Clear all current commands."
 
-#: sdk/script/fn/SetCommand.xml:104(col)
-#: sdk/script/fn/SetCommand.xml:105(col)
+#: sdk/script/fn/SetCommand.xml:98(col)
+#: sdk/script/fn/SetCommand.xml:99(col)
 msgid "PushTo"
 msgstr "PushTo"
 
-#: sdk/script/fn/SetCommand.xml:104(col)
+#: sdk/script/fn/SetCommand.xml:98(col)
 msgid "Zielobjekt an Zielposition schieben."
 msgstr "Push the target object to the target position."
 
-#: sdk/script/fn/SetCommand.xml:105(col)
+#: sdk/script/fn/SetCommand.xml:99(col)
 msgid "Objekt in Zielobjekt schieben."
 msgstr "Push the target object into the secondary target object."
 
-#: sdk/script/fn/SetCommand.xml:106(col)
-#: sdk/script/fn/SetCommand.xml:107(col)
-#: sdk/script/fn/SetCommand.xml:108(col)
-#: sdk/script/fn/SetCommand.xml:109(col)
-#: sdk/script/fn/SetCommand.xml:110(col)
+#: sdk/script/fn/SetCommand.xml:100(col)
+#: sdk/script/fn/SetCommand.xml:101(col)
+#: sdk/script/fn/SetCommand.xml:102(col)
+#: sdk/script/fn/SetCommand.xml:103(col)
+#: sdk/script/fn/SetCommand.xml:104(col)
 #: sdk/definition/script.xml:161(col)
 msgid "Put"
 msgstr "Put"
 
-#: sdk/script/fn/SetCommand.xml:106(col)
+#: sdk/script/fn/SetCommand.xml:100(col)
 msgid "Erstes getragenes Objekt im Zielobjekt ablegen."
 msgstr "Put the first inventory object into the target object."
 
-#: sdk/script/fn/SetCommand.xml:107(col)
+#: sdk/script/fn/SetCommand.xml:101(col)
 msgid "Die angegebene Anzahl getragener Objekte im Zielobjekt ablegen. Ab 4.9.8.3."
 msgstr "Put the specified number of inventory objects into the target object. From 4.9.8.3."
 
-#: sdk/script/fn/SetCommand.xml:108(col)
+#: sdk/script/fn/SetCommand.xml:102(col)
 msgid "Objekt einsammeln und im Zielobjekt ablegen."
 msgstr "Collect the target object and put it into the secondary target object."
 
-#: sdk/script/fn/SetCommand.xml:109(col)
+#: sdk/script/fn/SetCommand.xml:103(col)
 msgid "Getragenes Objekt von Objekttyp im Zielobjekt ablegen."
 msgstr "Put the inventory object of the specified type into the target object."
 
-#: sdk/script/fn/SetCommand.xml:110(col)
+#: sdk/script/fn/SetCommand.xml:104(col)
 msgid "Die angegebene Anzahl getragener Objekte von Objekttyp im Zielobjekt ablegen. Ab 4.9.8.3."
 msgstr "Put the specified number of inventory objects of the specified type into the target object. From 4.9.8.3."
 
-#: sdk/script/fn/SetCommand.xml:111(col)
-#: sdk/script/fn/SetCommand.xml:112(col)
-#: sdk/script/fn/SetCommand.xml:113(col)
+#: sdk/script/fn/SetCommand.xml:105(col)
+#: sdk/script/fn/SetCommand.xml:106(col)
+#: sdk/script/fn/SetCommand.xml:107(col)
 msgid "Sell"
 msgstr "Sell"
 
-#: sdk/script/fn/SetCommand.xml:111(col)
-#: sdk/script/fn/SetCommand.xml:112(col)
+#: sdk/script/fn/SetCommand.xml:105(col)
+#: sdk/script/fn/SetCommand.xml:106(col)
 msgid "Objekt2"
 msgstr "Object2"
 
-#: sdk/script/fn/SetCommand.xml:111(col)
+#: sdk/script/fn/SetCommand.xml:105(col)
 msgid "Objekt von Objekttyp in nächstgelegener Basis verkaufen. Bei angegebenem Objekt2 wird zuerst dieses verkauft, wenn es in der Basis ist."
 msgstr "Sell an object of the specified type at the closest home base. If Object2 is specified, this one will be sold first."
 
-#: sdk/script/fn/SetCommand.xml:112(col)
+#: sdk/script/fn/SetCommand.xml:106(col)
 msgid "Anzahl Objekte von Objekttyp in Basis verkaufen. Bei angegebenem Objekt2 wird zuerst dieses verkauft, wenn es in der Basis ist."
 msgstr "Sell a number of objects of the specified type at the home base. If Object2 is specified, this one will be sold first."
 
-#: sdk/script/fn/SetCommand.xml:113(col)
+#: sdk/script/fn/SetCommand.xml:107(col)
 msgid "Verkaufen-Menü für angegebene Basis öffnen."
 msgstr "Open Sell menu for the specified base object."
 
-#: sdk/script/fn/SetCommand.xml:114(col)
-#: sdk/script/fn/SetCommand.xml:115(col)
-#: sdk/script/fn/SetCommand.xml:116(col)
+#: sdk/script/fn/SetCommand.xml:108(col)
+#: sdk/script/fn/SetCommand.xml:109(col)
+#: sdk/script/fn/SetCommand.xml:110(col)
 #: sdk/definition/defcore.xml:231(col)
 msgid "Throw"
 msgstr "Throw"
 
-#: sdk/script/fn/SetCommand.xml:114(col)
+#: sdk/script/fn/SetCommand.xml:108(col)
 msgid "Erstes getragenes Objekt sofort werfen."
 msgstr "Throw the first inventory item immediately."
 
-#: sdk/script/fn/SetCommand.xml:115(col)
+#: sdk/script/fn/SetCommand.xml:109(col)
 msgid "Erstes getragenes Objekt auf Zielposition werfen."
 msgstr "Throw the first inventory item towards the target position."
 
-#: sdk/script/fn/SetCommand.xml:116(col)
+#: sdk/script/fn/SetCommand.xml:110(col)
 msgid "Zielobjekt einsammeln und an Zielposition werfen."
 msgstr "Collect the target object and throw it towards the target position."
 
-#: sdk/script/fn/SetCommand.xml:117(col)
+#: sdk/script/fn/SetCommand.xml:111(col)
 msgid "UnGrab"
 msgstr "UnGrab"
 
-#: sdk/script/fn/SetCommand.xml:117(col)
+#: sdk/script/fn/SetCommand.xml:111(col)
 msgid "Aktuell angefaßtes Objekt loslassen."
 msgstr "Let go of the object currently grabbed."
 
-#: sdk/script/fn/SetCommand.xml:118(col)
+#: sdk/script/fn/SetCommand.xml:112(col)
 msgid "Wait"
 msgstr "Wait"
 
-#: sdk/script/fn/SetCommand.xml:118(col)
+#: sdk/script/fn/SetCommand.xml:112(col)
 msgid "Frames"
 msgstr "Frames"
 
-#: sdk/script/fn/SetCommand.xml:118(col)
+#: sdk/script/fn/SetCommand.xml:112(col)
 msgid "Anzahl Frames/Ticks warten."
 msgstr "Wait specified number of frames/ticks."
 
-#: sdk/script/fn/SetCommand.xml:66(remark)
+#: sdk/script/fn/SetCommand.xml:60(remark)
 msgid "Es sind folgende Kommandos definiert: <placeholder-1/><br/> Um das Holen-Menü für ein Objekt zu öffnen, muss der Data-Parameter auf true gesetzt sein. Beispiel: <code>func ControlLeft(object byObj) { SetCommand(byObj, \"Get\", <placeholder-2/>, 0, 0, 0, true); }</code>"
 msgstr "The following commands are defined: <placeholder-1/><br/>To open the get menu of an object, the data parameter must be true. Example: <code>func ControlLeft(object byObj) { SetCommand(byObj, \"Get\", <placeholder-2/>, 0, 0, 0, true); }</code>"
 
-#: sdk/script/fn/SetCommand.xml:127(text)
+#: sdk/script/fn/SetCommand.xml:121(text)
 msgid "Dieser Script gibt dem ausführenden Clonk den Befehl, den nächstgelegenen Clonk von Spieler 1 zu attackieren. Dabei soll er nicht so schnell aufgeben und (wenn er z.B. daran scheitert, den Weg zum Feind zu finden) es 10 Mal zu versuchen, bis er sein Ziel erreicht hat oder abbricht."
 msgstr "This script gives the clonk the order to attack the closest clonk of player 1. If the command fails (e.g. due to unsuccessful pathfinding), retry 10 times."
 
@@ -5972,40 +5973,40 @@ msgstr "If a clonk activates this object, we will be deleted."
 msgid "Name des Effektes ohne vorangestelltes Fx. Es können '*' und '?' als Suchmaske verwendet werden."
 msgstr "Name of the effect without preceding 'Fx'. You can use '*' and '?' wildcards."
 
-#: sdk/script/fn/RemoveEffect.xml:22(desc)
+#: sdk/script/fn/RemoveEffect.xml:21(desc)
 msgid "Zielobjekt, in dem ein Effekt gelöscht werden sollen. Bei 0 wird die globale Effektliste durchsucht."
 msgstr "Target object from which to remove an effect. If 0, the global effects list will be searched."
 
-#: sdk/script/fn/RemoveEffect.xml:28(desc)
-#: sdk/script/fn/ChangeEffect.xml:28(desc)
+#: sdk/script/fn/RemoveEffect.xml:26(desc)
+#: sdk/script/fn/ChangeEffect.xml:26(desc)
 msgid "Effektindex. Bei angegebenem szEffectName gibt dies bei mehreren, der Suchmaske entsprechenden Effekten den indizierten Effekt in der Liste der passenden Effekte an. Ist szEffectName nicht angegeben, wird dagegen der Effekt mit der entsprechenden Effektnummer geändert. Im Gegensatz zu Effektnummern ist bei Indizes stets sichergestellt, dass beim Hochzählen von 0 bis zur Effektzahl alle Effekte erfasst werden."
 msgstr "Effect index. If using a wildcard search in szEffectName results in multiple matches, this index will indicate which effect from the list of results to use. If on the other hand no szEffectName is specified, this index will access the effect of the given effect number. As opposed to direct access via effect numbers, access by index will ensure that all indexed effects from 0 to the given number are reached."
 
-#: sdk/script/fn/RemoveEffect.xml:34(desc)
+#: sdk/script/fn/RemoveEffect.xml:31(desc)
 msgid "Wenn ungleich 0, werden keine Stop-Aufrufe durchgeführt."
 msgstr "If not 0, no Stop calls will be made."
 
-#: sdk/script/fn/RemoveEffect.xml:40(desc)
-#: sdk/script/fn/ChangeEffect.xml:40(desc)
+#: sdk/script/fn/RemoveEffect.xml:36(desc)
+#: sdk/script/fn/ChangeEffect.xml:36(desc)
 msgid "Neues Timer-Intervall. Bei -1 wird der alte Wert beibehalten; ansonsten wird bei diesem Aufruf auch die Effektzeit zurückgesetzt."
 msgstr "New timer interval. If -1, the previous value will be kept. Otherwise, this call will also reset effect time."
 
-#: sdk/script/fn/RemoveEffect.xml:46(desc)
+#: sdk/script/fn/RemoveEffect.xml:41(desc)
 msgid "Löscht einen Effekt"
 msgstr "Deletes an effect"
 
-#: sdk/script/fn/RemoveEffect.xml:48(remark)
+#: sdk/script/fn/RemoveEffect.xml:43(remark)
 msgid "Beispiel siehe <placeholder-1/>. Achtung: Wenn sich ein Effekt mit dieser Funktion selbst löschen soll, wird nur pTarget und iIndex angegeben, nicht szEffectName!"
 msgstr "See <placeholder-1/> for an example. Warning: if an effect is meant to delete itself using this function, only use pTarget and iIndex, not szEffectName!"
 
-#: sdk/script/fn/RemoveEffect.xml:51(emLink)
-#: sdk/script/fn/GetEffectCount.xml:39(emLink)
-#: sdk/script/fn/GetEffect.xml:83(emLink)
-#: sdk/script/fn/EffectVar.xml:38(emLink)
-#: sdk/script/fn/EffectCall.xml:42(emLink)
-#: sdk/script/fn/CheckEffect.xml:68(emLink)
-#: sdk/script/fn/ChangeEffect.xml:63(emLink)
-#: sdk/script/fn/AddEffect.xml:79(emLink)
+#: sdk/script/fn/RemoveEffect.xml:46(emLink)
+#: sdk/script/fn/GetEffectCount.xml:36(emLink)
+#: sdk/script/fn/GetEffect.xml:78(emLink)
+#: sdk/script/fn/EffectVar.xml:36(emLink)
+#: sdk/script/fn/EffectCall.xml:41(emLink)
+#: sdk/script/fn/CheckEffect.xml:61(emLink)
+#: sdk/script/fn/ChangeEffect.xml:58(emLink)
+#: sdk/script/fn/AddEffect.xml:71(emLink)
 msgid "Effekte-Dokumentation"
 msgstr "Effects Documentation"
 
@@ -6244,21 +6245,21 @@ msgstr "Displays a message in the viewport of the specified player. Message form
 msgid "Gibt den Namen des zweiten Spielers beim ersten Spieler aus."
 msgstr "Displays the name of the second player for the first player."
 
-#: sdk/script/fn/PlayerObjectCommand.xml:52(desc)
-#: sdk/script/fn/AppendCommand.xml:50(desc)
+#: sdk/script/fn/PlayerObjectCommand.xml:48(desc)
+#: sdk/script/fn/AppendCommand.xml:46(desc)
 msgid "Zeit (in Ticks/Frames), bis das Kommando abgebrochen wird"
 msgstr "Time (in ticks or frames) until the command is terminated"
 
-#: sdk/script/fn/PlayerObjectCommand.xml:72(desc)
-#: sdk/script/fn/AppendCommand.xml:68(desc)
+#: sdk/script/fn/PlayerObjectCommand.xml:65(desc)
+#: sdk/script/fn/AppendCommand.xml:61(desc)
 msgid "Befehlsstapelmodus. Werte siehe <placeholder-1/>."
 msgstr "Command stack mode. See <placeholder-1/> for values."
 
-#: sdk/script/fn/PlayerObjectCommand.xml:79(desc)
+#: sdk/script/fn/PlayerObjectCommand.xml:71(desc)
 msgid "Führt das Kommando szCommand für den gerade ausgewählten Clonk von Spieler iPlr aus. Siehe <placeholder-1/> für mögliche Befehle."
 msgstr "Executes the command szCommand for the currently selected clonk of player iPlr. See <placeholder-1/> for defined commands."
 
-#: sdk/script/fn/PlayerObjectCommand.xml:85(text)
+#: sdk/script/fn/PlayerObjectCommand.xml:77(text)
 msgid "Gibt dem ausgewählten Clonk des ersten Spielers den Befehl, das erste Inventarobjekt zu werfen."
 msgstr "Gives the selected clonk the command to throw the first inventory object."
 
@@ -6731,19 +6732,19 @@ msgstr "Message to be displayed."
 msgid "Objekt, über dem die Nachricht angezeigt werden soll. Wenn nicht angegeben oder 0 wird die Nachricht global angezeigt."
 msgstr "Object above which to display the message. If unspecified or 0, the message is displayed globally."
 
-#: sdk/script/fn/Message.xml:31(desc)
+#: sdk/script/fn/Message.xml:30(desc)
 msgid "Zusätzliche Formatierungsparameter"
 msgstr "Additional formatting parameters"
 
-#: sdk/script/fn/Message.xml:37(desc)
+#: sdk/script/fn/Message.xml:35(desc)
 msgid "Zeigt eine Nachricht an. Diese kann nach dem C-Formatierungsstil formatiert werden (siehe <placeholder-1/>)"
 msgstr "Displays a message. Text can be formatted in C formatting style (see <placeholder-1/>)."
 
-#: sdk/script/fn/Message.xml:41(remark)
+#: sdk/script/fn/Message.xml:39(remark)
 msgid "Durch Verwendung des Zeichens \"|\" kann ein Zeilenvorschub erreicht werden. \"&lt;c AARRGGBB&gt;Test&lt;/c&gt;\" gibt \"Test\" farbig aus (AA: Transparenz, RR: Rot-, GG: Grün. BB: Blauanteil; hexadezimale Angaben). {{C4ID}} zeigt ein Bild des Objektes mit der ID C4ID; durch Angabe von Zahlen können verschiedene Teile der Grafik verwendet werden, z.B. {{C4ID:2}}."
 msgstr "By using the character \"|\" a line break can be made. \"&lt;c AARRGGBB&gt;Test&lt;/c&gt;\" results in \"Test\" printed in color (AA: transparency, RR: red, GG: green, BB blue; using hexadecimal notation). {{C4ID}} is printed as the picture of object with ID C4ID; by specifying a number, different parts of the picture graphics can be selected, e.g. {{C4ID:2}}."
 
-#: sdk/script/fn/Message.xml:53(text)
+#: sdk/script/fn/Message.xml:51(text)
 msgid "Wird dieser Script in einem Clonk ausgeführt, so erscheint über seinem Kopf der entsprechende Text (z.B. \"Hallo Twonky! Ich bin dein Clonk Yoki!\")"
 msgstr "This script will pop up a message above the clonk's head."
 
@@ -6823,58 +6824,58 @@ msgid "Gibt den Pfad zur Datei per Log aus, aus der angegebene Funktion geladen 
 msgstr "Logs the path of the file where the specified function has been loaded from and also shows overrides. Furthermore functions of objects can be searched via specifying pObj or if pObj is nil they can be searched in a definition by specifying idDefinition."
 
 #: sdk/script/fn/LocalN.xml:14(description)
-#: sdk/script/fn/LocalN.xml:25(remark)
+#: sdk/script/fn/LocalN.xml:24(remark)
 msgid "Diese Funktion dient der Kompatibilität zu älteren Spielinhalten. In neueren Scripts sollte <code>obj[\"name\"]</code> oder <code>obj.name</code>, letzteres bei aktiviertem <code>#strict 3</code>, verwendet werden."
 msgstr "This function exists in order to preserve compatibility to older game content. You should use <code>obj[\"name\"]</code> or <code>obj.name</code>, the latter if <code>#strict 3</code> is activated."
 
-#: sdk/script/fn/LocalN.xml:21(desc)
+#: sdk/script/fn/LocalN.xml:20(desc)
 msgid "Objekt, dessen Variable abgefragt werden soll. 0 bei lokalem Aufruf."
 msgstr "Object of which you want to retrieve a variable. Can be 0 in local calls."
 
-#: sdk/script/fn/LocalN.xml:24(desc)
+#: sdk/script/fn/LocalN.xml:23(desc)
 msgid "Gibt eine Referenz auf eine objektlokale Variable zurück. Diese Referenz kann zum Lesen und Schreiben benutzt werden."
 msgstr "Returns a reference to an object local variable. This reference can be used for reading or writing this variable."
 
-#: sdk/script/fn/LocalN.xml:30(text)
+#: sdk/script/fn/LocalN.xml:29(text)
 msgid "Lässt ein Fundament eines Zauberturms explodieren. Funktioniert nur bei einem Zauberturm, alle anderen Objekte benutzen <placeholder-1/> (9) zum Speichern des Fundamentobjektes."
 msgstr "Explodes the basement of a wizard tower. Only works with a magic tower - all other objects use <placeholder-1/>(9) to store a pointer to their basement."
 
-#: sdk/script/fn/LocalN.xml:33(emLink)
+#: sdk/script/fn/LocalN.xml:32(emLink)
 #: sdk/definition/script.xml:94(col)
 msgid "Initialize"
 msgstr "Initialize"
 
-#: sdk/script/fn/LocalN.xml:34(emLink)
+#: sdk/script/fn/LocalN.xml:33(emLink)
 msgid "local"
 msgstr "local"
 
-#: sdk/script/fn/LocalN.xml:34(emLink)
+#: sdk/script/fn/LocalN.xml:33(emLink)
 msgid "TRE1"
 msgstr "TRE1"
 
-#: sdk/script/fn/LocalN.xml:36(emLink)
+#: sdk/script/fn/LocalN.xml:35(emLink)
 #: sdk/definition/index.xml:14(emLink)
 #: sdk/definition/defcore.xml:7(title)
 msgid "DefCore.txt"
 msgstr "DefCore.txt"
 
-#: sdk/script/fn/LocalN.xml:41(text)
+#: sdk/script/fn/LocalN.xml:40(text)
 msgid "Das Objekt trägt einen Baum mit sich herum."
 msgstr "The object carries a tree around with it."
 
-#: sdk/script/fn/Local.xml:15(desc)
+#: sdk/script/fn/Local.xml:14(desc)
 msgid "Objekt, in der sich die Variable befindet."
 msgstr "Object holding the variable."
 
-#: sdk/script/fn/Local.xml:18(desc)
+#: sdk/script/fn/Local.xml:17(desc)
 msgid "Gibt den Wert einer lokalen Variable (als Referenz) zurück. Jedes Objekt kann eine beliebige Anzahl lokaler Variablen besitzen. Diese werden für jedes Objekt dauerhaft gespeichert und gehen erst verloren, wenn das Objekt gelöscht wird. Eine lokale Variable hat bei Erstellung des Objekts immer den Wert 0."
 msgstr "Returns the value of an object local variable (as reference). Each object can hold any number of local variables. This are stored in the object until the object is deleted. A newly created local variable always has the value 0."
 
-#: sdk/script/fn/Local.xml:19(remark)
+#: sdk/script/fn/Local.xml:18(remark)
 msgid "Da Local eine Referenz zurückgibt, kann der Wert einer Variable über Operatoren verändert werden (<code>Local(0) = 20</code>; <code>Local(1)++</code>; u.ä.)<br/> Wo möglich, sollte statt einer Local-Variable eine lokale <emLink href=\"script/NamedVar.html\">benannte Variable</emLink> eingesetzt werden."
 msgstr "Since Local() returns a reference, the variable can be modified using operators such as Local(0) = 20 or Local(1)++<br/>Where possible, a local <emLink href=\"script/NamedVar.html\">named variable</emLink> should be used instead of a local variable."
 
-#: sdk/script/fn/Local.xml:43(text)
+#: sdk/script/fn/Local.xml:42(text)
 msgid "Dieses Script hat eine Ereignisfunktion (Hit), welche aufgerufen wird, wenn das Objekt auf den Boden aufschlägt. Hier wird die lokale Variable Nr. 0 auf 1 und die lokale Variable Nr. 1 auf 10 gesetzt.<br/> Die zweite Scriptfunktion, die definiert wird, heißt \"Timer\". Hierbei sollte es sich um eine Funktion handeln, die periodisch aufgerufen wird (Einstellung \"Timer\" in der DefCore.txt). Hier wird erst geprüft, ob das Objekt aktiviert ist [Local(0)]. Wenn nicht, wird die Funktion sofort beendet, es passiert also nichts. Wurde das Objekt aber aktiviert (dann ist Local(0) = 1), so wird ein Sound ausgegeben. Darauf wird die lokale Variable 1 eins heruntergezählt und der neue Wert über dem Objekt angezeigt.<br/> D.h. die Aktivierung in Hit startet einen Countdown von 10 aus. Ist der Zähler bei 0 angekommen, so explodiert das Objekt."
 msgstr "This script is invoked through the engine callback 'Hit' which occurs when the object hits the ground.<br/>The script sets the local variable 0 to value 1 and the variable 1 to value 10.<br/>The second script function is called 'Timer' and should be called periodically (see Timer entry in DefCore). This function will check whether the object has already hit the ground (Local(0) ist set). If this is the case, a sound is played and the counter variable 1 is decreased. When the counter reaches zero, the object explodes. For example this could be a timed grenade activated by impact."
 
@@ -6999,15 +7000,15 @@ msgstr "Returns the height of the landscape in pixels."
 msgid "Objekt, das getötet wird. 0 bei lokalem Aufruf."
 msgstr "Object to be killed. Can be 0 in local calls."
 
-#: sdk/script/fn/Kill.xml:25(desc)
+#: sdk/script/fn/Kill.xml:24(desc)
 msgid "Wenn gesetzt, wird das Objekt auch dann getötet, wenn ein Effekt das zu unterbrechen versucht. Ab CE."
 msgstr "If set, the object will be killed, even if an effect tries to prevent this. From CE."
 
-#: sdk/script/fn/Kill.xml:32(desc)
+#: sdk/script/fn/Kill.xml:30(desc)
 msgid "Tötet ein Objekt. Nur Lebewesen."
 msgstr "Kills an object. Applies to living beings only."
 
-#: sdk/script/fn/Kill.xml:37(text)
+#: sdk/script/fn/Kill.xml:35(text)
 msgid "Tötet ein Lebewesen."
 msgstr "Kills a living being."
 
@@ -7215,15 +7216,15 @@ msgstr "Object (clonk) of which to retrieve the info section."
 msgid "Objekt (Clonk), das die Infosektion übernehmen soll. 0 bei lokalem Aufruf."
 msgstr "Object (clonk) of which to set the info section. Can be 0 in local calls."
 
-#: sdk/script/fn/GrabObjectInfo.xml:27(desc)
+#: sdk/script/fn/GrabObjectInfo.xml:26(desc)
 msgid "Überträgt die Infosektion von einem anderen Objekt zu pFrom bzw. dem aufrufenden Objekt. Die Infosektion enthält Namen, Rang, permantente Physicals, usw. Mit diesem Befehl lassen sich beispielsweise Wiederbelebungen realisieren, indem einfach beim Tod eines Clonks ein neuer erstellt und die Infosektion übertragen wird."
 msgstr "Transfers the info section from one object to another. The info section contains name, rank, permanent physicals, etc. Using this command you can e.g. perform reincarnations by transferring the info section from a dead clonk to a live one."
 
-#: sdk/script/fn/GrabObjectInfo.xml:28(remark)
+#: sdk/script/fn/GrabObjectInfo.xml:27(remark)
 msgid "Der Befehl impliziert ein <placeholder-1/> zum bestizenden Spieler. Der Clonk sollte also nicht schon vor dem Aufruf mit MakeCrewMember zur Spielercrew hinzugefügt werden, weil dadurch jeweils ein neuer Clonk aus der Crew eingestellt und sofort wieder entlassen würde."
 msgstr "This command implies a <placeholder-1/> for the owning player. So the clonk should not already be a crew member - this would cause a new crew member info to be created and immediately discarded."
 
-#: sdk/script/fn/GrabObjectInfo.xml:36(text)
+#: sdk/script/fn/GrabObjectInfo.xml:35(text)
 msgid "Dieser Teil eines Objektscripts sorgt dafür, dass ein Clonk bei seinem Tod irgendwo in der Landschaft neu erstellt wird, und unter demselben Namen und mit denselben Physicals weiterspielen kann."
 msgstr "This part of a script would reincarnate a dead clonk at a random landscape position using the same name and physicals."
 
@@ -7235,19 +7236,19 @@ msgstr "Obect of which to grab the contents."
 msgid "Entfernt sämtlichen Inhalt von *pObj, und gibt diesen dem aufrufenden Objekt."
 msgstr "Removes all contents from pObj and gives it to the calling object."
 
-#: sdk/script/fn/GlobalN.xml:14(desc)
+#: sdk/script/fn/GlobalN.xml:13(desc)
 msgid "Name einer globalen Variable."
 msgstr "Name of a global variable."
 
-#: sdk/script/fn/GlobalN.xml:17(desc)
+#: sdk/script/fn/GlobalN.xml:16(desc)
 msgid "Liefert den Inhalt der globalen Variable mit dem Namen szText. Per GlobalN(\"Name\")=Wert; kann der Wert einer benannten globalen Variable gesetzt werden."
 msgstr "Returns the value of the global variable of name szText. Through GlobalN(\"Name\")=Value you can also set the value of a global variable."
 
-#: sdk/script/fn/Global.xml:14(desc)
+#: sdk/script/fn/Global.xml:13(desc)
 msgid "Nummer der globalen Variable."
 msgstr "Number of the global variable."
 
-#: sdk/script/fn/Global.xml:17(desc)
+#: sdk/script/fn/Global.xml:16(desc)
 msgid "Liefert den Inhalt der globalen Variable iVarIndex."
 msgstr "Returns the value of the global variable iVarIndex."
 
@@ -7684,33 +7685,33 @@ msgstr "Name of the entry to be retrieved"
 msgid "Sektion des abzufragenden Eintrags. Wird 0 übergeben, werden alle Sektionen nach einem Eintrag mit dem entspr. Namen durchsucht."
 msgstr "Section of the entry to be retrieved. If 0, all sections will be searched for an entry of the specified name."
 
-#: sdk/script/fn/GetScenarioVal.xml:27(desc)
-#: sdk/script/fn/GetPlayerVal.xml:33(desc)
-#: sdk/script/fn/GetPlayerInfoCoreVal.xml:33(desc)
-#: sdk/script/fn/GetObjectVal.xml:33(desc)
-#: sdk/script/fn/GetObjectInfoCoreVal.xml:33(desc)
-#: sdk/script/fn/GetMaterialVal.xml:33(desc)
-#: sdk/script/fn/GetDefCoreVal.xml:33(desc)
-#: sdk/script/fn/GetActMapVal.xml:33(desc)
+#: sdk/script/fn/GetScenarioVal.xml:26(desc)
+#: sdk/script/fn/GetPlayerVal.xml:31(desc)
+#: sdk/script/fn/GetPlayerInfoCoreVal.xml:31(desc)
+#: sdk/script/fn/GetObjectVal.xml:31(desc)
+#: sdk/script/fn/GetObjectInfoCoreVal.xml:31(desc)
+#: sdk/script/fn/GetMaterialVal.xml:31(desc)
+#: sdk/script/fn/GetDefCoreVal.xml:31(desc)
+#: sdk/script/fn/GetActMapVal.xml:31(desc)
 msgid "Nummer des abzufragenden Wertes, wenn der Eintrag mehrere Werte enthält."
 msgstr "Index of the value to be retrieved if an entry contains multiple values."
 
-#: sdk/script/fn/GetScenarioVal.xml:33(desc)
+#: sdk/script/fn/GetScenarioVal.xml:31(desc)
 msgid "Fragt Eigenschaftswerte des Szenarios anhand dessen Namen/Sekion in der <emLink href=\"scenario/scenario.html\">Scenario.txt</emLink> ab"
 msgstr "Returns the property value of the scenario by its name and section in the <emLink href=\"scenario/scenario.html\">Scenario.txt</emLink>"
 
-#: sdk/script/fn/GetScenarioVal.xml:35(remark)
+#: sdk/script/fn/GetScenarioVal.xml:33(remark)
 msgid "Achtung! Die abgefragten Werte können teilweise nicht sync-sicher sein (also z.B. bei verschiedenen Rechnern in einem Netzwerkspiel verschiedene Werte zurückliefern)"
 msgstr "Warning: the retrieved values may differ from computer to computer and thus cause synchronization problems in network games."
 
-#: sdk/script/fn/GetScenarioVal.xml:38(remark)
-#: sdk/script/fn/GetPlayerVal.xml:44(remark)
-#: sdk/script/fn/GetObjectVal.xml:41(remark)
-#: sdk/script/fn/GetObjectInfoCoreVal.xml:43(remark)
+#: sdk/script/fn/GetScenarioVal.xml:36(remark)
+#: sdk/script/fn/GetPlayerVal.xml:41(remark)
+#: sdk/script/fn/GetObjectVal.xml:38(remark)
+#: sdk/script/fn/GetObjectInfoCoreVal.xml:40(remark)
 msgid "Die meisten Möglichkeiten für Werte von strEntry sind bereits in System.c4g/GetXVal.c vordefiniert"
 msgstr "Most useful applications for strEntry are already implemented in System.c4g/GetXVal.c"
 
-#: sdk/script/fn/GetScenarioVal.xml:44(text)
+#: sdk/script/fn/GetScenarioVal.xml:42(text)
 msgid "Gibt eine Meldung mit dem Szenariotitel aus."
 msgstr "Displays the scenario title."
 
@@ -7946,7 +7947,7 @@ msgid "CON_Special"
 msgstr "CON_Special"
 
 #: sdk/script/fn/GetPlrControlName.xml:27(col)
-#: sdk/script/fn/CustomMessage.xml:150(col)
+#: sdk/script/fn/CustomMessage.xml:144(col)
 #: sdk/definition/category.xml:69(col)
 msgid "10"
 msgstr "10"
@@ -7956,7 +7957,7 @@ msgid "CON_Special2"
 msgstr "CON_Special2"
 
 #: sdk/script/fn/GetPlrControlName.xml:28(col)
-#: sdk/script/fn/CustomMessage.xml:158(col)
+#: sdk/script/fn/CustomMessage.xml:152(col)
 #: sdk/definition/category.xml:74(col)
 msgid "11"
 msgstr "11"
@@ -7989,19 +7990,19 @@ msgstr "Determines the player color. The player color is used to identify variou
 msgid "Gibt Statusinformationen über den ersten Spieler aus, wobei dessen Spielername in seiner Spielerfarbe gefärbt wird."
 msgstr "Returns status information about the first player, highlighting the player's name in the player color."
 
-#: sdk/script/fn/GetPlayerVal.xml:27(desc)
+#: sdk/script/fn/GetPlayerVal.xml:26(desc)
 msgid "Nummer des Spielers, von dem der Eintrag abgefragt werden soll."
 msgstr "Number of the player of which you want to retrieve an entry."
 
-#: sdk/script/fn/GetPlayerVal.xml:39(desc)
+#: sdk/script/fn/GetPlayerVal.xml:36(desc)
 msgid "Fragt Eigenschaftswerte eines Spielers anhand dessen Namen ab, wie sie beim Speichern eines Spiels in die game.txt geschrieben werden"
 msgstr "Retrieves properties of a player by way of the name under which they are stored in the Game.txt component of a savegame"
 
-#: sdk/script/fn/GetPlayerVal.xml:41(remark)
+#: sdk/script/fn/GetPlayerVal.xml:38(remark)
 msgid "Achtung! Die abgefragten Werte können teilweise sync-sicher sein (also z.B. bei verschiedenen Rechnern in einem Netzwerkspiel verschiedene Werte zurückliefern)"
 msgstr "Warning: the retrieved values may not be synchronization safe, meaning they may differ from computer to computer in a network game. Using these values may cause sync loss in a network game."
 
-#: sdk/script/fn/GetPlayerVal.xml:50(text)
+#: sdk/script/fn/GetPlayerVal.xml:47(text)
 msgid "Schreibt die Anzahl der Objekte, die der Spieler mit der Nummer iPlr besitzt ins Log."
 msgstr "Writes the number of objects owned by this player into the log file."
 
@@ -8038,7 +8039,7 @@ msgid "Szenarienscript: Sobald ein Scritpspieler beitritt, wird ein Objekt der D
 msgstr "Scenario script: when a script player joins, an object of definition _EAI is created (owned by the joining script player). This object might now control all clonks owned by this player."
 
 #: sdk/script/fn/GetPlayerType.xml:39(emLink)
-#: sdk/script/fn/CreateScriptPlayer.xml:33(emLink)
+#: sdk/script/fn/CreateScriptPlayer.xml:38(emLink)
 #: sdk/script/ScriptPlayers.xml:7(title)
 #: sdk/script/ScriptPlayers.xml:9(h)
 msgid "Scriptspieler"
@@ -8060,15 +8061,15 @@ msgstr "Returns the name of a player. If the specified player number is invalid,
 msgid "Objektscript: Beim Aktivieren wird der Clonk gefragt, was der Spieler so macht."
 msgstr "Object script: when activated, the clonk asks what the player is doing."
 
-#: sdk/script/fn/GetPlayerInfoCoreVal.xml:27(desc)
+#: sdk/script/fn/GetPlayerInfoCoreVal.xml:26(desc)
 msgid "Spieler, dessen Eintrag abgefragt werden soll."
 msgstr "Player of which to retrieve an entry."
 
-#: sdk/script/fn/GetPlayerInfoCoreVal.xml:39(desc)
+#: sdk/script/fn/GetPlayerInfoCoreVal.xml:36(desc)
 msgid "Gibt einen Eigenschaftswert aus der Player.txt eines Spielers zurück."
 msgstr "Returns the property value of a player by its name in the Player.txt."
 
-#: sdk/script/fn/GetPlayerInfoCoreVal.xml:41(remark)
+#: sdk/script/fn/GetPlayerInfoCoreVal.xml:38(remark)
 msgid "Es kann aus technischen Gründen keine analoge Funktion SetPlayerVal geben."
 msgstr "For technical reasons there can not be a corresponding function SetPlayerVal."
 
@@ -8101,7 +8102,7 @@ msgid "Da Spieler zur Laufzeit hinzukommen oder entfernt werden können, kann es
 msgstr "As players may join and leave a game at runtime, there can be \"gaps\" in player indexing, meaning player numbers may skip certain values. GetPlayerCount returns the actual number of players, not the index of the last player plus one. To process all joined players you need special handling (see example) - you cannot simply run from index 0 to GetPlayerCount() - 1. See the example for <placeholder-1/>."
 
 #: sdk/script/fn/GetPlayerCount.xml:20(text)
-#: sdk/script/fn/GetObjectVal.xml:45(text)
+#: sdk/script/fn/GetObjectVal.xml:42(text)
 #: sdk/script/fn/CreateMenu.xml:46(text)
 msgid "Siehe <placeholder-1/>."
 msgstr "See <placeholder-1/>."
@@ -8303,12 +8304,12 @@ msgstr "Determines the owner of an object."
 msgid "Gibt einen Text mit dem Namen des besitzenden Spielers über dem aufrufenden Objekt aus."
 msgstr "Displays the owner of the calling object above the object."
 
-#: sdk/script/fn/GetObjectVal.xml:27(desc)
-#: sdk/script/fn/GetObjectInfoCoreVal.xml:27(desc)
+#: sdk/script/fn/GetObjectVal.xml:26(desc)
+#: sdk/script/fn/GetObjectInfoCoreVal.xml:26(desc)
 msgid "Objekt, von dem der Eintrag abgefragt werden soll. Null bei lokalen Aufrufen."
 msgstr "Object of which you want to retrieve an entry. Can be 0 in local calls."
 
-#: sdk/script/fn/GetObjectVal.xml:39(desc)
+#: sdk/script/fn/GetObjectVal.xml:36(desc)
 msgid "Gibt einen Eigenschaftswert eines Objekts nach seinem Namen in der Objects.txt zurück."
 msgstr "Returns the property value of an object by its name in the Objects.txt."
 
@@ -8328,11 +8329,11 @@ msgstr "Object of which the layer object should be retrieved. Can be nil in loca
 msgid "Gibt das Layerobjekt von pObj zurück."
 msgstr "Returns the layer object of pObj."
 
-#: sdk/script/fn/GetObjectInfoCoreVal.xml:39(desc)
+#: sdk/script/fn/GetObjectInfoCoreVal.xml:36(desc)
 msgid "Bei dem InfoCore handelt es sich um die Informationen eines CrewMembers, die in dem Spieler gespeichert werden (*.c4i). Dementsprechend gibt GetObjectInfoCoreVal einen Eigenschaftswert eines Crewmembers nach Namen in einer c4i-Datei zurück"
 msgstr "The InfoCore contains personal information of one crew member. It is stored in the player in a file with the extension c4i. Accordingly, GetObjectInfoCoreVal returns a property of a crew member by its name in the InfoCore"
 
-#: sdk/script/fn/GetObjectInfoCoreVal.xml:48(text)
+#: sdk/script/fn/GetObjectInfoCoreVal.xml:45(text)
 msgid "Ermittelt die Erfahrung eines Objekts (Objekt muss Crewmember sein!). GetObjCoreExperience ist dabei eine globale Funktion aus GetXVal.c (siehe Anmerkung).<br/> Obiger Code entspricht:"
 msgstr "Determines the experience of a crewmember. GetObjCoreExperience is a global function from GetXVal.c in the System.c4g (see remark).<br/> The above code responds to:"
 
@@ -8472,15 +8473,15 @@ msgstr "A return value of -1 means that no valid symbol could be determined. Thi
 msgid "Zu einem Objekt mutieren, welches vom Symbol repräsentiert wird."
 msgstr "Mutate into the object represented by the symbol."
 
-#: sdk/script/fn/GetMaterialVal.xml:27(desc)
+#: sdk/script/fn/GetMaterialVal.xml:26(desc)
 msgid "Nummer des Materials, von dem der Eintrag abgefragt werden soll. Bei Übergabe von 0 wird die Definition des aufrufenden Objekts angenommen."
 msgstr "Number of the material of which to retrieve an entry."
 
-#: sdk/script/fn/GetMaterialVal.xml:39(desc)
+#: sdk/script/fn/GetMaterialVal.xml:36(desc)
 msgid "Gibt einen Eigenschaftswert einer Materialdefinition nach seinem Namen in der <emLink href=\"material/c4m.html\">Materialdatei</emLink> zurück."
 msgstr "Returns the property value of a material definition by its name in the <emLink href=\"material/c4m.html\">material file</emLink>."
 
-#: sdk/script/fn/GetMaterialVal.xml:45(text)
+#: sdk/script/fn/GetMaterialVal.xml:42(text)
 msgid "Überprüft, ob das Material rechts vom aufrufenden Objekt sprengbar ist."
 msgstr "Tests whether the landscape on the right of the calling clonk can be blasted away."
 
@@ -8734,68 +8735,68 @@ msgstr "\"Energy\" signifies life energy in living beings and electrical energy 
 msgid "Suchmaske für den Namen der Effekte. Es können '*' und '?' in der Maske verwendet, oder auch direkt Effektnamen angegeben werden. Bei 0, werden alle Effekte gezählt."
 msgstr "Search mask for effect names. You can use '*' or '?' wildcards or specify an effect name directly. If 0, all effects are counted."
 
-#: sdk/script/fn/GetEffectCount.xml:22(desc)
+#: sdk/script/fn/GetEffectCount.xml:21(desc)
 msgid "Zielobjekt, dessen Effekte gezählt werden sollen. Bei 0 werden globale Effekte gezählt."
 msgstr "Target object the effects of which you want to count. If 0, the global effects will be counted."
 
-#: sdk/script/fn/GetEffectCount.xml:28(desc)
-#: sdk/script/fn/GetEffect.xml:40(desc)
+#: sdk/script/fn/GetEffectCount.xml:26(desc)
+#: sdk/script/fn/GetEffect.xml:36(desc)
 msgid "Wenn ungleich 0, werden nur Effekte zurückgegeben, die höchstens die angegebene Priorität haben."
 msgstr "If not 0, only those effects are counted which have the specified priority or lower."
 
-#: sdk/script/fn/GetEffectCount.xml:34(desc)
+#: sdk/script/fn/GetEffectCount.xml:31(desc)
 msgid "Zählt die Effekte in einem Objekt oder globale Effekte."
 msgstr "Counts object effects or global effects."
 
-#: sdk/script/fn/GetEffectCount.xml:36(remark)
+#: sdk/script/fn/GetEffectCount.xml:33(remark)
 msgid "Beispiel siehe <placeholder-1/>."
 msgstr "For an example see <placeholder-1/>."
 
-#: sdk/script/fn/GetEffect.xml:22(desc)
+#: sdk/script/fn/GetEffect.xml:21(desc)
 msgid "Zielobjekt, in dem Effekte abgefragt werden sollen. Bei 0 wird die globale Effektliste durchsucht."
 msgstr "Target object in which to access effects. If 0, the global effects are accessed."
 
-#: sdk/script/fn/GetEffect.xml:28(desc)
+#: sdk/script/fn/GetEffect.xml:26(desc)
 msgid "Effektindex. Bei angegebenem szEffectName gibt dies bei mehreren, der Suchmaske entsprechenden Effekten den indizierten Effekt in der Liste der passenden Effekte an. Ist szEffectName nicht angegeben, wird dagegen der Effekt mit der entsprechenden Effektnummer abgefragt. Im Gegensatz zu Effektnummern ist bei Indizes stets sichergestellt, dass beim Hochzählen von 0 bis zur Effektzahl alle Effekte erfasst werden."
 msgstr "Effect index. With szEffectName specified and multiple matches for the search this will give you the indicated effect from the list of results. If szEffectName is not specified, this index is the effect number. Effect numbers do not necessarily run continuously from 0 to the number of effects. When using the index, this continuity is ensured."
 
-#: sdk/script/fn/GetEffect.xml:34(desc)
+#: sdk/script/fn/GetEffect.xml:31(desc)
 msgid "Index des Wertes, der abgefragt werden soll. Siehe Anmerkung."
 msgstr "Index of the value to be retrieved. See remarks."
 
-#: sdk/script/fn/GetEffect.xml:46(desc)
+#: sdk/script/fn/GetEffect.xml:41(desc)
 msgid "Fragt Effektdaten ab, oder ermittelt, ob ein bstimmter Effekt vorhanden ist. Der Rückgabetyp richtet sich nach dem abgefragten Wert. Wurde der Effekt nicht gefunden, wird immer 0 zurückgegeben."
 msgstr "Retrieves effect data or determines whether a certain effect is present. The return value depend on the requested value. If an effect cannot be found the return value is always 0."
 
-#: sdk/script/fn/GetEffect.xml:50(col)
+#: sdk/script/fn/GetEffect.xml:45(col)
 msgid "iQueryVal"
 msgstr "iQueryVal"
 
-#: sdk/script/fn/GetEffect.xml:51(col)
+#: sdk/script/fn/GetEffect.xml:46(col)
 msgid "Effektnummer"
 msgstr "Effect number"
 
-#: sdk/script/fn/GetEffect.xml:54(col)
+#: sdk/script/fn/GetEffect.xml:49(col)
 msgid "Timer-Intervall"
 msgstr "Timer interval"
 
-#: sdk/script/fn/GetEffect.xml:55(col)
+#: sdk/script/fn/GetEffect.xml:50(col)
 msgid "Befehlsziel"
 msgstr "Command target"
 
-#: sdk/script/fn/GetEffect.xml:56(col)
+#: sdk/script/fn/GetEffect.xml:51(col)
 msgid "Befehlsziel-ID"
 msgstr "Command target id"
 
-#: sdk/script/fn/GetEffect.xml:57(col)
+#: sdk/script/fn/GetEffect.xml:52(col)
 msgid "Laufzeit des Effektes"
 msgstr "Duration of the effect"
 
-#: sdk/script/fn/GetEffect.xml:48(remark)
+#: sdk/script/fn/GetEffect.xml:43(remark)
 msgid "Über den Parameter iQueryVal können folgende Werte abgefragt werden:<br/><br/><placeholder-1/>"
 msgstr "Using the parameter iQueryVal the following values can be retrieved:<br/><br/><placeholder-1/>"
 
-#: sdk/script/fn/GetEffect.xml:78(text)
+#: sdk/script/fn/GetEffect.xml:73(text)
 msgid "Entfernt alle Zaubereffekte von allen Objekten und global."
 msgstr "Removes all magic effects from all objects and the global list."
 
@@ -8843,23 +8844,23 @@ msgstr "Returns the id of the indicated definition from the list of definitions 
 msgid "siehe <placeholder-1/>."
 msgstr "see <placeholder-1/>."
 
-#: sdk/script/fn/GetDefCoreVal.xml:27(desc)
+#: sdk/script/fn/GetDefCoreVal.xml:26(desc)
 msgid "Objektdefinition, von der der Eintrag abgefragt werden soll. Bei Übergabe von 0 wird die Definition des aufrufenden Objekts angenommen."
 msgstr "Object definition of which to get an entry. If 0, the definition of the calling object is used."
 
-#: sdk/script/fn/GetDefCoreVal.xml:39(desc)
+#: sdk/script/fn/GetDefCoreVal.xml:36(desc)
 msgid "Gibt einen Eigenschaftswert einer Objektdefinition nach seinem Namen in der <emLink href=\"definition/defcore.html\">DefCore.txt</emLink> zurück."
 msgstr "Returns the property value of an object definition by its name in the <emLink href=\"definition/defcore.html\">DefCore.txt</emLink>."
 
-#: sdk/script/fn/GetDefCoreVal.xml:42(remark)
+#: sdk/script/fn/GetDefCoreVal.xml:39(remark)
 msgid "Ist der abzufragende Eintrag eine ID-Liste (z.B. \"Components\" in der DefCore.txt), so wird bei geradem iEntryNr die ID, bei ungeradem iEntryNr die Anzahl zurückgegeben (siehe Beispiel)"
 msgstr "If the requested entry is an id list (e.g. \"Components\" in DefCore.txt) an even iEntryNr will return the listed id and an uneven iEntryNr will return the matching count (see example)."
 
-#: sdk/script/fn/GetDefCoreVal.xml:48(text)
+#: sdk/script/fn/GetDefCoreVal.xml:45(text)
 msgid "Ermittelt die Breite des Objekts. Die beiden letzten Parameter könnten in diesem Fall weggelassen werden."
 msgstr "Determines the width of an object. The last two parameters might be omitted in this case."
 
-#: sdk/script/fn/GetDefCoreVal.xml:61(text)
+#: sdk/script/fn/GetDefCoreVal.xml:58(text)
 msgid "Fragt den Materialbedarf für den Bau einer Werkstatt ab. <br/> Die Schleife läuft solange, bis GetDefCoreVal für die ID 0 zurückgibt, was das Ende der Liste markiert"
 msgstr "Determines the necessary components for construction of a workshop.<br/>The loop will run until GetDefCoreVal returns id 0 which means the end of the list"
 
@@ -9019,23 +9020,23 @@ msgstr "Shrinks the selected clonk of the first player by 10% if he's not alread
 msgid "Objektkomponente, dessen Menge zurückgeliefert werden soll. Wenn 0, wird iIndex benutzt und eine Objektkomponente zurückgegeben."
 msgstr "Object component of which to determine the count. If not specified, iIndex is used and the id of the component is returned."
 
-#: sdk/script/fn/GetComponent.xml:26(desc)
+#: sdk/script/fn/GetComponent.xml:25(desc)
 msgid "Index der zurückzuliefernden Komponente. Dieser Parameter wird ignoriert, wenn idComponent angegeben ist. Ansonsten wird eine ID der Komponente zurückgegeben, dessen Menge in einem darauffolgenden GetComponent-Aufruf ermittelt werden kann."
 msgstr "Index of the component to be returned. This parameter is ignored if idComponent is specified. Returns the id of the indicated component which can then be used to determine the count in a subsequent call to GetComponent."
 
-#: sdk/script/fn/GetComponent.xml:35(desc)
+#: sdk/script/fn/GetComponent.xml:33(desc)
 msgid "Objekt dessen Komponenten abgefragt werden sollen. 0 bei lokalem Aufruf. Wenn stattdessen eine idDef angegeben ist, wird dieser Parameter ignoriert."
 msgstr "Object of which to determine components. Can be 0 in local calls. If idDef is specified, this parameter is ignored."
 
-#: sdk/script/fn/GetComponent.xml:43(desc)
+#: sdk/script/fn/GetComponent.xml:40(desc)
 msgid "Definition, von der die Komponenten abgefragt werden sollen. Wenn 0, wird stattdessen in pObj bzw. dem aufrufenden Objekt abgefragt."
 msgstr "Definition of which to determine components. If 0, the specified object is checked instead."
 
-#: sdk/script/fn/GetComponent.xml:50(desc)
+#: sdk/script/fn/GetComponent.xml:46(desc)
 msgid "Liefert Objektkomponenten."
 msgstr "Used to determine object components."
 
-#: sdk/script/fn/GetComponent.xml:60(text)
+#: sdk/script/fn/GetComponent.xml:56(text)
 msgid "Erzeugt alle Komponenten, die dem aufrufenden Objekt noch fehlen (z.B. bei einer Baustelle), direkt vor selbigem."
 msgstr "Creates all components which are still missing in the calling object (e.g. in a construction site) in front of the object."
 
@@ -9043,19 +9044,19 @@ msgstr "Creates all components which are still missing in the calling object (e.
 msgid "Objekt, von dem ein Kommando abgefragt wird."
 msgstr "Object of which to get commands."
 
-#: sdk/script/fn/GetCommand.xml:25(desc)
+#: sdk/script/fn/GetCommand.xml:24(desc)
 msgid "Information, die zurückgegeben werden soll. 0 oder kA: Name, 1: Target, 2: TargetX, 3: TargetY, 4: Target2, 5: Data"
 msgstr "Data to be returned. Unspecified or 0: Name, 1: Target, 2: TargetX, 3: TargetY, 4: Target2, 5: Data"
 
-#: sdk/script/fn/GetCommand.xml:31(desc)
+#: sdk/script/fn/GetCommand.xml:29(desc)
 msgid "Nummer des Kommandos. 0 steht für das momentan aktive, 1 für das danach auszuführende usw."
 msgstr "Number of the command. 0 is the currently active command, other values are the following (super-level) commands."
 
-#: sdk/script/fn/GetCommand.xml:37(desc)
+#: sdk/script/fn/GetCommand.xml:34(desc)
 msgid "Gibt Informationen über ein Kommando eines Objekts zurück. Führt das Objekt momentan keine Aktion aus, so wird (bei jedem Wert von iElement) 0 zurückgegeben."
 msgstr "Returns information on a current command of an object. If the object does not have any commands set, 0 is returned for all queries."
 
-#: sdk/script/fn/GetCommand.xml:46(text)
+#: sdk/script/fn/GetCommand.xml:43(text)
 msgid "Dieser Script beamt das Objekt, falls sein Kommando ist, in seine Basis zu gehen (Kommando \"Enter\"), sofort dorthin. Dies würde z.B. dazu führen, dass man mit der Maussteuerung den Clonk direkt in seine Heimatbasis beamen könnte, indem man den Eingang anklickt."
 msgstr "If the object has been commanded to enter the home base, this script will warp the object there directly."
 
@@ -9238,15 +9239,15 @@ msgstr "From the foundry: after 150 frames the metal is complete."
 msgid "Name der Aktion, von der der Eintrag abgefragt werden soll"
 msgstr "Name of the activity of which to get an entry"
 
-#: sdk/script/fn/GetActMapVal.xml:27(desc)
+#: sdk/script/fn/GetActMapVal.xml:26(desc)
 msgid "Objektdefinition, von der die Aktionsdaten abgefragt werden sollen. Bei Übergabe von 0 wird die Definition des aufrufenden Objekts angenommen."
 msgstr "Object definition of which to get action data. If 0, the definition of the calling object is used."
 
-#: sdk/script/fn/GetActMapVal.xml:39(desc)
+#: sdk/script/fn/GetActMapVal.xml:36(desc)
 msgid "Fragt Aktionsdaten aus der <emLink href=\"definition/actmap.html\">ActMap.txt</emLink> anhand deren dortigem Namen ab."
 msgstr "Gets activity data from the <emLink href=\"definition/actmap.html\">ActMap.txt</emLink> of an object."
 
-#: sdk/script/fn/GetActMapVal.xml:44(text)
+#: sdk/script/fn/GetActMapVal.xml:41(text)
 msgid "Berechnet die Länge in Ticks, die die aktuelle Action dauert"
 msgstr "Calculates the time in ticks that the current action will take"
 
@@ -9534,11 +9535,11 @@ msgstr "Whether to evaluate the ended command as successful."
 msgid "Index des Kommandos. 0 für das aktuelle, 1 für das als nächstes auszuführende usw."
 msgstr "Index of the command. 0 is the current command, other values indicate the following commands."
 
-#: sdk/script/fn/FinishCommand.xml:32(desc)
+#: sdk/script/fn/FinishCommand.xml:31(desc)
 msgid "Beendet ein Kommado in der Kommandoliste eines Objekts."
 msgstr "Ends a command in the command stack of an object."
 
-#: sdk/script/fn/FinishCommand.xml:50(text)
+#: sdk/script/fn/FinishCommand.xml:49(text)
 msgid "Auszug aus dem Sägewerk-Script. Finishcommand wird benutzt, um nachfolgende Kommandos darüber zu informieren, dass die automatische Holzproduktion fehlgeschlagen ist. Produktion() wurde dabei durch ein Call-Kommando aufgerufen, welches immer erfolgreich ist, wenn es die Funktion aufrufen kann. Deshalb muss FinishCommand verwendet werden."
 msgstr "From the sawmill script: FinishCommand is used to inform the following (super-level) commands that automatic wood production has failed. Produktion() is called through a Call command which counts as successful if the function call could be made. That's why FinishCommand must be used."
 
@@ -10142,40 +10143,40 @@ msgstr "Eliminates a player. The round counts as 'lost' for all eliminated playe
 msgid "Wenn der erste Spieler keine Flagge mehr hat, wird er eliminiert."
 msgstr "The first player is eliminated if he has no more flags."
 
-#: sdk/script/fn/EffectVar.xml:17(desc)
+#: sdk/script/fn/EffectVar.xml:16(desc)
 msgid "Index der Variable. Es sind theoretisch beliebig viele Variablen möglich; da aber die Liste beim Abfragen von Variablen außerhalb des erzeugten Bereiches neu erstellt werden muss, sollten hier nicht größere Werte als nötig genommen werden."
 msgstr "Index of the variable. Theoretically, any number of variables can be used. As, however, any newly accessed variable has to internally allocated first, you should only use as many variables as really necessary."
 
-#: sdk/script/fn/EffectVar.xml:22(desc)
+#: sdk/script/fn/EffectVar.xml:21(desc)
 #: sdk/script/fn/EffectCall.xml:16(desc)
 msgid "Zielobjekt des Effektes, auf dessen Variablenspeicher zugegriffen wird. 0 für globale Effekte."
 msgstr "Target object of the effect the of which you want to access variables. 0 for global effects."
 
-#: sdk/script/fn/EffectVar.xml:28(desc)
-#: sdk/script/fn/EffectCall.xml:22(desc)
+#: sdk/script/fn/EffectVar.xml:26(desc)
+#: sdk/script/fn/EffectCall.xml:21(desc)
 msgid "Effektnummer. Effektnummern werden an Effekt-Callbackfunktionen übergeben, sind Rückgabewert von <placeholder-1/> und lassen sich über <placeholder-2/> aus dem Effektnamen herausfinden."
 msgstr "Effect number. Effect numbers are passed to effect callback functions, they are the return values of <placeholder-1/> and can be determined from an effect name via <placeholder-2/>."
 
-#: sdk/script/fn/EffectVar.xml:33(desc)
+#: sdk/script/fn/EffectVar.xml:31(desc)
 msgid "Liefert eine Referenz auf eine Effektlokale Variable. Diese kann zum Lesen und Schreiben verwendet werden."
 msgstr "Returns a reference to an effect local variable. This reference can be used to read or write values."
 
-#: sdk/script/fn/EffectVar.xml:35(remark)
-#: sdk/script/fn/EffectCall.xml:39(remark)
-#: sdk/script/fn/CheckEffect.xml:65(remark)
-#: sdk/script/fn/AddEffect.xml:76(remark)
+#: sdk/script/fn/EffectVar.xml:33(remark)
+#: sdk/script/fn/EffectCall.xml:38(remark)
+#: sdk/script/fn/CheckEffect.xml:58(remark)
+#: sdk/script/fn/AddEffect.xml:68(remark)
 msgid "Für Beispiele und weitere Hinweise siehe <emLink href=\"script/Effects.html\">Effekte-Dokumentation</emLink>."
 msgstr "For examples and more information see the <emLink href=\"script/Effects.html\">effects documentation</emLink>."
 
-#: sdk/script/fn/EffectCall.xml:27(desc)
+#: sdk/script/fn/EffectCall.xml:26(desc)
 msgid "Aufzurufender Befehl. Es wird automatisch Fx[Effektname] vorangestellt; dies sollte nicht mit angegeben werden."
 msgstr "Function to be called. The prefix 'Fx' is automatically prepended to the function name. Do not include 'Fx' in the parameter."
 
-#: sdk/script/fn/EffectCall.xml:32(desc)
+#: sdk/script/fn/EffectCall.xml:31(desc)
 msgid "Zusätzliche Aufrufparameter"
 msgstr "Additional parameters"
 
-#: sdk/script/fn/EffectCall.xml:37(desc)
+#: sdk/script/fn/EffectCall.xml:36(desc)
 msgid "Führt einen Funktionsaufruf im angegebenen Effekt durch. Der Aufruf erhält den Befehlskontext des Effektes, und die ersten beiden Aufrufparameter sind immer Zielobjekt und Effektindex. Die weiteren Parameter können frei gewählt werden."
 msgstr "Makes a function call in the specified effect. The call is made within the context of the effect. The first two parameters are always the target object and the effect index. The remaining parameters can be freely chosen."
 
@@ -10708,32 +10709,32 @@ msgstr "Message to be displayed."
 msgid "Wenn ungleich 0, wird die Nachricht über dem angegebenen Objekt ausgegeben."
 msgstr "If not nil the message will be shown above the specified object."
 
-#: sdk/script/fn/CustomMessage.xml:29(desc)
+#: sdk/script/fn/CustomMessage.xml:28(desc)
 msgid "Nummer des Spielers, bei dem die Nachricht ausgegeben wird. Bei Angabe von NO_OWNER wird die Nachricht für alle Spieler angezeigt."
 msgstr "Player number for whom the message should be visible. If NO_OWNER is specified the message will be shown for all players."
 
-#: sdk/script/fn/CustomMessage.xml:36(desc)
+#: sdk/script/fn/CustomMessage.xml:35(desc)
 msgid "x-Offset der Nachrichtenposition. Bei globalen Nachrichten ist dies die Viewportmitte. Bei Objektnachrichten ist dies relativ zur Standard-Nachrichtenposition über dem Objekt. Bei Portrait-Nachrichten (portrait!=0) ist das Offset relativ zur oberen, linken Viewportecke."
 msgstr "x-offset of the message position. For global messages, it is the viewport center. For object messages it relative to the default message position above the object. For portrait messages (portrait!=0) it is the offset relative to the upper left viewport corner."
 
-#: sdk/script/fn/CustomMessage.xml:45(desc)
+#: sdk/script/fn/CustomMessage.xml:43(desc)
 msgid "y-Offset der Nachrichtenposition."
 msgstr "y-offset of the message position."
 
-#: sdk/script/fn/CustomMessage.xml:51(desc)
+#: sdk/script/fn/CustomMessage.xml:48(desc)
 msgid "Farbe der Nachricht. Bei 0 Default auf 0xffffff (weiß)."
 msgstr "Color of the message. 0 means default of 0xffffff (white)."
 
-#: sdk/script/fn/CustomMessage.xml:57(desc)
+#: sdk/script/fn/CustomMessage.xml:53(desc)
 msgid "ID der Objektdefinition, die für Dekoration der Nachricht verwendet wird. Wenn angegeben, wird die Nachricht von einem Rahmen umgeben. Nur gültig bei angegebenem Portrait."
 msgstr "ID for the message decoration. If set a frame will be drawn around the message. Only valid when a portrait is specified."
 
-#: sdk/script/fn/CustomMessage.xml:65(desc)
+#: sdk/script/fn/CustomMessage.xml:60(desc)
 msgid "Bildspezifikation für ein Bild links neben der Nachricht im Dekorationsrahmen."
 msgstr "Image specification for a picture left of the message inside the frame."
 
-#: sdk/script/fn/CustomMessage.xml:74(col)
-#: sdk/script/fn/CreateScriptPlayer.xml:17(col)
+#: sdk/script/fn/CustomMessage.xml:68(col)
+#: sdk/script/fn/CreateScriptPlayer.xml:19(col)
 #: sdk/scenario/basefunc.xml:12(col)
 #: sdk/definition/lineconnect.xml:13(col)
 #: sdk/definition/cnat.xml:18(col)
@@ -10741,131 +10742,131 @@ msgstr "Image specification for a picture left of the message inside the frame."
 msgid "Bit"
 msgstr "Bit"
 
-#: sdk/script/fn/CustomMessage.xml:80(col)
+#: sdk/script/fn/CustomMessage.xml:74(col)
 msgid "MSG_NoBreak"
 msgstr "MSG_NoBreak"
 
-#: sdk/script/fn/CustomMessage.xml:81(col)
+#: sdk/script/fn/CustomMessage.xml:75(col)
 msgid "Wenn gesetzt, werden keine automatischen Zeilenumbruch bei langen Nachrichten eingefügt."
 msgstr "If set no automatic line breaks are made."
 
-#: sdk/script/fn/CustomMessage.xml:87(col)
+#: sdk/script/fn/CustomMessage.xml:81(col)
 msgid "MSG_Bottom"
 msgstr "MSG_Bottom"
 
-#: sdk/script/fn/CustomMessage.xml:88(col)
+#: sdk/script/fn/CustomMessage.xml:82(col)
 msgid "Nur globale Nachrichten. Für Portraitnachrichten mit Dekorationsrahmen: Das Nachrichtenoffset gibt die Verschiebung zur unteren Bildschirmkante anstatt zur oberen Bildschirmkante an. Für nicht-Portraitnachrichten setzt das Flag die Nachricht etwas tiefer."
 msgstr "Only for global messages. For portrait messages with decoration frame: The position offset is relative to the bottom viewport edge instead f the top. For non-portrait messages the position is only shifted a bit downwards."
 
-#: sdk/script/fn/CustomMessage.xml:96(col)
+#: sdk/script/fn/CustomMessage.xml:90(col)
 msgid "MSG_Multiple"
 msgstr "MSG_Multiple"
 
-#: sdk/script/fn/CustomMessage.xml:97(col)
+#: sdk/script/fn/CustomMessage.xml:91(col)
 msgid "Wenn gesetzt, werden vorherige Nachrichten des gleichen Typs nicht gelöscht."
 msgstr "If set previous messages of the same type aren't removed."
 
-#: sdk/script/fn/CustomMessage.xml:101(col)
+#: sdk/script/fn/CustomMessage.xml:95(col)
 msgid "MSG_Top"
 msgstr "MSG_Top"
 
-#: sdk/script/fn/CustomMessage.xml:102(col)
+#: sdk/script/fn/CustomMessage.xml:96(col)
 msgid "Nur globale Nachrichten. Für Portraitnachrichten mit Dekorationsrahmen: Das Nachrichtenoffset gibt die Verschiebung zur oberen Bildschirmkante an. Für nicht-Portraitnachrichten setzt das Flag die Nachricht etwas höher."
 msgstr "Only for global messages. For portrait messages with decoration frame: The position offset is relative to the top viewport edge. For non-portrait messages the position is only shifted a bit upwards."
 
-#: sdk/script/fn/CustomMessage.xml:109(col)
+#: sdk/script/fn/CustomMessage.xml:103(col)
 msgid "MSG_Left"
 msgstr "MSG_Left"
 
-#: sdk/script/fn/CustomMessage.xml:110(col)
+#: sdk/script/fn/CustomMessage.xml:104(col)
 msgid "Nur globale Nachrichten. Für Portraitnachrichten mit Dekorationsrahmen: Das Nachrichtenoffset gibt die Verschiebung zur linken Bildschirmkante an. Für nicht-Portraitnachrichten setzt das Flag die Nachricht etwas mehr nach links."
 msgstr "Only for global messages. For portrait messages with decoration frame: The position offset is relative to the left viewport edge. For non-portrait messages the position is only shifted a bit to the left."
 
-#: sdk/script/fn/CustomMessage.xml:117(col)
+#: sdk/script/fn/CustomMessage.xml:111(col)
 msgid "MSG_Right"
 msgstr "MSG_Right"
 
-#: sdk/script/fn/CustomMessage.xml:118(col)
+#: sdk/script/fn/CustomMessage.xml:112(col)
 msgid "Nur globale Nachrichten. Für Portraitnachrichten mit Dekorationsrahmen: Das Nachrichtenoffset gibt die Verschiebung zur rechten Bildschirmkante an. Für nicht-Portraitnachrichten setzt das Flag die Nachricht etwas mehr nach rechts."
 msgstr "Only for global messages. For portrait messages with decoration frame: The position offset is relative to the right viewport edge. For non-portrait messages the position is only shifted a bit to the right."
 
-#: sdk/script/fn/CustomMessage.xml:125(col)
+#: sdk/script/fn/CustomMessage.xml:119(col)
 msgid "MSG_HCenter"
 msgstr "MSG_HCenter"
 
-#: sdk/script/fn/CustomMessage.xml:126(col)
+#: sdk/script/fn/CustomMessage.xml:120(col)
 msgid "Nur globale Nachrichten. Die Nachricht wird auf mittlerer Bildschirmbreite angezeigt."
 msgstr "Only for global messages. The message is centered horizontally."
 
-#: sdk/script/fn/CustomMessage.xml:132(col)
+#: sdk/script/fn/CustomMessage.xml:126(col)
 msgid "MSG_VCenter"
 msgstr "MSG_VCenter"
 
-#: sdk/script/fn/CustomMessage.xml:133(col)
+#: sdk/script/fn/CustomMessage.xml:127(col)
 msgid "Nur globale Nachrichten. Die Nachricht wird auf mittlerer Bildschirmhöhe angezeigt."
 msgstr "Only for global messages. The message is centered vertically."
 
-#: sdk/script/fn/CustomMessage.xml:139(col)
+#: sdk/script/fn/CustomMessage.xml:133(col)
 msgid "MSG_DropSpeech"
 msgstr "MSG_DropSpeech"
 
-#: sdk/script/fn/CustomMessage.xml:140(col)
+#: sdk/script/fn/CustomMessage.xml:134(col)
 msgid "Die Nachricht wird beim ersten Vorkommen des Zeichens '$' abgeschnitten."
 msgstr "The message is truncated at the first occurrence of '$'."
 
-#: sdk/script/fn/CustomMessage.xml:144(col)
+#: sdk/script/fn/CustomMessage.xml:138(col)
 msgid "MSG_WidthRel"
 msgstr "MSG_WidthRel"
 
-#: sdk/script/fn/CustomMessage.xml:145(col)
+#: sdk/script/fn/CustomMessage.xml:139(col)
 msgid "iHSize gibt die Breite des Textes in Prozent zur relativen Größe des Viewports an. Nur bei globalen Nachrichten und Spielernachrichten."
 msgstr "iHSize specifies the text width in percent relative to the viewport width. Only for global and player messages."
 
-#: sdk/script/fn/CustomMessage.xml:151(col)
+#: sdk/script/fn/CustomMessage.xml:145(col)
 msgid "MSG_XRel"
 msgstr "MSG_XRel"
 
-#: sdk/script/fn/CustomMessage.xml:152(col)
+#: sdk/script/fn/CustomMessage.xml:146(col)
 msgid "offset_x gibt das X-Offset des Textes in Prozent zur relativen Größe des Viewports an. Nur bei globalen Nachrichten und Spielernachrichten. Empfohlene Werte: -50 bis +50."
 msgstr "offset_x specifies the x-offset in percent relative to the viewport width. Only for global and player messages. Recommended values: -50 to +50."
 
-#: sdk/script/fn/CustomMessage.xml:159(col)
+#: sdk/script/fn/CustomMessage.xml:153(col)
 msgid "MSG_YRel"
 msgstr "MSG_YRel"
 
-#: sdk/script/fn/CustomMessage.xml:160(col)
+#: sdk/script/fn/CustomMessage.xml:154(col)
 msgid "offset_y gibt das y-Offset des Textes in Prozent zur relativen Größe des Viewports an. Nur bei globalen Nachrichten und Spielernachrichten. Empfohlene Werte: -70 bis +25."
 msgstr "offset_y specifies the y-offset in percent relative to the viewport height. Only for global and player messages. Recommended values: -70 to +25."
 
-#: sdk/script/fn/CustomMessage.xml:71(desc)
+#: sdk/script/fn/CustomMessage.xml:65(desc)
 msgid "Bitmaske zusätzlicher Optionen. Mögliche Werte: <placeholder-1/>"
 msgstr "Bit mask composed of additional settings. Possible values: <placeholder-1/>"
 
-#: sdk/script/fn/CustomMessage.xml:172(desc)
+#: sdk/script/fn/CustomMessage.xml:165(desc)
 msgid "Breite des Textes in Pixeln."
 msgstr "Text width in pixels."
 
-#: sdk/script/fn/CustomMessage.xml:177(desc)
+#: sdk/script/fn/CustomMessage.xml:169(desc)
 msgid "Gibt eine Nachricht aus."
 msgstr "Prints a message."
 
-#: sdk/script/fn/CustomMessage.xml:178(remark)
+#: sdk/script/fn/CustomMessage.xml:170(remark)
 msgid "Diese Funktion vereinigt die Funktionialitäten von <placeholder-1/>, <placeholder-2/> und <placeholder-3/> und bietet zusätzliche Optionen an. Um in der Zukunft weitere Parameter einfügen zu können ohne eine neue Funktion zu erschaffen, enthält sie bewusst keine zusätzlichen Format-Parameter. Diese können über die Funktion <placeholder-4/> erreicht werden."
 msgstr "This function combines the functionality of <placeholder-1/>, <placeholder-2/> and <placeholder-3/> and also gives extended control over the message. For future extendability without needing to create a totally new function it intendedly doesn't have builtin formatting support. Formatting can be done via explicitly using <placeholder-4/>."
 
-#: sdk/script/fn/CustomMessage.xml:183(remark)
+#: sdk/script/fn/CustomMessage.xml:175(remark)
 msgid "Es gelten die üblichen Nachrichtenformatierungen. Beginnt die Nachricht mit einem \"@\", so wird die Nachricht dauerhaft angezeigt bis sie durch eine andere ersetzt wird. Das Zeichen \"|\" steht für einen Zeilenumbruch. Es können Nachrichtenformatierungen mit den Tags &lt;i&gt; (kursiv) und &lt;c&gt; (farbig) genutzt werden."
 msgstr "The message text may include formatting modifications as usual. Messages starting with '@' don't disappear automatically. \"|\" represents a line break. The italic tag &lt;i&gt; and the color tag &lt;c&gt; are supported as usual."
 
-#: sdk/script/fn/CustomMessage.xml:188(remark)
+#: sdk/script/fn/CustomMessage.xml:180(remark)
 msgid "Nachrichten werden grundsätzlich angezeigt, bis eine von der Nachrichtenlänge abhängige Zeit vergangen ist oder sie durch eine zweite Nachricht gleicher Klasse ersetzt werden. Eine globale Nachricht (d.h. obj=0) ersetzt alle anderen globalen Nachrichten, und eine Objektnachricht (obj!=0) ersetzt alle anderen Objektnachrichten. Um mehrere Nachrichten gleicher Klasse anzuzeigen, sollte das Flag MSG_Multiple verwendet werden."
 msgstr "Essentially, messages are displayed until a timeout depending on the message length is over or the message is replaced by another one of the same class. A global message (i.e. obj = nil) replaces all previous global messages, and object messages (obj != nil) replaces all other object messages of the same object. For displaying multiple messages of the same class MSG_Multiple may be used."
 
-#: sdk/script/fn/CustomMessage.xml:197(text)
+#: sdk/script/fn/CustomMessage.xml:189(text)
 msgid "Gibt die Nachricht \"This is madness!\" nur für Spieler 0 aus, wobei das Wort \"madness\" in kursiver Schrift angezeigt wird."
 msgstr "Displays the message \"This is madness!\" visible only for player 0. The word \"madness\" is italicized."
 
-#: sdk/script/fn/CustomMessage.xml:205(text)
+#: sdk/script/fn/CustomMessage.xml:197(text)
 msgid "Gibt eine Nachricht mit Dekorahmen aus. Der Name Tonki ist gelb eingefärbt. Links von der Nachricht wird ein grünes Clonk-Portrait angezeigt. Es muss die Dekorationsdefinition MD69 geladen sein."
 msgstr "Displays a message with decoration frame. The name Tonki is displayed in yellow. Left of the message a green Clonk portrait is shown. The decoration definition MD69 must be loaded."
 
@@ -10889,55 +10890,55 @@ msgstr "Player color"
 msgid "Team-ID. Wird 0 angegeben, so wird ein Team nach denselben Regeln ausgewählt wie bei einem normal beitretenden Spieler."
 msgstr "Team-Id. If 0, a team is automatically chosen according to the rules also applied to normal joining players."
 
-#: sdk/script/fn/CreateScriptPlayer.xml:18(col)
+#: sdk/script/fn/CreateScriptPlayer.xml:20(col)
 msgid "CSPF_FixedAttributes"
 msgstr "CSPF_FixedAttributes"
 
-#: sdk/script/fn/CreateScriptPlayer.xml:18(col)
+#: sdk/script/fn/CreateScriptPlayer.xml:20(col)
 msgid "Wenn gesetzt, tritt der Spieler garantiert mit den in den Parameter angegebenen Namen und Farbe bei. Ansonsten werden die Attribute bei Kollisionen geändert."
 msgstr "If set, the player is guaranteed to join with the name and color specified in the parameters. Otherwise those preferences might be ignored in case of conflicts with other players' preferences."
 
-#: sdk/script/fn/CreateScriptPlayer.xml:19(col)
+#: sdk/script/fn/CreateScriptPlayer.xml:21(col)
 msgid "CSPF_NoScenarioInit"
 msgstr "CSPF_NoScenarioInit"
 
-#: sdk/script/fn/CreateScriptPlayer.xml:19(col)
+#: sdk/script/fn/CreateScriptPlayer.xml:21(col)
 msgid "Wenn wahr, wird die Szenarieninitialisierung, also das Erzeugen von Heimatbasismaterial und Clonks, das Setzen der Baupläne nach Szenarienvorgaben, etc., nicht durchgeführt. Außerdem werden die globalen PreInitializePlayer- und InitializePlayer-Callbacks ans Szenarienscript und die Spielziel-, Regel- und Umweltobjekte nicht ausgeführt. Stattdessen wird ein InitializeScriptPlayer(Spielernummer, Team)-Callback als DefinitionCall (d.h. ohne <placeholder-1/>()-Objekt) auf der in idExtraData angegebenen Definition ausgeführt. Mit diesem Parameter lassen sich also spezialisierte Scriptspieler realisieren, die nicht gleichberechtigt mit menschlichen Spielern agieren."
 msgstr "If true, the scenario initialization (i.e. placement of home base material, clonks, setting of build knowledge, etc.) is not performed for this player. Also, the global callbacks PreInitializePlayer and InitializePlayer to the scenario script and to goal, rule, and environment objects are not performed. Instead, the callback InitializeScriptPlayer(Player number, Team) is made to the object definition specified in idExtraData. The call is made as DefinitionCall (without <placeholder-1/>() object). Using this parameter you can create script-controlled AI players which do not receive the same standard treatment as user-controlled players."
 
-#: sdk/script/fn/CreateScriptPlayer.xml:20(col)
+#: sdk/script/fn/CreateScriptPlayer.xml:22(col)
 msgid "CSPF_NoEliminationCheck"
 msgstr "CSPF_NoEliminationCheck"
 
-#: sdk/script/fn/CreateScriptPlayer.xml:20(col)
+#: sdk/script/fn/CreateScriptPlayer.xml:22(col)
 msgid "Wenn gesetzt, wird der Spieler nicht automatisch eliminiert, wenn er keine Crew mehr hat."
 msgstr "If set, the player will not be eliminated automatically if its crew is empty."
 
-#: sdk/script/fn/CreateScriptPlayer.xml:21(col)
+#: sdk/script/fn/CreateScriptPlayer.xml:23(col)
 msgid "CSPF_Invisible"
 msgstr "CSPF_Invisible"
 
-#: sdk/script/fn/CreateScriptPlayer.xml:21(col)
+#: sdk/script/fn/CreateScriptPlayer.xml:23(col)
 msgid "Wenn gesetzt, ist der Spieler nicht in Spielerlisten wie zum Beispiel in der Lobby und im Verfeindungsmenü sichtbar."
 msgstr "If set, the player will not show up in player lists such as in the lobby or hostility menu."
 
-#: sdk/script/fn/CreateScriptPlayer.xml:16(desc)
+#: sdk/script/fn/CreateScriptPlayer.xml:17(desc)
 msgid "Bitmaske aus folgenden Werten: <placeholder-1/>"
 msgstr "Bit mask composed of the following values: <placeholder-1/>"
 
-#: sdk/script/fn/CreateScriptPlayer.xml:22(desc)
+#: sdk/script/fn/CreateScriptPlayer.xml:27(desc)
 msgid "ID, die durchgereicht und an den InitializePlayer-Aufruf weitergegeben wird. Durch Angabe einer ID lassen sich Scriptspieler-Typen unterscheiden. Beispielsweise könnte ein Szenario dynamisch Alien- oder Clonkgegner anbieten."
 msgstr "Id which is passed to the InitializePlayer call. Using this id, it is quite simple to create different types of script players. E.g. a scenario could feature AI players with different types of crew members."
 
-#: sdk/script/fn/CreateScriptPlayer.xml:25(desc)
+#: sdk/script/fn/CreateScriptPlayer.xml:30(desc)
 msgid "Initiiert den Beitritt eines Scriptspielers. Scriptspieler berhalten sich von der Scriptseite wie reguläre Spieler. Sie haben eine Stammcrew, ein Konto, Baupläne, Heimatbasismaterial, Verfeindungen, Teams, etc. Für diese Spieler wird jedoch regulär kein Sichtfenster geöffnet und sie lassen sich nicht von menschlichen Spielern steuern.<br/>Scriptspieler können zum Beispiel verwendet werden, um KI-Gegner wie z.B. Bots in Hazard zu realisieren."
 msgstr "Initializes a joining script player. Script players appear as regular players from the scripting point of view. They have a crew, wealth, build knowledge, home base material, hostility, teams, etc. However, script players do not have a game view port and they can not be controlled by human users.<br/>Script players can be used to create AI controlled opponent teams in special scenarios."
 
-#: sdk/script/fn/CreateScriptPlayer.xml:26(remark)
+#: sdk/script/fn/CreateScriptPlayer.xml:31(remark)
 msgid "Scriptspieler treten in Netzwerkspielen genau wie reguläre Spieler verzögert bei. Das bedeutet, dass nach dem Aufruf von CreateScriptPlayer nicht sofort der Spieler zur Verfügung steht.<br/>Wenn ein Script beispielsweise einen KI-Spieler ereugen will, so sollte die tatsächliche KI-Initialisierung erst im entsprechenden InitializePlayer-Callback erfolgen, wobei mit <placeholder-1/>() geprüft werden kann, ob es sich um einen Scriptspieler handelt.<br/>Wird der Spieler schon zu Beginn des Szenarios gebraucht - also zum Beispiel als Gegner in einer Mission - so sollte stattdessen ein Spieler in den SavePlayerInfos.txt angelegt werden."
 msgstr "As do normal players, script player join with a slight delay in network games. This means that following the call to CreateScriptPlayer the player will not be immediately available.<br/>That means, actual initialization of that player should happen in the InitializePlayer callback which can use <placeholder-1/>() to check whether this is a script player.<br/>If the script player really needs to be available even before normal player initialization - e.g. as opponent in a single player mission - you could create the player via the SavePlayerInfos.txt component."
 
-#: sdk/script/fn/CreateScriptPlayer.xml:29(text)
+#: sdk/script/fn/CreateScriptPlayer.xml:34(text)
 msgid "Für Beispiele siehe <emLink href=\"script/ScriptPlayers.html\">Scriptspieler</emLink>."
 msgstr "For examples see <emLink href=\"script/ScriptPlayers.html\">Script Players</emLink>."
 
@@ -11374,51 +11375,51 @@ msgstr "Name of the effect without prepended 'Fx'."
 msgid "Zielobjekt, dessen Effekte benachrichtigt werden. Bei 0 wird die globale Effektliste benachrichtigt."
 msgstr "Target object of the effects to be notified. If 0, the global effects are notified."
 
-#: sdk/script/fn/CheckEffect.xml:27(desc)
+#: sdk/script/fn/CheckEffect.xml:26(desc)
 msgid "Priorität für den Effekt. Es werden Fx*Effect-Callbacks bei allen Effekten mit gleicher und höherer Priorität durchgeführt. Bei 0 werden alle Effekte benachrichtigt."
 msgstr "Effect priority. Calls are made to all effects of equal or higher priority. With 0, all effects are notified."
 
-#: sdk/script/fn/CheckEffect.xml:33(desc)
+#: sdk/script/fn/CheckEffect.xml:31(desc)
 msgid "Intervall, in dem Timer-Aufrufe getätigt würden. Bei 0 würden keine Timer-Aufrufe durchgeführt, und der Effekt bliebe permanent bis er durch anderwertige Aufrufe entfernt würde."
 msgstr "Interval for the timer calls. With 0, no timer calls are made and the effect stays on permanently until it is deleted by other calls."
 
-#: sdk/script/fn/CheckEffect.xml:39(desc)
+#: sdk/script/fn/CheckEffect.xml:36(desc)
 msgid "Erster Zusatzparameter, der an Fx*Effect-Callbacks übergeben wird"
 msgstr "First extra parameter to be passed to the effect callback"
 
-#: sdk/script/fn/CheckEffect.xml:45(desc)
+#: sdk/script/fn/CheckEffect.xml:41(desc)
 msgid "Zweiter Zusatzparameter, der an Fx*Effect-Callbacks übergeben wird"
 msgstr "Second extra parameter to be passed to the effect callback"
 
-#: sdk/script/fn/CheckEffect.xml:51(desc)
+#: sdk/script/fn/CheckEffect.xml:46(desc)
 msgid "Dritter Zusatzparameter, der an Fx*Effect-Callbacks übergeben wird"
 msgstr "Third extra parameter to be passed to the effect callback"
 
-#: sdk/script/fn/CheckEffect.xml:57(desc)
+#: sdk/script/fn/CheckEffect.xml:51(desc)
 msgid "Vierter Zusatzparameter, der an Fx*Effect-Callbacks übergeben wird"
 msgstr "Fourth extra parameter to be passed to the effect callback"
 
-#: sdk/script/fn/CheckEffect.xml:63(desc)
+#: sdk/script/fn/CheckEffect.xml:56(desc)
 msgid "Führt Fx*Effect (und ggf. auch Fx*Add)-Callbacks in der entsprechenden Effektliste aus, ohne einen Effekt selber zu erstellen. Rückgabewert ist -1, wenn ein anderer Effekt den Effekt abgelehnt hat, und die Effektnummer des aufnehmenden Effektes, wenn der Effekt aufgenommen wurde."
 msgstr "Makes Fx*Effect (and in cases Fx*Add) callbacks to the specified list of effects, without actually creating any effect. The return value is -1 if another effect has rejected the call. If an effect accepts the call, the return value is the effect number of that effect."
 
-#: sdk/script/fn/ChangeEffect.xml:22(desc)
+#: sdk/script/fn/ChangeEffect.xml:21(desc)
 msgid "Zielobjekt, in dem Effekte geändert werden sollen. Bei 0 wird die globale Effektliste durchsucht."
 msgstr "Targt object in which to change effects. With 0, the global effects are processed."
 
-#: sdk/script/fn/ChangeEffect.xml:34(desc)
+#: sdk/script/fn/ChangeEffect.xml:31(desc)
 msgid "Neuer Effektname ohne vorangestelltes Fx"
 msgstr "New effect name without prepended 'Fx'"
 
-#: sdk/script/fn/ChangeEffect.xml:46(desc)
+#: sdk/script/fn/ChangeEffect.xml:41(desc)
 msgid "Ändert den Namen eines Effektes, und damit auch die aufgerufenen Callback-Funktionen."
 msgstr "Changes the name of an effect. This also affects the names of the related callback functions."
 
-#: sdk/script/fn/ChangeEffect.xml:51(text)
+#: sdk/script/fn/ChangeEffect.xml:46(text)
 msgid "Ändert den globalen Effekt \"MeinEffekt\" auf \"AndererEffekt\", wenn er existierte."
 msgstr "Renames the global effect \"MyEffect\" (if it exists) to \"OtherEffect\"."
 
-#: sdk/script/fn/ChangeEffect.xml:58(text)
+#: sdk/script/fn/ChangeEffect.xml:53(text)
 msgid "Schaltet alle Feuer in den Zeitraffer."
 msgstr "Switches all fire into fast mode."
 
@@ -11773,11 +11774,11 @@ msgstr "Length of the adjacent leg"
 msgid "Berechnet den Arcuscosinus von iVal/iRadius, also Result=arccos(iVal/iRadius). Dies entspricht cos(Result)=iVal/iRadius. Die Funktion wird benötigt, um Seitenverhältnisse zu einem Winkel umzurechnen. Für die meisten Fälle ist <placeholder-1/>() aber ausreichend und praktischer."
 msgstr "Calculates arc cosine of iVal/iRadius, or x = arccos(iVal/iRadius). This corresponds to cos(x) = iVal/iRadius. This function is used to calculate an angle from horizontal and vertical offsets. However, in most cases <placeholder-1/>() does what you need."
 
-#: sdk/script/fn/AppendCommand.xml:74(desc)
+#: sdk/script/fn/AppendCommand.xml:66(desc)
 msgid "Fügt ein Kommando der Kommandoliste eines Objekts am Ende hinzu. Das Objekt wird also das zuerst gegebene Kommando ausführen und sich danach automatisch dem mit AppendCommand hinzugefügten widmen.<br/> Für Kommando-Beschreibungen siehe <placeholder-1/><br/> Bemerkung: Mit AppendCommand hinzugefügte Befehle werden nicht an gesteuerte Fahrzeuge weitergeleitet (siehe VehicleControl)"
 msgstr "Appends a command to the command stack of an object. The appended command will be executed after the current other commands.<br/>For command descriptions see <placeholder-1/><br/>Notice: commands set by AppendCommand are not transferred to controlled vehicles (see VehicleControl)."
 
-#: sdk/script/fn/AppendCommand.xml:83(text)
+#: sdk/script/fn/AppendCommand.xml:75(text)
 msgid "Gibt dem Clonk den Befehl, zuerst zu der ersten (gefundenen) Basis zu laufen, und dann das erste Objekt, das er trägt, auf diese zu werfen.<br/>"
 msgstr "Gives the clonk the command to go to the first found base and then throw the first carried object at the base.<br/>"
 
@@ -11909,91 +11910,91 @@ msgstr "Second parameter to the function specified in szCommand (see remark)."
 msgid "Beschreibungstext des neuen Menüeintrags"
 msgstr "Description text of the new menu entry"
 
-#: sdk/script/fn/AddMenuItem.xml:30(col)
+#: sdk/script/fn/AddMenuItem.xml:31(col)
 msgid "Ico:Locked"
 msgstr "Ico:Locked"
 
-#: sdk/script/fn/AddMenuItem.xml:30(col)
+#: sdk/script/fn/AddMenuItem.xml:31(col)
 msgid "Passwortsymbol"
 msgstr "Password icon"
 
-#: sdk/script/fn/AddMenuItem.xml:31(col)
+#: sdk/script/fn/AddMenuItem.xml:32(col)
 msgid "Ico:League"
 msgstr "Ico:League"
 
-#: sdk/script/fn/AddMenuItem.xml:31(col)
+#: sdk/script/fn/AddMenuItem.xml:32(col)
 msgid "Ligasymbol"
 msgstr "League icon"
 
-#: sdk/script/fn/AddMenuItem.xml:32(col)
+#: sdk/script/fn/AddMenuItem.xml:33(col)
 msgid "Ico:GameRunning"
 msgstr "Ico:GameRunning"
 
-#: sdk/script/fn/AddMenuItem.xml:32(col)
+#: sdk/script/fn/AddMenuItem.xml:33(col)
 msgid "Symbol für \"Spiel läuft\""
 msgstr "Game running icon"
 
-#: sdk/script/fn/AddMenuItem.xml:33(col)
+#: sdk/script/fn/AddMenuItem.xml:34(col)
 msgid "Ico:Lobby"
 msgstr "Ico:Lobby"
 
-#: sdk/script/fn/AddMenuItem.xml:33(col)
+#: sdk/script/fn/AddMenuItem.xml:34(col)
 msgid "Symbol für \"Lobby\""
 msgstr "Lobby icon"
 
-#: sdk/script/fn/AddMenuItem.xml:34(col)
+#: sdk/script/fn/AddMenuItem.xml:35(col)
 msgid "Ico:RuntimeJoin"
 msgstr "Ico:RuntimeJoin"
 
-#: sdk/script/fn/AddMenuItem.xml:34(col)
+#: sdk/script/fn/AddMenuItem.xml:35(col)
 msgid "Symbol für \"Laufzeitbeitritt erlaubt\""
 msgstr "Runtime join allowed icon"
 
-#: sdk/script/fn/AddMenuItem.xml:35(col)
+#: sdk/script/fn/AddMenuItem.xml:36(col)
 msgid "Ico:FairCrew"
 msgstr "Ico:FairCrew"
 
-#: sdk/script/fn/AddMenuItem.xml:35(col)
+#: sdk/script/fn/AddMenuItem.xml:36(col)
 msgid "Symbol für \"Faire Crew\""
 msgstr "Fair crew icon"
 
-#: sdk/script/fn/AddMenuItem.xml:36(col)
+#: sdk/script/fn/AddMenuItem.xml:37(col)
 msgid "Ico:Settlement"
 msgstr "Ico:Settlement"
 
-#: sdk/script/fn/AddMenuItem.xml:36(col)
+#: sdk/script/fn/AddMenuItem.xml:37(col)
 msgid "Symbol für Siedlungspunkte"
 msgstr "Settlement score icon"
 
-#: sdk/script/fn/AddMenuItem.xml:20(desc)
+#: sdk/script/fn/AddMenuItem.xml:21(desc)
 msgid "Zusatzparameter für das Verhalten des Menüeintrags.<br/> Untere 7 Bits (0-127): Menüsymbol. Sie lassen sich nicht gleichzeitig verwenden.<br/> 0: Normal<br/> C4MN_Add_ImgRank = 1: Rangsymbol. Bei angegebenem idItem wird ggf. die Rank.png der Definition genutzt. iCount gibt die Ranghöhe an<br/> C4MN_Add_ImgIndexed = 2: Picturefacet, das um XPar1-fache Picturebreite nach rechts verschoben ist. Damit lassen sich mehrere Menüsymbole innerhalb einer Definition unterbringen.<br/> C4MN_Add_ImgObjRank = 3: XPar1 gibt ein Objekt an, dessen Picture-Grafik mit Rang gezeichnet wird. Hat das Objekt keine Infosektion (und damit keinen Rang), so wird in Kontextmenüs dennoch ein entsprechender Leerraum gelassen. Ab CE.<br/> C4MN_Add_ImgObject = 4: XPar1 gibt ein Objekt an, dessen Picture-Grafik gezeichnet wird. Ab CE.<br/> C4MN_Add_ImgTextSpec = 5: Das Symbol wird in szCaption festgelegt und kann entweder eine normale ID, eine Portrait-Spezifikation in der Form \"Portrait:CLNK::00ff00::1\" oder eines der folgenden Symbole sein:<br/><placeholder-1/><br/> C4MN_Add_ImgColor = 6: Die Besitzerfarbflächen im Symbol werden mit der in XPar1 angegebenen Farbe eingefärbt. <br/><br/> Zusätzliche Flags (können mit obrigen Bits kombiniert werden):<br/> C4MN_Add_PassValue = 128: XPar2 wird als Wertangabe benutzt, und überschreibt die Standardangabe (Wert der Definition idItem). Siehe auch iExtra von <placeholder-2/>.<br/> C4MN_Add_ForceCount = 256: Wenn dieses Flag angegeben wird, wird auch ein iCount von 0 im Menü als Anzahl angezeigt (wie es zB. auch im Kaufmenü der Fall ist).<br/> Bei dieser Gelegenheit sei auch erwähnt, dass intern der Wert C4MN_Item_NoCount = 12345678 verwendet wird, wenn dieses Flag nicht angegeben ist, aber iCount 0 ist. D.h. auch, dass in dem seltenen Fall, dass iCount mit 12345678 angegeben wird, keine Anzahl angezeigt wird. <br/> C4MN_Add_ForceNoDesc = 512: Wenn dieses Flag angegeben wird, wird auf keinen Fall eine Beschreibung für den Menüeintrag angezeigt. Beschreibung (setzbar mit szInfoCaption) in dem Sinn, dass ein Tooltip angezeigt wird, wenn der Menüeintrag lange genug ausgewählt ist."
 msgstr "Additional parameter determining the behavior of the menu entry.<br/>Lower 7 bits (0-127): Menu entry icon. Can't be combined.<br/>0: Normal<br/> C4MN_Add_ImgRank = 1; Rank icon. With a specified idItem the Rank.png of the definition will be used if applicable. iCount determines the rank level.<br/> C4MN_Add_ImgIndexed = 2; The picture facet XPar1 times the picture width shifted to the right will be used. This may be used to store multiple icons in a single definition.<br/> C4MN_Add_ImgObjRank = 3: XPar1 is an object of which the picture including its rank will be used as icon. If the object doesn't have any info section (thus also no rank) in context menus a space for the rank symbol will be left out anyway. Since CE.<br/> C4MN_Add_ImgObject = 4: XPar1 is an object of which the picture is used as icon. Since CE.<br/> C4MN_Add_ImgTextSpec = 5: The symbol is defined in szCaption and can be either a normal ID, a portrait specification of the format \"Portrait:CLNK::00ff00::1\" or one of the following icons:<br/><placeholder-1/><br/> C4MN_Add_ImgColor = 6: The owner color area of the icon will be colorized with the color specified in XPar1. <br/><br/> Additional flags (can be combined with those mentioned before):<br/> C4MN_Add_PassValue = 128: XPar2 is used as value and overrides the default value found (in the definition idItem). See also iExtra of <placeholder-2/>.<br/> C4MN_Add_ForceCount = 256: If this flag is specified, also an iCount of 0 will be shown (like it is the case in the buying menu, for example).<br/> It should also be mentioned that internally the value C4MN_Item_NoCount = 12345678 is used if this flag isn't specified but iCount is 0. This means that in the special case where iCount is passed as 12345678 the count won't be shown. <br/> C4MN_Add_ForceNoDesc = 512: If this flag is specified the description (set with szInfoCaption and shown as a tooltip) of the menu entry is suppressed completely, whereas in contrast passing 0 as szInfoCaption will show the description of idItem."
 
-#: sdk/script/fn/AddMenuItem.xml:44(desc)
+#: sdk/script/fn/AddMenuItem.xml:47(desc)
 msgid "Erster Zusatzparameter für iExtra."
 msgstr "First additional parameter for iExtra."
 
-#: sdk/script/fn/AddMenuItem.xml:45(desc)
+#: sdk/script/fn/AddMenuItem.xml:48(desc)
 msgid "Zweiter Zusatzparameter für iExtra."
 msgstr "Second additional parameter for iExtra."
 
-#: sdk/script/fn/AddMenuItem.xml:48(desc)
+#: sdk/script/fn/AddMenuItem.xml:51(desc)
 msgid "Fügt einen Menüeintrag hinzu."
 msgstr "Adds a menu entry."
 
-#: sdk/script/fn/AddMenuItem.xml:49(remark)
+#: sdk/script/fn/AddMenuItem.xml:52(remark)
 msgid "Menüsymbole sollten optimalerweise die Größe 35x35 für normale Menüs, 16x16 für Kontextmenüs besitzen. Andernfalls wird unter Beibehaltung des Höhe/Breite-Verhältnisses so gestreckt, dass die längere Seite dieser Größe entspricht."
 msgstr "Custom menu symbols should best have square aspect ratio."
 
-#: sdk/script/fn/AddMenuItem.xml:50(remark)
+#: sdk/script/fn/AddMenuItem.xml:53(remark)
 msgid "Wird als szCommand-Parameter nur ein Funktionsname angegeben, werden folgende Parameter übergeben: <code>idItem, iParameter, bRight[, iValue]</code> wobei bRight angibt, ob der Menueintrag mit [Special2] bzw. der rechten Maustaste ausgewählt wurde. iValue wird nur übergeben, wenn das Bit 8 bei iExtra gesetzt wird und gibt den (überschriebenen) angezeigten Wert des ausgewählten Menüeintrags an."
 msgstr "If a function name is specified for szCommand, the following parameters are passed: <code>idItem, iParameter, bRight[, iValue]</code> with bRight indicating whether the menu entry was selected with [Special2] or the right mouse button. iValue is passed only if bit 8 is set in iExtra and specifies the displayed (overridden) object value of the menu entry."
 
-#: sdk/script/fn/AddMenuItem.xml:86(text)
+#: sdk/script/fn/AddMenuItem.xml:89(text)
 msgid "Menü für einen Spezialclonk."
 msgstr "Menu for a special clonk."
 
-#: sdk/script/fn/AddMenuItem.xml:96(text)
+#: sdk/script/fn/AddMenuItem.xml:99(text)
 msgid "Menü für ein Schrumpfobjekt."
 msgstr "Menu for a shrinking object."
 
@@ -12009,129 +12010,129 @@ msgstr "Shows szData in the game over dialog at the end of the round."
 msgid "Zielobjekt für den Effekt. Bei 0 wird der Effekt global erzeugt."
 msgstr "Target object for the effect. If 0, a global effect is created."
 
-#: sdk/script/fn/AddEffect.xml:27(desc)
+#: sdk/script/fn/AddEffect.xml:26(desc)
 msgid "Priorität für den Effekt. Achtung: Die Priorität darf nicht 0 sein; ansonsten wird der Effekt nicht erzeugt!"
 msgstr "Effect priority. Must be greater than zero!"
 
-#: sdk/script/fn/AddEffect.xml:32(desc)
+#: sdk/script/fn/AddEffect.xml:31(desc)
 msgid "Intervall, in dem Timer-Aufrufe getätigt werden. Bei 0 werden keine Timer-Aufrufe durchgeführt, und der Effekt bleibt permanent bis er durch anderweitige Aufrufe entfernt wird."
 msgstr "Interval for the timer calls. With 0, no timer calls are made and the effect stays on permanently until it is deleted by other calls."
 
-#: sdk/script/fn/AddEffect.xml:38(desc)
+#: sdk/script/fn/AddEffect.xml:36(desc)
 msgid "Befehlsziel. Wenn angegeben, werden alle Callbacks in diesem Objekt ausgeführt. Ansonsten finden diese Callbacks grundsätzlich ohne Objektkontext statt. Wenn das Befehlszielobjekt gelöscht wird, werden alle verbundenen Effekte ohne weitere Callbacks ebenfalls gelöscht. Falls das Befehlsziel seine Definition ändert, sollten verbundene Effekte mit <placeholder-1/> ihre Funktionen neu zuweisen lassen."
 msgstr "Command target. If specified, all callbacks are executed in this object. Otherwise the callbacks are made without any object context. If the command target object is deleted, all effects belonging to this object are deleted without any further callbacks. If the target object changes its definition, belonging effects should reassign their callback functions using <placeholder-1/>."
 
-#: sdk/script/fn/AddEffect.xml:44(desc)
+#: sdk/script/fn/AddEffect.xml:41(desc)
 msgid "Definition, in der bei nicht angegebenem Befehlsziel-Objekt Callbacks ausgeführt werden. Sind sowohl pCmdTarget als auch idCmdTarget 0, werden die Aufrufe global durchgeführt. Das heißt, die Fx*-Funktionen müssen als global deklariert sein, oder Enginefunktionen sein."
 msgstr "Definition in which callbacks are to be executed if no command target object is specified. If both pCmdTarget and idCmdTarget are 0, callbacks are made globally. For this, the Fx* must also be declared globally or they must be engine functions."
 
-#: sdk/script/fn/AddEffect.xml:50(desc)
+#: sdk/script/fn/AddEffect.xml:46(desc)
 msgid "Erster Zusatzparameter, der an Fx*Start- und Fx*Effect-Callbacks übergeben wird"
 msgstr "First extra parameter to be passed to Fx*Start and Fx*Effect callbacks"
 
-#: sdk/script/fn/AddEffect.xml:56(desc)
+#: sdk/script/fn/AddEffect.xml:51(desc)
 msgid "Zweiter Zusatzparameter, der an Fx*Start- und Fx*Effect-Callbacks übergeben wird"
 msgstr "Second extra parameter to be passed to Fx*Start and Fx*Effect callbacks"
 
-#: sdk/script/fn/AddEffect.xml:62(desc)
+#: sdk/script/fn/AddEffect.xml:56(desc)
 msgid "Dritter Zusatzparameter, der an Fx*Start- und Fx*Effect-Callbacks übergeben wird"
 msgstr "Third extra parameter to be passed to Fx*Start and Fx*Effect callbacks"
 
-#: sdk/script/fn/AddEffect.xml:68(desc)
+#: sdk/script/fn/AddEffect.xml:61(desc)
 msgid "Vierter Zusatzparameter, der an Fx*Start- und Fx*Effect-Callbacks übergeben wird"
 msgstr "Fourth extra parameter to be passed to Fx*Start and Fx*Effect callbacks"
 
-#: sdk/script/fn/AddEffect.xml:74(desc)
+#: sdk/script/fn/AddEffect.xml:66(desc)
 msgid "Erzeugt einen Effekt. Rückgabewert ist der Effektindex bei Erfolg, oder 0 bei Fehlschlag (weil der Effekt beispielsweise abgelehnt wurde). Wenn der Effekt von einem anderen Effekt aufgenommen wurde, der sich in demselben Aufruf entfernt, wird -2 zurückgegeben."
 msgstr "Creates an effect. Returns the effect index if successful or 0 if not (e.g. because the effect was rejected). If the effect was accepted by another effect which is deleting itself within the same call, the return value is -2."
 
-#: sdk/script/fn/AddCommand.xml:54(desc)
+#: sdk/script/fn/AddCommand.xml:50(desc)
 msgid "Zeit (in Ticks/Frames), bis das Kommando abgebrochen wird (es wird dann mit dem nachsten in der Kommandoliste fortgesetzt)"
 msgstr "Time (in ticks or frames) until the command is automatically aborted. Execution will continue with the next command in the stack."
 
-#: sdk/script/fn/AddCommand.xml:81(col)
+#: sdk/script/fn/AddCommand.xml:74(col)
 msgid "iBaseMode"
 msgstr "iBaseMode"
 
-#: sdk/script/fn/AddCommand.xml:84(col)
+#: sdk/script/fn/AddCommand.xml:77(col)
 msgid "Fehlschlagsmeldung und CallFailed-Aufrufe"
 msgstr "Failure messages and CallFailed calls"
 
-#: sdk/script/fn/AddCommand.xml:85(col)
+#: sdk/script/fn/AddCommand.xml:78(col)
 msgid "Nächster Befehl"
 msgstr "Next command"
 
-#: sdk/script/fn/AddCommand.xml:89(col)
+#: sdk/script/fn/AddCommand.xml:82(col)
 msgid "C4CMD_SilentSub"
 msgstr "C4CMD_SilentSub"
 
-#: sdk/script/fn/AddCommand.xml:90(col)
+#: sdk/script/fn/AddCommand.xml:83(col)
 msgid "Stiller Unterbefehl"
 msgstr "Silent command"
 
-#: sdk/script/fn/AddCommand.xml:91(col)
+#: sdk/script/fn/AddCommand.xml:84(col)
 msgid "Nur wenn dies der letzte Befehl ist"
 msgstr "Only if this is the last command"
 
-#: sdk/script/fn/AddCommand.xml:92(col)
-#: sdk/script/fn/AddCommand.xml:101(col)
+#: sdk/script/fn/AddCommand.xml:85(col)
+#: sdk/script/fn/AddCommand.xml:94(col)
 msgid "Schlägt fehl"
 msgstr "Fails"
 
-#: sdk/script/fn/AddCommand.xml:96(col)
+#: sdk/script/fn/AddCommand.xml:89(col)
 msgid "C4CMD_Sub"
 msgstr "C4CMD_Sub"
 
-#: sdk/script/fn/AddCommand.xml:97(col)
+#: sdk/script/fn/AddCommand.xml:90(col)
 msgid "Unterbefehl"
 msgstr "Command"
 
-#: sdk/script/fn/AddCommand.xml:98(col)
+#: sdk/script/fn/AddCommand.xml:91(col)
 msgid "Wenn der nächste Befehl keine Wiederholungen mehr hat oder dies der letzte Befehl ist"
 msgstr "If the next command has no retries left or this is the last command"
 
-#: sdk/script/fn/AddCommand.xml:105(col)
+#: sdk/script/fn/AddCommand.xml:98(col)
 msgid "C4CMD_SilentBase"
 msgstr "C4CMD_SilentBase"
 
-#: sdk/script/fn/AddCommand.xml:106(col)
+#: sdk/script/fn/AddCommand.xml:99(col)
 msgid "Stiller Basisbefehl"
 msgstr "Silent base command"
 
-#: sdk/script/fn/AddCommand.xml:107(col)
+#: sdk/script/fn/AddCommand.xml:100(col)
 msgid "Nie"
 msgstr "Never"
 
+#: sdk/script/fn/AddCommand.xml:101(col)
 #: sdk/script/fn/AddCommand.xml:108(col)
-#: sdk/script/fn/AddCommand.xml:115(col)
 msgid "Schlägt nicht fehl"
 msgstr "Does not fail"
 
-#: sdk/script/fn/AddCommand.xml:112(col)
+#: sdk/script/fn/AddCommand.xml:105(col)
 msgid "C4CMD_Base"
 msgstr "C4CMD_Base"
 
-#: sdk/script/fn/AddCommand.xml:113(col)
+#: sdk/script/fn/AddCommand.xml:106(col)
 msgid "Basisbefehl"
 msgstr "Base command"
 
-#: sdk/script/fn/AddCommand.xml:114(col)
+#: sdk/script/fn/AddCommand.xml:107(col)
 msgid "Immer"
 msgstr "Always"
 
-#: sdk/script/fn/AddCommand.xml:76(desc)
+#: sdk/script/fn/AddCommand.xml:69(desc)
 msgid "Bestimmt, wie beim Fehlschlag des Commands verfahren wird. <br/><br/><placeholder-1/>"
 msgstr "Determines the behaviour if the command fails.<br/><br/><placeholder-1/>"
 
-#: sdk/script/fn/AddCommand.xml:124(desc)
+#: sdk/script/fn/AddCommand.xml:116(desc)
 msgid "Fügt ein Kommado in die Kommandoliste eines Objekts hinzu (an den Anfang, siehe auch <placeholder-1/>). D.h. es wird ein Kommando hinzugefügt, welches das Objekt vor anderen vorher gegebenen Kommandos auszuführen hat (war vorher kein Kommando gesetzt, so entspricht AddCommand <placeholder-2/>) <br/> Für Kommando-Beschreibungen siehe <placeholder-3/>"
 msgstr "Adds a command to the top of the command stack of an object (also see <placeholder-1/>). This command will be executed first, then the object will continue with the existing commands. If the command stack is empty, AddCommand does the same as <placeholder-2/>.<br/>For the list of commands see <placeholder-3/>"
 
-#: sdk/script/fn/AddCommand.xml:132(remark)
+#: sdk/script/fn/AddCommand.xml:124(remark)
 msgid "Mit AddCommand hinzugefügte Befehle werden nicht an gesteuerte Fahrzeuge weitergeleitet (siehe VehicleControl)"
 msgstr "Commands added using AddCommand are not passed to controlled vehicles (see VehicleControl)."
 
-#: sdk/script/fn/AddCommand.xml:145(text)
+#: sdk/script/fn/AddCommand.xml:137(text)
 msgid "Dieser Timer-Script bewirkt (aus einem Objekt aufgerufen, welches auf dem Boden liegt), dass jeder Clonk, der über das Objekt von links nach rechts hinübergeht, springt. Dazu wird erst ein Clonk (bzw. CrewMember) über dem Objekt gesucht. Wurde ein solcher gefunden, und läuft er im Moment nach rechts (ComDir), so wird dem Clonk das Kommando \"Jump\" hinzugefügt. Das besondere an dem Script ist, dass die alte Befehlskette nicht angetastet wird; der Clonk wird nachdem er gesprungen hat seine Befehlskette weiter verarbeiten. <br/> Mithilfe dieses Script kann man einem Clonk z.B. beibringen, an einer bestimmten Stelle automatisch über einen Abgrund zu hüpfen."
 msgstr "If called from an object on the ground, this timer script makes any clonk passing the object from left to right jump. To do this, crew member objects are searched above the object. If one is found and he is moving from left to right (ComDir), he is given a 'Jump' command. Notice that this does not affect the previously set commands of the clonk - after completing the jump command, the clonk will continue with his previous commands. Using this script, you could e.g. ensure that clonks will always jump a given gap in the landscape."
 

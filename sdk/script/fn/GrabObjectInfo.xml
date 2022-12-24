@@ -3,23 +3,22 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
- <func>
+ <func isAsync="false">
   <title>GrabObjectInfo</title>
   <category>Objekte/Mannschaft</category>
   <versions><version>4.9.1.0 GWE</version></versions>
   <syntax>
-   <rtype>bool</rtype>
+   <rtype isReference="false">bool</rtype>
    <params>
-    <param>
+    <param isReference="false" isOptional="false">
      <type>object</type>
      <name>pFrom</name>
      <desc>Objekt (Clonk), von dem die Infosektion genommen werden soll.</desc>
     </param>
-    <param>
+    <param isReference="false" isOptional="true">
      <type>object</type>
      <name>pTo</name>
      <desc>Objekt (Clonk), das die Infosektion übernehmen soll. 0 bei lokalem Aufruf.</desc>
-     <optional />
     </param>
    </params>
   </syntax>

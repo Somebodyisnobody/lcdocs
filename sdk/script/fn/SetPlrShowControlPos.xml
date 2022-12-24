@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetPlrShowControlPos</title>
 		<category>Spieler</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>int</type><name>iPlr</name><desc>Spieler, für den die Darstellungsposition der Tasten geändert werden soll.</desc></param>
-				<param><type>int</type><name>iPos</name><desc>Positionsnummer. 0 für Oben Mitte (Standard), 1 für Unten Rechts.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iPlr</name><desc>Spieler, für den die Darstellungsposition der Tasten geändert werden soll.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iPos</name><desc>Positionsnummer. 0 für Oben Mitte (Standard), 1 für Unten Rechts.</desc></param>
 			</params>
 		</syntax>
 		<desc>Setzt die Position der grafischen Darstellung des Steuerungsblocks eines Spielers (siehe <funcLink>SetPlrShowControl</funcLink>).</desc>

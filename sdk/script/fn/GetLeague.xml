@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>GetLeague</title>
 		<category>System</category>
 		<versions><version>4.9.6.0 CR</version></versions>
 		<syntax>
-			<rtype>string</rtype>
+			<rtype isReference="false">string</rtype>
 			<params>
-				<param><type>int</type><name>iIndex</name><desc>Index der Liga</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iIndex</name><desc>Index der Liga</desc></param>
 			</params>
 		</syntax>
 		<desc>Ist die Liga aktiviert, gibt GetLeague zurück, um welche Liga es sich handelt (z.B. "Melee"). Ist die Liga deaktiviert, gibt GetLeague 0 zurück. Da ein Szenario in mehreren Ligen gleichzeitig sein kann, können mit iIndex zusätzliche Ligen abgefragt werden (<emLink href="https://board.ccan.de/cgi-bin/topic_show.pl?pid=151678#pid151678">Siehe Post von Isilkor auf CCAN</emLink>).</desc>

@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetGameSpeed</title>
 		<category>Global</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>int</type><name>iGameSpeed</name><desc>Spielgeschwindigkeit in FPS (Frames per Second). Wird der Parameter nicht angegeben oder 0 übergeben, so wird die Standard-Spielgeschwindigkeit (38 FPS) gewählt.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iGameSpeed</name><desc>Spielgeschwindigkeit in FPS (Frames per Second). Wird der Parameter nicht angegeben oder 0 übergeben, so wird die Standard-Spielgeschwindigkeit (38 FPS) gewählt.</desc></param>
 			</params>
 		</syntax>
 		<desc>Setzt die Spielgeschwindigkeit.</desc>

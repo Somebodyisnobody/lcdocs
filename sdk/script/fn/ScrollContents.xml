@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>ScrollContents</title>
     <category>Objekte/Inhalt</category>
     <versions><version>4.9.1.0 GWE</version></versions>
     <syntax>
-      <rtype>object</rtype>
+      <rtype isReference="false">object</rtype>
       <params>
-        <param><type>object</type><name>pObj</name><desc>Objekt, dessen Inhalt rotiert werden soll. 0 bei lokalem Aufruf.</desc></param>
+        <param isReference="false" isOptional="false"><type>object</type><name>pObj</name><desc>Objekt, dessen Inhalt rotiert werden soll. 0 bei lokalem Aufruf.</desc></param>
       </params>
     </syntax>
     <desc>Rotiert den Inhalt eines Objekts. Dabei wird immer genau ein Objekt weiter gescrollt (im Gegensatz zu <funcLink>ShiftContents</funcLink>). Es wird auﬂerdem kein ControlContents aufgerufen. <br/>

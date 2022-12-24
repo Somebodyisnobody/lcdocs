@@ -3,16 +3,16 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>SetPlrMagic</title>
 		<category>Spieler</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>int</rtype>
+			<rtype isReference="false">int</rtype>
 			<params>
-				<param><type>int</type><name>iPlr</name><desc>Nummer des Spielers, dessen Liste der verfügbaren Zauber geändert werden soll</desc></param>
-				<param><type>id</type><name>id</name><desc>ID des Zaubers</desc></param>
-				<param><type>bool</type><name>Remove</name><desc>Ob der Zauber entfernt werden soll</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iPlr</name><desc>Nummer des Spielers, dessen Liste der verfügbaren Zauber geändert werden soll</desc></param>
+				<param isReference="false" isOptional="false"><type>id</type><name>id</name><desc>ID des Zaubers</desc></param>
+				<param isReference="false" isOptional="false"><type>bool</type><name>Remove</name><desc>Ob der Zauber entfernt werden soll</desc></param>
 			</params>
 		</syntax>
 		<desc>Fügt einen Zauber der Liste der verfügbaren Zauber eines Spielers hinzu oder entfernt einen Zauber aus der Liste.</desc>

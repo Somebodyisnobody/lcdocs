@@ -3,7 +3,7 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>DrawVolcanoBranch</title>
     <category>Landschaft</category>
     <versions><version>4.9.6.0 CR</version></versions>
@@ -15,14 +15,14 @@
               href="https://board.ccan.de/cgi-bin/topic_show.pl?pid=90602">CCAN-Forum</a>.</description>
     </deprecated>
     <syntax>
-      <rtype>void</rtype>
+      <rtype isReference="false">void</rtype>
       <params>
-        <param><type>int</type><name>iMat</name><desc>Index des Materials, das gezeichnet werden soll.</desc></param>
-        <param><type>int</type><name>fX</name><desc></desc></param>
-        <param><type>int</type><name>fY</name><desc></desc></param>
-        <param><type>int</type><name>tX</name><desc></desc></param>
-        <param><type>int</type><name>tY</name><desc></desc></param>
-        <param><type>int</type><name>iSize</name><desc></desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iMat</name><desc>Index des Materials, das gezeichnet werden soll.</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>fX</name><desc></desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>fY</name><desc></desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>tX</name><desc></desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>tY</name><desc></desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iSize</name><desc></desc></param>
       </params>
     </syntax>
     <desc>Zeichnet einen Vulkanarm mit dem Material, dessen Index gleich iMat ist.</desc>

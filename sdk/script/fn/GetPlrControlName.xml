@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-    <func>
+    <func isAsync="false">
         <title>GetPlrControlName</title>
         <category>Spieler</category>
         <versions><version>4.9.7.0 CR</version></versions>
         <syntax>
-            <rtype>string</rtype>
+            <rtype isReference="false">string</rtype>
             <params>
-                <param><type>int</type><name>iPlr</name><desc>Spieler, dessen Taste gesucht wird.</desc></param>
-				<param><type>int</type><name>iCon</name><desc>Taste, die gesucht wird. Folgende Werte sind möglich:
+                <param isReference="false" isOptional="false"><type>int</type><name>iPlr</name><desc>Spieler, dessen Taste gesucht wird.</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iCon</name><desc>Taste, die gesucht wird. Folgende Werte sind möglich:
 					<table activateBitmask="false" bitmaskName="">
 						<rowh><col>Name</col><col>Wert</col></rowh>
 						<row><col>CON_CursorLeft</col><col>0</col></row>
@@ -28,7 +28,7 @@
 						<row><col>CON_Special2</col><col>11</col></row>
 					</table>
 				</desc></param>
-				<param><type>bool</type><name>fShort</name><desc>Wenn true, wird die kurze Version der Taste zurückgegeben. (Beispiel: statt "&lt; &gt; |" wird "&lt;" zurückgegeben.)</desc></param>
+				<param isReference="false" isOptional="false"><type>bool</type><name>fShort</name><desc>Wenn true, wird die kurze Version der Taste zurückgegeben. (Beispiel: statt "&lt; &gt; |" wird "&lt;" zurückgegeben.)</desc></param>
             </params>
         </syntax>
         <desc>Gibt den Namen der Taste iCon von iPlr zurück.</desc>

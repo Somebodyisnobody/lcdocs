@@ -3,7 +3,7 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-    <func>
+    <func isAsync="false">
         <title>AddCommand</title>
         <category>Objekte/Commands</category>
         <versions>
@@ -12,65 +12,58 @@
             <extversion>4.9.5.0 CE</extversion>
         </versions>
         <syntax>
-            <rtype>bool</rtype>
+            <rtype isReference="false">bool</rtype>
             <params>
-                <param>
+                <param isReference="false" isOptional="false">
                     <type>object</type>
                     <name>pObj</name>
                     <desc>Objekt, dem das Kommando gegeben wird.</desc>
                 </param>
-                <param>
+                <param isReference="false" isOptional="false">
                     <type>string</type>
                     <name>szCommand</name>
                     <desc>Kommandoname (als String). Siehe untere Tabelle</desc>
                 </param>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>object</type>
                     <name>pTarget</name>
                     <desc>Zielobjekt für Aktion</desc>
-                    <optional/>
                 </param>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>int</type>
                     <name>iX</name>
                     <desc>X-Zielkoordinate</desc>
-                    <optional/>
                 </param>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>int</type>
                     <name>iY</name>
                     <desc>Y-Zielkoordinate</desc>
-                    <optional/>
                 </param>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>object</type>
                     <name>pTarget2</name>
                     <desc>zweites Zielobjekt</desc>
-                    <optional/>
                 </param>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>int</type>
                     <name>iInterval</name>
                     <desc>Zeit (in Ticks/Frames), bis das Kommando abgebrochen wird (es wird dann mit dem nachsten in
                         der Kommandoliste fortgesetzt)
                     </desc>
-                    <optional/>
                 </param>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>any</type>
                     <name>Data</name>
                     <desc>zusätzliche Daten zur Aktion</desc>
-                    <optional/>
                 </param>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>int</type>
                     <name>iRetries</name>
                     <desc>Anzahl der Wiederholungen (wenn das Kommando fehlschlägt), bis das Kommando abgebrochen
                         wird.
                     </desc>
-                    <optional/>
                 </param>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>int</type>
                     <name>iBaseMode</name>
                     <desc>Bestimmt, wie beim Fehlschlag des Commands verfahren wird.
@@ -116,7 +109,6 @@
                             </row>
                         </table>
                     </desc>
-                    <optional/>
                 </param>
             </params>
         </syntax>

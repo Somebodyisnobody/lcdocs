@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>GetCaptain</title>
 		<category>Objekte/Mannschaft</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>object</rtype>
+			<rtype isReference="false">object</rtype>
 			<params>
-				<param><type>int</type><name>iPlayer</name><desc>Spieler</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iPlayer</name><desc>Spieler</desc></param>
 			</params>
 		</syntax>
 		<desc>Liefert den Captain von iPlayer. Nur bei der Spielregel "Verlust Captain".</desc>

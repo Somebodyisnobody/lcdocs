@@ -3,17 +3,17 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>CreateMenu</title>
 		<category>Objekte/Menü</category>
 		<versions><version>4.6.5.0 CP</version><extversion>4.9.6.0 CR</extversion></versions>
 		<syntax>
-			<rtype>int</rtype>
+			<rtype isReference="false">int</rtype>
 			<params>
-				<param><type>id</type><name>idSymbol</name><desc>Objektdefinition, deren Bild als Symbol verwendet wird</desc></param>
-				<param><type>object</type><name>pMenuObject</name><desc>Objekt, in welchem das Menü geöffnet wird; kann bei lokalen Aufrufen Null sein</desc></param>
-				<param><type>object</type><name>pCommandObject</name><desc>Erhält das Menükommando (siehe <funcLink>AddMenuItem</funcLink>); kann bei lokalen Aufrufen Null sein</desc></param>
-				<param><type>int</type><name>iExtra</name><desc>Zusätzliche Information im Menü über das jeweils markierte Objekt. Die angegebenen C4MN_*-Konstanten sind seit 4.9.5.0 CE ebenfalls definiert und sollten statt der numerischen Werte verwendet werden:
+				<param isReference="false" isOptional="false"><type>id</type><name>idSymbol</name><desc>Objektdefinition, deren Bild als Symbol verwendet wird</desc></param>
+				<param isReference="false" isOptional="false"><type>object</type><name>pMenuObject</name><desc>Objekt, in welchem das Menü geöffnet wird; kann bei lokalen Aufrufen Null sein</desc></param>
+				<param isReference="false" isOptional="false"><type>object</type><name>pCommandObject</name><desc>Erhält das Menükommando (siehe <funcLink>AddMenuItem</funcLink>); kann bei lokalen Aufrufen Null sein</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iExtra</name><desc>Zusätzliche Information im Menü über das jeweils markierte Objekt. Die angegebenen C4MN_*-Konstanten sind seit 4.9.5.0 CE ebenfalls definiert und sollten statt der numerischen Werte verwendet werden:
 				      <table activateBitmask="false" bitmaskName="">
 				        <rowh><col>Konstante</col><col>Wert</col><col>Effekt</col></rowh>
 				        <row><col>C4MN_Extra_None</col><col>0</col><col>Nichts</col></row>
@@ -25,9 +25,9 @@
 				        <row><col>C4MN_Extra_LiveMagicValue</col><col>6</col><col>Wie C4MN_Extra_MagicValue, nur wird der Wert kontinuierlich aktualisiert.</col></row>
 				        <row><col>C4MN_Extra_ComponentsLiveMagic</col><col>7</col><col>Wie C4MN_Extra_ComponentsMagic, nur wird der Wert kontinuierlich aktualisiert.</col></row>
 				      </table></desc></param>
-				<param><type>string</type><name>szCaption</name><desc>Bestimmt den angezeigten Menütext, wenn das Menü keine Einträge enthält</desc></param>
-				<param><type>int</type><name>iExtraData</name><desc>Vergleichswert für iExtra 3</desc></param>
-				<param><type>int</type><name>iStyle</name><desc>Aussehen des Menüs. Folgende Konstanten sind ab CR definiert:
+				<param isReference="false" isOptional="false"><type>string</type><name>szCaption</name><desc>Bestimmt den angezeigten Menütext, wenn das Menü keine Einträge enthält</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iExtraData</name><desc>Vergleichswert für iExtra 3</desc></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iStyle</name><desc>Aussehen des Menüs. Folgende Konstanten sind ab CR definiert:
 				      <table activateBitmask="false" bitmaskName="">
 				        <rowh><col>Konstante</col><col>Wert</col><col>Aussehen</col></rowh>
 				        <row><col>C4MN_Style_Normal</col><col>0</col><col>Normal</col></row>
@@ -36,8 +36,8 @@
 				        <row><col>C4MN_Style_Dialog</col><col>3</col><col>Dialog</col></row>
 				        <row><col>C4MN_Style_EqualItemHeight</col><col>128</col><col>Kann mit C4MN_Style_Dialog kombiniert werden: Alle Einträge mit Icon im Dialogmenü bekommen die gleiche Höhe.</col></row>
 				      </table></desc></param>
-				<param><type>bool</type><name>fPermanent</name><desc>Das Menü bleibt geöffnet, wenn eine Auswahl getroffen wird.</desc></param>
-				<param><type>id</type><name>idMenuID</name><desc>Wenn angegeben, wird diese ID als Menü-ID gesetzt. Die aktuelle Menü-ID wird zum Beispiel von <funcLink>GetMenu</funcLink> zurückgegeben.</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>bool</type><name>fPermanent</name><desc>Das Menü bleibt geöffnet, wenn eine Auswahl getroffen wird.</desc></param>
+				<param isReference="false" isOptional="true"><type>id</type><name>idMenuID</name><desc>Wenn angegeben, wird diese ID als Menü-ID gesetzt. Die aktuelle Menü-ID wird zum Beispiel von <funcLink>GetMenu</funcLink> zurückgegeben.</desc></param>
 			</params>
 		</syntax>
 		<desc>Erzeugt ein benutzerdefiniertes Menü in pMenuObject. Menüeinträge müssen mit <funcLink>AddMenuItem</funcLink> hinzugefügt werden.</desc>

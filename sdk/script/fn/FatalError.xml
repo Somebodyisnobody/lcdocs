@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>FatalError</title>
 		<category>Nachrichten</category>
 		<versions><version>4.9.7.0 CR</version></versions>
 		<syntax>
-			<rtype>void</rtype>
+			<rtype isReference="false">void</rtype>
 			<params>
-				<param><type>string</type><name>szMessage</name><desc>Auszugebender Text</desc></param>
+				<param isReference="false" isOptional="false"><type>string</type><name>szMessage</name><desc>Auszugebender Text</desc></param>
 			</params>
 		</syntax>
 		<desc>Löst einen Error aus, der bei aktiviertem Debug-Modus im Log und als Nachricht erscheint. Die aktuelle Ausführung wird abgebrochen und der Stacktrace wird ausgegeben.</desc>

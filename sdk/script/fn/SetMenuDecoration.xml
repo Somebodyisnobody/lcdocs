@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>SetMenuDecoration</title>
     <category>Objekte/Menü</category>
     <versions><version>4.9.6.0 CR</version></versions>
     <syntax>
-      <rtype>bool</rtype>
+      <rtype isReference="false">bool</rtype>
       <params>
-        <param><type>id</type><name>idNewDeco</name><desc>ID des Objektes, dessen Grafik als Dekoration verwendet werden soll.</desc></param>
-        <param><type>object</type><name>pMenuObj</name><desc>Menüobjekt, dessen Dekoration geändert werden soll. 0, wenn sich das Menu im aufrufenden Objekt befindet.</desc><optional /></param>
+        <param isReference="false" isOptional="false"><type>id</type><name>idNewDeco</name><desc>ID des Objektes, dessen Grafik als Dekoration verwendet werden soll.</desc></param>
+        <param isReference="false" isOptional="true"><type>object</type><name>pMenuObj</name><desc>Menüobjekt, dessen Dekoration geändert werden soll. 0, wenn sich das Menu im aufrufenden Objekt befindet.</desc></param>
       </params>
     </syntax>
     <desc>Ändert die Dekoration eines Menüobjektes.</desc>

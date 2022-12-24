@@ -3,15 +3,15 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>Collect</title>
 		<category>Objekte/Inhalt</category>
 		<versions><version>4.9.1.0 GWE</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>object</type><name>pItem</name><desc>Objekt, das aufgesammelt werden soll</desc></param>
-				<param><type>object</type><name>pTarget</name><desc>Objekt, das pItem aufsammeln soll. 0 bei lokalem Aufruf.</desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>object</type><name>pItem</name><desc>Objekt, das aufgesammelt werden soll</desc></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pTarget</name><desc>Objekt, das pItem aufsammeln soll. 0 bei lokalem Aufruf.</desc></param>
 			</params>
 		</syntax>
 		<desc>Sammelt ein Objekt auf. Der Befehl führt dieselben Funktionen aus, als wäre das Objekt durch den normalen Collection-Bereich des Objekts eingesammelt worden (z.B. RejectCollect, Prüfung auf Flagge/Flagge abnehmbar, Hit-Aufruf bei <constLink constGroup="OCF">OCF_HitSpeed2</constLink>, usw.). Die einzigen Unterschiede sind, dass keine Prüfung der Position von pItem auf den Entrance-Bereich von pTarget/this() gemacht wird, und dass pItem nicht auf <constLink constGroup="OCF">OCF_Collectible</constLink> geprüft wird.<br />Mit diesem Befehl lässt sich beispielsweise das Aufnehmen von Objekten aus Containern heraus realisieren. Wenn die Aufnahme fehlschlug (Beispielsweise durch den RejectCollect-Aufruf oder weil der Container voll war), gibt die Funktion 0 zurück. Ansonsten 1.</desc>

@@ -3,14 +3,14 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>MaterialName</title>
     <category>Landschaft/Material</category>
     <versions><version>4.9.1.0 GWE</version></versions>
     <syntax>
-      <rtype>string</rtype>
+      <rtype isReference="false">string</rtype>
       <params>
-        <param><type>int</type><name>iMat</name><desc>Index des Materials, dessen Name ermittelt wird</desc></param>
+        <param isReference="false" isOptional="false"><type>int</type><name>iMat</name><desc>Index des Materials, dessen Name ermittelt wird</desc></param>
       </params>
     </syntax>
     <desc>Gibt den (internen, englischen) Namen eines Materials zurück.</desc>

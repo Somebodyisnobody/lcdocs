@@ -3,47 +3,43 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-    <func>
+    <func isAsync="false">
         <title>GetComponent</title>
         <category>Objekte/Komponenten</category>
         <versions>
             <version>4.6.5.0 CP</version>
         </versions>
         <syntax>
-            <rtype>id</rtype>
+            <rtype isReference="false">id</rtype>
             <params>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>id</type>
                     <name>idComponent</name>
                     <desc>Objektkomponente, dessen Menge zurückgeliefert werden soll. Wenn 0, wird iIndex benutzt und
                         eine Objektkomponente zurückgegeben.
                     </desc>
-                    <optional/>
                 </param>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>int</type>
                     <name>iIndex</name>
                     <desc>Index der zurückzuliefernden Komponente. Dieser Parameter wird ignoriert, wenn idComponent
                         angegeben ist. Ansonsten wird eine ID der Komponente zurückgegeben, dessen Menge in einem
                         darauffolgenden GetComponent-Aufruf ermittelt werden kann.
                     </desc>
-                    <optional/>
                 </param>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>object</type>
                     <name>pObj</name>
                     <desc>Objekt dessen Komponenten abgefragt werden sollen. 0 bei lokalem Aufruf. Wenn stattdessen eine
                         idDef angegeben ist, wird dieser Parameter ignoriert.
                     </desc>
-                    <optional/>
                 </param>
-                <param>
+                <param isReference="false" isOptional="true">
                     <type>id</type>
                     <name>idDef</name>
                     <desc>Definition, von der die Komponenten abgefragt werden sollen. Wenn 0, wird stattdessen in pObj
                         bzw. dem aufrufenden Objekt abgefragt.
                     </desc>
-                    <optional/>
                 </param>
             </params>
         </syntax>

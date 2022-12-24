@@ -3,12 +3,12 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>FrameCounter</title>
     <category>Global</category>
     <versions><version>4.9.1.0 GWE</version></versions>
     <syntax>
-      <rtype>int</rtype>
+      <rtype isReference="false">int</rtype>
     </syntax>
     <desc>Gibt die Nummer des Frames zurück, in dem sich das Spiel befindet. Dieser Zähler beginnt beim Szenarienstart mit 0, und zählt dann mit ca. 37 Frames pro Sekunde hoch (abhängig von der Spielgeschwindigkeit)</desc>
     <examples>

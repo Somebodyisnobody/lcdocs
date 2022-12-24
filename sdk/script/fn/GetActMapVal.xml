@@ -3,35 +3,32 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-  <func>
+  <func isAsync="false">
     <title>GetActMapVal</title>
     <category>Get*Val</category>
     <versions><version>4.9.1.0 GWE</version></versions>
     <syntax>
-      <rtype>any</rtype>
+      <rtype isReference="false">any</rtype>
       <params>
-        <param>
+        <param isReference="false" isOptional="false">
           <type>string</type>
           <name>strEntry</name>
           <desc>Name des abzufragenden Eintrags</desc>
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>string</type>
           <name>strAction</name>
           <desc>Name der Aktion, von der der Eintrag abgefragt werden soll</desc>
-          <optional/>
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>id</type>
           <name>idDef</name>
           <desc>Objektdefinition, von der die Aktionsdaten abgefragt werden sollen. Bei Übergabe von 0 wird die Definition des aufrufenden Objekts angenommen.</desc>
-          <optional/>
         </param>
-        <param>
+        <param isReference="false" isOptional="true">
           <type>int</type>
           <name>iEntryNr</name>
           <desc>Nummer des abzufragenden Wertes, wenn der Eintrag mehrere Werte enthält.</desc>
-          <optional/>
         </param>
       </params>
     </syntax>

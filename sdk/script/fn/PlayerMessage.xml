@@ -3,17 +3,17 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func>
+	<func isAsync="false">
 		<title>PlayerMessage</title>
 		<category>Nachrichten</category>
 		<versions><version>4.6.5.0 CP</version></versions>
 		<syntax>
-			<rtype>bool</rtype>
+			<rtype isReference="false">bool</rtype>
 			<params>
-				<param><type>int</type><name>iPlr</name><desc>Nummer des Spielers, bei dem die Nachricht ausgegeben wird</desc></param>
-				<param><type>string</type><name>szMessage</name><desc>Nachricht, die ausgegeben wird</desc></param>
-				<param><type>object</type><name>pObj</name><desc>Objekt, bei dem die Nachricht ausgegeben wird. Ohne angegebenes Objekt wird die Nachricht global (analog zu <funcLink>PlrMessage</funcLink>) ausgegeben.</desc><optional /></param>
-				<param><type>any</type><name>...</name><desc>Zusatzparameter, die die Nachricht formatieren. Siehe dazu auch <funcLink>Format</funcLink></desc><optional /></param>
+				<param isReference="false" isOptional="false"><type>int</type><name>iPlr</name><desc>Nummer des Spielers, bei dem die Nachricht ausgegeben wird</desc></param>
+				<param isReference="false" isOptional="false"><type>string</type><name>szMessage</name><desc>Nachricht, die ausgegeben wird</desc></param>
+				<param isReference="false" isOptional="true"><type>object</type><name>pObj</name><desc>Objekt, bei dem die Nachricht ausgegeben wird. Ohne angegebenes Objekt wird die Nachricht global (analog zu <funcLink>PlrMessage</funcLink>) ausgegeben.</desc></param>
+				<param isReference="false" isOptional="true"><type>any</type><name>...</name><desc>Zusatzparameter, die die Nachricht formatieren. Siehe dazu auch <funcLink>Format</funcLink></desc></param>
 			</params>
 		</syntax>
 		<desc>Gibt eine Nachricht nur im Viewport eines Spielers aus. Die Nachrichtenformatierung erfolgt analog zu <funcLink>Message</funcLink>.</desc>
