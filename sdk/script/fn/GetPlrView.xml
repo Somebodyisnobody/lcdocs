@@ -19,7 +19,7 @@
     </desc>
     <remark>
       Wurde die Sicht nicht durch den Script gesetzt (<funcLink>SetPlrView</funcLink>), so folgt
-      die Sicht dem aktuell selektiertem Clonk (auﬂer im Sichtmodus "Scroll", siehe <funcLink>GetViewMode</funcLink>).
+      die Sicht dem aktuell selektiertem Clonk (auﬂer im Sichtmodus "C4PVM_Scrolling", siehe <funcLink>GetPlrViewMode</funcLink>).
       Dieser kann mit der Funktion <funcLink>GetCursor</funcLink> abgefragt werden.
     </remark>
     <related>

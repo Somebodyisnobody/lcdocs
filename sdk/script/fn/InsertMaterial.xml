@@ -20,7 +20,7 @@
     <desc>Fügt ein Materialpixel an der angegebenen Position in der angegebenen Geschwindigkeit ein.</desc>
     <related>
       <funcLink>Material</funcLink>
-      <funcLink>InsertMaterialAmount</funcLink>
+      <funcLink>ExtractMaterialAmount</funcLink>
     </related>
   </func>
   <author>Sven2</author><date>2001-11</date>

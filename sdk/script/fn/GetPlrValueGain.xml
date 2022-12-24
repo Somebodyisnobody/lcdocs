@@ -15,8 +15,7 @@
                 </syntax>
                 <desc>Liefert die Änderung des Spielerwerts seit Beginn der Runde.</desc>
                 <related>
-                        <funcLink>SetPlrValue</funcLink>
-			<funcLink>GetPlrValue</funcLink>
+                        <funcLink>GetPlrValue</funcLink>
                         <funcLink>GetWealth</funcLink>
                 </related>
         </func>

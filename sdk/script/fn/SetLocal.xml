@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
+	<func>
+		<title>SetLocal</title>
+		<category>Variablen</category>
+		<versions>
+			<version>4.6.5.0 CP</version>
+			<extversion>4.9.1.0 GWE</extversion>
+		</versions>
+		<deprecated>
+			<author>Funni</author>
+			<date>2022-12-24</date>
+			<version>unknown</version>
+			<description>Statt SetLocal sollte zum Zugriff auf Local-Variablen die Schreibweise <code><funcLink>Local</funcLink>(x) = y</code> verwendet werden.</description>
+		</deprecated>
+		<syntax>
+			<rtype>any</rtype>
+			<isReference/>
+			<params>
+				<param>
+					<type>int</type>
+					<name>iVarIndex</name>
+					<desc>Nummer der Variable, die abgefragt werden soll. Jede nicht negative Zahl ist erlaubt.</desc>
+				</param>
+				<param>
+					<type>any</type>
+					<name>Value</name>
+					<desc>Neuer Wert der Variable.</desc>
+				</param>
+				<param>
+					<type>object</type>
+					<name>pObj</name>
+					<desc>Objekt, in der die Variable gesetzt werden soll</desc>
+					<optional/>
+				</param>
+			</params>
+		</syntax>
+		<desc>Setzt eine <funcLink>Local</funcLink>-Variable in einem Objekt (wenn nicht angegeben, wird die Variable in
+			dem aufrufenden Objekt gesetzt) und gibt, wenn erfolgreich, den gesetzten Wert zurück
+			(ansonsten 0).
+		</desc>
+		<remark>Statt SetLocal sollte zum Zugriff auf Local-Variablen die Schreibweise <code><funcLink>Local</funcLink>(x) = y</code> verwendet werden.</remark>
+		<related>
+			<funcLink>Global</funcLink>
+			<funcLink>GlobalN</funcLink>
+			<funcLink>SetGlobal</funcLink>
+			<funcLink>Local</funcLink>
+			<funcLink>LocalN</funcLink>
+			<funcLink>Var</funcLink>
+			<funcLink>VarN</funcLink>
+			<funcLink>SetVar</funcLink>
+		</related>
+	</func>
+	<author>PeterW</author>
+	<date>2001-12</date>
+</clonkDoc>

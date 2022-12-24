@@ -7,6 +7,13 @@
     <title>DrawVolcanoBranch</title>
     <category>Landschaft</category>
     <versions><version>4.9.6.0 CR</version></versions>
+    <deprecated>
+      <author>Funni</author>
+      <date>2022-12-24</date>
+      <version>4.9.10.7 [330] LC</version>
+      <description>Diese Funktion war als interne Notlösung entwickelt worden und sollte nicht mehr verwendet werden. Siehe <a
+              href="https://board.ccan.de/cgi-bin/topic_show.pl?pid=90602">CCAN-Forum</a>.</description>
+    </deprecated>
     <syntax>
       <rtype>void</rtype>
       <params>

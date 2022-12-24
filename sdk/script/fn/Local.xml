@@ -8,7 +8,7 @@
 		<category>Variablen</category>
 		<versions><version>4.6.5.0 CP</version><extversion>4.9.1.0 GWE</extversion></versions>
 		<syntax>
-			<rtype>void</rtype>
+			<rtype>any</rtype>
 			<isReference />
 			<params>
 				<param><type>int</type><name>iVarIndex</name><desc>Nummer der Variable, die abgefragt werden soll. Jede nicht negative Zahl ist erlaubt.</desc></param>

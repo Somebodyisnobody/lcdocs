@@ -15,8 +15,7 @@
                 </syntax>
                 <desc>Liefert den Spielerwert (Wert aller Objekte im Besitz) eines Spielers.</desc>
                 <related>
-                        <funcLink>SetPlrValue</funcLink>
-			<funcLink>GetPlrValueGain</funcLink>
+			            <funcLink>GetPlrValueGain</funcLink>
                         <funcLink>GetWealth</funcLink>
                 </related>
         </func>

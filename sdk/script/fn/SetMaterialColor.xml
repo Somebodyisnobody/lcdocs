@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
+	<func>
+		<title>SetMatAdjust</title>
+		<category>Landschaft/Material</category>
+		<versions>
+			<version>4.9.1.0 GWE</version>
+		</versions>
+		<deprecated>
+			<author>Funni</author>
+			<date>2022-12-24</date>
+			<version>4.9.5.0 CE</version>
+			<description>8Bit-DDraw wurde mit der ersten Version von Clonk Endeavour entfernt.</description>
+		</deprecated>
+		<syntax>
+			<rtype>bool</rtype>
+			<params>
+				<param>
+					<type>int</type>
+					<name>iMat</name>
+					<desc>Index des Materials, dessen Farben gesetzt werden.</desc>
+				</param>
+				<param>
+					<type>int</type>
+					<name>iR1</name>
+					<desc>Rotwert (0-255) der ersten Materialfarbe.</desc>
+				</param>
+				<param>
+					<type>int</type>
+					<name>iG1</name>
+					<desc>Grünwert (0-255) der ersten Materialfarbe.</desc>
+				</param>
+				<param>
+					<type>int</type>
+					<name>iB1</name>
+					<desc>Blauwert (0-255) der ersten Materialfarbe.</desc>
+				</param>
+				<param>
+					<type>int</type>
+					<name>iR2</name>
+					<desc>Rotwert (0-255) der zweiten Materialfarbe.</desc>
+				</param>
+				<param>
+					<type>int</type>
+					<name>iG2</name>
+					<desc>Grünwert (0-255) der zweiten Materialfarbe.</desc>
+				</param>
+				<param>
+					<type>int</type>
+					<name>iB2</name>
+					<desc>Blauwert (0-255) der zweiten Materialfarbe.</desc>
+				</param>
+				<param>
+					<type>int</type>
+					<name>iR3</name>
+					<desc>Rotwert (0-255) der dritten Materialfarbe.</desc>
+				</param>
+				<param>
+					<type>int</type>
+					<name>iG3</name>
+					<desc>Grünwert (0-255) der dritten Materialfarbe.</desc>
+				</param>
+				<param>
+					<type>int</type>
+					<name>iB3</name>
+					<desc>Blauwert (0-255) der dritten Materialfarbe.</desc>
+				</param>
+			</params>
+		</syntax>
+		<desc>Setzt die Farben eines Materials in der Palette. Dadurch werden alle Vorkommen dieses Materials auf der
+			Karte in der neuen Farbe dargestellt.
+		</desc>
+		<remark>Diese Funktion funktioniert nur im 8-Bit-Modus, seit CE also nicht mehr.</remark>
+		<examples>
+			<example>
+				<code>SetMaterialColor(Material("Gold"));</code>
+				<text>Färbt Gold schwarz.</text>
+			</example>
+		</examples>
+		<related>
+			<funcLink>GetMaterialColor</funcLink>
+			<funcLink>Material</funcLink>
+		</related>
+	</func>
+	<author>Sven2</author>
+	<date>2001-11</date>
+	<author>Funni</author>
+	<date>2022-12-24</date>
+</clonkDoc>

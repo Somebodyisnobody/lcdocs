@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-23 22:30+0100\n"
-"PO-Revision-Date: 2022-12-23 22:15+0100\n"
+"POT-Creation-Date: 2022-12-24 13:49+0100\n"
+"PO-Revision-Date: 2022-12-24 13:46+0100\n"
 "Last-Translator: Funni <funni.clonk@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
 "Language: en\n"
@@ -1632,6 +1632,8 @@ msgstr "Removes obj if one if its vertices is stuck"
 #: sdk/script/fn/VarN.xml:8(category)
 #: sdk/script/fn/Var.xml:8(category)
 #: sdk/script/fn/SetVar.xml:8(category)
+#: sdk/script/fn/SetLocal.xml:8(category)
+#: sdk/script/fn/SetGlobal.xml:8(category)
 #: sdk/script/fn/LocalN.xml:8(category)
 #: sdk/script/fn/Local.xml:8(category)
 #: sdk/script/fn/IsRef.xml:8(category)
@@ -2890,6 +2892,8 @@ msgid "Löscht die SolidMask für das aufrufende Objekt."
 msgstr "Removes the SolidMask for the calling object."
 
 #: sdk/script/fn/SetSkyParallax.xml:8(category)
+#: sdk/script/fn/SetSkyFade.xml:8(category)
+#: sdk/script/fn/SetSkyColor.xml:8(category)
 #: sdk/script/fn/SetSkyAdjust.xml:8(category)
 #: sdk/script/fn/GetSkyColor.xml:8(category)
 #: sdk/script/fn/GetSkyAdjust.xml:8(category)
@@ -2936,6 +2940,76 @@ msgstr "If you specify <placeholder-1/>() for one of the parameters, the previou
 #: sdk/script/fn/SetSkyParallax.xml:27(text)
 msgid "Setzt den Himmel auf parallax und mit dem Wind bewegend."
 msgstr "Sets the sky to parallax and moving with the wind."
+
+#: sdk/script/fn/SetSkyFade.xml:16(description)
+#: sdk/script/fn/SetSkyColor.xml:16(description)
+#: sdk/script/fn/SetMaterialColor.xml:16(description)
+msgid "8Bit-DDraw wurde mit der ersten Version von Clonk Endeavour entfernt."
+msgstr "8Bit-DDraw was removed with the first version of Clonk Endeavour."
+
+#: sdk/script/fn/SetSkyFade.xml:24(desc)
+msgid "Rotwert (0-255) der Anfangsfarbe."
+msgstr "Red value (0-255) of the initial color."
+
+#: sdk/script/fn/SetSkyFade.xml:29(desc)
+msgid "Grünwert (0-255) der Anfangsfarbe."
+msgstr "Green value (0-255) of the initial color."
+
+#: sdk/script/fn/SetSkyFade.xml:34(desc)
+msgid "Blauwert (0-255) der Anfangsfarbe."
+msgstr "Blue value (0-255) of the initial color."
+
+#: sdk/script/fn/SetSkyFade.xml:39(desc)
+msgid "Rotwert (0-255) der Endfarbe."
+msgstr "Red value (0-255) of the final color."
+
+#: sdk/script/fn/SetSkyFade.xml:44(desc)
+msgid "Grünwert (0-255) der Endfarbe."
+msgstr "Green value (0-255) of the final color."
+
+#: sdk/script/fn/SetSkyFade.xml:49(desc)
+msgid "Blauwert (0-255) der Endfarbe."
+msgstr "Blue  value (0-255) of the final color."
+
+#: sdk/script/fn/SetSkyFade.xml:53(desc)
+msgid "Verändert die Himmelsfarben. Dabei werden im 8Bit-Modus die Palettenfarben 0 (Anfangsfarbe) bis 19 (Endfartbe) auf einen Verlauf zwischen den angegebenen Farbwerten gesetzt. Das macht natürlich nur dann Sinn, wenn der Himmel aus einem Farbverlauf besteht."
+msgstr "Changes the color of the sky. This will set the 8 bit palette colors 0 (initial) to 10 (destination) to a gradient from the initial to the destination color. Obviously, this only makes sense with color gradient skies."
+
+#: sdk/script/fn/SetSkyFade.xml:57(remark)
+msgid "Diese Funktion ist veraltet, und funktioniert nur im alten 8-Bit-Grafiksystem richtig (für NewGfx wird sie notdürftig emuliert). Dabei werden die Parameter toRed, toGreen und toBlue ignoriert. Stattdessen sollte <placeholder-1/> verwendet werden. <br/> Durch die Emulation von <placeholder-2/> und SetSkyFade haben beide dieselbe Funktion: <code>SetSkyColor(0, r, g, b) == SetSkyFade(r, g, b)</code>"
+msgstr "This function is deprecated, and only works properly in the old 8-bit graphics system (for NewGfx it is emulated makeshift). In doing so, the parameters toRed, toGreen and toBlue are ignored. Instead, <placeholder-1/> should be used.<br/> By emulating <placeholder-2/> and SetSkyFade both have the same function: <code>SetSkyColor(0, r, g, b) == SetSkyFade(r, g, b)</code>"
+
+#: sdk/script/fn/SetSkyFade.xml:68(text)
+msgid "Setzt den Himmel auf einen Verlauf zwischen schwarz und weiß."
+msgstr "Sets the sky to a gradient from black to white."
+
+#: sdk/script/fn/SetSkyColor.xml:24(desc)
+msgid "0-19: Himmelsfarbenindex."
+msgstr "0-19: Sky color index."
+
+#: sdk/script/fn/SetSkyColor.xml:29(desc)
+msgid "Rotwert 0-255."
+msgstr "Red value 0-255."
+
+#: sdk/script/fn/SetSkyColor.xml:34(desc)
+msgid "Grünwert 0-255."
+msgstr "Green value 0-255."
+
+#: sdk/script/fn/SetSkyColor.xml:39(desc)
+msgid "Blauwert 0-255."
+msgstr "Blue value 0-255."
+
+#: sdk/script/fn/SetSkyColor.xml:43(desc)
+msgid "SetSkyColor moduliert die übergebene Farbe mit der ersten Farbe, die in Landscape.SkyFade in der <emLink href=\"scenario/scenario.html#SektionLandscape\">Scenario.txt </emLink> gesetzt wird, und setzt sie als Himmelsfarbmodulation. Dabei wird im 8Bit-Modus der entsprechende Paletteneintrag geändert."
+msgstr "SetSkyColor modulates the passed color with the first color set in Landscape.SkyFade in the <emLink href=\"scenario/scenario.html#SektionLandscape\">Scenario.txt </emLink> and sets it as sky color modulation. This changes the corresponding palette entry in 8bit mode."
+
+#: sdk/script/fn/SetSkyColor.xml:48(remark)
+msgid "Diese Funktion ist veraltet, und funktioniert nur im alten 8-Bit-Grafiksystem richtig. Für NewGfx wird sie notdürftig emuliert, wenn iIndex=0 gesetzt ist. Stattdessen sollte <placeholder-1/> verwendet werden. <br/> Durch die Emulation von SetSkyColor und <placeholder-2/> haben beide dieselbe Funktion: <code>SetSkyColor(0, r, g, b) == SetSkyFade(r, g, b)</code>"
+msgstr "This function is deprecated, and only works properly in the old 8-bit graphics system (for NewGfx it is emulated makeshift). Instead, <placeholder-1/> should be used.<br/> By emulating SetSkyColor and <placeholder-2/> both have the same function: <code>SetSkyColor(0, r, g, b) == SetSkyFade(r, g, b)</code>"
+
+#: sdk/script/fn/SetSkyColor.xml:58(text)
+msgid "Macht den Himmel ziemlich bunt."
+msgstr "Makes a colorful sky."
 
 #: sdk/script/fn/SetSkyAdjust.xml:13(desc)
 #: sdk/script/fn/SetMatAdjust.xml:13(desc)
@@ -4232,6 +4306,74 @@ msgstr "Adjusts the maximum number of players that can take part in the current 
 msgid "Teil eines Szenarioscripts: Nach einiger Zeit können keine weiteren Spieler beitreten."
 msgstr "Part of a scenario script: after a little while, no more players can join."
 
+#: sdk/script/fn/SetMaterialColor.xml:8(category)
+#: sdk/script/fn/MaterialName.xml:8(category)
+#: sdk/script/fn/Material.xml:8(category)
+#: sdk/script/fn/InsertMaterial.xml:8(category)
+#: sdk/script/fn/GetMaterialCount.xml:8(category)
+#: sdk/script/fn/GetMaterialColor.xml:8(category)
+#: sdk/script/fn/GetMaterial.xml:8(category)
+#: sdk/script/fn/GBackSolid.xml:8(category)
+#: sdk/script/fn/GBackSky.xml:8(category)
+#: sdk/script/fn/GBackSemiSolid.xml:8(category)
+#: sdk/script/fn/GBackLiquid.xml:8(category)
+#: sdk/script/fn/ExtractMaterialAmount.xml:8(category)
+#: sdk/script/fn/ExtractLiquid.xml:8(category)
+msgid "Landschaft/Material"
+msgstr "Landscape/Material"
+
+#: sdk/script/fn/SetMaterialColor.xml:24(desc)
+msgid "Index des Materials, dessen Farben gesetzt werden."
+msgstr "Index of the material for which you want to set the colors."
+
+#: sdk/script/fn/SetMaterialColor.xml:29(desc)
+msgid "Rotwert (0-255) der ersten Materialfarbe."
+msgstr "Red value (0-255) of the first material color."
+
+#: sdk/script/fn/SetMaterialColor.xml:34(desc)
+msgid "Grünwert (0-255) der ersten Materialfarbe."
+msgstr "Green value (0-255) of the first material color."
+
+#: sdk/script/fn/SetMaterialColor.xml:39(desc)
+msgid "Blauwert (0-255) der ersten Materialfarbe."
+msgstr "Blue value (0-255) of the first material color."
+
+#: sdk/script/fn/SetMaterialColor.xml:44(desc)
+msgid "Rotwert (0-255) der zweiten Materialfarbe."
+msgstr "Red value (0-255) of the second material color."
+
+#: sdk/script/fn/SetMaterialColor.xml:49(desc)
+msgid "Grünwert (0-255) der zweiten Materialfarbe."
+msgstr "Green value (0-255) of the second material color."
+
+#: sdk/script/fn/SetMaterialColor.xml:54(desc)
+msgid "Blauwert (0-255) der zweiten Materialfarbe."
+msgstr "Blue value (0-255) of the second material color."
+
+#: sdk/script/fn/SetMaterialColor.xml:59(desc)
+msgid "Rotwert (0-255) der dritten Materialfarbe."
+msgstr "Red value (0-255) of the third material color."
+
+#: sdk/script/fn/SetMaterialColor.xml:64(desc)
+msgid "Grünwert (0-255) der dritten Materialfarbe."
+msgstr "Green value (0-255) of the third material color."
+
+#: sdk/script/fn/SetMaterialColor.xml:69(desc)
+msgid "Blauwert (0-255) der dritten Materialfarbe."
+msgstr "Blue value (0-255) of the third material color."
+
+#: sdk/script/fn/SetMaterialColor.xml:73(desc)
+msgid "Setzt die Farben eines Materials in der Palette. Dadurch werden alle Vorkommen dieses Materials auf der Karte in der neuen Farbe dargestellt."
+msgstr "Sets the colors of a material causing all occurences of this material in the landscape to be drawn using the new color."
+
+#: sdk/script/fn/SetMaterialColor.xml:76(remark)
+msgid "Diese Funktion funktioniert nur im 8-Bit-Modus, seit CE also nicht mehr."
+msgstr "This function only works in 8-bit mode, so since CE it does not work anymore."
+
+#: sdk/script/fn/SetMaterialColor.xml:80(text)
+msgid "Färbt Gold schwarz."
+msgstr "Makes gold black."
+
 #: sdk/script/fn/SetMatAdjust.xml:16(desc)
 msgid "Setzt die Materialmodulation. Die Materialfarben werden mit der angegebenen Farbe so verrechnet wie auch ColorByOwner-Grafiken."
 msgstr "Sets the material drawing modulation. The material colors will be modulated with the specified color in the same way as ColorByOwner graphics."
@@ -4255,6 +4397,30 @@ msgstr "Changes the mass of an object. The mass is initialised with <emLink href
 #: sdk/script/fn/SetMass.xml:36(text)
 msgid "Script für einen Keks: Beim Essen nimmt die Masse des Clonks zu."
 msgstr "Script for a cookie: when eating this cookie the mass of the clonk will increase."
+
+#: sdk/script/fn/SetLocal.xml:17(description)
+#: sdk/script/fn/SetLocal.xml:45(remark)
+msgid "Statt SetLocal sollte zum Zugriff auf Local-Variablen die Schreibweise <code><placeholder-1/>(x) = y</code> verwendet werden."
+msgstr "Instead of SetLocal the notation <code><placeholder-1/>(x) = y</code> should be used to access local variables."
+
+#: sdk/script/fn/SetLocal.xml:26(desc)
+#: sdk/script/fn/SetGlobal.xml:26(desc)
+#: sdk/script/fn/Local.xml:14(desc)
+msgid "Nummer der Variable, die abgefragt werden soll. Jede nicht negative Zahl ist erlaubt."
+msgstr "Index of the variable to be accessed. Any non-negative number is allowed."
+
+#: sdk/script/fn/SetLocal.xml:31(desc)
+#: sdk/script/fn/SetGlobal.xml:31(desc)
+msgid "Neuer Wert der Variable."
+msgstr "New value of the variable."
+
+#: sdk/script/fn/SetLocal.xml:36(desc)
+msgid "Objekt, in der die Variable gesetzt werden soll"
+msgstr "Object in which the variable is to be set"
+
+#: sdk/script/fn/SetLocal.xml:41(desc)
+msgid "Setzt eine <placeholder-1/>-Variable in einem Objekt (wenn nicht angegeben, wird die Variable in dem aufrufenden Objekt gesetzt) und gibt, wenn erfolgreich, den gesetzten Wert zurück (ansonsten 0)."
+msgstr "Sets a <placeholder-1/> variable in an object (if no object is specified the variable is set in the calling object) and returns the set value on success (otherwise 0)."
 
 #: sdk/script/fn/SetLength.xml:13(desc)
 msgid "Array, dessen Länge verändert werden soll"
@@ -4465,6 +4631,15 @@ msgstr "Some knight will be displayed with a shield, additively drawn onto the c
 #: sdk/script/fn/SetGraphics.xml:60(emLink)
 msgid "Objektdefinitionen (C4D)"
 msgstr "Object definitions (c4d)"
+
+#: sdk/script/fn/SetGlobal.xml:17(description)
+#: sdk/script/fn/SetGlobal.xml:38(remark)
+msgid "Statt SetGlobal sollte zum Zugriff auf Global-Variablen die Schreibweise <code><placeholder-1/>(x) = y</code> verwendet werden."
+msgstr "Instead of SetGlobal the notation <code><placeholder-1/>(x) = y</code> should be used to access global variables."
+
+#: sdk/script/fn/SetGlobal.xml:35(desc)
+msgid "Setzt eine <placeholder-1/>-Variable und gibt, wenn erfolgreich, den gesetzten Wert zurück (ansonsten 0)."
+msgstr "Sets a <placeholder-1/> variable and returns the set value if successful (0 otherwise)."
 
 #: sdk/script/fn/SetGamma.xml:13(desc)
 msgid "Veränderung für dunkle Farben. Standard ist <placeholder-1/>(0,0,0) für keine Veränderung."
@@ -6576,21 +6751,6 @@ msgstr "This script will pop up a message above the clonk's head."
 msgid "Gibt den größeren der beiden Werte zurück"
 msgstr "Returns the greater of two values"
 
-#: sdk/script/fn/MaterialName.xml:8(category)
-#: sdk/script/fn/Material.xml:8(category)
-#: sdk/script/fn/InsertMaterial.xml:8(category)
-#: sdk/script/fn/GetMaterialCount.xml:8(category)
-#: sdk/script/fn/GetMaterialColor.xml:8(category)
-#: sdk/script/fn/GetMaterial.xml:8(category)
-#: sdk/script/fn/GBackSolid.xml:8(category)
-#: sdk/script/fn/GBackSky.xml:8(category)
-#: sdk/script/fn/GBackSemiSolid.xml:8(category)
-#: sdk/script/fn/GBackLiquid.xml:8(category)
-#: sdk/script/fn/ExtractMaterialAmount.xml:8(category)
-#: sdk/script/fn/ExtractLiquid.xml:8(category)
-msgid "Landschaft/Material"
-msgstr "Landscape/Material"
-
 #: sdk/script/fn/MaterialName.xml:13(desc)
 msgid "Index des Materials, dessen Name ermittelt wird"
 msgstr "Index of the material of which you want to know the name"
@@ -6701,10 +6861,6 @@ msgstr "DefCore.txt"
 #: sdk/script/fn/LocalN.xml:41(text)
 msgid "Das Objekt trägt einen Baum mit sich herum."
 msgstr "The object carries a tree around with it."
-
-#: sdk/script/fn/Local.xml:14(desc)
-msgid "Nummer der Variable, die abgefragt werden soll. Jede nicht negative Zahl ist erlaubt."
-msgstr "Index of the variable to be accessed. Any non-negative number is allowed."
 
 #: sdk/script/fn/Local.xml:15(desc)
 msgid "Objekt, in der sich die Variable befindet."
@@ -7661,8 +7817,8 @@ msgid "Gibt das Objekt zurück, dem die Sicht eines Spielers folgt. Gibt 0 zurü
 msgstr "Returns the object which is followed by a player's view. If the player view does not currently follow an object, the function returns 0 (also see <placeholder-1/>)."
 
 #: sdk/script/fn/GetPlrView.xml:20(remark)
-msgid "Wurde die Sicht nicht durch den Script gesetzt (<placeholder-1/>), so folgt die Sicht dem aktuell selektiertem Clonk (außer im Sichtmodus \"Scroll\", siehe <placeholder-2/>). Dieser kann mit der Funktion <placeholder-3/> abgefragt werden."
-msgstr "If player view has been set using (<placeholder-1/>), the view will follow the selected clonk (unless in view mode \"Scroll\", see <placeholder-2/>). This can be determined using <placeholder-3/>."
+msgid "Wurde die Sicht nicht durch den Script gesetzt (<placeholder-1/>), so folgt die Sicht dem aktuell selektiertem Clonk (außer im Sichtmodus \"C4PVM_Scrolling\", siehe <placeholder-2/>). Dieser kann mit der Funktion <placeholder-3/> abgefragt werden."
+msgstr "If player view has been set using (<placeholder-1/>), the view will follow the selected clonk (unless in view mode \"C4PVM_Scrolling\", see <placeholder-2/>). This can be determined using <placeholder-3/>."
 
 #: sdk/script/fn/GetPlrValueGain.xml:13(desc)
 msgid "Spieler, dessen Spielerwertgewinn gesucht wird."
@@ -10031,15 +10187,19 @@ msgstr "In the developer mode of the engine this function returns the object whi
 msgid "Zeigt einige Informationen über das Objekt an, über dem gerade der Mauscursor schwebt."
 msgstr "Displays some information about the object above which the edit cursor is hovering."
 
-#: sdk/script/fn/DrawVolcanoBranch.xml:13(desc)
+#: sdk/script/fn/DrawVolcanoBranch.xml:14(description)
+msgid "Diese Funktion war als interne Notlösung entwickelt worden und sollte nicht mehr verwendet werden. Siehe <a href=\"https://board.ccan.de/cgi-bin/topic_show.pl?pid=90602\">CCAN-Forum</a>."
+msgstr "This function had been developed as an internal workaround and should no longer be used. See<a href=\"https://board.ccan.de/cgi-bin/topic_show.pl?pid=90602\">CCAN-Forum</a>."
+
+#: sdk/script/fn/DrawVolcanoBranch.xml:20(desc)
 msgid "Index des Materials, das gezeichnet werden soll."
 msgstr "Index of the material to be drawn."
 
-#: sdk/script/fn/DrawVolcanoBranch.xml:21(desc)
+#: sdk/script/fn/DrawVolcanoBranch.xml:28(desc)
 msgid "Zeichnet einen Vulkanarm mit dem Material, dessen Index gleich iMat ist."
 msgstr "Draws a volcano branch with the material specified by iMat."
 
-#: sdk/script/fn/DrawVolcanoBranch.xml:22(remark)
+#: sdk/script/fn/DrawVolcanoBranch.xml:29(remark)
 msgid "Die Parameter dieser Funktion sind undokumentiert!"
 msgstr "Parameters of the function are undocumented!"
 
@@ -14711,8 +14871,8 @@ msgid "0-2. 0: Jede Engine möglich; 1: Nur NewGfx (OpenGL/D3D); 2: Nur OldGfx (
 msgstr "0-2. 0: All engines possible; 1: NewGfx only (OpenGL/D3D); 2: OldGfx only (8bit-DDraw)."
 
 #: sdk/scenario/scenario.xml:100(description)
-msgid "8Bit-DDraw wurde mit einer unbekannten Version entfernt. Schon in den letzten Versionen von Clonk Rage war es nicht mehr vorhanden. Damit ist ForcedGfxMode nicht länger in Funktion."
-msgstr "8Bit-DDraw was removed with an unidentified version. It was already gone in the last versions of Clonk Rage. Thus ForcedGfxMode is no longer in function."
+msgid "8Bit-DDraw wurde mit der ersten Version von Clonk Endeavour entfernt. Damit ist ForcedGfxMode nicht länger in Funktion."
+msgstr "8Bit-DDraw was removed with the first version of Clonk Endeavour. Thus ForcedGfxMode is no longer in function."
 
 #: sdk/scenario/scenario.xml:104(col)
 msgid "DisableMouse"
@@ -14723,8 +14883,8 @@ msgid "0 oder 1. Bei 1 kann man keine Maus verwenden."
 msgstr "0 or 1. If 1 the mouse can't be used."
 
 #: sdk/scenario/scenario.xml:109(col)
-msgid "FairCrewStrength"
-msgstr "FairCrewStrength"
+msgid "DefCrewStrength"
+msgstr "DefCrewStrength"
 
 #: sdk/scenario/scenario.xml:111(col)
 msgid "Stärke der fairen Crew."
@@ -21008,6 +21168,24 @@ msgstr "c4group.exe (Windows) c4group (Linux) c4group (Mac)"
 msgid "Dieses Kommandozeilen-Programm dient zum Bearbeiten von Gruppendateien. Es kann nicht per Doppelklick, sondern nur per Kommandozeile (Eingabeaufforderung) gestartet werden. Auskunft über alle verfügbaren Kommandozeilenparameter erhält man, indem man das Programm ohne weitere Parameter über die Kommandozeile startet."
 msgstr "This command line program is used for processing group files. A list of command line options is available by starting the program without parameters via command line (<i>not</i> by double clicking)."
 
+#, fuzzy
+#~ msgid ""
+#~ "Statt SetGlobal sollte zum Zugriff auf Local-Variablen die Schreibweise <code><placeholder-1/>(x) = y\n"
+#~ "\t\t\t\t</code> verwendet werden."
+#~ msgstr "Instead of SetGlobal you should use code such as <code><placeholder-1/>(x) = y</code> to access global variables."
+
+#, fuzzy
+#~ msgid ""
+#~ "Statt SetGlobal sollte zum Zugriff auf Local-Variablen die Schreibweise <code><placeholder-1/>(x) = y\n"
+#~ "\t\t\t</code> verwendet werden."
+#~ msgstr "Instead of SetGlobal you should use code such as <code><placeholder-1/>(x) = y</code> to access global variables."
+
+#, fuzzy
+#~ msgid ""
+#~ "Statt SetGlobal sollte zum Zugriff auf Global-Variablen die Schreibweise <code><placeholder-1/>(x) = y\n"
+#~ "\t\t\t\t</code> verwendet werden."
+#~ msgstr "Instead of SetGlobal you should use code such as <code><placeholder-1/>(x) = y</code> to access global variables."
+
 #~ msgid "benannte Variablen"
 #~ msgstr "named variables"
 
@@ -21472,35 +21650,8 @@ msgstr "This command line program is used for processing group files. A list of 
 #~ msgid "Gibt das Ergebnis von 10 - 5 im Log aus."
 #~ msgstr "Prints the result of 10 - 5 to the log."
 
-#~ msgid "Rot-Wert der Anfangsfarbe"
-#~ msgstr "Red value of the initial color."
-
-#~ msgid "Grün-Wert der Anfangsfarbe"
-#~ msgstr "Green value of the initial color."
-
-#~ msgid "Blau-Wert der Anfangsfarbe"
-#~ msgstr "Blue value of the initial color."
-
-#~ msgid "Rot-Wert der Endfarbe"
-#~ msgstr "Red value of the destination color."
-
-#~ msgid "Grün-Wert der Endfarbe"
-#~ msgstr "Green value of the destination color."
-
-#~ msgid "Blau-Wert der Endfarbe"
-#~ msgstr "Blue value of the destination color."
-
-#~ msgid "Verändert die Himmelsfarben. Dabei werden im 8Bit-Modus die Palettenfarben 0 (Anfangsfarbe) bis 19 (Endfartbe) auf einen Verlauf zwischen den angegebenen Farbwerten gesetzt. Das macht natürlich nur dann Sinn, wenn der Himmel aus einem Farbverlauf besteht."
-#~ msgstr "Changes the color of the sky. This will set the 8 bit palette colors 0 (initial) to 10 (destination) to a gradient from the initial to the destination color. Obviously, this only makes sense with color gradient skies."
-
 #~ msgid "Diese Funktion ist veraltet, und funktioniert nur im alten 8-Bit-Grafiksystem richtig (für NewGfx wird sie notdürftig emuliert). Stattdessen sollte <placeholder-1/> verwendet werden."
 #~ msgstr "This function is obsolete and will not properly work with the new graphics system. You should use <placeholder-1/> instead."
-
-#~ msgid "Setzt den Himmel auf einen Verlauf zwischen schwarz und weiß."
-#~ msgstr "Sets the sky to a gradient from black to white."
-
-#~ msgid "0-19: Himmelsfarbenindex"
-#~ msgstr "0-19: Sky color index"
 
 #~ msgid "Rot-Wert der Farbe"
 #~ msgstr "Red value of the color"
@@ -21514,74 +21665,14 @@ msgstr "This command line program is used for processing group files. A list of 
 #~ msgid "Verändert eine Himmelsfarben. Dabei wird im 8Bit-Modus der entsprechende Paletteneintrag geändert."
 #~ msgstr "Changes a single sky color. This will set a single palette color in 8 bit color mode."
 
-#~ msgid "Diese Funktion ist veraltet, und funktioniert nur im alten 8-Bit-Grafiksystem richtig. Für NewGfx wird sie notdürftig emuliert, wenn iIndex=0. Stattdessen sollte <placeholder-1/> verwendet werden."
-#~ msgstr "This function is obsolete and will not properly work with the new graphics system. You should use <placeholder-1/> instead."
-
-#~ msgid "Macht den Himmel ziemlich bunt."
-#~ msgstr "Makes a colorful sky."
-
-#~ msgid "Index des Materials, dessen Farben gesetzt werden"
-#~ msgstr "Index of the material for which you want to set the colors."
-
-#~ msgid "Roter Kanal der ersten Materialfarbe"
-#~ msgstr "Red value of the first material color"
-
-#~ msgid "Grüner Kanal der ersten Materialfarbe"
-#~ msgstr "Green value of the first material color"
-
-#~ msgid "Blauer Kanal der ersten Materialfarbe"
-#~ msgstr "Blue value of the first material color"
-
-#~ msgid "Roter Kanal der zweiten Materialfarbe"
-#~ msgstr "Red value of the second material color"
-
-#~ msgid "Grüner Kanal der zweiten Materialfarbe"
-#~ msgstr "Green value of the second material color"
-
-#~ msgid "Blauer Kanal der zweiten Materialfarbe"
-#~ msgstr "Blue value of the second material color"
-
-#~ msgid "Roter Kanal der dritten Materialfarbe"
-#~ msgstr "Red value of the third material color"
-
-#~ msgid "Grüner Kanal der dritten Materialfarbe"
-#~ msgstr "Green value of the third material color"
-
-#~ msgid "Blauer Kanal der dritten Materialfarbe"
-#~ msgstr "Blue value of the third material color"
-
-#~ msgid "Setzt die Farben eines Materials in der Palette. Dadurch werden alle Vorkommen dieses Materials auf der Karte in der neuen Farbe dargestellt."
-#~ msgstr "Sets the colors of a material causing all occurences of this material in the landscape to be drawn using the new color."
-
-#~ msgid "Färbt Gold schwarz."
-#~ msgstr "Makes gold black."
-
 #~ msgid "Nummer der Variable, die gesetzt werden soll. Jeder Index &lt;=0 erlaubt"
 #~ msgstr "Nuber of the variable to be set."
-
-#~ msgid "Neuer Wert der Variable"
-#~ msgstr "New value"
-
-#~ msgid "Objekt, in der die Variable gesetzt werden soll"
-#~ msgstr "Object in which the variable is to be set"
-
-#~ msgid "Setzt eine <placeholder-1/>-Variable in einem Objekt (wenn nicht angegeben, wird die Variable in dem aufrufenden Objekt gesetzt)."
-#~ msgstr "Sets a <placeholder-1/> variable in an object (if no object is specified the variable is set in the calling object)."
 
 #~ msgid "SetLocal gibt, wenn erfolgreich, den gesetzten Wert zurück (ansonsten 0)."
 #~ msgstr "If successful, SetLocal will return the newly set value (or 0 otherwise)."
 
-#~ msgid "Statt SetLocal sollte zum Zugriff auf Local-Variablen die Schreibweise <code><placeholder-1/>(x) = y</code> verwendet werden"
-#~ msgstr "With local variables you should use the <code><placeholder-1/>(x) = y</code> syntax instead of SetLocal."
-
 #~ msgid "Nummer der Variable, die gesetzt werden soll. Jeder Index &gt;=0 erlaubt"
 #~ msgstr "Nuber of the variable to be set. Every index bigger than 0 is allowed."
-
-#~ msgid "SetGlobal gibt, wenn erfolgreich, den gesetzten Wert zurück (ansonsten 0)."
-#~ msgstr "If successful, SetGlobal returns the newly set value (otherwise 0)."
-
-#~ msgid "Statt SetGlobal sollte zum Zugriff auf Global-Variablen die Schreibweise <code><placeholder-1/>(x) = y</code> verwendet werden"
-#~ msgstr "Instead of SetGlobal you should use code such as <code><placeholder-1/>(x) = y</code> to access global variables."
 
 #~ msgid "Es sind folgende Kommandos definiert: <placeholder-1/>"
 #~ msgstr "The following commands are defined: <placeholder-1/>"

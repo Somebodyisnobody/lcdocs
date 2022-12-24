@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
+<clonkDoc xmlns="https://clonkspot.org"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
+	<func>
+		<title>SetSkyFade</title>
+		<category>Himmel</category>
+		<versions>
+			<version>4.6.5.0 CP</version>
+		</versions>
+		<deprecated>
+			<author>Funni</author>
+			<date>2022-12-24</date>
+			<version>4.9.5.0 CE</version>
+			<description>8Bit-DDraw wurde mit der ersten Version von Clonk Endeavour entfernt.</description>
+		</deprecated>
+		<syntax>
+			<rtype>void</rtype>
+			<params>
+				<param>
+					<type>int</type>
+					<name>fromRed</name>
+					<desc>Rotwert (0-255) der Anfangsfarbe.</desc>
+				</param>
+				<param>
+					<type>int</type>
+					<name>fromGreen</name>
+					<desc>Grünwert (0-255) der Anfangsfarbe.</desc>
+				</param>
+				<param>
+					<type>int</type>
+					<name>fromBlue</name>
+					<desc>Blauwert (0-255) der Anfangsfarbe.</desc>
+				</param>
+				<param>
+					<type>int</type>
+					<name>toRed</name>
+					<desc>Rotwert (0-255) der Endfarbe.</desc>
+				</param>
+				<param>
+					<type>int</type>
+					<name>toGreen</name>
+					<desc>Grünwert (0-255) der Endfarbe.</desc>
+				</param>
+				<param>
+					<type>int</type>
+					<name>toBlue</name>
+					<desc>Blauwert (0-255) der Endfarbe.</desc>
+				</param>
+			</params>
+		</syntax>
+		<desc>Verändert die Himmelsfarben. Dabei werden im 8Bit-Modus die Palettenfarben 0 (Anfangsfarbe) bis 19
+			(Endfartbe) auf einen Verlauf zwischen den angegebenen Farbwerten gesetzt. Das macht natürlich nur dann
+			Sinn, wenn der Himmel aus einem Farbverlauf besteht.
+		</desc>
+		<remark>Diese Funktion ist veraltet, und funktioniert nur im alten 8-Bit-Grafiksystem richtig (für NewGfx wird
+			sie notdürftig emuliert). Dabei werden die Parameter toRed, toGreen und toBlue ignoriert. Stattdessen sollte <funcLink>
+				SetSkyAdjust
+			</funcLink> verwendet werden.
+			<br/>
+			Durch die Emulation von <funcLink>SetSkyColor</funcLink> und SetSkyFade haben beide dieselbe Funktion:
+			<code>SetSkyColor(0, r, g, b) == SetSkyFade(r, g, b)</code>
+		</remark>
+		<examples>
+			<example>
+				<code>SetSkyFade(0,0,0,255,255,255);</code>
+				<text>Setzt den Himmel auf einen Verlauf zwischen schwarz und weiß.</text>
+			</example>
+		</examples>
+		<related>
+			<funcLink>GetSkyColor</funcLink>
+			<funcLink>SetSkyColor</funcLink>
+			<funcLink>SetGamma</funcLink>
+			<funcLink>SetSkyAdjust</funcLink>
+		</related>
+	</func>
+	<author>Sven2</author>
+	<date>2002-06</date>
+	<author>Funni</author>
+	<date>2022-12-24</date>
+</clonkDoc>

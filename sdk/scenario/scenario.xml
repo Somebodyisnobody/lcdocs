@@ -95,9 +95,9 @@ bestimmt.</text>
 		<col>0-2. 0: Jede Engine möglich; 1: Nur NewGfx (OpenGL/D3D); 2: Nur OldGfx (8Bit-DDraw).</col>
 		<deprecated>
 			<author>Funni</author>
-			<date>2022-07-12</date>
-			<version>unknown</version>
-			<description>8Bit-DDraw wurde mit einer unbekannten Version entfernt. Schon in den letzten Versionen von Clonk Rage war es nicht mehr vorhanden. Damit ist ForcedGfxMode nicht länger in Funktion.</description>
+			<date>2022-12-07</date>
+			<version>4.9.5.0 CE</version>
+			<description>8Bit-DDraw wurde mit der ersten Version von Clonk Endeavour entfernt. Damit ist ForcedGfxMode nicht länger in Funktion.</description>
 		</deprecated>
 	</row>
 	<row>
@@ -106,7 +106,7 @@ bestimmt.</text>
 		<col>0 oder 1. Bei 1 kann man keine Maus verwenden.</col>
 	</row>
 	<row>
-		<col>FairCrewStrength</col>
+		<col>DefCrewStrength</col>
 		<col>Integer</col>
 		<col>Stärke der fairen Crew.</col>
 	</row>
