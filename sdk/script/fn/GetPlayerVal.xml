@@ -5,7 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
   <func isAsync="false">
     <title>GetPlayerVal</title>
-    <category>Get*Val</category>
+    <category>Script/Getter/Spieler</category>
     <versions><version>4.9.1.0 GWE</version></versions>
     <syntax>
       <rtype isReference="false">any</rtype>
@@ -35,7 +35,7 @@
 
     <desc>Fragt Eigenschaftswerte eines Spielers anhand dessen Namen ab, wie sie beim Speichern eines Spiels in die game.txt geschrieben werden</desc>
 
-    <remark>Achtung! Die abgefragten Werte können teilweise sync-sicher sein (also z.B. bei
+    <remark>Achtung! Die abgefragten Werte können teilweise nicht sync-sicher sein (also z.B. bei
             verschiedenen Rechnern in einem Netzwerkspiel verschiedene Werte zurückliefern)</remark>
 
     <remark>Die meisten Möglichkeiten für Werte von strEntry sind bereits in System.c4g/GetXVal.c vordefiniert</remark>

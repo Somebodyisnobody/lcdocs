@@ -5,7 +5,7 @@
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
   <func isAsync="false">
     <title>GetPlayerInfoCoreVal</title>
-    <category>Get*Val</category>
+    <category>Script/Getter/Spieler</category>
     <versions><version>4.9.1.0 GWE</version></versions>
     <syntax>
       <rtype isReference="false">any</rtype>

@@ -268,8 +268,6 @@
             <xs:enumeration value="Effekte"/>
             <xs:enumeration value="Entwickler"/>
             <xs:enumeration value="Global"/>
-            <!-- TODO rename @maxmitti -->
-            <xs:enumeration value="Get*Val"/>
             <xs:enumeration value="Himmel"/>
             <xs:enumeration value="Interface"/>
             <xs:enumeration value="Landschaft"/>
@@ -299,6 +297,9 @@
             <xs:enumeration value="Script"/>
             <xs:enumeration value="Script/Funktionsaufruf"/>
             <xs:enumeration value="Script/Strings"/>
+            <xs:enumeration value="Script/Getter"/>
+            <xs:enumeration value="Script/Getter/Spieler"/>
+            <xs:enumeration value="Script/Getter/Definition"/>
             <xs:enumeration value="Spieler"/>
             <xs:enumeration value="Spieler/Sicht"/>
             <xs:enumeration value="System"/>
