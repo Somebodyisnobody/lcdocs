@@ -4,7 +4,7 @@
 		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		  xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
 	<func isAsync="false">
-		<title>SetMatAdjust</title>
+		<title>SetMaterialColor</title>
 		<category>Landschaft/Material</category>
 		<versions>
 			<version>4.9.1.0 GWE</version>
