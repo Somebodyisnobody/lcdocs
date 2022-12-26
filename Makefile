@@ -76,10 +76,14 @@ chm/de/Output.hhc: $(xmlfiles) chm/de/. chm/en/. developer/build_chm_files.py de
 	@echo generate chm files
 	@$(PYTHON) developer/build_chm_files.py $(xmlfiles)
 
-online/de/content.html: chm/de/Output.hhc developer/build_contents.pl
+lcdocs_summary.json: $(xmlfiles)
+	@echo generate lcdocs summary report $@
+	@./developer/generate_summary.py ./sdk
+
+online/de/content.html: chm/de/Output.hhc developer/build_contents.pl $(online-dirs)
 	@echo generate $@
 	@perl developer/build_contents.pl $< > $@
-online/en/content.html: chm/en/Output.hhc developer/build_contents.pl
+online/en/content.html: chm/en/Output.hhc developer/build_contents.pl $(online-dirs)
 	@echo generate $@
 	@perl developer/build_contents.pl $< > $@
 
