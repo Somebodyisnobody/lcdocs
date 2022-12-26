@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Clonk Doku\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-24 17:31+0100\n"
+"POT-Creation-Date: 2022-12-25 10:35+0100\n"
 "PO-Revision-Date: 2022-12-24 17:31+0100\n"
 "Last-Translator: Funni <funni.clonk@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -7653,15 +7653,9 @@ msgid "Liefert die Punkte die iPlayer hat."
 msgstr "Returns a player's score."
 
 #: sdk/script/fn/GetScenarioVal.xml:8(category)
-#: sdk/script/fn/GetPlayerVal.xml:8(category)
-#: sdk/script/fn/GetPlayerInfoCoreVal.xml:8(category)
 #: sdk/script/fn/GetObjectVal.xml:8(category)
-#: sdk/script/fn/GetObjectInfoCoreVal.xml:8(category)
-#: sdk/script/fn/GetMaterialVal.xml:8(category)
-#: sdk/script/fn/GetDefCoreVal.xml:8(category)
-#: sdk/script/fn/GetActMapVal.xml:8(category)
-msgid "Get*Val"
-msgstr "Get*Val"
+msgid "Script/Getter"
+msgstr "Script/Getter"
 
 #: sdk/script/fn/GetScenarioVal.xml:16(desc)
 #: sdk/script/fn/GetPlayerVal.xml:16(desc)
@@ -7700,6 +7694,7 @@ msgid "Fragt Eigenschaftswerte des Szenarios anhand dessen Namen/Sekion in der <
 msgstr "Returns the property value of the scenario by its name and section in the <emLink href=\"scenario/scenario.html\">Scenario.txt</emLink>"
 
 #: sdk/script/fn/GetScenarioVal.xml:33(remark)
+#: sdk/script/fn/GetPlayerVal.xml:38(remark)
 msgid "Achtung! Die abgefragten Werte können teilweise nicht sync-sicher sein (also z.B. bei verschiedenen Rechnern in einem Netzwerkspiel verschiedene Werte zurückliefern)"
 msgstr "Warning: the retrieved values may differ from computer to computer and thus cause synchronization problems in network games."
 
@@ -7989,6 +7984,12 @@ msgstr "Determines the player color. The player color is used to identify variou
 msgid "Gibt Statusinformationen über den ersten Spieler aus, wobei dessen Spielername in seiner Spielerfarbe gefärbt wird."
 msgstr "Returns status information about the first player, highlighting the player's name in the player color."
 
+#: sdk/script/fn/GetPlayerVal.xml:8(category)
+#: sdk/script/fn/GetPlayerInfoCoreVal.xml:8(category)
+#: sdk/script/fn/GetObjectInfoCoreVal.xml:8(category)
+msgid "Script/Getter/Spieler"
+msgstr "Script/Getter/Player"
+
 #: sdk/script/fn/GetPlayerVal.xml:26(desc)
 msgid "Nummer des Spielers, von dem der Eintrag abgefragt werden soll."
 msgstr "Number of the player of which you want to retrieve an entry."
@@ -7996,10 +7997,6 @@ msgstr "Number of the player of which you want to retrieve an entry."
 #: sdk/script/fn/GetPlayerVal.xml:36(desc)
 msgid "Fragt Eigenschaftswerte eines Spielers anhand dessen Namen ab, wie sie beim Speichern eines Spiels in die game.txt geschrieben werden"
 msgstr "Retrieves properties of a player by way of the name under which they are stored in the Game.txt component of a savegame"
-
-#: sdk/script/fn/GetPlayerVal.xml:38(remark)
-msgid "Achtung! Die abgefragten Werte können teilweise sync-sicher sein (also z.B. bei verschiedenen Rechnern in einem Netzwerkspiel verschiedene Werte zurückliefern)"
-msgstr "Warning: the retrieved values may not be synchronization safe, meaning they may differ from computer to computer in a network game. Using these values may cause sync loss in a network game."
 
 #: sdk/script/fn/GetPlayerVal.xml:47(text)
 msgid "Schreibt die Anzahl der Objekte, die der Spieler mit der Nummer iPlr besitzt ins Log."
@@ -8471,6 +8468,12 @@ msgstr "A return value of -1 means that no valid symbol could be determined. Thi
 #: sdk/script/fn/GetMenu.xml:30(text)
 msgid "Zu einem Objekt mutieren, welches vom Symbol repräsentiert wird."
 msgstr "Mutate into the object represented by the symbol."
+
+#: sdk/script/fn/GetMaterialVal.xml:8(category)
+#: sdk/script/fn/GetDefCoreVal.xml:8(category)
+#: sdk/script/fn/GetActMapVal.xml:8(category)
+msgid "Script/Getter/Definition"
+msgstr "Script/Getter/Definition"
 
 #: sdk/script/fn/GetMaterialVal.xml:26(desc)
 msgid "Nummer des Materials, von dem der Eintrag abgefragt werden soll. Bei Übergabe von 0 wird die Definition des aufrufenden Objekts angenommen."
@@ -21167,6 +21170,12 @@ msgstr "c4group.exe (Windows) c4group (Linux) c4group (Mac)"
 #: sdk/cmdline.xml:75(text)
 msgid "Dieses Kommandozeilen-Programm dient zum Bearbeiten von Gruppendateien. Es kann nicht per Doppelklick, sondern nur per Kommandozeile (Eingabeaufforderung) gestartet werden. Auskunft über alle verfügbaren Kommandozeilenparameter erhält man, indem man das Programm ohne weitere Parameter über die Kommandozeile startet."
 msgstr "This command line program is used for processing group files. A list of command line options is available by starting the program without parameters via command line (<i>not</i> by double clicking)."
+
+#~ msgid "Get*Val"
+#~ msgstr "Get*Val"
+
+#~ msgid "Achtung! Die abgefragten Werte können teilweise sync-sicher sein (also z.B. bei verschiedenen Rechnern in einem Netzwerkspiel verschiedene Werte zurückliefern)"
+#~ msgstr "Warning: the retrieved values may not be synchronization safe, meaning they may differ from computer to computer in a network game. Using these values may cause sync loss in a network game."
 
 #, fuzzy
 #~ msgid ""

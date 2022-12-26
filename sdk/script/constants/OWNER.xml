@@ -7,7 +7,7 @@
 		<title>NO_OWNER</title>
 		<description>Konstanten für Spielernummern. Der Owner kann mit <funcLink>GetOwner</funcLink> abgefragt und mit <funcLink>SetOwner</funcLink> gesetzt werden.</description>
 		<const>
-			<name>SkyPar_Keep</name>
+			<name>NO_OWNER</name>
 			<category>Spieler</category>
 			<description>Spielernummer: Kein Spieler. Diese Konstante kann als Besitzerangabe für diverse Funktionen wie <funcLink>CreateObject</funcLink> oder <funcLink>FindObjectOwner</funcLink> verwendet werden, um einen neutralen Spieler anzugeben.</description>
 			<version>4.9.5.0 CE</version>

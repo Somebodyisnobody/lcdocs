@@ -3,7 +3,7 @@
 <clonkDoc xmlns="https://clonkspot.org"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="https://clonkspot.org ../../../clonk.xsd" xml:lang="de">
-	<func isAsync="false">
+	<func isAsync="true">
 		<title>GetPlrViewMode</title>
 		<category>Spieler/Sicht</category>
 		<versions><version>4.6.5.0 CP</version></versions>
