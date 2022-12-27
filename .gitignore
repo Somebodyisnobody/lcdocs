@@ -1,6 +1,7 @@
 /chm
 /online
 /sdk-en
+__pycache__
 
 /doku.pot
 /en.mo

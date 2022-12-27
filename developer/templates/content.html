@@ -1,0 +1,103 @@
+<%
+	from build_contents_types import Folder, ItemState, Item
+%>
+
+<!DOCTYPE html>
+<html lang="${lang}">
+	<head>
+		<meta charset="utf-8" />
+		<title>LegacyClonk Docs</title>
+		<link rel="stylesheet" href="doku.css">
+		<style>
+			label {
+				margin: 0;
+			}
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			ul input, ul div, ul .bullet_open {
+				display: none;
+			}
+			ul input:checked ~ label .bullet {
+				display: none;
+			}
+			ul input:checked ~ div, ul input:checked ~ label .bullet_open {
+				display: initial;
+			}
+			ul ul, ul li {
+				margin-left: 1em;
+			}
+			ul h1, ul h2, ul h3, ul h4, ul h5, ul h6 {
+				font-size: 100%;
+				font-weight: bold;
+				font-style: normal;
+				margin: 0;
+				border: none;
+				padding: 0;
+			}
+			ul a, ul a.visited {
+				color: navy; 
+				text-decoration: none;  
+			}
+		</style>
+	</head>
+	<body>
+		<header><%include file="navbar-snippet-${lang}.html" /></header>
+	
+		<%def name="gen_folder(folder, folder_name=None)">
+			<ul>
+				<input id="expand_${folder_name}" type="checkbox">
+				<label for="expand_${folder_name}">
+					<img class="bullet" src='images/bullet_folder.gif' alt='+' title="${i18n['expand']}">
+					<img class="bullet_open" src='images/bullet_folder_open.gif' alt='-' title="${i18n['collapse']}">
+					${folder_name}
+				</label>
+				<div>
+					% for subfolder_name, subfolder in folder.folders.items():
+						${gen_folder(subfolder, subfolder_name)}
+					% endfor
+					% for item in folder.items:
+						<li>
+							<img src='images/bullet_sheet.gif' alt='-'>
+							% if item.state == ItemState.NEW:
+								<b>${item.name}</b>
+							% elif item.state == ItemState.DEPRECATED:
+								<s>${item.name}</s>
+							% else:
+								${item.name}
+							% endif
+						</li>
+					% endfor
+				</div>
+			</ul>
+		</%def>
+		
+		<h1>${i18n['contents']}</h1>
+		<ul>
+			% for folder_name, folder in root_folder.folders.items():
+				${gen_folder(folder, folder_name)}
+			% endfor
+		</ul>
+		
+		<%
+			import random
+			rows = [[random.random() >= 0.2 and v + row * 10 or ' ' for v in range(0,10)] for row in range(0,10)]
+		%>
+	
+		<table>
+			% for row in rows:
+				${makerow(row)}
+			% endfor
+		</table>
+	
+		<%def name="makerow(row)">
+			<tr>
+			% for name in row:
+				<td>${name}</td>\
+			% endfor
+			</tr>
+		</%def>
+	</body>
+</html>

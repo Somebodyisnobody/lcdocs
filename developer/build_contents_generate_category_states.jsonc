@@ -1,0 +1,54 @@
+[
+
+// Initial State
+{
+	"categories": {}
+},
+["Callbacks", "Objekte"],
+
+// Create first category
+{
+	"categories": {
+		"Callbacks": {
+			"categories": {},
+			"items": []
+		}
+	}
+},
+["Objekte"],
+
+// Create second category
+{
+	"categories": {
+		"Callbacks": {
+			"categories": {
+				"Objekte": {
+					"categories": {},
+					"items": []
+				}
+			},
+			"items": []
+		}
+	}
+},
+[],
+
+// List is empty, so we add the item (entry['name'])
+{
+	"categories": {
+		"Callbacks": {
+			"categories": {
+				"Objekte": {
+					"categories": {},
+					"items": [
+						"FooFunc"
+					]
+				}
+			},
+			"items": []
+		}
+	}
+},
+[]
+
+]
