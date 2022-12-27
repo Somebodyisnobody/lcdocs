@@ -76,7 +76,7 @@ chm/de/Output.hhc: $(xmlfiles) chm/de/. chm/en/. developer/build_chm_files.py de
 	@echo generate chm files
 	@$(PYTHON) developer/build_chm_files.py $(xmlfiles)
 
-lcdocs_summary.json: $(xmlfiles)
+lcdocs_summary.json: $(xmlfiles) developer/generate_summary.py
 	@echo generate lcdocs summary report $@
 	@./developer/generate_summary.py ./sdk
 
