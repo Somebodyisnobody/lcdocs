@@ -55,6 +55,11 @@ for path, dir_names, files in os.walk(sys.argv[1]):
 			
 			functions.append(func_entry)
 
+constants.sort(key=lambda item: item['name'])
+constants.sort(key=lambda item: item['path'])
+
+functions.sort(key=lambda item: item['path'])
+
 everything = [*[const['name'] for const in constants], *[func['name'] for func in functions]]
 print('Duplicates:', [item for item, count in collections.Counter(everything).items() if count > 1])
 
