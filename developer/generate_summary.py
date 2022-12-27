@@ -33,8 +33,10 @@ for path, dir_names, files in os.walk(sys.argv[1]):
 			const_entry = {}
 			const_entry['path'] = file_path
 			name = get_unique_value(const, 'name')
-			if name:
+			category = get_unique_value(const, 'category').split('/')
+			if name and category:
 				const_entry['name'] = name
+				const_entry['category'] = category
 			else:
 				continue
 			
@@ -44,8 +46,10 @@ for path, dir_names, files in os.walk(sys.argv[1]):
 			func_entry = {}
 			func_entry['path'] = file_path
 			name = get_unique_value(func, 'title')
-			if name:
+			category = get_unique_value(func, 'category').split('/')
+			if name and category:
 				func_entry['name'] = name
+				func_entry['category'] = category
 			else:
 				continue
 			
