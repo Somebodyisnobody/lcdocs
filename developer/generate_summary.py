@@ -23,7 +23,7 @@ def get_unique_tag(node, tag):
 	return elements[0]
 
 def get_unique_value(node, tag):
-	return get_unique_tag(node, tag).firstChild.nodeValue
+	return get_unique_tag(node, tag).firstChild.nodeValue.strip()
 
 constants = []
 functions = []
