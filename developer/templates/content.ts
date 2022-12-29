@@ -35,6 +35,22 @@ interface Folder {
 let i18n: {[key: string]: string};
 let summary: Summary;
 
+function collapse_tree(event: MouseEvent): void {
+	const bullet = event.target as HTMLImageElement;
+	const ul = bullet.nextElementSibling as HTMLUListElement;
+	if (bullet.alt == '+') {
+		bullet.src = 'images/bullet_folder_open.gif';
+		bullet.alt = '-';
+		bullet.title = i18n['collapse'];
+		ul.style.display = '';
+	} else {
+		bullet.src = 'images/bullet_folder.gif';
+		bullet.alt = '+';
+		bullet.title = i18n['expand'];
+		ul.style.display = 'none';
+	}
+}
+
 function create_list(parent_folder: Folder, entry_type: EntryType, sorting: ListSorting): void {
 	const list: Folder = {folders: {}, items: []};
 	
@@ -50,14 +66,16 @@ function generate_folder_html(folder: Folder, folder_name: string, parent_node: 
 	
 	const folder_bullet = document.createElement('img') as HTMLImageElement;
 	folder_bullet.className = 'folder-bullet';
-	folder_bullet.src = 'images/bullet_folder_open.gif';
-	folder_bullet.alt = '-';
-	folder_bullet.title = i18n['collapse'];
+	folder_bullet.src = 'images/bullet_folder.gif';
+	folder_bullet.alt = '+';
+	folder_bullet.title = i18n['expand'];
+	folder_bullet.addEventListener('click', collapse_tree);
 	folder_node.appendChild(folder_bullet);
 	
 	folder_node.appendChild(document.createTextNode(folder_name));
 	
 	const folder_item_list_node = document.createElement('ul') as HTMLUListElement;
+	folder_item_list_node.style.display = 'none';
 	
 	for (const item of folder.items) {
 		const item_li = document.createElement('li') as HTMLLIElement;
