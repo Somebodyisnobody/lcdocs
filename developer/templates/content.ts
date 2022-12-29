@@ -35,18 +35,26 @@ interface Folder {
 let i18n: {[key: string]: string};
 let summary: Summary;
 
+function open_bullet(bullet: HTMLImageElement) {
+	bullet.src = 'images/bullet_folder_open.gif';
+	bullet.alt = '-';
+	bullet.title = i18n['collapse'];
+}
+
+function close_bullet(bullet: HTMLImageElement) {
+	bullet.src = 'images/bullet_folder.gif';
+	bullet.alt = '+';
+	bullet.title = i18n['expand'];
+}
+
 function collapse_tree(event: MouseEvent): void {
 	const bullet = event.target as HTMLImageElement;
 	const ul = bullet.nextElementSibling as HTMLUListElement;
 	if (bullet.alt == '+') {
-		bullet.src = 'images/bullet_folder_open.gif';
-		bullet.alt = '-';
-		bullet.title = i18n['collapse'];
+		open_bullet(bullet);
 		ul.style.display = '';
 	} else {
-		bullet.src = 'images/bullet_folder.gif';
-		bullet.alt = '+';
-		bullet.title = i18n['expand'];
+		close_bullet(bullet);
 		ul.style.display = 'none';
 	}
 }
@@ -61,21 +69,23 @@ function create_list(parent_folder: Folder, entry_type: EntryType, sorting: List
 	parent_folder.folders[i18n[entry_type] + ' ' + i18n[sorting]] = list;
 }
 
-function generate_folder_html(folder: Folder, folder_name: string, parent_node: HTMLUListElement): void {
+function generate_folder_html(folder: Folder, folder_name: string, parent_node: HTMLUListElement, first=true): void {
 	const folder_node = document.createElement('ul') as HTMLUListElement;
+	
+	const folder_item_list_node = document.createElement('ul') as HTMLUListElement;
 	
 	const folder_bullet = document.createElement('img') as HTMLImageElement;
 	folder_bullet.className = 'folder-bullet';
-	folder_bullet.src = 'images/bullet_folder.gif';
-	folder_bullet.alt = '+';
-	folder_bullet.title = i18n['expand'];
+	if (first) {
+		open_bullet(folder_bullet);
+	} else {
+		close_bullet(folder_bullet);
+		folder_item_list_node.style.display = 'none';
+	}
 	folder_bullet.addEventListener('click', collapse_tree);
 	folder_node.appendChild(folder_bullet);
 	
 	folder_node.appendChild(document.createTextNode(folder_name));
-	
-	const folder_item_list_node = document.createElement('ul') as HTMLUListElement;
-	folder_item_list_node.style.display = 'none';
 	
 	for (const item of folder.items) {
 		const item_li = document.createElement('li') as HTMLLIElement;
@@ -92,7 +102,7 @@ function generate_folder_html(folder: Folder, folder_name: string, parent_node: 
 	}
 	
 	for (const [subfolder_name, subfolder] of Object.entries(folder.folders)) {
-		generate_folder_html(subfolder, subfolder_name, folder_item_list_node);
+		generate_folder_html(subfolder, subfolder_name, folder_item_list_node, false);
 	}
 	
 	folder_node.appendChild(folder_item_list_node);
