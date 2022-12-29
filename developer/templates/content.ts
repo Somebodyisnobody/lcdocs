@@ -69,7 +69,7 @@ function create_list(parent_folder: Folder, entry_type: EntryType, sorting: List
 	parent_folder.folders[i18n[entry_type] + ' ' + i18n[sorting]] = list;
 }
 
-function generate_folder_html(folder: Folder, folder_name: string, parent_node: HTMLUListElement, first=true): void {
+function render_folder(folder: Folder, folder_name: string, parent_node: HTMLUListElement, first=true): void {
 	const folder_node = document.createElement('ul') as HTMLUListElement;
 	
 	const folder_item_list_node = document.createElement('ul') as HTMLUListElement;
@@ -102,7 +102,7 @@ function generate_folder_html(folder: Folder, folder_name: string, parent_node: 
 	}
 	
 	for (const [subfolder_name, subfolder] of Object.entries(folder.folders)) {
-		generate_folder_html(subfolder, subfolder_name, folder_item_list_node, false);
+		render_folder(subfolder, subfolder_name, folder_item_list_node, false);
 	}
 	
 	folder_node.appendChild(folder_item_list_node);
@@ -126,6 +126,6 @@ function generate_folder_html(folder: Folder, folder_name: string, parent_node: 
 	root_folder.folders[i18n['script']] = script_folder;
 	
 	for (const [folder_name, folder] of Object.entries(root_folder.folders)) {
-		generate_folder_html(folder, folder_name, folders_ul);
+		render_folder(folder, folder_name, folders_ul);
 	}
 })();
