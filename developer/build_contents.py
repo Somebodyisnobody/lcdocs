@@ -1,14 +1,9 @@
 #!/bin/env python3
 
-import collections
-import copy
 import json
 import sys
-import typing
 
 from mako.lookup import TemplateLookup
-
-from build_contents_types import *
 
 if len(sys.argv) < 2:
 	print('Not enough arguments!', file=sys.stderr)
@@ -33,88 +28,8 @@ with open(f'templates/content.{lang}.i18n.json', 'r') as f:
 with open(f'../lcdocs_summary.json', 'r') as f:
 	summary = json.load(f)
 
-''' You can find an example of this function's states in "build_contents_generate_category_states.jsonc" '''
-def generate_folders_by_category(current_folder: Folder, entry: dict, state: ItemState) -> None:
-	entry_category: list[str] = entry['category']
-	if len(entry_category) == 0:
-		current_folder.items.append(Item(entry['name'], state, entry['path']))
-		return
-	
-	target_category = entry_category[0]
-	consumed_entry = copy.copy(entry)
-	consumed_entry['category'] = entry_category[1:]
-	if target_category not in current_folder.folders:
-		current_folder.folders[target_category] = Folder({}, [])
-	generate_folders_by_category(current_folder.folders[target_category], consumed_entry, state)
-
-def sort_categories(current_folder: Folder):
-	for subcategory_name in current_folder.folders:
-		categories = current_folder.folders
-		sort_categories(categories[subcategory_name])
-		current_folder.folders = dict(collections.OrderedDict(sorted(categories.items())))
-
-root_folder = Folder({}, [])
-
-def parse_version(version_str):
-	return list(map(lambda part: int(part), version_str.split(' ')[0].split('.')))
-
-def create_list(entry_type, flat):
-	# FIXME handle "unknown" versions in constants
-	# build initial unsorted list of versions
-	versions_unsorted = []
-	for entry in summary[entry_type]:
-		entry_version = entry['version']
-		if entry_version not in versions_unsorted:
-			versions_unsorted.append(entry_version)
-	
-	# sort versions ascending
-	versions_sorted = [(parse_version(version), version) for version in versions_unsorted]
-	for version_pos in range(3, -1, -1):
-		versions_sorted.sort(key=lambda version_pair: version_pair[0][version_pos])
-	
-	# drop first item of ordered_versions tuple
-	versions = [version[1] for version in versions_sorted]
-	
-	# create version folders
-	main_folder = Folder({}, [])
-	for version in versions:
-		if version not in main_folder.folders:
-			main_folder.folders[version] = Folder({}, [])
-	
-	# add items
-	for entry in summary[entry_type]:
-		entry_version = entry['version']
-		# add item in the version it was first added and all later versions
-		deprecated_version = entry['deprecated_version']
-		deprecated = deprecated_version == 'unknown' # if the version is deprecated with unknown version, mark deprecated for all versions
-		for i in range(versions.index(entry_version), len(versions)):
-			version = versions[i]
-			
-			if version == deprecated_version:
-				deprecated = True # mark as deprecated for this and all later versions
-			
-			if version == entry_version:
-				state = ItemState.NEW
-			elif deprecated:
-				state = ItemState.DEPRECATED
-			else:
-				state = ItemState.AVAILABLE
-			
-			version_folder = main_folder.folders[version]
-			if flat:
-				version_folder.items.append(Item(entry['name'], state, entry['path']))
-			else:
-				generate_folders_by_category(version_folder, entry, state)
-	
-	root_folder.folders[i18n[entry_type] + ' ' + i18n[flat and 'by_name' or 'by_category']] = Folder(dict(collections.OrderedDict(reversed(main_folder.folders.items()))), [])
-
-create_list('constants', False)
-create_list('constants', True)
-create_list('functions', False)
-create_list('functions', True)
-
 lookup = TemplateLookup(directories=['templates'])
-html = lookup.get_template('content.html').render(lang=lang, i18n=i18n, root_folder=root_folder, lookup=lookup)
+html = lookup.get_template('content.html').render(lang=lang, i18n=i18n, lookup=lookup)
 
 with open(f'../online/{lang}/content.html', 'w') as f:
 	f.write(html)

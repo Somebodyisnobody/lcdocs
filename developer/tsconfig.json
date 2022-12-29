@@ -1,0 +1,7 @@
+{
+	"files": ["templates/content.ts"],
+	"compilerOptions": {
+		"outDir": "../online/de",
+		"removeComments": true
+	}
+}
