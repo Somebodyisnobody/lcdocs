@@ -27,8 +27,10 @@ interface Item {
 	path: string;
 }
 
+type FolderList = {[name: string]: Folder};
+
 interface Folder {
-	folders: {[name: string]: Folder};
+	folders: FolderList;
 	items: Item[];
 }
 
@@ -59,11 +61,50 @@ function collapse_tree(event: MouseEvent): void {
 	}
 }
 
+function create_folder_structure_by_category(current_folder: Folder, entry: Entry): void {
+	if (entry.category.length == 0) {
+		current_folder.items.push({name: entry.name, state: ItemState.AVAILABLE, path: entry.path});
+		return;
+	}
+	
+	const target_category = entry.category[0];
+	if (!current_folder.folders[target_category]) {
+		current_folder.folders[target_category] = {folders: {}, items: []};
+	}
+	const consumed_entry = structuredClone(entry);
+	consumed_entry.category.splice(0, 1); // remove the target category from the entry
+	create_folder_structure_by_category(current_folder.folders[target_category], consumed_entry);
+}
+
+function sort_folder_list(source_folder_list: FolderList): FolderList {
+	// recurse into subfolders
+	for (const folder of Object.values(source_folder_list)) {
+		folder.folders = sort_folder_list(folder.folders);
+	}
+	
+	const sorted_folder_list: FolderList = {};
+	Object.keys(source_folder_list).sort().forEach((name) => {
+		sorted_folder_list[name] = source_folder_list[name];
+	});
+	
+	return sorted_folder_list;
+}
+
 function create_list(parent_folder: Folder, entry_type: EntryType, sorting: ListSorting): void {
 	const list: Folder = {folders: {}, items: []};
 	
-	for (const entry of summary[entry_type]) {
-		list.items.push({name: entry.name, state: ItemState.AVAILABLE, path: entry.path});
+	switch (sorting) {
+	case 'by_category':
+		for (const entry of summary[entry_type]) {
+			create_folder_structure_by_category(list, entry);
+		}
+		list.folders = sort_folder_list(list.folders);
+		break;
+	case 'by_name':
+		for (const entry of summary[entry_type]) {
+			list.items.push({name: entry.name, state: ItemState.AVAILABLE, path: entry.path});
+		}
+		break;
 	}
 	
 	parent_folder.folders[i18n[entry_type] + ' ' + i18n[sorting]] = list;
@@ -121,7 +162,9 @@ function render_folder(folder: Folder, folder_name: string, parent_node: HTMLULi
 	const root_folder: Folder = {folders: {}, items: []};
 	
 	const script_folder: Folder = {folders: {}, items: []};
+	create_list(script_folder, 'constants', 'by_category');
 	create_list(script_folder, 'constants', 'by_name');
+	create_list(script_folder, 'functions', 'by_category');
 	create_list(script_folder, 'functions', 'by_name');
 	root_folder.folders[i18n['script']] = script_folder;
 	
