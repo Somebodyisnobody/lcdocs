@@ -35,13 +35,13 @@ interface Folder {
 let i18n: {[key: string]: string};
 let summary: Summary;
 
-function open_bullet(bullet: HTMLImageElement) {
+function open_bullet(bullet: HTMLImageElement): void {
 	bullet.src = 'images/bullet_folder_open.gif';
 	bullet.alt = '-';
 	bullet.title = i18n['collapse'];
 }
 
-function close_bullet(bullet: HTMLImageElement) {
+function close_bullet(bullet: HTMLImageElement): void {
 	bullet.src = 'images/bullet_folder.gif';
 	bullet.alt = '+';
 	bullet.title = i18n['expand'];
