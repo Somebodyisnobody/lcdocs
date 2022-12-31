@@ -1,14 +1,22 @@
 interface Entry {
 	path: string;
 	name: string;
-	category: string[];
+	category: string;
 	version: string;
 	deprecated_version: string | null;
 }
 
 type EntryType = 'constants' | 'functions';
 
+type category_i18n_map = {[path: string]: string[]};
+
 interface Summary {
+	created: string;
+	generated_from: string;
+	category_i18n: {
+		de: category_i18n_map;
+		en: category_i18n_map;
+	};
 	constants: Entry[];
 	functions: Entry[];
 }
@@ -61,19 +69,17 @@ function collapse_tree(event: MouseEvent): void {
 	}
 }
 
-function create_folder_structure_by_category(current_folder: Folder, entry: Entry, state: ItemState): void {
-	if (entry.category.length == 0) {
+function create_folder_structure_by_category(current_folder: Folder, entry: Entry, category: string[], state: ItemState): void {
+	if (category.length == 0) {
 		current_folder.items.push({name: entry.name, state: state, path: entry.path});
 		return;
 	}
 	
-	const target_category = entry.category[0];
+	const target_category = category[0];
 	if (!current_folder.folders.has(target_category)) {
 		current_folder.folders.set(target_category, {folders: new Map(), items: []});
 	}
-	const consumed_entry = structuredClone(entry);
-	consumed_entry.category.splice(0, 1); // remove the target category from the entry
-	create_folder_structure_by_category(current_folder.folders.get(target_category), consumed_entry, state);
+	create_folder_structure_by_category(current_folder.folders.get(target_category), entry, category.slice(1), state);
 }
 
 function sort_folder_map(source_folder_map: FolderMap): FolderMap {
@@ -166,7 +172,7 @@ function create_list(parent_folder: Folder, entry_type: EntryType, sorting: List
 			
 			switch (sorting) {
 			case 'by_category':
-				create_folder_structure_by_category(version_folder, entry, state);
+				create_folder_structure_by_category(version_folder, entry, summary.category_i18n[document.documentElement.lang][entry.category], state);
 				version_folder.folders = sort_folder_map(version_folder.folders);
 				break;
 			case 'by_name':
