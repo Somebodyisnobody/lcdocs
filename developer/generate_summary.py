@@ -30,8 +30,10 @@ def get_unique_value(node, tag):
 		return
 	return element.firstChild.nodeValue.strip()
 
-def create_entry(entries, file_path, node):
+def create_entry(entries, raw_file_path, node):
 	tag_name = node.tagName
+	
+	file_path.replace(os.path.sep, '/') # replace os specific seperators with / so it's usable in an URL
 	
 	category = get_unique_value(node, 'category').split('/')
 	deprecated_tags = node.getElementsByTagName('deprecated')
