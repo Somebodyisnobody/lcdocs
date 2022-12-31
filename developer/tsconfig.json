@@ -2,7 +2,7 @@
 	"files": ["templates/content.ts"],
 	"compilerOptions": {
 		"target": "ES2017",
-		"outDir": "../online/de",
+		"outDir": "../online",
 		"removeComments": true
 	}
 }

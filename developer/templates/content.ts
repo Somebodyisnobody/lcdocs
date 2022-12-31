@@ -237,7 +237,7 @@ function render_folder(folder: Folder, folder_name: string, parent_node: HTMLULi
 (async () => {
 	await Promise.all([
 		(async () => i18n = await (await fetch(`content.${document.documentElement.lang}.i18n.json`)).json())(),
-		(async () => summary = await (await fetch('lcdocs_summary.json')).json())(),
+		(async () => summary = await (await fetch('../lcdocs_summary.json')).json())(),
 	]);
 	
 	const folders_ul = document.getElementById('folders') as HTMLUListElement;
