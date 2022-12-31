@@ -11,8 +11,10 @@ if len(sys.argv) < 2:
 	print(f'Not enough arguments!\nSyntax: {sys.argv[0]} path', file=sys.stderr)
 	sys.exit(1)
 
-if not os.path.isdir(sys.argv[1]):
-	print(f'"{sys.argv[1]}" is not a directory or not accessible!', file=sys.stderr)
+root_dir = os.path.normpath(sys.argv[1])
+
+if not os.path.isdir(root_dir):
+	print(f'"{root_dir}" is not a directory or not accessible!', file=sys.stderr)
 	sys.exit(1)
 
 # Returns the first tag in a list. Use it when you have always only one element first in a list that you want to use (<versions><version>I want this!</version><extversion></extversion></versions>)
@@ -33,7 +35,7 @@ def get_unique_value(node, tag):
 def create_entry(entries, raw_file_path, node):
 	tag_name = node.tagName
 	
-	file_path.replace(os.path.sep, '/') # replace os specific seperators with / so it's usable in an URL
+	file_path = raw_file_path.replace(os.path.sep, '/')[len(root_dir) + 1:] # replace os specific seperators with / so it's usable in an URL
 	
 	category = get_unique_value(node, 'category').split('/')
 	deprecated_tags = node.getElementsByTagName('deprecated')
@@ -64,7 +66,7 @@ def create_entry(entries, raw_file_path, node):
 # FIXME only loop trough xml files to be sure no side effects appear
 constants = []
 functions = []
-for path, dir_names, files in os.walk(sys.argv[1]):
+for path, dir_names, files in os.walk(root_dir):
 	for file_name in files:
 		file_path = os.path.join(path, file_name)
 		# Parse the file into a dom object which contains elements
@@ -90,6 +92,6 @@ print('Duplicates:', [item for item, count in collections.Counter(flattened_name
 
 # Print the current datetime in the exported file
 # WARNING: datetime is in local timezone
-out = {'created': datetime.datetime.now().isoformat(), 'constants': constants, 'functions': functions}
+out = {'created': datetime.datetime.now().isoformat(), 'generated_from': root_dir, 'constants': constants, 'functions': functions}
 with open('lcdocs_summary.json', 'w') as f:
 	f.write(json.dumps(out, indent='\t'))
