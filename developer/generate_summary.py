@@ -17,6 +17,15 @@ if not os.path.isdir(root_dir):
 	print(f'"{root_dir}" is not a directory or not accessible!', file=sys.stderr)
 	sys.exit(1)
 
+po_i18n = {}
+with open('en.po', 'r') as f:
+	en_po = f.read().split('\n')
+for line in en_po:
+	if line.startswith('msgid'):
+		msgid = line[7:-1]
+	elif line.startswith('msgstr'):
+		po_i18n[msgid] = line[8:-1]
+
 # Returns the first tag in a list. Use it when you have always only one element first in a list that you want to use (<versions><version>I want this!</version><extversion></extversion></versions>)
 def get_unique_tag(node, tag):
 	elements = node.getElementsByTagName(tag)
@@ -32,12 +41,16 @@ def get_unique_value(node, tag):
 		return
 	return element.firstChild.nodeValue.strip()
 
+categories = []
+
 def create_entry(entries, raw_file_path, node):
 	tag_name = node.tagName
 	
 	file_path = raw_file_path.replace(os.path.sep, '/')[len(root_dir) + 1:] # replace os specific seperators with / so it's usable in an URL
 	
-	category = get_unique_value(node, 'category').split('/')
+	category = get_unique_value(node, 'category')
+	if category not in categories:
+		categories.append(category)
 	deprecated_tags = node.getElementsByTagName('deprecated')
 	deprecated_version = None
 	if len(deprecated_tags) > 0:
@@ -90,8 +103,17 @@ functions.sort(key=lambda item: item['path'])
 flattened_names = [*[const['name'] for const in constants], *[func['name'] for func in functions]]
 print('Duplicates:', [item for item, count in collections.Counter(flattened_names).items() if count > 1])
 
+categories.sort()
+
+category_i18n = {'de': {}, 'en': {}}
+for category in categories:
+	category_i18n['de'][category] = category.split('/')
+for category in categories:
+	category_i18n['en'][category] = po_i18n[category].split('/')
+
 # Print the current datetime in the exported file
 # WARNING: datetime is in local timezone
-out = {'created': datetime.datetime.now().isoformat(), 'generated_from': root_dir, 'constants': constants, 'functions': functions}
+out = {'created': datetime.datetime.now().isoformat(), 'generated_from': root_dir, 'category_i18n': category_i18n, 'constants': constants, 'functions': functions}
 with open('lcdocs_summary.json', 'w') as f:
-	f.write(json.dumps(out, indent='\t'))
+	# disable "ensure_ascii" so UTF-8 chars are output correctly
+	f.write(json.dumps(out, ensure_ascii=False, indent='\t'))
