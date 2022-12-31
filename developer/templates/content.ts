@@ -197,6 +197,10 @@ function render_folder(folder: Folder, folder_name: string, parent_node: HTMLULi
 	
 	folder_node.appendChild(document.createTextNode(folder_name));
 	
+	for (const [subfolder_name, subfolder] of folder.folders) {
+			render_folder(subfolder, subfolder_name, folder_item_list_node, false);
+	}
+	
 	for (const item of folder.items) {
 		const item_li = document.createElement('li') as HTMLLIElement;
 		
@@ -223,10 +227,6 @@ function render_folder(folder: Folder, folder_name: string, parent_node: HTMLULi
 		item_name_parent.appendChild(document.createTextNode(item.name));
 		
 		folder_item_list_node.appendChild(item_li);
-	}
-	
-	for (const [subfolder_name, subfolder] of folder.folders) {
-		render_folder(subfolder, subfolder_name, folder_item_list_node, false);
 	}
 	
 	folder_node.appendChild(folder_item_list_node);
