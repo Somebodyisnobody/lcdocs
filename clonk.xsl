@@ -15,13 +15,15 @@
 			<xsl:variable name="procinst" select="processing-instruction('xml-stylesheet')"/>
 			<xsl:variable name="relpath" select="substring-after(substring-before($procinst, 'clonk.xsl'),'href=&quot;')"/>
 			<!-- Logging current handled file for debugging warnings-->
-			<xsl:message><xsl:text>Transforming </xsl:text><xsl:value-of select="concat($output-folder, '/' , substring-before(substring-after(document-uri(.), $input-folder), '.xml'), $fileext)"></xsl:value-of> </xsl:message>
+			<!-- 2023-01-01 Funni: Need to use base-uri as document-uri for compatibility with Saxon HE 11.4 https://saxonica.plan.io/issues/5339 -->
+			<xsl:message><xsl:text>Transforming </xsl:text><xsl:value-of select="concat($output-folder, '/' , substring-before(substring-after(base-uri(.), $input-folder), '.xml'), $fileext)"></xsl:value-of> </xsl:message>
 
 			<!--<xsl:result-document href="out/sdk/{tokenize(document-uri(.), '/')[last()]}"> packing everything in one folder-->
 			<!--	online/de/sdk [output-folder] + (/...../sdk/index.xml [document-uri] - everything before sdk/ [input-folder] - ".xml") + .html	-->
-			<xsl:result-document href="{concat($output-folder, '/' , substring-before(substring-after(document-uri(.), $input-folder), '.xml'), $fileext)}">
+			<xsl:result-document href="{concat($output-folder, '/' , substring-before(substring-after(base-uri(.), $input-folder), '.xml'), $fileext)}">
 				<xsl:apply-templates select=".">
 					<xsl:with-param name="relpath" select="$relpath" tunnel="yes"/>
+					<xsl:with-param name="navbar" select="doc(concat('developer/templates/navbar-snippet-', /clonkDoc/@xml:lang ,'.html'))" tunnel="yes"/>
 				</xsl:apply-templates>
 			</xsl:result-document>
 		</xsl:for-each>
@@ -94,10 +96,11 @@
 	</xsl:template>
 
 	<xsl:template match="/clonkDoc">
+		<xsl:param name="navbar" tunnel="yes"/>
 		<html>
 			<xsl:call-template name="head"/>
 			<body>
-				<xsl:call-template name="nav"/>
+				<xsl:apply-templates select="$navbar//ul[@class = 'nav']" xpath-default-namespace="" mode="fix-links"/>
 				<xsl:apply-templates select="func"/>
 				<xsl:apply-templates select="doc"/>
 				<xsl:apply-templates select="constGroup"/>
@@ -108,10 +111,32 @@
 						<xsl:text>pwn_body(basename (dirname(__FILE__)) . basename(__FILE__,".html"), $_SERVER['SCRIPT_NAME']); ?</xsl:text>
 					</xsl:processing-instruction>
 				</xsl:if>
-				<xsl:call-template name="nav"/>
+				<xsl:apply-templates select="$navbar//ul[@class = 'nav']" xpath-default-namespace="" mode="fix-links"/>
+
 			</body>
 		</html>
 	</xsl:template>
+
+	<!-- Import Navbar -->
+	<!-- https://stackoverflow.com/questions/74944291/copy-of-with-search-and-replace-relative-paths -->
+	<xsl:template mode="fix-links" match="@* | node()" xpath-default-namespace="">
+		<xsl:copy>
+			<xsl:apply-templates select="@* | node()" mode="#current"/>
+		</xsl:copy>
+	</xsl:template>
+
+	<xsl:template mode="fix-links" match="ul/li/a/@href" xpath-default-namespace="">
+		<xsl:param name="relpath" tunnel="yes"/>
+		<xsl:choose>
+			<xsl:when test="not(starts-with(., 'javascript:'))">
+				<xsl:attribute name="{name()}" select="concat($relpath, .)"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:attribute name="{name()}" select="."/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+
 
 	<xsl:template match="doc">
 		<xsl:apply-templates select="title"/>
@@ -291,7 +316,7 @@
 									<xsl:attribute name="style">display:none; position:absolute;</xsl:attribute>
 									<xsl:choose>
 										<xsl:when test="lang('de')">
-											<xsl:text >Als Veraltet markiert ab Version </xsl:text>
+											<xsl:text >Als veraltet markiert ab Version </xsl:text>
 											<xsl:value-of select="normalize-space(descendant::deprecated/version)"/>
 											<xsl:text> durch </xsl:text>
 											<xsl:value-of select="normalize-space(descendant::deprecated/author)"/>
@@ -715,6 +740,15 @@
 	<xsl:template match="date">
 		<xsl:choose>
 			<xsl:when test="count(tokenize(., '-'))=2">
+				<!--
+				2023-01-01 Funni
+				format-date() blocks from using Saxon higher than 9.1 as from there only English is supported in Saxon HE.
+				https://saxonica.com/documentation10/index.html#!configuration/configuration-file
+				https://stackoverflow.com/questions/5571345/xslt-2-0-month-name-in-french-or-german
+				https://www.saxonica.com/html/documentation10/functions/fn/format-dateTime.html
+				https://stackoverflow.com/questions/64466680/how-to-set-language-data-with-saxon-he-10-2
+				Therefore this blocks from using XSLT 3.0 as it was introduced with Saxon 9.8: https://www.saxonica.com/documentation11/index.html#!using-xsl/xslt30
+				-->
 					<xsl:value-of select="format-date(xs:date(concat(., '-01')), '[MNn] [Y]', /clonkDoc/@xml:lang, (), ())"/>
 			</xsl:when>
 			<xsl:when test="count(tokenize(., '-'))=3">
@@ -874,105 +908,6 @@
 		<xsl:attribute name="colspan">
 			<xsl:value-of select="."/>
 		</xsl:attribute>
-	</xsl:template>
-
-	<xsl:template name="nav">
-		<xsl:param name="relpath" tunnel="yes"/>
-		<xsl:if test="$is-web-documentation">
-			<ul class="nav">
-				<li class="fineprint">
-					<xsl:choose>
-						<xsl:when test='lang("en")'>Clonk Developer Mode Documentation</xsl:when>
-						<xsl:otherwise>Clonk Entwicklermodus Dokumentation</xsl:otherwise>
-					</xsl:choose>
-				</li>
-				<li class="switchlang">
-					<xsl:choose>
-						<xsl:when test='lang("en")'>
-							<a href='javascript:switchLanguage()'>
-								<img src='/deco/dco_de_sml.gif' alt='German' border='0'/>
-							</a>
-						</xsl:when>
-						<xsl:otherwise>
-							<a href='javascript:switchLanguage()'>
-								<img src='/deco/dco_en_sml.gif' alt='English' border='0'/>
-							</a>
-						</xsl:otherwise>
-					</xsl:choose>
-				</li>
-				<li>
-					<xsl:call-template name="link">
-						<xsl:with-param name="href" select="'index.html'"/>
-						<xsl:with-param name="text">
-							<xsl:choose>
-								<xsl:when test='lang("en")'>Introduction</xsl:when>
-								<xsl:otherwise>Einleitung</xsl:otherwise>
-							</xsl:choose>
-						</xsl:with-param>
-					</xsl:call-template>
-				</li>
-				<li>
-					<a>
-						<xsl:attribute name="href">
-							<xsl:value-of select="$relpath"/><xsl:text>content.html</xsl:text>
-						</xsl:attribute>
-						<xsl:choose>
-							<xsl:when test='lang("en")'>Contents</xsl:when>
-							<xsl:otherwise>Inhalt</xsl:otherwise>
-						</xsl:choose>
-					</a>
-				</li>
-				<li>
-					<a>
-						<xsl:attribute name="href">
-							<xsl:value-of select="$relpath"/><xsl:text>search.php</xsl:text>
-						</xsl:attribute>
-						<xsl:choose>
-							<xsl:when test='lang("en")'>Search</xsl:when>
-							<xsl:otherwise>Suche</xsl:otherwise>
-						</xsl:choose>
-					</a>
-				</li>
-				<li>
-					<xsl:call-template name="link">
-						<xsl:with-param name="href" select="'console.html'"/>
-						<xsl:with-param name="text" select="'Engine'"/>
-					</xsl:call-template>
-				</li>
-				<li>
-					<xsl:call-template name="link">
-						<xsl:with-param name="href" select="'cmdline.html'"/>
-						<xsl:with-param name="text">
-							<xsl:choose>
-								<xsl:when test='lang("en")'>Command Line</xsl:when>
-								<xsl:otherwise>Kommandozeile</xsl:otherwise>
-							</xsl:choose>
-						</xsl:with-param>
-					</xsl:call-template>
-				</li>
-				<li>
-					<xsl:call-template name="link">
-						<xsl:with-param name="href" select="'files.html'"/>
-						<xsl:with-param name="text">
-							<xsl:choose>
-								<xsl:when test='lang("en")'>Game Data</xsl:when>
-								<xsl:otherwise>Spieldaten</xsl:otherwise>
-							</xsl:choose>
-						</xsl:with-param>
-					</xsl:call-template>
-				</li>
-				<li>
-					<xsl:call-template name="link">
-						<xsl:with-param name="href" select="'script/index.html'"/>
-						<xsl:with-param name="text" select="'Script'"/>
-					</xsl:call-template>
-				</li>
-				<!--<li><a><xsl:attribute name="href">index.xml</xsl:attribute>.</a></li>
-				<xsl:if test="starts-with($relpath, '../..')">
-				  <li><a><xsl:attribute name="href">../index.xml</xsl:attribute>..</a></li>
-				</xsl:if>-->
-			</ul>
-		</xsl:if>
 	</xsl:template>
 
 	<!-- some code blocks are made into paragraphs -->
