@@ -26,7 +26,7 @@ for line in en_po:
 	elif line.startswith('msgstr'):
 		po_i18n[msgid] = line[8:-1]
 
-def get_unique_tag(node, tag):
+def get_unique_tag(node, tag, file_path):
 	'''Return the first node with name *tag* of *node* or print a warning and return None in the case of none or multiple tags with the name *tag*
 	   example: <versions><version>I want this!</version><extversion></extversion></versions>'''
 	
@@ -38,12 +38,12 @@ def get_unique_tag(node, tag):
 	
 	return elements[0]
 
-def get_unique_value(node, tag):
+def get_unique_value(node, tag, file_path):
 	'''Return the text contained in *node* or print a warning and return None in the case of none or multiple tags with the name *tag*
 	   example: <title>FooBar</title> -> "FooBar"
 	   detailed explanation: Get value of first child node of *node* and strip whitespace. This won't work if *node* doesn't have a child node or if that child node is not a text node)'''
 	
-	element = get_unique_tag(node, tag)
+	element = get_unique_tag(node, tag, file_path)
 	
 	if not element:
 		return None
@@ -57,19 +57,19 @@ def create_entry(entries, raw_file_path, node):
 	
 	file_path = raw_file_path.replace(os.path.sep, '/')[len(root_dir) + 1:] # replace os specific seperators with / so it's usable in an URL
 	
-	category = get_unique_value(node, 'category')
+	category = get_unique_value(node, 'category', file_path)
 	if category not in categories:
 		categories.append(category)
 	deprecated_tags = node.getElementsByTagName('deprecated')
 	deprecated_version = None
 	if len(deprecated_tags) > 0:
-		deprecated_version = get_unique_value(deprecated_tags[0], 'version')
+		deprecated_version = get_unique_value(deprecated_tags[0], 'version', file_path)
 	if tag_name == 'const':
-		name = get_unique_value(node, 'name')
-		version = get_unique_value(node, 'version')
+		name = get_unique_value(node, 'name', file_path)
+		version = get_unique_value(node, 'version', file_path)
 	elif tag_name == 'func':
-		name = get_unique_value(node, 'title')
-		version = get_unique_value(get_unique_tag(node, 'versions'), 'version')
+		name = get_unique_value(node, 'title', file_path)
+		version = get_unique_value(get_unique_tag(node, 'versions', file_path), 'version', file_path)
 	
 	if not (name and category and version):
 		print(f'Skipping <{tag_name}> in {file_path}', file=sys.stderr)
