@@ -76,11 +76,14 @@ def create_entry(entries, raw_file_path, node):
 	entries.append(entry)
 
 # Now we search recursively in a given path for xml files
-# FIXME only loop trough xml files to be sure no side effects appear
 constants = []
 functions = []
 for path, dir_names, files in os.walk(root_dir):
 	for file_name in files:
+		# ignore non-XML files
+		if not file_name.endswith('.xml'):
+			continue
+		
 		file_path = os.path.join(path, file_name)
 		# Parse the file into a dom object which contains elements
 		dom = minidom.parse(file_path)
