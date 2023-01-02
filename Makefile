@@ -21,9 +21,12 @@ stylesheet = clonk.xsl
 # find all directories neither beginning nor contained within a directory beginning with a dot
 sdk-dirs := $(shell find sdk -name '.*' -prune -o -type d -print)
 
+#todo bitmask.js -> ts, move css, move images, create search.html
 # misc
 extra-files := $(sort $(wildcard *.css *.php *.js images/*.*))
 extra-files-chm := $(sort $(wildcard *.css *.js images/*.*))
+content-template-files := ./developer/build_contents.py ./developer/templates/content.html ./developer/templates/navbar-snippet-de.html ./developer/templates/navbar-snippet-en.html
+content-language-files := ./developer/templates/content.de.i18n.json ./developer/templates/content.en.i18n.json
 
 # find all *.xml files recursively in sdk/
 xmlfiles := $(sort $(shell find sdk -name '.*' -prune -o -name \*.xml -print))
@@ -40,7 +43,7 @@ htmlfiles-en := $(subst sdk, sdk-en, $(htmlfiles))
 
 # For clonk.de
 online-sdk-files := $(foreach lang, en de, $(addprefix online/$(lang)/, $(htmlfiles) content.html))
-online-dirs := $(foreach lang, en de, $(addprefix online/$(lang)/, $(sdk-dirs) images))
+online-dirs := $(foreach lang, en de, $(addprefix online/$(lang)/, $(sdk-dirs))) online/resources/images online/resources/js online/resources/css
 online-extra-files := $(foreach lang, en de, $(addprefix online/$(lang)/, $(extra-files)))
 
 # For Entwickler.chm
@@ -78,14 +81,26 @@ chm/de/Output.hhc: $(xmlfiles) chm/de/. chm/en/. developer/build_chm_files.py de
 
 lcdocs_summary.json: $(xmlfiles) developer/generate_summary.py
 	@echo generate lcdocs summary report $@
-	@./developer/generate_summary.py ./sdk
+	@./developer/generate_summary.py ./sdk/
 
-online/de/content.html: chm/de/Output.hhc developer/build_contents.pl $(online-dirs)
+online/resources/js/%.js: developer/templates/%.ts $(online-dirs)
+	@echo compiling $@ from $<
+	@tsc
+
+online/resources/%.json: lcdocs_summary.json $(content-language-files) $(online-dirs)
+	@# $(content-language-files) $< merges the first dependency with the list of $(content-language-files) in a for loop
+	@for i in $(content-language-files) $<; do \
+		echo copy $$i into online/resources/; \
+		cp $$i online/resources/; \
+	done
+
+online/de/content.html: online/resources/lcdocs_summary.json online/resources/content.de.i18n.json online/resources/js/content.js $(content-template-files) $(online-dirs)
 	@echo generate $@
-	@perl developer/build_contents.pl $< > $@
-online/en/content.html: chm/en/Output.hhc developer/build_contents.pl $(online-dirs)
+	@./developer/build_contents.py de
+
+online/en/content.html: online/resources/lcdocs_summary.json online/resources/content.en.i18n.json online/resources/js/content.js $(content-template-files) $(online-dirs)
 	@echo generate $@
-	@perl developer/build_contents.pl $< > $@
+	@./developer/build_contents.py en
 
 $(sdk-dirs-en) $(online-dirs) $(chm-dirs):
 	mkdir -p $@

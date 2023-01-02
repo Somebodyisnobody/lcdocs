@@ -288,3 +288,10 @@ function render_folder(folder: Folder, folder_name: string, parent_node: HTMLULi
 		render_folder(folder, folder_name, folders_ul);
 	}
 })();
+
+function switchLanguage() {
+	let loc = window.location.href;
+	if (loc.match(/\/en\//)) loc = loc.replace(/\/en\//, "/de/");
+	else loc = loc.replace(/\/de\//, "/en/");
+	window.location.href = loc;
+}
