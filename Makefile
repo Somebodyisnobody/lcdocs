@@ -51,7 +51,8 @@ chm-dirs := $(foreach lang, en de, $(addprefix chm/$(lang)/, . $(sdk-dirs) image
 
 .PHONY: all online-de chm install svn-update check clean
 
-all: $(online-dirs) $(sdk-dirs-en) $(online-extra-files) $(online-sdk-files)
+#Fixme: online-extra-files pipeline    all: $(online-dirs) $(sdk-dirs-en) $(online-extra-files) $(online-sdk-files)
+all: $(online-dirs) $(sdk-dirs-en) $(online-sdk-files)
 
 online-de: $(addprefix online/de/, $(sdk-dirs) images $(htmlfiles) $(extra-files))
 

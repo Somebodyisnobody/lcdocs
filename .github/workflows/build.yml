@@ -33,7 +33,9 @@ jobs:
           java-version: '11'
 
       - name: Setup saxonb-xslt, python, gettext
-        run: sudo DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends libsaxonb-java python-libxml2 gettext node-typescript -y
+        run: |
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends libsaxonb-java python-libxml2 gettext node-typescript -y
+          pip3 install -r developer/requirements.txt
 
       - name: Build docs
         run: |
@@ -43,12 +45,11 @@ jobs:
         run: |
           mkdir output
           mv online output
-          mv chm output
           mv sdk-en output
           mv sdk output
           mv doku.pot output
           mv en.mo output
-          mv Functions.txt output
+          mv lcdocs_summary.json output
           cd output
           zip -q -0 -r ../generated-docs.zip *
 
