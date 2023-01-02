@@ -186,11 +186,11 @@ function create_list(parent_folder: Folder, entry_type: EntryType, sorting: List
 }
 
 function render_folder(folder: Folder, folder_name: string, parent_node: HTMLUListElement, first=true): void {
-	const folder_node = document.createElement('ul') as HTMLUListElement;
+	const folder_node = document.createElement('ul');
 	
-	const folder_item_list_node = document.createElement('ul') as HTMLUListElement;
+	const folder_item_list_node = document.createElement('ul');
 	
-	const folder_bullet = document.createElement('img') as HTMLImageElement;
+	const folder_bullet = document.createElement('img');
 	folder_bullet.className = 'folder-bullet';
 	if (first) {
 		open_bullet(folder_bullet);
@@ -208,9 +208,9 @@ function render_folder(folder: Folder, folder_name: string, parent_node: HTMLULi
 	}
 	
 	for (const item of folder.items) {
-		const item_li = document.createElement('li') as HTMLLIElement;
+		const item_li = document.createElement('li');
 		
-		const item_bullet = document.createElement('img') as HTMLImageElement;
+		const item_bullet = document.createElement('img');
 		item_bullet.className = 'bullet';
 		item_bullet.src = 'images/bullet_sheet.gif';
 		item_bullet.alt = '-';
