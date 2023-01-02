@@ -26,19 +26,28 @@ for line in en_po:
 	elif line.startswith('msgstr'):
 		po_i18n[msgid] = line[8:-1]
 
-# Returns the first tag in a list. Use it when you have always only one element first in a list that you want to use (<versions><version>I want this!</version><extversion></extversion></versions>)
 def get_unique_tag(node, tag):
+	'''Return the first node with name *tag* of *node* or print a warning and return None in the case of none or multiple tags with the name *tag*
+	   example: <versions><version>I want this!</version><extversion></extversion></versions>'''
+	
 	elements = node.getElementsByTagName(tag)
+	
 	if len(elements) != 1:
 		print(f'None or multiple <{tag}> elements found in "{file_path}"!', file=sys.stderr)
 		return None
+	
 	return elements[0]
 
-# Returns the value of a given element (tag) which is contained in node. (<title>FooBar</title> => "FooBar")
 def get_unique_value(node, tag):
+	'''Return the text contained in *node* or print a warning and return None in the case of none or multiple tags with the name *tag*
+	   example: <title>FooBar</title> -> "FooBar"
+	   detailed explanation: Get value of first child node of *node* and strip whitespace. This won't work if *node* doesn't have a child node or if that child node is not a text node)'''
+	
 	element = get_unique_tag(node, tag)
+	
 	if not element:
-		return
+		return None
+	
 	return element.firstChild.nodeValue.strip()
 
 categories = []
@@ -61,11 +70,12 @@ def create_entry(entries, raw_file_path, node):
 	elif tag_name == 'func':
 		name = get_unique_value(node, 'title')
 		version = get_unique_value(get_unique_tag(node, 'versions'), 'version')
+	
 	if not (name and category and version):
 		print(f'Skipping <{tag_name}> in {file_path}', file=sys.stderr)
 		return
 	
-	# This is our new object for export to file later
+	# this is the object which is later exported to the summary JSON file
 	entry = {
 		'path': file_path,
 		'name': name,
@@ -75,7 +85,7 @@ def create_entry(entries, raw_file_path, node):
 	}
 	entries.append(entry)
 
-# Now we search recursively in a given path for xml files
+# search recursively in a given path for XML files
 constants = []
 functions = []
 for path, dir_names, files in os.walk(root_dir):
@@ -85,24 +95,24 @@ for path, dir_names, files in os.walk(root_dir):
 			continue
 		
 		file_path = os.path.join(path, file_name)
-		# Parse the file into a dom object which contains elements
-		dom = minidom.parse(file_path)
+		# parse the XML file into a DOM object
+		document = minidom.parse(file_path)
 		
-		# Search for <const> Elements in the current dom object
-		for const in dom.getElementsByTagName('const'):
+		# find <const> tags in the current document
+		for const in document.getElementsByTagName('const'):
 			create_entry(constants, file_path, const)
 		
-		# Search for <func> Elements in the current dom object
-		for func in dom.getElementsByTagName('func'):
+		# find <func> tags in the current document
+		for func in document.getElementsByTagName('func'):
 			create_entry(functions, file_path, func)
 
-# Sort by name first, then group by file (one constgroup-file can have multiple constants)
+# sort by name first, then group by file (one constgroup-file can have multiple constants)
 constants.sort(key=lambda item: item['name'])
 constants.sort(key=lambda item: item['path'])
-# Sort by name only for functions
+# only sort by path for functions
 functions.sort(key=lambda item: item['path'])
 
-# Data integrity check: We search for duplicates over the "name"-key of { "constants", "functions" }. The desired output is an empty array and means everything is okay.
+# data integrity check: print a list of duplicate entries by the "name"-key (this is an empty array when the data is correct)
 flattened_names = [*[const['name'] for const in constants], *[func['name'] for func in functions]]
 print('Duplicates:', [item for item, count in collections.Counter(flattened_names).items() if count > 1])
 
@@ -114,7 +124,7 @@ for category in categories:
 for category in categories:
 	category_i18n['en'][category] = po_i18n[category].split('/')
 
-# Print the current datetime in the exported file
+# also export the current date and time into the JSON file
 # WARNING: datetime is in local timezone
 out = {'created': datetime.datetime.now().isoformat(), 'generated_from': root_dir, 'category_i18n': category_i18n, 'constants': constants, 'functions': functions}
 with open('lcdocs_summary.json', 'w') as f:
