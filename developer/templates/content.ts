@@ -204,7 +204,7 @@ function render_folder(folder: Folder, folder_name: string, parent_node: HTMLULi
 	folder_node.appendChild(document.createTextNode(folder_name));
 	
 	for (const [subfolder_name, subfolder] of folder.folders) {
-			render_folder(subfolder, subfolder_name, folder_item_list_node, false);
+		render_folder(subfolder, subfolder_name, folder_item_list_node, false);
 	}
 	
 	for (const item of folder.items) {
