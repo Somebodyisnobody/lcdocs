@@ -291,8 +291,11 @@ function render_folder(folder: Folder, folder_name: string, parent_node: HTMLULi
 })();
 
 function switchLanguage() {
-	let loc = window.location.href;
-	if (loc.match(/\/en\//)) loc = loc.replace(/\/en\//, "/de/");
-	else loc = loc.replace(/\/de\//, "/en/");
-	window.location.href = loc;
+	let target_lang: string;
+	if (language == 'de') {
+		target_lang = 'en';
+	} else {
+		target_lang = 'de';
+	}
+	window.location.href = `/${target_lang}/content.html`;
 }
