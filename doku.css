@@ -186,6 +186,7 @@ ul.nav li.switchlang {
 float: right;
 color: #999999;
 margin: 0;
+border: 0;
 }
 
 ul.nav a, ul.nav a.visited {
