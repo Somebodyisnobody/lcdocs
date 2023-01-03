@@ -85,7 +85,7 @@ lcdocs_summary.json: $(xmlfiles) developer/generate_summary.py
 
 online/resources/js/%.js: developer/templates/%.ts $(online-dirs)
 	@echo compiling $@ from $<
-	@tsc
+	@tsc $(shell ./tsconfig2arg.py) $<
 
 online/resources/%.json: lcdocs_summary.json $(content-language-files) $(online-dirs)
 	@# $(content-language-files) $< merges the first dependency with the list of $(content-language-files) in a for loop
