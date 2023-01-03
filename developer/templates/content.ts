@@ -287,6 +287,7 @@ function render_folder(folder: Folder, folder_name: string, parent_node: HTMLULi
 	for (const [folder_name, folder] of root_folder.folders) {
 		render_folder(folder, folder_name, folders_ul);
 	}
+	document.getElementById('loading-spinner').style.display = "none";
 })();
 
 function switchLanguage() {

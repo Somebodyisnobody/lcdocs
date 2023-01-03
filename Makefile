@@ -25,7 +25,7 @@ sdk-dirs := $(shell find sdk -name '.*' -prune -o -type d -print)
 # misc
 extra-files := $(sort $(wildcard *.css *.php *.js images/*.*))
 extra-files-chm := $(sort $(wildcard *.css *.js images/*.*))
-content-template-files := ./developer/build_contents.py ./developer/templates/content.html ./developer/templates/navbar-snippet-de.html ./developer/templates/navbar-snippet-en.html
+content-template-files := ./developer/build_contents.py ./developer/templates/content.html ./developer/templates/navbar-snippet-de.html ./developer/templates/navbar-snippet-en.html ./developer/templates/loading-spinner.html
 content-language-files := ./developer/templates/content.de.i18n.json ./developer/templates/content.en.i18n.json
 
 # find all *.xml files recursively in sdk/
@@ -43,7 +43,7 @@ htmlfiles-en := $(subst sdk, sdk-en, $(htmlfiles))
 
 # For clonk.de
 online-sdk-files := $(foreach lang, en de, $(addprefix online/$(lang)/, $(htmlfiles) content.html))
-online-dirs := $(foreach lang, en de, $(addprefix online/$(lang)/, $(sdk-dirs))) online/resources/images online/resources/js online/resources/css
+online-dirs := $(foreach lang, en de, $(addprefix online/$(lang)/, $(sdk-dirs) images)) online/resources/images online/resources/js online/resources/css
 online-extra-files := $(foreach lang, en de, $(addprefix online/$(lang)/, $(extra-files)))
 
 # For Entwickler.chm
@@ -51,8 +51,7 @@ chm-dirs := $(foreach lang, en de, $(addprefix chm/$(lang)/, . $(sdk-dirs) image
 
 .PHONY: all online-de chm install svn-update check clean
 
-#Fixme: online-extra-files pipeline    all: $(online-dirs) $(sdk-dirs-en) $(online-extra-files) $(online-sdk-files)
-all: $(online-dirs) $(sdk-dirs-en) $(online-sdk-files)
+all: $(online-dirs) $(sdk-dirs-en) $(online-extra-files) $(online-sdk-files)
 
 online-de: $(addprefix online/de/, $(sdk-dirs) images $(htmlfiles) $(extra-files))
 
