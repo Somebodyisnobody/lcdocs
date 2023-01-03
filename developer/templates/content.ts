@@ -9,16 +9,28 @@ interface Entry {
 type EntryType = 'constants' | 'functions';
 
 type category_i18n_map = {[path: string]: string[]};
+type files_i18n = {
+	de: string;
+	en: string;
+};
 
 interface Summary {
 	created: string;
 	generated_from: string;
+	files: {
+		[directory: string]: {
+			i18n: files_i18n;
+			files: {[name: string]: files_i18n};
+		};
+	};
 	category_i18n: {
 		de: category_i18n_map;
 		en: category_i18n_map;
 	};
-	constants: Entry[];
-	functions: Entry[];
+	script: {
+		constants: Entry[];
+		functions: Entry[];
+	};
 }
 
 type ListSorting = 'by_category' | 'by_name';
@@ -43,6 +55,7 @@ interface Folder {
 }
 
 let i18n: {[key: string]: string};
+const language = document.documentElement.lang;
 let summary: Summary;
 
 function open_bullet(bullet: HTMLImageElement): void {
@@ -101,7 +114,7 @@ function create_list(parent_folder: Folder, entry_type: EntryType, sorting: List
 	
 	// build a list of versions in which summary entries were added and deprecated
 	let versions_unsorted = [];
-	for (const entry of summary[entry_type]) {
+	for (const entry of summary.script[entry_type]) {
 		// add version to the list if it doesn't already exist
 		if (!versions_unsorted.includes(entry.version)) {
 			versions_unsorted.push(entry.version);
@@ -146,7 +159,7 @@ function create_list(parent_folder: Folder, entry_type: EntryType, sorting: List
 	}
 	
 	
-	for (const entry of summary[entry_type]) {
+	for (const entry of summary.script[entry_type]) {
 		// if the version in which the entry got deprecated is unknown, show the entry as deprecated in every version, except for the version in which it was added, where it is shown as new
 		let deprecated = entry.deprecated_version == 'unknown';
 		
@@ -172,7 +185,7 @@ function create_list(parent_folder: Folder, entry_type: EntryType, sorting: List
 			
 			switch (sorting) {
 			case 'by_category':
-				create_folder_structure_by_category(version_folder, entry, summary.category_i18n[document.documentElement.lang][entry.category], state);
+				create_folder_structure_by_category(version_folder, entry, summary.category_i18n[language][entry.category], state);
 				version_folder.folders = sort_folder_map(version_folder.folders);
 				break;
 			case 'by_name':
@@ -242,13 +255,27 @@ function render_folder(folder: Folder, folder_name: string, parent_node: HTMLULi
 
 (async () => {
 	await Promise.all([
-		(async () => i18n = await (await fetch(`content.${document.documentElement.lang}.i18n.json`)).json())(),
-		(async () => summary = await (await fetch('../lcdocs_summary.json')).json())(),
+		(async () => i18n = await (await fetch(`../resources/content.${language}.i18n.json`)).json())(),
+		(async () => summary = await (await fetch('../resources/lcdocs_summary.json')).json())(),
 	]);
 	
 	const folders_ul = document.getElementById('folders') as HTMLUListElement;
 	
 	const root_folder: Folder = {folders: new Map(), items: []};
+	
+	for (const [dir_name, dir] of Object.entries(summary.files)) {
+		const folder: Folder = {folders: new Map(), items: []};
+		
+		for (const [file_name, file_i18n] of Object.entries(dir.files)) {
+			folder.items.push({
+				name: file_i18n[language],
+				state: ItemState.AVAILABLE,
+				path: `${summary.generated_from}/${dir_name}/${file_name.substring(0, file_name.length - 4)}.html`
+			});
+		}
+		
+		root_folder.folders.set(dir.i18n[language], folder);
+	}
 	
 	const script_folder: Folder = {folders: new Map(), items: []};
 	create_list(script_folder, 'constants', 'by_category');
