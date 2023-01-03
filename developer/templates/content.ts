@@ -52,6 +52,7 @@ type FolderMap = Map<string, Folder>;
 interface Folder {
 	folders: FolderMap;
 	items: Item[];
+	path?: string;
 }
 
 let i18n: {[key: string]: string};
@@ -72,7 +73,7 @@ function close_bullet(bullet: HTMLImageElement): void {
 
 function collapse_tree(event: MouseEvent): void {
 	const bullet = event.target as HTMLImageElement;
-	const ul = bullet.nextElementSibling as HTMLUListElement;
+	const ul = (bullet.parentNode as HTMLUListElement).getElementsByTagName('ul')[0];
 	if (bullet.alt == '+') {
 		open_bullet(bullet);
 		ul.style.display = '';
@@ -82,9 +83,13 @@ function collapse_tree(event: MouseEvent): void {
 	}
 }
 
+function entry_abs_path(rel_path: string): string {
+	return `${summary.generated_from}/${rel_path.substring(0, rel_path.length - 4)}.html`;
+}
+
 function create_folder_structure_by_category(current_folder: Folder, entry: Entry, category: string[], state: ItemState): void {
 	if (category.length == 0) {
-		current_folder.items.push({name: entry.name, state: state, path: entry.path});
+		current_folder.items.push({name: entry.name, state: state, path: entry_abs_path(entry.path)});
 		return;
 	}
 	
@@ -189,7 +194,7 @@ function create_list(parent_folder: Folder, entry_type: EntryType, sorting: List
 				version_folder.folders = sort_folder_map(version_folder.folders);
 				break;
 			case 'by_name':
-				version_folder.items.push({name: entry.name, state: state, path: entry.path});
+				version_folder.items.push({name: entry.name, state: state, path: entry_abs_path(entry.path)});
 				break;
 			}
 		}
@@ -214,7 +219,19 @@ function render_folder(folder: Folder, folder_name: string, parent_node: HTMLULi
 	folder_bullet.addEventListener('click', collapse_tree);
 	folder_node.appendChild(folder_bullet);
 	
-	folder_node.appendChild(document.createTextNode(folder_name));
+	let folder_text_parent: HTMLElement;
+	
+	if (folder.path) {
+		const folder_anchor = document.createElement('a');
+		folder_anchor.href = folder.path;
+		folder_node.appendChild(folder_anchor);
+		
+		folder_text_parent = folder_anchor;
+	} else {
+		folder_text_parent = folder_node;
+	}
+	
+	folder_text_parent.appendChild(document.createTextNode(folder_name));
 	
 	for (const [subfolder_name, subfolder] of folder.folders) {
 		render_folder(subfolder, subfolder_name, folder_item_list_node, false);
@@ -223,27 +240,32 @@ function render_folder(folder: Folder, folder_name: string, parent_node: HTMLULi
 	for (const item of folder.items) {
 		const item_li = document.createElement('li');
 		
+		const item_anchor = document.createElement('a');
+		item_anchor.href = item.path;
+		
 		const item_bullet = document.createElement('img');
 		item_bullet.className = 'bullet';
 		item_bullet.src = 'images/bullet_sheet.gif';
 		item_bullet.alt = '-';
-		item_li.appendChild(item_bullet);
+		item_anchor.appendChild(item_bullet);
 		
 		let item_name_parent: HTMLElement;
 		switch (item.state) {
 		case ItemState.AVAILABLE:
-			item_name_parent = item_li;
+			item_name_parent = item_anchor;
 			break;
 		case ItemState.NEW:
 			item_name_parent = document.createElement('b');
-			item_li.appendChild(item_name_parent);
+			item_anchor.appendChild(item_name_parent);
 			break;
 		case ItemState.DEPRECATED:
 			item_name_parent = document.createElement('s');
-			item_li.appendChild(item_name_parent);
+			item_anchor.appendChild(item_name_parent);
 			break;
 		}
 		item_name_parent.appendChild(document.createTextNode(item.name));
+		
+		item_li.appendChild(item_anchor);
 		
 		folder_item_list_node.appendChild(item_li);
 	}
@@ -264,20 +286,20 @@ function render_folder(folder: Folder, folder_name: string, parent_node: HTMLULi
 	const root_folder: Folder = {folders: new Map(), items: []};
 	
 	for (const [dir_name, dir] of Object.entries(summary.files)) {
-		const folder: Folder = {folders: new Map(), items: []};
+		const folder: Folder = {folders: new Map(), items: [], path: `${summary.generated_from}/${dir_name}`};
 		
 		for (const [file_name, file_i18n] of Object.entries(dir.files)) {
 			folder.items.push({
 				name: file_i18n[language],
 				state: ItemState.AVAILABLE,
-				path: `${summary.generated_from}/${dir_name}/${file_name.substring(0, file_name.length - 4)}.html`
+				path: entry_abs_path(`${dir_name}/${file_name}`),
 			});
 		}
 		
 		root_folder.folders.set(dir.i18n[language], folder);
 	}
 	
-	const script_folder: Folder = {folders: new Map(), items: []};
+	const script_folder: Folder = {folders: new Map(), items: [], path: `${summary.generated_from}/script`};
 	create_list(script_folder, 'constants', 'by_category');
 	create_list(script_folder, 'constants', 'by_name');
 	create_list(script_folder, 'functions', 'by_category');
