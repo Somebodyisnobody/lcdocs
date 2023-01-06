@@ -6,8 +6,8 @@
 <doc>
 <title>Entwicklermodus</title>
 <h>Clonk Entwicklermodus</h>
-<!--<img src="../images/cpem.gif" align="left" width="52" height="52" hspace="5" vspace="2" />-->
-<img src="../images/cpem.gif" id="cpem" width="52" height="52" />
+<!--<img src="../../resources/images/cpem.gif" align="left" width="52" height="52" hspace="5" vspace="2" />-->
+<img src="../../resources/images/cpem.gif" id="cpem" width="52" height="52" />
 <text>Der Clonk Entwicklermodus gibt vollen Zugriff auf alle Spieldaten von Clonk: Szenarien, Objektdefinitionen, Spielerdateien und zusätzliche Gruppendateien. Bestehende Daten können modifiziert werden, um so neue Spielelemente zu schaffen.</text>
 <text>Der Entwicklermodus ist über den Editor erreichbar.</text>
 <text>Im Editor können per Drag &amp; Drop alle Einzelkomponenten der Spieldaten bearbeitet werden. In der Engine können Objekte per Mausklick in der Landschaft platziert und Landkarten pixelgenau bearbeitet und abgespeichert werden.</text>

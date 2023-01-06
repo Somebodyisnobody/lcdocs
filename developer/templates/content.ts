@@ -60,13 +60,13 @@ const language = document.documentElement.lang;
 let summary: Summary;
 
 function open_bullet(bullet: HTMLImageElement): void {
-	bullet.src = 'images/bullet_folder_open.gif';
+	bullet.src = '../resources/images/bullet_folder_open.gif';
 	bullet.alt = '-';
 	bullet.title = i18n['collapse'];
 }
 
 function close_bullet(bullet: HTMLImageElement): void {
-	bullet.src = 'images/bullet_folder.gif';
+	bullet.src = '../resources/images/bullet_folder.gif';
 	bullet.alt = '+';
 	bullet.title = i18n['expand'];
 }
@@ -245,7 +245,7 @@ function render_folder(folder: Folder, folder_name: string, parent_node: HTMLULi
 		
 		const item_bullet = document.createElement('img');
 		item_bullet.className = 'bullet';
-		item_bullet.src = 'images/bullet_sheet.gif';
+		item_bullet.src = '../resources/images/bullet_sheet.gif';
 		item_bullet.alt = '-';
 		item_anchor.appendChild(item_bullet);
 		

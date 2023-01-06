@@ -12,7 +12,7 @@ Dazu können jeweils bestimmte Elemente sprachabhängig überladen werden.</text>
 <h>Anpassbare Elemente</h>
 
 <dl>
-<dt id="Titletxt"><img src="../images/icon_text.gif" width="16" height="16" />Title.txt</dt>
+<dt id="Titletxt"><img src="../../resources/images/icon_text.gif" width="16" height="16" />Title.txt</dt>
 <dd><text>
  Die Komponente <emLink href="scenario/index.html#Titletxt">Title.txt</emLink> kann in Szenarien und Objektordnern verwendet
  werden, um den Titel für verschiedene Sprachen zu definieren.
@@ -31,7 +31,7 @@ US:Attack of the Killer Wipfs
 <text>Wichtig: es sollten keine Anführungszeichen oder Sonderzeichen verwendet werden.</text>
 </dd>
 
-<dt id="Namestxt"><img src="../images/icon_text.gif" width="16" height="16" />Names.txt</dt>
+<dt id="Namestxt"><img src="../../resources/images/icon_text.gif" width="16" height="16" />Names.txt</dt>
 <dd><text>
  Mit der Komponente <emLink href="definition/index.html#Namestxt">Names.txt</emLink> kann der Name eines Objekts für verschiedene
  Sprachen definiert werden. Die Funktionsweise der Names.txt gleicht Funktionsweise der der Title.txt.
@@ -42,7 +42,7 @@ US:Attack of the Killer Wipfs
 </text>
 </dd>
 
-<dt id="Desctxt"><img src="../images/icon_text.gif" width="16" height="16" />Desc*.txt / Desc*.rtf</dt>
+<dt id="Desctxt"><img src="../../resources/images/icon_text.gif" width="16" height="16" />Desc*.txt / Desc*.rtf</dt>
 <dd><text>
  Um die Beschreibung einer <emLink href="definition/index.html#Desc__txt">Objektdefinition</emLink> oder eines
  <emLink href="scenario/index.html#Desc__rtf">Szenarios</emLink>
@@ -51,7 +51,7 @@ US:Attack of the Killer Wipfs
 </text>
 </dd>
 
-<dt id="Sciptc"><img src="../images/icon_text.gif" width="16" height="16" />Script.c, Teams.txt</dt>
+<dt id="Sciptc"><img src="../../resources/images/icon_text.gif" width="16" height="16" />Script.c, Teams.txt</dt>
 <dd><text>
  Um sprachabhängig Texte in Scripts einzufügen, kommen sogenannte String Tables
  zum Einsatz. Im Script wird dazu, anstatt des Textes ein Verweis auf einen Eintrag einer

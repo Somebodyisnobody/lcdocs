@@ -10,49 +10,49 @@
 <text>Im Entwicklermodus der Engine können Szenarien bei laufendem oder angehaltenen Spiel
 bearbeitet und anschließend abgespeichert werden.</text>
 <h id="Bearbeitungsmodus">Bearbeitungsmodus:</h>
-<text><img src="../images/icon_em_play.gif" width="16" height="16"/> Spielen: die Maussteuerung gilt
+<text><img src="../../resources/images/icon_em_play.gif" width="16" height="16"/> Spielen: die Maussteuerung gilt
 jeweils nur im ersten Sichtfenster des entsprechenden Spielers. Die Tastatursteuerung aller Spieler
 gilt, wenn ein beliebiges Sichtfenster aktiviert ist.</text>
-<text><img src="../images/icon_em_edit.gif" width="16" height="16"/> Editieren: Objekte können
+<text><img src="../../resources/images/icon_em_edit.gif" width="16" height="16"/> Editieren: Objekte können
 mit der Maus bearbeitet und verschoben werden. Weitere Bearbeitungsoptionen durch das
 Kontextmenü über die rechte Maustaste. Um neue Objekte zu erzeugen, die entsprechende
 Objektdefinition (c4d) per Drag 'n' Drop aus dem Menüsystem in ein Sichtfenster der Engine
 ziehen. Objekte können in anderen Objekten abgelegt werden, indem sie bei gehaltener Ctrl-Taste
 auf das entsprechende Zielobjekt gezogen werden.</text>
-<text><img src="../images/icon_em_brush.gif" width="16" height="16"/> Zeichnen:
+<text><img src="../../resources/images/icon_em_brush.gif" width="16" height="16"/> Zeichnen:
 Werkzeugeinstellungen zum Bearbeiten der Landschaft im Kontextmenü über die rechte
 Maustaste.</text>
 <h id="Landschaftsmodus">Landschaftsmodus:</h>
-<text><img src="../images/icon_em_dynamic.gif" width="16" height="16"/> Dynamisch: Szenarien mit
+<text><img src="../../resources/images/icon_em_dynamic.gif" width="16" height="16"/> Dynamisch: Szenarien mit
 dynamischer Landkarte kommen mit einer sehr geringen Dateigröße aus. Da die Landkarte bei
 jedem Start neu erzeugt wird, sollten im Entwicklermodus der Engine bearbeitete Szenarien jedoch nur
 dann mit dynamischer Landkarte gespeichert speichern werden, wenn die Einstellungen der Landkarte
 keinerlei Zufallswerte enthalten. Dynamische Landschaften können nicht im Zeichenmodus
 bearbeitet werden. Es ist nicht möglich, statische oder exakte Landschaften in den dynamischen
 Modus zurückzuschalten.</text>
-<text><img src="../images/icon_em_static.gif" width="16" height="16"/> Statisch: Mittlere
+<text><img src="../../resources/images/icon_em_static.gif" width="16" height="16"/> Statisch: Mittlere
 Dateigröße. Die Landschaft wird in groben Blöcken aus einer verkleinerten Landkarte
 generiert. Statische Landschaften sollten nur bei angehaltenen Spiel bearbeitet werden, da
 Veränderungen zur Laufzeit (z.B. durch grabende Clonks, Explosionen, bewegte
 Flüssigkeiten) zwar zunächst im Spiel sichtbar sind, in der bearbeiteten Karte allerdings
 nicht berücksichtigt werden, was zu Ungenauigkeiten in der Anzeige führen kann.</text>
-<text><img src="../images/icon_em_exact.gif" width="16" height="16"/> Exakt: extrem hohe
+<text><img src="../../resources/images/icon_em_exact.gif" width="16" height="16"/> Exakt: extrem hohe
 Dateigröße. Ermöglicht dafür pixelgenaue Bearbeitung der Landschaft.</text>
 <h id="Landschaftswerkzeug">Landschaftswerkzeug:</h>
-<text><img src="../images/icon_em_brush.gif" width="16" height="16"/> Pinsel (Stärke
+<text><img src="../../resources/images/icon_em_brush.gif" width="16" height="16"/> Pinsel (Stärke
 einstellbar).</text>
-<text><img src="../images/icon_em_line.gif" width="16" height="16"/> Linie (Stärke
+<text><img src="../../resources/images/icon_em_line.gif" width="16" height="16"/> Linie (Stärke
 einstellbar).</text>
-<text><img src="../images/icon_em_rect.gif" width="16" height="16"/> Ausgefülltes
+<text><img src="../../resources/images/icon_em_rect.gif" width="16" height="16"/> Ausgefülltes
 Rechteck.</text>
-<text><img src="../images/icon_em_eyedrop.gif" width="16" height="16"/> Übernimmt Material,
+<text><img src="../../resources/images/icon_em_eyedrop.gif" width="16" height="16"/> Übernimmt Material,
 Textur und Materialhintergrund aus der Landschaft (Textur nur in statischen Karten).</text>
-<text><img src="../images/icon_em_fill.gif" width="16" height="16"/> Materialfüller
+<text><img src="../../resources/images/icon_em_fill.gif" width="16" height="16"/> Materialfüller
 (Stärke einstellbar, nur in exakten Karten bei laufendem Spiel).</text>
 <h id="Materialhintergrund">Materialhintergrund:</h>
-<text><img src="../images/icon_em_sky.gif" width="16" height="16"/> Hinter dem gezeichneten Material
+<text><img src="../../resources/images/icon_em_sky.gif" width="16" height="16"/> Hinter dem gezeichneten Material
 erscheint nach dem Freigraben Himmel.</text>
-<text><img src="../images/icon_em_tunnel.gif" width="16" height="16"/> Hinter dem gezeichneten
+<text><img src="../../resources/images/icon_em_tunnel.gif" width="16" height="16"/> Hinter dem gezeichneten
 Material erscheint nach dem Freigraben Tunnelwand.</text>
 <h id="Tastaturbelegung">Tastaturbelegung:</h>
 <text>Im aktivierten Sichtfenster:</text>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.0" xpath-default-namespace="https://clonkspot.org" exclude-result-prefixes="xs">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.0" xmlns:clonk="https://clonkspot.org" xpath-default-namespace="https://clonkspot.org" exclude-result-prefixes="xs">
 
 	<xsl:output method="html" encoding="ISO-8859-1" doctype-public="-//W3C//DTD HTML 4.01//EN"
 				doctype-system="http://www.w3.org/TR/html4/strict.dtd"/>
@@ -14,15 +14,20 @@
 		<xsl:for-each select="collection(concat($input-folder, '?select=*.xml;recurse=yes'))">
 			<xsl:variable name="procinst" select="processing-instruction('xml-stylesheet')"/>
 			<xsl:variable name="relpath" select="substring-after(substring-before($procinst, 'clonk.xsl'),'href=&quot;')"/>
+			<xsl:variable name="target-filepath" select="concat($output-folder, '/' , substring-before(substring-after(base-uri(.), $input-folder), '.xml'), $fileext)"/>
+			<xsl:variable name="relpath-to-language-root">
+				<xsl:for-each select="1 to (count(tokenize($target-filepath, '/')) - 3)">../</xsl:for-each>
+			</xsl:variable>
 			<!-- Logging current handled file for debugging warnings-->
 			<!-- 2023-01-01 Funni: Need to use base-uri as document-uri for compatibility with Saxon HE 11.4 https://saxonica.plan.io/issues/5339 -->
-			<xsl:message><xsl:text>Transforming </xsl:text><xsl:value-of select="concat($output-folder, '/' , substring-before(substring-after(base-uri(.), $input-folder), '.xml'), $fileext)"></xsl:value-of> </xsl:message>
+			<xsl:message><xsl:text>Transforming </xsl:text><xsl:value-of select="$target-filepath"></xsl:value-of> </xsl:message>
 
 			<!--<xsl:result-document href="out/sdk/{tokenize(document-uri(.), '/')[last()]}"> packing everything in one folder-->
 			<!--	online/de/sdk [output-folder] + (/...../sdk/index.xml [document-uri] - everything before sdk/ [input-folder] - ".xml") + .html	-->
 			<xsl:result-document href="{concat($output-folder, '/' , substring-before(substring-after(base-uri(.), $input-folder), '.xml'), $fileext)}">
 				<xsl:apply-templates select=".">
 					<xsl:with-param name="relpath" select="$relpath" tunnel="yes"/>
+					<xsl:with-param name="relpath-to-language-root" select="$relpath-to-language-root" tunnel="yes"/>
 					<xsl:with-param name="navbar" select="doc(concat('developer/templates/navbar-snippet-', /clonkDoc/@xml:lang ,'.html'))" tunnel="yes"/>
 				</xsl:apply-templates>
 			</xsl:result-document>
@@ -31,10 +36,11 @@
 
 	<xsl:template name="head">
 		<xsl:param name="relpath" tunnel="yes"/>
+		<xsl:param name="relpath-to-language-root" tunnel="yes"/>
 		<head>
 			<link rel="stylesheet" type="text/css">
 				<xsl:attribute name="href">
-					<xsl:value-of select="$relpath"/><xsl:text>doku.css</xsl:text>
+					<xsl:value-of select="$relpath-to-language-root"/><xsl:text>../resources/css/doku.css</xsl:text>
 				</xsl:attribute>
 			</link>
 			<title>
@@ -46,7 +52,7 @@
 			<xsl:if test="descendant::*[@activateBitmask='true']">
 				<script type="text/javascript">
 					<xsl:attribute name="src">
-						<xsl:value-of select="$relpath"/><xsl:text>bitmask.js</xsl:text>
+						<xsl:value-of select="$relpath-to-language-root"/><xsl:text>../resources/js/bitmask.js</xsl:text>
 					</xsl:attribute>
 				</script>
 				<xsl:text>&#xa;</xsl:text>
@@ -126,10 +132,10 @@
 	</xsl:template>
 
 	<xsl:template mode="fix-links" match="ul/li/a/@href" xpath-default-namespace="">
-		<xsl:param name="relpath" tunnel="yes"/>
+		<xsl:param name="relpath-to-language-root" tunnel="yes"/>
 		<xsl:choose>
 			<xsl:when test="not(starts-with(., 'javascript:'))">
-				<xsl:attribute name="{name()}" select="concat($relpath, .)"/>
+				<xsl:attribute name="{name()}" select="concat($relpath-to-language-root, .)"/>
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:attribute name="{name()}" select="."/>
@@ -145,7 +151,7 @@
 	</xsl:template>
 
 	<xsl:template match="func">
-		<xsl:param name="relpath" tunnel="yes"/>
+		<xsl:param name="relpath-to-language-root" tunnel="yes"/>
 		<h1>
 			<xsl:value-of select="title"/>
 			<xsl:apply-templates select="deprecated"/>
@@ -169,12 +175,12 @@
 						<xsl:when test='lang("en")'>
 							<b>Asynchronous function</b><br/>
 							This function may trigger asynchronous behavior or return asynchronous results and must therefore be used with caution. See <a><xsl:attribute
-								name="href" select="concat($relpath, 'sdk/', $path-to-async-page)"/>"Asynchronous functions" description page</a> for more information.
+								name="href" select="concat($relpath-to-language-root, 'sdk/', $path-to-async-page)"/>"Asynchronous functions" description page</a> for more information.
 						</xsl:when>
 						<xsl:otherwise>
 							<b>Asynchrone Funktion</b><br/>
 							Diese Funktion kann asynchrones Verhalten auslösen oder asynchrone Ergebnisse liefern und muss daher mit Bedacht verwendet werden. Siehe <a><xsl:attribute
-								name="href" select="concat($relpath, 'sdk/', $path-to-async-page)"/>Beschreibungsseite "Asynchrone Funktionen"</a> für weitere Informationen.
+								name="href" select="concat($relpath-to-language-root, 'sdk/', $path-to-async-page)"/>Beschreibungsseite "Asynchrone Funktionen"</a> für weitere Informationen.
 						</xsl:otherwise>
 					</xsl:choose>
 				</div>
@@ -631,12 +637,12 @@
 	</xsl:template>
 
 	<xsl:template match="funcLink">
-		<xsl:param name="relpath" tunnel="yes"/>
+		<xsl:param name="relpath-to-language-root" tunnel="yes"/>
 		<xsl:choose>
 			<xsl:when test="doc-available(concat('sdk/script/fn/', normalize-space(.), '.xml'))">
 				<a>
 					<xsl:attribute name="href">
-						<xsl:value-of select="$relpath"/><xsl:text>sdk/script/fn/</xsl:text><xsl:value-of select="normalize-space(.)"/><xsl:value-of
+						<xsl:value-of select="$relpath-to-language-root"/><xsl:text>sdk/script/fn/</xsl:text><xsl:value-of select="normalize-space(.)"/><xsl:value-of
 							select="$fileext"/>
 					</xsl:attribute>
 					<xsl:value-of select="normalize-space(.)"/>
@@ -650,14 +656,14 @@
 	</xsl:template>
 
 	<xsl:template match="emLink" name="link">
-		<xsl:param name="relpath" tunnel="yes"/>
+		<xsl:param name="relpath-to-language-root" tunnel="yes"/>
 		<!-- so this template can be called for the navigation -->
 		<xsl:param name="href" select="normalize-space(@href)"/>
 		<xsl:param name="text" select="normalize-space(.)"/>
 		<xsl:param name="icon" select="@icon" required="no"/>
 		<a>
 			<xsl:attribute name="href">
-				<xsl:value-of select="$relpath"/><xsl:text>sdk/</xsl:text>
+				<xsl:value-of select="$relpath-to-language-root"/><xsl:text>sdk/</xsl:text>
 				<xsl:choose>
 					<!-- replace the .html extension with .xml (or whatever) depending on $fileext param (.chm, .html etc.) -->
 					<xsl:when test="substring-before($href,'.html')">
@@ -683,13 +689,13 @@
 	</xsl:template>
 
 	<xsl:template match="constLink">
-		<xsl:param name="relpath" tunnel="yes"/>
+		<xsl:param name="relpath-to-language-root" tunnel="yes"/>
 		<xsl:param name="constGroup" select="@constGroup"/>
 		<xsl:choose>
 			<xsl:when test="doc-available(concat('sdk/script/constants/', $constGroup, '.xml'))">
 				<a>
 					<xsl:attribute name="href">
-						<xsl:value-of select="$relpath"/><xsl:text>sdk/script/constants/</xsl:text><xsl:value-of select="$constGroup"/><xsl:value-of
+						<xsl:value-of select="$relpath-to-language-root"/><xsl:text>sdk/script/constants/</xsl:text><xsl:value-of select="$constGroup"/><xsl:value-of
 							select="$fileext"/>
 						<xsl:if test=". != ''"><xsl:text>#</xsl:text><xsl:value-of select="normalize-space(.)"/></xsl:if>
 					</xsl:attribute>
@@ -714,12 +720,12 @@
 	</xsl:template>
 
 	<xsl:template match="callbackLink">
-		<xsl:param name="relpath" tunnel="yes"/>
+		<xsl:param name="relpath-to-language-root" tunnel="yes"/>
 		<xsl:choose>
 			<xsl:when test="doc-available(concat('sdk/script/fn/callbacks/', normalize-space(.), '.xml'))">
 				<a>
 					<xsl:attribute name="href">
-						<xsl:value-of select="$relpath"/><xsl:text>sdk/script/fn/callbacks/</xsl:text><xsl:value-of select="normalize-space(.)"/><xsl:value-of
+						<xsl:value-of select="$relpath-to-language-root"/><xsl:text>sdk/script/fn/callbacks/</xsl:text><xsl:value-of select="normalize-space(.)"/><xsl:value-of
 							select="$fileext"/>
 					</xsl:attribute>
 					<xsl:value-of select="normalize-space(.)"/>

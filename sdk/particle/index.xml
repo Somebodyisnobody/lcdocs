@@ -14,12 +14,12 @@
 	
 	<h id="PartikelKomponentenC4D">Partikel-Komponenten (C4D)</h>
 	<dl>
-		<dt><img src="../../images/icon_text.gif" width="16" height="16"/>Particle.txt</dt>
+		<dt><img src="../../../resources/images/icon_text.gif" width="16" height="16"/>Particle.txt</dt>
 		<dd>
 			<text>Partikeleigenschaften.</text>
 		</dd>
 
-		<dt id="Graphicspng"><img src="../../images/icon_image.gif" width="16" height="16"/>Graphics.png</dt>
+		<dt id="Graphicspng"><img src="../../../resources/images/icon_image.gif" width="16" height="16"/>Graphics.png</dt>
 		<dd>
 			<text>Partikelgrafik.</text>
 			<text>Zusätzlich dazu sind natürlich auch alle von <emLink href="definition/index.html">Objektdefinitionen</emLink> bekannten Elemente für das Frontend verfügbar (also z.B. Title.bmp, DescDE/US.txt, etc.)</text>

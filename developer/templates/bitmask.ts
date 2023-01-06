@@ -154,7 +154,7 @@ class Bitmask {
 
 document.addEventListener("DOMContentLoaded", function (event) {
     let loadedBitmasks = 0;
-    for (const div of document.getElementsByClassName('bitmaskTable')) {
+    for (const div of <HTMLCollectionOf<HTMLDivElement>>document.getElementsByClassName('bitmaskTable')) {
         try {
             new Bitmask(div);
             loadedBitmasks++;
