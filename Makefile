@@ -55,8 +55,6 @@ all: $(online-dirs) $(sdk-dirs-en) $(online-extra-files) $(online-sdk-files)
 
 online-de: $(addprefix online/de/, $(sdk-dirs) images $(htmlfiles) $(extra-files))
 
-chm: $(chm-dirs) Entwickler.chm Developer.chm
-
 install: all
 	$(MKDIR_P) $(prefix)
 	$(CP_R) $(PWD)/online/* $(prefix)
@@ -68,16 +66,8 @@ check:
 	xmllint --noblanks --noout --valid $(xmlfiles)
 
 clean:
-	rm -f *.mo Entwickler.chm Developer.chm doku.pot
-	rm -rf online sdk-en chm
-
-chm/de/Output.hhp chm/de/Output.hhk chm/en/Output.hhc chm/en/Output.hhp chm/en/Output.hhk: chm/de/Output.hhc
-#update timestamp
-	touch $@
-chm/de/Output.hhc: $(xmlfiles) chm/de/. chm/en/. developer/build_chm_files.py developer/experimental.py \
-  Template.hhc Template.en.hhc Template.hhk Template.en.hhk Template.hhp Template.en.hhp en.mo
-	@echo generate chm files
-	@$(PYTHON) developer/build_chm_files.py $(xmlfiles)
+	rm -f *.mo doku.pot
+	rm -rf online sdk-en
 
 lcdocs_summary.json: $(xmlfiles) developer/generate_summary.py
 	@echo generate lcdocs summary report $@
@@ -105,6 +95,8 @@ online/en/content.html: online/resources/lcdocs_summary.json online/resources/co
 $(sdk-dirs-en) $(online-dirs) $(chm-dirs):
 	mkdir -p $@
 
+
+# Translation stuff
 doku.pot: $(xmlfiles) extra-strings.xml xml2po.py clonk.py
 	@echo extract strings to $@
 	@$(PYTHON) xml2po.py -e -m clonk -o $@ $(xmlfiles) extra-strings.xml
@@ -129,38 +121,20 @@ define run-xslt
 @saxonb-xslt -it:main -xsl:$(stylesheet) $(XSLTFLAGS) -ext:on is-web-documentation=$(is-web-documentation) fileext='.html' output-folder=$(output) input-folder=$(input)/
 @touch $@
 endef
-chm/de/% online/de/%: input=sdk
-chm/en/% online/en/%: input=sdk-en
+online/de/%: input=sdk
+online/en/%: input=sdk-en
 online/de/%.html: online/de/.tmp ;
 online/en/%.html: online/en/.tmp ;
 online/de/.tmp: $(xmlfiles) $(stylesheet)
 	$(run-xslt)
 online/en/.tmp: $(xmlfiles-en) $(stylesheet)
 	$(run-xslt)
-chm/de/%.html: chm/de/.tmp ;
-chm/en/%.html: chm/en/.tmp ;
-chm/de/.tmp: $(xmlfiles) $(stylesheet)
-	$(run-xslt)
-chm/en/.tmp: $(xmlfiles-en) $(stylesheet)
-	$(run-xslt)
 online/%: is-web-documentation=1
 online/de/%: output=online/de/sdk
 online/en/%: output=online/en/sdk
-chm/%: is-web-documentation=0
-chm/de/%: output=chm/de/sdk
-chm/en/%: output=chm/en/sdk
 
 $(filter online/en/%, $(online-extra-files)): online/en/%: %
 	$(CP) $< $@
 $(filter online/de/%, $(online-extra-files)): online/de/%: %
 	$(CP) $< $@
-$(addprefix chm/en/, $(extra-files-chm)): chm/en/%: %
-	$(CP) $< $@
-$(addprefix chm/de/, $(extra-files-chm)): chm/de/%: %
-	$(CP) $< $@
-
-Entwickler.chm: chm/de/Output.hhp chm/de/Output.hhk chm/de/Output.hhc $(addprefix chm/de/, $(sdk-dirs) images $(htmlfiles) $(extra-files-chm))
-	$(HHC) $<
-Developer.chm: chm/en/Output.hhp chm/en/Output.hhk chm/en/Output.hhc $(addprefix chm/en/, $(sdk-dirs) images $(htmlfiles) $(extra-files-chm))
-	$(HHC) $<
 
