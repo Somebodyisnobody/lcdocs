@@ -19,7 +19,8 @@ stylesheet = clonk.xsl
 sdk-dirs := $(shell find sdk -name '.*' -prune -o -type d -print)
 
 # misc
-template-files := ./developer/build_contents.py $(addprefix ./developer/templates/, content.html search.html navbar-snippet-de.html navbar-snippet-en.html loading-spinner.html) $(addprefix online/resources/, css/doku.css css/search.css js/content.js js/search.js)
+navbar-template-files := $(addprefix ./developer/templates/, navbar-snippet-de.html navbar-snippet-en.html)
+template-files := ./developer/build_contents.py $(navbar-template-files) $(addprefix ./developer/templates/, content.html search.html loading-spinner.html) $(addprefix online/resources/, css/doku.css css/search.css js/content.js js/search.js)
 content-language-files := ./developer/templates/content.de.i18n.json ./developer/templates/content.en.i18n.json
 
 # find all *.xml files recursively in sdk/
@@ -126,9 +127,9 @@ online/de/%: input=sdk
 online/en/%: input=sdk-en
 online/de/%.html: online/de/.tmp ;
 online/en/%.html: online/en/.tmp ;
-online/de/.tmp: $(xmlfiles) $(stylesheet)
+online/de/.tmp: $(xmlfiles) $(stylesheet) $(navbar-template-files)
 	$(run-xslt)
-online/en/.tmp: $(xmlfiles-en) $(stylesheet)
+online/en/.tmp: $(xmlfiles-en) $(stylesheet) $(navbar-template-files)
 	$(run-xslt)
 online/%: is-web-documentation=1
 online/de/%: output=online/de/sdk

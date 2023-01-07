@@ -143,6 +143,11 @@
 		</xsl:choose>
 	</xsl:template>
 
+	<xsl:template mode="fix-links" match="ul/li/a/img/@src" xpath-default-namespace="">
+		<xsl:param name="relpath-to-language-root" tunnel="yes"/>
+		<xsl:attribute name="{name()}" select="concat($relpath-to-language-root, .)"/>
+	</xsl:template>
+
 
 	<xsl:template match="doc">
 		<xsl:apply-templates select="title"/>
