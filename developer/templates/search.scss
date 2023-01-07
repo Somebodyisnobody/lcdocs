@@ -1,0 +1,64 @@
+@import "navbar.scss";
+
+body {
+  font-family: "Dejavu Sans", "BitStream Vera Sans", Verdana, sans-serif;
+  color: black;
+  margin: 0;
+
+  fieldset {
+    display: flex;
+    margin: 1em;
+    padding: 0.5em;
+    align-items: center;
+    /*TODO 80% nicht gleich 80% (table)*/
+    width: 80%;
+    border: solid 2px #f0f0f0;
+
+    #search-field {
+        min-width: 10%;
+        width: 30em;
+        max-width: 25%;
+    }
+
+    .checkbox-group {
+      margin-left: 1em;
+    }
+  }
+
+  table {
+    margin: 1em;
+    width: 80%;
+    border: solid 2px #f0f0f0;
+    border-collapse: collapse;
+
+    /*FIXME filtered list css also counts hidden rows */
+    tr:nth-child(even):not([style*="display: none"]) {
+      background-color: #f4f4f0;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 0.3em;
+
+      a {
+        color: navy;
+        text-decoration: none;
+      }
+    }
+  }
+
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 35px;
+  margin-top: 18px;
+}
+
+h1, h2 {
+  font-weight: bold;
+  padding: 0 2% 0 18px;
+  margin-bottom: 18px;
+  text-indent: 0;
+  border-bottom: 1px solid #667abe;
+}

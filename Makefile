@@ -18,9 +18,8 @@ stylesheet = clonk.xsl
 # find all directories neither beginning nor contained within a directory beginning with a dot
 sdk-dirs := $(shell find sdk -name '.*' -prune -o -type d -print)
 
-#todo create search.html
 # misc
-content-template-files := ./developer/build_contents.py ./developer/templates/content.html ./developer/templates/navbar-snippet-de.html ./developer/templates/navbar-snippet-en.html ./developer/templates/loading-spinner.html
+template-files := ./developer/build_contents.py $(addprefix ./developer/templates/, content.html search.html navbar-snippet-de.html navbar-snippet-en.html loading-spinner.html) $(addprefix online/resources/, css/doku.css css/search.css js/content.js js/search.js)
 content-language-files := ./developer/templates/content.de.i18n.json ./developer/templates/content.en.i18n.json
 
 # find all *.xml files recursively in sdk/
@@ -37,7 +36,7 @@ xmlfiles-en := $(subst sdk, sdk-en, $(xmlfiles))
 htmlfiles-en := $(subst sdk, sdk-en, $(htmlfiles))
 
 # For clonk.de
-online-sdk-files := $(foreach lang, en de, $(addprefix online/$(lang)/, $(htmlfiles) content.html))
+online-sdk-files := $(foreach lang, en de, $(addprefix online/$(lang)/, $(htmlfiles) content.html search.html))
 online-dirs := $(foreach lang, en de, $(addprefix online/$(lang)/, $(sdk-dirs))) $(addprefix online/resources/, images js css)
 online-images-files := $(addprefix online/resources/, $(sort $(wildcard images/*.*)))
 online-resources-files := $(addprefix online/resources/, js/bitmask.js css/doku.css) $(online-images-files)
@@ -81,13 +80,13 @@ online/resources/%.json: lcdocs_summary.json $(content-language-files) $(online-
 		cp $$i online/resources/; \
 	done
 
-online/de/content.html: online/resources/lcdocs_summary.json online/resources/content.de.i18n.json online/resources/js/content.js $(content-template-files) $(online-dirs)
+online/de/content.html online/de/search.html: online/resources/lcdocs_summary.json online/resources/content.de.i18n.json $(template-files) $(online-dirs)
 	@echo generate $@
-	@./developer/build_contents.py de
+	@./developer/build_contents.py $(@F) de
 
-online/en/content.html: online/resources/lcdocs_summary.json online/resources/content.en.i18n.json online/resources/js/content.js $(content-template-files) $(online-dirs)
+online/en/content.html online/en/search.html: online/resources/lcdocs_summary.json online/resources/content.en.i18n.json $(template-files) $(online-dirs)
 	@echo generate $@
-	@./developer/build_contents.py en
+	@./developer/build_contents.py $(@F) en
 
 online/resources/css/%.css: developer/templates/%.scss online/resources/css
 	@echo generate $@

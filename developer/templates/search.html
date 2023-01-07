@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="${lang}">
+	<head>
+		<meta charset="utf-8">
+		<title>LegacyClonk Docs</title>
+		<link rel="stylesheet" href="../resources/css/search.css">
+	</head>
+	<body>
+		<header><%include file="navbar-snippet-${lang}.html" /></header>
+		
+		<h1>${i18n['search_for']}</h1>
+		<fieldset id="search-bar" class="text">
+			<input id="search-field" type="text" placeholder="${i18n['search_term']}" />
+			<div class="checkbox-group">
+				<input id="display-functions" class="type-checkbox" type="checkbox" value="function" checked />
+				<label for="display-functions">${i18n['functions']}</label>
+			</div>
+			<div class="checkbox-group">
+				<input id="display-constants" class="type-checkbox" type="checkbox" value="constant" checked />
+				<label for="display-constants">${i18n['constants']}</label>
+			</div>
+		</fieldset>
+
+		<div class="text">
+		</div>
+		<table id="search-results" style="display: none;">
+			<tr class="header">
+				<th style="width:40%;">${i18n['name']}</th>
+				<th style="width:20%;">${i18n['type']}</th>
+				<th style="width:20%;">${i18n['category']}</th>
+				<th style="width:20%;">${i18n['introduced_version']}</th>
+			</tr>
+		</table>
+		<%include file="loading-spinner.html" />
+		
+		<script src="../resources/js/search.js"></script>
+	</body>
+</html>

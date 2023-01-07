@@ -1,0 +1,32 @@
+ul.nav {
+    border-bottom: 1px solid #667abe;
+    border-top: 1px solid #667abe;
+    padding: 5px 18px 5px 18px;
+    margin: 6px 0 -1px 0;
+    text-align: center;
+    font-size: 11px;
+    line-height: 18px;
+}
+
+ul.nav li {
+    margin: 0 9px 0 9px;
+    display: inline;
+}
+
+ul.nav li.fineprint {
+    float: left;
+    color: #999999;
+    margin: 0;
+}
+
+ul.nav li.switchlang {
+    float: right;
+    color: #999999;
+    margin: 0;
+    border: 0;
+}
+
+ul.nav a, ul.nav a.visited {
+    color: navy;
+    text-decoration: none;
+}
