@@ -65,16 +65,23 @@ function perform_search(searchField: HTMLInputElement, typeCheckboxes: HTMLColle
 			enabled_types.push(checkbox.value)
 		}
 	}
-	
+
+	let currentVisibleRow = 0
 	for (let i = 0; i < entries.length; i++) {
 		const row = entries[i];
 		const nameTd = row.getElementsByTagName('td')[0];
 		if (nameTd) {
 			const value = nameTd.textContent || nameTd.innerText;
 			if (value.toUpperCase().indexOf(search) > -1 && enabled_types.indexOf(row.dataset['type']) > -1) {
-				row.style.display = '';
+				if (++currentVisibleRow%2 === 0) {
+					// Mark even rows
+					row.classList.add('mark-even-row');
+				} else {
+					row.classList.remove('mark-even-row');
+				}
+				row.hidden = false;
 			} else {
-				row.style.display = 'none';
+				row.hidden = true;
 			}
 		}
 	}
