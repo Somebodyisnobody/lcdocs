@@ -1,38 +1,3 @@
-interface Entry {
-	path: string;
-	name: string;
-	category: string;
-	version: string;
-	deprecated_version: string | null;
-}
-
-type EntryType = 'constants' | 'functions';
-
-type category_i18n_map = {[path: string]: string[]};
-type files_i18n = {
-	de: string;
-	en: string;
-};
-
-interface Summary {
-	created: string;
-	generated_from: string;
-	files: {
-		[directory: string]: {
-			i18n: files_i18n;
-			files: {[name: string]: files_i18n};
-		};
-	};
-	category_i18n: {
-		de: category_i18n_map;
-		en: category_i18n_map;
-	};
-	script: {
-		constants: Entry[];
-		functions: Entry[];
-	};
-}
-
 type ListSorting = 'by_category' | 'by_name';
 
 enum ItemState {
@@ -54,10 +19,6 @@ interface Folder {
 	items: Item[];
 	path?: string;
 }
-
-let i18n: {[key: string]: string};
-const language = document.documentElement.lang;
-let summary: Summary;
 
 function open_bullet(bullet: HTMLImageElement): void {
 	bullet.src = '../resources/images/bullet_folder_open.gif';
@@ -81,10 +42,6 @@ function collapse_tree(event: MouseEvent): void {
 		close_bullet(bullet);
 		ul.style.display = 'none';
 	}
-}
-
-function entry_abs_path(rel_path: string): string {
-	return `${summary.generated_from}/${rel_path.substring(0, rel_path.length - 4)}.html`;
 }
 
 function create_folder_structure_by_category(current_folder: Folder, entry: Entry, category: string[], state: ItemState): void {
@@ -277,8 +234,8 @@ function render_folder(folder: Folder, folder_name: string, parent_node: HTMLULi
 
 (async () => {
 	await Promise.all([
-		(async () => i18n = await (await fetch(`../resources/content.${language}.i18n.json`)).json())(),
-		(async () => summary = await (await fetch('../resources/lcdocs_summary.json')).json())(),
+		fetch_i18n(),
+		fetch_summary(),
 	]);
 	
 	const folders_ul = document.getElementById('folders') as HTMLUListElement;
@@ -309,15 +266,6 @@ function render_folder(folder: Folder, folder_name: string, parent_node: HTMLULi
 	for (const [folder_name, folder] of root_folder.folders) {
 		render_folder(folder, folder_name, folders_ul);
 	}
-	document.getElementById('loading-spinner').style.display = "none";
+	
+	document.getElementById('loading-spinner').style.display = 'none';
 })();
-
-function switchLanguage() {
-	let target_lang: string;
-	if (language == 'de') {
-		target_lang = 'en';
-	} else {
-		target_lang = 'de';
-	}
-	window.location.href = `/${target_lang}/content.html`;
-}

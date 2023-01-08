@@ -10,6 +10,7 @@ MKDIR_P = mkdir -p
 CP = cp
 CP_R = cp -r
 PYTHON = $(or $(shell which python2 2> /dev/null), python)
+TSC = ./developer/node_modules/typescript/bin/tsc $(shell ./developer/tsconfig2arg.py)
 
 stylesheet = clonk.xsl
 
@@ -21,7 +22,7 @@ sdk-dirs := $(shell find sdk -name '.*' -prune -o -type d -print)
 # misc
 navbar-template-files := $(addprefix ./developer/templates/, navbar-snippet-de.html navbar-snippet-en.html)
 template-files := ./developer/build_contents.py $(navbar-template-files) $(addprefix ./developer/templates/, content.html search.html loading-spinner.html) $(addprefix online/resources/, css/doku.css css/search.css js/content.js js/search.js)
-content-language-files := ./developer/templates/content.de.i18n.json ./developer/templates/content.en.i18n.json
+content-language-files := ./developer/templates/de.i18n.json ./developer/templates/en.i18n.json
 
 # find all *.xml files recursively in sdk/
 xmlfiles := $(sort $(shell find sdk -name '.*' -prune -o -name \*.xml -print))
@@ -71,9 +72,13 @@ lcdocs_summary.json: $(xmlfiles) developer/generate_summary.py
 	@echo generate lcdocs summary report $@
 	@./developer/generate_summary.py ./sdk/
 
-online/resources/js/%.js: developer/templates/%.ts online/resources/js
+online/resources/js/bitmask.js: developer/templates/bitmask.ts online/resources/js
 	@echo compiling $@ from $<
-	@./developer/node_modules/typescript/bin/tsc $(shell ./developer/tsconfig2arg.py) $<
+	@$(TSC) --outFile $@ $<
+
+online/resources/js/%.js: developer/templates/%.ts developer/templates/common.ts online/resources/js
+	@echo compiling $@ from $<
+	@$(TSC) --outFile $@ developer/templates/common.ts $<
 
 online/resources/%.json: lcdocs_summary.json $(content-language-files) $(online-dirs)
 	@# $(content-language-files) $< merges the first dependency with the list of $(content-language-files) in a for loop
@@ -82,11 +87,11 @@ online/resources/%.json: lcdocs_summary.json $(content-language-files) $(online-
 		cp $$i online/resources/; \
 	done
 
-online/de/content.html online/de/search.html: online/resources/lcdocs_summary.json online/resources/content.de.i18n.json $(template-files) $(online-dirs)
+online/de/content.html online/de/search.html: online/resources/lcdocs_summary.json online/resources/de.i18n.json $(template-files) $(online-dirs)
 	@echo generate $@
 	@./developer/build_contents.py $(@F) de
 
-online/en/content.html online/en/search.html: online/resources/lcdocs_summary.json online/resources/content.en.i18n.json $(template-files) $(online-dirs)
+online/en/content.html online/en/search.html: online/resources/lcdocs_summary.json online/resources/en.i18n.json $(template-files) $(online-dirs)
 	@echo generate $@
 	@./developer/build_contents.py $(@F) en
 

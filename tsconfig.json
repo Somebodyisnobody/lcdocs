@@ -1,9 +1,6 @@
 {
-	"files": [
-      "developer/templates/content.ts", "developer/templates/bitmask.ts", "developer/templates/search.ts"],
 	"compilerOptions": {
 		"target": "ES2017",
-		"outDir": "online/resources/js",
 		"removeComments": true,
 		"downlevelIteration": true
 	}

@@ -31,7 +31,7 @@ selfd = pathlib.Path(__file__).parent.resolve()
 
 
 # Load a file with strings that have to be translated in the output html file
-with open(pathlib.PurePath.joinpath(selfd, f'templates/content.{lang}.i18n.json'), 'r') as f:
+with open(pathlib.PurePath.joinpath(selfd, f'templates/{lang}.i18n.json'), 'r') as f:
 	i18n = json.load(f)
 
 lookup = TemplateLookup(directories=[pathlib.PurePath.joinpath(selfd, 'templates')])
