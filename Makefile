@@ -29,7 +29,7 @@ xmlfiles := $(sort $(shell find sdk -name '.*' -prune -o -name \*.xml -print))
 # Targets:
 
 # strip from all files the .xml, and add a .html
-htmlfiles := $(addsuffix .html, $(basename $(xmlfiles)))
+htmlfiles := $(addsuffix .html, $(basename $(xmlfiles))) content.html search.html
 
 # The translated files and directories
 sdk-dirs-en := $(subst sdk, sdk-en, $(sdk-dirs))
@@ -37,7 +37,7 @@ xmlfiles-en := $(subst sdk, sdk-en, $(xmlfiles))
 htmlfiles-en := $(subst sdk, sdk-en, $(htmlfiles))
 
 # For clonk.de
-online-sdk-files := $(foreach lang, en de, $(addprefix online/$(lang)/, $(htmlfiles) content.html search.html))
+online-sdk-files := $(foreach lang, en de, $(addprefix online/$(lang)/, $(htmlfiles)))
 online-dirs := $(foreach lang, en de, $(addprefix online/$(lang)/, $(sdk-dirs))) $(addprefix online/resources/, images js css)
 online-images-files := $(addprefix online/resources/, $(sort $(wildcard images/*.*)))
 online-resources-files := $(addprefix online/resources/, js/bitmask.js css/doku.css) $(online-images-files)
@@ -46,7 +46,7 @@ online-resources-files := $(addprefix online/resources/, js/bitmask.js css/doku.
 
 all: $(online-dirs) $(sdk-dirs-en) $(online-resources-files) $(online-sdk-files)
 
-online-de: $(addprefix online/de/, $(sdk-dirs) images $(htmlfiles) $(extra-files))
+online-de: $(addprefix online/de/, $(sdk-dirs) $(htmlfiles)) $(online-resources-files)
 
 install: all
 	$(MKDIR_P) $(prefix)
