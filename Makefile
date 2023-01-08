@@ -61,6 +61,7 @@ check:
 clean:
 	rm -f *.mo doku.pot
 	rm -rf online sdk-en
+	rm -f lcdocs_summary.json
 
 # Create needed directories
 $(sdk-dirs-en) $(online-dirs):
