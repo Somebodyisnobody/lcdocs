@@ -39,13 +39,10 @@ jobs:
 
       - name: Setup saxonb-xslt, python, gettext, Mako (Python templating engine), typescript compiler, sass (scss compiler)
         run: |
-          sudo DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends libsaxonb-java python-libxml2 gettext node-typescript -y
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends libsaxonb-java python-libxml2 gettext -y
           pip3 install -r developer/requirements.txt
-          cp ./developer/package.json .
-          cp ./developer/package-lock.json .
-          # npm ci --global does work from v8.19.3 and replaces the two following lines
-          npm install -g sass
-          npm install -g typescript
+          cd ./developer
+          npm ci
 
       - name: Build docs
         run: |

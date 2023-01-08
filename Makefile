@@ -72,7 +72,7 @@ lcdocs_summary.json: $(xmlfiles) developer/generate_summary.py
 
 online/resources/js/%.js: developer/templates/%.ts online/resources/js
 	@echo compiling $@ from $<
-	@tsc $(shell ./developer/tsconfig2arg.py) $<
+	@./developer/node_modules/typescript/bin/tsc $(shell ./developer/tsconfig2arg.py) $<
 
 online/resources/%.json: lcdocs_summary.json $(content-language-files) $(online-dirs)
 	@# $(content-language-files) $< merges the first dependency with the list of $(content-language-files) in a for loop
@@ -91,7 +91,7 @@ online/en/content.html online/en/search.html: online/resources/lcdocs_summary.js
 
 online/resources/css/%.css: developer/templates/%.scss online/resources/css
 	@echo generate $@
-	@sass $< $@
+	@./developer/node_modules/sass/sass.js $< $@
 
 # Do some magic that i don't understand but it works :)
 $(filter online/resources/%, $(online-images-files)): online/resources/%: % online/resources/images
