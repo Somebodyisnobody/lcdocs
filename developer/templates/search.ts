@@ -1,4 +1,4 @@
-function create_list(entryTable: HTMLTableElement) {
+function create_table(entryTable: HTMLTableElement) {
 	for (const type of Object.keys(summary.script)) {
 		for (const item of summary.script[type]) {
 			const entry_tr = document.createElement('tr');
@@ -97,7 +97,7 @@ function perform_search(searchField: HTMLInputElement, typeCheckboxes: HTMLColle
 	const search_field = document.getElementById('search-field') as HTMLInputElement;
 	const type_checkboxes = document.getElementsByClassName('type-checkbox') as HTMLCollectionOf<HTMLInputElement>;
 	const entry_table = document.getElementById('search-results') as HTMLTableElement;
-	create_list(entry_table);
+	create_table(entry_table);
 	
 	const entries = entry_table.getElementsByTagName('tr');
 	perform_search(search_field, type_checkboxes, entries);
